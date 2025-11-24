@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+
+/* ================== THEME TOKENS ================== */
+@theme {
+  /* Colors */
+  --color-primary: #0A4991;
+  --color-secondary: #17A3DC;
+  --color-text-primary: #0A4991;
+  --color-text-secondary: #17A3DC;
+  --color-text-secondary2: #ffffff;
+  --color-button-primary: #0A4991;
+  --color-button-secondary: #17A3DC;
+  --color-icon-primary: #0A4991;
+  --color-icon-secondary: #17A3DC;
+  --color-background-primary: #F0F4F8;
+
+  /* Fonts */
+  --font-primary: "JockeyOne", sans-serif;
+  --font-secondary: "Nexa", sans-serif;
+
+  /* Spacing scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 56px;
+  --spacing-5xl: 64px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+  --shadow-xl: 0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04);
+  --shadow-2xl: 0 25px 50px rgba(0,0,0,0.25);
+  --shadow-3xl: 0 20px 30px -6px rgba(0,0,0,0.3);
+  --shadow-4xl: 0 25px 40px -8px rgba(0,0,0,0.35);
+  --shadow-5xl: 0 30px 60px -10px rgba(0,0,0,0.4);
+  --shadow-6xl: 0 40px 80px -12px rgba(0,0,0,0.45);
+  --shadow-inner-xl: inset 0 4px 8px rgba(0,0,0,0.2);
+  --shadow-glow: 0 0 20px rgba(0, 200, 255, 0.6);
+
+  /* Animations */
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-shakeY: shakeY 1s ease-in-out infinite;
+  --animate-fadeIn: fadeInScale 0.4s ease-out forwards;
+}
+
+/* ================== KEYFRAMES ================== */
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes shakeY {
+  0%, 100% { transform: translateY(0); }
+  25%      { transform: translateY(-4px); }
+  50%      { transform: translateY(4px); }
+  75%      { transform: translateY(-2px); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: translateY(6px) scale(.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ================== GLOBAL FONTS ================== */
+@font-face {
+  font-family: "JockeyOne";
+  src: url("/fonts/JockeyOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================== CUSTOM COMPONENTS ================== */
+@layer components {
+  .section {
+    @apply py-6 sm:py-8 md:py-10 lg:py-12;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10;
+  }
+
+  .section-home {
+    @apply max-w-[1400px] mx-auto;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-center font-primary text-primary leading-tight;
+  }
+
+  .section-subtitle {
+    @apply mt-2 sm:mt-3 md:mt-4 lg:mt-5 text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 text-center leading-relaxed;
+  }
+  .section-phara {
+     @apply  text-lg md:text-lg text-black/80 mb-2 text-left font-secondary leading-relaxed;
+  }
+   .btn-primary {
+    @apply relative bg-secondary text-white font-primary font-medium 
+    text-lg md:text-xl py-2 px-10 rounded-full shadow-md
+    transition-all duration-300 cursor-pointer;
+
+    /* subtle glass and lift */
+    @apply hover:bg-secondary/90 hover:shadow-2xl;
+  }
+
+  .btn-primary:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-primary:active {
+    transform: scale(.96);
+  }
+
+    .btn-outline {
+    @apply border-2 border-secondary text-secondary 
+    font-primary font-medium text-lg md:text-xl py-3 px-10 rounded-full
+    transition-all duration-300 cursor-pointer bg-transparent;
+
+    @apply hover:bg-secondary hover:text-white hover:shadow-md;
+  }
+
+}
+
+ 
+@layer utilities {
+  @keyframes marquee {
+    from { transform: translateX(0%); }
+    to   { transform: translateX(-50%); } /* since we duplicated the items */
+  }
+  .animate-marquee { animation: marquee 13s linear infinite; }
+}
+
+/* ================== UTILITIES ================== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+html.mobile-menu-open .floating, 
+html.mobile-menu-open [class*="chat"], 
+html.mobile-menu-open [class*="widget"] {
+  display: none !important;
+}
