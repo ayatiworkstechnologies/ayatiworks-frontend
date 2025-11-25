@@ -33,7 +33,7 @@ export default function ResponsiveBanner({
     <Wrapper
       {...wrapperProps}
       className={[
-        "block overflow-hidden rounded-3xl border border-slate-200 shadow-sm bg-white dark:bg-zinc-900",
+        "block overflow-hidden rounded-3xl border border-slate-200 shadow-sm bg-white",
         className,
       ].join(" ")}
     >
@@ -60,7 +60,7 @@ export default function ResponsiveBanner({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="flex items-center bg-gradient-to-br from-white to-slate-50 p-8 md:p-10 dark:from-zinc-900 dark:to-zinc-800"
+          className="flex items-center bg-gradient-to-br from-white to-slate-50 p-8 md:p-10"
         >
           <div>
             {eyebrow && (
