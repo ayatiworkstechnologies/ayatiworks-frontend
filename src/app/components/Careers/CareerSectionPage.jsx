@@ -9,7 +9,7 @@ export default function CareerSectionPage() {
     <>
       <section className="section-container py-12">
         <div className="mb-12">
-          <motion.h2
+          {/* <motion.h2
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -26,7 +26,7 @@ export default function CareerSectionPage() {
               transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
               className="bg-secondary h-1 w-40 sm:w-56 md:w-72 lg:w-[350px] mt-3 origin-left rounded-full"
             />
-          </motion.h2>
+          </motion.h2> */}
         </div>
         <motion.div
           initial={{ opacity: 0, x: -40 }}
