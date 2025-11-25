@@ -53,9 +53,11 @@ const routes = [
 
     //blogs List 
 
-    "/blogs/seo/5-must-know-AEO-Strategies-For-2025",
-    "/blogs/seo/How-Your-Tech-Startup-Can-Use-Answer-Engine-Optimization-(AEO)-to-Attract-Engage-and-Convert-Smarter-Audiences",
-    "/blogs/seo/Implementing-AEO-in-Your-Content-Strategy",
+    "/blogs/seo/5-must-know-aeo-strategies-for-2025",
+    "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences",
+    "/blogs/seo/implementing-aeo-in-your-content-strategy",
+    "/blogs/digital-marketing-services/chennai-digital-marketing-services",
+    "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
   ];
 
 export default function sitemap() {
