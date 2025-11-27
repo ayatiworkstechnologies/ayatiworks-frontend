@@ -64,7 +64,7 @@ export default function ResponsiveBanner({
         >
           <div>
             {eyebrow && (
-              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-lg font-semibold text-white">
                 {eyebrow}
               </span>
             )}

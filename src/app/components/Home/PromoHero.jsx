@@ -33,17 +33,31 @@ export default function PromoHero() {
           </Link>
         </div>
       </FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.2}>
+        <div className="flex flex-col items-center text-center py-5">
+          <h1 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            Chennai’s 360° Creative & Digital Growth Agency
+          </h1>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+            className="bg-secondary h-1 w-[250px] mt-3 origin-left rounded-full"
+          />
+        </div>
+      </FadeInWhenVisible>
 
       {/* ✅ Sub-header */}
       <FadeInWhenVisible delay={0.2}>
         <div className="w-full section-container mt-8 sm:mt-10 text-center flex flex-col sm:flex-row justify-between items-center gap-3">
-          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <h2 className="section-title text-lg sm:text-xl md:text-2xl lg:text-3xl">
             Behind the Clicks
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-              className="bg-secondary h-1 w-[250px] mt-3 origin-left rounded-full"
+              className="bg-secondary h-1 w-[100px] mt-1 origin-left rounded-full"
             />
           </h2>
           <p className="text-secondary font-primary text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
