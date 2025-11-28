@@ -77,6 +77,19 @@ export const POSTS_BY_AUTHOR = {
     excerpt:
       "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
   },
+  {
+    id: "p6",
+    title: "How to Evaluate a Digital Marketing Agency in Chennai",
+    href: "/blog/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
+      publishedAt: "2025-11-28T17:40:00-05:00",
+    readMins: 10,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
+    coverAlt:
+      "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
+    excerpt:
+      "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
+      tag: "Digital Marketing Services",
+  },
   ],
 
 };
