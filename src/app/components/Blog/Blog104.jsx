@@ -1414,7 +1414,7 @@ const relatedPosts = [
   {
     id: 106,
     title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    slug: "digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
+    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
     date: "November 28, 2025",
     readMins: 10,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",

@@ -1079,7 +1079,7 @@ const relatedPosts = [
   {
     id: 105,
     title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
-    slug: "digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
+    slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
     date: "November 21, 2025",
     readMins: 8,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",

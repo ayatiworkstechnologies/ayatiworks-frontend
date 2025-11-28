@@ -80,7 +80,7 @@ export const POSTS_BY_AUTHOR = {
   {
     id: "p6",
     title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    href: "/blog/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
+    href: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
       publishedAt: "2025-11-28T17:40:00-05:00",
     readMins: 10,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
