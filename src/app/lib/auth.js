@@ -1,5 +1,5 @@
 // lib/auth.js
-export const API_BASE = "http://localhost:8000";
+export const API_BASE = "http://3.236.78.66/";
 
 // export function saveAuth(data) {
 //   if (typeof window === "undefined") return;
