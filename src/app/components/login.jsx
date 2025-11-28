@@ -136,8 +136,6 @@ export default function LoginPage() {
               className="h-64 md:h-full w-full object-cover"
             />
 
-           
-           
           </div>
 
         </div>

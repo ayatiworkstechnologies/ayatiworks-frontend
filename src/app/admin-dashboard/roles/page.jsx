@@ -7,7 +7,7 @@ import { getAuth } from "../../lib/auth";
 import AdminSidebar from "../../components/AdminSidebar";
 import AdminNavbar from "../../components/AdminNavbar";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://3.236.78.66";
 
 export default function RolesPage() {
   const router = useRouter();
