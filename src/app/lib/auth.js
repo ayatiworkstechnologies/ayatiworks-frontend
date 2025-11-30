@@ -1,5 +1,5 @@
 // lib/auth.js
-export const API_BASE = "http://3.236.78.66";
+export const API_BASE = "https://100.30.46.253/";
 
 // export function saveAuth(data) {
 //   if (typeof window === "undefined") return;
