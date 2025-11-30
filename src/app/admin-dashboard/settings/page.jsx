@@ -7,7 +7,7 @@ import AdminSidebar from "../../components/AdminSidebar";
 import AdminNavbar from "../../components/AdminNavbar";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE || "https://100.30.46.253/";
+  process.env.NEXT_PUBLIC_API_BASE || "https://100.30.46.253";
 
 // Update this if your backend uses a different route for current user
 const PROFILE_ENDPOINT = `${API_BASE}/api/auth/me/`;

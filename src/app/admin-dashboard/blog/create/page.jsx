@@ -8,7 +8,7 @@ import AdminSidebar from "../../../components/AdminSidebar";
 import AdminNavbar from "../../../components/AdminNavbar";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE || "https://100.30.46.253/";
+  process.env.NEXT_PUBLIC_API_BASE || "https://100.30.46.253";
 
 function slugify(str = "") {
   return str
