@@ -7,58 +7,44 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "1. How long does web development take?",
+    question: "1. What services does Ayati Works offer? ",
     answer:
-      "Most projects, including ecommerce sites, take 6-12 weeks, ensuring quality and performance. The timeline can be over 6 weeks and under 6 weeks depending on the scope of work arrived by the client and our experts.",
+      "Ayati Works provides a full suite of digital marketing services, including SEO, social media marketing, email marketing, video marketing, affiliate marketing, and programmatic advertising. They also offer Content-as-a-Service (CaaS) - strategic content ideation, creation, and execution - as well as digital PR (influencer outreach, media placement, reputation management). Additionally, Ayati Works provides web & e-commerce solutions, including UX/UI design, web development, and tailored e-commerce strategy ",
   },
   {
-    question: "2. Do you offer post-launch support?",
+    question: "2. Which industries does Ayati Works specialize in? ",
     answer:
-      "Yes, we provide ongoing website maintenance for security, updates, and optimization.",
+      "Ayati Works works across a wide range of industries such as healthcare, SaaS / tech, e-commerce, finance, and enterprise. Their content and branding expertise is also proven in large-scale branded partnerships (for example, with Volvo) and consumer-facing businesses. ",
   },
   {
-    question: "3. Will my website be mobile-friendly?",
+    question: "3. How does Ayati Works approach digital marketing strategy? ",
     answer:
-      "Absolutely. Every website we build is fully responsive and optimized for mobile, tablet, and desktop devices.",
+      "Ayati Works uses a methodology called CAAS (Content as a Service) to align content with business objectives. They begin with a discovery call to understand goals, audience, and competition; then define KPIs, create campaigns (SEO, performance, content), and execute them with continuous measurement. Their strategies are data-driven, combining creativity, content, and analytics to deliver real ROI ",
   },
   {
-    question: "4. Can you integrate SEO best practices?",
+    question: "4. How does Ayati Works help with SEO? ",
     answer:
-      "Yes. We follow SEO-friendly coding standards, integrate meta tags, schema, and optimize content to improve search engine rankings.",
+      "Ayati Works offers comprehensive SEO services: technical SEO audits, on-page optimization, off-page link building, keyword research, and international SEO. They emphasize revenue-driven SEO - not just ranking, but growth and conversions. They also serve clients from Chennai to global markets, helping brands scale beyond their local digital presence. ",
   },
   {
-    question: "5. Do you work with ecommerce platforms?",
+    question: "5. Can Ayati Works manage social media campaigns? ",
     answer:
-      "Yes, we specialize in ecommerce development using platforms like Shopify, WooCommerce, and custom solutions tailored to your needs.",
+      "Yes - Ayati Works provides full social media marketing services. Their team builds data-driven campaigns tailored to Facebook, Instagram, LinkedIn, and more. They focus on creating engaging content, running ads, optimizing for conversions, and building long-term community and brand loyalty. They also run influencer campaigns, A/B testing, and retargeting to optimize social ROI. ",
   },
   {
-    question: "6. What technologies do you use?",
+    question: "6. What is Digital PR, and how can Ayati Works help with it? ",
     answer:
-      "Our team works with modern stacks including React, Node.js, Next.js, WordPress, and Shopify to deliver high-performance, scalable websites.",
+      "Digital PR at Ayati Works means building credibility and authority through media mentions, influencer collaborations, and content that gets covered in trusted publications. They help clients craft compelling PR strategies to earn high-value features, backlinks, and brand visibility. Their approach is tailored to both national and local audiences, adjusting messaging for regional media as well as high-authority national outlets. ",
   },
   {
-    question: "7. Can you redesign my existing website?",
+    question: "7. Do they provide web development or e-commerce solutions? ",
     answer:
-      "Yes, we can refresh and modernize your current site to improve design, user experience, and performance while retaining your brand identity.",
+      "Yes - Ayati Works offers web and e-commerce services including UX/UI design, web development, and full-funnel e-commerce strategy. They aim to transform traditional storefronts into scalable online businesses. They also optimize conversion, retention, and performance for e-commerce clients. ",
   },
-  {
-    question: "8. How do you ensure website security?",
-    answer:
-      "We implement SSL, firewalls, regular updates, and follow industry best practices to ensure your site remains secure.",
-  },
-  {
-    question: "9. Will I be able to manage my website after launch?",
-    answer:
-      "Yes, we provide CMS-based solutions and training so your team can easily update content, products, and pages without coding knowledge.",
-  },
-  {
-    question: "10. How much does web development cost?",
-    answer:
-      "Costs vary based on complexity, features, and integrations. After understanding your requirements, we provide a tailored quote that aligns with your budget and goals.",
-  },
+ 
 ];
 
-export default function FAQSection() {
+export default function HomeFAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {

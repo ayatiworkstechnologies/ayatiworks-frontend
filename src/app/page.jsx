@@ -2,6 +2,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import HomeFAQSection from "./components/FAQSection";
 
 /* ---------- ultra-light skeletons (no CLS) ---------- */
 const Box = ({ h = "h-[360px]" }) => (
@@ -321,6 +322,7 @@ export default function HomePage() {
       <WhatAyati />
       <PartnersInClimb />
       <PixelsPerfected />
+      <HomeFAQSection />
       <DottedWorldMap />
       <Connection />
     </main>
