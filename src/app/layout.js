@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import StickyContact from "./components/StickyContact";
@@ -8,7 +7,6 @@ import ScrollProgressBar from "./components/ScrollProgressBar";
 import ScrollToggleButton from "./components/ScrollToggleButton";
 import GtmScript from "./components/GtmScript"; // 👈 new
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-app" });
 
 export const metadata = {
   title:
@@ -33,8 +31,9 @@ export default function RootLayout({ children }) {
       </head>
 
       <body
-        className={`${inter.variable} font-sans bg-background text-foreground antialiased`}
+       
       >
+        
         {/* GTM scripts */}
         <GtmScript />
 

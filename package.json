@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev ",
+    "build": "next build ",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap",
-    "export": "next export"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
