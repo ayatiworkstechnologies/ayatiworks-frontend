@@ -5,8 +5,7 @@ import StickyContact from "./components/StickyContact";
 import Loader from "./components/Loader";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import ScrollToggleButton from "./components/ScrollToggleButton";
-import GtmScript from "./components/GtmScript"; // 👈 new
-
+import GtmScript from "./components/GtmScript";
 
 export const metadata = {
   title:
@@ -16,27 +15,25 @@ export const metadata = {
   alternates: {
     canonical: "https://ayatiworks.com/",
   },
+  // 👇 let Next.js generate all the <link rel="icon"> tags
+  icons: {
+    icon: "/fav-icon.png",          // normal favicon
+    shortcut: "/fav-icon.png",
+    apple: "/fav-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Icons */}
-        <link rel="icon" href="/fav-icon.png" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="google-site-verification"
           content="fgOnvH2bLIta4ZKOHxHKknNJCRQzrBvamh3MMJb5ppg"
         />
       </head>
-
-      <body
-       
-      >
-        
+      <body>
         {/* GTM scripts */}
         <GtmScript />
 
