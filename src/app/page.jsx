@@ -248,42 +248,42 @@ export default function HomePage() {
   };
 
   // BreadcrumbList
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://ayatiworks.com/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: "https://ayatiworks.com/digital-marketing-services/",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Services",
-        item: "https://ayatiworks.com/content-as-a-service/", 
-      },
-      {
-        "@type": "ListItem",
-        position: 4,
-        name: "Service",
-        item: "https://ayatiworks.com/digital-pr/",
-      },
-      {
-        "@type": "ListItem",
-        position: 5,
-        name: "Service",
-        item: "https://ayatiworks.com/web-ecommerce/",
-      },
-    ],
-  };
+  // const breadcrumbJsonLd = {
+  //   "@context": "https://schema.org",
+  //   "@type": "BreadcrumbList",
+  //   itemListElement: [
+  //     {
+  //       "@type": "ListItem",
+  //       position: 1,
+  //       name: "Home",
+  //       item: "https://ayatiworks.com/",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 2,
+  //       name: "Services",
+  //       item: "https://ayatiworks.com/digital-marketing-services/",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 3,
+  //       name: "Services",
+  //       item: "https://ayatiworks.com/content-as-a-service/", 
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 4,
+  //       name: "Service",
+  //       item: "https://ayatiworks.com/digital-pr/",
+  //     },
+  //     {
+  //       "@type": "ListItem",
+  //       position: 5,
+  //       name: "Service",
+  //       item: "https://ayatiworks.com/web-ecommerce/",
+  //     },
+  //   ],
+  // };
 
   return (
     <main className="space-y-8">
