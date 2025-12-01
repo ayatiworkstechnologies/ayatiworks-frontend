@@ -24,6 +24,9 @@ export default function RootLayout({ children }) {
       <head>
         {/* Icons */}
         <link rel="icon" href="/fav-icon.png" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="google-site-verification"
           content="fgOnvH2bLIta4ZKOHxHKknNJCRQzrBvamh3MMJb5ppg"
