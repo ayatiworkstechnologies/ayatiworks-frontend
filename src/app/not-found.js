@@ -1,13 +1,7 @@
 "use client";
 
 import Link from "next/link";
-export const metadata = {
-  title:
-    "Not Found 404 | Ayatiworks",
-  description:
-    "Not Found This url ",
-  
-};
+
 export default function NotFound() {
   return (
     <main className="min-h-screen flex items-center justify-center px-6 text-center">
