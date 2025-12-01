@@ -2,7 +2,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import HomeFAQSection from "./components/FAQSection";
+import HomeFAQSection from "./components/Web Development/FAQSection";
 
 /* ---------- ultra-light skeletons (no CLS) ---------- */
 const Box = ({ h = "h-[360px]" }) => (
