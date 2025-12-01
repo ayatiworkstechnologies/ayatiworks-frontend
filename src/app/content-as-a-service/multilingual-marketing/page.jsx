@@ -9,9 +9,9 @@ import OurWideRange from "../../components/Multilingual/OurWideRange";
 import HeroServicePage from "../../components/Multilingual/HeroServicePage";
 
 export const metadata = {
-  title: "Best Multilingual Marketing Agency India | Vernacular Campaigns | Ayatiworks",
+  title: "Best Multilingual Marketing Agency Chennai | Vernacular Campaigns | Ayatiworks",
   description:
-    "India's leading multilingual marketing agency. Create culturally relevant campaigns in 121+ languages. Vernacular marketing, localization and regional strategies. Book a consultation!",
+    "Chennai's leading multilingual marketing agency. Create culturally relevant campaigns in 121+ languages. Vernacular marketing, localization and regional strategies. Book a consultation!",
     alternates: { canonical: "https://ayatiworks.com/content-as-a-service/multilingual-marketing", }
 };
 
