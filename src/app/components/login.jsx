@@ -1,15 +1,11 @@
+// pages/login.jsx
 "use client";
-
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
-import { API_BASE, saveAuth } from "../lib/auth"; // keep your existing imports
+import { API_BASE, saveAuth } from "../lib/auth";
 
 export default function LoginPage() {
-  const router = useRouter();
-  const [identifier, setIdentifier] = useState("");
+  const [identifier, setIdentifier] = useState(""); // email or username
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -22,16 +18,25 @@ export default function LoginPage() {
       const res = await fetch(`${API_BASE}/api/auth/login/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username: identifier, password }),
+        body: JSON.stringify({
+          username: identifier, // can be username or email
+          password,
+        }),
       });
 
       const data = await res.json();
-      if (!res.ok) throw new Error(data.detail || "Invalid login");
+      if (!res.ok || !data.ok) {
+        throw new Error(data.detail || "Invalid username/email or password");
+      }
 
       saveAuth(data);
-      const role = data?.user?.role?.slug?.toLowerCase();
-      router.push(role === "admin" ? "/admin-dashboard" : "/employee-dashboard");
 
+      const role = data.user.role;
+      if (role === "ADMIN") {
+        router.push("/admin");
+      } else {
+        router.push("/dashboard");
+      }
     } catch (err) {
       setError(err.message);
     } finally {
@@ -40,106 +45,131 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-white to-secondary/10 px-4 font-[Inter,sans-serif]">
+    <div className="min-h-screen w-full bg-slate-50 flex items-center justify-center px-4">
+      <div className="w-full max-w-7xl grid md:grid-cols-[1.4fr,1fr] gap-10 items-center">
+        {/* Left: Branding / Info */}
+        <div className="hidden md:flex flex-col gap-6 text-slate-800">
+          <div className="flex items-center gap-3">
+            {/* Replace /logo.svg with your actual logo in /public */}
+            <div className="h-11 w-11 rounded-2xl bg-white border border-blue-500/40 flex items-center justify-center shadow-sm">
+              <span className="text-blue-600 font-semibold text-xl">A</span>
+            </div>
+            <div>
+              <h1 className="text-xl font-semibold tracking-tight text-slate-900">
+                Your Brand Admin Portal
+              </h1>
+              <p className="text-xs text-slate-500">
+                Secure role-based access for your internal team.
+              </p>
+            </div>
+          </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 26 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.45, ease: "easeOut" }}
-        className="relative w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl bg-white/80 backdrop-blur-2xl border border-slate-200"
-      >
+          <h2 className="text-3xl lg:text-4xl font-semibold leading-snug text-slate-900">
+            Sign in to
+            <span className="ml-2 bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
+              manage users, data & access
+            </span>
+          </h2>
 
-        <div className="grid md:grid-cols-5">
-          
-          {/* LEFT PANEL */}
-          <div className="md:col-span-2 p-8 md:p-10 bg-white/70 backdrop-blur-xl border-r border-slate-100">
+          <ul className="space-y-2 text-sm text-slate-600">
+            <li className="flex items-start gap-2">
+              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" />
+              Centralized login for Admin, Manager, Staff, and Users.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-400" />
+              Backed by Django + MySQL + JWT for secure authentication.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400" />
+              Clean, responsive UI built with Next.js & Tailwind CSS.
+            </li>
+          </ul>
 
-            {/* Badge */}
-            <div className="flex items-center gap-2 text-xs bg-primary/10 text-primary px-3 py-1 rounded-full w-fit font-medium">
-              <span className="h-1.5 w-1.5 bg-primary rounded-full" /> Admin Access
+          <div className="mt-2 flex items-center gap-3 text-[10px] text-slate-500">
+            <div className="h-1 w-6 rounded-full bg-blue-500" />
+            <span>Only authorized users can access the admin dashboard.</span>
+          </div>
+        </div>
+
+        {/* Right: Login Card */}
+        <div className="bg-white border border-slate-200 shadow-md rounded-2xl p-7 sm:p-8 w-full mx-auto">
+          {/* Mobile logo */}
+          <div className="flex items-center gap-3 mb-4 md:hidden">
+            <div className="h-9 w-9 rounded-2xl bg-white border border-blue-500/40 flex items-center justify-center shadow-sm">
+              <span className="text-blue-600 font-semibold text-lg">A</span>
+            </div>
+            <div>
+              <p className="text-sm font-medium text-slate-900">
+                Your Brand Admin Portal
+              </p>
+              <p className="text-[10px] text-slate-500">
+                Role-based secure login
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900">
+            Welcome back
+          </h2>
+          <p className="mt-1 text-[11px] text-slate-500">
+            Sign in with your registered credentials to continue.
+          </p>
+
+          <form onSubmit={handleSubmit} className="mt-5 space-y-4">
+            <div className="space-y-1.5">
+              <label className="block text-[11px] font-medium text-slate-700">
+                Email / Username
+              </label>
+              <input
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
+                placeholder="you@example.com or username"
+                required
+                className="w-full rounded-xl bg-slate-50 border border-slate-300 px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition focus:ring-2 focus:ring-blue-500/70 focus:border-blue-500"
+              />
             </div>
 
-            <h2 className="text-3xl font-semibold mt-4 text-slate-900">
-              Welcome Back AyatiWorks !
-            </h2>
-            <p className="text-xs text-slate-500 mt-0.5">Sign in to continue</p>
+            <div className="space-y-1.5">
+              <label className="block text-[11px] font-medium text-slate-700">
+                Password
+              </label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
+                required
+                className="w-full rounded-xl bg-slate-50 border border-slate-300 px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition focus:ring-2 focus:ring-blue-500/70 focus:border-blue-500"
+              />
+            </div>
 
-            <form onSubmit={handleSubmit} className="mt-8 space-y-4 ">
-              {/* Username */}
-              <div>
-                <label className="text-[11px] text-slate-500 mb-1 block">Username / Email</label>
-                <input
-                  value={identifier}
-                  onChange={(e) => setIdentifier(e.target.value)}
-                  required
-                  className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm placeholder:text-slate-400 outline-none
-                  focus:ring-2 focus:ring-primary/40 focus:border-primary"
-                  placeholder="you@example.com"
-                />
+            {error && (
+              <div className="text-[11px] text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-1.5">
+                {error}
               </div>
+            )}
 
-              {/* Password */}
-              <div>
-                <label className="text-[11px] text-slate-500 mb-1 block">Password</label>
-                <div className="relative">
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm placeholder:text-slate-400 outline-none
-                    focus:ring-2 focus:ring-primary/40 focus:border-primary pr-10"
-                    placeholder="Enter password"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword((v) => !v)}
-                    className="absolute inset-y-0 right-3 text-[10px] text-slate-500 hover:text-primary"
-                  >
-                    {showPassword ? "Hide" : "Show"}
-                  </button>
-                </div>
-              </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="mt-1 w-full inline-flex items-center justify-center rounded-xl bg-blue-600 hover:bg-blue-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {loading ? "Checking credentials..." : "Sign in"}
+            </button>
+          </form>
 
-              {/* Error */}
-              {error && (
-                <p className="text-xs text-red-600 bg-red-50 border border-red-200 px-3 py-2 rounded-lg">{error}</p>
-              )}
-
-              {/* Submit */}
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full mt-2 rounded-xl bg-gradient-to-r from-primary to-secondary hover:opacity-90 py-2.5 text-sm font-semibold text-white shadow-lg transition disabled:opacity-60"
-              >
-                {loading ? "Signing in..." : "Sign In"}
-              </button>
-            </form>
-
-            {/* Register */}
-            <p className="mt-5 text-center text-[11px] text-slate-500">
-              Don’t have an account?
-              <button
-                onClick={() => router.push("/register")}
-                className="text-primary font-medium ml-1 hover:text-secondary"
-              >
-                Register
-              </button>
-            </p>
+          <div className="mt-4 flex items-center justify-between text-[10px] text-slate-500">
+            <span>Need access? Contact your administrator.</span>
+            <button
+              type="button"
+              className="text-blue-600 hover:text-blue-500 font-medium transition"
+            >
+              Forgot password?
+            </button>
           </div>
-
-          {/* RIGHT IMAGE PANEL */}
-          <div className="relative md:col-span-3 bg-slate-900/80">
-            <img
-              src="/assets/login-hero.jpg" // replace with your image
-              alt="Login Preview"
-              className="h-64 md:h-full w-full object-cover"
-            />
-
-          </div>
-
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
