@@ -22,7 +22,7 @@ const teamMembers = [
     title: "Founder & CEO",
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/sir.jpg",
     highlight: true,
-    FaLinkedinIn: "https://www.FaLinkedinIn.com/in/upendrannandakumar",
+    FaLinkedinIn: "https://in.linkedin.com/in/upendrannandakumar",
   },
   
   {

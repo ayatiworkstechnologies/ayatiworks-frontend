@@ -63,5 +63,69 @@ export default async function Page(props = {}) {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
-  return <AuthorView author={author} posts={posts} />;
+  const siteUrl = "https://www.ayatiworks.com";
+  const authorUrl = `${siteUrl}/author/${slug}`;
+
+  // 🔹 JSON-LD schema (dynamic per author, falls back to your Daniel copy)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": authorUrl,
+        name: author.name,
+        url: authorUrl,
+        ...(author.avatar && {
+          image: {
+            "@type": "ImageObject",
+            url: author.avatar, // already full URL in your data
+            inLanguage: "en-US",
+          },
+        }),
+        jobTitle:
+          author.jobTitle ||
+          "Senior SEO Content Writer & Strategist",
+        worksFor: {
+          "@type": "Organization",
+          name: "Ayatiworks",
+          url: siteUrl,
+        },
+        description:
+          author.bio ||
+          "Daniel Joseph is a Senior SEO Content Writer & Strategist at Ayatiworks, bringing over 20 years of expertise in content creation and digital marketing strategy. He specializes in developing and executing SEO-driven content for healthcare clients in the United States, helping them achieve a strong organic presence on Google SERP. Having worked with prominent brands across the UAE, UK, USA, and India, Daniel collaborates closely with SEO, Marketing, and Sales teams to craft content that drives business growth and enhances online visibility. His core strengths include SEO, content marketing, content strategy development and AISEO Content. He is passionate about mentoring and has authored a couple of books.",
+        knowsAbout: [
+          "SEO",
+          "Generative Engine Optimization (GEO)",
+          "AEO",
+          "AI SEO",
+          "Content",
+          "Reddit",
+          "Google",
+        ],
+        mainEntityOfPage: authorUrl,
+      },
+      {
+        "@type": "CreativeWork",
+        name: "Search Marketing Exposure",
+        description:
+          "Explores changes and challenges in the search marketing industry, including AEO, GEO, and AISEO.",
+        url: siteUrl,
+        author: {
+          "@id": authorUrl,
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <AuthorView author={author} posts={posts} />
+
+      {/* JSON-LD schema.org for the author */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+    </>
+  );
 }
