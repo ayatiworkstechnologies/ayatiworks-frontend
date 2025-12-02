@@ -15,7 +15,7 @@ function OurWideRange() {
           viewport={{ once: true }}
           className="section-title text-left"
         >
-          <span className="mb-2 block">Award Winning Video Creation Service Agency <br />Company in Chennai</span>
+          <span className="mb-2 block"> Our Wide Range Of Expertise</span>
           {/* Animated underline */}
           <motion.div
             initial={{ scaleX: 0 }}
@@ -36,7 +36,7 @@ function OurWideRange() {
         className="flex justify-center"
       >
         <img
-          src="/assets/group-logo.png"
+          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/group-logo.png"
           alt="Our Clients & Partners"
           className="w-full max-w-6xl"
         />

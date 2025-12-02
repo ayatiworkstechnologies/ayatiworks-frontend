@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 // ✅ Dummy award data (can later come from API or JSON)
 const awards = [
   {
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com//assets/awards-5.png",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/awards-5.png",
     title: "Ayatiworks Volvo XC90 Campaign Earns Bronze at Maddys 2025 ",
     description:
       "Ayatiworks proudly won the Bronze Award for Best Performance Marketing Agency at the 43rd Madras Advertising Awards – Dinamalar presents MADDYS 2025 powered by Peps on 20th September 2025. This recognition comes for our impactful performance marketing campaign for Volvo’s premium SUV, the XC90, which successfully drove 500 confirmed bookings. The campaign was a testament to our team’s strategic thinking, creativity, and data-driven execution.",

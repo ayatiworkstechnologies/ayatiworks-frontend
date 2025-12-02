@@ -51,7 +51,7 @@ export default function AuthorView({ author, posts }) {
 
               <div className="w-full">
                 <div className="text-left text-lg font-semibold">Connect</div>
-                <div className="mt-3 flex items-center gap-3">
+                {/* <div className="mt-3 flex items-center gap-3">
                   {author.socials?.linkedin && (
                     <a
                       aria-label="LinkedIn"
@@ -74,7 +74,7 @@ export default function AuthorView({ author, posts }) {
                       <FaRss size={18} className="text-primary" />
                     </a>
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
           </aside>
@@ -98,7 +98,7 @@ export default function AuthorView({ author, posts }) {
                   {author.topics.map((t) => (
                     <Link
                       key={t}
-                      href={`/blogs/${encodeURIComponent(t.toLowerCase())}`}
+                      href={`#`}
                       className="inline-flex items-center rounded bg-primary px-4 py-2 text-lg font-primary text-white shadow-sm transition hover:bg-primary/90"
                       prefetch={false}
                     >

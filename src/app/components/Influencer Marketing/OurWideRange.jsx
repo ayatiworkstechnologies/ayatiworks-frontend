@@ -15,7 +15,7 @@ function OurWideRange() {
           viewport={{ once: true }}
           className="section-title text-left"
         >
-          <span className="mb-2 block">Award Winning Influencer Marketing Service Agency <br />Company in Chennai</span>
+          <span className="mb-2 block"> Our Wide Range Of Expertise</span>
           {/* Animated underline */}
           <motion.div
             initial={{ scaleX: 0 }}
