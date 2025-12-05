@@ -4,7 +4,94 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 import { motion, AnimatePresence } from "framer-motion";
-
+ // FAQPage
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What services does Ayati Works offer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ayati Works provides a full suite of digital marketing services, including SEO, social media marketing, email marketing, video marketing, affiliate marketing, and programmatic advertising. They also offer Content-as-a-Service (CaaS) — strategic content ideation, creation, and execution — as well as digital PR (influencer outreach, media placement, reputation management). Additionally, Ayati Works provides web & e-commerce solutions, including UX/UI design, web development, and tailored e-commerce strategy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which industries does Ayati Works specialize in?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ayati Works works across a wide range of industries such as healthcare, SaaS / tech, e-commerce, finance, and enterprise. Their content and branding expertise is also proven in large-scale branded partnerships (for example, with Volvo) and consumer-facing businesses.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does Ayati Works approach digital marketing strategy?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ayati Works uses a methodology called CAAS (Content as a Service) to align content with business objectives. They begin with a discovery call to understand goals, audience, and competition; then define KPIs, create campaigns (SEO, performance, content), and execute them with continuous measurement. Their strategies are data-driven, combining creativity, content, and analytics to deliver real ROI.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does Ayati Works help with SEO?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ayati Works offers comprehensive SEO services: technical SEO audits, on-page optimization, off-page link building, keyword research, and international SEO. They emphasize revenue-driven SEO — not just ranking, but growth and conversions. They also serve clients from Chennai to global markets, helping brands scale beyond their local digital presence.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can Ayati Works manage social media campaigns?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — Ayati Works provides full social media marketing services. Their team builds data-driven campaigns tailored to Facebook, Instagram, LinkedIn, and more. They focus on creating engaging content, running ads, optimizing for conversions, and building long-term community and brand loyalty. They also run influencer campaigns, A/B testing, and retargeting to optimize social ROI.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is Digital PR, and how can Ayati Works help with it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Digital PR at Ayati Works means building credibility and authority through media mentions, influencer collaborations, and content that gets covered in trusted publications. They help clients craft compelling PR strategies to earn high-value features, backlinks, and brand visibility. Their approach is tailored to both national and local audiences, adjusting messaging for regional media as well as high-authority national outlets.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do they provide web development or e-commerce solutions?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — Ayati Works offers web and e-commerce services including UX/UI design, web development, and full-funnel e-commerce strategy. They aim to transform traditional storefronts into scalable online businesses. They also optimize conversion, retention, and performance for e-commerce clients.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I contact Ayati Works to start a project?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You can reach Ayati Works via email: upendran@ayatiworks.com or info@ayatiworks.com. You can also call them at 044-35031874 / 044-35031878. Their Chennai office is located at 18/24, TTK Road, 1st Cross St, Alwarpet, Chennai, Tamil Nadu, 600018. They are available Monday to Friday, 10:00 AM to 7:00 PM.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How soon can I expect results from working with Ayati Works?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The timeframe for results depends on the kind of service: For SEO, meaningful gains in organic traffic or rankings often take a few months. For paid campaigns / performance marketing, you can typically start seeing leads or conversions within weeks once campaigns are live and optimized. With content and branding, impact may be gradual, focused on long-term growth, engagement, and trust.",
+        },
+      },
+      {
+        "@type": "Question",
+        name:
+          "Does Ayati Works work only in Chennai or with national and international clients?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "While Ayati Works is headquartered in Chennai, they serve clients across India and globally. They have experience scaling brands from local markets to pan-India and cross-border markets.",
+        },
+      },
+    ],
+  };
 const faqs = [
   {
     question: "1. What services does Ayati Works offer? ",
@@ -52,6 +139,12 @@ export default function HomeFAQSection() {
   };
 
   return (
+    <>
+    <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+          />
+     
     <section className="section bg-white">
       <div className="section-container">
         {/* Heading */}
@@ -146,5 +239,6 @@ export default function HomeFAQSection() {
         </div>
       </div>
     </section>
+         </>
   );
 }
