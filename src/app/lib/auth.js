@@ -25,16 +25,16 @@ export const API_BASE = "https://100.30.46.253";
 
 
 // lib/auth.js
-export default function getAuth() {
+export function getAuth() {
   if (typeof window === "undefined") return null;
   const stored = localStorage.getItem("auth");
   return stored ? JSON.parse(stored) : null;
 }
 
-export default function saveAuth(data) {
+export function saveAuth(data) {
   localStorage.setItem("auth", JSON.stringify(data));
 }
 
-export default function logout() {
+export function logout() {
   localStorage.removeItem("auth");
 }
