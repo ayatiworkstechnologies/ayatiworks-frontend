@@ -108,12 +108,12 @@ export const POSTS_BY_AUTHOR = {
 };
 
 // helpers
-export default function getAuthor(slug) {
+export function getAuthor(slug) {
   return AUTHORS.find((a) => a.slug === slug) || null;
 }
-export default function getAuthorPosts(slug) {
+export function getAuthorPosts(slug) {
   return POSTS_BY_AUTHOR[slug] || [];
 }
-export default function getAllAuthorSlugs() {
+export function getAllAuthorSlugs() {
   return AUTHORS.map((a) => a.slug);
 }
