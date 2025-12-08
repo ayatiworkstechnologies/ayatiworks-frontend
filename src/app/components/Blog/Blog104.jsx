@@ -1024,7 +1024,7 @@ export default function AEOArticlePage104() {
 /* ---------- Components ---------- */
 
 /* Scroll-spy TOC with active classes: text-primary + font-primary (others font-secondary) */
-export function WhatsInside({ items }) {
+function WhatsInside({ items }) {
   const [activeId, setActiveId] = React.useState(items?.[0]?.id || "");
 
   React.useEffect(() => {
@@ -1404,7 +1404,7 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
     date: "November 21, 2025",
     readMins: 8,
-    category: "SEO",
+    category: "Digital Marketing Services",
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
     coverAlt:
       "Benefits of hiring a Chennai-based digital marketing agency for business growth",
@@ -1422,6 +1422,19 @@ const relatedPosts = [
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
     deck:
       "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
+      category: "Digital Marketing Services",
+  },
+  {
+    id: 107,
+    title: "Top 10 Digital Marketing Agencies in Chennai",
+    slug: "digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+    date: "Decmber 5, 2025",
+    readMins: 15,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck:
+      "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
       category: "Digital Marketing Services",
   },
 ];

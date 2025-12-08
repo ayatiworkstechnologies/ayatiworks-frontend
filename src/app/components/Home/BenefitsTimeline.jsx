@@ -8,7 +8,7 @@ const fadeUp = (delay = 0) => ({
   viewport: { once: true, amount: 0.3 },
 });
 
-export function BenefitsTimeline() {
+export default function BenefitsTimeline() {
   return (
     <section className="bg-white section">
       <div className="mx-auto section-container">

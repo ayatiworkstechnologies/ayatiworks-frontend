@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function RelatedPostsSection({ posts = [], heading = "Related Posts" }) {
+export default function RelatedPostsSection({ posts = [], heading = "Related Posts" }) {
   if (!posts?.length) return null;
 
   return (

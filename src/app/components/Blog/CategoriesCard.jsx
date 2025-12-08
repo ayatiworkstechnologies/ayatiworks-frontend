@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function CategoriesCard({ items }) {
+export default function CategoriesCard({ items }) {
   const pathname = usePathname();
   const isActive = (href) =>
     pathname === href || pathname?.startsWith(href + "/");

@@ -3,7 +3,7 @@
 import React from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-export function FAQAccordion({ items }) {
+export default function FAQAccordion({ items }) {
   const faqs = items ?? defaultFaqs;
   const [openIndex, setOpenIndex] = React.useState(0);
   const toggle = (i) => setOpenIndex((curr) => (curr === i ? -1 : i));

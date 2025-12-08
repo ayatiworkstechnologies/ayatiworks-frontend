@@ -78,4 +78,17 @@ export const POSTS = [
       "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
       category: "Digital Marketing Services",
   },
+  {
+    id: 107,
+    title: "Top 10 Digital Marketing Agencies in Chennai",
+    slug: "digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+    date: "Decmber 5, 2025",
+    readMins: 15,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck:
+      "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
+      category: "Digital Marketing Services",
+  },
 ];

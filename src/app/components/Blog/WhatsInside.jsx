@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export function WhatsInside({ items }) {
+export default function WhatsInside({ items }) {
   const [activeId, setActiveId] = React.useState(items?.[0]?.id || "");
 
   React.useEffect(() => {

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export function SplitHeroBanner({
+export default function SplitHeroBanner({
   href = "#",
   imageSrc = "/banner/aoe-blogs-web.webp",
   imageAlt = "AI Search Optimization Strategies for Businesses in 2025 – Visual Guide to AEO Implementation",

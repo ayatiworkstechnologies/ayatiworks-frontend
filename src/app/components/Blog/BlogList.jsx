@@ -199,12 +199,12 @@ export default function BlogListSection({ initialParams = {} }) {
 
 function SortSelect({ sort = "new", onChange }) {
   return (
-    <label className="inline-flex items-center gap-2 text-sm">
-      <span className="text-slate-600">Sort</span>
+    <label className="inline-flex items-center gap-2 text-base">
+      <span className="text-priamry ">Sort</span>
       <select
         value={sort}
         onChange={(e) => onChange(e.target.value)}
-        className="rounded-md border border-slate-200 bg-white px-2.5 py-1.5 text-sm text-slate-800 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
+        className="rounded-md border border-slate-200 bg-white px-2.5 py-1.5 text-sm text-primary font-secondary shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
       >
         {SORT_OPTIONS.map((o) => (
           <option key={o.value} value={o.value}>
@@ -238,7 +238,7 @@ function Card({ post }) {
       ].join(" ")}
     >
       <Link href={href} className="block" aria-label={`Read: ${post.title}`}>
-        <div className="relative h-48 w-full overflow-hidden rounded-t-xl">
+        <div className="relative h-68 w-full overflow-hidden rounded-t-xl">
           <img
             src={post.cover}
             alt={post.coverAlt || post.title}
@@ -318,7 +318,7 @@ function FullCategoriesPanel({
                   "block w-full text-left px-5 py-3 transition-colors",
                   isActive
                     ? "text-primary font-primary text-xl"
-                    : "text-slate-800 font-secondary text-lg hover:bg-blue-50",
+                    : "text-primary font-secondary text-lg hover:bg-blue-50",
                 ].join(" ")}
                 aria-current={isActive ? "true" : undefined}
               >
@@ -359,7 +359,7 @@ function MobileCategoriesTabs({
                 "snap-start shrink-0 rounded-full border px-3.5 py-2 text-[12px] transition-colors",
                 active
                   ? "border-primary bg-primary text-white"
-                  : "border-slate-200 bg-white text-slate-800 hover:bg-slate-50",
+                  : "border-slate-200 bg-white text-primary hover:bg-slate-50",
               ].join(" ")}
             >
               {c.label}
@@ -383,7 +383,7 @@ function Pagination({ current, totalPages, onChange }) {
         type="button"
         disabled={current === 1}
         onClick={() => onChange(current - 1)}
-        className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-slate-700 shadow-sm disabled:opacity-40"
+        className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-primary font-secondary shadow-sm disabled:opacity-40"
       >
         ‹ Back
       </button>
@@ -394,10 +394,10 @@ function Pagination({ current, totalPages, onChange }) {
           key={`page-${p}`}
           onClick={() => onChange(p)}
           className={[
-            "rounded-md border px-3 py-1.5 shadow-sm transition-colors",
+            "rounded-md border px-3 py-1.5 font-secondary shadow-sm transition-colors",
             p === current
               ? "border-primary bg-primary text-white"
-              : "border-slate-200 bg-white text-slate-800 hover:bg-slate-50",
+              : "border-slate-200 bg-white text-primary hover:bg-slate-50",
           ].join(" ")}
           aria-current={p === current ? "page" : undefined}
         >
@@ -409,7 +409,7 @@ function Pagination({ current, totalPages, onChange }) {
         type="button"
         disabled={current === totalPages}
         onClick={() => onChange(current + 1)}
-        className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-slate-700 shadow-sm disabled:opacity-40"
+        className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-primary font-secondary shadow-sm disabled:opacity-40"
       >
         Next ›
       </button>

@@ -1,4 +1,67 @@
 
+// app/components/HeroSection.jsx
+
+// app/components/HeroSection.jsx
+"use client";
+
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
+
+// ✅ Direct video component (no lazy load)
+function HeroVideo({ src, poster, className }) {
+  return (
+    <video
+      src={src}
+      poster={poster}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      className={className}
+      disablePictureInPicture
+      controlsList="nodownload noplaybackrate"
+    />
+  );
+}
+
+export default function HeroSection() {
+  return (
+    <section className=" py-10 md:py-16">
+      <div className="mx-auto max-w-8xl px-3 sm:px-4">
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+          className="
+            relative
+            w-full
+            overflow-hidden            
+          "
+        >
+          {/* 
+            📱 Mobile: keep 16:9 
+            💻 Desktop: allow it to grow but capped by max-w + natural height
+          */}
+          <div className="relative w-full aspect-video md:aspect-[16/8] lg:aspect-[16/7]">
+            <HeroVideo
+              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner.mp4"
+              // poster="https://ayatiwork.b-cdn.net/banner/banner-01-poster.webp"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
 "use client";
 
 import { motion } from "framer-motion";

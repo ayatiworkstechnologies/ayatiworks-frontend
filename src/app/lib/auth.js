@@ -1,14 +1,14 @@
 // lib/auth.js
 export const API_BASE = "https://100.30.46.253";
 
-// export function saveAuth(data) {
+// export default function saveAuth(data) {
 //   if (typeof window === "undefined") return;
 //   localStorage.setItem("accessToken", data.access);
 //   localStorage.setItem("refreshToken", data.refresh);
 //   localStorage.setItem("user", JSON.stringify(data.user));
 // }
 
-// export function getAuth() {
+// export default function getAuth() {
 //   if (typeof window === "undefined") return null;
 //   const access = localStorage.getItem("accessToken");
 //   const user = localStorage.getItem("user");
@@ -16,7 +16,7 @@ export const API_BASE = "https://100.30.46.253";
 //   return { access, user: JSON.parse(user) };
 // }
 
-// export function clearAuth() {
+// export default function clearAuth() {
 //   if (typeof window === "undefined") return;
 //   localStorage.removeItem("accessToken");
 //   localStorage.removeItem("refreshToken");
@@ -25,16 +25,16 @@ export const API_BASE = "https://100.30.46.253";
 
 
 // lib/auth.js
-export function getAuth() {
+export default function getAuth() {
   if (typeof window === "undefined") return null;
   const stored = localStorage.getItem("auth");
   return stored ? JSON.parse(stored) : null;
 }
 
-export function saveAuth(data) {
+export default function saveAuth(data) {
   localStorage.setItem("auth", JSON.stringify(data));
 }
 
-export function logout() {
+export default function logout() {
   localStorage.removeItem("auth");
 }
