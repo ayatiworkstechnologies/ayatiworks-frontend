@@ -1427,7 +1427,7 @@ const relatedPosts = [
   {
     id: 107,
     title: "Top 10 Digital Marketing Agencies in Chennai",
-    slug: "digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+    slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
     date: "Decmber 5, 2025",
     readMins: 15,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
