@@ -15,81 +15,77 @@ export const metadata = {
   },
 };
 
-// const faqJsonLd = {
-//   "@context": "https://schema.org",
-//   "@type": "FAQPage",
-//   mainEntity: [
-//     {
-//       "@type": "Question",
-//       name:
-//         "How has Ayatiworks helped national brands scale through digital marketing services in Chennai?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "Ayatiworks leverages its Chennai-base to deliver cost-efficient, culturally nuanced and performance-driven digital campaigns. From regional rollouts to pan-India expansion, our works are with leading auto brands, consumer battery brand, a global SUV brand, B2B, B2C, D2C businesses, Ecommerce companies and international healthcare brands where Chennai-first strategy translated into national-scale ROI and International SEO. By combining local insights with full-funnel digital execution, Ayatiworks offers clients a path from Tamil Nadu roots to India-wide results.",
-//       },
-//     },
-//     {
-//       "@type": "Question",
-//       name:
-//         "What are the most effective digital marketing services in Chennai for brands looking to expand nationally?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "The most effective services include hyper-local SEO and regional keyword targeting, performance-marketing campaigns (PPC + social media) tailored for Indian multi-region audiences, culturally adapted content marketing across languages and regions, and data-driven analytics & optimisation. A Chennai-based agency’s advantage is its ability to fuse the local audience’s understanding with national rollout capability, delivering campaigns that perform across states and demographics.",
-//       },
-//     },
-//     {
-//       "@type": "Question",
-//       name:
-//         "Why should brands base their digital marketing strategy in Chennai when targeting a national market?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "Chennai offers a unique blend of advantages: a strong talent pool (creative, analytical and multilingual), cost-efficiencies compared to metro hubs, and deep cultural understanding across southern and northern Indian markets. This means faster execution, tighter budgets, better localisation and ultimately more measurable ROI. When these strengths are applied with national ambition, a Chennai-based partner drives both local relevance and national scale.",
-//       },
-//     },
-//     {
-//       "@type": "Question",
-//       name:
-//         "What factors should I consider when choosing a digital marketing agency in Chennai for national-scale growth?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "The Key factors you should look out for are proven case studies of pan-India campaign performance, experience across multiple regions, transparent pricing and fee structure, multi-channel capability (SEO, SMM, PPC, content), strong data-analytics and reporting, and localisation expertise (languages, culture, regional behaviour). An agency that combines all these will be well-positioned to help you scale nationally from a Chennai base.",
-//       },
-//     },
-//     {
-//       "@type": "Question",
-//       name:
-//         "How much does hiring a digital marketing agency in Chennai typically cost and how long before I see results?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "Costs vary depending on scope, industry and channels, but many Chennai agencies can offer competitive packages compared to metro hubs due to operational efficiencies. The timeline for results typically shows initial traction within 3-4 months (especially in PPC/social), while sustainable SEO and content wins often take 6-12 months. Transparent agencies will provide clear KPIs and realistic timelines for both short-term and long-term impact.",
-//       },
-//     },
-//     {
-//       "@type": "Question",
-//       name:
-//         "What are the common mistakes brands make when working with digital marketing services in Chennai (or any regional hub) and how can they avoid them?",
-//       acceptedAnswer: {
-//         "@type": "Answer",
-//         text:
-//           "Common mistakes include expecting instant results without a foundational strategy, treating regional execution as “one size fits all” for national markets, unclear KPIs or no reporting, working with agencies that lack multi-region experience, and neglecting cultural localisation nuances. To avoid these, brands should demand a phased plan (local → regional → national), insist on regular reporting & clear ROI metrics, ensure the agency has national-roll-out experience, and verify that regional insights feed into your full-funnel strategy.",
-//       },
-//     },
-//   ],
-// };
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I know if a digital marketing agency truly understands my industry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When an agency understands your industry, it shows in the way they speak your market’s language. They should demonstrate awareness of your end users, their pain points, and the problems your product or service solves. A capable digital marketing agency knows how to attract your ideal customers by positioning your brand as the solution they’re seeking. They should also understand your competitors, how they acquire clients, and how to implement stronger, well-tested strategies to outperform them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should pricing be a deciding factor when hiring a digital marketing agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing in a service industry cannot be defined as the way it is for a product-based business. When choosing a digital marketing agency, pricing depends entirely on the combination of services you include under the larger digital marketing umbrella. For example, you may approach an agency for overall digital marketing, but they will break it down into specific components such as paid services (PPC, performance marketing, influencer marketing, social media ads) and organic services like SEO and content-driven visibility. The price ultimately depends on the services you choose, the depth of execution required, and how frequently you want those services delivered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should I wait to see results from a digital marketing service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital marketing services can be broadly classified into two categories: paid and organic. SEO is a long-term, ongoing process that takes time, although the timeline depends on your brand’s existing presence on SERPs. SEO works with KPIs from day one and becomes a high-compounding, high-ROI channel when executed consistently. Inorganic paid ads can show results immediately, but the outcome depends on how well the team manages targeting, optimization, creative testing, and campaign strategy. Immediate results do not guarantee sustainable growth unless handled by an experienced team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are case studies enough to evaluate an agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Case studies are curated and should be viewed as reference points, not guarantees of future performance. Every business has unique needs, and evaluating an agency requires understanding their KPIs, their proposed roadmap, the team handling your campaigns, their experience, the projections they present, and their overall professionalism. Case studies can guide you, but they cannot replace a thorough evaluation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is organic better than paid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Organic and paid serve different purposes, and neither is inherently better than the other. Your business needs the right balance, not a bias. Organic and inorganic strategies should work in tandem, paid accelerates reach and acquisition, while organic compounds visibility and builds long-term authority. Together, they create stronger and more sustainable outcomes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should the agency report to me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weekly progress updates and monthly performance reviews are ideal for most businesses. If you opt for a dedicated service or performance-heavy campaigns, daily reports or dashboards may also be applicable. The more active and dynamic your campaigns, the more frequent the reporting should be."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a digital marketing agency guarantee results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A digital marketing agency cannot guarantee exact numbers because algorithms, consumer behavior, and competition constantly change. But they must guarantee structured KPIs, clear targets, predictable processes, and measurable progress. Every marketing effort, whether ATL or BTL, must deliver outcomes, and the agency should be accountable for driving consistent, transparent performance against your goals. What digital marketing agencies"
+      }
+    }
+  ]
+};
 
 export default function MustBlogPage() {
   return (
     <main className="section section-home">
       {/* FAQ JSON-LD for SEO */}
-      {/* <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      /> */}
+      />
 
       <AEOArticlePage106 />
       <Connection />
