@@ -759,8 +759,7 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl =
-    typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -771,11 +770,7 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link
-            href={href}
-            aria-label={`Read: ${shareTitle}`}
-            className="block"
-          >
+          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -817,9 +812,10 @@ function SplitHeroBanner({
             </h2>
           </div>
 
-          {/* BOTTOM META */}
+          {/* BOTTOM META - aligned row: author | meta | share */}
           <div className="mt-8 flex items-center justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-100/90">
+            <div className="flex items-center gap-1">
+              {/* Author */}
               <Link
                 href={`/author/${author.slug}`}
                 aria-label={`View ${author.name}'s author page`}
@@ -833,12 +829,12 @@ function SplitHeroBanner({
                     loading="lazy"
                     decoding="async"
                   />
-                  <div>
-                    <div className="font-primary text-xl hover:underline">
+                  <div className="min-w-0">
+                    <div className="font-primary text-xl hover:underline leading-tight">
                       {author.name}
                     </div>
                     {author.role && (
-                      <div className="text-sm font-secondary text-slate-300/85">
+                      <div className="text-sm font-secondary text-slate-300/85 truncate">
                         {author.role}
                       </div>
                     )}
@@ -846,31 +842,30 @@ function SplitHeroBanner({
                 </div>
               </Link>
 
+              {/* Vertical divider */}
               <Bar />
 
-              <div className="text-center font-secondary text-slate-300/85">
-                <span className="font-primary text-base text-white">
-                  {updatedAt}
-                </span>
-                <br />
-                Last Updated
+              {/* Meta */}
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary text-base">{updatedAt}</div>
+                <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <Bar />
+              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
 
-              <div className="text-center font-primary font-medium text-white">
-                {readMins} Min
-                <br />
-                <span className="font-secondary text-slate-300/85">Read</span>
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
 
-            {/* Share buttons placed on the right of meta */}
-            <div className="z-[2]">
+            {/* Share buttons placed on the right of meta - LARGE CTA */}
+            <div className="z-[2] flex items-center">
               <ShareButtons
                 slug={buildHref(post?.slug)}
                 post={post}
                 title={shareTitle}
+                variant="large" // optional prop to style button inside ShareButtons
               />
             </div>
           </div>
@@ -910,7 +905,9 @@ function ShareButtons({
 
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
-    title || (post && post.title) || (typeof document !== "undefined" ? document.title : "")
+    title ||
+      (post && post.title) ||
+      (typeof document !== "undefined" ? document.title : "")
   );
 
   // close on outside click / Esc
@@ -972,16 +969,20 @@ function ShareButtons({
         onClick={() => setOpen((s) => !s)}
         aria-haspopup="true"
         aria-expanded={open}
-        className="inline-flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm font-medium backdrop-blur-sm hover:bg-white/20 transition"
+        className="inline-flex items-center gap-2 rounded-full bg-white/20 px-5 py-2.5 
+             text-base font-primary text-white backdrop-blur-md 
+             hover:bg-white/30 transition"
       >
-        <FiShare2 className="h-4 w-4 text-white" />
-        <span className="sr-only">Share</span>
+        <FiShare2 className="h-6 w-6 text-white" />
+        <span>Share</span>
       </button>
 
       <div
         className={[
           "absolute right-0 mt-2 w-auto rounded-md border bg-white shadow-lg ring-1 ring-black/5 transition-all",
-          open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1",
+          open
+            ? "opacity-100 visible translate-y-0"
+            : "opacity-0 invisible -translate-y-1",
         ].join(" ")}
         style={{
           transitionProperty: "opacity, transform",
@@ -993,7 +994,9 @@ function ShareButtons({
           {/* Facebook */}
           <button
             onClick={() =>
-              openPopup(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`)
+              openPopup(
+                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Facebook"
@@ -1005,7 +1008,9 @@ function ShareButtons({
           {/* Twitter */}
           <button
             onClick={() =>
-              openPopup(`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`)
+              openPopup(
+                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Twitter"
@@ -1017,7 +1022,9 @@ function ShareButtons({
           {/* LinkedIn */}
           <button
             onClick={() =>
-              openPopup(`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`)
+              openPopup(
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on LinkedIn"
@@ -1029,7 +1036,10 @@ function ShareButtons({
           {/* WhatsApp */}
           <button
             onClick={() =>
-              openPopup(`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, true)
+              openPopup(
+                `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+                true
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on WhatsApp"
@@ -1041,7 +1051,10 @@ function ShareButtons({
           {/* Telegram */}
           <button
             onClick={() =>
-              openPopup(`https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`, true)
+              openPopup(
+                `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+                true
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Telegram"
@@ -1058,7 +1071,9 @@ function ShareButtons({
             title="Copy link"
           >
             <FiCopy className="h-4 w-4 text-slate-700" />
-            <span className="text-sm text-slate-700 hidden sm:inline">Copy</span>
+            <span className="text-sm text-slate-700 hidden sm:inline">
+              Copy
+            </span>
 
             <span
               role="status"

@@ -5,6 +5,25 @@ import { usePathname } from "next/navigation";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import Link from "next/link";
+import { FiShare2, FiCopy } from "react-icons/fi";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaTelegramPlane,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+import { POSTS } from "../../lib/blogs-data";
+
+const buildHref = (slugOrPath = "") => {
+  if (!slugOrPath) return "/blogs";
+  const s = String(slugOrPath).trim();
+  if (s.startsWith("/blogs")) return s.startsWith("/") ? s : `/${s}`;
+  if (s.startsWith("/")) return s;
+  // remove accidental leading/trailing slashes and ensure single prefix
+  return `/blogs/${s.replace(/^\/+|\/+$/g, "")}`;
+};
 
 const AGENCIES = [
   {
@@ -155,18 +174,19 @@ const AGENCIES = [
 ];
 
 export default function AEOArticlePage107() {
+  const post = POSTS.find((p) => p.id === 107) || POSTS[0];
+  
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BANNER */}
       <section className="mx-auto max-w-8xl px-4 sm:px-6 pt-6">
         <SplitHeroBanner
-          href="#"
-          imageSrc="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg"
-          imageAlt="Business evaluating a digital marketing agency in Chennai using a structured checklist."
-          category="Digital Marketing Services"
-          title={[
-            "Chennai’s Top 10 Trusted Digital Agencies Decoded, Compared, and Curated for Your Brand’s Next Big Leap.",
-          ]}
+          post={post}
+          href={buildHref(post.slug)} // <-- normalized href
+          imageSrc={post.cover}
+          imageAlt={post.coverAlt}
+          category={post.category}
+          title={[post.bannerTitle]}
           author={{
             name: "Daniel Joseph",
             slug: "daniel-joseph",
@@ -174,8 +194,8 @@ export default function AEOArticlePage107() {
             avatar:
               "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
           }}
-          updatedAt="Dec 05, 2025"
-          readMins={15}
+          updatedAt={post.date}
+          readMins={post.readMins}
         />
       </section>
 
@@ -764,33 +784,28 @@ function CategoriesCard({ items }) {
 /* HERO BANNER */
 function SplitHeroBanner({
   href = "#",
-  imageSrc = "/banner/aoe-blogs-web.webp",
-  imageAlt = "AI Search Optimization Strategies for Businesses in 2025 - Visual Guide to AEO Implementation",
-  category = "SEO",
-  title = ["What Is lms.txt? The", "New AI Web Standard", "for 2025"],
-  author = {
-    name: "Daniel Joseph",
-    slug: "daniel-joseph",
-    role: "Content Writer",
-    avatar: "/assets/teams/daniel.png",
-  },
-  updatedAt = "Oct 22, 2025",
-  readMins = 11,
+  imageSrc,
+  imageAlt,
+  category,
+  title,
+  author,
+  updatedAt,
+  readMins,
+  post = null,
 }) {
+  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareTitle = Array.isArray(title) ? title.join(" ") : title;
+
   return (
     <div
       className="group relative block w-full overflow-hidden rounded-xl border border-slate-200 shadow-sm"
-      aria-label={`Read: ${title.join(" ")}`}
+      aria-label={`Read: ${shareTitle}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link
-            href={href}
-            aria-label={`Read: ${title.join(" ")}`}
-            className="block"
-          >
-            <div className="relative h-64 overflow-hidden sm:h-80 md:h-[480px]">
+          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
+            <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
                 alt={imageAlt}
@@ -820,18 +835,21 @@ function SplitHeroBanner({
               {category}
             </div>
 
-            <h2 className="mt-4 section-title text-5xl text-left leading-[1.08] text-white">
-              {title.map((line, i) => (
-                <span key={i} className="block">
-                  {line}
-                </span>
-              ))}
+            <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
+              {Array.isArray(title)
+                ? title.map((line, i) => (
+                    <span key={i} className="block">
+                      {line}
+                    </span>
+                  ))
+                : title}
             </h2>
           </div>
 
-          {/* BOTTOM META */}
-          <div className="mt-8">
-            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-100/90">
+          {/* BOTTOM META - aligned row: author | meta | share */}
+          <div className="mt-8 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-1">
+              {/* Author */}
               <Link
                 href={`/author/${author.slug}`}
                 aria-label={`View ${author.name}'s author page`}
@@ -845,12 +863,12 @@ function SplitHeroBanner({
                     loading="lazy"
                     decoding="async"
                   />
-                  <div>
-                    <div className="font-primary text-xl hover:underline">
+                  <div className="min-w-0">
+                    <div className="font-primary text-xl hover:underline leading-tight">
                       {author.name}
                     </div>
                     {author.role && (
-                      <div className="text-sm font-secondary text-slate-300/85">
+                      <div className="text-sm font-secondary text-slate-300/85 truncate">
                         {author.role}
                       </div>
                     )}
@@ -858,25 +876,255 @@ function SplitHeroBanner({
                 </div>
               </Link>
 
+              {/* Vertical divider */}
               <Bar />
 
-              <div className="text-center font-secondary text-slate-300/85">
-                <span className="font-primary text-base text-white">
-                  {updatedAt}
-                </span>
-                <br />
-                Last Updated
+              {/* Meta */}
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary text-base">{updatedAt}</div>
+                <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <Bar />
+              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
 
-              <div className="text-center font-primary font-medium text-white">
-                {readMins} Min
-                <br />
-                <span className="font-secondary text-slate-300/85">Read</span>
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
+
+            {/* Share buttons placed on the right of meta - LARGE CTA */}
+            <div className="z-[2] flex items-center">
+              <ShareButtons
+                slug={buildHref(post?.slug)}
+                post={post}
+                title={shareTitle}
+                variant="large" // optional prop to style button inside ShareButtons
+              />
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ShareButtons({
+  url = "",
+  slug = "",
+  post = null,
+  title = "",
+  domain = "",
+}) {
+  const [open, setOpen] = React.useState(false);
+  const [copied, setCopied] = React.useState(false);
+  const containerRef = React.useRef(null);
+  const [absoluteUrl, setAbsoluteUrl] = React.useState(url || "");
+
+  // build absolute URL on client or from domain prop
+  React.useEffect(() => {
+    if (url) {
+      setAbsoluteUrl(url);
+      return;
+    }
+    const base =
+      domain || (typeof window !== "undefined" ? window.location.origin : "");
+    // prefer passed slug (which should already include /blogs/), otherwise fall back to post
+    const candidate = slug || (post && buildHref(post.slug)) || "";
+    if (!candidate) return;
+    const path = candidate.startsWith("/") ? candidate : `/${candidate}`;
+    if (base) setAbsoluteUrl(base + path);
+    else setAbsoluteUrl(path);
+  }, [url, slug, post, domain]);
+
+  const encodedUrl = encodeURIComponent(absoluteUrl || "");
+  const encodedTitle = encodeURIComponent(
+    title ||
+      (post && post.title) ||
+      (typeof document !== "undefined" ? document.title : "")
+  );
+
+  // close on outside click / Esc
+  React.useEffect(() => {
+    const onDocClick = (e) => {
+      if (!containerRef.current) return;
+      if (!containerRef.current.contains(e.target)) setOpen(false);
+    };
+    const onEsc = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDocClick);
+    document.addEventListener("touchstart", onDocClick);
+    document.addEventListener("keydown", onEsc);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      document.removeEventListener("touchstart", onDocClick);
+      document.removeEventListener("keydown", onEsc);
+    };
+  }, []);
+
+  const openPopup = (shareUrl, preferSameWindow = false) => {
+    try {
+      const w = 700;
+      const h = 520;
+      const left = window.screenX + (window.innerWidth - w) / 2;
+      const top = window.screenY + (window.innerHeight - h) / 2;
+      if (preferSameWindow) {
+        window.location.href = shareUrl;
+      } else {
+        window.open(
+          shareUrl,
+          "share-window",
+          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`
+        );
+      }
+    } catch (e) {
+      window.open(shareUrl, "_blank", "noopener");
+    } finally {
+      setOpen(false);
+    }
+  };
+
+  const onCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(absoluteUrl);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  return (
+    <div ref={containerRef} className="relative inline-block text-left">
+      <button
+        type="button"
+        onClick={() => setOpen((s) => !s)}
+        aria-haspopup="true"
+        aria-expanded={open}
+        className="inline-flex items-center gap-2 rounded-full bg-white/20 px-5 py-2.5 
+             text-base font-primary text-white backdrop-blur-md 
+             hover:bg-white/30 transition"
+      >
+        <FiShare2 className="h-6 w-6 text-white" />
+        <span>Share</span>
+      </button>
+
+      <div
+        className={[
+          "absolute right-0 mt-2 w-auto rounded-md border bg-white shadow-lg ring-1 ring-black/5 transition-all",
+          open
+            ? "opacity-100 visible translate-y-0"
+            : "opacity-0 invisible -translate-y-1",
+        ].join(" ")}
+        style={{
+          transitionProperty: "opacity, transform",
+          padding: open ? "8px" : "0",
+        }}
+        aria-hidden={!open}
+      >
+        <div className="flex items-center gap-3">
+          {/* Facebook */}
+          <button
+            onClick={() =>
+              openPopup(
+                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+              )
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Facebook"
+            title="Facebook"
+          >
+            <FaFacebookF className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Twitter */}
+          <button
+            onClick={() =>
+              openPopup(
+                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+              )
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Twitter"
+            title="Twitter"
+          >
+            <FaXTwitter className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* LinkedIn */}
+          <button
+            onClick={() =>
+              openPopup(
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+              )
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on LinkedIn"
+            title="LinkedIn"
+          >
+            <FaLinkedinIn className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* WhatsApp */}
+          <button
+            onClick={() =>
+              openPopup(
+                `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+                true
+              )
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on WhatsApp"
+            title="WhatsApp"
+          >
+            <FaWhatsapp className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Telegram */}
+          <button
+            onClick={() =>
+              openPopup(
+                `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+                true
+              )
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Telegram"
+            title="Telegram"
+          >
+            <FaTelegramPlane className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Copy link */}
+          <button
+            onClick={onCopy}
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition relative"
+            aria-label="Copy link"
+            title="Copy link"
+          >
+            <FiCopy className="h-4 w-4 text-slate-700" />
+            <span className="text-sm text-slate-700 hidden sm:inline">
+              Copy
+            </span>
+
+            <span
+              role="status"
+              aria-live="polite"
+              className={[
+                "absolute -bottom-7 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs shadow-sm",
+                copied ? "visible opacity-100" : "invisible opacity-0",
+              ].join(" ")}
+              style={{
+                background: "rgba(34,34,34,0.9)",
+                color: "white",
+                transition: "opacity 180ms ease",
+              }}
+            >
+              {copied ? "Copied!" : ""}
+            </span>
+          </button>
         </div>
       </div>
     </div>

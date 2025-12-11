@@ -19,7 +19,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 
-
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
   const s = String(slugOrPath).trim();
@@ -30,7 +29,7 @@ const buildHref = (slugOrPath = "") => {
 };
 export default function AEOArticlePage106() {
   const post = POSTS.find((p) => p.id === 106) || POSTS[0];
-  
+
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BANNER */}
@@ -59,7 +58,8 @@ export default function AEOArticlePage106() {
         <div className="mx-auto px-4 sm:px-6 py-10">
           <h1 className="mx-auto text-center section-title">
             <span className="text-primary">
-              How to Evaluate a Digital Marketing Agency in Chennai (Step-By-Step Guide)
+              How to Evaluate a Digital Marketing Agency in Chennai
+              (Step-By-Step Guide)
             </span>
           </h1>
         </div>
@@ -115,9 +115,7 @@ export default function AEOArticlePage106() {
             <p className="section-phara">
               This is exactly why a HOW-TO approach makes things simpler.
             </p>
-            <p className="section-phara">
-              Let’s break it down step by step.
-            </p>
+            <p className="section-phara">Let’s break it down step by step.</p>
           </Section>
 
           {/* STEP 1 */}
@@ -126,7 +124,8 @@ export default function AEOArticlePage106() {
             title="STEP 1: Start With Clarity on What You Expect"
           >
             <p className="section-phara">
-              Before evaluating an agency, understand what success means for your business.
+              Before evaluating an agency, understand what success means for
+              your business.
             </p>
             <p className="section-phara">This sets the bar, not their pitch.</p>
             <div className="ml-10 mb-4">
@@ -159,13 +158,16 @@ export default function AEOArticlePage106() {
             <h3 className="section-title text-2xl text-secondary text-left my-5">
               Mini True Story
             </h3>
-            <p className="section-phara">Imagine stepping into a meeting and opening with,</p>
             <p className="section-phara">
-              “We expect a 3x return, and we’re keen to see your roadmap for achieving it.”
+              Imagine stepping into a meeting and opening with,
             </p>
             <p className="section-phara">
-              This simple line filters weak vendors instantly and shifts the conversation toward
-              strategy, not surface-level pitches.
+              “We expect a 3x return, and we’re keen to see your roadmap for
+              achieving it.”
+            </p>
+            <p className="section-phara">
+              This simple line filters weak vendors instantly and shifts the
+              conversation toward strategy, not surface-level pitches.
             </p>
           </Section>
 
@@ -241,7 +243,8 @@ export default function AEOArticlePage106() {
             title="STEP 3: Assess Their Methodology & Process"
           >
             <p className="section-phara">
-              This is where you separate structured agencies from guess-driven ones.
+              This is where you separate structured agencies from guess-driven
+              ones.
             </p>
             <p className="section-phara text-secondary">Ask them:</p>
             <p className="section-phara">
@@ -278,13 +281,13 @@ export default function AEOArticlePage106() {
               </ul>
             </div>
             <p className="section-phara italic text-secondary">
-              A good agency talks about services. <br />
-              A great agency talks about systems.
+              A good agency talks about services. <br />A great agency talks
+              about systems.
             </p>
 
             <p className="section-phara">
-              Understanding an agency’s methodology matters because it reveals whether they approach
-              local digital marketing services or
+              Understanding an agency’s methodology matters because it reveals
+              whether they approach local digital marketing services or
               <Link
                 href="https://ayatiworks.com/digital-marketing-services/"
                 className="text-secondary hover:underline"
@@ -295,13 +298,13 @@ export default function AEOArticlePage106() {
                 {" "}
                 Digital Marketing Services in Chennai{" "}
               </Link>
-              Digital Marketing Services in Chennai as random activities or as a structured,
-              strategic system.
+              Digital Marketing Services in Chennai as random activities or as a
+              structured, strategic system.
             </p>
             <p className="section-phara">
-              When you evaluate their process, how they research, plan, execute, optimize, and
-              measure, you get a clearer sense of whether they can create long-term, compounding
-              impact for your brand.
+              When you evaluate their process, how they research, plan, execute,
+              optimize, and measure, you get a clearer sense of whether they can
+              create long-term, compounding impact for your brand.
             </p>
             <p className="section-phara">
               I’d strongly recommend that you conduct thorough research on the
@@ -315,18 +318,18 @@ export default function AEOArticlePage106() {
                 {" "}
                 benefits of hiring a Chennai-based digital marketing agency{" "}
               </Link>
-              because even freelancers and one-man businesses can deceive you by stating they have a
-              team and they are in complete control over it which is not true, and you face the
-              repercussions of it sooner or later.
+              because even freelancers and one-man businesses can deceive you by
+              stating they have a team and they are in complete control over it
+              which is not true, and you face the repercussions of it sooner or
+              later.
             </p>
           </Section>
 
           {/* STEP 4 */}
-          <Section
-            id="step-4"
-            title="STEP 4: Check the Team Behind the Scenes"
-          >
-            <p className="section-phara">The pitch is done by senior leadership.</p>
+          <Section id="step-4" title="STEP 4: Check the Team Behind the Scenes">
+            <p className="section-phara">
+              The pitch is done by senior leadership.
+            </p>
             <p className="section-phara">Execution is often done by juniors.</p>
             <p className="section-phara">This gap kills performance.</p>
 
@@ -358,7 +361,8 @@ export default function AEOArticlePage106() {
               </ul>
             </div>
             <p className="section-phara">
-              When you hire an agency, you’re hiring a thinking pool, not a company logo.
+              When you hire an agency, you’re hiring a thinking pool, not a
+              company logo.
             </p>
           </Section>
 
@@ -404,15 +408,13 @@ export default function AEOArticlePage106() {
             </div>
 
             <p className="section-phara">
-              If they can read your funnel like a financial sheet, they’re a strategic partner.
+              If they can read your funnel like a financial sheet, they’re a
+              strategic partner.
             </p>
           </Section>
 
           {/* STEP 6 */}
-          <Section
-            id="step-6"
-            title="STEP 6: Ask for a Clear Roadmap & KPIs"
-          >
+          <Section id="step-6" title="STEP 6: Ask for a Clear Roadmap & KPIs">
             <p className="section-phara">
               This is the ultimate evaluation moment.
             </p>
@@ -451,7 +453,9 @@ export default function AEOArticlePage106() {
             </div>
 
             <p className="section-phara">A vague roadmap = vague outcomes.</p>
-            <p className="section-phara">A structured roadmap = accountable outcomes.</p>
+            <p className="section-phara">
+              A structured roadmap = accountable outcomes.
+            </p>
           </Section>
 
           {/* STEP 7 */}
@@ -574,11 +578,13 @@ export default function AEOArticlePage106() {
             id="step-9"
             title="STEP 9: Check Their Scalability as You Grow"
           >
+            <p className="section-phara">Today, you might spend ₹75k.</p>
             <p className="section-phara">
-              Today, you might spend ₹75k.
+              Tomorrow, you might spend ₹10 lakhs.
             </p>
-            <p className="section-phara">Tomorrow, you might spend ₹10 lakhs.</p>
-            <p className="section-phara italic text-secondary">Can they grow with you?</p>
+            <p className="section-phara italic text-secondary">
+              Can they grow with you?
+            </p>
 
             <div className="ml-10 mb-4">
               <h3 className="section-title text-2xl text-secondary text-left my-5">
@@ -676,8 +682,8 @@ export default function AEOArticlePage106() {
               </ul>
             </div>
             <p className="section-phara">
-              The right mix is your competitive advantage if the agency you choose understands the
-              science behind it.
+              The right mix is your competitive advantage if the agency you
+              choose understands the science behind it.
             </p>
           </Section>
 
@@ -687,21 +693,25 @@ export default function AEOArticlePage106() {
             title="The Clarity That Helps You Choose Right"
           >
             <p className="section-phara">
-              Evaluating a digital marketing agency in Chennai becomes much simpler when you use a
-              structured, step-by-step approach. The right partner won’t just show you pretty
-              slides, they’ll show you how their thinking aligns with your growth goals.
+              Evaluating a digital marketing agency in Chennai becomes much
+              simpler when you use a structured, step-by-step approach. The
+              right partner won’t just show you pretty slides, they’ll show you
+              how their thinking aligns with your growth goals.
             </p>
             <p className="section-phara">
-              When you evaluate their strategy, team, funnel understanding, roadmap, reporting, and
-              ability to scale with you, you get clarity. And with clarity comes confidence.
+              When you evaluate their strategy, team, funnel understanding,
+              roadmap, reporting, and ability to scale with you, you get
+              clarity. And with clarity comes confidence.
             </p>
             <p className="section-phara">
-              That’s what makes this guide powerful, not just for choosing an agency, but for
-              choosing the right relationship that actually drives business outcomes.
+              That’s what makes this guide powerful, not just for choosing an
+              agency, but for choosing the right relationship that actually
+              drives business outcomes.
             </p>
             <p className="section-phara">
-              Ayatiworks has always admired clients who come prepared with clarity and high
-              expectations. Those challenges push the work higher and make the partnership stronger.
+              Ayatiworks has always admired clients who come prepared with
+              clarity and high expectations. Those challenges push the work
+              higher and make the partnership stronger.
             </p>
 
             <div className="flex justify-center py-5">
@@ -738,7 +748,7 @@ export default function AEOArticlePage106() {
 }
 
 /* ---------- Components ---------- */
- function WhatsInside({ items }) {
+function WhatsInside({ items }) {
   const [activeId, setActiveId] = React.useState(items?.[0]?.id || "");
 
   React.useEffect(() => {
@@ -879,8 +889,7 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl =
-    typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -891,11 +900,7 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link
-            href={href}
-            aria-label={`Read: ${shareTitle}`}
-            className="block"
-          >
+          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -937,9 +942,10 @@ function SplitHeroBanner({
             </h2>
           </div>
 
-          {/* BOTTOM META */}
+          {/* BOTTOM META - aligned row: author | meta | share */}
           <div className="mt-8 flex items-center justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-100/90">
+            <div className="flex items-center gap-1">
+              {/* Author */}
               <Link
                 href={`/author/${author.slug}`}
                 aria-label={`View ${author.name}'s author page`}
@@ -953,12 +959,12 @@ function SplitHeroBanner({
                     loading="lazy"
                     decoding="async"
                   />
-                  <div>
-                    <div className="font-primary text-xl hover:underline">
+                  <div className="min-w-0">
+                    <div className="font-primary text-xl hover:underline leading-tight">
                       {author.name}
                     </div>
                     {author.role && (
-                      <div className="text-sm font-secondary text-slate-300/85">
+                      <div className="text-sm font-secondary text-slate-300/85 truncate">
                         {author.role}
                       </div>
                     )}
@@ -966,31 +972,30 @@ function SplitHeroBanner({
                 </div>
               </Link>
 
+              {/* Vertical divider */}
               <Bar />
 
-              <div className="text-center font-secondary text-slate-300/85">
-                <span className="font-primary text-base text-white">
-                  {updatedAt}
-                </span>
-                <br />
-                Last Updated
+              {/* Meta */}
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary text-base">{updatedAt}</div>
+                <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <Bar />
+              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
 
-              <div className="text-center font-primary font-medium text-white">
-                {readMins} Min
-                <br />
-                <span className="font-secondary text-slate-300/85">Read</span>
+              <div className="text-sm text-slate-100/90">
+                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
 
-            {/* Share buttons placed on the right of meta */}
-            <div className="z-[2]">
+            {/* Share buttons placed on the right of meta - LARGE CTA */}
+            <div className="z-[2] flex items-center">
               <ShareButtons
                 slug={buildHref(post?.slug)}
                 post={post}
                 title={shareTitle}
+                variant="large" // optional prop to style button inside ShareButtons
               />
             </div>
           </div>
@@ -1030,7 +1035,9 @@ function ShareButtons({
 
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
-    title || (post && post.title) || (typeof document !== "undefined" ? document.title : "")
+    title ||
+      (post && post.title) ||
+      (typeof document !== "undefined" ? document.title : "")
   );
 
   // close on outside click / Esc
@@ -1092,16 +1099,20 @@ function ShareButtons({
         onClick={() => setOpen((s) => !s)}
         aria-haspopup="true"
         aria-expanded={open}
-        className="inline-flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm font-medium backdrop-blur-sm hover:bg-white/20 transition"
+        className="inline-flex items-center gap-2 rounded-full bg-white/20 px-5 py-2.5 
+             text-base font-primary text-white backdrop-blur-md 
+             hover:bg-white/30 transition"
       >
-        <FiShare2 className="h-4 w-4 text-white" />
-        <span className="sr-only">Share</span>
+        <FiShare2 className="h-6 w-6 text-white" />
+        <span>Share</span>
       </button>
 
       <div
         className={[
           "absolute right-0 mt-2 w-auto rounded-md border bg-white shadow-lg ring-1 ring-black/5 transition-all",
-          open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1",
+          open
+            ? "opacity-100 visible translate-y-0"
+            : "opacity-0 invisible -translate-y-1",
         ].join(" ")}
         style={{
           transitionProperty: "opacity, transform",
@@ -1113,7 +1124,9 @@ function ShareButtons({
           {/* Facebook */}
           <button
             onClick={() =>
-              openPopup(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`)
+              openPopup(
+                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Facebook"
@@ -1125,7 +1138,9 @@ function ShareButtons({
           {/* Twitter */}
           <button
             onClick={() =>
-              openPopup(`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`)
+              openPopup(
+                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Twitter"
@@ -1137,7 +1152,9 @@ function ShareButtons({
           {/* LinkedIn */}
           <button
             onClick={() =>
-              openPopup(`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`)
+              openPopup(
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on LinkedIn"
@@ -1149,7 +1166,10 @@ function ShareButtons({
           {/* WhatsApp */}
           <button
             onClick={() =>
-              openPopup(`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, true)
+              openPopup(
+                `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+                true
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on WhatsApp"
@@ -1161,7 +1181,10 @@ function ShareButtons({
           {/* Telegram */}
           <button
             onClick={() =>
-              openPopup(`https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`, true)
+              openPopup(
+                `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+                true
+              )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
             aria-label="Share on Telegram"
@@ -1178,7 +1201,9 @@ function ShareButtons({
             title="Copy link"
           >
             <FiCopy className="h-4 w-4 text-slate-700" />
-            <span className="text-sm text-slate-700 hidden sm:inline">Copy</span>
+            <span className="text-sm text-slate-700 hidden sm:inline">
+              Copy
+            </span>
 
             <span
               role="status"
@@ -1305,8 +1330,7 @@ const relatedPosts = [
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
     coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
-    deck:
-      "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
+    deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
     category: "Digital Marketing Services",
   },
   {
@@ -1315,12 +1339,12 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
     date: "November 21, 2025",
     readMins: 8,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
     coverAlt:
       "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    deck:
-      "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
-      category: "Digital Marketing Services",
+    deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
+    category: "Digital Marketing Services",
   },
   {
     id: 107,
@@ -1328,12 +1352,12 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
     date: "Decmber 5, 2025",
     readMins: 15,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
     coverAlt:
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck:
-      "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-      category: "Digital Marketing Services",
+    deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
+    category: "Digital Marketing Services",
   },
 ];
 
@@ -1548,9 +1572,7 @@ function RelatedPostCard({ post }) {
         <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
           {post.title}
         </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-          {post.deck}
-        </p>
+        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
 
         <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
           <span>{post.date}</span>
