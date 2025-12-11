@@ -7,6 +7,7 @@ import Link from "next/link";
 import Script from "next/script";
 
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiShare2, FiCopy } from "react-icons/fi";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -26,9 +27,8 @@ const buildHref = (slugOrPath = "") => {
   return `/blogs/${s.replace(/^\/+|\/+$/g, "")}`;
 };
 
-
 export default function AEOArticlePage102() {
-      const post = POSTS.find((p) => p.id === 102) || POSTS[0];
+  const post = POSTS.find((p) => p.id === 102) || POSTS[0];
 
   return (
     <main className="min-h-screen bg-white">
@@ -43,23 +43,23 @@ export default function AEOArticlePage102() {
       </section> */}
 
       <section className="mx-auto section-container px-4 sm:px-6 pt-6">
-         <SplitHeroBanner
-                  post={post}
-                  href={buildHref(post.slug)} // <-- normalized href
-                  imageSrc={post.cover}
-                  imageAlt={post.coverAlt}
-                  category={post.category}
-                  title={[post.bannerTitle]}
-                  author={{
-                    name: "Daniel Joseph",
-                    slug: "daniel-joseph",
-                    role: "Senior SEO Strategist",
-                    avatar:
-                      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
-                  }}
-                  updatedAt={post.date}
-                  readMins={post.readMins}
-                />
+        <SplitHeroBanner
+          post={post}
+          href={buildHref(post.slug)} // <-- normalized href
+          imageSrc={post.cover}
+          imageAlt={post.coverAlt}
+          category={post.category}
+          title={[post.bannerTitle]}
+          author={{
+            name: "Daniel Joseph",
+            slug: "daniel-joseph",
+            role: "Senior SEO Strategist",
+            avatar:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+          }}
+          updatedAt={post.date}
+          readMins={post.readMins}
+        />
       </section>
 
       {/* HERO */}
@@ -721,7 +721,8 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl =
+    typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -732,7 +733,11 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
+          <Link
+            href={href}
+            aria-label={`Read: ${shareTitle}`}
+            className="block"
+          >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -813,10 +818,15 @@ function SplitHeroBanner({
                 <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
+              <div
+                className="hidden sm:block h-6 w-px bg-white/20 mx-3"
+                aria-hidden="true"
+              />
 
               <div className="text-sm text-slate-100/90">
-                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="font-primary font-medium text-base">
+                  {readMins} Min
+                </div>
                 <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
@@ -1011,7 +1021,7 @@ function ShareButtons({
           </button>
 
           {/* Telegram */}
-          <button
+          {/* <button
             onClick={() =>
               openPopup(
                 `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
@@ -1023,7 +1033,7 @@ function ShareButtons({
             title="Telegram"
           >
             <FaTelegramPlane className="h-4 w-4 text-slate-700" />
-          </button>
+          </button> */}
 
           {/* Copy link */}
           <button
@@ -1058,7 +1068,6 @@ function ShareButtons({
     </div>
   );
 }
-
 
 function Bar() {
   return (
@@ -1100,22 +1109,25 @@ const rightCategories = [
 /* ---- Mock related posts (swap with your CMS) ---- */
 const relatedPosts = [
   {
-     id: 101,
+    id: 101,
     slug: "/blogs/seo/5-must-know-aeo-strategies-for-2025",
     title: "5 Must-Know AEO Strategies for 2025 ",
     excerpt:
       "A customer asks their AI assistant, “What’s the best way to boost my online sales?” and gets a crisp, tailored answer, but your business isn’t mentioned.",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-banner.png",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-banner.png",
     category: "SEO",
     updatedAt: "October 22, 2025",
     readMins: 8,
   },
   {
-     id: 103,
+    id: 103,
     slug: "/blogs/seo/implementing-aeo-in-your-content-strategy",
     title: "Implementing AEO in Your Content Strategy",
-    excerpt: "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center stage, startups that master AEO today are the ones that will stay visible tomorrow. ",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
+    excerpt:
+      "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center stage, startups that master AEO today are the ones that will stay visible tomorrow. ",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
     category: "SEO",
     updatedAt: "November 07, 2025",
     readMins: 8,

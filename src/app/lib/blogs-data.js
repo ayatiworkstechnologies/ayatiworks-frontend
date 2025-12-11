@@ -5,7 +5,7 @@ export const POSTS = [
     slug: "/blogs/seo/5-must-know-aeo-strategies-for-2025/",
     bannerTitle:
       "Prepare Your Website for the AI Search Revolution Unlock AEO Secrets for Explosive Organic Growth!",
-    date: "October 22, 2025",
+    date: "Oct 22, 2025",
     readMins: 8,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-banner.png",
@@ -21,8 +21,8 @@ export const POSTS = [
       "How Your Tech Startup Can Use Answer Engine Optimisation (AEO) to Reach their Audience",
     slug:
       "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-(aeo)-to-attract-engage-and-convert-smarter-audiences/",
-    bannerTitle: "",
-    date: "October 31, 2025",
+    bannerTitle: "Search Isn’t About Pages Anymore!  It’s About Answers.",
+    date: "Oct 31, 2025",
     readMins: 15,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-102.jpg",
@@ -36,7 +36,7 @@ export const POSTS = [
     title: "Implementing AEO in Your Content Strategy",
     slug: "/blogs/seo/implementing-aeo-in-your-content-strategy/",
     bannerTitle: "Search Isn’t About Pages Anymore! It’s About Answers.",
-    date: "November 07, 2025",
+    date: "Nov 07, 2025",
     readMins: 8,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
@@ -51,7 +51,7 @@ export const POSTS = [
     title: "The Local Agency Advantage for National-Scale ROI ",
     slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services/",
     bannerTitle: "Think local. Scale national! That’s the Chennai advantage",
-    date: "November 14, 2025",
+    date: "Nov 14, 2025",
     readMins: 10,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
@@ -66,7 +66,7 @@ export const POSTS = [
     slug:
       "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency/",
     bannerTitle: "Why Chennai Brands Grow Faster with Local Digital Partners.",
-    date: "November 21, 2025",
+    date: "Nov 21, 2025",
     readMins: 8,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
@@ -83,7 +83,7 @@ export const POSTS = [
       "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
     bannerTitle:
       "A clear, step-by-step way to identify the right digital partner! NO falling for pitches, buzzwords, or slide-deck theatrics.",
-    date: "November 28, 2025",
+    date: "Nov 28, 2025",
     readMins: 10,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
@@ -99,7 +99,7 @@ export const POSTS = [
     slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai/",
     bannerTitle:
       "Chennai’s Top 10 Trusted Digital Agencies Decoded, Compared, and Curated for Your Brand’s Next Big Leap.",
-    date: "December 05, 2025",
+    date: "Dec 05, 2025",
     readMins: 15,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",

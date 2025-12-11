@@ -6,6 +6,7 @@ import { IoCheckmarkDone } from "react-icons/io5";
 import Link from "next/link";
 import Script from "next/script";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiShare2, FiCopy } from "react-icons/fi";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -1076,7 +1077,7 @@ function ShareButtons({
           </button>
 
           {/* Telegram */}
-          <button
+          {/* <button
             onClick={() =>
               openPopup(
                 `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
@@ -1088,7 +1089,7 @@ function ShareButtons({
             title="Telegram"
           >
             <FaTelegramPlane className="h-4 w-4 text-slate-700" />
-          </button>
+          </button> */}
 
           {/* Copy link */}
           <button

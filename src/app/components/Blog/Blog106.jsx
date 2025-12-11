@@ -1179,7 +1179,7 @@ function ShareButtons({
           </button>
 
           {/* Telegram */}
-          <button
+          {/* <button
             onClick={() =>
               openPopup(
                 `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
@@ -1191,7 +1191,7 @@ function ShareButtons({
             title="Telegram"
           >
             <FaTelegramPlane className="h-4 w-4 text-slate-700" />
-          </button>
+          </button> */}
 
           {/* Copy link */}
           <button

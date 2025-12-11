@@ -6,6 +6,7 @@ import { IoCheckmarkDone } from "react-icons/io5";
 import Link from "next/link";
 
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiShare2, FiCopy } from "react-icons/fi";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -15,6 +16,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
+
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -1473,7 +1475,7 @@ function ShareButtons({
           </button>
 
           {/* Telegram */}
-          <button
+          {/* <button
             onClick={() =>
               openPopup(
                 `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
@@ -1485,7 +1487,7 @@ function ShareButtons({
             title="Telegram"
           >
             <FaTelegramPlane className="h-4 w-4 text-slate-700" />
-          </button>
+          </button> */}
 
           {/* Copy link */}
           <button
