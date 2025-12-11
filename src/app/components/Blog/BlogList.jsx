@@ -17,7 +17,10 @@ const toSlug = (str = "") =>
     .replace(/^-+|-+$/g, "");
 
 const toPathSegments = (slugStr = "") =>
-  String(slugStr).split("/").map((s) => toSlug(s));
+  String(slugStr)
+    .split("/")
+    .filter(Boolean) // remove empty from slashes
+    .map((s) => toSlug(s));
 
 const fromSlug = (slug = "", list = []) => {
   const found = list.find((c) => toSlug(c.label) === slug);
@@ -32,8 +35,8 @@ const CATEGORIES = CATEGORIES_SRC.map((c) => ({
 
 /* ------------------ Sort options ------------------ */
 const SORT_OPTIONS = [
-  { value: "new", label: "Newest" }, // date DESC
-  { value: "old", label: "Oldest" }, // date ASC
+  { value: "new", label: "Newest" },
+  { value: "old", label: "Oldest" },
   { value: "title-asc", label: "Title A–Z" },
   { value: "title-desc", label: "Title Z–A" },
   { value: "read-asc", label: "Read time ↑" },
@@ -48,23 +51,12 @@ export default function BlogListSection({ initialParams = {} }) {
   const router = useRouter();
   const pathname = usePathname() || "/blogs";
 
-  // Robust param reads with fallbacks
-  const initialPage =
-    initialParams && initialParams.page != null
-      ? String(initialParams.page)
-      : undefined;
-  const initialCat =
-    initialParams && initialParams.cat != null
-      ? String(initialParams.cat)
-      : undefined;
-  const initialSort =
-    initialParams && initialParams.sort != null
-      ? String(initialParams.sort)
-      : undefined;
-
-  const pageParamStr = searchParams.get("page") || initialPage || "1";
-  const catParamStr = (searchParams.get("cat") || initialCat || "all").toLowerCase();
-  const sortParamStr = (searchParams.get("sort") || initialSort || "new").toLowerCase();
+  // Fallback params
+  const pageParamStr = searchParams.get("page") || initialParams.page || "1";
+  const catParamStr =
+    (searchParams.get("cat") || initialParams.cat || "all").toLowerCase();
+  const sortParamStr =
+    (searchParams.get("sort") || initialParams.sort || "new").toLowerCase();
 
   const pageParam = Number.isFinite(Number(pageParamStr))
     ? Number(pageParamStr)
@@ -73,7 +65,7 @@ export default function BlogListSection({ initialParams = {} }) {
   const activeCatLabel =
     catParamStr === "all" ? "All" : fromSlug(catParamStr, CATEGORIES);
 
-  // Filter first
+  /* ------------------ Filtering ------------------ */
   const filtered = useMemo(() => {
     if (activeCatLabel === "All") return POSTS;
     return POSTS.filter(
@@ -81,7 +73,7 @@ export default function BlogListSection({ initialParams = {} }) {
     );
   }, [activeCatLabel]);
 
-  // Then sort based on `sort`
+  /* ------------------ Sorting ------------------ */
   const sorted = useMemo(() => {
     const arr = [...filtered];
     switch (sortParamStr) {
@@ -108,7 +100,7 @@ export default function BlogListSection({ initialParams = {} }) {
     return arr;
   }, [filtered, sortParamStr]);
 
-  // Pagination
+  /* ------------------ Pagination ------------------ */
   const perPage = 4;
   const total = sorted.length;
   const totalPages = Math.max(1, Math.ceil(total / perPage));
@@ -116,6 +108,7 @@ export default function BlogListSection({ initialParams = {} }) {
   const start = (current - 1) * perPage;
   const visible = sorted.slice(start, start + perPage);
 
+  /* ------------------ URL Helpers ------------------ */
   const pushParams = (paramsObj) => {
     const params = new URLSearchParams(searchParams.toString());
     Object.entries(paramsObj).forEach(([k, v]) => {
@@ -129,24 +122,25 @@ export default function BlogListSection({ initialParams = {} }) {
 
   const setCat = (label) => {
     const slug = label === "All" ? "all" : toSlug(label);
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams();
     params.set("cat", slug);
     params.set("page", "1");
-    params.set("sort", sortParamStr || "new"); // keep current sort
+    params.set("sort", sortParamStr);
     router.push(`${pathname}?${params.toString()}`);
   };
 
   const setSort = (value) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("sort", value);
-    params.set("page", "1"); // reset to first page when sort changes
+    params.set("page", "1");
     router.push(`${pathname}?${params.toString()}`);
   };
 
+  /* ========================================================= */
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="mx-auto section-container px-4 sm:px-6 py-6 sm:py-8">
-        {/* MOBILE: Categories on top */}
+        {/* MOBILE Categories */}
         <div className="lg:hidden sticky top-14 z-20 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200">
           <MobileCategoriesTabs
             categories={CATEGORIES}
@@ -156,27 +150,31 @@ export default function BlogListSection({ initialParams = {} }) {
         </div>
 
         <div className="mt-4 lg:mt-0 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
-          {/* GRID */}
           <div>
             <div className="mb-6 flex items-center justify-between gap-4">
               <h1 className="section-title text-left">Latest Articles</h1>
               <SortSelect sort={sortParamStr} onChange={setSort} />
             </div>
 
+            {/* GRID */}
             <div className="grid grid-cols-1 gap-7 sm:grid-cols-2">
               {visible.map((post) => (
-                <Card key={post.id ?? `${post.slug}-${post.title}`} post={post} />
+                <Card key={post.id ?? post.slug} post={post} />
               ))}
             </div>
 
             {totalPages > 1 && (
               <div className="mt-8 flex justify-center">
-                <Pagination current={current} totalPages={totalPages} onChange={goTo} />
+                <Pagination
+                  current={current}
+                  totalPages={totalPages}
+                  onChange={goTo}
+                />
               </div>
             )}
           </div>
 
-          {/* DESKTOP: Sidebar categories */}
+          {/* DESKTOP Sidebar */}
           <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
             <FullCategoriesPanel
               categories={CATEGORIES}
@@ -186,8 +184,10 @@ export default function BlogListSection({ initialParams = {} }) {
           </aside>
         </div>
 
-        {/* MOBILE: Sticky "Next ›" floating button */}
-        {totalPages > current && <StickyNextButton onClick={() => goTo(current + 1)} />}
+        {/* MOBILE Sticky Next */}
+        {totalPages > current && (
+          <StickyNextButton onClick={() => goTo(current + 1)} />
+        )}
       </section>
     </main>
   );
@@ -197,10 +197,11 @@ export default function BlogListSection({ initialParams = {} }) {
    Components
 ========================================================= */
 
+/* ---------- SortSelect (typo fixed) ---------- */
 function SortSelect({ sort = "new", onChange }) {
   return (
     <label className="inline-flex items-center gap-2 text-base">
-      <span className="text-priamry ">Sort</span>
+      <span className="text-primary">Sort</span>
       <select
         value={sort}
         onChange={(e) => onChange(e.target.value)}
@@ -216,27 +217,27 @@ function SortSelect({ sort = "new", onChange }) {
   );
 }
 
+/* ---------- Card (FULLY FIXED SLUG LOGIC) ---------- */
 function Card({ post }) {
-  // Build clean href from slug segments
   const segments = Array.isArray(post.slug)
     ? post.slug.map(toSlug)
     : toPathSegments(post.slug);
-  const href = `/blogs/${segments.join("/")}`;
+
+  const href =
+    segments[0] === "blogs"
+      ? `/${segments.join("/")}`
+      : `/blogs/${segments.join("/")}`;
 
   const mins = Number(post.readMins);
   const readText = Number.isFinite(mins) ? `${mins} min read` : null;
 
   const categorySlug = post.category ? toSlug(post.category) : null;
-  const categoryHref = categorySlug ? `/blogs?cat=${categorySlug}&page=1` : null;
+  const categoryHref = categorySlug
+    ? `/blogs?cat=${categorySlug}&page=1`
+    : null;
 
   return (
-    <article
-      className={[
-        "group rounded-xl border border-slate-200 bg-white",
-        "shadow-[0_10px_24px_rgba(0,0,0,0.06)] transition-all",
-        "hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(0,0,0,0.10)]",
-      ].join(" ")}
-    >
+    <article className="group rounded-xl border border-slate-200 bg-white shadow-[0_10px_24px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(0,0,0,0.10)]">
       <Link href={href} className="block" aria-label={`Read: ${post.title}`}>
         <div className="relative h-68 w-full overflow-hidden rounded-t-xl">
           <img
@@ -247,18 +248,17 @@ function Card({ post }) {
             decoding="async"
           />
 
-          {post.category ? (
+          {post.category && (
             <div className="absolute left-3 top-3">
               <Link
                 href={categoryHref}
                 onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center rounded-full bg-primary/95 text-white font-secondary px-3 py-1 text-xs font-medium shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
-                aria-label={`Filter by ${post.category}`}
               >
                 {post.category}
               </Link>
             </div>
-          ) : null}
+          )}
 
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/10 to-transparent" />
         </div>
@@ -268,17 +268,15 @@ function Card({ post }) {
             {post.title}
           </h3>
 
-          {post.deck ? <p className="mt-2 section-phara">{post.deck}</p> : null}
+          {post.deck && <p className="mt-2 section-phara">{post.deck}</p>}
 
           <div className="mt-4 flex flex-wrap items-center gap-x-2 section-phara font-primary text-slate-700">
-            <FiClock className="mr-1 shrink-0" aria-hidden />
+            <FiClock className="mr-1 shrink-0" />
             <span>{post.date}</span>
 
             {readText && (
               <>
-                <span className="mx-1 text-slate-400" aria-hidden>
-                  |
-                </span>
+                <span className="mx-1 text-slate-400">|</span>
                 <span className="whitespace-nowrap">{readText}</span>
               </>
             )}
@@ -293,7 +291,7 @@ function Card({ post }) {
   );
 }
 
-/* ---------- Desktop sidebar panel ---------- */
+/* ---------- Desktop Sidebar ---------- */
 function FullCategoriesPanel({
   categories = CATEGORIES,
   activeSlug = "all",
@@ -307,8 +305,9 @@ function FullCategoriesPanel({
 
       <ul className="divide-y divide-slate-200">
         {categories.map((c) => {
-          const slug = c.slug || toSlug(c.label);
-          const isActive = activeSlug === (slug === "all" ? "all" : slug);
+          const slug = c.slug;
+          const isActive = activeSlug === slug;
+
           return (
             <li key={slug}>
               <button
@@ -332,7 +331,7 @@ function FullCategoriesPanel({
   );
 }
 
-/* ---------- Mobile categories tabs (top) ---------- */
+/* ---------- Mobile Tabs ---------- */
 function MobileCategoriesTabs({
   categories = CATEGORIES,
   activeSlug = "all",
@@ -343,17 +342,13 @@ function MobileCategoriesTabs({
       <div
         className="-mx-4 px-4 overflow-x-auto no-scrollbar flex gap-2 snap-x snap-mandatory"
         role="tablist"
-        aria-label="Categories"
       >
         {categories.map((c) => {
-          const slug = c.slug || toSlug(c.label);
-          const active = (slug === "all" ? "all" : slug) === activeSlug;
+          const active = activeSlug === c.slug;
+
           return (
             <button
-              key={slug}
-              type="button"
-              role="tab"
-              aria-selected={active}
+              key={c.slug}
               onClick={() => onSelect(c.label)}
               className={[
                 "snap-start shrink-0 rounded-full border px-3.5 py-2 text-[12px] transition-colors",
@@ -374,13 +369,10 @@ function MobileCategoriesTabs({
 /* ---------- Pagination ---------- */
 function Pagination({ current, totalPages, onChange }) {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
   return (
-    <nav
-      className="flex items-center gap-2 text-[12px]"
-      aria-label="Pagination"
-    >
+    <nav className="flex items-center gap-2 text-[12px]">
       <button
-        type="button"
         disabled={current === 1}
         onClick={() => onChange(current - 1)}
         className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-primary font-secondary shadow-sm disabled:opacity-40"
@@ -390,8 +382,7 @@ function Pagination({ current, totalPages, onChange }) {
 
       {pages.map((p) => (
         <button
-          type="button"
-          key={`page-${p}`}
+          key={p}
           onClick={() => onChange(p)}
           className={[
             "rounded-md border px-3 py-1.5 font-secondary shadow-sm transition-colors",
@@ -399,14 +390,12 @@ function Pagination({ current, totalPages, onChange }) {
               ? "border-primary bg-primary text-white"
               : "border-slate-200 bg-white text-primary hover:bg-slate-50",
           ].join(" ")}
-          aria-current={p === current ? "page" : undefined}
         >
           {p}
         </button>
       ))}
 
       <button
-        type="button"
         disabled={current === totalPages}
         onClick={() => onChange(current + 1)}
         className="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-primary font-secondary shadow-sm disabled:opacity-40"
@@ -417,15 +406,13 @@ function Pagination({ current, totalPages, onChange }) {
   );
 }
 
-/* ---------- Mobile sticky "Next ›" ---------- */
+/* ---------- Mobile Sticky Next Button ---------- */
 function StickyNextButton({ onClick }) {
   return (
     <div className="lg:hidden fixed bottom-4 right-4 z-30">
       <button
-        type="button"
         onClick={onClick}
         className="rounded-full bg-primary text-white px-5 py-3 text-[13px] shadow-lg shadow-primary/30 active:scale-95"
-        aria-label="Go to next page"
       >
         Next ›
       </button>

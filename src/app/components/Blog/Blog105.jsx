@@ -5,20 +5,42 @@ import { usePathname } from "next/navigation";
 import { IoCheckmarkDone } from "react-icons/io5";
 import Link from "next/link";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { FiShare2, FiCopy } from "react-icons/fi";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaTelegramPlane,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
+import { POSTS } from "../../lib/blogs-data";
+
+
+const buildHref = (slugOrPath = "") => {
+  if (!slugOrPath) return "/blogs";
+  const s = String(slugOrPath).trim();
+  if (s.startsWith("/blogs")) return s.startsWith("/") ? s : `/${s}`;
+  if (s.startsWith("/")) return s;
+  // remove accidental leading/trailing slashes and ensure single prefix
+  return `/blogs/${s.replace(/^\/+|\/+$/g, "")}`;
+};
+
+/* ------------------ component ------------------ */
 export default function AEOArticlePage105() {
+  const post = POSTS.find((p) => p.id === 105) || POSTS[0];
+
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BANNER */}
       <section className="mx-auto max-w-8xl px-4 sm:px-6 pt-6">
         <SplitHeroBanner
-          href="#"
-          imageSrc="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg"
-          imageAlt="Benefits of hiring a Chennai-based digital marketing agency for business growth"
-          category="Digital Marketing Services"
-          title={[
-            "Why Chennai Brands Grow Faster with Local Digital Partners.",
-          ]}
+          post={post}
+          href={buildHref(post.slug)} // <-- normalized href
+          imageSrc={post.cover}
+          imageAlt={post.coverAlt}
+          category={post.category}
+          title={[post.bannerTitle]}
           author={{
             name: "Daniel Joseph",
             slug: "daniel-joseph",
@@ -26,8 +48,8 @@ export default function AEOArticlePage105() {
             avatar:
               "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
           }}
-          updatedAt="Nov 21, 2025"
-          readMins={8}
+          updatedAt={post.date}
+          readMins={post.readMins}
         />
       </section>
 
@@ -207,17 +229,17 @@ export default function AEOArticlePage105() {
                   "Campaigns stay on-brand",
                   "Creative tone matches the Chennai audience’s expectations",
                 ].map((name) => (
-                   <ul key={name} className="flex items-start gap-3">
-                      <span
-                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
-                        aria-hidden="true"
-                      >
-                        <IoCheckmarkDone className="h-5 w-5 text-primary" />
-                      </span>
-                      <span className="text-black/80 section-phara text-lg">
-                        <span className="font-medium text-black">{name}</span>
-                      </span>
-                    </ul>
+                  <li key={name} className="flex items-start gap-3">
+                    <span
+                      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
+                      aria-hidden="true"
+                    >
+                      <IoCheckmarkDone className="h-5 w-5 text-primary" />
+                    </span>
+                    <span className="text-black/80 section-phara text-lg">
+                      <span className="font-medium text-black">{name}</span>
+                    </span>
+                  </li>
                 ))}
               </ul>
 
@@ -263,17 +285,17 @@ export default function AEOArticlePage105() {
                   "Micro-trends on platforms like Instagram and YouTube",
                   "Offline influences that affect online behaviour",
                 ].map((name) => (
-                  <ul key={name} className="flex items-start gap-3">
-                      <span
-                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
-                        aria-hidden="true"
-                      >
-                        <IoCheckmarkDone className="h-5 w-5 text-primary" />
-                      </span>
-                      <span className="text-black/80 section-phara text-lg">
-                        <span className="font-medium text-black">{name}</span>
-                      </span>
-                    </ul>
+                  <li key={name} className="flex items-start gap-3">
+                    <span
+                      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
+                      aria-hidden="true"
+                    >
+                      <IoCheckmarkDone className="h-5 w-5 text-primary" />
+                    </span>
+                    <span className="text-black/80 section-phara text-lg">
+                      <span className="font-medium text-black">{name}</span>
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -298,17 +320,17 @@ export default function AEOArticlePage105() {
                   "digital marketing agency chennai",
                   "interior designers ECR",
                 ].map((name) => (
-                   <ul key={name} className="flex items-start gap-3">
-                      <span
-                        className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
-                        aria-hidden="true"
-                      >
-                        <IoCheckmarkDone className="h-5 w-5 text-primary" />
-                      </span>
-                      <span className="text-black/80 section-phara text-lg">
-                        <span className="font-medium text-black">{name}</span>
-                      </span>
-                    </ul>
+                  <li key={name} className="flex items-start gap-3">
+                    <span
+                      className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
+                      aria-hidden="true"
+                    >
+                      <IoCheckmarkDone className="h-5 w-5 text-primary" />
+                    </span>
+                    <span className="text-black/80 section-phara text-lg">
+                      <span className="font-medium text-black">{name}</span>
+                    </span>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -340,7 +362,7 @@ export default function AEOArticlePage105() {
               <ul className="ml-10 mt-3 space-y-2">
                 {["CTR", "Engagement", "Conversion rate", "Brand trust"].map(
                   (name) => (
-                    <ul key={name} className="flex items-start gap-3">
+                    <li key={name} className="flex items-start gap-3">
                       <span
                         className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600/10 ring-1 ring-blue-600/20"
                         aria-hidden="true"
@@ -350,7 +372,7 @@ export default function AEOArticlePage105() {
                       <span className="text-black/80 section-phara text-lg">
                         <span className="font-medium text-black">{name}</span>
                       </span>
-                    </ul>
+                    </li>
                   )
                 )}
               </ul>
@@ -446,7 +468,8 @@ export default function AEOArticlePage105() {
 
             <div className="ml-10 mb-4">
               <h3 className="section-title text-2xl text-secondary text-left my-5">
-                A Chennai digital marketing agency gives you immediate access to:
+                A Chennai digital marketing agency gives you immediate access
+                to:
               </h3>
               <ul className="mt-4 space-y-2">
                 {[
@@ -587,7 +610,7 @@ export default function AEOArticlePage105() {
 
       {/* Bottom: Related Posts */}
       <section className="mx-auto section-container px-4 sm:px-6 pb-14">
-        <RelatedPostsSection posts={relatedPosts} />
+        <RelatedPostsSection posts={relatedPosts.map((p) => ({ ...p, slug: buildHref(p.slug) }))} />
       </section>
     </main>
   );
@@ -727,30 +750,30 @@ function CategoriesCard({ items }) {
 /* HERO BANNER */
 function SplitHeroBanner({
   href = "#",
-  imageSrc = "/banner/aoe-blogs-web.webp",
-  imageAlt = "AI Search Optimization Strategies for Businesses in 2025 – Visual Guide to AEO Implementation",
-  category = "SEO",
-  title = ["What Is lms.txt? The", "New AI Web Standard", "for 2025"],
-  author = {
-    name: "Daniel Joseph",
-    slug: "daniel-joseph",
-    role: "Content Writer",
-    avatar: "/assets/teams/daniel.png",
-  },
-  updatedAt = "Oct 22, 2025",
-  readMins = 11,
+  imageSrc,
+  imageAlt,
+  category,
+  title,
+  author,
+  updatedAt,
+  readMins,
+  post = null,
 }) {
+  const shareUrl =
+    typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareTitle = Array.isArray(title) ? title.join(" ") : title;
+
   return (
     <div
       className="group relative block w-full overflow-hidden rounded-xl border border-slate-200 shadow-sm"
-      aria-label={`Read: ${title.join(" ")}`}
+      aria-label={`Read: ${shareTitle}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
           <Link
             href={href}
-            aria-label={`Read: ${title.join(" ")}`}
+            aria-label={`Read: ${shareTitle}`}
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
@@ -784,16 +807,18 @@ function SplitHeroBanner({
             </div>
 
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
-              {title.map((line, i) => (
-                <span key={i} className="block">
-                  {line}
-                </span>
-              ))}
+              {Array.isArray(title)
+                ? title.map((line, i) => (
+                    <span key={i} className="block">
+                      {line}
+                    </span>
+                  ))
+                : title}
             </h2>
           </div>
 
           {/* BOTTOM META */}
-          <div className="mt-8">
+          <div className="mt-8 flex items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-100/90">
               <Link
                 href={`/author/${author.slug}`}
@@ -839,7 +864,218 @@ function SplitHeroBanner({
                 <span className="font-secondary text-slate-300/85">Read</span>
               </div>
             </div>
+
+            {/* Share buttons placed on the right of meta */}
+            <div className="z-[2]">
+              <ShareButtons
+                slug={buildHref(post?.slug)}
+                post={post}
+                title={shareTitle}
+              />
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ShareButtons({
+  url = "",
+  slug = "",
+  post = null,
+  title = "",
+  domain = "",
+}) {
+  const [open, setOpen] = React.useState(false);
+  const [copied, setCopied] = React.useState(false);
+  const containerRef = React.useRef(null);
+  const [absoluteUrl, setAbsoluteUrl] = React.useState(url || "");
+
+  // build absolute URL on client or from domain prop
+  React.useEffect(() => {
+    if (url) {
+      setAbsoluteUrl(url);
+      return;
+    }
+    const base =
+      domain || (typeof window !== "undefined" ? window.location.origin : "");
+    // prefer passed slug (which should already include /blogs/), otherwise fall back to post
+    const candidate = slug || (post && buildHref(post.slug)) || "";
+    if (!candidate) return;
+    const path = candidate.startsWith("/") ? candidate : `/${candidate}`;
+    if (base) setAbsoluteUrl(base + path);
+    else setAbsoluteUrl(path);
+  }, [url, slug, post, domain]);
+
+  const encodedUrl = encodeURIComponent(absoluteUrl || "");
+  const encodedTitle = encodeURIComponent(
+    title || (post && post.title) || (typeof document !== "undefined" ? document.title : "")
+  );
+
+  // close on outside click / Esc
+  React.useEffect(() => {
+    const onDocClick = (e) => {
+      if (!containerRef.current) return;
+      if (!containerRef.current.contains(e.target)) setOpen(false);
+    };
+    const onEsc = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDocClick);
+    document.addEventListener("touchstart", onDocClick);
+    document.addEventListener("keydown", onEsc);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      document.removeEventListener("touchstart", onDocClick);
+      document.removeEventListener("keydown", onEsc);
+    };
+  }, []);
+
+  const openPopup = (shareUrl, preferSameWindow = false) => {
+    try {
+      const w = 700;
+      const h = 520;
+      const left = window.screenX + (window.innerWidth - w) / 2;
+      const top = window.screenY + (window.innerHeight - h) / 2;
+      if (preferSameWindow) {
+        window.location.href = shareUrl;
+      } else {
+        window.open(
+          shareUrl,
+          "share-window",
+          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`
+        );
+      }
+    } catch (e) {
+      window.open(shareUrl, "_blank", "noopener");
+    } finally {
+      setOpen(false);
+    }
+  };
+
+  const onCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(absoluteUrl);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  return (
+    <div ref={containerRef} className="relative inline-block text-left">
+      <button
+        type="button"
+        onClick={() => setOpen((s) => !s)}
+        aria-haspopup="true"
+        aria-expanded={open}
+        className="inline-flex items-center gap-2 rounded-md bg-white/10 px-3 py-2 text-sm font-medium backdrop-blur-sm hover:bg-white/20 transition"
+      >
+        <FiShare2 className="h-4 w-4 text-white" />
+        <span className="sr-only">Share</span>
+      </button>
+
+      <div
+        className={[
+          "absolute right-0 mt-2 w-auto rounded-md border bg-white shadow-lg ring-1 ring-black/5 transition-all",
+          open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-1",
+        ].join(" ")}
+        style={{
+          transitionProperty: "opacity, transform",
+          padding: open ? "8px" : "0",
+        }}
+        aria-hidden={!open}
+      >
+        <div className="flex items-center gap-3">
+          {/* Facebook */}
+          <button
+            onClick={() =>
+              openPopup(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`)
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Facebook"
+            title="Facebook"
+          >
+            <FaFacebookF className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Twitter */}
+          <button
+            onClick={() =>
+              openPopup(`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`)
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Twitter"
+            title="Twitter"
+          >
+            <FaXTwitter className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* LinkedIn */}
+          <button
+            onClick={() =>
+              openPopup(`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`)
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on LinkedIn"
+            title="LinkedIn"
+          >
+            <FaLinkedinIn className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* WhatsApp */}
+          <button
+            onClick={() =>
+              openPopup(`https://wa.me/?text=${encodedTitle}%20${encodedUrl}`, true)
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on WhatsApp"
+            title="WhatsApp"
+          >
+            <FaWhatsapp className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Telegram */}
+          <button
+            onClick={() =>
+              openPopup(`https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`, true)
+            }
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
+            aria-label="Share on Telegram"
+            title="Telegram"
+          >
+            <FaTelegramPlane className="h-4 w-4 text-slate-700" />
+          </button>
+
+          {/* Copy link */}
+          <button
+            onClick={onCopy}
+            className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition relative"
+            aria-label="Copy link"
+            title="Copy link"
+          >
+            <FiCopy className="h-4 w-4 text-slate-700" />
+            <span className="text-sm text-slate-700 hidden sm:inline">Copy</span>
+
+            <span
+              role="status"
+              aria-live="polite"
+              className={[
+                "absolute -bottom-7 left-1/2 -translate-x-1/2 rounded px-2 py-1 text-xs shadow-sm",
+                copied ? "visible opacity-100" : "invisible opacity-0",
+              ].join(" ")}
+              style={{
+                background: "rgba(34,34,34,0.9)",
+                color: "white",
+                transition: "opacity 180ms ease",
+              }}
+            >
+              {copied ? "Copied!" : ""}
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -917,7 +1153,7 @@ const rightCategories = [
   },
 ];
 
-/* Mock related posts */
+/* Mock related posts (slug values normalized later when rendering) */
 const relatedPosts = [
   {
     id: 104,
@@ -925,9 +1161,9 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
     date: "November 14, 2025",
     readMins: 10,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
-    coverAlt:
-      "Chennai digital marketing agency delivering pan-India ROI ",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
+    coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
     deck:
       "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
     category: "Digital Marketing Services",
@@ -938,25 +1174,27 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
     date: "November 28, 2025",
     readMins: 10,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
     coverAlt:
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
     deck:
       "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-      category: "Digital Marketing Services",
+    category: "Digital Marketing Services",
   },
   {
     id: 107,
     title: "Top 10 Digital Marketing Agencies in Chennai",
     slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
-    date: "Decmber 5, 2025",
+    date: "December 05, 2025", // fixed typo
     readMins: 15,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
     coverAlt:
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck:
       "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-      category: "Digital Marketing Services",
+    category: "Digital Marketing Services",
   },
 ];
 
@@ -1141,9 +1379,11 @@ function RelatedPostsSection({ posts = [] }) {
 }
 
 function RelatedPostCard({ post }) {
+  // ensure href is normalized
+  const href = buildHref(post.slug);
   return (
     <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
-      <Link href={post.slug} className="absolute inset-0 z-[1]">
+      <Link href={href} className="absolute inset-0 z-[1]">
         <span className="sr-only">{`Read: ${post.title}`}</span>
       </Link>
 
@@ -1164,9 +1404,7 @@ function RelatedPostCard({ post }) {
         <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
           {post.title}
         </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-          {post.deck}
-        </p>
+        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
 
         <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
           <span>{post.date}</span>
