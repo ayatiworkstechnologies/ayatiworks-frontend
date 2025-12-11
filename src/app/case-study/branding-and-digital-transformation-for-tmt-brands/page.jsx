@@ -19,9 +19,9 @@ export default function VolvoPages() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner.jpg",
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/apex-banner-web.svg",
           mobileImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner-mob.jpg",
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/apex-banner-mob.svg",
           imageAlt:
             "Apex Dura branding and marketing campaign by Ayatiworks showcasing logo, identity, and digital presence.",
         }}
@@ -44,7 +44,7 @@ export default function VolvoPages() {
         challengeEyebrow="Apex Steel carried a legacy identity, but its new TMT division needed to break from the past."
         challengeCopy="The brand lacked a compelling persona, strong recall, and a communication system that could scale in a hyper-competitive TMT market."
         challengeCopy1=" Ayatiworks stepped in to engineer clarity, character, and differentiation."
-        challengeImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-2.png"
+        challengeImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-10.svg"
         challengeImgAlt="Volvo challenge section background"
         objectiveTitle="The Objective"
         objectiveSubTitle="To build a complete brand ecosystem that: "
@@ -54,13 +54,13 @@ export default function VolvoPages() {
           "Amplifies visibility across South India",
           "Unifies voice, design, and communication across every touchpoint",
         ]}
-        carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-1.png"
+        carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-1.svg"
         carImgAlt="Volvo crossover image"
         className=""
       />
       <ResultsShowcase
         title="The Transformation: A Brand Reforged"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-2.svg"
         metaHeading="Naming & Brand Philosophy"
         metaPoints={[
           "Through extensive ideation, one name stood tall, Apex Dura.",
@@ -74,7 +74,7 @@ export default function VolvoPages() {
           "Structural integrity",
           "The signature rib pattern evolved into a design language, elevating recall across campaigns and collaterals. ",
         ]}
-        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-3.svg"
         //         closingTitle="From Test Drive to a Long Drive: A Journey of Trust"
         //         closingCopy={`What started as one Volvo with Ayatiworks in 2024,
         // became a multi-model narrative powered by precision creative,
@@ -89,7 +89,7 @@ export default function VolvoPages() {
       />
       <ResultsShowcase
         title="Brand Bible Development"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-4.svg"
         metaHeading="We codified the brand through a comprehensive Brand Book, defining:"
         metaPoints={[
           "Logo usage",
@@ -104,7 +104,7 @@ export default function VolvoPages() {
       />
       <ResultsShowcase
         title="The Execution"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-5.svg"
         metaHeading="Brand Identity & Collaterals"
         metaPoints={[
           "From business cards to brochures, every asset was a bold expression of the Apex Dura persona, rugged, modern, high impact.",
@@ -120,12 +120,12 @@ export default function VolvoPages() {
           "Platform-specific content strategies",
           "All communications spoke one unified, authoritative voice.",
         ]}
-        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-6.svg"
         className=""
       />
       <ResultsShowcase
         title="The Results: Strategy Into Strength"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-7.svg"
         metaHeading="Market Impact"
         metaPoints={[
           "A bold, differentiated position in a cluttered TMT category",
@@ -147,7 +147,7 @@ Apex Dura didn’t just enter the market.
 It claimed its territory.
 
 `}
-        logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-6.png"
+        logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-12.svg"
         className=""
       />
       <WhyWorkedCta
@@ -159,35 +159,35 @@ It claimed its territory.
         socialPosts={[
           {
             platform: "Instagram",
-            title: "A big surprise is cresting the horizon",
-            metrics: "1.2M impressions · 1k+ Likes ",
-            href: "https://www.instagram.com/p/DNZ0R6SPmLM/?utm_source=ig_web_copy_link",
+            title: "It begins with a grip. Soft, silent, gentle, yet unbreakable.",
+            metrics: "1.2M impressions · 16k+ Likes ",
+            href: "https://www.instagram.com/p/DLzqIQ9J4tg/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-1.webp",
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-1.mp4",
           },
           {
             platform: "Instagram",
-            title: "Electric Volvo EX30",
-            metrics: "1.2M impressions · 1k Likes ",
-            href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
+            title: "Apex Dura doesn’t just reduce curing time",
+            metrics: "10k+ impressions · 3k Likes ",
+            href: "https://www.instagram.com/p/DNDbG7wvDW_/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-2.webm",
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-2.jpg",
           },
           {
             platform: "Instagram",
-            title: "Volvo family with the Volvo C40",
-            metrics: "1.2M impressions · 500+ Likes ",
-            href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
+            title: "For builders, every column, every joint,",
+            metrics: "10k+ impressions · 5k+ Likes ",
+            href: "https://www.instagram.com/p/DN-r-5OCXTW/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-3.webm",
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-3.mp4",
           },
           {
             platform: "Instagram",
-            title: "Experience luxury Volvo XC90",
-            metrics: "1.2M impressions · 6k+ Likes ",
+            title: "In Karnataka, trust isn’t won by tall claims.",
+            metrics: "10k+ impressions · 2.5k+ Likes ",
             href: "https://www.instagram.com/p/DMAaqFXvl2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-4.jpg",
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-4.mp4",
           },
         ]}
         ctaHeadline="Ready to Build Brands That Endure?"
@@ -196,10 +196,10 @@ It claimed its territory.
 `}
         ctaButtonText="Get in Touch"
         ctaHref="/contact-us"
-        ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-7.png"
+        ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-11.svg"
         className=""
-        ctaHeadlineColor="text-white "
-        ctaCopyColor="text-white/90"
+        ctaHeadlineColor="text-primary "
+        ctaCopyColor="text-secondary"
       />
     </main>
   );
