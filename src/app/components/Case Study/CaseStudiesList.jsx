@@ -36,7 +36,7 @@ export default function CaseStudies() {
 
 
         {/* Cards */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((study, i) => (
             <motion.div
               key={i}
@@ -50,7 +50,7 @@ export default function CaseStudies() {
                 <img
                   src={study.image}
                   alt={study.title}
-                  className="w-full h-56 object-cover rounded-t-2xl border-b border-gray-100 transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-76 rounded-t-2xl border-b border-gray-100 transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 

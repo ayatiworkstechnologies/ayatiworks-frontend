@@ -58,7 +58,7 @@ export default function PixelsPerfected() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="rounded-xl shadow-lg w-full h-[280px] md:h-[340px] object-cover"
+                className="w-full h-[280px] md:h-[350px]"
               />
             </motion.div>
 

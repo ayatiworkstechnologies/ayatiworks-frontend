@@ -5,7 +5,7 @@ export const caseStudies = [
     id: 4, // 👈 higher number = lower in display if you sort ascending
     title: "Branding & Digital Transformation for TMT Brands ",
     description: `See how Ayatiworks transformed Apex TMT into Apex Dura, South India’s modern steel powerhouse, through naming, branding, GTM strategy, and digital presence`,
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/apex-banner-web.svg",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/apex.png",
     link: "/case-study/branding-and-digital-transformation-for-tmt-brands",
   },
   {
