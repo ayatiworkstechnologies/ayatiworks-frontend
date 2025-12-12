@@ -14,7 +14,7 @@ export const caseStudies = [
     description: `Volvo wasn’t just looking for a digital agency.
 They were scouting for a strategic pit crew to tune up their brand visibility, simplify marketing gears, and rev up sales, all without burning extra fuel.
 That's where Ayatiworks stepped in!`,
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/case-car.png",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/case-study-volvo.png",
     link: "/case-study/how-Ayatiworks-propelled-Volvos-digital-presence-by-250-percentage-increase-in-impressions",
   },
   {
@@ -22,7 +22,7 @@ That's where Ayatiworks stepped in!`,
     title: "Jeep India Independence Day Merchandise Campaign",
     description:
       "Jeep India rolled into Ayatiworks with a mission: to overhaul their merchandise microsite with a sharper, more stylish UI/UX and roll out Independence Day creatives that don’t just wave the flag, they make wallets open. With only three days on the clock, expectations were riding high, Jeep wanted copy that was catchy and salesy, and Ayatiworks delivered with style under pressure.",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/jeep.png",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/case-study-jeep.png",
     link: "/case-study/Jeep-India-Independence-Day-Merchandise-Sales-Campaign",
   },
   {
@@ -31,7 +31,7 @@ That's where Ayatiworks stepped in!`,
     description: `Nippo approached Ayatiworks with a unique hurdle, while the brand was widely known for batteries, very few consumers realized Nippo also made torches, bulbs, and mosquito repellents.
 
 The objective was clear: Shift perception and create buzz around the Nippo Torch as a fun, family-friendly product.`,
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/nipo.png",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/case-study-nippo.png",
     // link: "#",
     link: "/case-study/Reposition-Nippo-and-Brand-Awareness-Campaign",
   },
