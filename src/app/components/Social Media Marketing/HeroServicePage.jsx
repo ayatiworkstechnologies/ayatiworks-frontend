@@ -233,7 +233,7 @@ function HeroServicePage() {
               As a full-stack digital partner, Ayatiworks integrates Social
               Media Marketing with our broader suite of{" "}
               <Link
-                href="https://www.ayatiworks.com/"
+                href="https://www.ayatiworks.com/digital-marketing-services"
                 className="text-secondary font-semibold underline underline-offset-4 hover:opacity-80 transition"
               >
                 Digital Marketing Services
