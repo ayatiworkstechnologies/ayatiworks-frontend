@@ -6,6 +6,7 @@ import Loader from "./components/Loader";
 import ScrollProgressBar from "./components/ScrollProgressBar";
 import ScrollToggleButton from "./components/ScrollToggleButton";
 import GtmScript from "./components/GtmScript";
+import Script from "next/script";
 
 export const metadata = {
   title:
@@ -36,6 +37,23 @@ export default function RootLayout({ children }) {
       <body>
         {/* GTM scripts */}
         <GtmScript />
+
+        <Script
+          id="hotjar"
+          strategy="afterInteractive"
+        >
+          {`
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6426186,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  `}
+        </Script>
+
 
         {/* App chrome */}
         <Loader />

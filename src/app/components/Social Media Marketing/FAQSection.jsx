@@ -5,26 +5,34 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const faqs = [
   {
-    question:
-      "1. How to choose the right SEO company for my business? ",
+    question: "Q1. How much does SMM cost in Chennai?",
     answer:
-      "It’s easier said than done, when it comes to choosing the best SEO company that can accelerate organic traffic for your business. Look for the SEO company’s history with clients, check if they have worked in your business niche in the past, if you know how to evaluate their SEO strategies cross check them yourself or hire an SEO consultant who can help you verify the SEO strategy. Get a FREE SEO Audit from them and if the company aligns with your goals and objectives then consider working with them. ",
+      "Budgets depend on industry, complexity, and goals. Most Chennai brands begin with structured monthly retainers aligned to ROI.",
   },
   {
-    question: "2. Is SEO better than paid ads? ",
+    question: "Q2. Which platforms work best for Chennai?",
     answer:
-      "One must understand that SEO and Paid ads are 2 different available ways to get your clients closer to your business and take effective business decisions. SEO is about working on multiple factors organically that aligns with Search Engine Guidelines, bringing them together, optimize it better than competitors, ensure it resonates with end users and then fetch results which can take anywhere 3 to 6 months to kickstart results. On the flipside Paid Ads is considered as a cash cow which is instant spend money to get your customers closer to your business, conversion depends on the effectiveness of the advertisement. ",
+      "Instagram and Facebook for B2C, LinkedIn for B2B, and YouTube for storytelling.",
   },
   {
-    question: "3. What is the cost of SEO in Chennai? ",
+    question: "Q3. Can you create Tamil/Tanglish content?",
     answer:
-      "Now that differs based on the objective of the project, the expertise of the SEO agency or SEO expert. Commonly SEO Charges start from 15,000/- per month charged by SEO Companies in Chennai. As we all know, one solution cannot fit all the businesses, the price entirely depends on the service required.  ",
+      "Yes, culturally resonant content improves engagement dramatically.",
   },
- 
+  {
+    question: "Q4. How quickly will I see results?",
+    answer:
+      "Paid ads deliver results within 7–21 days. Organic SMM shows meaningful lift within 45–90 days.",
+  },
+  {
+    question: "Q5. Do you offer influencer marketing?",
+    answer:
+      "Yes, with Chennai micro and macro influencers.",
+  },
 ];
+
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
