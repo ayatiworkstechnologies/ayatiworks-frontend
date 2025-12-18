@@ -1,5 +1,7 @@
 "use client";
-import React from "react";
+
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { FaRegDotCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
@@ -112,6 +114,8 @@ const caseStudies = [
     id: 1,
     title: "Hero Motors — Chennai, TN",
     subtitle: "Regional Performance Campaign",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
     cases: [
       "90X surge in walk-ins across metro cities, including Chennai.",
       "Regional storytelling backed by multilingual social media marketing.",
@@ -126,6 +130,8 @@ const caseStudies = [
     id: 2,
     title: "Naga Foods — Tamil Nadu",
     subtitle: "Ramadan Campaign & Internal Communication",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
     cases: [
       "90X increase in online pasta sales across Tamil Nadu.",
       "High cultural engagement through festival-led storytelling.",
@@ -140,6 +146,8 @@ const caseStudies = [
     id: 3,
     title: "Royal Enfield — Chennai",
     subtitle: "Mobile Bike Servicing Awareness Drive",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
     cases: [
       "60X increase in customer enquiries.",
       "30X growth in showroom walk-ins.",
@@ -153,6 +161,8 @@ const caseStudies = [
     id: 4,
     title: "Nithya Amirtham Eternal Fine Dine",
     subtitle: "Nungambakkam (Luxury F&B Launch)",
+    image:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
     cases: [
       "50X footfalls + 30X surge in signature dish orders",
       "SMM campaigns + influencer partnerships + elite audience targeting",
@@ -164,6 +174,34 @@ const caseStudies = [
 ];
 
 function HeroServicePage() {
+  const [index, setIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(3);
+
+  /* ================= RESPONSIVE CARD COUNT ================= */
+  useEffect(() => {
+    const updateCards = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1); // mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCards(2); // tablet
+      } else {
+        setVisibleCards(3); // desktop
+      }
+    };
+
+    updateCards();
+    window.addEventListener("resize", updateCards);
+    return () => window.removeEventListener("resize", updateCards);
+  }, []);
+
+  /* ================= INDEX CONTROL ================= */
+  const maxIndex = Math.max(steps.length - visibleCards, 0);
+
+  useEffect(() => {
+    if (index > maxIndex) {
+      setIndex(maxIndex);
+    }
+  }, [index, maxIndex]);
   return (
     <>
       <section className="section-container py-12">
@@ -191,7 +229,7 @@ function HeroServicePage() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 items-top">
           {/* Left Content */}
 
           <motion.div
@@ -245,6 +283,29 @@ function HeroServicePage() {
               Which is why{" "}
               <strong> generic SMM strategies underperform.</strong>{" "}
             </p>
+            {/* CTA Button */}
+            <Link href="https://www.ayatiworks.com/contact-us" passHref>
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="
+                          inline-flex
+                          items-center
+                          justify-center
+                          text-center
+                          bg-secondary text-white
+                          font-primary text-lg
+                          px-10 py-4
+                          rounded-full
+                          shadow-lg hover:shadow-2xl
+                          transition-all duration-300
+                          cursor-pointer
+                          leading-none mt-4
+                        "
+              >
+                CLAIM YOUR FREE SMM AUDIT
+              </motion.span>
+            </Link>
           </motion.div>
 
           {/* Right - Sticky Image */}
@@ -258,39 +319,15 @@ function HeroServicePage() {
             <div className="sticky space-y-6">
               {/* Floating Image */}
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-1.png"
                 alt="Ayatiworks Social Media Marketing Team"
-                className="w-full h-auto mx-auto rounded-xl shadow-lg"
+                className="w-full h-full mx-auto"
                 transition={{
                   duration: 4,
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
               />
-
-              {/* CTA Button */}
-              <Link href="https://www.ayatiworks.com/contact-us" passHref>
-                <motion.span
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="
-                          inline-flex
-                          items-center
-                          justify-center
-                          text-center
-                          bg-secondary text-white
-                          font-primary font-semibold text-lg
-                          px-10 py-4
-                          rounded-full
-                          shadow-lg hover:shadow-2xl
-                          transition-all duration-300
-                          cursor-pointer
-                          leading-none
-                        "
-                >
-                  CLAIM YOUR FREE SMM AUDIT
-                </motion.span>
-              </Link>
             </div>
           </motion.div>
         </div>
@@ -321,9 +358,9 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/SocialMedia-1.png"
+                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-2.png"
                 alt="Search Engines Work"
-                className="w-full h-auto  mx-auto "
+                className="w-full h-full mx-auto "
               />
             </div>
           </div>
@@ -403,7 +440,7 @@ function HeroServicePage() {
                     justify-center
                     text-center
                     bg-secondary text-white
-                    font-primary font-semibold text-lg
+                    font-primary text-lg
                     px-10 py-4
                     rounded-full
                     shadow-lg hover:shadow-2xl
@@ -555,16 +592,17 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/SocialMedia-1.png"
+                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-3.png"
                 alt="Search Engines Work"
-                className="w-full h-auto  mx-auto "
+                className="w-full h-full  mx-auto "
               />
             </div>
           </div>
         </div>
       </section>
+
       <section className="section-container py-12">
-        {/* Title */}
+        {/* ================= TITLE ================= */}
         <div className="mb-12">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
@@ -576,6 +614,7 @@ function HeroServicePage() {
             <span className="mb-2 block">
               Ayatiworks’ Proven 6-Step Social Media Growth Framework
             </span>
+
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
@@ -585,47 +624,84 @@ function HeroServicePage() {
           </motion.h1>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {steps.map((step) => (
-            <div
-              key={step.id}
-              className={`bg-white shadow-md border border-gray-200 p-6 rounded-md`}
+        {/* ================= SLIDER ================= */}
+        <div className="relative">
+          {/* ===== Arrows ===== */}
+          <div className="absolute -top-14 right-0 flex gap-3">
+            <button
+              onClick={() => setIndex((i) => Math.max(i - 1, 0))}
+              disabled={index === 0}
+              className="p-2 border rounded-full disabled:opacity-30"
             >
-              {/* Step Title */}
-              <h3 className="font-primary text-secondary font-medium text-2xl mb-4">
-                {step.title}
-                {step.subtitle && (
-                  <span className="block text-lg text-secondary mt-1">
-                    {step.subtitle}
-                  </span>
-                )}
-              </h3>
+              <ChevronLeft />
+            </button>
 
-              {/* Step Points */}
-              <ul className="font-primary text-lg space-y-2 text-black/80 mb-4">
-                {step.points.map((point, i) => (
-                  <li key={i}>• {point}</li>
-                ))}
-              </ul>
+            <button
+              onClick={() => setIndex((i) => (i < maxIndex ? i + 1 : i))}
+              disabled={index === maxIndex}
+              className="p-2 border rounded-full disabled:opacity-30"
+            >
+              <ChevronRight />
+            </button>
+          </div>
 
-              {/* Game Changing Action */}
-              {step.subtitle1 && (
-                <div>
-                  <h2 className="text-secondary font-primary text-lg font-medium mb-2">
-                    {step.subtitle1}
-                  </h2>
-                  <ul className="font-primary text-lg space-y-2 text-black/80">
-                    {step.points1.map((point, i) => (
-                      <li key={i}>✔ {point}</li>
-                    ))}
-                  </ul>
+          {/* ===== Track ===== */}
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${index * (100 / visibleCards)}%)`,
+              }}
+            >
+              {steps.map((step) => (
+                <div
+                  key={step.id}
+                  className="flex-shrink-0 px-3"
+                  style={{ width: `${100 / visibleCards}%` }}
+                >
+                  {/* ================= CARD ================= */}
+                  <div className="relative bg-white p-6 rounded-md min-h-[260px]">
+                    {/* Left centered border */}
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 h-[200px] w-[4px] bg-secondary rounded-full"></span>
+
+                    <div className="pl-6">
+                      <h3 className="font-primary text-secondary font-medium text-2xl mb-4">
+                        {step.title}
+                        {step.subtitle && (
+                          <span className="block text-lg text-secondary mt-1">
+                            {step.subtitle}
+                          </span>
+                        )}
+                      </h3>
+
+                      <ul className="font-primary text-lg space-y-2 text-black/80 mb-4">
+                        {step.points.map((point, i) => (
+                          <li key={i}>• {point}</li>
+                        ))}
+                      </ul>
+
+                      {step.subtitle1 && (
+                        <div>
+                          <h2 className="text-secondary font-primary text-lg font-medium mb-2">
+                            {step.subtitle1}
+                          </h2>
+                          <ul className="font-primary text-lg space-y-2 text-black/80">
+                            {step.points1.map((point, i) => (
+                              <li key={i}>✔ {point}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  {/* ================= END CARD ================= */}
                 </div>
-              )}
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </section>
+
       <section className="section-container py-12">
         {/* Title */}
         <div className="mb-12">
@@ -648,85 +724,71 @@ function HeroServicePage() {
           </motion.h1>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
-          {/* Left - Sticky Image */}
-          <div className="hidden md:block">
-            <div className="sticky top-20">
-              <img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
-                alt="Social Media Marketing"
-                className="w-full h-auto mx-auto rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
+        {/* Case Studies */}
+        <div className="space-y-20">
+          {caseStudies.map((motive, index) => {
+            const isReverse = index % 2 === 1;
 
-          {/* Right Content */}
-          <div className="text-black/80 space-y-6">
-            {/* <p className="text-base sm:text-lg md:text-lg text-secondary font-secondary font-medium ">
-              If your motive is Results our motive is to Produce them!
-            </p>
-            <p className="text-base sm:text-lg md:text-lg text-secondary font-secondary font-medium ">
-              If you got a project to execute, we would be your best and
-              transparent option, our previous works, records, awards and
-              accolades speak volumes of our works.
-            </p>
-            <p className="text-base sm:text-lg md:text-lg text-secondary font-secondary font-medium ">
-              Our prime focus when we take on a project is engagement,
-              conversions, and revenue. The proof is in the pudding!
-            </p>
-            <p className="text-base sm:text-lg md:text-lg text-secondary font-secondary font-medium ">
-              Your Motive to Join the Bandwagon of Our Happy Clients
-            </p> */}
+            return (
+              <div
+                key={motive.id}
+                className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-top ${
+                  isReverse ? "md:flex-row-reverse" : ""
+                }`}
+              >
+                {/* IMAGE */}
+                <div className={`${isReverse ? "md:order-2" : "md:order-1"}`}>
+                  <img
+                    src={motive.image}
+                    alt={motive.title}
+                    className="w-full h-96"
+                  />
+                </div>
 
-            {/* Motives */}
-            <ul className="space-y-10 text-black/80">
-              {caseStudies.map((motive) => (
-                <li key={motive.id} className="flex gap-4">
-                  {/* Icon */}
-                  <FaRegDotCircle className="text-secondary text-2xl flex-shrink-0 mt-1" />
-
-                  {/* Content */}
-                  <div className="space-y-3">
-                    {/* Title + Subtitle */}
-                    <div className="space-y-1">
-                      <span className="text-2xl sm:text-3xl font-primary text-secondary block">
-                        {motive.title}
-                      </span>
-                      <span className="text-black/80 font-primary text-lg sm:text-xl block">
-                        {motive.subtitle}
-                      </span>
-                    </div>
-
-                    {/* Case Studies */}
-                    <div className="space-y-2 pl-1">
-                      {motive.cases.map((caseText, i) => (
-                        <div
-                          key={i}
-                          className="flex items-start gap-2 text-base sm:text-lg text-black/80 font-secondary font-medium "
-                        >
-                          <GoDotFill className="mt-1 flex-shrink-0 text-black/70" />
-                          <span>{caseText}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Subhead + Points */}
-                    {motive.subhead && (
-                      <div className="pt-2">
-                        <h2 className="text-secondary font-semibold text-lg mb-1">
-                          {motive.subhead}
-                        </h2>
-                        <p className="text-base sm:text-lg text-black/80 font-secondary ">
-                          {motive.points}
-                        </p>
-                      </div>
-                    )}
+                {/* CONTENT */}
+                <div
+                  className={`space-y-6 text-black/80 ${
+                    isReverse ? "md:order-1" : "md:order-2"
+                  }`}
+                >
+                  {/* Title */}
+                  <div className="space-y-1">
+                    <span className="text-2xl sm:text-3xl font-primary text-secondary block">
+                      {motive.title}
+                    </span>
+                    <span className="mt-4 text-black/80 font-primary text-lg sm:text-xl block">
+                      {motive.subtitle}
+                    </span>
                   </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+
+                  {/* Case Points */}
+                  <div className="space-y-3 mt-5">
+                    {motive.cases.map((caseText, i) => (
+                      <div
+                        key={i}
+                        className="flex items-start gap-3 text-base sm:text-lg text-black/80 font-secondary font-medium"
+                      >
+                        <GoDotFill className="mt-1 flex-shrink-0 text-black/70" />
+                        <span>{caseText}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Outcome */}
+                  {motive.subhead && (
+                    <div className="pt-2 mt-5">
+                      <h2 className="text-secondary uppercase font-primary text-2xl mb-1">
+                        {motive.subhead} :
+                      </h2>
+                      <p className="text-base sm:text-lg text-black/80 font-secondary">
+                        {motive.points}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -755,6 +817,18 @@ function HeroServicePage() {
         {/* ✅ Make grid parent tall enough */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
           {/* Left Content */}
+          <div className="hidden md:block">
+            {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
+            <div className="sticky top-20">
+              <img
+                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-4.png"
+                alt="Search Engines Work"
+                className="w-full h-full  mx-auto "
+              />
+            </div>
+          </div>
+          {/* Right - Sticky Image */}
+
           <div className="text-black/80 space-y-6">
             {/* Intro Paragraphs */}
             <div className="space-y-4">
@@ -829,17 +903,6 @@ function HeroServicePage() {
               </div>
             </div>
           </div>
-          {/* Right - Sticky Image */}
-          <div className="hidden md:block">
-            {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
-            <div className="sticky top-20">
-              <img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/SocialMedia-2.png"
-                alt="Search Engines Work"
-                className="w-full h-auto  mx-auto "
-              />
-            </div>
-          </div>
         </div>
       </section>
 
@@ -852,9 +915,7 @@ function HeroServicePage() {
             viewport={{ once: true }}
             className="section-title text-left "
           >
-            <span className="mb-2 block">
-              Full-Stack Social Media Marketing Services We Offer
-            </span>
+            <span className="mb-2 block">What Sets Ayatiworks Apart? </span>
 
             <motion.div
               initial={{ scaleX: 0 }}
@@ -868,18 +929,6 @@ function HeroServicePage() {
         {/* ✅ Make grid parent tall enough */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
           {/* Left Content */}
-          <div className="hidden md:block">
-            {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
-            <div className="sticky top-20">
-              <img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/SocialMedia-2.png"
-                alt="Search Engines Work"
-                className="w-full h-auto  mx-auto "
-              />
-            </div>
-          </div>
-
-          {/* Right - Sticky Image */}
           <div className="text-black/80 space-y-6">
             {/* Intro Paragraphs */}
             <div className="space-y-6">
@@ -957,6 +1006,18 @@ function HeroServicePage() {
               .
             </p>
           </div>
+
+          {/* Right - Sticky Image */}
+          <div className="hidden md:block">
+            {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
+            <div className="sticky top-20">
+              <img
+                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-5.png"
+                alt="Search Engines Work"
+                className="w-full h-full  mx-auto "
+              />
+            </div>
+          </div>
         </div>
       </section>
       <AutoImageSlider />
@@ -993,8 +1054,8 @@ function HeroServicePage() {
           className="space-y-6"
         >
           <div className=" border border-secondary/20 rounded-3xl p-10 text-center space-y-5 shadow-sm">
-            <h3 className="text-2xl sm:text-3xl font-primary font-semibold text-secondary">
-              CLAIM YOUR FREE SMM AUDIT
+            <h3 className="text-2xl sm:text-3xl font-primary uppercase text-secondary">
+              CLAIM YOUR FREE Social Media Marketing AUDIT
             </h3>
 
             <p className="text-base sm:text-lg text-black/80 font-secondary font-medium  mx-auto">
@@ -1003,7 +1064,7 @@ function HeroServicePage() {
             </p>
 
             <Link href="https://www.ayatiworks.com/contact-us">
-              <button className="mt-2 inline-flex items-center justify-center gap-2 bg-secondary text-white font-primary font-semibold text-lg px-8 py-4 rounded-full shadow-md hover:shadow-xl hover:opacity-95 transition-all duration-300">
+              <button className="mt-2 inline-flex items-center justify-center gap-2 bg-secondary text-white font-primary text-lg px-8 py-3 rounded-full shadow-md hover:shadow-xl hover:opacity-95 transition-all duration-300">
                 TALK TO AN EXPERT
               </button>
             </Link>
