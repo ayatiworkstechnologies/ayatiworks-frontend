@@ -103,6 +103,23 @@ export const POSTS_BY_AUTHOR = {
       "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
       tag: "Digital Marketing Services",
   },
+   {
+    id: "p8",
+    title: "How digital marketing actually drives business growth",
+    href: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
+    bannerTitle:
+      "Chennai’s Top 10 Trusted Digital Agencies Decoded, Compared, and Curated for Your Brand’s Next Big Leap.",
+    
+    publishedAt: "2025-12-19T17:40:00-05:00",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
+    coverAlt:
+      "Digital marketing services explained as a growth system",
+    excerpt:
+      "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+    tag: "Digital Marketing Services",
+  },
   ],
 
 };
