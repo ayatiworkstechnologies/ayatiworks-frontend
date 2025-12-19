@@ -45,7 +45,7 @@ export default function ContactPage() {
       <Map />
       <PartnersInClimb />
       <Location />
-      <Connection />
+      {/* <Connection /> */}
     </main>
   );
 }

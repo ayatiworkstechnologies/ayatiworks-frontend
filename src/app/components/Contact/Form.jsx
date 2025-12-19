@@ -119,21 +119,22 @@ export default function Form() {
   ];
 
   return (
-    <section className="bg-white section-container py-16 px-6" id="form">
+    <section className="bg-white section-container px-6" id="form">
       <div className=" max-w-[700px] mx-auto">
         {/* Title */}
-        <h2 className="text-center section-title mb-6">Let’s Connect</h2>
-        <p className="text-center text-gray-800 font-secondary text-base mb-8">
+        <h2 className="text-center section-title mb-2">Let’s Connect</h2>
+        <p className="text-center text-gray-800 font-secondary text-base mb-2">
           Your Goal and Our Expertise!
         </p>
-        <p className="text-center text-gray-800 font-secondary text-base mb-10">
-          Fill out the form below and we’ll respond within one business day.
-        </p>
+        
         {/* Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="space-y-6 bg-white p-6 sm:p-8 shadow-lg border border-gray-100"
+          className="space-y-6 bg-white p-6 shadow-lg border border-gray-100"
         >
+          <p className="text-center text-gray-800 font-secondary text-base mb-2">
+          Fill out the form below and we’ll respond within one business day.
+        </p>
           {/* Name */}
           <div>
             <label className="block font-primary text-xl font-medium text-black mb-1">

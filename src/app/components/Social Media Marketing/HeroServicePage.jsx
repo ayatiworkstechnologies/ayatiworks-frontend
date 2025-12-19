@@ -69,10 +69,8 @@ const steps = [
     ],
     subtitle1: "Ads are built for:",
     points1: [
-      "Leads ",
-      "store visits ",
-      "event footfalls",
-      "product sales",
+      "Leads , store visits ",
+      "event footfalls , product sales",
       " website traffic.",
     ],
   },
@@ -115,7 +113,7 @@ const caseStudies = [
     title: "Hero Motors — Chennai, TN",
     subtitle: "Regional Performance Campaign",
     image:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-7.png",
     cases: [
       "90X surge in walk-ins across metro cities, including Chennai.",
       "Regional storytelling backed by multilingual social media marketing.",
@@ -131,7 +129,7 @@ const caseStudies = [
     title: "Naga Foods — Tamil Nadu",
     subtitle: "Ramadan Campaign & Internal Communication",
     image:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-8.png",
     cases: [
       "90X increase in online pasta sales across Tamil Nadu.",
       "High cultural engagement through festival-led storytelling.",
@@ -147,7 +145,7 @@ const caseStudies = [
     title: "Royal Enfield — Chennai",
     subtitle: "Mobile Bike Servicing Awareness Drive",
     image:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-9.png",
     cases: [
       "60X increase in customer enquiries.",
       "30X growth in showroom walk-ins.",
@@ -162,7 +160,7 @@ const caseStudies = [
     title: "Nithya Amirtham Eternal Fine Dine",
     subtitle: "Nungambakkam (Luxury F&B Launch)",
     image:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png",
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-10.png",
     cases: [
       "50X footfalls + 30X surge in signature dish orders",
       "SMM campaigns + influencer partnerships + elite audience targeting",
@@ -321,7 +319,7 @@ function HeroServicePage() {
               <motion.img
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-1.png"
                 alt="Ayatiworks Social Media Marketing Team"
-                className="w-full h-full mx-auto"
+                className=""
                 transition={{
                   duration: 4,
                   repeat: Infinity,
@@ -360,7 +358,7 @@ function HeroServicePage() {
               <img
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-2.png"
                 alt="Search Engines Work"
-                className="w-full h-full mx-auto "
+                className=" "
               />
             </div>
           </div>
@@ -594,7 +592,7 @@ function HeroServicePage() {
               <img
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-3.png"
                 alt="Search Engines Work"
-                className="w-full h-full  mx-auto "
+                className=""
               />
             </div>
           </div>
@@ -741,7 +739,7 @@ function HeroServicePage() {
                   <img
                     src={motive.image}
                     alt={motive.title}
-                    className="w-full h-96"
+                    className=""
                   />
                 </div>
 
@@ -823,7 +821,7 @@ function HeroServicePage() {
               <img
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-4.png"
                 alt="Search Engines Work"
-                className="w-full h-full  mx-auto "
+                className=" "
               />
             </div>
           </div>
@@ -1014,7 +1012,7 @@ function HeroServicePage() {
               <img
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-5.png"
                 alt="Search Engines Work"
-                className="w-full h-full  mx-auto "
+                className=" "
               />
             </div>
           </div>
