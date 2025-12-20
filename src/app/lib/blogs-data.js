@@ -114,7 +114,7 @@ export const POSTS = [
     title: "How digital marketing actually drives business growth",
     slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
     bannerTitle:
-      "Chennai’s Top 10 Trusted Digital Agencies Decoded, Compared, and Curated for Your Brand’s Next Big Leap.",
+      "How digital marketing actually drives business growth.",
     date: "Dec 19, 2025",
     readMins: 10,
     cover:
