@@ -60,7 +60,7 @@ export default function AEOArticlePage108() {
         <div className="mx-auto px-4 sm:px-6 py-10">
           <h1 className="mx-auto text-center section-title">
             <span className="text-primary">
-              Digital Marketing Services Explained as an Integrated Growth
+              Digital Marketing Services Explained as an <br />Integrated Growth
               Framework
             </span>
           </h1>
