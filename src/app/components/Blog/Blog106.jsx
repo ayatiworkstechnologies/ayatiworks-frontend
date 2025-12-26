@@ -889,7 +889,8 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl =
+    typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -900,7 +901,11 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
+          <Link
+            href={href}
+            aria-label={`Read: ${shareTitle}`}
+            className="block"
+          >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -981,10 +986,15 @@ function SplitHeroBanner({
                 <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
+              <div
+                className="hidden sm:block h-6 w-px bg-white/20 mx-3"
+                aria-hidden="true"
+              />
 
               <div className="text-sm text-slate-100/90">
-                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="font-primary font-medium text-base">
+                  {readMins} Min
+                </div>
                 <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
@@ -1359,7 +1369,7 @@ const relatedPosts = [
     deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
     category: "Digital Marketing Services",
   },
-   {
+  {
     id: 108,
     title: "How digital marketing actually drives business growth",
     slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
@@ -1369,10 +1379,24 @@ const relatedPosts = [
     readMins: 10,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
+    coverAlt: "Digital marketing services explained as a growth system",
+    deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 109,
+    title:
+      "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "Dec 25, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
     coverAlt:
-      "Digital marketing services explained as a growth system",
-    deck:
-      "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
     category: "Digital Marketing Services",
   },
 ];

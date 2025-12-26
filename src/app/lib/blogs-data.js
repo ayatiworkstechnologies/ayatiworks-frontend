@@ -125,4 +125,20 @@ export const POSTS = [
       "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
     category: "Digital Marketing Services",
   },
+  {
+    id: 109,
+    title: "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "Dec 25, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck:
+      "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
+    category: "Digital Marketing Services",
+  },
 ];

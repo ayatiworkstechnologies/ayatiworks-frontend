@@ -17,7 +17,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 
-
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
   const s = String(slugOrPath).trim();
@@ -27,10 +26,9 @@ const buildHref = (slugOrPath = "") => {
   return `/blogs/${s.replace(/^\/+|\/+$/g, "")}`;
 };
 
-
 export default function AEOArticlePage104() {
   const post = POSTS.find((p) => p.id === 104) || POSTS[0];
-  
+
   return (
     <main className="min-h-screen bg-white">
       {/* Top banner */}
@@ -298,7 +296,6 @@ export default function AEOArticlePage104() {
 
             <div className="relative overflow-hidden">
               <div className="flex gap-6 animate-scroll hover:[animation-play-state:paused]">
-
                 {/* Original + Duplicate for looping */}
                 {[
                   {
@@ -353,17 +350,20 @@ export default function AEOArticlePage104() {
               </div>
 
               <style jsx>{`
-    @keyframes scrollX {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .animate-scroll {
-      animation: scrollX 14s linear infinite;
-      width: max-content;
-    }
-  `}</style>
+                @keyframes scrollX {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-50%);
+                  }
+                }
+                .animate-scroll {
+                  animation: scrollX 14s linear infinite;
+                  width: max-content;
+                }
+              `}</style>
             </div>
-
           </Section>
 
           <Section
@@ -1059,7 +1059,9 @@ function WhatsInside({ items }) {
       (entries) => {
         const visible = entries
           .filter((e) => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+          .sort(
+            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+          )[0];
         if (visible?.target?.id) setActiveId(visible.target.id);
       },
       { rootMargin: "0px 0px -65% 0px", threshold: [0, 1] }
@@ -1185,7 +1187,8 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl =
+    typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -1196,7 +1199,11 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
+          <Link
+            href={href}
+            aria-label={`Read: ${shareTitle}`}
+            className="block"
+          >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -1277,10 +1284,15 @@ function SplitHeroBanner({
                 <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
+              <div
+                className="hidden sm:block h-6 w-px bg-white/20 mx-3"
+                aria-hidden="true"
+              />
 
               <div className="text-sm text-slate-100/90">
-                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="font-primary font-medium text-base">
+                  {readMins} Min
+                </div>
                 <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
@@ -1523,7 +1535,6 @@ function ShareButtons({
   );
 }
 
-
 function Bar() {
   return (
     <span
@@ -1615,7 +1626,8 @@ export const tocItems = [
   {
     id: "when-to-choose-chennai",
     level: 1,
-    label: "VI. When Brands Should Prefer a Chennai-Based Digital Marketing Agency",
+    label:
+      "VI. When Brands Should Prefer a Chennai-Based Digital Marketing Agency",
   },
 
   // VII — How to Choose
@@ -1644,19 +1656,18 @@ const rightCategories = [
 
 /* ---- Mock related posts (swap with your CMS) ---- */
 const relatedPosts = [
-  
   {
-     id: 105,
+    id: 105,
     title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
     slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
     date: "November 21, 2025",
     readMins: 8,
     category: "Digital Marketing Services",
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
     coverAlt:
       "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    deck:
-      "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
+    deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
   },
   {
     id: 106,
@@ -1664,12 +1675,25 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
     date: "November 28, 2025",
     readMins: 10,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
     coverAlt:
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck:
-      "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-      category: "Digital Marketing Services",
+    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 108,
+    title: "How digital marketing actually drives business growth",
+    slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
+    bannerTitle: "How digital marketing actually drives business growth.",
+    date: "Dec 19, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
+    coverAlt: "Digital marketing services explained as a growth system",
+    deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+    category: "Digital Marketing Services",
   },
   {
     id: 107,
@@ -1677,12 +1701,28 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
     date: "Decmber 5, 2025",
     readMins: 15,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
     coverAlt:
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck:
-      "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-      category: "Digital Marketing Services",
+    deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 109,
+    title:
+      "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "Dec 25, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
+    category: "Digital Marketing Services",
   },
 ];
 
@@ -1938,9 +1978,7 @@ function RelatedPostCard({ post }) {
         <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
           {post.title}
         </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-          {post.deck}
-        </p>
+        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
 
         <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
           <span>{post.date}</span>

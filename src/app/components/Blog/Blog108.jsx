@@ -60,8 +60,8 @@ export default function AEOArticlePage108() {
         <div className="mx-auto px-4 sm:px-6 py-10">
           <h1 className="mx-auto text-center section-title">
             <span className="text-primary">
-              Digital Marketing Services Explained as an <br />Integrated Growth
-              Framework
+              Digital Marketing Services Explained as an <br />
+              Integrated Growth Framework
             </span>
           </h1>
         </div>
@@ -2138,7 +2138,6 @@ export const tocItems = [
   },
 ];
 
-
 /* Right rail categories */
 const rightCategories = [
   { text: "SEO Services", href: "/blogs/seo" },
@@ -2178,8 +2177,7 @@ const relatedPosts = [
   {
     id: 106,
     title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    slug:
-      "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
+    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
     bannerTitle:
       "A clear, step-by-step way to identify the right digital partner! NO falling for pitches, buzzwords, or slide-deck theatrics.",
     date: "Nov 28, 2025",
@@ -2188,8 +2186,7 @@ const relatedPosts = [
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
     coverAlt:
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck:
-      "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
+    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
     category: "Digital Marketing Services",
   },
   {
@@ -2203,6 +2200,22 @@ const relatedPosts = [
     coverAlt:
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 109,
+    title:
+      "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "Dec 25, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
     category: "Digital Marketing Services",
   },
 ];

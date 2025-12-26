@@ -175,7 +175,7 @@ const AGENCIES = [
 
 export default function AEOArticlePage107() {
   const post = POSTS.find((p) => p.id === 107) || POSTS[0];
-  
+
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BANNER */}
@@ -601,10 +601,7 @@ export default function AEOArticlePage107() {
           </Section>
 
           {/* COMPARISON GRID */}
-          <Section
-            id="comparison-grid"
-            title="Side-by-Side Comparison Grid"
-          >
+          <Section id="comparison-grid" title="Side-by-Side Comparison Grid">
             <h3 className="section-title text-2xl text-secondary text-left my-5">
               A quick summary for fast decisioning:
             </h3>
@@ -793,7 +790,8 @@ function SplitHeroBanner({
   readMins,
   post = null,
 }) {
-  const shareUrl = typeof window !== "undefined" ? window.location.origin + href : href;
+  const shareUrl =
+    typeof window !== "undefined" ? window.location.origin + href : href;
   const shareTitle = Array.isArray(title) ? title.join(" ") : title;
 
   return (
@@ -804,7 +802,11 @@ function SplitHeroBanner({
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
-          <Link href={href} aria-label={`Read: ${shareTitle}`} className="block">
+          <Link
+            href={href}
+            aria-label={`Read: ${shareTitle}`}
+            className="block"
+          >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
               <img
                 src={imageSrc}
@@ -885,10 +887,15 @@ function SplitHeroBanner({
                 <div className="text-xs font-secondary">Last updated</div>
               </div>
 
-              <div className="hidden sm:block h-6 w-px bg-white/20 mx-3" aria-hidden="true" />
+              <div
+                className="hidden sm:block h-6 w-px bg-white/20 mx-3"
+                aria-hidden="true"
+              />
 
               <div className="text-sm text-slate-100/90">
-                <div className="font-primary font-medium text-base">{readMins} Min</div>
+                <div className="font-primary font-medium text-base">
+                  {readMins} Min
+                </div>
                 <div className="text-xs font-secondary">Read</div>
               </div>
             </div>
@@ -1236,14 +1243,14 @@ const relatedPosts = [
     slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
     date: "November 28, 2025",
     readMins: 10,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
     coverAlt:
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck:
-      "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-      category: "Digital Marketing Services",
+    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
+    category: "Digital Marketing Services",
   },
-   {
+  {
     id: 108,
     title: "How digital marketing actually drives business growth",
     slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
@@ -1253,10 +1260,24 @@ const relatedPosts = [
     readMins: 10,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
+    coverAlt: "Digital marketing services explained as a growth system",
+    deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 109,
+    title:
+      "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "Dec 25, 2025",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
     coverAlt:
-      "Digital marketing services explained as a growth system",
-    deck:
-      "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
     category: "Digital Marketing Services",
   },
 ];
@@ -1353,10 +1374,7 @@ function Intro() {
 
 function Section({ id, title, children, className = "" }) {
   return (
-    <section
-      id={id}
-      className={["scroll-mt-24", className].join(" ").trim()}
-    >
+    <section id={id} className={["scroll-mt-24", className].join(" ").trim()}>
       {title && (
         <h2 className="mt-8 text-left text-2xl section-title">{title}</h2>
       )}
@@ -1519,9 +1537,7 @@ function RelatedPostCard({ post }) {
         <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
           {post.title}
         </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-          {post.deck}
-        </p>
+        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
 
         <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
           <span>{post.date}</span>
@@ -1654,9 +1670,7 @@ function MetaPill({ label, value, icon }) {
         {label}
       </span>
       <span className="h-3 w-px bg-slate-300 mx-0.5" aria-hidden="true" />
-      <span className="text-[11px] sm:text-[12px] text-slate-800">
-        {value}
-      </span>
+      <span className="text-[11px] sm:text-[12px] text-slate-800">{value}</span>
     </div>
   );
 }

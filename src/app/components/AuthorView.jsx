@@ -119,13 +119,13 @@ export default function AuthorView({ author, posts }) {
             <div className="mt-4 space-y-6">
               {Array.isArray(posts) && posts.length > 0 ? (
                 posts.map((p) => {
-                  const external = isExternal(p?.href);
+                  const external = isExternal(p?.slug);
                   const label = p?.title ? `Read: ${p.title}` : "Read article";
 
                   const CardInner = (
                     <>
                       {/* Cover */}
-                      <div className="w-full overflow-hidden rounded h-full min-h-[120px]">
+                      <div className="w-full overflow-hidden rounded h-full min-h-[160px]">
                         <div className="relative h-full w-full">
                           <img
                             src={p?.cover || "/placeholder.jpg"}
@@ -139,10 +139,10 @@ export default function AuthorView({ author, posts }) {
 
                       {/* Text */}
                       <div>
-                        {p?.tag && (
+                        {p?.category && (
                           <div className="section-phara text-base">
                             <span className="rounded-full border border-primary px-2">
-                              {p.tag}
+                              {p.category}
                             </span>
                           </div>
                         )}
@@ -153,12 +153,12 @@ export default function AuthorView({ author, posts }) {
 
                         <div className="mt-1 font-primary text-lg text-primary/80">
                           {author?.name ?? "Author"}{" "}
-                          {p?.publishedAt ? `| ${formatET(p.publishedAt)}` : ""}
+                          {p?.date ? `| ${formatET(p.date)}` : ""}
                         </div>
 
-                        {p?.excerpt && (
+                        {p?.deck && (
                           <p className="section-phara mt-1 line-clamp-2 font-secondary">
-                            {p.excerpt}
+                            {p.deck}
                           </p>
                         )}
                       </div>
@@ -167,8 +167,8 @@ export default function AuthorView({ author, posts }) {
 
                   return external ? (
                     <a
-                      key={p?.id ?? p?.href ?? label}
-                      href={p?.href || "#"}
+                      key={p?.id ?? p?.slug ?? label}
+                      href={p?.slug || "#"}
                       aria-label={label}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -178,11 +178,11 @@ export default function AuthorView({ author, posts }) {
                     </a>
                   ) : (
                     <Link
-                      key={p?.id ?? p?.href ?? label}
-                      href={p?.href || "#"}
+                      key={p?.id ?? p?.slug ?? label}
+                      href={p?.slug || "#"}
                       prefetch={false}
                       aria-label={label}
-                      className="group grid grid-cols-[140px_minmax(0,1fr)] items-start gap-4 rounded border border-slate-200 bg-white p-3 transition hover:shadow-sm"
+                      className="group grid grid-cols-[240px_minmax(0,1fr)] items-start gap-4 rounded border border-slate-200 bg-white p-3 transition hover:shadow-sm"
                     >
                       {CardInner}
                     </Link>

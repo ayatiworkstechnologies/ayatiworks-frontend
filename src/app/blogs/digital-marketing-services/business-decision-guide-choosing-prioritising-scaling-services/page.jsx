@@ -2,16 +2,16 @@
 import React from "react";
 
 import Connection from "../../../components/Teams/Connection";
-import AEOArticlePage108 from "@/src/app/components/Blog/Blog108";
+import AEOArticlePage109 from "@/src/app/components/Blog/Blog109";
 
 export const metadata = {
   title:
-    "Digital Marketing Services Explained: A Scalable Growth Framework for Modern Businesses | Ayatiworks",
+    "Digital Marketing Services: How Businesses Choose, Prioritise & Scale for Growth | Ayatiworks",
   description:
-    "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth.",
+    "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for sustainable growth and measurable ROI.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+      "https://ayatiworks.com/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services",
   },
 };
 
@@ -71,7 +71,7 @@ const faqJsonLd = {
 }
 ;
 
-export default function MustBlogPage() {
+export default function BlogPage109() {
   return (
     <main className="section section-home">
       {/* FAQ JSON-LD for SEO */}
@@ -80,7 +80,7 @@ export default function MustBlogPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       /> */}
 
-      <AEOArticlePage108 />
+      <AEOArticlePage109 />
       <Connection />
     </main>
   );

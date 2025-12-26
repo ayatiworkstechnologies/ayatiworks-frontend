@@ -21,104 +21,120 @@ export const POSTS_BY_AUTHOR = {
     {
       id: "p1",
       title: "Is Your Website Ready for the AI Search Takeover? 5 Must-Know AEO Strategies for 2025",
-      excerpt:
+      deck:
         "A customer asks their AI assistant, “What’s the best way to boost my online sales?” and gets a crisp, tailored answer, but your business isn’t mentioned...",
       cover:
         "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-banner.png",
-      tag: "SEO",
-      href: "/blogs/seo/5-must-know-aeo-strategies-for-2025",
-      publishedAt: "2025-10-22T17:55:00-03:00",
+      category: "SEO",
+      slug: "/blogs/seo/5-must-know-aeo-strategies-for-2025",
+      date: "2025-10-22T17:55:00-03:00",
     },
     {
     id: "p2",
     title: "How Your Tech Startup Can Use Answer Engine Optimisation (AEO) to Reach their Audience",
-    href: "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences",
-      publishedAt: "2025-10-31T17:15:00-04:00",
-    tag: "SEO",
+    slug: "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences",
+      date: "2025-10-31T17:15:00-04:00",
+    category: "SEO",
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-102.jpg",
     coverAlt:
       "Tech Startup Optimizing Content for AI-Powered Answer Engines ",
-    excerpt:
+    deck:
       "From CEOs to CMOs in funded or incubated tech startups, there is this question about using organic reach or SEO ...",
   },
     {
     id: "p3",
     title: "Implementing AEO in Your Content Strategy",
-    href: "/blogs/seo/implementing-aeo-in-your-content-strategy",
-      publishedAt: "2025-11-07T17:40:00-03:00",
-    tag: "SEO",
+    slug: "/blogs/seo/implementing-aeo-in-your-content-strategy",
+      date: "2025-11-07T17:40:00-03:00",
+    category: "SEO",
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
     coverAlt:
       "Tech Startup Optimizing Content for AI-Powered Answer Engines ",
-    excerpt:
-      "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center stage, startups that master AEO today are the ones that will stay visible tomorrow. ",
+    deck:
+      "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center scategorye, startups that master AEO today are the ones that will stay visible tomorrow. ",
   },
     {
     id: "p4",
-    title: "The Local Agency Advantage for National-Scale ROI",
-    href: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
-      publishedAt: "2025-11-14T17:40:00-03:00",
-    tag: "Digital Marketing Services",
+    title: "The Local Agency Advancategorye for National-Scale ROI",
+    slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
+      date: "2025-11-14T17:40:00-03:00",
+    category: "Digital Marketing Services",
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
     coverAlt:
       "Chennai digital marketing agency delivering pan-India ROI ",
-    excerpt:
+    deck:
       "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
   },
     {
     id: "p4",
     title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
-    href: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
-      publishedAt: "2025-11-21T17:40:00-03:00",
-    tag: "Digital Marketing Services",
+    slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
+      date: "2025-11-21T17:40:00-03:00",
+    category: "Digital Marketing Services",
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
     coverAlt:
       "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    excerpt:
+    deck:
       "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
   },
   {
     id: "p6",
     title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    href: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
-      publishedAt: "2025-11-28T17:40:00-05:00",
+    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
+      date: "2025-11-28T17:40:00-05:00",
     readMins: 10,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
     coverAlt:
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    excerpt:
+    deck:
       "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-      tag: "Digital Marketing Services",
+      category: "Digital Marketing Services",
   },
   {
     id: "p7",
     title: "Top 10 Digital Marketing Agencies in Chennai",
-    href: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
-    publishedAt: "2025-12-05T17:40:00-05:00",
+    slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+    date: "2025-12-05T17:40:00-05:00",
     readMins: 15,
     cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
     coverAlt:
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    excerpt:
+    deck:
       "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-      tag: "Digital Marketing Services",
+      category: "Digital Marketing Services",
   },
    {
     id: "p8",
     title: "How digital marketing actually drives business growth",
-    href: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
+    slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
     bannerTitle:
       "Chennai’s Top 10 Trusted Digital Agencies Decoded, Compared, and Curated for Your Brand’s Next Big Leap.",
     
-    publishedAt: "2025-12-19T17:40:00-05:00",
+    date: "2025-12-19T17:40:00-05:00",
     readMins: 10,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
     coverAlt:
       "Digital marketing services explained as a growth system",
-    excerpt:
+    deck:
       "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
-    tag: "Digital Marketing Services",
+    category: "Digital Marketing Services",
+  },
+  {
+    id: 'p9',
+    title: "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
+    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
+    bannerTitle:
+      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
+    date: "2025-12-25T17:40:00-05:00",
+    readMins: 10,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck:
+      "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
+    category: "Digital Marketing Services",
   },
   ],
 
