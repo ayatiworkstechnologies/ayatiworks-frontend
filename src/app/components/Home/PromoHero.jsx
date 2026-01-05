@@ -71,7 +71,7 @@ export default function PromoHero() {
         <div className="mt-8 sm:mt-10 w-full mx-auto flex justify-center items-center">
           <img
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-2026.png"
-            alt="The Year of Utsah"
+            alt="The Year of Vallam"
             className="mx-auto h-82 object-contain"
           />
         </div>
