@@ -54,7 +54,7 @@ export default function AboutSection() {
           className="flex justify-center"
         >
           <img
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv.png"
+            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-2026.png"
             alt="Ayatiworks TV illustration"
             className="w-full  drop-shadow-xl rounded-xl"
             loading="lazy"
@@ -70,24 +70,17 @@ export default function AboutSection() {
           viewport={{ once: true }}
         >
           <p className="text-black/80 font-secondary mb-6 text-base sm:text-lg md:text-xl leading-8">
-            This year at Ayatiworks, we’re embracing Utsah, the enthusiasm and
-            energy that fuel everything we do. For us, Utsah means approaching
-            every challenge with positivity, bringing fresh ideas to the table,
-            and creating meaningful work that makes a difference. It’s about
-            going the extra mile for our clients, supporting each other as a
-            team, and finding joy in every milestone, big or small. As we step
-            into{" "}
+            The Year of Vallam marks a defining phase in Ayatiworks’ journey, where power emerges from unity, clarity, and execution. Rooted in collective strength, Vallam represents our ability to move as one organisation with a shared purpose. In {" "}
             <span className="font-primary text-secondary text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-              2025
+              2026
             </span>
-            , Utsah reminds us to stay passionate, stay inspired, and stay
-            connected.
+            , every department works in tandem, every strategy is intentional, and every action is aligned toward delivering measurable value for our clients.
           </p>
 
+          <p className="font-primary text-secondary font-medium text-2xl md:text-3xl my-2"> Vallam is not force, it is focused capability! </p>
           <p className="font-secondary text-secondary font-medium text-lg md:text-xl">
-            Here’s to a year of growth, creativity, and purpose, powered by
-            Utsah! <br />
-            Let’s make it unforgettable!
+
+            It is the power of disciplined planning, timely execution, and accountability at every level. As we step into this year, Ayatiworks stands strengthened by unity, driven by purpose, and committed to growth that truly matters.
           </p>
         </motion.div>
       </div>

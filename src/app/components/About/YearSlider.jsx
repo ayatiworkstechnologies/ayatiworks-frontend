@@ -3,10 +3,14 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
 
-const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017];
+const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017];
 
 // Content for each year
 const yearContent = {
+  2025: {
+    title: "The Year of Utsah",
+    text: `The Year of Utsah was defined by enthusiasm, energy, and renewed purpose at Ayatiworks. In 2025, we embraced challenges with optimism, infused fresh thinking into every brief, and delivered work with meaningful impact. Utsah strengthened collaboration, inspired creativity, and encouraged teams to go the extra mile for our clients. Each milestone reinforced our passion for progress and connection, laying a strong foundation to channel that energy into greater alignment and focused execution ahead.`,
+  },
   2024: {
     title: "The Year of Unnati",
     text: `The Year of Unnati marked our eighth chapter; a journey filled with victories and resilience. Every challenge we faced blossomed into meaningful rewards, reflecting our unwavering drive for progress. In 2024, we didn’t just count achievements in numbers; we celebrated the experiences gained, the knowledge shared, and the collective wins that shaped us. Standing tall at the summit of success, the spirit of Unnati propelled us forward into a future brimming with promise and new opportunities.`,
