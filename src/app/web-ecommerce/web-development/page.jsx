@@ -8,9 +8,9 @@ import HeroServicePage from "../../components/Web Development/HeroServicePage";
 
 export const metadata = {
   title:
-    "Ecommerce Web Development Chennai, Web development company - Ayatiworks",
+    "Ecommerce Website Development company in Chennai, Website development company - Ayatiworks",
   description:
-   "Keep your online store running smoothly with expert web maintenance in Chennai! Reliable solutions for growth. Contact us now!",
+   "Transform your online presence with Ayatiworks, a top Ecommerce website development company in Chennai. We craft user-focused, robust websites for brands worldwide.",
     alternates: { canonical: "https://ayatiworks.com/web-ecommerce/web-development", },
 };
 

@@ -8,9 +8,9 @@ import HeroServicePage from "../../components/Web Maintenance/HeroServicePage";
 
 export const metadata = {
   title:
-    "Ecommerce Web Maintenance company Chennai, Web development Experts - Ayatiworks",
+    "Ecommerce Website Maintenance company Chennai, Website development Experts Chennai | Ayatiworks",
   description:
-   "Keep your online store running smoothly with expert web maintenance in Chennai! Reliable solutions for growth. Contact us now!",
+   "Get expert Ecommerce Website Maintenance Company in Chennai and Web Development Experts in Chennai. Trusted by businesses in India & globally. Get a quote now!",
     alternates: { canonical: "https://ayatiworks.com/web-ecommerce/web-maintenance", },
 };
 
