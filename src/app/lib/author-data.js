@@ -136,6 +136,22 @@ export const POSTS_BY_AUTHOR = {
       "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
     category: "Digital Marketing Services",
   },
+   {
+    id: 'p10',
+    title: "SEO vs AEO vs GEO vs AI SEO: How Modern Search Really Works, and Why SEO Is Still the Foundation",
+    slug: "/blogs/seo/seo-vs-aeo-vs-geo-vs-ai-seo-why-seo-is-still-the-foundation/",
+    bannerTitle:
+      "Modern search has evolved. SEO is still the system that holds it together.",
+    date: "Jan 09, 2026",
+    readMins: 12,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-110.jpg",
+    coverAlt:
+      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
+    deck:
+      "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
+    category: "SEO",
+  },
   ],
 
 };
