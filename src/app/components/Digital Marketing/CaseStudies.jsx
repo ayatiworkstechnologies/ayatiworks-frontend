@@ -35,7 +35,7 @@ export default function CaseStudies() {
   }, []);
 
   return (
-    <section className="section relative py-16 mb-10">
+    <section className="section relative py-16 mb-10 scroll-smooth" id="client-success">
       <div className="section-container mx-auto max-w-6xl px-4">
         {/* Heading */}
         <motion.div

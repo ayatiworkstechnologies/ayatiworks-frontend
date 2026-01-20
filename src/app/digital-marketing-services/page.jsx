@@ -2,9 +2,9 @@
 
 export const metadata = {
   title:
-    "Digital Marketing Services in Chennai | SEO, PPC & Social Media Experts | Ayatiworks",
+    "Digital Marketing Services in Chennai | ROI-Driven Growth for South Indian Brands ",
   description:
-    "Get end-to-end digital marketing services in Chennai, including SEO, PPC, social media and content strategy. Ayatiworks helps B2B, B2C and D2C brands achieve measurable growth with expert digital campaigns.",
+    "We help Chennai and South India–based businesses drive qualified leads using AI-led, data-driven digital marketing. Clear strategy, focused execution, and measurable growth. ",
   alternates: {
     canonical: "https://ayatiworks.com/digital-marketing-services",
   },

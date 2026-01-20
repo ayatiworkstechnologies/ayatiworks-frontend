@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import { MapPin, Phone, Mail } from "lucide-react";
 
@@ -9,7 +10,6 @@ export default function LocalAgencySection() {
   return (
     <section className="py-20 px-6 md:px-16">
       <div className="max-w-6xl mx-auto text-center">
-        
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,19 +17,25 @@ export default function LocalAgencySection() {
           viewport={{ once: true }}
           className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
         >
-          <span className="mb-2 flex items-center">Digital Marketing Agency Near Me - Serving All of Chennai</span>
+          <span className="mb-2 flex items-center">
+            Digital Marketing Agency Near Me - Serving All of Chennai
+          </span>
           {/* Decorative line */}
           <motion.div
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-              className="bg-secondary h-1 w-[280px] mt-3 origin-center rounded-full"
-            />
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+            className="bg-secondary h-1 w-[280px] mt-3 origin-center rounded-full"
+          />
         </motion.h1>
         <p className="text-lg section-phara font-secondary text-black/80 mx-auto mb-8 mt-5">
-          Searching for a reliable <span className="text-black  font-semibold">digital marketing agency near me</span>?{" "} <br />Ayatiworks operates from
-          Chennai, helping local businesses grow through creative marketing and
-          digital expertise.
+          Searching for a reliable{" "}
+          <span className="text-black  font-semibold">
+            digital marketing agency near me
+          </span>
+          ? <br />
+          Ayatiworks operates from Chennai, helping local businesses grow
+          through creative marketing and digital expertise.
         </p>
 
         {/* Location Grid */}
@@ -56,20 +62,32 @@ export default function LocalAgencySection() {
         </div>
 
         <p className="section-phara mx-auto mb-8">
-          As a locally rooted <span className="text-black  font-semibold">advertising and creative marketing agency</span>,
-          we understand the unique challenges and opportunities facing Chennai
-          businesses. Our team is available for in-person consultations, strategy
-          sessions, and ongoing support.
+          As a locally rooted advertising and creative marketing agency,{" "}
+          <Link
+            href="/"
+            className="text-secondary hover:text-secondary/80 font-primary text-lg md:text-xl font-medium transition-colors duration-300 underline-offset-4 hover:underline"
+          >
+            Ayatiworks{" "}
+          </Link>
+          understands the unique challenges and opportunities facing Chennai
+          businesses.
+        </p>
+        <p className="section-phara mx-auto mb-8">
+          Our work is grounded in close collaboration, strategic thinking, and
+          long-term partnership, supporting brands through every stage of their
+          digital growth journey.{" "}
         </p>
 
         {/* Address Section */}
         <div className="bg-white shadow-lg rounded-2xl p-8 md:p-10 inline-block text-left">
-          <h3 className="section-title text-3xl  mb-2">
-            Visit Our Office:
-          </h3>
+          <h3 className="section-title text-3xl  mb-2">Visit Our Office:</h3>
           <p className="section-phara mb-4">
-            <span className="font-primary text-2xl">Ayatiworks Technologies LLP</span> <br />
-            No.18/24, TTK Road, 1st Cross St, Alwarpet, Chennai, Tamil Nadu 600018
+            <span className="font-primary text-2xl">
+              Ayatiworks Technologies LLP
+            </span>{" "}
+            <br />
+            No.18/24, TTK Road, 1st Cross St, Alwarpet, Chennai, Tamil Nadu
+            600018
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:items-center text-black/80">

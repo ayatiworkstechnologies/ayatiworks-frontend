@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function WhyChennai() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -82,31 +83,70 @@ export default function WhyChennai() {
               variants={fadeUp}
               className="text-secondary font-primary font-medium text-3xl mb-4"
             >
-              Here’s why partnering with an award-winning digital marketing
-              agency in Chennai makes a difference:
+              Here’s why digital marketing has become a business necessity for
+              companies in Chennai, not just a marketing choice.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-black/80 font-secondary leading-7 mb-4"
             >
-              Chennai is not just a hub for culture and commerce; it’s one of
-              India’s fastest-growing digital markets. From startups in T-Nagar
-              and SaaS companies in OMR to established retail chains across
-              Tamil Nadu, businesses today cannot rely solely on traditional
-              advertising. The shift in consumer behavior is clear: audiences
-              are searching, shopping, and engaging online first.
+              Chennai is no longer defined only by culture and traditional
+              commerce. It is one of India’s fastest-growing digital business
+              hubs. From startups in T-Nagar and SaaS companies operating out of
+              OMR to established retail and manufacturing brands across Tamil
+              Nadu, buying behaviour has fundamentally changed. Decision-makers
+              today search, compare, and validate online long before they speak
+              to a vendor.
+            </motion.p>
+
+            <motion.p
+              variants={fadeUp}
+              className="text-black/80 font-secondary leading-7 mb-4"
+            >
+              This shift means visibility alone is not enough. Businesses need
+              digital marketing strategies that align with how customers
+              actually discover, evaluate, and choose brands, across search,
+              content, and social platforms. Companies that invest in
+              structured, data-led digital marketing are not reacting to change;
+              they are staying ahead of it.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="text-black font-semibold font-secondary leading-7"
             >
-              By investing in strategic digital marketing, businesses in Chennai
-              are not just keeping up; they’re leading the change. And with
-              Ayatiworks as your growth partner, you get measurable results
-              tailored to your goals.
+              For Chennai-based businesses, the advantage lies in combining
+              local market understanding with measurable digital execution. When
+              strategy, data, and performance come together, digital marketing
+              stops being an expense and starts becoming a growth lever tied to
+              real business outcomes.
             </motion.p>
+
+            <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="text-left mt-8"
+>
+  <Link href="#client-success" passHref>
+    <motion.a
+      className="inline-block relative bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300"
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      whileHover={{
+        scale: 1.08,
+        boxShadow: "0px 12px 25px rgba(0,0,0,0.15)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      Know More About Our Clients and Case Studies
+    </motion.a>
+  </Link>
+</motion.div>
           </motion.div>
 
           {/* CENTER DOTS */}
