@@ -78,7 +78,7 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Do you offer ongoing after launching a campaign?",
+      name: "Do you offer ongoing support after launching a campaign?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Absolutely. We believe in long-term partnership, not just project completion. Our framework includes continuous optimization, iterations, and support to keep results moving upward.",
