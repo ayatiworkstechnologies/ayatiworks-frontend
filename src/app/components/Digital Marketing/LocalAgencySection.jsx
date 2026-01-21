@@ -18,7 +18,7 @@ export default function LocalAgencySection() {
           className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
         >
           <span className="mb-2 flex items-center">
-            Digital Marketing Agency Near Me - Serving All of Chennai
+            Digital Marketing Services Across Chennai’s Key Business Hubs
           </span>
           {/* Decorative line */}
           <motion.div
@@ -29,13 +29,9 @@ export default function LocalAgencySection() {
           />
         </motion.h1>
         <p className="text-lg section-phara font-secondary text-black/80 mx-auto mb-8 mt-5">
-          Searching for a reliable{" "}
-          <span className="text-black  font-semibold">
-            digital marketing agency near me
-          </span>
-          ? <br />
-          Ayatiworks operates from Chennai, helping local businesses grow
-          through creative marketing and digital expertise.
+          Businesses across Chennai need digital marketing services that are
+          accessible, locally informed, and aligned with how their customers
+          actually search and engage online.
         </p>
 
         {/* Location Grid */}
@@ -62,7 +58,7 @@ export default function LocalAgencySection() {
         </div>
 
         <p className="section-phara mx-auto mb-8">
-          As a locally rooted advertising and creative marketing agency,{" "}
+          As a locally rooted digital marketing partner,{" "}
           <Link
             href="/"
             className="text-secondary hover:text-secondary/80 font-primary text-lg md:text-xl font-medium transition-colors duration-300 underline-offset-4 hover:underline"
@@ -70,12 +66,12 @@ export default function LocalAgencySection() {
             Ayatiworks{" "}
           </Link>
           understands the unique challenges and opportunities facing Chennai
-          businesses.
+          businesses. 
         </p>
         <p className="section-phara mx-auto mb-8">
-          Our work is grounded in close collaboration, strategic thinking, and
-          long-term partnership, supporting brands through every stage of their
-          digital growth journey.{" "}
+          Our approach is grounded in strategic thinking, close collaboration,
+          and long-term partnership, supporting brands through every stage of
+          their digital growth journey.{" "}
         </p>
 
         {/* Address Section */}

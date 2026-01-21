@@ -37,7 +37,7 @@ const faqs = [
       "Yes! From strategy and content to technology , SEO, social media, performance ads, influencer marketing, web development, and maintenance, all are handled under one roof for seamless execution.",
   },
   {
-    question: "7.	Do you offer ongoing after launching a campaign? ",
+    question: "7.	Do you offer ongoing after support launching a campaign? ",
     answer:
       "Absolutely. We believe in long-term partnership, not just project completion. Our framework includes continuous optimization, iterations, and support to keep results moving upward. ",
   },
