@@ -36,7 +36,7 @@ export default function WhatAyati() {
       basePath: "/content-as-a-service",
       list: [
         { label: "Multi-lingual Marketing", href: "/content-as-a-service/multilingual-marketing" },
-        { label: "Brand Consultant", href: "/content-as-a-service/brand-service" },
+        { label: "Brand Consultant", href: "/content-as-a-service/branding-service" },
         { label: "Video Creation", href: "/content-as-a-service/video-creation" },
       ],
       cta: { label: "Explore Content Services →", href: "/content-as-a-service" },

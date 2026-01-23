@@ -157,4 +157,32 @@ export const POSTS = [
       "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
     category: "SEO",
   },
+  {
+    id: 111,
+    title: "How Digital Marketing Services Drive Revenue Through Funnel Alignment",
+    slug: "/blogs/digital-marketing-services/digital-marketing-services-drive-revenue-funnel-alignment/",
+    bannerTitle:
+      "When marketing stops chasing metrics and starts driving revenue",
+    date: "Jan 23, 2026",
+    readMins: 5,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-111.jpg",
+    coverAlt:
+      "Digital marketing funnel alignment from awareness to revenue",
+    deck:
+      "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
+    category: "Digital Marketing Services",
+  },
+  // {
+  //   id: 111,
+  //   title: "",
+  //   slug: "/blogs/",
+  //   bannerTitle: "",
+  //   date: "",
+  //   readMins: 11,
+  //   cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-110.jpg",
+  //   coverAlt: "",
+  //   deck: "",
+  //   category: "",
+  // },
 ];
