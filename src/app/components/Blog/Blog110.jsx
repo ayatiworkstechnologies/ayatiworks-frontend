@@ -16,6 +16,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 import { POSTS } from "../../lib/blogs-data";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import RelatedPostsFromData from "./RelatedPostsFromData";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -27,7 +29,11 @@ const buildHref = (slugOrPath = "") => {
 };
 export default function AEOArticlePage110() {
   const post = POSTS.find((p) => p.id === 110) || POSTS[0];
-
+  const relatedPosts = getRelatedRecentPosts({
+    currentPostId: post.id,
+    category: post.category,
+    limit: 3,
+  });
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BANNER */}
@@ -56,7 +62,8 @@ export default function AEOArticlePage110() {
         <div className="mx-auto px-4 sm:px-6 py-10">
           <h1 className="mx-auto text-center section-title">
             <span className="text-primary">
-              SEO vs AEO vs GEO vs AI SEO: How Modern Search Really Works—and Why SEO Is Still the Foundation
+              SEO vs AEO vs GEO vs AI SEO: How Modern Search Really Works—and
+              Why SEO Is Still the Foundation
             </span>
           </h1>
         </div>
@@ -78,10 +85,14 @@ export default function AEOArticlePage110() {
             title="How Search Has Changed (But Not Replaced SEO)"
           >
             <p className="section-phara">
-              Search engines today behave less like directories and more like advisors. Google, Bing, and AI-driven search experiences aim to understand intent, context, and relevance rather than just matching keywords.
+              Search engines today behave less like directories and more like
+              advisors. Google, Bing, and AI-driven search experiences aim to
+              understand intent, context, and relevance rather than just
+              matching keywords.
             </p>
             <p className="section-phara">
-              Users now ask complete questions, speak into devices, search locally, and expect immediate clarity.
+              Users now ask complete questions, speak into devices, search
+              locally, and expect immediate clarity.
             </p>
 
             <div className="ml-10 mb-6">
@@ -135,7 +146,9 @@ export default function AEOArticlePage110() {
               What it did not create is a reason to abandon SEO.
             </p>
             <p className="section-phara">
-              Instead, SEO expanded. It absorbed new requirements and execution methods. AEO, GEO, and AI SEO emerged to describe how SEO adapts to new behaviours, not to replace it.
+              Instead, SEO expanded. It absorbed new requirements and execution
+              methods. AEO, GEO, and AI SEO emerged to describe how SEO adapts
+              to new behaviours, not to replace it.
             </p>
           </Section>
 
@@ -146,8 +159,9 @@ export default function AEOArticlePage110() {
             title="What Is SEO? The Core System Behind All Search Visibility"
           >
             <p className="section-phara">
-              SEO (Search Engine Optimization) is the process of making your website
-              discoverable, understandable, and trustworthy for search engines and users.
+              SEO (Search Engine Optimization) is the process of making your
+              website discoverable, understandable, and trustworthy for search
+              engines and users.
             </p>
 
             <p className="section-phara">
@@ -160,8 +174,8 @@ export default function AEOArticlePage110() {
                 1. Technical Foundation
               </h3>
               <p className="section-phara">
-                Search engines must be able to crawl, index, and understand your website.
-                This includes:
+                Search engines must be able to crawl, index, and understand your
+                website. This includes:
               </p>
 
               <ul className="mt-4 space-y-4">
@@ -238,34 +252,34 @@ export default function AEOArticlePage110() {
                 4. User Experience
               </h3>
               <p className="section-phara">
-                If users leave quickly or struggle to navigate, rankings suffer. SEO now
-                includes:
+                If users leave quickly or struggle to navigate, rankings suffer.
+                SEO now includes:
               </p>
 
               <ul className="mt-4 space-y-4">
-                {[
-                  "Readability",
-                  "Page flow",
-                  "Engagement signals",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 ring-1 ring-primary/20">
-                      <IoCheckmarkDone className="h-5 w-5 text-primary" />
-                    </span>
-                    <span className="section-phara text-black/80">{item}</span>
-                  </li>
-                ))}
+                {["Readability", "Page flow", "Engagement signals"].map(
+                  (item) => (
+                    <li key={item} className="flex items-start gap-4">
+                      <span className="mt-1 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 ring-1 ring-primary/20">
+                        <IoCheckmarkDone className="h-5 w-5 text-primary" />
+                      </span>
+                      <span className="section-phara text-black/80">
+                        {item}
+                      </span>
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
 
             {/* SUMMARY */}
             <p className="section-phara mt-8">
-              This is why modern SEO services are no longer limited to keyword placement.
-              Businesses looking for structured, long-term visibility often rely on
-              comprehensive SEO strategies that integrate technical performance, content,
-              and user experience under one system.
+              This is why modern SEO services are no longer limited to keyword
+              placement. Businesses looking for structured, long-term visibility
+              often rely on comprehensive SEO strategies that integrate
+              technical performance, content, and user experience under one
+              system.
             </p>
-
 
             {/* CTA */}
             <div className="mt-8 flex justify-start">
@@ -288,9 +302,7 @@ export default function AEOArticlePage110() {
                 </Link>
               </motion.div>
             </div>
-
           </Section>
-
 
           {/* STEP 2 */}
           <Section
@@ -300,7 +312,8 @@ export default function AEOArticlePage110() {
             <div className="ml-10 mb-6">
               {/* Title */}
               <h3 className="section-title text-2xl text-secondary text-left my-5">
-                AEO focuses on optimising content so it appears as direct answers in search results. These include:
+                AEO focuses on optimising content so it appears as direct
+                answers in search results. These include:
               </h3>
 
               {/* List */}
@@ -348,9 +361,7 @@ export default function AEOArticlePage110() {
               <h3 className="section-title text-2xl text-secondary text-left mb-4">
                 How AEO Is Implemented
               </h3>
-              <p className="section-phara">
-                AEO is achieved by:
-              </p>
+              <p className="section-phara">AEO is achieved by:</p>
 
               <ul className="mt-4 space-y-4">
                 {[
@@ -373,7 +384,8 @@ export default function AEOArticlePage110() {
                 Is AEO Industry-Specific?
               </h3>
               <p className="section-phara">
-                AEO works best for industries where users ask questions before making decisions:
+                AEO works best for industries where users ask questions before
+                making decisions:
               </p>
 
               <ul className="mt-4 space-y-4">
@@ -391,14 +403,22 @@ export default function AEOArticlePage110() {
                   </li>
                 ))}
               </ul>
-              <p className="section-phara">However, any business with informational search intent can benefit. </p>
+              <p className="section-phara">
+                However, any business with informational search intent can
+                benefit.{" "}
+              </p>
             </div>
 
             <div className="ml-10 mt-8">
               <h3 className="section-title text-2xl text-secondary text-left mb-4">
                 AEO’s Relationship with SEO
               </h3>
-              <p className="section-phara"> AEO cannot exist without SEO. Search engines choose answers from pages that already demonstrate authority, relevance, and technical clarity, core SEO signals.</p>
+              <p className="section-phara">
+                {" "}
+                AEO cannot exist without SEO. Search engines choose answers from
+                pages that already demonstrate authority, relevance, and
+                technical clarity, core SEO signals.
+              </p>
             </div>
 
             {/* CTA */}
@@ -422,7 +442,6 @@ export default function AEOArticlePage110() {
                 </Link>
               </motion.div>
             </div>
-
           </Section>
 
           {/* STEP 3 */}
@@ -434,13 +453,22 @@ export default function AEOArticlePage110() {
               <strong> Definition: GEO as Geographic Optimization</strong>
             </p>
             <p className="section-phara">
-              GEO, in its original and most widely used sense, stands for <strong>Geographic Optimization. </strong>It refers to the process of improving a business’s visibility in search results based on location-based intent.
+              GEO, in its original and most widely used sense, stands for{" "}
+              <strong>Geographic Optimization. </strong>It refers to the process
+              of improving a business’s visibility in search results based on
+              location-based intent.
             </p>
             <p className="section-phara">
-              When users include terms like “near me,” city names, or neighbourhood references, or when search engines infer location automatically, GEO determines which businesses appear and in what order.
+              When users include terms like “near me,” city names, or
+              neighbourhood references, or when search engines infer location
+              automatically, GEO determines which businesses appear and in what
+              order.
             </p>
             <p className="section-phara">
-              Geographic Optimization is the backbone of <strong>Local SEO.</strong> It helps search engines understand where a business operates, who it serves, and which searches are relevant to that location.
+              Geographic Optimization is the backbone of{" "}
+              <strong>Local SEO.</strong> It helps search engines understand
+              where a business operates, who it serves, and which searches are
+              relevant to that location.
             </p>
 
             <div className="ml-10 mb-6">
@@ -448,7 +476,10 @@ export default function AEOArticlePage110() {
               <h3 className="section-title text-2xl text-secondary text-left my-5">
                 How Geographic Optimization Is Implemented
               </h3>
-              <p className="section-phara">Geographic Optimization is not limited to adding a city name to a page. It involves multiple layers working together:</p>
+              <p className="section-phara">
+                Geographic Optimization is not limited to adding a city name to
+                a page. It involves multiple layers working together:
+              </p>
               {/* List */}
               <ul className="mt-6 space-y-4">
                 {[
@@ -493,15 +524,21 @@ export default function AEOArticlePage110() {
                 ))}
               </ul>
 
-              <p className="section-phara">Together, these signals help search engines decide which business is most relevant for a specific location-based search.</p>
-
+              <p className="section-phara">
+                Together, these signals help search engines decide which
+                business is most relevant for a specific location-based search.
+              </p>
             </div>
 
             <div className="ml-10 mb-6">
               {/* Title */}
               <h3 className="section-title text-2xl text-secondary text-left my-5">
-                Impact of Geographic Optimization on Local SEO              </h3>
-              <p className="section-phara">Local SEO cannot function without strong GEO signals. Geographic Optimization directly influences:</p>
+                Impact of Geographic Optimization on Local SEO{" "}
+              </h3>
+              <p className="section-phara">
+                Local SEO cannot function without strong GEO signals. Geographic
+                Optimization directly influences:
+              </p>
 
               {/* List */}
               <ul className="mt-6 space-y-4">
@@ -542,7 +579,12 @@ export default function AEOArticlePage110() {
                   </li>
                 ))}
               </ul>
-              <p className="section-phara">For example, when someone searches for a service in Chennai, search engines prioritise businesses that clearly demonstrate geographic relevance, through content, listings, and engagement, not just keyword usage.</p>
+              <p className="section-phara">
+                For example, when someone searches for a service in Chennai,
+                search engines prioritise businesses that clearly demonstrate
+                geographic relevance, through content, listings, and engagement,
+                not just keyword usage.
+              </p>
               <h3 className="section-title text-2xl text-secondary text-left my-5">
                 Without proper GEO implementation:
               </h3>
@@ -553,14 +595,15 @@ export default function AEOArticlePage110() {
                     desc: "",
                   },
                   {
-                    title: "		Service pages fail to appear for city-level searches",
+                    title:
+                      "		Service pages fail to appear for city-level searches",
                     desc: "",
                   },
                   {
-                    title: "	Local competitors with weaker brands but better GEO win visibility",
+                    title:
+                      "	Local competitors with weaker brands but better GEO win visibility",
                     desc: "",
                   },
-
                 ].map((item) => (
                   <li key={item.title} className="flex items-start gap-4">
                     <span
@@ -588,7 +631,9 @@ export default function AEOArticlePage110() {
               <h3 className="section-title text-2xl text-secondary text-left my-5">
                 Is Geographic Optimization Industry-Specific?
               </h3>
-              <p className="section-phara">Geographic Optimization is essential for:</p>
+              <p className="section-phara">
+                Geographic Optimization is essential for:
+              </p>
 
               {/* List */}
               <ul className="mt-6 space-y-4">
@@ -613,7 +658,6 @@ export default function AEOArticlePage110() {
                     title: "	Real estate and hospitality",
                     desc: "",
                   },
-
                 ].map((item) => (
                   <li key={item.title} className="flex items-start gap-4">
                     <span
@@ -634,8 +678,14 @@ export default function AEOArticlePage110() {
                   </li>
                 ))}
               </ul>
-              <p className="section-phara">However, it is <strong>not limited to local-only businesses</strong> . National and global brands also use GEO to dominate specific regions, cities, or markets. A company operating across India or internationally still needs strong geographic signals to perform well in regional searches.</p>
-
+              <p className="section-phara">
+                However, it is{" "}
+                <strong>not limited to local-only businesses</strong> . National
+                and global brands also use GEO to dominate specific regions,
+                cities, or markets. A company operating across India or
+                internationally still needs strong geographic signals to perform
+                well in regional searches.
+              </p>
             </div>
 
             <div className="ml-10 mb-6">
@@ -643,16 +693,18 @@ export default function AEOArticlePage110() {
               <h3 className="section-title text-2xl text-secondary text-left my-5">
                 How Geographic Optimization Fits Inside SEO
               </h3>
-              <p className="section-phara">Geographic Optimization does not replace SEO. <br />
+              <p className="section-phara">
+                Geographic Optimization does not replace SEO. <br />
                 It refines SEO for location-based intent.
               </p>
-              <p className="section-phara">SEO provides the foundation (crawlability, content quality, authority). <br />
+              <p className="section-phara">
+                SEO provides the foundation (crawlability, content quality,
+                authority). <br />
                 GEO adds where that relevance applies.
               </p>
               <p className="section-phara">
                 Without SEO, GEO has no stability. <br />
                 Without GEO, SEO loses local precision.
-
               </p>
             </div>
 
@@ -673,7 +725,7 @@ export default function AEOArticlePage110() {
                   href="/contact"
                   className="relative inline-block bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
                 >
-                  Get a free local visibility audit 
+                  Get a free local visibility audit
                 </Link>
               </motion.div>
             </div>
@@ -690,14 +742,15 @@ export default function AEOArticlePage110() {
                 Definition: GEO as Generative Engine Optimization
               </h3>
               <p className="section-phara">
-                In newer search discussions, GEO is also used to mean Generative Engine
-                Optimization. This refers to optimising content, so it is correctly
-                understood, selected, and summarised by AI-driven search engines and
-                generative answer systems.
+                In newer search discussions, GEO is also used to mean Generative
+                Engine Optimization. This refers to optimising content, so it is
+                correctly understood, selected, and summarised by AI-driven
+                search engines and generative answer systems.
               </p>
               <p className="section-phara">
-                Unlike Geographic Optimization, which focuses on where a user is,
-                Generative Engine Optimization focuses on how machines interpret content.
+                Unlike Geographic Optimization, which focuses on where a user
+                is, Generative Engine Optimization focuses on how machines
+                interpret content.
               </p>
             </div>
 
@@ -772,8 +825,8 @@ export default function AEOArticlePage110() {
               </ul>
 
               <p className="section-phara mt-6">
-                This approach overlaps heavily with AEO and AI-assisted SEO, but its focus
-                is specifically on machine comprehension.
+                This approach overlaps heavily with AEO and AI-assisted SEO, but
+                its focus is specifically on machine comprehension.
               </p>
             </div>
 
@@ -784,8 +837,8 @@ export default function AEOArticlePage110() {
               </h3>
 
               <p className="section-phara">
-                Generative Engine Optimization is useful across all industries, but
-                especially important for:
+                Generative Engine Optimization is useful across all industries,
+                but especially important for:
               </p>
 
               <ul className="mt-4 space-y-4">
@@ -805,8 +858,8 @@ export default function AEOArticlePage110() {
               </ul>
 
               <p className="section-phara mt-6">
-                Any industry where AI-generated answers influence decision-making benefits
-                from this optimisation.
+                Any industry where AI-generated answers influence
+                decision-making benefits from this optimisation.
               </p>
             </div>
 
@@ -817,16 +870,17 @@ export default function AEOArticlePage110() {
               </h3>
 
               <p className="section-phara">
-                Generative Engine Optimization is not a replacement for SEO. It is an
-                extension of modern SEO execution.
+                Generative Engine Optimization is not a replacement for SEO. It
+                is an extension of modern SEO execution.
               </p>
               <p className="section-phara">
-                SEO ensures content is discoverable and trusted. Generative Engine
-                Optimization ensures content is interpreted correctly by AI systems.
+                SEO ensures content is discoverable and trusted. Generative
+                Engine Optimization ensures content is interpreted correctly by
+                AI systems.
               </p>
               <p className="section-phara">
-                Without SEO authority, generative engines won’t trust the content. Without
-                clear structure, they won’t use it accurately.
+                Without SEO authority, generative engines won’t trust the
+                content. Without clear structure, they won’t use it accurately.
               </p>
             </div>
 
@@ -847,13 +901,11 @@ export default function AEOArticlePage110() {
                   href="/contact"
                   className="relative inline-block bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
                 >
-                  Book a free strategy session 
+                  Book a free strategy session
                 </Link>
               </motion.div>
             </div>
           </Section>
-
-
 
           {/* STEP 5 */}
 
@@ -862,8 +914,8 @@ export default function AEOArticlePage110() {
             title="What Is AI SEO and How AI Is Reshaping Search Execution"
           >
             <p className="section-phara">
-              AI SEO refers to using artificial intelligence to support SEO research,
-              analysis, and execution.
+              AI SEO refers to using artificial intelligence to support SEO
+              research, analysis, and execution.
             </p>
 
             {/* Implementation */}
@@ -965,7 +1017,7 @@ export default function AEOArticlePage110() {
                   href="/contact"
                   className="relative inline-block bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
                 >
-                 Explore AI-assisted SEO strategies
+                  Explore AI-assisted SEO strategies
                 </Link>
               </motion.div>
             </div>
@@ -982,7 +1034,8 @@ export default function AEOArticlePage110() {
                 SXO (Search Experience Optimization)
               </h3>
               <p className="section-phara">
-                Improving how users interact with pages after clicking from search.
+                Improving how users interact with pages after clicking from
+                search.
               </p>
             </div>
 
@@ -1002,7 +1055,8 @@ export default function AEOArticlePage110() {
                 E-E-A-T
               </h3>
               <p className="section-phara">
-                Experience, Expertise, Authority, and Trust signals that define credibility.
+                Experience, Expertise, Authority, and Trust signals that define
+                credibility.
               </p>
             </div>
 
@@ -1040,7 +1094,6 @@ export default function AEOArticlePage110() {
             </div>
           </Section>
 
-
           {/* STEP 7 */}
           <Section
             id="why-seo-is-the-bigger-picture"
@@ -1065,16 +1118,15 @@ export default function AEOArticlePage110() {
             </p>
 
             <p className="section-phara mt-4">
-              Businesses that chase individual tactics often experience short-term spikes
-              followed by long-term instability.
+              Businesses that chase individual tactics often experience
+              short-term spikes followed by long-term instability.
             </p>
 
             <p className="section-phara">
-              Businesses that invest in SEO as a system build authority, consistency, and
-              sustained growth over time.
+              Businesses that invest in SEO as a system build authority,
+              consistency, and sustained growth over time.
             </p>
           </Section>
-
 
           {/* FAQ SECTION */}
           <Section id="faq" title="Frequently Asked Questions (FAQs)">
@@ -1090,7 +1142,7 @@ export default function AEOArticlePage110() {
 
       {/* Bottom: Related Posts */}
       <section className="mx-auto section-container px-4 sm:px-6 pb-14">
-        <RelatedPostsSection posts={relatedPosts} />
+        <RelatedPostsFromData posts={relatedPosts} />
       </section>
     </main>
   );
@@ -1111,11 +1163,11 @@ function WhatsInside({ items }) {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort(
-            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
           )[0];
         if (visible?.target?.id) setActiveId(visible.target.id);
       },
-      { rootMargin: "0px 0px -65% 0px", threshold: [0, 1] }
+      { rootMargin: "0px 0px -65% 0px", threshold: [0, 1] },
     );
 
     sections.forEach((el) => observer.observe(el));
@@ -1288,10 +1340,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                  <span key={i} className="block">
-                    {line}
-                  </span>
-                ))
+                    <span key={i} className="block">
+                      {line}
+                    </span>
+                  ))
                 : title}
             </h2>
           </div>
@@ -1395,8 +1447,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-    (post && post.title) ||
-    (typeof document !== "undefined" ? document.title : "")
+      (post && post.title) ||
+      (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -1430,7 +1482,7 @@ function ShareButtons({
         window.open(
           shareUrl,
           "share-window",
-          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`
+          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`,
         );
       }
     } catch (e) {
@@ -1484,7 +1536,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1498,7 +1550,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1512,7 +1564,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1527,7 +1579,7 @@ function ShareButtons({
             onClick={() =>
               openPopup(
                 `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
-                true
+                true,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1649,7 +1701,6 @@ export const tocItems = [
   },
 ];
 
-
 /* Right rail categories */
 const rightCategories = [
   { text: "SEO Services", href: "/blogs/seo" },
@@ -1659,94 +1710,23 @@ const rightCategories = [
   },
 ];
 
-/* Mock related posts */
-const relatedPosts = [
-  {
-    id: 104,
-    title: "The Local Agency Advantage for National-Scale ROI ",
-    slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
-    date: "November 14, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
-    coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
-    deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 105,
-    title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
-    slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
-    date: "November 21, 2025",
-    readMins: 8,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
-    coverAlt:
-      "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 106,
-    title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
-    bannerTitle:
-      "A clear, step-by-step way to identify the right digital partner! NO falling for pitches, buzzwords, or slide-deck theatrics.",
-    date: "Nov 28, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
-    coverAlt:
-      "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 107,
-    title: "Top 10 Digital Marketing Agencies in Chennai",
-    slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
-    date: "Decmber 5, 2025",
-    readMins: 15,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
-    coverAlt:
-      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 108,
-    title: "How digital marketing actually drives business growth",
-    slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
-    bannerTitle:
-      "How digital marketing actually drives business growth.",
-    date: "Dec 19, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
-    coverAlt:
-      "Digital marketing services explained as a growth system",
-    deck:
-      "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
-    category: "Digital Marketing Services",
-  },
-];
-
 /* Content sections */
 function Intro() {
   return (
     <section id="intro" className="scroll-mt-24">
       <p className="section-title mb-4 text-left text-3xl">
-        <em>
-          Why Businesses Are Confused About Search Today
-        </em>
+        <em>Why Businesses Are Confused About Search Today</em>
       </p>
       <p className="section-phara">
-        Search marketing used to feel simple. Businesses invested in SEO, worked on rankings, and gradually built visibility. Today, that clarity has been replaced with confusion.
-
+        Search marketing used to feel simple. Businesses invested in SEO, worked
+        on rankings, and gradually built visibility. Today, that clarity has
+        been replaced with confusion.
       </p>
       <p className="section-phara">
-        New terms appear in meetings and proposals, AEO, GEO, AI SEO, SXO, and businesses are left wondering whether traditional SEO still matters or if it has been replaced entirely. This confusion is especially common among companies speaking to a {" "}
+        New terms appear in meetings and proposals, AEO, GEO, AI SEO, SXO, and
+        businesses are left wondering whether traditional SEO still matters or
+        if it has been replaced entirely. This confusion is especially common
+        among companies speaking to a{" "}
         <Link
           href="https://www.ayatiworks.com/"
           className="text-secondary hover:underline"
@@ -1756,22 +1736,29 @@ function Intro() {
         >
           Digital Marketing Agency in Chennai
         </Link>{" "}
-        , where both local competition and global exposure demand sharper search strategies.
-
+        , where both local competition and global exposure demand sharper search
+        strategies.
       </p>
       <p className="section-phara">
-        The confusion doesn’t come from change itself; it comes from misunderstanding of change. Search engines have evolved. User behavior has evolved. Technology has evolved.
+        The confusion doesn’t come from change itself; it comes from
+        misunderstanding of change. Search engines have evolved. User behavior
+        has evolved. Technology has evolved.
       </p>
       <p className="section-phara">
-        But the core goal of search has not changed: helping users find the most relevant, trustworthy answer to their query.
+        But the core goal of search has not changed: helping users find the most
+        relevant, trustworthy answer to their query.
       </p>
       <p className="section-phara">
-        What has changed is how that answer is delivered, sometimes as a featured snippet, sometimes as a local result, sometimes through AI-generated summaries.
+        What has changed is how that answer is delivered, sometimes as a
+        featured snippet, sometimes as a local result, sometimes through
+        AI-generated summaries.
       </p>
       <p className="section-phara">
-        When businesses treat every new acronym as a separate strategy, they fragment their efforts and dilute results. The truth is simpler and more practical: SEO is still the foundation. Everything else builds on top of it.
+        When businesses treat every new acronym as a separate strategy, they
+        fragment their efforts and dilute results. The truth is simpler and more
+        practical: SEO is still the foundation. Everything else builds on top of
+        it.
       </p>
-
     </section>
   );
 }
@@ -1787,55 +1774,54 @@ function Section({ id, title, children }) {
 
 function FAQAccordion() {
   const faqs = [
-  {
-    q: "Is SEO still relevant in the age of AI-powered search?",
-    a: "Yes, SEO is still relevant, and in fact, more important than ever. AI-powered search tools do not generate information randomly. They rely heavily on existing, well-structured, and trustworthy content available on the web. SEO provides the signals AI systems use to understand which websites are credible, authoritative, and relevant. Without SEO, AI has no reliable source to pull information from. AI has changed how results are presented, not how trust is built.",
-  },
-  {
-    q: "Can AEO work without SEO in place?",
-    a: "No, AEO cannot work independently. Answer Engine Optimization depends on strong SEO foundations such as content relevance, page structure, authority, and technical clarity. Search engines select answers from pages they already trust. If SEO fundamentals are weak, content will not qualify to appear as a featured snippet, voice answer, or AI-generated response, no matter how well it is written.",
-  },
-  {
-    q: "Is GEO optimization useful only for small or local businesses?",
-    a: "No. While GEO is essential for local businesses, it is equally valuable for national and global brands. Large companies use GEO to dominate specific regions, cities, or service areas. For example, a national brand may want separate visibility in Chennai, Bengaluru, Dubai, or New York. GEO helps tailor search presence based on regional intent, language preferences, and local competition.",
-  },
-  {
-    q: "Does AI SEO replace the need for SEO experts or agencies?",
-    a: "No. AI SEO supports SEO experts, it does not replace them. AI can analyse data, identify patterns, and speed up research, but it cannot understand business goals, brand positioning, customer psychology, or market nuance. Strategic thinking, decision-making, and long-term planning still require human expertise. AI is a tool, not a strategy.",
-  },
-  {
-    q: "How long does SEO take to show results today?",
-    a: "SEO is a long-term growth process, not an instant solution. Initial improvements such as better indexing, keyword movement, or traffic signals may appear within a few weeks. However, stable rankings, authority growth, and consistent lead generation typically take several months. The timeline depends on competition, industry, content quality, and how strong the existing website foundation is.",
-  },
-  {
-    q: "Do all industries really need AEO?",
-    a: "Not all industries need AEO in the same way, but most benefit from it. Industries where customers ask questions before making decisions, such as healthcare, education, SaaS, and professional services, gain the most from AEO. For other industries, AEO still improves clarity and visibility by helping search engines understand content better. It should be applied selectively, not blindly.",
-  },
-  {
-    q: "Is AI-generated content good or bad for SEO?",
-    a: "AI-generated content is neither good nor bad by default. What matters is quality, accuracy, and usefulness. Content created purely to manipulate rankings or flood search engines usually fails. AI should assist in research, structuring, and drafting, but final content must be reviewed, refined, and aligned with real user intent. Search engines reward helpful content, regardless of how it is produced.",
-  },
-  {
-    q: "Can businesses choose only one approach: SEO, AEO, GEO, or AI SEO?",
-    a: "No. These are not standalone choices. SEO is the foundation, and AEO, GEO, and AI SEO are execution layers within it. Choosing only one approach limits results and creates gaps. For example, AEO without SEO lacks authority, and GEO without SEO lacks stability. A combined approach ensures consistency, scalability, and long-term performance.",
-  },
-  {
-    q: "Is SEO only about rankings and traffic?",
-    a: "No. Modern SEO is about outcomes, not just rankings. Traffic without relevance does not generate business value. SEO today focuses on attracting the right users, guiding them through content, and supporting conversions. Rankings are indicators, not the end goal. The real measure of SEO success is visibility that leads to engagement, trust, and business growth.",
-  },
-  {
-    q: "What is the biggest mistake businesses make with SEO today?",
-    a: "The biggest mistake is treating SEO as a one-time project instead of an ongoing system. Many businesses optimise a few pages and stop. Search behaviour, competition, and algorithms constantly evolve. SEO must be maintained, refined, and expanded over time. Businesses that invest consistently see compounding results; those that stop early lose momentum.",
-  },
-  {
-    q: "How should a business decide the right SEO strategy for its needs?",
-    a: `The right SEO strategy depends on the business model, industry, location, competition, and growth goals. There is no one-size-fits-all approach. A local service business needs stronger GEO focus, while a SaaS company may prioritise AEO and AI SEO. The key is to build on SEO fundamentals first, then layer advanced strategies based on real data and intent.
+    {
+      q: "Is SEO still relevant in the age of AI-powered search?",
+      a: "Yes, SEO is still relevant, and in fact, more important than ever. AI-powered search tools do not generate information randomly. They rely heavily on existing, well-structured, and trustworthy content available on the web. SEO provides the signals AI systems use to understand which websites are credible, authoritative, and relevant. Without SEO, AI has no reliable source to pull information from. AI has changed how results are presented, not how trust is built.",
+    },
+    {
+      q: "Can AEO work without SEO in place?",
+      a: "No, AEO cannot work independently. Answer Engine Optimization depends on strong SEO foundations such as content relevance, page structure, authority, and technical clarity. Search engines select answers from pages they already trust. If SEO fundamentals are weak, content will not qualify to appear as a featured snippet, voice answer, or AI-generated response, no matter how well it is written.",
+    },
+    {
+      q: "Is GEO optimization useful only for small or local businesses?",
+      a: "No. While GEO is essential for local businesses, it is equally valuable for national and global brands. Large companies use GEO to dominate specific regions, cities, or service areas. For example, a national brand may want separate visibility in Chennai, Bengaluru, Dubai, or New York. GEO helps tailor search presence based on regional intent, language preferences, and local competition.",
+    },
+    {
+      q: "Does AI SEO replace the need for SEO experts or agencies?",
+      a: "No. AI SEO supports SEO experts, it does not replace them. AI can analyse data, identify patterns, and speed up research, but it cannot understand business goals, brand positioning, customer psychology, or market nuance. Strategic thinking, decision-making, and long-term planning still require human expertise. AI is a tool, not a strategy.",
+    },
+    {
+      q: "How long does SEO take to show results today?",
+      a: "SEO is a long-term growth process, not an instant solution. Initial improvements such as better indexing, keyword movement, or traffic signals may appear within a few weeks. However, stable rankings, authority growth, and consistent lead generation typically take several months. The timeline depends on competition, industry, content quality, and how strong the existing website foundation is.",
+    },
+    {
+      q: "Do all industries really need AEO?",
+      a: "Not all industries need AEO in the same way, but most benefit from it. Industries where customers ask questions before making decisions, such as healthcare, education, SaaS, and professional services, gain the most from AEO. For other industries, AEO still improves clarity and visibility by helping search engines understand content better. It should be applied selectively, not blindly.",
+    },
+    {
+      q: "Is AI-generated content good or bad for SEO?",
+      a: "AI-generated content is neither good nor bad by default. What matters is quality, accuracy, and usefulness. Content created purely to manipulate rankings or flood search engines usually fails. AI should assist in research, structuring, and drafting, but final content must be reviewed, refined, and aligned with real user intent. Search engines reward helpful content, regardless of how it is produced.",
+    },
+    {
+      q: "Can businesses choose only one approach: SEO, AEO, GEO, or AI SEO?",
+      a: "No. These are not standalone choices. SEO is the foundation, and AEO, GEO, and AI SEO are execution layers within it. Choosing only one approach limits results and creates gaps. For example, AEO without SEO lacks authority, and GEO without SEO lacks stability. A combined approach ensures consistency, scalability, and long-term performance.",
+    },
+    {
+      q: "Is SEO only about rankings and traffic?",
+      a: "No. Modern SEO is about outcomes, not just rankings. Traffic without relevance does not generate business value. SEO today focuses on attracting the right users, guiding them through content, and supporting conversions. Rankings are indicators, not the end goal. The real measure of SEO success is visibility that leads to engagement, trust, and business growth.",
+    },
+    {
+      q: "What is the biggest mistake businesses make with SEO today?",
+      a: "The biggest mistake is treating SEO as a one-time project instead of an ongoing system. Many businesses optimise a few pages and stop. Search behaviour, competition, and algorithms constantly evolve. SEO must be maintained, refined, and expanded over time. Businesses that invest consistently see compounding results; those that stop early lose momentum.",
+    },
+    {
+      q: "How should a business decide the right SEO strategy for its needs?",
+      a: `The right SEO strategy depends on the business model, industry, location, competition, and growth goals. There is no one-size-fits-all approach. A local service business needs stronger GEO focus, while a SaaS company may prioritise AEO and AI SEO. The key is to build on SEO fundamentals first, then layer advanced strategies based on real data and intent.
     Modern search is not about choosing between SEO, AEO, GEO, or AI SEO. It is about understanding how they work together. SEO remains the foundation that supports every evolution in search behaviour.
     Businesses that recognise this build visibility that lasts. Those that chase acronyms without structure struggle to sustain results.
     `,
-  },
-];
-
+    },
+  ];
 
   const [openIndex, setOpenIndex] = React.useState(0);
   const toggle = (i) => setOpenIndex((curr) => (curr === i ? -1 : i));
@@ -1907,66 +1893,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
         </p>
       </div>
     </div>
-  );
-}
-
-/* Related posts */
-function RelatedPostsSection({ posts = [] }) {
-  if (!posts?.length) return null;
-  return (
-    <div className="mt-2">
-      <div className="mb-6 flex items-center justify-between">
-        <h2 className="section-title text-left">Related Posts</h2>
-        <Link
-          href="/blogs"
-          className="btn-outline"
-          aria-label="View all blog posts"
-        >
-          View all
-        </Link>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((p) => (
-          <RelatedPostCard key={p.slug} post={p} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function RelatedPostCard({ post }) {
-  return (
-    <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
-      <Link href={post.slug} className="absolute inset-0 z-[1]">
-        <span className="sr-only">{`Read: ${post.title}`}</span>
-      </Link>
-
-      <div className="relative h-44 w-full overflow-hidden">
-        <img
-          src={post.cover}
-          alt={post.title}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-          loading="lazy"
-          decoding="async"
-        />
-        <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-          {post.category}
-        </span>
-      </div>
-
-      <div className="p-4">
-        <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
-          {post.title}
-        </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
-
-        <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
-          <span>{post.date}</span>
-          <span className="h-3 w-px bg-slate-300" aria-hidden="true" />
-          <span>{post.readMins} min read</span>
-        </div>
-      </div>
-    </article>
   );
 }

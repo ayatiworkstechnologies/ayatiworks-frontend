@@ -15,6 +15,8 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
+import RelatedPostsFromData from "./RelatedPostsFromData";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -28,7 +30,11 @@ const buildHref = (slugOrPath = "") => {
 
 export default function AEOArticlePage101() {
         const post = POSTS.find((p) => p.id === 101) || POSTS[0];
-  
+   const relatedPosts = getRelatedRecentPosts({
+      currentPostId: post.id,
+      category: post.category,
+      limit: 3,
+    });
   return (
     <main className="min-h-screen bg-white">
       {/* Top banner */}
@@ -577,7 +583,8 @@ export default function AEOArticlePage101() {
 
       {/* ===== Bottom: Related Posts ===== */}
       <section className="mx-auto section-container px-4 sm:px-6 pb-14">
-        <RelatedPostsSection posts={relatedPosts} />
+                <RelatedPostsFromData posts={relatedPosts} />
+        
       </section>
     </main>
   );
@@ -1101,29 +1108,6 @@ const rightCategories = [
   { text: "Web & E-Commerce", href: "#" },
 ];
 
-/* ---- Mock related posts (swap with your CMS) ---- */
-const relatedPosts = [
-  {
-     id: 102,
-    slug: "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences/",
-    title: "How Your Tech Startup Can Use Answer Engine Optimisation (AEO) to Reach their Audience ",
-    excerpt: "From CEOs to CMOs in funded or incubated tech startups, there is this question about using organic reach or SEO ...",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-102.jpg",
-    category: "SEO",
-    updatedAt: "October 31, 2025",
-    readMins: 15,
-  },
-  {
-     id: 103,
-    slug: "/blogs/seo/implementing-aeo-in-your-content-strategy",
-    title: "Implementing AEO in Your Content Strategy",
-    excerpt: "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center stage, startups that master AEO today are the ones that will stay visible tomorrow. ",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
-    category: "SEO",
-    updatedAt: "November 07, 2025",
-    readMins: 8,
-  },
-];
 
 /* Content sections */
 function Intro() {
@@ -1277,72 +1261,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
         <p className="font-secondary text-lg text-black/80">{a}</p>
       </div>
     </div>
-  );
-}
-
-/* ---------- Related Posts (Bottom) ---------- */
-
-function RelatedPostsSection({ posts = [] }) {
-  if (!posts?.length) return null;
-  return (
-    <div className="mt-2">
-      <div className="mb-6 flex items-center justify-between">
-        <h2 className="section-title text-left ">Related Posts</h2>
-        <Link
-          href="/blogs"
-          className=" btn-outline "
-          aria-label="View all blog posts"
-        >
-          View all
-        </Link>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((p) => (
-          <RelatedPostCard key={p.slug} post={p} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function RelatedPostCard({ post }) {
-  return (
-    <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
-      {/* Stretched link */}
-      <Link href={post.slug} className="absolute inset-0 z-[1]">
-        <span className="sr-only">{`Read: ${post.title}`}</span>
-      </Link>
-
-      {/* Image */}
-      <div className="relative h-44 w-full overflow-hidden">
-        <img
-          src={post.image}
-          alt={post.title}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-          loading="lazy"
-          decoding="async"
-        />
-        <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-          {post.category}
-        </span>
-      </div>
-
-      {/* Body */}
-      <div className="p-4">
-        <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
-          {post.title}
-        </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-          {post.excerpt}
-        </p>
-
-        <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
-          <span>{post.updatedAt}</span>
-          <span className="h-3 w-px bg-slate-300" aria-hidden="true" />
-          <span>{post.readMins} min read</span>
-        </div>
-      </div>
-    </article>
   );
 }

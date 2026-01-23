@@ -2,10 +2,7 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
-import { IoCheckmarkDone } from "react-icons/io5";
-import { FaRegHandPointRight } from "react-icons/fa6";
-import { FaXmark } from "react-icons/fa6";
-import { IoMdCheckmark } from "react-icons/io";
+
 
 import Link from "next/link";
 import { FiPlus, FiMinus } from "react-icons/fi";
@@ -20,6 +17,9 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
+import RelatedPostsFromData from "./RelatedPostsFromData";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -31,6 +31,12 @@ const buildHref = (slugOrPath = "") => {
 };
 export default function AEOArticlePage111() {
   const post = POSTS.find((p) => p.id === 111) || POSTS[0];
+
+  const relatedPosts = getRelatedRecentPosts({
+    currentPostId: post.id,
+    category: post.category,
+    limit: 3,
+  });
 
   return (
     <main className="min-h-screen bg-white">
@@ -318,7 +324,8 @@ export default function AEOArticlePage111() {
 
       {/* Bottom: Related Posts */}
       <section className="mx-auto section-container px-4 sm:px-6 pb-14">
-        <RelatedPostsSection posts={relatedPosts} />
+        {/* <RelatedPostsSection posts={relatedPosts} /> */}
+        <RelatedPostsFromData posts={relatedPosts} />
       </section>
     </main>
   );
@@ -876,76 +883,6 @@ const rightCategories = [
   },
 ];
 
-/* Mock related posts */
-const relatedPosts = [
-  {
-    id: 104,
-    title: "The Local Agency Advantage for National-Scale ROI ",
-    slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
-    date: "November 14, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
-    coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
-    deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 105,
-    title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
-    slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
-    date: "November 21, 2025",
-    readMins: 8,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
-    coverAlt:
-      "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 106,
-    title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
-    bannerTitle:
-      "A clear, step-by-step way to identify the right digital partner! NO falling for pitches, buzzwords, or slide-deck theatrics.",
-    date: "Nov 28, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
-    coverAlt:
-      "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 107,
-    title: "Top 10 Digital Marketing Agencies in Chennai",
-    slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
-    date: "Decmber 5, 2025",
-    readMins: 15,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
-    coverAlt:
-      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 108,
-    title: "How digital marketing actually drives business growth",
-    slug: "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
-    bannerTitle: "How digital marketing actually drives business growth.",
-    date: "Dec 19, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
-    coverAlt: "Digital marketing services explained as a growth system",
-    deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
-    category: "Digital Marketing Services",
-  },
-];
-
 /* Content sections */
 function Intro() {
   return (
@@ -1112,63 +1049,3 @@ function FAQItem({ q, a, open, onToggle, index }) {
   );
 }
 
-/* Related posts */
-function RelatedPostsSection({ posts = [] }) {
-  if (!posts?.length) return null;
-  return (
-    <div className="mt-2">
-      <div className="mb-6 flex items-center justify-between">
-        <h2 className="section-title text-left">Related Posts</h2>
-        <Link
-          href="/blogs"
-          className="btn-outline"
-          aria-label="View all blog posts"
-        >
-          View all
-        </Link>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((p) => (
-          <RelatedPostCard key={p.slug} post={p} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function RelatedPostCard({ post }) {
-  return (
-    <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
-      <Link href={post.slug} className="absolute inset-0 z-[1]">
-        <span className="sr-only">{`Read: ${post.title}`}</span>
-      </Link>
-
-      <div className="relative h-44 w-full overflow-hidden">
-        <img
-          src={post.cover}
-          alt={post.title}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-          loading="lazy"
-          decoding="async"
-        />
-        <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-          {post.category}
-        </span>
-      </div>
-
-      <div className="p-4">
-        <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
-          {post.title}
-        </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
-
-        <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
-          <span>{post.date}</span>
-          <span className="h-3 w-px bg-slate-300" aria-hidden="true" />
-          <span>{post.readMins} min read</span>
-        </div>
-      </div>
-    </article>
-  );
-}

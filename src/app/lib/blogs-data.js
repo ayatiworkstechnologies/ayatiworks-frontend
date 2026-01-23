@@ -155,7 +155,7 @@ export const POSTS = [
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck:
       "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
-    category: "SEO",
+    category: "SEO Services",
   },
   {
     id: 111,

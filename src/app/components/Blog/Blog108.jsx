@@ -20,6 +20,8 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
+import RelatedPostsFromData from "./RelatedPostsFromData";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -31,6 +33,11 @@ const buildHref = (slugOrPath = "") => {
 };
 export default function AEOArticlePage108() {
   const post = POSTS.find((p) => p.id === 108) || POSTS[0];
+  const relatedPosts = getRelatedRecentPosts({
+    currentPostId: post.id,
+    category: post.category,
+    limit: 3,
+  });
 
   return (
     <main className="min-h-screen bg-white">
@@ -93,7 +100,8 @@ export default function AEOArticlePage108() {
 
             <div className="ml-10 mb-4">
               <h3 className="section-title text-2xl text-secondary text-left my-5">
-                These are some common disconnects that happen in the industry:{" "}
+                These are some common disconnects that happen in the
+                industry:{" "}
               </h3>
               <ul className="mt-4 space-y-2">
                 {[
@@ -180,7 +188,8 @@ export default function AEOArticlePage108() {
               The realization here is subtle but critical:
             </p>
             <h3 className="section-title text-2xl text-secondary text-left my-5">
-              Organic growth is not a content problem. It’s a system problem.{" "}
+              Organic growth is not a content problem. It’s a system
+              problem.{" "}
             </h3>
             <p className="section-phara">
               Until content, SEO, brand clarity, and distribution are aligned,
@@ -757,7 +766,7 @@ export default function AEOArticlePage108() {
               ensures these assets are created as a connected set, not isolated
               outputs competing for attention. Written, visual, and motion
               content reinforce the same message at different touchpoints. This
-              approach allows {" "}
+              approach allows{" "}
               <Link
                 href="https://www.ayatiworks.com/content-as-a-service/video-creation"
                 className="text-secondary hover:underline"
@@ -817,7 +826,7 @@ export default function AEOArticlePage108() {
                         <span className="font-medium text-black">{name}</span>
                       </span>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </div>
@@ -875,7 +884,7 @@ export default function AEOArticlePage108() {
                 prefetch={false}
               >
                 social media marketing
-              </Link> {" "}
+              </Link>{" "}
               rarely creates demand on its own.
             </p>
             <p className="section-phara">
@@ -1067,7 +1076,8 @@ export default function AEOArticlePage108() {
             title="Lifecycle Thinking, Not Broadcasts"
           >
             <p className="section-phara">
-              Modern email systems are designed around behaviour, not blasts.{" "}
+              Modern email systems are designed around behaviour, not
+              blasts.{" "}
             </p>
             <div className="ml-10 mb-4">
               <h3 className="section-title text-2xl text-secondary text-left my-5">
@@ -1162,7 +1172,8 @@ export default function AEOArticlePage108() {
             </div>
             <p className="section-phara">
               These factors are influenced by SEO clarity, content structure,
-              brand voice, and distribution consistency, not just page design.{" "}
+              brand voice, and distribution consistency, not just page
+              design.{" "}
             </p>
           </Section>
 
@@ -1197,7 +1208,8 @@ export default function AEOArticlePage108() {
             </div>
             <p className="section-phara">
               Rather than being a standalone service, conversion thinking is
-              embedded across the system, quietly improving outcomes everywhere.{" "}
+              embedded across the system, quietly improving outcomes
+              everywhere.{" "}
             </p>{" "}
           </Section>
 
@@ -1275,7 +1287,8 @@ export default function AEOArticlePage108() {
             </div>
             <p className="section-phara">
               This is why performance-driven platforms increasingly acknowledge
-              brand strength as a conversion multiplier, not a creative luxury.{" "}
+              brand strength as a conversion multiplier, not a creative
+              luxury.{" "}
             </p>{" "}
           </Section>
 
@@ -1442,7 +1455,7 @@ export default function AEOArticlePage108() {
 
       {/* Bottom: Related Posts */}
       <section className="mx-auto section-container px-4 sm:px-6 pb-14">
-        <RelatedPostsSection posts={relatedPosts} />
+        <RelatedPostsFromData posts={relatedPosts} />
       </section>
     </main>
   );
@@ -1463,11 +1476,11 @@ function WhatsInside({ items }) {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort(
-            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+            (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
           )[0];
         if (visible?.target?.id) setActiveId(visible.target.id);
       },
-      { rootMargin: "0px 0px -65% 0px", threshold: [0, 1] }
+      { rootMargin: "0px 0px -65% 0px", threshold: [0, 1] },
     );
 
     sections.forEach((el) => observer.observe(el));
@@ -1748,7 +1761,7 @@ function ShareButtons({
   const encodedTitle = encodeURIComponent(
     title ||
       (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : "")
+      (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -1782,7 +1795,7 @@ function ShareButtons({
         window.open(
           shareUrl,
           "share-window",
-          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`
+          `width=${w},height=${h},left=${left},top=${top},resizable=yes,scrollbars=yes`,
         );
       }
     } catch (e) {
@@ -1836,7 +1849,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`
+                `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1850,7 +1863,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+                `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1864,7 +1877,7 @@ function ShareButtons({
           <button
             onClick={() =>
               openPopup(
-                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -1879,7 +1892,7 @@ function ShareButtons({
             onClick={() =>
               openPopup(
                 `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
-                true
+                true,
               )
             }
             className="flex items-center gap-2 rounded px-2 py-1 hover:bg-slate-50 transition"
@@ -2147,79 +2160,6 @@ const rightCategories = [
   },
 ];
 
-/* Mock related posts */
-const relatedPosts = [
-  {
-    id: 104,
-    title: "The Local Agency Advantage for National-Scale ROI ",
-    slug: "/blogs/digital-marketing-services/chennai-digital-marketing-services",
-    date: "November 14, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
-    coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
-    deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 105,
-    title: "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
-    slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
-    date: "November 21, 2025",
-    readMins: 8,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
-    coverAlt:
-      "Benefits of hiring a Chennai-based digital marketing agency for business growth",
-    deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 106,
-    title: "How to Evaluate a Digital Marketing Agency in Chennai",
-    slug: "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
-    bannerTitle:
-      "A clear, step-by-step way to identify the right digital partner! NO falling for pitches, buzzwords, or slide-deck theatrics.",
-    date: "Nov 28, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
-    coverAlt:
-      "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
-    deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 107,
-    title: "Top 10 Digital Marketing Agencies in Chennai",
-    slug: "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
-    date: "Decmber 5, 2025",
-    readMins: 15,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
-    coverAlt:
-      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
-    category: "Digital Marketing Services",
-  },
-  {
-    id: 109,
-    title:
-      "A Business Decision Guide to Choosing, Prioritising, and Scaling the Right Services",
-    slug: "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
-    bannerTitle:
-      "Digital marketing delivers results only when services are chosen with intent, not impulse.",
-    date: "Dec 25, 2025",
-    readMins: 10,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
-    coverAlt:
-      "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
-    deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
-    category: "Digital Marketing Services",
-  },
-];
-
 /* Content sections */
 function Intro() {
   return (
@@ -2364,66 +2304,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
         </p>
       </div>
     </div>
-  );
-}
-
-/* Related posts */
-function RelatedPostsSection({ posts = [] }) {
-  if (!posts?.length) return null;
-  return (
-    <div className="mt-2">
-      <div className="mb-6 flex items-center justify-between">
-        <h2 className="section-title text-left">Related Posts</h2>
-        <Link
-          href="/blogs"
-          className="btn-outline"
-          aria-label="View all blog posts"
-        >
-          View all
-        </Link>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((p) => (
-          <RelatedPostCard key={p.slug} post={p} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function RelatedPostCard({ post }) {
-  return (
-    <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
-      <Link href={post.slug} className="absolute inset-0 z-[1]">
-        <span className="sr-only">{`Read: ${post.title}`}</span>
-      </Link>
-
-      <div className="relative h-44 w-full overflow-hidden">
-        <img
-          src={post.cover}
-          alt={post.title}
-          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
-          loading="lazy"
-          decoding="async"
-        />
-        <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white">
-          {post.category}
-        </span>
-      </div>
-
-      <div className="p-4">
-        <h3 className="line-clamp-2 font-primary text-lg leading-snug text-slate-900">
-          {post.title}
-        </h3>
-        <p className="mt-2 line-clamp-2 text-sm text-slate-600">{post.deck}</p>
-
-        <div className="mt-4 flex items-center gap-3 text-xs text-slate-500">
-          <span>{post.date}</span>
-          <span className="h-3 w-px bg-slate-300" aria-hidden="true" />
-          <span>{post.readMins} min read</span>
-        </div>
-      </div>
-    </article>
   );
 }
