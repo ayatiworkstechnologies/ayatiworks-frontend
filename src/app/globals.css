@@ -31,17 +31,17 @@
   --spacing-5xl: 64px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
-  --shadow-xl: 0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04);
-  --shadow-2xl: 0 25px 50px rgba(0,0,0,0.25);
-  --shadow-3xl: 0 20px 30px -6px rgba(0,0,0,0.3);
-  --shadow-4xl: 0 25px 40px -8px rgba(0,0,0,0.35);
-  --shadow-5xl: 0 30px 60px -10px rgba(0,0,0,0.4);
-  --shadow-6xl: 0 40px 80px -12px rgba(0,0,0,0.45);
-  --shadow-inner-xl: inset 0 4px 8px rgba(0,0,0,0.2);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+  --shadow-3xl: 0 20px 30px -6px rgba(0, 0, 0, 0.3);
+  --shadow-4xl: 0 25px 40px -8px rgba(0, 0, 0, 0.35);
+  --shadow-5xl: 0 30px 60px -10px rgba(0, 0, 0, 0.4);
+  --shadow-6xl: 0 40px 80px -12px rgba(0, 0, 0, 0.45);
+  --shadow-inner-xl: inset 0 4px 8px rgba(0, 0, 0, 0.2);
   --shadow-glow: 0 0 20px rgba(0, 200, 255, 0.6);
 
   /* Animations */
@@ -52,20 +52,45 @@
 
 /* ================== KEYFRAMES ================== */
 @keyframes marquee {
-  0%   { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes shakeY {
-  0%, 100% { transform: translateY(0); }
-  25%      { transform: translateY(-4px); }
-  50%      { transform: translateY(4px); }
-  75%      { transform: translateY(-2px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-4px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  75% {
+    transform: translateY(-2px);
+  }
 }
 
 @keyframes fadeInScale {
-  from { opacity: 0; transform: translateY(6px) scale(.98); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* ================== GLOBAL FONTS ================== */
@@ -74,6 +99,8 @@
   src: url("/fonts/JockeyOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  /* ✅ Eliminates FOIT, improves CLS */
 }
 
 @font-face {
@@ -81,6 +108,8 @@
   src: url("/fonts/Nexa-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  /* ✅ Eliminates FOIT, improves CLS */
 }
 
 /* ================== CUSTOM COMPONENTS ================== */
@@ -104,13 +133,13 @@
   .section-subtitle {
     @apply mt-2 sm:mt-3 md:mt-4 lg:mt-5 text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 text-center leading-relaxed;
   }
+
   .section-phara {
-     @apply  text-lg md:text-lg text-black/80 mb-2 text-left font-secondary leading-relaxed;
+    @apply text-lg md:text-lg text-black/80 mb-2 text-left font-secondary leading-relaxed;
   }
-   .btn-primary {
-    @apply relative bg-secondary text-white font-primary font-medium 
-    text-lg md:text-xl py-2 px-10 rounded-full shadow-md
-    transition-all duration-300 cursor-pointer;
+
+  .btn-primary {
+    @apply relative bg-secondary text-white font-primary font-medium text-lg md:text-xl py-2 px-10 rounded-full shadow-md transition-all duration-300 cursor-pointer;
 
     /* subtle glass and lift */
     @apply hover:bg-secondary/90 hover:shadow-2xl;
@@ -124,23 +153,43 @@
     transform: scale(.96);
   }
 
-    .btn-outline {
-    @apply border-2 border-secondary text-secondary 
-    font-primary font-medium text-lg md:text-xl py-3 px-10 rounded-full
-    transition-all duration-300 cursor-pointer bg-transparent;
+  .btn-outline {
+    @apply border-2 border-secondary text-secondary font-primary font-medium text-lg md:text-xl py-3 px-10 rounded-full transition-all duration-300 cursor-pointer bg-transparent;
 
     @apply hover:bg-secondary hover:text-white hover:shadow-md;
   }
 
 }
 
- 
+
 @layer utilities {
-  @keyframes marquee {
-    from { transform: translateX(0%); }
-    to   { transform: translateX(-50%); } /* since we duplicated the items */
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
   }
-  .animate-marquee { animation: marquee 13s linear infinite; }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse 25s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
 }
 
 /* ================== UTILITIES ================== */
@@ -148,6 +197,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -157,8 +207,8 @@
   text-orientation: upright;
 }
 
-html.mobile-menu-open .floating, 
-html.mobile-menu-open [class*="chat"], 
+html.mobile-menu-open .floating,
+html.mobile-menu-open [class*="chat"],
 html.mobile-menu-open [class*="widget"] {
   display: none !important;
 }

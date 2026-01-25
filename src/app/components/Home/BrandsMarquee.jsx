@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image"; // ✅ Import Next.js Image
 
 export default function BrandsMarquee() {
   const brands = [
@@ -88,7 +89,7 @@ export default function BrandsMarquee() {
   );
 }
 
-/* ====== Card with flip interaction ====== */
+/* ====== Card with flip interaction - OPTIMIZED ====== */
 function BrandCard({ name, pattern, logo }) {
   return (
     <div
@@ -104,27 +105,34 @@ function BrandCard({ name, pattern, logo }) {
                    [transform-style:preserve-3d]
                    group-hover:[transform:rotateY(180deg)]"
       >
-        {/* Front (pattern) */}
+        {/* Front (pattern) - ✅ OPTIMIZED */}
         <div
           className="absolute inset-0 flex items-center justify-center overflow-hidden
                      [backface-visibility:hidden]"
         >
-          <img
+          <Image
             src={pattern}
-            alt={`${name} pattern`}
-            className="h-full w-full object-cover opacity-90"
+            alt={`${name} pattern background`}
+            fill
+            className="object-cover opacity-90"
+            sizes="250px"
+            unoptimized /* Keep logo quality crisp */
           />
         </div>
 
-        {/* Back (logo) */}
+        {/* Back (logo) - ✅ OPTIMIZED */}
         <div
           className="absolute inset-0 flex items-center justify-center bg-white
                      [backface-visibility:hidden] [transform:rotateY(180deg)]"
         >
-          <img
+          <Image
             src={logo}
             alt={`${name} logo`}
+            width={180}
+            height={180}
             className="max-h-[180px] max-w-[70%] object-contain"
+            sizes="180px"
+            unoptimized /* Keep logo quality crisp */
           />
         </div>
       </div>

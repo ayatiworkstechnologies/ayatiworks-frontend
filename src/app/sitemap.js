@@ -1,79 +1,84 @@
+import { POSTS } from "./lib/blogs-data";
+import { caseStudies } from "./lib/casestudy-data";
 
-export const dynamic = "force-static"; // required for output: "export"
+export const dynamic = "force-static";
 export const revalidate = false;
 
 const baseUrl = "https://ayatiworks.com";
 
-const routes = [
-  "/", // Home
-  "/about-us",
-  "/team",
-  "/careers",
-
-  // Digital Marketing Services
-  "/digital-marketing-services",
-  "/digital-marketing-services/seo",
-  "/digital-marketing-services/social-media-marketing",
-  "/digital-marketing-services/email-marketing",
-  "/digital-marketing-services/instagram-marketing",
-  "/digital-marketing-services/affiliate-marketing",
-  "/digital-marketing-services/programmatic-marketing",
-  "/digital-marketing-services/video-marketing",
-
-  // Content-as-a-Service
-  "/content-as-a-service",
-  "/content-as-a-service/branding-service",
-  "/content-as-a-service/video-creation",
-  "/content-as-a-service/multilingual-marketing",
-
-  // Digital PR Service
-  "/digital-pr",
-  "/digital-pr/digital-pr-services",
-  "/digital-pr/influencer-marketing",
-  "/digital-pr/online-reputation-media-outreach",
-
-  // Web & E-commerce
-  "/web-ecommerce",
-  "/web-ecommerce/ux-ui-design",
-  "/web-ecommerce/web-development",
-  "/web-ecommerce/web-maintenance",
-  "/web-ecommerce/shopify-development",
-  "/web-ecommerce/ecommerce-solutions",
-
-  // Insights
-  "/blogs",
-  "/awards",
-  "/case-study",
-  "/case-study/Reposition-Nippo-and-Brand-Awareness-Campaign",
-  "/case-study/Jeep-India-Independence-Day-Merchandise-Sales-Campaign",
-  "/case-study/how-Ayatiworks-propelled-Volvos-digital-presence-by-250-percentage-increase-in-impressions",
-
-  // Contact
-  "/contact-us",
-
-  //blogs List 
-
-  "/blogs/seo/5-must-know-aeo-strategies-for-2025",
-  "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences",
-  "/blogs/seo/implementing-aeo-in-your-content-strategy",
-  "/blogs/digital-marketing-services/chennai-digital-marketing-services",
-  "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
-  "/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai/",
-  "/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai/",
-  "/blogs/digital-marketing-services/digital-marketing-integrated-growth-framework/",
-  "/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services/",
-  "/blogs/seo/seo-vs-aeo-vs-geo-vs-ai-seo-why-seo-is-still-the-foundation/",
-  "/blogs/digital-marketing-services/digital-marketing-services-drive-revenue-funnel-alignment/",
-];
-
 export default function sitemap() {
   const now = new Date();
-  return routes.map((path) => ({
-    url: `${baseUrl}${path}`,
+
+  // 1. Static Routes
+  const staticRoutes = [
+    "/",
+    "/about-us",
+    "/team",
+    "/careers",
+    
+    // Services - Digital Marketing
+    "/digital-marketing-services",
+    "/digital-marketing-services/seo",
+    "/digital-marketing-services/social-media-marketing",
+    "/digital-marketing-services/email-marketing",
+    "/digital-marketing-services/instagram-marketing",
+    "/digital-marketing-services/affiliate-marketing",
+    "/digital-marketing-services/programmatic-marketing",
+    "/digital-marketing-services/video-marketing",
+
+    // Services - Content
+    "/content-as-a-service",
+    "/content-as-a-service/branding-service",
+    "/content-as-a-service/video-creation",
+    "/content-as-a-service/multilingual-marketing",
+
+    // Services - PR
+    "/digital-pr",
+    "/digital-pr/digital-pr-services",
+    "/digital-pr/influencer-marketing",
+    "/digital-pr/online-reputation-media-outreach",
+
+    // Services - Web
+    "/web-ecommerce",
+    "/web-ecommerce/ux-ui-design",
+    "/web-ecommerce/web-development",
+    "/web-ecommerce/web-maintenance",
+    "/web-ecommerce/shopify-development",
+    "/web-ecommerce/ecommerce-solutions",
+
+    // Listings
+    "/blogs",
+    "/awards",
+    "/case-study",
+    "/contact-us",
+  ];
+
+  // 2. Dynamic Blog Routes
+  const blogRoutes = POSTS.map((post) => ({
+    url: `${baseUrl}${post.slug}`,
+    lastModified: new Date(post.date || now),
+    changeFrequency: "monthly", // Blogs don't change often after publish
+    priority: 0.8,
+  }));
+
+  // 3. Dynamic Case Study Routes
+  const caseStudyRoutes = caseStudies.map((study) => ({
+    url: `${baseUrl}${study.link}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  // 4. Map Static Routes to Sitemap Format
+  const staticSitemap = staticRoutes.map((route) => ({
+    url: `${baseUrl}${route}`,
     lastModified: now,
     changeFrequency: "weekly",
-    priority: path === "/" ? 1.0 : 0.7,
+    priority: route === "/" ? 1.0 : 0.9,
   }));
+
+  // 5. Merge All
+  return [...staticSitemap, ...blogRoutes, ...caseStudyRoutes];
 }
 
 

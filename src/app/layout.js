@@ -9,12 +9,13 @@ import GtmScript from "./components/GtmScript";
 import Script from "next/script";
 
 export const metadata = {
+  metadataBase: new URL("https://ayatiworks.com"), // ✅ Ensures all relative URLs use this base
   title:
     "Best Digital Marketing Agency in Chennai | Top Digital Marketing Company | Ayatiworks",
   description:
     "Ayatiworks is a leading digital marketing agency in Chennai offering ROI-focused SEO, social media, PPC and content marketing. Grow faster with a data-driven digital marketing company trusted by Chennai’s top brands.",
   alternates: {
-    canonical: "https://ayatiworks.com/",
+    canonical: "/", // ✅ Relative canonical (uses metadataBase)
   },
   // 👇 let Next.js generate all the <link rel="icon"> tags
   icons: {
@@ -33,14 +34,30 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="fgOnvH2bLIta4ZKOHxHKknNJCRQzrBvamh3MMJb5ppg"
         />
+        {/* ✅ Preload critical fonts to reduce CLS */}
+        <link
+          rel="preload"
+          href="/fonts/JockeyOne-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Nexa-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </head>
       <body>
         {/* GTM scripts */}
         <GtmScript />
 
+        {/* ✅ Hotjar - OPTIMIZED: Load after page is complete */}
         <Script
           id="hotjar"
-          strategy="afterInteractive"
+          strategy="lazyOnload" /* ✅ Deferred until page is fully loaded */
         >
           {`
     (function(h,o,t,j,a,r){

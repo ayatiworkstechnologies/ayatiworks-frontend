@@ -2,15 +2,17 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image"; // ✅ Next.js Image
 import { useRouter } from "next/navigation";
+import { ArrowRight, CheckCircle2, ChevronRight } from "lucide-react"; // ✅ Lucide Icons
 
 export default function WhatAyati() {
   const router = useRouter();
   const reduceMotion = useReducedMotion();
 
-  const stagger = { visible: { transition: { staggerChildren: 0.12 } } };
+  const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
   const item = {
-    hidden: { opacity: 0, y: 28 },
+    hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
@@ -19,6 +21,7 @@ export default function WhatAyati() {
       title: "Digital Marketing Services",
       icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/good-vibe.png",
       basePath: "/digital-marketing-services",
+      description: "Data-driven strategies to amplify your brand presence.",
       list: [
         { label: "SEO Services", href: "/digital-marketing-services/seo" },
         { label: "Social Media Marketing", href: "/digital-marketing-services/social-media-marketing" },
@@ -28,168 +31,166 @@ export default function WhatAyati() {
         { label: "Programmatic Marketing", href: "/digital-marketing-services/programmatic-marketing" },
         { label: "Video Marketing", href: "/digital-marketing-services/video-marketing" },
       ],
-      cta: { label: "Explore Digital Marketing →", href: "/digital-marketing-services" },
+      cta: { label: "Explore Digital Marketing", href: "/digital-marketing-services" },
     },
     {
       title: "Content as a Service",
       icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/01.png",
       basePath: "/content-as-a-service",
+      description: "Compelling storytelling that connects and converts.",
       list: [
         { label: "Multi-lingual Marketing", href: "/content-as-a-service/multilingual-marketing" },
         { label: "Brand Consultant", href: "/content-as-a-service/branding-service" },
         { label: "Video Creation", href: "/content-as-a-service/video-creation" },
       ],
-      cta: { label: "Explore Content Services →", href: "/content-as-a-service" },
+      cta: { label: "Explore Content Services", href: "/content-as-a-service" },
     },
     {
       title: "Digital PR Service",
       icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/02.png",
       basePath: "/digital-pr",
+      description: "Building credibility and managing your brand reputation.",
       list: [
         { label: "Digital PR", href: "/digital-pr/digital-pr-service" },
         { label: "Influencer Marketing", href: "/digital-pr/influencer-marketing" },
-        { label: "Online Reputation & Media Outreach", href: "/digital-pr/online-reputation-media-outreach" },
+        { label: "Online Reputation", href: "/digital-pr/online-reputation-media-outreach" },
       ],
-      cta: { label: "Explore Digital PR →", href: "/digital-pr" },
+      cta: { label: "Explore Digital PR", href: "/digital-pr" },
     },
     {
       title: "Web & E-commerce",
       icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/03.png",
       basePath: "/web-ecommerce",
+      description: "Seamless user experiences and robust development.",
       list: [
         { label: "UX/UI Design", href: "/web-ecommerce/ux-ui-design" },
-        { label: "Web Development Services", href: "/web-ecommerce/web-development" },
-        { label: "Web Maintenance Services", href: "/web-ecommerce/web-maintenance" },
-        { label: "Shopify Development Services", href: "/web-ecommerce/shopify-development" },
-        { label: "E-commerce", href: "/web-ecommerce" },
+        { label: "Web Development", href: "/web-ecommerce/web-development" },
+        { label: "Web Maintenance", href: "/web-ecommerce/web-maintenance" },
+        { label: "Shopify Development", href: "/web-ecommerce/shopify-development" },
+        { label: "E-commerce Solutions", href: "/web-ecommerce" },
       ],
-      cta: { label: "Explore Web & E-commerce →", href: "/web-ecommerce" },
+      cta: { label: "Explore Web & E-commerce", href: "/web-ecommerce" },
     },
   ];
 
   return (
-    <section className="relative w-full py-14 sm:py-20">
-      {/* background: remove gradient/spotlight, keep optional subtle grid off */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10" />
+    <section className="relative w-full py-10 sm:py-24 bg-gray-50/50">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-primary/5 rounded-full blur-3xl opacity-60" />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-secondary/5 rounded-full blur-3xl opacity-60" />
+      </div>
 
-      {/* header */}
+      {/* Header */}
       <motion.div
         initial={false}
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
-        className="section-container px-6 flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-10"
+        className="section-container px-4 sm:px-6 flex flex-col md:flex-row items-center md:items-end justify-between gap-6 sm:gap-8 mb-8 sm:mb-16"
       >
-        <div>
-          <h2 className="section-title">What Ayati Brews</h2>
-          {/* solid underline (no gradient) */}
+        <div className="w-full md:w-auto">
+          <h2 className="section-title text-center md:text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 sm:mb-4">
+            What Ayati Brews
+          </h2>
           <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.2 }}
-            className="h-[3px] w-44 mt-3 origin-left rounded-full bg-secondary"
+            initial={{ width: 0 }}
+            whileInView={{ width: 100 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="h-1 bg-secondary w-1/2 rounded-full mx-auto md:mx-0"
           />
         </div>
-        <p className="text-secondary font-primary text-2xl sm:text-3xl text-left md:text-right">
-          Fully Integrated Digital & Creative Agency
-        </p>
+        <div className="hidden md:block">
+          <h2 className="section-title text-xl sm:text-3xl text-secondary text-right mb-4">
+            Fully Integrated Digital & Creative Agency
+          </h2>
+        </div>
       </motion.div>
 
-      {/* cards */}
+      {/* Cards Grid - Definitive Premium Style */}
       <motion.div
         variants={stagger}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
-        className="section-container px-6 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl"
+        viewport={{ once: true, amount: 0.1 }}
+        className="section-container px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 max-w-7xl mx-auto"
       >
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <motion.article
             key={card.title}
             variants={item}
-            onClick={() => router.push(card.basePath)}
-            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && router.push(card.basePath)}
-            role="button"
-            tabIndex={0}
-            className={[
-              "group relative overflow-hidden rounded-2xl",
-              // removed gradient ring; use plain border + shadow
-              "border border-slate-200 bg-white",
-              "shadow-[0_12px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_18px_42px_rgba(0,0,0,0.12)]",
-              "transition-all duration-300 hover:-translate-y-0.5",
-            ].join(" ")}
+            className="group relative h-full bg-white rounded-3xl p-6 sm:p-10 
+                       border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)]
+                       hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 
+                       transition-all duration-500 overflow-hidden"
           >
-            {/* header row */}
-            <div className="flex items-start gap-4 p-6">
-              <div className="flex-1">
-                <h3 className="font-primary text-2xl sm:text-3xl text-secondary leading-snug">
-                  {card.title}
-                </h3>
+            {/* Top Border Accent REMOVED */}
+
+            <div className="relative z-10 flex flex-col h-full">
+              {/* Header */}
+              <div className="flex items-start justify-between gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <div className="flex-1">
+                  <h3 className="font-primary text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] leading-tight text-secondary mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300">
+                    {card.title}
+                  </h3>
+                  <div className="w-10 sm:w-12 h-1 bg-gray-100 group-hover:bg-primary/20 rounded-full transition-colors duration-300" />
+                </div>
+
+                {/* Icon Circle */}
+                <div className="shrink-0 w-14 h-14 sm:w-20 sm:h-20 bg-gray-50 rounded-full flex items-center justify-center
+                              border border-gray-100 group-hover:border-primary/10 group-hover:bg-primary/5 
+                              transition-all duration-500">
+                  <Image
+                    src={card.icon}
+                    alt={card.title}
+                    width={48}
+                    height={48}
+                    className="w-8 h-8 sm:w-12 sm:h-12 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                  />
+                </div>
               </div>
-              <img
-                src={card.icon}
-                alt=""
-                aria-hidden
-                className="h-14 w-14 rounded-md object-contain  shadow-sm transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
 
-            {/* list */}
-            <ul
-              className="px-6 pb-2 pt-1 grid grid-cols-1 gap-2 text-left"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {card.list.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={[
-                      "group/link inline-flex items-center gap-2 w-full rounded-md px-3 py-2",
-                      "text-[13px] md:text-sm font-semibold uppercase tracking-wide",
-                      "text-slate-800 hover:text-secondary",
-                      "transition-colors",
-                    ].join(" ")}
-                  >
-                    <span aria-hidden className="inline-block h-1.5 w-1.5 rounded-full bg-secondary" />
-                    <span className="flex-1 font-secondary">{item.label}</span>
-                    <span
-                      aria-hidden
-                      className="translate-x-0 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-0.5 transition-all"
-                    >
-                      →
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+              {/* Description */}
+              <p className="font-secondary text-gray-500 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 border-l-2 border-transparent pl-0 group-hover:border-primary/30 group-hover:pl-4 transition-all duration-300">
+                {card.description}
+              </p>
 
-            {/* footer CTA (solid color, no gradient) */}
-            <div className="p-6 pt-2" onClick={(e) => e.stopPropagation()}>
-              <Link
-                href={card.cta?.href || card.basePath}
-                className={[
-                  "inline-flex items-center gap-2 rounded-full px-5 py-2.5",
-                  "text-white font-primary text-sm md:text-base",
-                  "bg-secondary hover:brightness-110 active:scale-[0.98]",
-                  "shadow-[0_8px_20px_rgba(0,0,0,0.12)] transition-all",
-                ].join(" ")}
-              >
-                <span>{card.cta?.label || `Explore ${card.title} →`}</span>
-              </Link>
+              {/* Service List with Dividers */}
+              <div className="mb-8 sm:mb-10 flex-grow">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 sm:gap-y-3">
+                  {card.list.map((item) => (
+                    <li key={item.href} className="border-b border-gray-50 last:border-0 pb-2 sm:border-0 sm:pb-0">
+                      <Link
+                        href={item.href}
+                        className="group/link flex items-center text-sm font-medium text-gray-600 hover:text-secondary transition-colors"
+                      >
+                        <ChevronRight size={14} className="text-primary mr-2 opacity-50 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all" />
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Bottom Action Area */}
+              <div className="mt-auto pt-4 sm:pt-6 flex items-center justify-between border-t border-gray-100">
+                <Link
+                  href={card.cta.href}
+                  className="inline-flex items-center gap-2 text-primary font-bold font-primary group/btn"
+                >
+                  <span className="text-base sm:text-lg group-hover/btn:underline decoration-2 decoration-primary/30 underline-offset-4 transition-all">
+                    {card.cta.label}
+                  </span>
+                  <ArrowRight size={18} className="transform group-hover/btn:translate-x-1 transition-transform" />
+                </Link>
+
+                {/* Decorative Number/Element */}
+                <span className="text-4xl sm:text-6xl font-primary font-bold text-gray-50 group-hover:text-gray-100 transition-colors duration-500 select-none">
+                  0{index + 1}
+                </span>
+              </div>
             </div>
           </motion.article>
         ))}
-      </motion.div>
-
-      {/* divider (solid) */}
-      <motion.div
-        initial={false}
-        whileInView={reduceMotion ? {} : { scaleX: [0, 1] }}
-        transition={reduceMotion ? {} : { duration: 0.6, ease: "easeInOut" }}
-        viewport={{ once: true }}
-        className="section-container px-6 mt-10 sm:mt-14"
-      >
-        <div className="h-[2px] w-full rounded-full bg-slate-200" />
       </motion.div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import Image from "next/image"; // ✅ Import Next.js Image
 
 export default function AyatiAboutSection() {
   const prefersReducedMotion = useReducedMotion();
@@ -89,14 +90,15 @@ export default function AyatiAboutSection() {
             transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            {/* Image keeps design; on small screens we constrain ratio to avoid layout jump */}
-            <div className="w-full overflow-hidden">
-              <img
+            {/* ✅ Optimized Image with Next.js Image component */}
+            <div className="w-full overflow-hidden relative aspect-[3/4]">
+              <Image
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/home-quote.png"
-                alt="Ayatiworks visual"
-                className="w-full h-full object-cover"
+                alt="Ayatiworks Growth Philosophy - Visual Quote"
+                fill
+                className="object-cover"
                 loading="lazy"
-                decoding="async"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
               />
             </div>
           </motion.div>

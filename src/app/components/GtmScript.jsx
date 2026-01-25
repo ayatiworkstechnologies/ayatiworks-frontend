@@ -5,8 +5,11 @@ import Script from "next/script";
 export default function GtmScript() {
   return (
     <>
-      {/* Google Tag Manager (after hydration) */}
-      <Script id="gtm-init" strategy="afterInteractive">
+      {/* Google Tag Manager - ✅ OPTIMIZED: Load after page is complete */}
+      <Script
+        id="gtm-init"
+        strategy="lazyOnload" /* ✅ Deferred until page is fully loaded */
+      >
         {`
           (function(w,d,s,l,i){
             w[l]=w[l]||[];

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image"; // ✅ Import Next.js Image
 
 import FadeInWhenVisible from "../FadeInWhenVisible";
 
@@ -36,7 +37,7 @@ export default function PromoHero() {
       <FadeInWhenVisible delay={0.2}>
         <div className="flex flex-col items-center text-center py-5">
           <h1 className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            Chennai’s 360° Creative & Digital Growth Agency
+            Chennai's 360° Creative & Digital Growth Agency
           </h1>
 
           <motion.div
@@ -66,13 +67,17 @@ export default function PromoHero() {
         </div>
       </FadeInWhenVisible>
 
-      {/* ✅ TV Image */}
+      {/* ✅ TV Image - OPTIMIZED */}
       <FadeInWhenVisible delay={0.4} y={10}>
         <div className="mt-8 sm:mt-10 w-full mx-auto flex justify-center items-center">
-          <img
+          <Image
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-2026.png"
-            alt="The Year of Vallam"
+            alt="The Year of Vallam - Ayatiworks 2026 Campaign"
+            width={1200}
+            height={900}
             className="mx-auto h-82 object-contain"
+            loading="lazy" /* ✅ Below fold - lazy load */
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
           />
         </div>
       </FadeInWhenVisible>

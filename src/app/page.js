@@ -9,23 +9,20 @@ const Box = ({ h = "h-[360px]" }) => (
   <div className={`${h} w-full rounded-3xl bg-neutral-100 animate-pulse`} />
 );
 
-/* ---------- critical (above the fold) ---------- */
-const HeroSection = dynamic(() => import("./components/Home/HeroSection"), {
-  ssr: false,
-  // quick shimmer so first paint is instant
-  loading: () => <Box h="h-[420px]" />,
-});
+/* ---------- critical (above the fold) - ✅ NO LONGER DYNAMIC ---------- */
+// ✅ FIXED: Import hero statically for instant SSR/SSG rendering
+import HeroSection from "./components/Home/HeroSection";
 
-/* ---------- below-the-fold (lazy) ---------- */
+/* ---------- below-the-fold (lazy but with SSR enabled) ---------- */
 const PromoHero = dynamic(() => import("./components/Home/PromoHero"), {
-  ssr: false,
+  ssr: true,  // ✅ Enable SSR for better SEO & performance
   loading: () => <Box />,
 });
 
 const AyatiAboutSection = dynamic(
   () => import("./components/Home/AyatiAboutSection"),
   {
-    ssr: false,
+    ssr: true,  // ✅ Enable SSR
     loading: () => <Box />,
   }
 );
@@ -33,20 +30,20 @@ const AyatiAboutSection = dynamic(
 const CaasEdgeSection = dynamic(
   () => import("./components/Home/CaasEdgeSection"),
   {
-    ssr: false,
+    ssr: true,  // ✅ Enable SSR
     loading: () => <Box />,
   }
 );
 
 const WhatAyati = dynamic(() => import("./components/Home/WhatAyati"), {
-  ssr: false,
+  ssr: true,  // ✅ Enable SSR
   loading: () => <Box />,
 });
 
 const PartnersInClimb = dynamic(
   () => import("./components/Home/PartnersInClimb"),
   {
-    ssr: false,
+    ssr: true,  // ✅ Enable SSR
     loading: () => <Box />,
   }
 );
@@ -54,18 +51,18 @@ const PartnersInClimb = dynamic(
 const PixelsPerfected = dynamic(
   () => import("./components/Home/PixelsPerfected"),
   {
-    ssr: false,
+    ssr: true,  // ✅ Enable SSR
     loading: () => <Box />,
   }
 );
 
 const DottedWorldMap = dynamic(() => import("./components/Home/MapLocation"), {
-  ssr: false,
+  ssr: true,  // ✅ Enable SSR
   loading: () => <Box />,
 });
 
 const Connection = dynamic(() => import("./components/Home/Connection"), {
-  ssr: false,
+  ssr: true,  // ✅ Enable SSR
   loading: () => <Box h="h-[300px]" />,
 });
 
