@@ -4,7 +4,7 @@ export const metadata = {
   title: "Careers - Ayatiworks",
   description:
     "Join a dynamic team shaping the future of digital marketing in Chennai! Exciting career opportunities await. Kickstart your journey today!",
-  alternates: { canonical: "https://ayatiworks.com/careers", }
+  alternates: { canonical: "https://www.ayatiworks.com/careers", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

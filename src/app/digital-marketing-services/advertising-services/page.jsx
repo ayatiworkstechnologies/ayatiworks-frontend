@@ -11,7 +11,7 @@ export const metadata = {
     "Advertising Agency in Chennai | Creative Agency for High-Impact Brand Growth",
   description:
     "Partner with the top Advertising Agency in Chennai. Ayatiworks delivers data-driven creative campaigns, performance marketing, and ROI-led brand growth for businesses ready to scale.",
-  alternates: { canonical: "https://ayatiworks.com/digital-marketing-services/advertising-services", }
+  alternates: { canonical: "https://www.ayatiworks.com/digital-marketing-services/advertising-services", }
 };
 
 export default function AdPage() {

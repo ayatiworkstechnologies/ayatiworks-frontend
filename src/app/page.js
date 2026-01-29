@@ -72,7 +72,7 @@ export default function HomePage() {
     "@context": "https://schema.org/",
     "@type": "Product",
     name: "Digital Marketing Agency",
-    image: "https://ayatiworks.com/ayatiworks_logo.svg",
+    image: "https://www.ayatiworks.com/ayatiworks_logo.svg",
     description:
       "Are you looking for the best digital marketing agency in Chennai? Ayati Works is a Chennai-based leading digital marketing company offering SEO, PPC, content marketing, branding, and multilingual advertising services.",
     brand: "Ayati Works",
@@ -90,11 +90,11 @@ export default function HomePage() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://ayatiworks.com/#organization",
+    "@id": "https://www.ayatiworks.com/#organization",
     name: "Ayati Works",
     legalName: "Ayatiworks Technologies LLP",
-    url: "https://ayatiworks.com/",
-    logo: "https://ayatiworks.com/ayatiworks_logo.svg",
+    url: "https://www.ayatiworks.com/",
+    logo: "https://www.ayatiworks.com/ayatiworks_logo.svg",
     description:
       "Ayati Works is a digital marketing agency offering SEO, PPC, content marketing, branding and multilingual advertising services in Chennai.",
     email: ["upendran@ayatiworks.com", "info@ayatiworks.com"],
@@ -110,12 +110,12 @@ export default function HomePage() {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://ayatiworks.com/#localbusiness",
+    "@id": "https://www.ayatiworks.com/#localbusiness",
     name: "Ayati Works",
     parentOrganization: {
-      "@id": "https://ayatiworks.com/#organization",
+      "@id": "https://www.ayatiworks.com/#organization",
     },
-    url: "https://ayatiworks.com/",
+    url: "https://www.ayatiworks.com/",
     address: {
       "@type": "PostalAddress",
       streetAddress: "18/24, TTK Road, 1st Cross St, Alwarpet",
@@ -167,31 +167,31 @@ export default function HomePage() {
   //       "@type": "ListItem",
   //       position: 1,
   //       name: "Home",
-  //       item: "https://ayatiworks.com/",
+  //       item: "https://www.ayatiworks.com/",
   //     },
   //     {
   //       "@type": "ListItem",
   //       position: 2,
   //       name: "Services",
-  //       item: "https://ayatiworks.com/digital-marketing-services/",
+  //       item: "https://www.ayatiworks.com/digital-marketing-services/",
   //     },
   //     {
   //       "@type": "ListItem",
   //       position: 3,
   //       name: "Services",
-  //       item: "https://ayatiworks.com/content-as-a-service/", 
+  //       item: "https://www.ayatiworks.com/content-as-a-service/", 
   //     },
   //     {
   //       "@type": "ListItem",
   //       position: 4,
   //       name: "Service",
-  //       item: "https://ayatiworks.com/digital-pr/",
+  //       item: "https://www.ayatiworks.com/digital-pr/",
   //     },
   //     {
   //       "@type": "ListItem",
   //       position: 5,
   //       name: "Service",
-  //       item: "https://ayatiworks.com/web-ecommerce/",
+  //       item: "https://www.ayatiworks.com/web-ecommerce/",
   //     },
   //   ],
   // };

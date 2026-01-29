@@ -11,7 +11,7 @@ export const metadata = {
     "Expert Digital PR Services Chennai, Strategic Brand & Media Exposure - Ayatiworks",
   description:
    "Amplify your brand with strategic digital PR in Chennai! Expert media exposure to boost visibility. Start building today!",
-    alternates: { canonical: "https://ayatiworks.com/digital-pr/digital-pr-services", }
+    alternates: { canonical: "https://www.ayatiworks.com/digital-pr/digital-pr-services", }
 };
 
 export default function DigitalServicePage() {

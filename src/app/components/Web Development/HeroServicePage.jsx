@@ -399,7 +399,7 @@ function HeroServicePage() {
 
                 {/* External link */}
                 <a
-                  href="https://ayatiworks.com/web-ecommerce/ecommerce-solutions"
+                  href="https://www.ayatiworks.com/web-ecommerce/ecommerce-solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ecommerce Digital Marketing Service"
@@ -450,7 +450,7 @@ function HeroServicePage() {
 
             <div className="flex gap-3">
               <a
-                href="https://ayatiworks.com/web-ecommerce/ecommerce-solutions"
+                href="https://www.ayatiworks.com/web-ecommerce/ecommerce-solutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-lg md:text-2xl font-primary rounded-full bg-secondary px-5 py-3 text-white font-medium shadow-md hover:shadow-lg transition hover:-translate-y-0.5"

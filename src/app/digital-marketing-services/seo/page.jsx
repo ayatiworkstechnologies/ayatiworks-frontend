@@ -12,7 +12,7 @@ export const metadata = {
   description:
     "Dominate search rankings with affordable SEO services in Chennai! Expert solutions to boost visibility and drive traffic. Get started now!",
   alternates: {
-    canonical: "https://ayatiworks.com/digital-marketing-services/seo",
+    canonical: "https://www.ayatiworks.com/digital-marketing-services/seo",
   },
 };
 

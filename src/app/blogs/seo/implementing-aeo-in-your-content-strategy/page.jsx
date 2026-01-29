@@ -12,7 +12,7 @@ export const metadata = {
     "Discover how to integrate Answer Engine Optimization (AEO) into your startup content strategy. Learn practical steps to make your brand AI-visible and voice-search ready.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/seo/Implementing-AEO-in-Your-Content-Strategy",
+      "https://www.ayatiworks.com/blogs/seo/Implementing-AEO-in-Your-Content-Strategy",
   },
 };
 

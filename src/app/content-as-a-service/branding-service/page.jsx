@@ -11,7 +11,7 @@ export const metadata = {
     "Creative Branding Services in Chennai, Expert Brand Growth Solutions",
   description:
     "Build a powerful brand with creative branding services in Chennai! Expert solutions to elevate your identity and growth. Start now!",
-    alternates: { canonical: "https://ayatiworks.com/content-as-a-service/branding-service", }
+    alternates: { canonical: "https://www.ayatiworks.com/content-as-a-service/branding-service", }
 };
 
 export default function BrandingPage() {

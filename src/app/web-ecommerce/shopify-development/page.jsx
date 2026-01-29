@@ -12,7 +12,7 @@ export const metadata = {
   description:
    "Create a thriving online store with expert Shopify development in Chennai! Tailored solutions to boost sales. Start now!",
     alternates: {
-    canonical: "https://ayatiworks.com/web-ecommerce/shopify-development",
+    canonical: "https://www.ayatiworks.com/web-ecommerce/shopify-development",
   },
 };
 

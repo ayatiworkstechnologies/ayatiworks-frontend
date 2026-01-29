@@ -5,7 +5,7 @@ export const metadata = {
     "Digital PR experts in Chennai, Reputation & Media Outreach - Ayatiworks",
   description:
     "Elevate your brand with expert digital PR in Chennai! Boost reputation and media outreach for maximum impact. Get started now!",
-  alternates: { canonical: "https://ayatiworks.com/digital-pr" },
+  alternates: { canonical: "https://www.ayatiworks.com/digital-pr" },
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

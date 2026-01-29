@@ -3,7 +3,7 @@
 export const metadata = {
   title: "Digital Marketing for Automobile Brands | Jeep India Independence Day Merchandise by Ayatiworks ",
   description: "Discover how Ayatiworks transformed Jeep India’s Independence Day merchandise microsite, revamped UI/UX, catchy creatives, and a 3-day social sprint that translated likes into ₹240K+ in sales. ",
-    alternates: { canonical: "https://ayatiworks.com/case-study/Jeep-India-Independence-Day-Merchandise-Sales-Campaign", }
+    alternates: { canonical: "https://www.ayatiworks.com/case-study/Jeep-India-Independence-Day-Merchandise-Sales-Campaign", }
 
 };
 import React from "react";

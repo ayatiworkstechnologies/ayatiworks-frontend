@@ -4,7 +4,7 @@ export const metadata = {
   title: "Ayatiworks Case Studies, Brand Growth & Marketing Excellence",
   description:
     "Explore real success stories! See how our Chennai-based experts drive brand growth with innovative marketing. Check them out!",
-    alternates: { canonical: "https://ayatiworks.com/case-study", }
+    alternates: { canonical: "https://www.ayatiworks.com/case-study", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

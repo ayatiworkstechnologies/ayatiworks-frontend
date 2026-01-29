@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "We help Chennai and South India–based businesses drive qualified leads using AI-led, data-driven digital marketing. Clear strategy, focused execution, and measurable growth. ",
   alternates: {
-    canonical: "https://ayatiworks.com/digital-marketing-services",
+    canonical: "https://www.ayatiworks.com/digital-marketing-services",
   },
 };
 import React from "react";

@@ -5,7 +5,7 @@ export const metadata = {
     "Web Ecommerce Services in Chennai, Ecommerce development experts - Ayatiworks",
   description:
     "Launch your online store with expert ecommerce services in Chennai! Seamless development for maximum sales. Get started today!",
-  alternates: { canonical: "https://ayatiworks.com/web-ecommerce" },
+  alternates: { canonical: "https://www.ayatiworks.com/web-ecommerce" },
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

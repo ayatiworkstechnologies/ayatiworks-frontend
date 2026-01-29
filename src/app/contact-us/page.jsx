@@ -2,7 +2,7 @@ export const metadata = {
   title: "Contact Us",
   description:
     "Ready to grow your brand? Connect with Chennai’s top digital marketing experts today for tailored solutions that drive results! Reach out now!",
-    alternates: { canonical: "https://ayatiworks.com/contact-us", }
+    alternates: { canonical: "https://www.ayatiworks.com/contact-us", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

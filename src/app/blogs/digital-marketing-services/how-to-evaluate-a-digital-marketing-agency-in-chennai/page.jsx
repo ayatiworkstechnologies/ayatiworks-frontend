@@ -11,7 +11,7 @@ export const metadata = {
     "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability, how to evaluate strategy, KPIs, roadmaps, and ROI before choosing the right agency.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/how-to-evaluate-a-digital-marketing-agency-in-chennai",
   },
 };
 

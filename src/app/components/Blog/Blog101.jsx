@@ -135,7 +135,7 @@ export default function AEOArticlePage101() {
             <p className="section-phara">
               AEO differs from SEO in its focus on concise, structured answers
               over broad keyword strategies. While <Link
-                href="https://ayatiworks.com/digital-marketing-services/seo"
+                href="https://www.ayatiworks.com/digital-marketing-services/seo"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -550,7 +550,7 @@ export default function AEOArticlePage101() {
               best part? You don’t have to do it alone. If you're looking to
               elevate your digital presence,{" "}
               <Link
-                href="https://ayatiworks.com/contact-us/"
+                href="https://www.ayatiworks.com/contact-us/"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1130,7 +1130,7 @@ function Intro() {
         competitors who’ve cracked the code. That’s where Answer Engine
         Optimization (AEO), with the help of a savvy{" "}
         <Link
-          href="https://ayatiworks.com/digital-marketing-services"
+          href="https://www.ayatiworks.com/digital-marketing-services"
           className="text-secondary hover:underline"
           target="_blank"
           rel="noopener noreferrer"

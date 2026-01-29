@@ -4,7 +4,7 @@ export const metadata = {
   title: "Digital Marketing for Automobile Brands | Volvo Case Study",
   description:
     " Discover how Ayatiworks propelled Volvo's digital presence, achieving a 250% increase in impressions and 5,000+ leads through strategic marketing.",
-    alternates: { canonical: "https://ayatiworks.com/case-study/how-Ayatiworks-propelled-Volvos-digital-presence-by-250-percentage-increase-in-impressions", }
+    alternates: { canonical: "https://www.ayatiworks.com/case-study/how-Ayatiworks-propelled-Volvos-digital-presence-by-250-percentage-increase-in-impressions", }
 };
 import React from "react";
 import CaseStudyShowcase from "../../components/Case Study/CaseStudyShowcase";

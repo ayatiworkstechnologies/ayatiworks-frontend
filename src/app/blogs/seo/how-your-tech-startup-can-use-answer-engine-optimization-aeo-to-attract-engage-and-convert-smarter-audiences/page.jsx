@@ -10,7 +10,7 @@ export const metadata = {
     "How Tech Startups Can Use Answer Engine Optimization (AEO) to Boost Visibility",
   description:
     "Discover how Answer Engine Optimization (AEO) helps tech startups enhance visibility, trust, and conversions in the age of AI-driven search.",
-    alternates: { canonical: "https://ayatiworks.com/blogs/seo/How-Your-Tech-Startup-Can-Use-Answer-Engine-Optimization-%28AEO%29-to-Attract-Engage-and-Convert-Smarter-Audiences", }
+    alternates: { canonical: "https://www.ayatiworks.com/blogs/seo/How-Your-Tech-Startup-Can-Use-Answer-Engine-Optimization-%28AEO%29-to-Attract-Engage-and-Convert-Smarter-Audiences", }
 };
 
 const faqSchema = {

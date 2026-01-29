@@ -545,7 +545,7 @@ function HeroServicePage() {
             how Ayati Innovators meticulously integrates creativity at every
             stage while incorporating relevant fields of{" "}
             <a
-              href="https://ayatiworks.com/services/digital-marketing-services"
+              href="https://www.ayatiworks.com/services/digital-marketing-services"
               className="text-primary underline font-primary hover:text-secondary transition-colors"
             >
               digital marketing

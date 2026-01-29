@@ -9,7 +9,7 @@ import GtmScript from "./components/GtmScript";
 import Script from "next/script";
 
 export const metadata = {
-  metadataBase: new URL("https://ayatiworks.com"), // ✅ Ensures all relative URLs use this base
+  metadataBase: new URL("https://www.ayatiworks.com"), // ✅ Ensures all relative URLs use this base
   title:
     "Best Digital Marketing Agency in Chennai | Top Digital Marketing Company | Ayatiworks",
   description:

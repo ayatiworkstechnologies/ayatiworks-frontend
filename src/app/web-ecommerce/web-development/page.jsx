@@ -11,7 +11,7 @@ export const metadata = {
     "Ecommerce Website Development company in Chennai, Website development company - Ayatiworks",
   description:
    "Transform your online presence with Ayatiworks, a top Ecommerce website development company in Chennai. We craft user-focused, robust websites for brands worldwide.",
-    alternates: { canonical: "https://ayatiworks.com/web-ecommerce/web-development", },
+    alternates: { canonical: "https://www.ayatiworks.com/web-ecommerce/web-development", },
 };
 
 export default function WebDevPage() {

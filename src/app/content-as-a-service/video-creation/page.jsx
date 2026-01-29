@@ -11,7 +11,7 @@ export const metadata = {
     "Video Creation Services in Chennai, Professional Video Content Services in Chennai - Ayatiworks",
   description:
     "Engage audiences with professional video creation in Chennai! Stunning visuals to boost your brand’s story. Create now!",
-    alternates: { canonical: "https://ayatiworks.com/content-as-a-service/video-creation", }
+    alternates: { canonical: "https://www.ayatiworks.com/content-as-a-service/video-creation", }
 };
 
 export default function BrandingPage() {

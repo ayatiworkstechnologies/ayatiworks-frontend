@@ -13,7 +13,7 @@ export const metadata = {
     "Skyrocket conversions with professional email marketing in Chennai! Tailored campaigns to engage and grow your audience. Start now!",
   alternates: {
     canonical:
-      "https://ayatiworks.com/digital-marketing-services/email-marketing",
+      "https://www.ayatiworks.com/digital-marketing-services/email-marketing",
   },
 };
 

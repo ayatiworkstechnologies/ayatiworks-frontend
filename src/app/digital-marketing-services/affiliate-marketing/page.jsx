@@ -10,7 +10,7 @@ export const metadata = {
   title: "Affiliate Marketing Company in Chennai, Performance Marketing Solutions - Ayatiworks",
   description:
     "Maximize ROI with expert affiliate marketing in Chennai! Performance-driven solutions to scale your business. Partner with us today!",
-    alternates: { canonical: "https://ayatiworks.com/digital-marketing-services/affiliate-marketing", }
+    alternates: { canonical: "https://www.ayatiworks.com/digital-marketing-services/affiliate-marketing", }
 };
 
 export default function emailPage() {

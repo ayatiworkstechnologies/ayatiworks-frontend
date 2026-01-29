@@ -11,7 +11,7 @@ export const metadata = {
     "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
   },
 };
 

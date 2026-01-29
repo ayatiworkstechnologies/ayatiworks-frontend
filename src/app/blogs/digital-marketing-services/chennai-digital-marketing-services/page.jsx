@@ -11,7 +11,7 @@ export const metadata = {
     "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/chennai-digital-marketing-services",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/chennai-digital-marketing-services",
   },
 };
 

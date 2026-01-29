@@ -5,7 +5,7 @@ export const metadata = {
     "Award-Winning Digital Marketing Agency Chennai, Ayatiworks",
   description:
     "Trust an award-winning digital marketing team in Chennai to elevate your brand! Proven strategies for success. Connect now!",
-    alternates: { canonical: "https://ayatiworks.com/awards", }
+    alternates: { canonical: "https://www.ayatiworks.com/awards", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

@@ -5,7 +5,7 @@ export const metadata = {
     "Discover if your website is prepared for AI-driven search in 2025. Learn 5 essential AEO strategies to boost organic traffic and stay ahead with expert tips from a top digital marketing agency.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025",
+      "https://www.ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025",
   },
 };
 import React from "react";

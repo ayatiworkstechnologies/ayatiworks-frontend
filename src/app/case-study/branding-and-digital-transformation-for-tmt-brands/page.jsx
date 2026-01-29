@@ -5,7 +5,7 @@ export const metadata = {
     "Branding & Digital Transformation for TMT Brands | Apex Dura Case Study",
   description:
     "See how Ayatiworks transformed Apex TMT into Apex Dura, South India’s modern steel powerhouse, through naming, branding, GTM strategy, and digital presence.",
-  alternates: { canonical: "https://ayatiworks.com/case-study/" },
+  alternates: { canonical: "https://www.ayatiworks.com/case-study/" },
 };
 import React from "react";
 import CaseStudyShowcase from "../../components/Case Study/CaseStudyShowcase";

@@ -11,7 +11,7 @@ export const metadata = {
     "Ecommerce Website Maintenance company Chennai, Website development Experts Chennai | Ayatiworks",
   description:
    "Get expert Ecommerce Website Maintenance Company in Chennai and Web Development Experts in Chennai. Trusted by businesses in India & globally. Get a quote now!",
-    alternates: { canonical: "https://ayatiworks.com/web-ecommerce/web-maintenance", },
+    alternates: { canonical: "https://www.ayatiworks.com/web-ecommerce/web-maintenance", },
 };
 
 export default function WebMaintenancePage() {

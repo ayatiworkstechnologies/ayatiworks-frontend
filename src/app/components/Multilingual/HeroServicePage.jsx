@@ -180,7 +180,7 @@ function HeroServicePage() {
 
             <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed">
               <a
-                href="https://ayatiworks.com/"
+                href="https://www.ayatiworks.com/"
                 className="text-primary underline font-primary hover:text-secondary transition-colors"
               >
                 Ayatiworks
@@ -195,14 +195,14 @@ function HeroServicePage() {
               campaigns that resonate in every language from Chennai to global
               markets. Partnering closely with our in-house{" "}
               <a
-                href="https://ayatiworks.com/services/digital-marketing-services"
+                href="https://www.ayatiworks.com/services/digital-marketing-services"
                 className="text-primary underline hover:text-secondary font-primary transition-colors"
               >
                 Growth Marketing team
               </a>{" "}
               team and{" "}
               <a
-                href="https://ayatiworks.com/services/digital-marketing-consultancy"
+                href="https://www.ayatiworks.com/services/digital-marketing-consultancy"
                 className="text-primary underline hover:text-secondary font-primary transition-colors"
               >
                 our Marketing Consultants
@@ -297,7 +297,7 @@ function HeroServicePage() {
           <div className="text-black/80 space-y-6">
             <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed">
               <a
-                href="https://ayatiworks.com/"
+                href="https://www.ayatiworks.com/"
                 className="text-primary underline font-primary hover:text-secondary transition-colors"
               >
                 Ayatiworks
@@ -370,7 +370,7 @@ function HeroServicePage() {
             </p>
             <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed">
               <a
-                href="https://ayatiworks.com/contact-us"
+                href="https://www.ayatiworks.com/contact-us"
                 className="text-primary underline font-primary hover:text-secondary transition-colors"
               >
                 Contact Ayatiworks to launch impactful multilingual campaigns
@@ -532,7 +532,7 @@ function HeroServicePage() {
               <p className="text-sm sm:text-base md:text-lg font-secondary">
                 Connect with every audience! Partner with Ayatiworks for{" "}
                 <a
-                  href="https://ayatiworks.com/contact-us"
+                  href="https://www.ayatiworks.com/contact-us"
                   className="text-primary underline hover:text-secondary transition-colors"
                 >
                   {" "}

@@ -12,7 +12,7 @@ export const metadata = {
   title: "Best Multilingual Marketing Agency Chennai | Vernacular Campaigns | Ayatiworks",
   description:
     "Chennai's leading multilingual marketing agency. Create culturally relevant campaigns in 121+ languages. Vernacular marketing, localization and regional strategies. Book a consultation!",
-    alternates: { canonical: "https://ayatiworks.com/content-as-a-service/multilingual-marketing", }
+    alternates: { canonical: "https://www.ayatiworks.com/content-as-a-service/multilingual-marketing", }
 };
 
 const breadcrumbJsonLd = {
@@ -23,19 +23,19 @@ const breadcrumbJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://ayatiworks.com",
+      item: "https://www.ayatiworks.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Digital Marketing Services",
-      item: "https://ayatiworks.com/digital-marketing-services",
+      item: "https://www.ayatiworks.com/digital-marketing-services",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Content as a Service",
-      item: "https://ayatiworks.com/content-as-a-service",
+      item: "https://www.ayatiworks.com/content-as-a-service",
     },
     {
       "@type": "ListItem",

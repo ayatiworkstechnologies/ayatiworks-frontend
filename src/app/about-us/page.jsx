@@ -11,7 +11,7 @@ export const metadata = {
   title: "About Ayatiworks - Experts in Digital Marketing & Branding Chennai",
   description:
     "Discover top digital marketing & branding experts in Chennai. Unleash your brand’s potential with innovative strategies tailored for success!",
-  alternates: { canonical: "https://ayatiworks.com/about-us" },
+  alternates: { canonical: "https://www.ayatiworks.com/about-us" },
 };
 
 const breadcrumbJsonLd = {
@@ -22,25 +22,25 @@ const breadcrumbJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://ayatiworks.com/",
+      item: "https://www.ayatiworks.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "About Us",
-      item: "https://ayatiworks.com/about-us",
+      item: "https://www.ayatiworks.com/about-us",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Our Team",
-      item: "https://ayatiworks.com/team/",
+      item: "https://www.ayatiworks.com/team/",
     },
     {
       "@type": "ListItem",
       position: 4,
       name: "Careers",
-      item: "https://ayatiworks.com/careers/",
+      item: "https://www.ayatiworks.com/careers/",
     },
   ],
 };
@@ -50,11 +50,11 @@ const aboutPageJsonLd = {
   "@type": "AboutPage",
   mainEntity: {
     "@type": "Organization",
-    "@id": "https://ayatiworks.com/#organization",
+    "@id": "https://www.ayatiworks.com/#organization",
     name: "Ayati Works",
     legalName: "Ayatiworks Technologies LLP",
-    url: "https://ayatiworks.com/",
-    logo: "https://ayatiworks.com/assets/img/logo.png",
+    url: "https://www.ayatiworks.com/",
+    logo: "https://www.ayatiworks.com/assets/img/logo.png",
     foundingDate: "2017-01-01",
     founders: [
       {
@@ -98,13 +98,13 @@ const aboutPageJsonLd = {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://ayatiworks.com/",
+        item: "https://www.ayatiworks.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "About Us",
-        item: "https://ayatiworks.com/about-us/",
+        item: "https://www.ayatiworks.com/about-us/",
       },
     ],
   },

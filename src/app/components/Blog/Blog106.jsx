@@ -296,7 +296,7 @@ export default function AEOArticlePage106() {
               Understanding an agency’s methodology matters because it reveals
               whether they approach local digital marketing services or
               <Link
-                href="https://ayatiworks.com/digital-marketing-services/"
+                href="https://www.ayatiworks.com/digital-marketing-services/"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"

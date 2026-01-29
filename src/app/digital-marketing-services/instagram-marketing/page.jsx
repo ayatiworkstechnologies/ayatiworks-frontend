@@ -13,7 +13,7 @@ export const metadata = {
     "Grow your brand on Instagram with expert marketing in Chennai! Creative strategies to boost engagement and sales. Get started today!",
   alternates: {
     canonical:
-      "https://ayatiworks.com/digital-marketing-services/instagram-marketing",
+      "https://www.ayatiworks.com/digital-marketing-services/instagram-marketing",
   },
 };
 

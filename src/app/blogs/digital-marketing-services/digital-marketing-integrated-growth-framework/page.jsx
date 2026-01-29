@@ -11,7 +11,7 @@ export const metadata = {
     "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/top-10-digital-marketing-agencies-in-chennai",
   },
 };
 

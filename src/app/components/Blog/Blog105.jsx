@@ -420,7 +420,7 @@ export default function AEOArticlePage105() {
               <h3 className="section-title text-2xl text-secondary text-left my-5">
                 Our
                 <Link
-                  href="https://ayatiworks.com/digital-marketing-services/"
+                  href="https://www.ayatiworks.com/digital-marketing-services/"
                   className="text-secondary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"

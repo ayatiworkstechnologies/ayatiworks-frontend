@@ -5,7 +5,7 @@ export const metadata = {
     "Content as a Service in Chennai, Scalable Content Solutions for Businesses - Ayatiworks",
   description:
     "Transform your brand with scalable content solutions in Chennai! Engaging content to drive growth and ROI. Discover more now!",
-  alternates: { canonical: "https://ayatiworks.com/content-as-a-service" },
+  alternates: { canonical: "https://www.ayatiworks.com/content-as-a-service" },
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";

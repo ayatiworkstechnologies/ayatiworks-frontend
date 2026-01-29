@@ -3,7 +3,7 @@
 export const metadata = {
   title: "Nippo Shadow Art Contest Case Study | Ayatiworks Creative Digital Campaign Success",
   description: "Discover how Ayatiworks lit up engagement for Nippo with the Shadow Art Contest, a nostalgic, family-driven digital campaign that achieved 2.4M impressions, 1.6M reach, and 820K engagements nationwide.",
-  alternates: { canonical: "https://ayatiworks.com/case-study/Reposition-Nippo-and-Brand-Awareness-Campaign", }
+  alternates: { canonical: "https://www.ayatiworks.com/case-study/Reposition-Nippo-and-Brand-Awareness-Campaign", }
 
 };
 import React from "react";

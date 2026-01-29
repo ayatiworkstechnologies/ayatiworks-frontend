@@ -11,7 +11,7 @@ export const metadata = {
     "Video Marketing Company in Chennai , Programmatic Advertising Services - Ayatiworks",
   description:
     "Revolutionize ads with Video Marketing in Chennai! Precision targeting for maximum impact. Boost your campaigns today!",
-    alternates: { canonical: "https://ayatiworks.com/digital-marketing-services/video-marketing", }
+    alternates: { canonical: "https://www.ayatiworks.com/digital-marketing-services/video-marketing", }
 };
 
 export default function emailPage() {

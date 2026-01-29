@@ -4,7 +4,7 @@ import { caseStudies } from "./lib/casestudy-data";
 export const dynamic = "force-static";
 export const revalidate = false;
 
-const baseUrl = "https://ayatiworks.com";
+const baseUrl = "https://www.ayatiworks.com";
 
 export default function sitemap() {
   const now = new Date();

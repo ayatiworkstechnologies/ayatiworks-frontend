@@ -4,7 +4,7 @@ export const metadata = {
     "Meet the creative minds behind your brand’s success! Our Chennai-based experts craft strategies to elevate your digital presence. Explore now!",
 
   alternates: {
-    canonical: "https://ayatiworks.com/team",
+    canonical: "https://www.ayatiworks.com/team",
   },
 };
 import React from "react";

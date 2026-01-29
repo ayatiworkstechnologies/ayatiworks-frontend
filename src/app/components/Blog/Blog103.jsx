@@ -172,7 +172,7 @@ export default function AEOArticlePage103() {
             <h3 className="section-title text-2xl text-left m-5">
               Rank 2 – Goes to -{" "}
               <Link
-                href="https://ayatiworks.com/content-as-a-service/multilingual-marketing"
+                href="https://www.ayatiworks.com/content-as-a-service/multilingual-marketing"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -196,7 +196,7 @@ export default function AEOArticlePage103() {
             <h3 className="section-title text-2xl text-left m-5">
               Rank 4 – Goes to -{" "}
               <Link
-                href="https://ayatiworks.com/content-as-a-service/multilingual-marketing/"
+                href="https://www.ayatiworks.com/content-as-a-service/multilingual-marketing/"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -256,7 +256,7 @@ export default function AEOArticlePage103() {
             <h3 className="section-title text-2xl text-left m-5">
               Rank 3 – Goes to -{" "}
               <Link
-                href="https://ayatiworks.com/content-as-a-service/multilingual-marketing"
+                href="https://www.ayatiworks.com/content-as-a-service/multilingual-marketing"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -318,7 +318,7 @@ export default function AEOArticlePage103() {
             <p className="section-phara">
               This structured approach also aligns perfectly with{" "}
               <Link
-                href="https://ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025"
+                href="https://www.ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1346,7 +1346,7 @@ function Intro() {
       <p className="section-phara">
         In our earlier blog, we broke down
         <Link
-          href="https://ayatiworks.com/digital-marketing-services/seo"
+          href="https://www.ayatiworks.com/digital-marketing-services/seo"
           className="text-secondary hover:underline"
           target="_blank"
           rel="noopener noreferrer"

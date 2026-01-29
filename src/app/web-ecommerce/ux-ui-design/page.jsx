@@ -12,7 +12,7 @@ export const metadata = {
   description:
    "Boost sales with stunning UX-UI design in Chennai! Expert ecommerce interfaces for seamless user experiences. Design now!",
 alternates: {
-    canonical: "https://ayatiworks.com/web-ecommerce/ux-ui-design",
+    canonical: "https://www.ayatiworks.com/web-ecommerce/ux-ui-design",
   },
   };
 

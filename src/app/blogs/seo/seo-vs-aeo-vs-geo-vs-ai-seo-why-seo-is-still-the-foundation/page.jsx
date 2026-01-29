@@ -12,7 +12,7 @@ export const metadata = {
     "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/seo/seo-vs-aeo-vs-geo-vs-ai-seo-why-seo-is-still-the-foundation",
+      "https://www.ayatiworks.com/blogs/seo/seo-vs-aeo-vs-geo-vs-ai-seo-why-seo-is-still-the-foundation",
   },
 };
 

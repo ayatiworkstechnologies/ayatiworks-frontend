@@ -367,7 +367,7 @@ function HeroServicePage() {
               className="section-title text-xl sm:text-2xl text-left "
             >
               <span className="mb-2 block">
-                Collaborating with Ayatiworks (https://ayatiworks.com/) opens
+                Collaborating with Ayatiworks (https://www.ayatiworks.com/) opens
                 doors to greater engagement, trust, and conversions. We don’t
                 just run campaigns; we create brand stories that drive results.
                 Our strategies deliver better ROI, faster traction, and lasting

@@ -1003,7 +1003,7 @@ const relatedPosts = getRelatedRecentPosts({
               strategy tailored to your business goals, you can speak to
               Ayatiworks, a{" "}
               <Link
-                href="https://ayatiworks.com/digital-marketing-services"
+                href="https://www.ayatiworks.com/digital-marketing-services"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1678,7 +1678,7 @@ function Intro() {
       <p className="section-phara">
         The demand for
         <Link
-          href="https://ayatiworks.com/digital-marketing-services"
+          href="https://www.ayatiworks.com/digital-marketing-services"
           className="text-secondary hover:underline"
           target="_blank"
           rel="noopener noreferrer"
@@ -1736,7 +1736,7 @@ function Intro() {
       <p className="section-phara">
         Let’s explore why Chennai-based agencies, notably{" "}
         <Link
-          href="https://ayatiworks.com/"
+          href="https://www.ayatiworks.com/"
           className="text-secondary hover:underline"
           target="_blank"
           rel="noopener noreferrer"

@@ -11,7 +11,7 @@ export const metadata = {
     "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/digital-marketing-services-drive-revenue-funnel-alignment",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/digital-marketing-services-drive-revenue-funnel-alignment",
   },
 };
 

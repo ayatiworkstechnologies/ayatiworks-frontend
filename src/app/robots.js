@@ -10,6 +10,6 @@ export default function robots() {
         disallow: [], // ✅ correct key and empty value
       },
     ],
-    sitemap: "https://ayatiworks.com/sitemap.xml",
+    sitemap: "https://www.ayatiworks.com/sitemap.xml",
   };
 }

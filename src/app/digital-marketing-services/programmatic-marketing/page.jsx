@@ -13,7 +13,7 @@ export const metadata = {
     "Revolutionize ads with programmatic marketing in Chennai! Precision targeting for maximum impact. Boost your campaigns today!",
   alternates: {
     canonical:
-      "https://ayatiworks.com/digital-marketing-services/programmatic-marketing",
+      "https://www.ayatiworks.com/digital-marketing-services/programmatic-marketing",
   },
 };
 

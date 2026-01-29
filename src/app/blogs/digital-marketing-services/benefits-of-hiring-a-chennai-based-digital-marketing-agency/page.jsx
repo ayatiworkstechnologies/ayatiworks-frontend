@@ -11,7 +11,7 @@ export const metadata = {
     "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI. Learn the 5 key reasons Chennai brands trust local experts.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
   },
 };
 

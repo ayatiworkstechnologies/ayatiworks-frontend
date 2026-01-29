@@ -11,7 +11,7 @@ export const metadata = {
     "Media Outreach Services, Online Reputation Experts Chennai - Ayatiworks",
   description:
    "Strengthen your online reputation with expert media outreach in Chennai! Build trust and visibility. Start now!",
-    alternates: { canonical: "https://ayatiworks.com/digital-pr/online-reputation-media-outreach", }
+    alternates: { canonical: "https://www.ayatiworks.com/digital-pr/online-reputation-media-outreach", }
 };
 
 export default function OnlineReputationPage() {

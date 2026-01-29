@@ -11,7 +11,7 @@ export const metadata = {
     "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for sustainable growth and measurable ROI.",
   alternates: {
     canonical:
-      "https://ayatiworks.com/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services",
+      "https://www.ayatiworks.com/blogs/digital-marketing-services/business-decision-guide-choosing-prioritising-scaling-services",
   },
 };
 

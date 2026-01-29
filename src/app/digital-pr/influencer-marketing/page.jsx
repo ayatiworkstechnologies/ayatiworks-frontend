@@ -11,7 +11,7 @@ export const metadata = {
     "Influencer Marketing Services in Chennai, Grow with Influencers - Ayatiworks ",
   description:
    "Skyrocket your brand with influencer marketing in Chennai! Connect with influencers to drive growth. Partner with us now!",
-    alternates: { canonical: "https://ayatiworks.com/digital-pr/influencer-marketing", }
+    alternates: { canonical: "https://www.ayatiworks.com/digital-pr/influencer-marketing", }
 };
 
 export default function InfluencerMarketingPage() {

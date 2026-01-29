@@ -12,7 +12,7 @@ export const metadata = {
   description:
    "Grow your online business with expert ecommerce solutions in Chennai! Stunning design and development for success. Start now!",
    alternates: {
-    canonical: "https://ayatiworks.com/web-ecommerce/ecommerce-solutions",
+    canonical: "https://www.ayatiworks.com/web-ecommerce/ecommerce-solutions",
   },
 };
 

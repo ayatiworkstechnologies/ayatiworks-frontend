@@ -200,7 +200,7 @@ export default function AEOArticlePage102() {
             <p className="section-phara">
               While{" "}
               <Link
-                href="https://ayatiworks.com/digital-marketing-services/seo"
+                href="https://www.ayatiworks.com/digital-marketing-services/seo"
                 className="text-secondary hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -319,7 +319,7 @@ export default function AEOArticlePage102() {
                     </h3>
                     <p className="section-phara">
                       <Link
-                        href="https://ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025#strategy-2"
+                        href="https://www.ayatiworks.com/blogs/seo/5-must-know-AEO-Strategies-For-2025#strategy-2"
                         className="text-secondary hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -1194,7 +1194,7 @@ function Intro() {
         idea of how it works from an overview. When you plan to outsource your
         SEO to a{" "}
         <Link
-          href="https://ayatiworks.com/"
+          href="https://www.ayatiworks.com/"
           className="text-secondary hover:underline"
           target="_blank"
           rel="noopener noreferrer"

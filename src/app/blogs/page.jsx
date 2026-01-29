@@ -11,7 +11,7 @@ export const metadata = {
   title: "Ayatiworks - Blog",
   description:
     "Unlock digital marketing insights with our expert blog! Tips and trends to boost your brand’s growth. Dive in now!",
-  alternates: { canonical: "https://ayatiworks.com/blogs", }
+  alternates: { canonical: "https://www.ayatiworks.com/blogs", }
 };
 
 // ⛔️ Don't use `dynamic = "force-dynamic"` with static export

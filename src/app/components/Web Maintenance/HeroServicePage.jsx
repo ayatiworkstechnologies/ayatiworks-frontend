@@ -572,7 +572,7 @@ function HeroServicePage() {
           <p className="mt-6 text-base sm:text-lg md:text-lg font-secondary text-black/80 leading-relaxed">
             As a{" "}
             <a
-              href="https://ayatiworks.com/"
+              href="https://www.ayatiworks.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-secondary underline hover:text-secondary/80"
