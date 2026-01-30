@@ -84,9 +84,9 @@ export default function DigitalMarketingSection() {
           className="flex justify-center"
         >
           <img
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm.png"
+            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm-1.jpg"
             alt="AI Driven Digital Marketing Services in Chennai Ayatiworks screened on TV"
-            className="w-200 h-full drop-shadow-xl rounded-xl"
+            className="w-200 h-full"
           />
         </motion.div>
 

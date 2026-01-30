@@ -173,6 +173,18 @@ export const POSTS = [
       "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
     category: "Digital Marketing Services",
   },
+  {
+    id: 112,
+    title: "How to Choose the Right Digital Marketing Agency in Chennai (A Revenue-First Buyer’s Guide) ",
+    slug: "/blogs/digital-marketing-services/choose-right-digital-marketing-agency-chennai/",
+    bannerTitle: "Choosing a digital marketing agency isn’t about rankings—it’s about revenue alignment.",
+    date: "Jan 30, 2026",
+    readMins: 10,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-112.jpg",
+    coverAlt: "How to choose the right digital marketing agency in Chennai for business growth",
+    deck: "Looking for a digital marketing agency in Chennai? This in-depth buyer’s guide explains how to evaluate agencies, digital marketing services, ROI, and growth frameworks before you decide.",
+    category: "Digital Marketing Services",
+  },
   // {
   //   id: 111,
   //   title: "",
