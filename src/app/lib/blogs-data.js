@@ -185,6 +185,18 @@ export const POSTS = [
     deck: "Looking for a digital marketing agency in Chennai? This in-depth buyer’s guide explains how to evaluate agencies, digital marketing services, ROI, and growth frameworks before you decide.",
     category: "Digital Marketing Services",
   },
+  {
+    id: 113,
+    title: "How Digital Marketing Works Across the Funnel for Revenue Growth",
+    slug: "/blogs/digital-marketing-services/how-digital-marketing-works-across-the-funnel-for-revenue-growth/",
+    bannerTitle: "Stop running campaigns. Start building a revenue engine.",
+    date: "Feb 06, 2026",
+    readMins: 20,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-113.jpg",
+    coverAlt: "Digital marketing funnel showing awareness, demand, and revenue alignment for business growth",
+    deck: "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
+    category: "Digital Marketing Services",
+  },
   // {
   //   id: 111,
   //   title: "",
