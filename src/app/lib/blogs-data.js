@@ -204,7 +204,7 @@ export const POSTS = [
     bannerTitle: "Commerce Is No Longer Click-Driven. It’s AI-Driven.",
     date: "Feb 13, 2026",
     readMins: 25,
-    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-113.jpg",
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-114.jpg",
     coverAlt: "AI-enabled Shopify ecommerce development and digital marketing services in Chennai",
     deck: "Discover how AI-powered Shopify development is transforming ecommerce. Ayatiworks, a leading Shopify development company in Chennai, builds agentic,..",
     category: "Digital Marketing Services",
