@@ -192,6 +192,18 @@ export const POSTS_BY_AUTHOR = {
       deck: "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
       category: "Digital Marketing Services",
     },
+     {
+    id: 'p14',
+    title: "The Future of Ecommerce Is Agentic: Why AI-Enabled Shopify Development Is the Next Growth Lever for Chennai Businesses",
+    slug: "/blogs/digital-marketing-services/future-of-ecommerce-is-agentic-ai-enabled-shopify-development-chennai/",
+    bannerTitle: "Commerce Is No Longer Click-Driven. It’s AI-Driven.",
+    date: "Feb 13, 2026",
+    readMins: 25,
+    cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-113.jpg",
+    coverAlt: "AI-enabled Shopify ecommerce development and digital marketing services in Chennai",
+    deck: "Discover how AI-powered Shopify development is transforming ecommerce. Ayatiworks, a leading Shopify development company in Chennai, builds agentic,..",
+    category: "Digital Marketing Services",
+  },
   ],
 
 };
