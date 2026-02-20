@@ -18,7 +18,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import RightSidebarCategories from "./RightSidebarCategories";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -782,7 +783,7 @@ export default function AEOArticlePage114() {
 
         {/* RIGHT: Categories */}
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
-          <CategoriesCard items={rightCategories} />
+          <RightSidebarCategories />
         </aside>
       </section>
 
@@ -1635,3 +1636,4 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+

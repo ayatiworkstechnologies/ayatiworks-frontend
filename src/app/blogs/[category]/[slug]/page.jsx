@@ -60,8 +60,8 @@ export async function generateMetadata({ params }) {
 
   // Generate powerful SEO metadata programmatically
   return {
-    title: `${post.title} | Ayatiworks`,
-    description: post.deck || post.bannerTitle,
+    title: post.seoTitle || `${post.title} | Ayatiworks`,
+    description: post.seoDescription || post.deck || post.bannerTitle,
     alternates: {
       canonical: `https://www.ayatiworks.com/blogs/${categoryTarget}/${slugTarget}`,
     },

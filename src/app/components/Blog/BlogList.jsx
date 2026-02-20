@@ -23,15 +23,18 @@ const toPathSegments = (slugStr = "") =>
     .map((s) => toSlug(s));
 
 const fromSlug = (slug = "", list = []) => {
-  const found = list.find((c) => toSlug(c.label) === slug);
+  const found = list.find((c) => c.slug === slug);
   return found ? found.label : "All";
 };
 
 /* ------------------ Categories ------------------ */
-const CATEGORIES = CATEGORIES_SRC.map((c) => ({
-  ...c,
-  slug: toSlug(c.label),
-}));
+const CATEGORIES = CATEGORIES_SRC.map((c) => {
+  const parts = c.href.split("/");
+  return {
+    ...c,
+    slug: c.label === "All" ? "all" : parts[parts.length - 1],
+  };
+});
 
 /* ------------------ Sort options ------------------ */
 const SORT_OPTIONS = [
@@ -53,10 +56,16 @@ export default function BlogListSection({ initialParams = {} }) {
 
   // Fallback params
   const pageParamStr = searchParams.get("page") || initialParams.page || "1";
-  const catParamStr =
-    (searchParams.get("cat") || initialParams.cat || "all").toLowerCase();
-  const sortParamStr =
-    (searchParams.get("sort") || initialParams.sort || "new").toLowerCase();
+  const catParamStr = (
+    searchParams.get("cat") ||
+    initialParams.cat ||
+    "all"
+  ).toLowerCase();
+  const sortParamStr = (
+    searchParams.get("sort") ||
+    initialParams.sort ||
+    "new"
+  ).toLowerCase();
 
   const pageParam = Number.isFinite(Number(pageParamStr))
     ? Number(pageParamStr)
@@ -69,7 +78,7 @@ export default function BlogListSection({ initialParams = {} }) {
   const filtered = useMemo(() => {
     if (activeCatLabel === "All") return POSTS;
     return POSTS.filter(
-      (p) => p.category && toSlug(p.category) === toSlug(activeCatLabel)
+      (p) => p.category && toSlug(p.category) === toSlug(activeCatLabel),
     );
   }, [activeCatLabel]);
 
@@ -121,12 +130,17 @@ export default function BlogListSection({ initialParams = {} }) {
   const goTo = (p) => pushParams({ page: p });
 
   const setCat = (label) => {
-    const slug = label === "All" ? "all" : toSlug(label);
+    const targetCat = CATEGORIES.find((c) => c.label === label);
+    const slug = targetCat ? targetCat.slug : "all";
     const params = new URLSearchParams();
-    params.set("cat", slug);
     params.set("page", "1");
     params.set("sort", sortParamStr);
-    router.push(`${pathname}?${params.toString()}`);
+
+    if (slug === "all") {
+      router.push(`/blogs?${params.toString()}`);
+    } else {
+      router.push(`/blogs/${slug}?${params.toString()}`);
+    }
   };
 
   const setSort = (value) => {
@@ -231,10 +245,13 @@ function Card({ post }) {
   const mins = Number(post.readMins);
   const readText = Number.isFinite(mins) ? `${mins} min read` : null;
 
-  const categorySlug = post.category ? toSlug(post.category) : null;
-  const categoryHref = categorySlug
-    ? `/blogs?cat=${categorySlug}&page=1`
-    : null;
+  const matchingCat = CATEGORIES.find((c) => c.label === post.category);
+  const categorySlug = matchingCat
+    ? matchingCat.slug
+    : post.category
+      ? toSlug(post.category)
+      : null;
+  const categoryHref = categorySlug ? `/blogs/${categorySlug}` : null;
 
   return (
     <article className="group rounded-xl border border-slate-200 bg-white shadow-[0_10px_24px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(0,0,0,0.10)]">

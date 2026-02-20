@@ -13,6 +13,10 @@ export const POSTS = [
       "AI Search Optimization Strategies for Businesses in 2025 – Visual Guide to AEO Implementation",
     deck: "A customer asks their AI assistant, “What’s the best way to boost my online sales?” and gets a crisp, tailored answer, but your business isn’t mentioned.",
     category: "SEO Services",
+    seoTitle:
+      "Is Your Website Ready for the AI Search Takeover? 5 Must-Know AEO Strategies for 2025",
+    seoDescription:
+      "Discover if your website is prepared for AI-driven search in 2025. Learn 5 essential AEO strategies to boost organic traffic and stay ahead with expert tips from a top digital marketing agency.",
   },
   {
     id: 102,
@@ -27,6 +31,10 @@ export const POSTS = [
     coverAlt: "Tech Startup Optimizing Content for AI-Powered Answer Engines",
     deck: "From CEOs to CMOs in funded or incubated tech startups, there is this question about using organic reach or SEO ...",
     category: "SEO Services",
+    seoTitle:
+      "How Tech Startups Can Use Answer Engine Optimization (AEO) to Boost Visibility",
+    seoDescription:
+      "Discover how Answer Engine Optimization (AEO) helps tech startups enhance visibility, trust, and conversions in the age of AI-driven search.",
   },
   {
     id: 103,
@@ -41,6 +49,10 @@ export const POSTS = [
       "Tech startup implementing AEO framework for smarter audience engagement",
     deck: "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center stage, startups that master ...",
     category: "SEO Services",
+    seoTitle:
+      "Implementing AEO in Your Content Strategy | Step-by-Step Guide for Tech Startups",
+    seoDescription:
+      "Discover how to integrate Answer Engine Optimization (AEO) into your startup content strategy. Learn practical steps to make your brand AI-visible and voice-search ready.",
   },
   {
     id: 104,
@@ -54,6 +66,10 @@ export const POSTS = [
     coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
     deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
     category: "Digital Marketing Services",
+    seoTitle:
+      "Chennai Digital Marketing Services | The Local Agency Advantage for National-Scale ROI",
+    seoDescription:
+      "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise.",
   },
   {
     id: 105,
@@ -68,6 +84,10 @@ export const POSTS = [
       "Benefits of hiring a Chennai-based digital marketing agency for business growth",
     deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
     category: "Digital Marketing Services",
+    seoTitle:
+      "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency | Ayatiworks",
+    seoDescription:
+      "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI. Learn the 5 key reasons Chennai brands trust local experts.",
   },
   {
     id: 106,
@@ -83,6 +103,10 @@ export const POSTS = [
       "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
     deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
     category: "Digital Marketing Services",
+    seoTitle:
+      "How to Evaluate a Digital Marketing Agency in Chennai | Step-By-Step Guide for Businesses",
+    seoDescription:
+      "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability, how to evaluate strategy, KPIs, roadmaps, and ROI before choosing the right agency.",
   },
   {
     id: 107,
@@ -98,6 +122,9 @@ export const POSTS = [
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
     category: "Digital Marketing Services",
+    seoTitle: "Top 10 Digital Marketing Agencies in Chennai | Ayatiworks",
+    seoDescription:
+      "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner.",
   },
   {
     id: 108,
@@ -111,6 +138,10 @@ export const POSTS = [
     coverAlt: "Digital marketing services explained as a growth system",
     deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
     category: "Digital Marketing Services",
+    seoTitle:
+      "Digital Marketing Services Explained: A Scalable Growth Framework for Modern Businesses | Ayatiworks",
+    seoDescription:
+      "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth.",
   },
   {
     id: 109,
@@ -127,6 +158,10 @@ export const POSTS = [
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
     category: "Digital Marketing Services",
+    seoTitle:
+      "Digital Marketing Services: How Businesses Choose, Prioritise & Scale for Growth | Ayatiworks",
+    seoDescription:
+      "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for sustainable growth and measurable ROI.",
   },
   {
     id: 110,
@@ -143,6 +178,10 @@ export const POSTS = [
       "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
     deck: "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
     category: "SEO Services",
+    seoTitle:
+      "SEO vs AEO vs GEO vs AI SEO | How Modern Search Works for Businesses",
+    seoDescription:
+      "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
   },
   {
     id: 111,
@@ -158,6 +197,10 @@ export const POSTS = [
     coverAlt: "Digital marketing funnel alignment from awareness to revenue",
     deck: "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
     category: "Digital Marketing Services",
+    seoTitle:
+      "How Digital Marketing Services Drive Revenue Through Funnel Alignment | Ayatiworks",
+    seoDescription:
+      "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
   },
   {
     id: 112,
@@ -174,6 +217,10 @@ export const POSTS = [
       "How to choose the right digital marketing agency in Chennai for business growth",
     deck: "Looking for a digital marketing agency in Chennai? This in-depth buyer’s guide explains how to evaluate agencies, digital marketing services, ROI, and growth frameworks before you decide.",
     category: "Digital Marketing Services",
+    seoTitle:
+      "How to Choose the Right Digital Marketing Agency in Chennai | Revenue-First Buyer’s Guide | Ayatiworks",
+    seoDescription:
+      "Looking for a digital marketing agency in Chennai? This in-depth buyer’s guide explains how to evaluate agencies, digital marketing services, ROI, and growth frameworks before you decide.",
   },
   {
     id: 113,
@@ -188,6 +235,10 @@ export const POSTS = [
       "Digital marketing funnel showing awareness, demand, and revenue alignment for business growth",
     deck: "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
     category: "Digital Marketing Services",
+    seoTitle:
+      "How Digital Marketing Works Across the Funnel for Revenue Growth | Ayatiworks",
+    seoDescription:
+      "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
   },
   {
     id: 114,
@@ -203,6 +254,10 @@ export const POSTS = [
       "AI-enabled Shopify ecommerce development and digital marketing services in Chennai",
     deck: "Discover how AI-powered Shopify development is transforming ecommerce. Ayatiworks, a leading Shopify development company in Chennai, builds agentic,..",
     category: "Digital Marketing Services",
+    seoTitle:
+      "How Digital Marketing Works Across the Funnel for Revenue Growth | Ayatiworks",
+    seoDescription:
+      "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
   },
   {
     id: 115,
@@ -218,6 +273,10 @@ export const POSTS = [
       "Difference between SEO, performance marketing, and growth marketing explained for businesses",
     deck: "Confused between SEO, performance marketing, and growth marketing? This guide breaks down the differences, costs, ROI timelines, and what actually drives sustainable business growth...",
     category: "Digital Marketing Services",
+    seoTitle:
+      "Why Most Businesses Confuse SEO, Performance Marketing, and Growth Marketing | Ayatiworks",
+    seoDescription:
+      "Confused between SEO, performance marketing, and growth marketing? This guide breaks down the differences, costs, ROI timelines, and what actually drives sustainable business growth.",
   },
   // {
   //   id: 111,
