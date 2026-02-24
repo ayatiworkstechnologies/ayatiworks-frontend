@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Swal from "sweetalert2"; // ✅ Import SweetAlert2
 import emailjs from "@emailjs/browser";
+import { countryCodes } from "../../lib/countryCodes";
 
 const SERVICE_ID = "service_sfma7ct";
 const TEMPLATE_ID = "template_d3xto9l";
@@ -20,16 +21,16 @@ export default function Form() {
   // const onSubmit = async (data) => {
   //   try {
   //     setLoading(true);
-  //     const response = await Contactform(data); 
+  //     const response = await Contactform(data);
 
   //     if (response?.status === "success") {
   //       Swal.fire({
   //         icon: "success",
   //         title: "Success!",
   //         text: response?.message || "Form submitted successfully 🎉",
-  //         confirmButtonColor: "#16a34a", 
+  //         confirmButtonColor: "#16a34a",
   //       });
-  //       reset(); 
+  //       reset();
   //     } else {
   //       Swal.fire({
   //         icon: "error",
@@ -44,7 +45,7 @@ export default function Form() {
   //       icon: "warning",
   //       title: "Server Error",
   //       text: error?.message || "⚠️ Please try again later.",
-  //       confirmButtonColor: "#f59e0b", 
+  //       confirmButtonColor: "#f59e0b",
   //     });
   //   } finally {
   //     setLoading(false);
@@ -63,11 +64,13 @@ export default function Form() {
     // Simple honeypot check (optional): add a hidden input named "website"
     if (data.website) return;
 
-    const services = Array.isArray(data.services) ? data.services.join(", ") : "";
+    const services = Array.isArray(data.services)
+      ? data.services.join(", ")
+      : "";
     const templateParams = {
       from_name: data.name,
       from_email: data.email,
-      mobile: data.mobile,
+      mobile: `${data.countryCode || "+91"} ${data.mobile}`,
       services,
       budget: data.budget,
       message: data.message,
@@ -126,15 +129,15 @@ export default function Form() {
         <p className="text-center text-gray-800 font-secondary text-base mb-2">
           Your Goal and Our Expertise!
         </p>
-        
+
         {/* Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-6 bg-white p-6 shadow-lg border border-gray-100"
         >
           <p className="text-center text-gray-800 font-secondary text-base mb-2">
-          Fill out the form below and we’ll respond within one business day.
-        </p>
+            Fill out the form below and we’ll respond within one business day.
+          </p>
           {/* Name */}
           <div>
             <label className="block font-primary text-xl font-medium text-black mb-1">
@@ -157,19 +160,33 @@ export default function Form() {
             <label className="block font-primary text-xl font-medium text-black mb-1">
               Mobile No
             </label>
-            <input
-              type="tel"
-              placeholder="Enter Your Mobile No"
-              {...register("mobile", {
-                required: "Mobile number is required",
-                pattern: {
-                  value: /^[0-9]{10}$/,
-                  message: "Enter a valid 10-digit mobile number...",
-                },
-              })}
-              className="w-full border border-gray-300 rounded-lg p-3 text-gray-800 font-secondary
-              focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
-            />
+            <div className="flex gap-2">
+              <select
+                {...register("countryCode", { required: "Required" })}
+                className="w-1/3 border border-gray-300 rounded-lg p-3 text-gray-800 font-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
+                defaultValue="+91"
+              >
+                {countryCodes.map((c) => (
+                  <option key={c.country} value={c.code}>
+                    {c.flag} {c.code} ({c.country})
+                  </option>
+                ))}
+              </select>
+              <div className="w-2/3">
+                <input
+                  type="tel"
+                  placeholder="Enter Your Mobile No"
+                  {...register("mobile", {
+                    required: "Mobile number is required",
+                    pattern: {
+                      value: /^[0-9]{10}$/,
+                      message: "Enter a valid 10-digit mobile number...",
+                    },
+                  })}
+                  className="w-full border border-gray-300 rounded-lg p-3 text-gray-800 font-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
+                />
+              </div>
+            </div>
             {errors.mobile && (
               <p className="text-red-500 text-sm mt-1">
                 {errors.mobile.message}
