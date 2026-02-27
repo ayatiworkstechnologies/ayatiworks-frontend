@@ -225,6 +225,25 @@ export const POSTS_BY_AUTHOR = {
       deck: "Confused between SEO, performance marketing, and growth marketing? This guide breaks down the differences, costs, ROI timelines, and what actually drives sustainable business growth...",
       category: "Digital Marketing Services",
     },
+    {
+      id: "p16",
+      title: "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brands",
+      slug: "/blogs/affiliate-marketing-services/affiliate-marketing-ai-era-chennai-brands/",
+      bannerTitle:
+        "AI Is Rewriting Affiliate Marketing. Smart Brands in Chennai Are Already Scaling.",
+      date: "Feb 27, 2026",
+      readMins: 20,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-116.jpg",
+      coverAlt:
+        "AI-powered affiliate marketing dashboard with predictive analytics and performance algorithms for Chennai brands",
+      deck: "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses...",
+      category: "Affiliate Marketing Services",
+      seoTitle:
+        "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brand | Ayatiworks",
+      seoDescription:
+        "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses. ",
+    },
   ],
 };
 
