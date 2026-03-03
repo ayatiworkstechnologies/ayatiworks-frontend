@@ -13,9 +13,9 @@ export default function PromoHero() {
         <div className="bg-primary text-white rounded-xl px-4 sm:px-6 md:px-10 py-6 sm:py-8 flex flex-col md:flex-row items-center justify-between gap-4 ">
           <div className="text-center md:text-left text-lg sm:text-xl md:text-2xl lg:text-4xl leading-snug">
             <p className="font-primary font-medium leading-normal p-2 sm:p-4">
-              Clicks & Quirks. Growth That Works.{" "}
-              <br className="hidden sm:block" />
-              Turn Clicks into Pure Brand Alchemy.
+              Get AI report on the house	{" "}
+              {/* <br className="hidden sm:block" />
+              Turn Clicks into Pure Brand Alchemy. */}
               {/* <span className="text-secondary bg-white font-primary font-medium ml-2 px-2 py-0.5 rounded-md">
                 30 days!
               </span> */}
@@ -26,11 +26,11 @@ export default function PromoHero() {
             className="inline-block bg-secondary hover:bg-secondary/90 
              font-primary font-medium text-white 
              px-4 sm:px-6 py-2.5 sm:py-3 rounded-full 
-             text-sm sm:text-lg lg:text-xl
+             text-sm sm:text-lg lg:text-xl uppercase
              transition duration-300 ease-in-out shadow-md hover:shadow-lg"
             aria-label="Contact Us"
           >
-            KNOW MORE
+            Request Now
           </Link>
         </div>
       </FadeInWhenVisible>
