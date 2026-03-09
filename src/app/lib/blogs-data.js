@@ -290,12 +290,32 @@ export const POSTS = [
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-116.jpg",
     coverAlt:
       "AI-powered affiliate marketing dashboard with predictive analytics and performance algorithms for Chennai brands",
-    deck: "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses...",
+    deck: "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection...",
     category: "Affiliate Marketing Services",
     seoTitle:
       "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brand | Ayatiworks",
     seoDescription:
       "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses. ",
+  },
+  {
+    id: 117,
+    title:
+      "Top 10 SEO Agencies in Chennai – Your Organic Growth Blueprint",
+    slug: "/blogs/seo/top-10-seo-agencies-in-chennai/",
+    bannerTitle:
+      " Chennai’s Leading SEO Agencies, Compared for Strategy, Visibility, and Real Organic Growth. ",
+    date: "Mar 06, 2026",
+    readMins: 25,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-117.jpg",
+    coverAlt:
+      " Top SEO agencies in Chennai comparison guide ",
+    deck: " Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth... ",
+    category: "SEO Services",
+    seoTitle:
+      "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
+    seoDescription:
+      "Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth. ",
   },
   // {
   //   id: 111,
