@@ -37,7 +37,7 @@ export default function Connection() {
           transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-         We welcome guest contributions from marketers, creators, and
+          welcome guest contributions from marketers, creators, and
           innovators. Pitch your story and let’s amplify your voice.
         </motion.p>
 

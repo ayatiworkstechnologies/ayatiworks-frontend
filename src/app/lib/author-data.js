@@ -264,6 +264,25 @@ export const POSTS_BY_AUTHOR = {
       seoDescription:
         "Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth. ",
     },
+    {
+      id: 'p18',
+      title:
+        "SEO Services in Chennai: Complete Guide for Businesses (Cost, Process, Timeline & Results)",
+      slug: "/blogs/seo/seo-services-chennai-guide/",
+      bannerTitle:
+        " Understanding SEO Services in Chennai: What Businesses Should Know Before Hiring an Agency",
+      date: "Mar 13, 2026",
+      readMins: 20,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-118.jpg",
+      coverAlt:
+        "SEO services in Chennai guide for businesses choosing an SEO agency",
+      deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
+      category: "SEO Services",
+      seoDescription:
+        "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.",
+
+    },
   ],
 };
 

@@ -24,7 +24,7 @@ const teamMembers = [
     highlight: true,
     FaLinkedinIn: "https://in.linkedin.com/in/upendrannandakumar",
   },
-  
+
   {
     name: "Solomon",
     title: "Chief Creative Officer",
@@ -49,12 +49,12 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/selva.svg",
     highlight: true,
   },
-  {
-    name: "Terence",
-    title: "Chief Human Resource Officer",
-    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/terence.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Terence",
+  //   title: "Chief Human Resource Officer",
+  //   img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/terence.png",
+  //   highlight: true,
+  // },
   {
     name: "Rajan",
     title: "Senior Art Director",
@@ -67,7 +67,7 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/prasanth.png",
     highlight: true,
   },
- 
+
   {
     name: "Daniel Joseph",
     title: "Senior SEO Content Strategist & Writer",
@@ -80,12 +80,12 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/palani.png",
     highlight: true,
   },
-  {
-    name: "Hari",
-    title: "Accounts and Financer",
-    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/hari.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Hari",
+  //   title: "Accounts and Financer",
+  //   img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/hari.png",
+  //   highlight: true,
+  // },
   {
     name: "Sridhar",
     title: "Digital Marketing Manager",
@@ -116,12 +116,12 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/srinath.png",
     highlight: true,
   },
-  {
-    name: "Rufus",
-    title: "Production Manager",
-    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/rufus.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Rufus",
+  //   title: "Production Manager",
+  //   img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/rufus.png",
+  //   highlight: true,
+  // },
   {
     name: "SriRamya M",
     title: "Senior Web Developer",
@@ -134,7 +134,7 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/ruban.png",
     highlight: true,
   },
-   {
+  {
     name: "Balaji V",
     title: "Junior Web Developer",
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/Balaji.png",
@@ -171,8 +171,8 @@ const teamMembers = [
     img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/vijayadharshini.png",
     highlight: true,
   },
-  
- 
+
+
   // {
   //   name: "",
   //   title: "",

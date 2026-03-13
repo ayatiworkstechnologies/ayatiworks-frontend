@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function Connection() {
   const router = useRouter();
-  const goToContact = () =>  router.push("/contact-us#form");
+  const goToContact = () => router.push("/contact-us#form");
 
   return (
     <div className="bg-white text-center py-16 px-4">

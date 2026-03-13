@@ -22,7 +22,7 @@ export const POSTS = [
     id: 102,
     title:
       "How Your Tech Startup Can Use Answer Engine Optimisation (AEO) to Reach their Audience",
-    slug: "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-(aeo)-to-attract-engage-and-convert-smarter-audiences/",
+    slug: "/blogs/seo/how-your-tech-startup-can-use-answer-engine-optimization-aeo-to-attract-engage-and-convert-smarter-audiences/",
     bannerTitle: "Search Isn’t About Pages Anymore!  It’s About Answers.",
     date: "Oct 31, 2025",
     readMins: 15,
@@ -293,7 +293,7 @@ export const POSTS = [
     deck: "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection...",
     category: "Affiliate Marketing Services",
     seoTitle:
-      "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brand | Ayatiworks",
+      "Affiliate Marketing in the AI Era : Intelligent Automation & Performance Growth for Chennai Brand | Ayatiworks",
     seoDescription:
       "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses. ",
   },
@@ -316,6 +316,54 @@ export const POSTS = [
       "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
     seoDescription:
       "Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth. ",
+  },
+  {
+    id: 118,
+    title:
+      "SEO Services in Chennai: Complete Guide for Businesses (Cost, Process, Timeline & Results)",
+    slug: "/blogs/seo/seo-services-chennai-guide/",
+    bannerTitle:
+      " Understanding SEO Services in Chennai: What Businesses Should Know Before Hiring an Agency",
+    date: "Mar 13, 2026",
+    readMins: 20,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-118.jpg",
+    coverAlt:
+      "SEO services in Chennai guide for businesses choosing an SEO agency",
+    deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
+    category: "SEO Services",
+    seoDescription:
+      "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.",
+    faqs: [
+      {
+        question: "How much do SEO services cost in Chennai?",
+        answer: "SEO pricing in Chennai usually starts around ₹40,000–₹50,000 per month for basic campaigns and can increase depending on competition, industry, and scope of work. Businesses in competitive sectors often require more content, technical optimisation, and authority building, which increases the overall cost.",
+      },
+      {
+        question: "How long does SEO take to show results?",
+        answer: "Most SEO campaigns take around three to six months to show noticeable improvement, but highly competitive industries may take longer. Results depend on website condition, keyword difficulty, content quality, and consistency of optimisation.",
+      },
+      {
+        question: "Is SEO better than paid advertising?",
+        answer: "SEO and paid ads serve different purposes. Paid advertising gives immediate traffic, while SEO builds long-term visibility. Many businesses use both, but SEO is often preferred for sustainable growth because traffic continues even after the initial investment.",
+      },
+      {
+        question: "How do I choose the right SEO agency in Chennai?",
+        answer: "Look for agencies that explain their process clearly, provide regular reporting, and focus on long-term strategy rather than quick rankings. Comparing multiple companies, checking case studies, and understanding the scope of work helps in making the right decision.",
+      },
+      {
+        question: "What services are included in professional SEO?",
+        answer: "Professional SEO usually includes technical audits, keyword research, on-page optimisation, content strategy, link building, and performance tracking. Some projects may also include local SEO, ecommerce SEO, or enterprise-level optimisation depending on business needs.",
+      },
+      {
+        question: "Does SEO still work after AI search updates?",
+        answer: "Yes. SEO continues to work, but strategies have evolved. Modern SEO includes structured content, entity optimisation, and answer-focused pages that help websites appear in AI-generated results, featured snippets, and voice search.",
+      },
+      {
+        question: "When should a business start investing in SEO?",
+        answer: "Businesses should consider SEO when they want consistent traffic, better search visibility, and long-term lead generation. Starting early usually gives better results because SEO takes time to build authority and rankings.",
+      },
+    ],
   },
   // {
   //   id: 111,

@@ -20,6 +20,7 @@ import AEOArticlePage114 from "@/src/app/components/Blog/Blog114";
 import AEOArticlePage115 from "@/src/app/components/Blog/Blog115";
 import AEOArticlePage116 from "@/src/app/components/Blog/Blog116";
 import AEOArticlePage117 from "@/src/app/components/Blog/Blog117";
+import AEOArticlePage118 from "@/src/app/components/Blog/Blog118";
 
 // Map IDs to their visual component
 const blogComponents = {
@@ -40,6 +41,7 @@ const blogComponents = {
   115: AEOArticlePage115,
   116: AEOArticlePage116,
   117: AEOArticlePage117,
+  118: AEOArticlePage118,
 };
 
 // 1. AUTO-Rank Engine: Programmatically Generate SEO for every blog post
@@ -134,16 +136,28 @@ export default async function DynamicBlogPage({ params }) {
     notFound();
   }
 
-  // Programmatic Article JSON-LD for rich result snippets
+  // Helper for ISO date formatting
+  const formatDateISO = (dateStr) => {
+    try {
+      const d = new Date(dateStr);
+      if (isNaN(d.getTime())) return "2026-03-13"; // Fallback
+      return d.toISOString().split("T")[0];
+    } catch {
+      return "2026-03-13";
+    }
+  };
+
+  const isoDate = formatDateISO(post.date);
+
+  // 1. Article JSON-LD
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: post.title,
-    description: post.deck,
+    headline: post.seoTitle || post.title,
+    description: post.seoDescription || post.deck,
     image: post.cover,
-    datePublished: post.date,
     author: {
-      "@type": "Organization", // Or Person
+      "@type": "Organization",
       name: "Ayatiworks",
       url: "https://www.ayatiworks.com",
     },
@@ -152,21 +166,81 @@ export default async function DynamicBlogPage({ params }) {
       name: "Ayatiworks",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.ayatiworks.com/fav-icon.png",
+        url: "https://www.ayatiworks.com/images/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.ayatiworks.com/blogs/${categoryTarget}/${slugTarget}`,
     },
+    datePublished: isoDate,
+    dateModified: isoDate,
+  };
+
+  // 2. FAQ JSON-LD (Dynamic if faqs exist in POSTS data)
+  const faqJsonLd = post.faqs
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+    : null;
+
+  // 3. Breadcrumb JSON-LD
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.ayatiworks.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blogs",
+        item: "https://www.ayatiworks.com/blogs",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.category || "SEO",
+        item: `https://www.ayatiworks.com/blogs/${categoryTarget}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: post.title,
+        item: `https://www.ayatiworks.com/blogs/${categoryTarget}/${slugTarget}`,
+      },
+    ],
   };
 
   return (
     <main className="section section-home">
-      {/* Inject Structured Data directly into HEAD for Google Rich Results */}
+      {/* Inject Structured Data directly into HEAD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {/* Dynamic Visual Content mapping */}
