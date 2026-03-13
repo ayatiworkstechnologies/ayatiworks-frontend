@@ -321,7 +321,7 @@ export const POSTS = [
     id: 118,
     title:
       "SEO Services in Chennai: Complete Guide for Businesses (Cost, Process, Timeline & Results)",
-    slug: "/blogs/seo/seo-services-chennai-guide/",
+    slug: "/blogs/seo/seo-services-in-chennai-complete-guide-for-businesses/",
     bannerTitle:
       " Understanding SEO Services in Chennai: What Businesses Should Know Before Hiring an Agency",
     date: "Mar 13, 2026",
