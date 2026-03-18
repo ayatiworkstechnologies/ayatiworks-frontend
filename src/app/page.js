@@ -27,6 +27,14 @@ const AyatiAboutSection = dynamic(
   }
 );
 
+const GoogleAdsSection = dynamic(
+  () => import("./components/Home/GoogleAdsSection"),
+  {
+    ssr: true,  // ✅ Enable SSR
+    loading: () => <Box />,
+  }
+);
+
 const CaasEdgeSection = dynamic(
   () => import("./components/Home/CaasEdgeSection"),
   {
@@ -156,7 +164,7 @@ export default function HomePage() {
     ],
   };
 
- 
+
 
   // BreadcrumbList
   // const breadcrumbJsonLd = {
@@ -213,7 +221,7 @@ export default function HomePage() {
           __html: JSON.stringify(localBusinessJsonLd),
         }}
       />
-      
+
       {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -225,6 +233,7 @@ export default function HomePage() {
       {/* below the fold: hydrate lazily without blocking */}
       <PromoHero />
       <AyatiAboutSection />
+      <GoogleAdsSection />
       <CaasEdgeSection />
       <WhatAyati />
       <PartnersInClimb />
