@@ -1,12 +1,68 @@
 "use client";
-
 import React, { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 export default function GoogleAdsSection() {
   const prefersReducedMotion = useReducedMotion();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = async (data) => {
+    try {
+      setLoading(true);
+      const response = await fetch(
+        "https://api.ayatiworks.com/api/v1/public/ayatiwork/proposal_lead/records",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-API-Key":
+              "3bc72efc00a99a7ad1d1e31225c6a3f833218dfb34d88cc6ecb4c2b9562ab0fd",
+          },
+          body: JSON.stringify({
+            data: {
+              email: data.email,
+              proposal: "Certified by Google",
+            },
+          }),
+        }
+      );
+
+      const result = await response.json();
+
+      if (response.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "Proposal Requested!",
+          text: "We have received your request. Our experts will get back to you soon.",
+          confirmButtonColor: "#00A3E0",
+        });
+        reset();
+      } else {
+        throw new Error(result.message || "Failed to submit request");
+      }
+    } catch (error) {
+      console.error("Proposal Submission Error:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Submission Failed",
+        text: "Something went wrong. Please try again later.",
+        confirmButtonColor: "#dc2626",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const fadeUp = (delay = 0) => ({
     initial: prefersReducedMotion ? {} : { opacity: 0, y: 24 },
@@ -47,24 +103,45 @@ export default function GoogleAdsSection() {
                 Let our experts run your Google Campaigns!
               </motion.p>
 
-              <motion.form
-                className="flex flex-col sm:flex-row gap-3 sm:gap-5 mt-6 sm:mt-8 items-center"
-                onSubmit={(e) => e.preventDefault()}
-                {...fadeUp(0.3)}
-              >
-                <input
-                  type="email"
-                  placeholder="Enter Your Email id"
-                  className="flex-1 w-full max-w-[280px] px-5 py-3 sm:py-[14px] border border-gray-200 rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#00A3E0] focus:border-[#00A3E0] font-secondary text-[15px] bg-white"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="bg-[#00A3E0] hover:bg-[#0092c8] transition-all duration-300 text-white font-bold tracking-wide py-3 sm:py-[14px] px-8 sm:px-10 rounded-full font-secondary text-[16px] whitespace-nowrap"
+              <motion.div {...fadeUp(0.3)}>
+                <form
+                  className="flex flex-col sm:flex-row gap-3 sm:gap-5 mt-6 sm:mt-8 items-center"
+                  onSubmit={handleSubmit(onSubmit)}
                 >
-                  Get a Proposal
-                </button>
-              </motion.form>
+                  <div className="flex-1 w-full max-w-[280px]">
+                    <input
+                      type="email"
+                      placeholder="Enter Your Email id"
+                      {...register("email", {
+                        required: "Email is required",
+                        pattern: {
+                          value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+                          message: "Please enter a valid email",
+                        },
+                      })}
+                      className={`w-full px-5 py-3 sm:py-[14px] border rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 font-secondary text-[15px] bg-white transition-colors ${
+                        errors.email
+                          ? "border-red-500 focus:ring-red-500 focus:border-red-500"
+                          : "border-gray-200 focus:ring-[#00A3E0] focus:border-[#00A3E0]"
+                      }`}
+                    />
+                    {errors.email && (
+                      <p className="text-red-500 text-xs mt-1 ml-1 font-secondary">
+                        {errors.email.message}
+                      </p>
+                    )}
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className={`bg-[#00A3E0] hover:bg-[#0092c8] transition-all duration-300 text-white font-bold tracking-wide py-3 sm:py-[14px] px-8 sm:px-10 rounded-full font-secondary text-[16px] whitespace-nowrap shadow-sm hover:shadow-md ${
+                      loading ? "opacity-70 cursor-not-allowed" : ""
+                    }`}
+                  >
+                    {loading ? "Submitting..." : "Get a Proposal"}
+                  </button>
+                </form>
+              </motion.div>
             </div>
 
             {/* Right Column (Image) */}

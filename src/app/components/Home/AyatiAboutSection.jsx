@@ -91,13 +91,15 @@ export default function AyatiAboutSection() {
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* ✅ Optimized Image with Next.js Image component */}
-            <div className="w-full overflow-hidden relative aspect-[3/4]">
+            <div className="w-full relative overflow-hidden ">
               <Image
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/home-quote.png"
                 alt="Ayatiworks Growth Philosophy - Visual Quote"
-                fill
-                className="object-cover"
+                width={800}
+                height={1000}
+                className="w-full h-auto object-contain"
                 loading="lazy"
+                unoptimized
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
               />
             </div>
