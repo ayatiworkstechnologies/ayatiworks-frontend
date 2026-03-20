@@ -21,6 +21,7 @@ import AEOArticlePage115 from "@/src/app/components/Blog/Blog115";
 import AEOArticlePage116 from "@/src/app/components/Blog/Blog116";
 import AEOArticlePage117 from "@/src/app/components/Blog/Blog117";
 import AEOArticlePage118 from "@/src/app/components/Blog/Blog118";
+import AEOArticlePage119 from "@/src/app/components/Blog/Blog119";
 
 // Map IDs to their visual component
 const blogComponents = {
@@ -42,6 +43,7 @@ const blogComponents = {
   116: AEOArticlePage116,
   117: AEOArticlePage117,
   118: AEOArticlePage118,
+  119: AEOArticlePage119,
 };
 
 // 1. AUTO-Rank Engine: Programmatically Generate SEO for every blog post

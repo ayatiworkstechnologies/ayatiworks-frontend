@@ -359,15 +359,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
     };
   }, [pathname, autoExpandMs]);
 
-  // Scroll to top after route changes (avoid fighting Drawer scroll)
-  useEffect(() => {
-    if (!mobileOpen) {
-      const id = requestAnimationFrame(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-      return () => cancelAnimationFrame(id);
-    }
-  }, [pathname, mobileOpen]);
+
 
   const routerPush = useCallback(
     (path) => {

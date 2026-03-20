@@ -365,6 +365,56 @@ export const POSTS = [
       },
     ],
   },
+   {
+    id: 119,
+    title:
+      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
+    slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
+    bannerTitle:
+      " 9 SEO Mistakes That Prevent Chennai Businesses from Ranking on Google",
+    date: "Mar 20, 2026",
+    readMins: 30,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-119.jpg",
+    coverAlt:
+      "Common SEO mistakes Chennai businesses make affecting Google rankings",
+    deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
+    category: "SEO Services",
+     seoTitle:
+      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
+    seoDescription:
+      "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
+    faqs: [
+      {
+        question: "1. Why is my website not ranking on Google even after doing SEO?",
+        answer: "A website may not rank even after SEO if the optimisation is incomplete or not aligned with search intent. Common reasons include weak content, technical errors, poor keyword targeting, lack of backlinks, or strong competition. Search engines also take time to trust a website, so inconsistent work or stopping SEO too early can prevent rankings from improving.",
+      },
+      {
+        question: "2. How long does SEO take to show results for a business website?",
+        answer: "SEO usually takes three to six months to show noticeable improvement, but the timeline depends on competition, website quality, and the amount of work done. New websites or highly competitive industries may take longer because search engines need time to evaluate content, authority, and consistency before improving rankings.",
+      },
+      {
+        question: "3. What are the most common SEO mistakes businesses make?",
+        answer: "Some of the most common SEO mistakes include targeting wrong keywords, ignoring technical issues, publishing content without strategy, expecting fast results, and choosing SEO services based only on price. Many websites also fail to optimise for local search or do not track performance properly, which makes it difficult to understand what needs improvement.",
+      },
+      {
+        question: "4. How much do SEO services cost in Chennai?",
+        answer: "SEO pricing in Chennai varies depending on the scope of work and competition level. Basic campaigns may start around ₹40,000–₹50,000 per month, while competitive industries may require higher budgets for content, technical optimisation, and authority building. The exact cost depends on the business goals, website condition, and the level of SEO required.",
+      },
+      {
+        question: "5. Does local SEO really help businesses in Chennai get more customers?",
+        answer: "Yes, local SEO helps businesses appear in location-based searches such as “near me” or city-specific queries. Optimising Google Business Profile, using local keywords, getting reviews, and maintaining accurate business listings improve visibility in local results. This is especially important for service-based businesses that depend on customers from a specific area.",
+      },
+      {
+        question: "6. Can SEO still work after AI search and Google algorithm updates?",
+        answer: "SEO still works, but the approach has changed. Search engines now focus more on content quality, relevance, technical performance, and authority instead of just keywords. Websites that provide useful information, have strong structure, and update content regularly are more likely to appear in both traditional search results and AI-generated answers.",
+      },
+      {
+        question: "7. When should a business hire a professional SEO agency?",
+        answer: "A business should consider hiring an SEO agency when competition is high, rankings are not improving, or there is no internal team to manage optimisation. Professional SEO services help with strategy, technical fixes, content planning, and performance tracking, which makes it easier to achieve steady long-term growth instead of temporary ranking changes.",
+      },
+    ],
+  },
   // {
   //   id: 111,
   //   title: "",

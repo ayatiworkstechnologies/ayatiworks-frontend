@@ -283,6 +283,27 @@ export const POSTS_BY_AUTHOR = {
         "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.",
 
     },
+     {
+    id: 'p19',
+    title:
+      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
+    slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
+    bannerTitle:
+      " 9 SEO Mistakes That Prevent Chennai Businesses from Ranking on Google",
+    date: "Mar 20, 2026",
+    readMins: 30,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-119.jpg",
+    coverAlt:
+      "Common SEO mistakes Chennai businesses make affecting Google rankings",
+    deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
+    category: "SEO Services",
+     seoTitle:
+      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
+    seoDescription:
+      "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
+    
+  },
   ],
 };
 
