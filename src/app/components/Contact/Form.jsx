@@ -2,12 +2,8 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Swal from "sweetalert2"; // ✅ Import SweetAlert2
-import emailjs from "@emailjs/browser";
 import { countryCodes } from "../../lib/countryCodes";
 
-const SERVICE_ID = "service_sfma7ct";
-const TEMPLATE_ID = "template_d3xto9l";
-const PUBLIC_KEY = "m0GjzxjAhhGCBSLk-";
 export default function Form() {
   // const {
   //   register,
@@ -64,28 +60,33 @@ export default function Form() {
     // Simple honeypot check (optional): add a hidden input named "website"
     if (data.website) return;
 
-    const services = Array.isArray(data.services)
+    const servicesStr = Array.isArray(data.services)
       ? data.services.join(", ")
       : "";
-    const templateParams = {
-      from_name: data.name,
-      from_email: data.email,
-      mobile: `${data.countryCode || "+91"} ${data.mobile}`,
-      services,
-      budget: data.budget,
-      message: data.message,
-      page_url: typeof window !== "undefined" ? window.location.href : "",
-      submitted_at: new Date().toLocaleString(),
-      // to_email: "leads@ayatiworks.com", // optional if you configured your template to use it
+
+    const payload = {
+      data: {
+        name: data.name || "",
+        email: data.email || "",
+        mobile: `${data.countryCode || "+91"} ${data.mobile}`,
+        services: servicesStr || "",
+        budget: data.budget || "",
+        message: data.message || "",
+        page_url: typeof window !== "undefined" ? window.location.href : ""
+      }
     };
 
     try {
       setLoading(true);
-      const res = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
-        publicKey: PUBLIC_KEY,
+      const response = await fetch("/api/submit-contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload)
       });
 
-      if (res?.status === 200) {
+      if (response.ok) {
         Swal.fire({
           icon: "success",
           title: "Success!",
@@ -94,7 +95,8 @@ export default function Form() {
         });
         reset();
       } else {
-        throw new Error(`EmailJS error: ${res?.text || "Unknown error"}`);
+        const errorData = await response.json().catch(() => null);
+        throw new Error(errorData?.message || "Unknown error");
       }
     } catch (error) {
       console.error(error);
