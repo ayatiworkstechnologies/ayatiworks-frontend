@@ -1,52 +1,11 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Swal from "sweetalert2"; // ✅ Import SweetAlert2
+import ReCAPTCHA from "react-google-recaptcha";
 import { countryCodes } from "../../lib/countryCodes";
 
 export default function Form() {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  //   reset,
-  // } = useForm();
-
-  // const [loading, setLoading] = useState(false);
-
-  // const onSubmit = async (data) => {
-  //   try {
-  //     setLoading(true);
-  //     const response = await Contactform(data);
-
-  //     if (response?.status === "success") {
-  //       Swal.fire({
-  //         icon: "success",
-  //         title: "Success!",
-  //         text: response?.message || "Form submitted successfully 🎉",
-  //         confirmButtonColor: "#16a34a",
-  //       });
-  //       reset();
-  //     } else {
-  //       Swal.fire({
-  //         icon: "error",
-  //         title: "Failed",
-  //         text: response?.message || "Something went wrong. Please try again.",
-  //         confirmButtonColor: "#dc2626",
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     Swal.fire({
-  //       icon: "warning",
-  //       title: "Server Error",
-  //       text: error?.message || "⚠️ Please try again later.",
-  //       confirmButtonColor: "#f59e0b",
-  //     });
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
   const {
     register,
     handleSubmit,
@@ -55,45 +14,61 @@ export default function Form() {
   } = useForm();
 
   const [loading, setLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
+
+  const onCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
 
   const onSubmit = async (data) => {
     // Simple honeypot check (optional): add a hidden input named "website"
     if (data.website) return;
 
-    const servicesStr = Array.isArray(data.services)
-      ? data.services.join(", ")
-      : "";
-
-    const payload = {
-      data: {
-        name: data.name || "",
-        email: data.email || "",
-        mobile: `${data.countryCode || "+91"} ${data.mobile}`,
-        services: servicesStr || "",
-        budget: data.budget || "",
-        message: data.message || "",
-        page_url: typeof window !== "undefined" ? window.location.href : ""
-      }
-    };
+    if (!captchaToken) {
+      Swal.fire({
+        icon: "warning",
+        title: "reCAPTCHA Required",
+        text: "Please complete the reCAPTCHA verification.",
+        confirmButtonColor: "#facc15",
+      });
+      return;
+    }
 
     try {
       setLoading(true);
+
+      const payload = {
+        data: {
+          name: data.name || "",
+          email: data.email || "",
+          mobile: `${data.countryCode || "+91"} ${data.mobile}`,
+          services: Array.isArray(data.services) ? data.services.join(", ") : "",
+          budget: data.budget || "",
+          message: data.message || "",
+          page_url: typeof window !== "undefined" ? window.location.href : "",
+          captchaToken: captchaToken,
+        },
+      };
+
       const response = await fetch("/api/submit-contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
         Swal.fire({
           icon: "success",
           title: "Success!",
-          text: "Form submitted successfully ",
+          text: "Form submitted successfully",
           confirmButtonColor: "#16a34a",
         });
         reset();
+        setCaptchaToken(null);
+        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         throw new Error(errorData?.message || "Unknown error");
@@ -287,6 +262,15 @@ export default function Form() {
                 {errors.message.message}
               </p>
             )}
+          </div>
+
+          {/* reCAPTCHA */}
+          <div className="flex justify-center mb-4">
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY_V2 || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+              onChange={onCaptchaChange}
+            />
           </div>
 
           {/* Submit */}

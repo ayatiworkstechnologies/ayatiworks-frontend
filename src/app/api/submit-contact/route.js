@@ -3,6 +3,34 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   try {
     const payload = await request.json();
+    const captchaToken = payload.data?.captchaToken;
+
+    if (!captchaToken) {
+      return NextResponse.json({ message: "reCAPTCHA token is missing" }, { status: 400 });
+    }
+
+    // Verify reCAPTCHA
+    const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY_V2;
+    if (!recaptchaSecret) {
+      console.warn("reCAPTCHA secret key (V2) is missing. Skipping backend verification (DEVELOPMENT ONLY).");
+    } else {
+      const recaptchaResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: `secret=${recaptchaSecret}&response=${captchaToken}`,
+      });
+
+      const recaptchaData = await recaptchaResponse.json();
+
+      if (!recaptchaData.success) {
+        return NextResponse.json(
+          { message: "reCAPTCHA verification failed" },
+          { status: 403 }
+        );
+      }
+    }
 
     const response = await fetch("https://api.ayatiworks.com/api/v1/public/ayatiwork/contact/records", {
       method: "POST",
