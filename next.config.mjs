@@ -4,8 +4,6 @@ const nextConfig = {
      PERFORMANCE OPTIMIZATIONS (P0 Priority)
      ======================================== */
   
-  // ✅ Enable React Compiler for automatic memoization
-  reactCompiler: true,
   
   // ✅ Image Optimization Configuration
   images: {
@@ -83,6 +81,7 @@ const nextConfig = {
   // ✅ Experimental optimizations
   experimental: {
     optimizePackageImports: ['lucide-react'], // Tree-shake icon library
+    reactCompiler: true, // ✅ Enable React Compiler for automatic memoization
   },
 };
 

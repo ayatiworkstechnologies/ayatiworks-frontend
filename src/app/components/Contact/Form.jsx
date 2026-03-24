@@ -43,7 +43,9 @@ export default function Form() {
           name: data.name || "",
           email: data.email || "",
           mobile: `${data.countryCode || "+91"} ${data.mobile}`,
-          services: Array.isArray(data.services) ? data.services.join(", ") : "",
+          services: Array.isArray(data.services)
+            ? data.services.join(", ")
+            : "",
           budget: data.budget || "",
           message: data.message || "",
           page_url: typeof window !== "undefined" ? window.location.href : "",
@@ -268,7 +270,7 @@ export default function Form() {
           <div className="flex justify-center mb-4">
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY_V2 || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+              sitekey="6Le1xZUsAAAAAJFbT12G5WhkpJtbHvAYmaparAWD"
               onChange={onCaptchaChange}
             />
           </div>
