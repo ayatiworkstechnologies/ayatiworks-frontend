@@ -11,19 +11,27 @@ export async function POST(request) {
 
     // Verify reCAPTCHA
     const recaptchaSecret = "6Le1xZUsAAAAAPkuqfy7u6fmGU_4ivlS_6cx5PVg";
+    const params = new URLSearchParams();
+    params.append("secret", recaptchaSecret);
+    params.append("response", captchaToken);
+
     const recaptchaResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: `secret=${recaptchaSecret}&response=${captchaToken}`,
+      body: params.toString(),
     });
 
     const recaptchaData = await recaptchaResponse.json();
 
     if (!recaptchaData.success) {
+      console.error("reCAPTCHA Verification Failed:", recaptchaData["error-codes"]);
       return NextResponse.json(
-        { message: "reCAPTCHA verification failed" },
+        { 
+          message: "reCAPTCHA verification failed", 
+          errors: recaptchaData["error-codes"] 
+        },
         { status: 403 }
       );
     }
