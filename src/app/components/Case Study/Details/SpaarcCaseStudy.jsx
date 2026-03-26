@@ -23,10 +23,10 @@ export default function SpaarcCaseStudy() {
           subtitle:
             "Branding & Digital Transformation for Wellness & Therapy Brands",
         }}
-        client="SPAARC – Myofascial Trigger Point Therapy & Aqua Therapy Centers"
+        client="SPAARC "
         agency="Ayatiworks – Next is Now"
         markets="Pan India"
-        duration="Full-stack branding, marketing ecosystem development & ongoing digital growth"
+        duration="HEALTH & WELLNESS JOURNEY FROM 2020"
         outcome="Expanding awareness, trust, and non-surgical wellness across India."
         downloadLabel="Download SPAARC Case Study"
         className=""
@@ -50,7 +50,7 @@ export default function SpaarcCaseStudy() {
         ]}
         carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-sec-1.jpg"
         carImgAlt="Wellness movement objective"
-        className=""
+        className="py-20 md:py-32"
       />
 
       <ResultsShowcase
@@ -145,6 +145,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
               "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-vid-4.mp4",
           },
         ]}
+        className="py-20 md:py-32"
         ctaHeadline="Ready to Build Brands That Transform Lives?"
         ctaCopy={
           <>
@@ -162,7 +163,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
         ctaButtonText="Get in Touch"
         ctaHref="https://www.ayatiworks.com/contact-us"
         ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-foot.jpg"
-        className=""
+        className="py-20 md:py-32"
         ctaHeadlineColor="text-primary"
         ctaCopyColor="text-secondary"
       />

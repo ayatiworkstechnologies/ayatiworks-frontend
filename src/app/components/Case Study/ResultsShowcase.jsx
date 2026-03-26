@@ -38,14 +38,14 @@ export default function ResultsShowcase({
 
   {/* Row 1: image + Meta list */}
   {showTopRow && (
-    <div className="grid grid-cols-1 items-center gap-10 md:mt-5 md:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-12 md:gap-20 md:mt-10">
       {/* Left: image */}
       {hasText(topImage) && (
-        <div className="overflow-hidden rounded-xl">
+        <div className="overflow-hidden rounded-2xl h-full min-h-[300px] md:min-h-full">
           <img
             src={topImage}
             alt="Meta campaign visual"
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover rounded-2xl transition-transform duration-700 hover:scale-[1.03]"
           />
         </div>
       )}
@@ -54,17 +54,17 @@ export default function ResultsShowcase({
       {isNonEmptyArr(metaPoints) && (
         <div className="flex flex-col">
           {hasText(metaHeading) && (
-            <h3 className="section-title text-3xl text-left">
+            <h3 className="section-title text-3xl md:text-4xl text-left">
               {metaHeading}
             </h3>
           )}
-          <ol className="mt-4 space-y-3 leading-relaxed section-phara">
+          <ol className="mt-6 space-y-4 leading-relaxed section-phara text-lg md:text-xl">
             {metaPoints.map((p, i) => (
               <li
                 key={`${i}-${p?.slice?.(0, 12) || "pt"}`}
-                className="flex items-start gap-3"
+                className="flex items-start gap-4"
               >
-                <span className="text-primary-500 font-medium">
+                <span className="text-primary font-bold text-xl">
                   {String(i + 1).padStart(2, "0")}.
                 </span>
                 <span>{p}</span>
@@ -88,17 +88,17 @@ export default function ResultsShowcase({
       {isNonEmptyArr(searchPoints) && (
         <div className="flex flex-col order-2 md:order-1">
           {hasText(searchHeading) && (
-            <h3 className="section-title text-3xl text-left">
+            <h3 className="section-title text-3xl md:text-4xl text-left">
               {searchHeading}
             </h3>
           )}
-          <ol className="mt-4 space-y-3 leading-relaxed section-phara">
+          <ol className="mt-6 space-y-4 leading-relaxed section-phara text-lg md:text-xl">
             {searchPoints.map((p, i) => (
               <li
                 key={`${i}-${p?.slice?.(0, 12) || "pt"}`}
-                className="flex items-start gap-3"
+                className="flex items-start gap-4"
               >
-                <span className="text-primary-500 font-medium">
+                <span className="text-primary font-bold text-xl">
                   {String(i + 1).padStart(2, "0")}.
                 </span>
                 <span>{p}</span>
@@ -110,11 +110,11 @@ export default function ResultsShowcase({
 
       {/* Right: image */}
       {hasText(rightImage) && (
-        <div className="overflow-hidden rounded-2xl border border-zinc-100 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/40 order-1 md:order-2">
+        <div className="overflow-hidden rounded-2xl h-full min-h-[300px] md:min-h-full order-1 md:order-2">
           <img
             src={rightImage}
             alt="Search ad visual"
-            className="w-full h-auto object-cover rounded-2xl transition-transform duration-700 hover:scale-[1.03]"
+            className="w-full h-full object-cover rounded-2xl transition-transform duration-700 hover:scale-[1.03]"
             loading="lazy"
           />
         </div>

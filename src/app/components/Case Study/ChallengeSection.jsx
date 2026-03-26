@@ -49,15 +49,22 @@ export default function ChallengeObjectiveSection({
           />
 
           {/* ---------- CHALLENGE ---------- */}
-          <div className="text-center max-w-6xl mx-auto">
+          <div className="text-center max-w-7
+          xl mx-auto">
             <h2 className="section-title">{challengeTitle}</h2>
-            <p className="mt-3 section-phara">{challengeEyebrow}</p>
-            <p className="mt-3 section-phara">{challengeCopy}</p>
-            <p className="mt-3 section-phara">{challengeCopy1}</p>
+            <p className="mt-5 section-phara text-left text-xl md:text-lg  mx-auto">
+              {challengeEyebrow}
+            </p>
+            <p className="mt-4 section-phara text-left text-lg md:text-lg  mx-auto">
+              {challengeCopy}
+            </p>
+            <p className="mt-4 section-phara text-left text-lg md:text-lg  mx-auto">
+              {challengeCopy1}
+            </p>
           </div>
 
           {/* ---------- OBJECTIVE ---------- */}
-          <div className="mx-auto mt-12 md:mt-16 grid max-w-6xl grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-6">
+          <div className="mx-auto mt-16 md:mt-24 grid max-w-7xl grid-cols-1 md:grid-cols-2 items-stretch gap-12 md:gap-20 px-4 md:px-6">
             {/* Text Block */}
             <div className="flex flex-col order-2 md:order-1 text-left">
               <h3 className="section-title text-3xl">{objectiveTitle}</h3>
@@ -85,7 +92,7 @@ export default function ChallengeObjectiveSection({
               <img
                 src={carImg}
                 alt={carImgAlt}
-                className="w-64 md:w-[20rem] lg:w-[24rem] object-cover"
+                className="w-full md:w-[28rem] lg:w-[35rem] xl:w-[40rem] h-full shadow-2xl rounded-2xl object-cover"
                 loading="lazy"
               />
             </div>
@@ -93,7 +100,7 @@ export default function ChallengeObjectiveSection({
 
           {/* ---------- IDEA SECTION ---------- */}
           {(ideasTitle || ideasImg || ideasCopy) && (
-            <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-6">
+            <div className="mx-auto mt-20 md:mt-32 grid max-w-7xl grid-cols-1 md:grid-cols-2 items-center gap-12 md:gap-20 px-4 md:px-6">
               {/* Left Image */}
               <div className="flex justify-center md:justify-start">
                 {ideasImg && (
@@ -110,7 +117,9 @@ export default function ChallengeObjectiveSection({
 
               {/* Right Text */}
               <div className="text-left">
-                {ideasTitle && <h3 className="section-title text-3xl">{ideasTitle}</h3>}
+                {ideasTitle && (
+                  <h3 className="section-title text-3xl">{ideasTitle}</h3>
+                )}
                 {ideasSubTitle && (
                   <h4 className="section-title text-secondary text-2xl mt-3">
                     {ideasSubTitle}

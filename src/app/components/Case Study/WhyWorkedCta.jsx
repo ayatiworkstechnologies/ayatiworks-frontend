@@ -15,21 +15,11 @@ export default function WhyWorkedCta({
   // NEW: Social performance (cards)
   socialTitle = "Social Performance",
   socialSubtitle = "A snapshot of posts that moved the needle",
-  socialPosts = [
-    {
-      platform: "Instagram",
-      title: "XC90 Carousel — Launch Tease",
-      metrics: "512k reach · 1.9% ER · 18k saves",
-      href: "https://instagram.com/your-post-url",
-      image: "/assets/casestudy/social-ig-1.jpg",
-    },
-  ],
+  socialPosts = [],
 
   // CTA (full-width image)
   ctaHeadline = "Ready to Shift Gears?",
-  ctaCopy = `Whether you’re an automobile brand looking to drive footfalls
-  or a SaaS startup wanting better conversions, Ayatiworks
-  knows how to make digital roads work for real business impact.`,
+  ctaCopy = "",
   ctaButtonText = "Get in Touch",
   ctaHref = "#",
   ctaImage = "/assets/casestudy/cta-banner.jpg",
@@ -90,7 +80,7 @@ export default function WhyWorkedCta({
                     }
                   >
                     {/* Media (image or video) */}
-                    <div className="relative aspect-[2/3] w-full overflow-hidden bg-white ">
+                    <div className="relative w-full overflow-hidden bg-white ">
                       {isVideo ? (
                         <video
                           src={p.image}
