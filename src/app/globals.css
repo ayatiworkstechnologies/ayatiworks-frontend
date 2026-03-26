@@ -212,3 +212,47 @@ html.mobile-menu-open [class*="chat"],
 html.mobile-menu-open [class*="widget"] {
   display: none !important;
 }
+
+/* ================== PRINT STYLES (PDF Export) ================== */
+@media print {
+  /* Force Landscape & remove default margins */
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  /* Hide site chrome */
+  header,
+  footer,
+  nav,
+  .no-print,
+  [class*="StickyContact"],
+  [class*="ScrollProgress"],
+  [class*="ScrollToggle"],
+  [class*="Loader"],
+  [class*="chat"],
+  [class*="widget"],
+  [class*="floating"] {
+    display: none !important;
+  }
+
+  /* Force backgrounds to render and Clean up layout for PDF */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  /* Ensure text doesn't break awkwardly across pages */
+  h2, h3, h4, img {
+    break-inside: avoid;
+  }
+}

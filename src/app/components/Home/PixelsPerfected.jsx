@@ -126,10 +126,11 @@ export default function PixelsPerfected() {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3, ease: "easeOut", delay: 0.35 }}
                 viewport={{ once: true }}
+                className="flex"
               >
                 <Link
                   href={item.link}
-                  className="inline-block mt-2 bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-2.5 px-8 rounded-full shadow-md hover:shadow-xl transition-all duration-300"
+                  className="inline-block bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300"
                 >
                   Read Case Study
                 </Link>

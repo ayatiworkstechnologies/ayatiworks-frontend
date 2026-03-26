@@ -92,33 +92,43 @@ export default function ChallengeObjectiveSection({
           </div>
 
           {/* ---------- IDEA SECTION ---------- */}
-          <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-6">
-            {/* Left Image */}
-            <div className="flex justify-center md:justify-start">
-              <div className="overflow-hidden ">
-                <img
-                  src={ideasImg}
-                  alt={ideasImgAlt}
-                  className="w-full object-cover"
-                  loading="lazy"
-                />
+          {(ideasTitle || ideasImg || ideasCopy) && (
+            <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-6">
+              {/* Left Image */}
+              <div className="flex justify-center md:justify-start">
+                {ideasImg && (
+                  <div className="overflow-hidden ">
+                    <img
+                      src={ideasImg}
+                      alt={ideasImgAlt}
+                      className="w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* Right Text */}
+              <div className="text-left">
+                {ideasTitle && <h3 className="section-title text-3xl">{ideasTitle}</h3>}
+                {ideasSubTitle && (
+                  <h4 className="section-title text-secondary text-2xl mt-3">
+                    {ideasSubTitle}
+                  </h4>
+                )}
+                {ideasCopy && (
+                  <p className="mt-4 section-phara leading-relaxed whitespace-pre-line">
+                    {ideasCopy}
+                  </p>
+                )}
+                {tagline && (
+                  <p className="mt-6 italic text-primary font-semibold section-phara">
+                    {tagline}
+                  </p>
+                )}
               </div>
             </div>
-
-            {/* Right Text */}
-            <div className="text-left">
-              <h3 className="section-title text-3xl">{ideasTitle}</h3>
-              <h4 className="section-title text-secondary text-2xl mt-3">
-                {ideasSubTitle}
-              </h4>
-              <p className="mt-4 section-phara leading-relaxed whitespace-pre-line">
-                {ideasCopy}
-              </p>
-              <p className="mt-6 italic text-primary font-semibold section-phara">
-                {tagline}
-              </p>
-            </div>
-          </div>
+          )}
         </div>
       </section>
 

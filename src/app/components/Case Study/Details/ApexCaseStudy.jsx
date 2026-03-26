@@ -1,19 +1,10 @@
-// app/about-us/page.jsx
-
-export const metadata = {
-  title:
-    "Branding & Digital Transformation for TMT Brands | Apex Dura Case Study",
-  description:
-    "See how Ayatiworks transformed Apex TMT into Apex Dura, South India’s modern steel powerhouse, through naming, branding, GTM strategy, and digital presence.",
-  alternates: { canonical: "https://www.ayatiworks.com/case-study/" },
-};
 import React from "react";
-import CaseStudyShowcase from "../../components/Case Study/CaseStudyShowcase";
-import ChallengeSection from "../../components/Case Study/ChallengeSection";
-import ResultsShowcase from "../../components/Case Study/ResultsShowcase";
-import WhyWorkedCta from "../../components/Case Study/WhyWorkedCta";
+import CaseStudyShowcase from "../CaseStudyShowcase";
+import ChallengeSection from "../ChallengeSection";
+import ResultsShowcase from "../ResultsShowcase";
+import WhyWorkedCta from "../WhyWorkedCta";
 
-export default function VolvoPages() {
+export default function ApexCaseStudy() {
   return (
     <main className="section section-home bg-gradient-to-b from-[#fafafa] via-[#f6f6f6] to-[#f5f5f5]">
       <CaseStudyShowcase
@@ -33,9 +24,7 @@ export default function VolvoPages() {
         agency="Ayatiworks – Next is Now"
         markets="South India"
         duration="Full-stack branding + ongoing digital execution"
-        // outcome="Achieving more milestones and the journey continues"
-        downloadLabel="Download Volvo Case Study"
-        downloadHref="#"
+        downloadLabel="Download Apex Case Study"
         className=""
       />
 
@@ -75,16 +64,6 @@ export default function VolvoPages() {
           "The signature rib pattern evolved into a design language, elevating recall across campaigns and collaterals. ",
         ]}
         rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-3.svg"
-        //         closingTitle="From Test Drive to a Long Drive: A Journey of Trust"
-        //         closingCopy={`What started as one Volvo with Ayatiworks in 2024,
-        // became a multi-model narrative powered by precision creative,
-        // tight measurement, and rapid iteration. The result? Awareness
-        // that translates into qualified leads—and a showroom that really
-        // feels the compounding effect.
-
-        // Quick note: each KPI was set with the finish line firmly aligned
-        // with on-ground sales.`}
-        //         logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-6.png"
         className=""
       />
       <ResultsShowcase
@@ -133,14 +112,6 @@ export default function VolvoPages() {
           "Reinforced customer trust and pride",
           "A modern identity linked with innovation and performance",
         ]}
-        // searchHeading="Logo & Visual Identity"
-        // searchPoints={[
-        //   " Grip",
-        //   "Toughness",
-        //   "Structural integrity",
-        //   "The signature rib pattern evolved into a design language, elevating recall across campaigns and collaterals. ",
-        // ]}
-        // rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
         closingTitle="Business Impact"
         closingCopy={`10X business growth directly attributed to the end-to-end marketing ecosystem designed by Ayatiworks.
 Apex Dura didn’t just enter the market.
@@ -151,6 +122,7 @@ It claimed its territory.
         className=""
       />
       <WhyWorkedCta
+        caseStudyTitle="How Ayatiworks Built the Apex Dura Powerhouse"
         title="From Identity to Industry Impact"
         points={[
           "Apex Dura is now a benchmark of strength and innovation, bridging Apex Group’s industrial heritage with a contemporary market presence that resonates across South India.",
@@ -159,7 +131,8 @@ It claimed its territory.
         socialPosts={[
           {
             platform: "Instagram",
-            title: "It begins with a grip. Soft, silent, gentle, yet unbreakable.",
+            title:
+              "It begins with a grip. Soft, silent, gentle, yet unbreakable.",
             metrics: "1.2M impressions · 16k+ Likes ",
             href: "https://www.instagram.com/p/DLzqIQ9J4tg/",
             image:
@@ -191,9 +164,7 @@ It claimed its territory.
           },
         ]}
         ctaHeadline="Ready to Build Brands That Endure?"
-        ctaCopy={`From steel to SaaS, we craft brands engineered for growth.
- Let’s build your next market success story.
-`}
+        ctaCopy={`From steel to SaaS, we craft brands engineered for growth. Let’s build your next market success story.`}
         ctaButtonText="Get in Touch"
         ctaHref="/contact-us"
         ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-11.svg"

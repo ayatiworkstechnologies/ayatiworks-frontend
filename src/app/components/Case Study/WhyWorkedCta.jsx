@@ -1,6 +1,6 @@
-// app/components/WhyWorkedCta.jsx
 "use client";
 import Link from "next/link";
+import CaseStudyModalForm from "./CaseStudyModalForm";
 
 export default function WhyWorkedCta({
   // Top section
@@ -36,6 +36,7 @@ export default function WhyWorkedCta({
   className = "",
   ctaHeadlineColor = "",
   ctaCopyColor = "",
+  caseStudyTitle = ""
 }) {
   const hasSocial = Array.isArray(socialPosts) && socialPosts.length > 0;
 
@@ -167,12 +168,11 @@ export default function WhyWorkedCta({
                 {ctaCopy}
               </p>
 
-              <Link
-                href={ctaHref}
-                className="mt-4 btn-primary"
-              >
-                {ctaButtonText}
-              </Link>
+              <CaseStudyModalForm 
+                buttonText={ctaButtonText} 
+                caseStudyTitle={caseStudyTitle}
+                className="mt-4 btn-primary no-print"
+              />
             </div>
           </div>
         </div>

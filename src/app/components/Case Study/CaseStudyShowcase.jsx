@@ -1,7 +1,7 @@
 // app/components/CaseStudyShowcase.jsx
 "use client";
 
-import Link from "next/link";
+import CaseStudyModalForm from "./CaseStudyModalForm";
 
 export default function CaseStudyShowcase({
   
@@ -85,12 +85,13 @@ export default function CaseStudyShowcase({
             </div>
 
             {/* Right: CTA Button */}
-            <Link
-              href={downloadHref}
-              className="inline-flex items-center font-primary text-xl justify-center rounded-full border border-primary bg-primary px-6 py-2.5 font-medium text-white transition hover:opacity-90 "
-            >
-              {downloadLabel}
-            </Link>
+            <CaseStudyModalForm 
+              autoOpen={true}
+              autoOpenDelay={3000}
+              buttonText={downloadLabel || "Enquire Now"} 
+              caseStudyTitle={section.title}
+              className="inline-flex items-center font-primary text-xl justify-center rounded-full border border-primary bg-primary px-6 py-2.5 font-medium text-white transition hover:opacity-90 no-print"
+            />
           </div>
         </div>
       </div>

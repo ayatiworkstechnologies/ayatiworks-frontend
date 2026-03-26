@@ -74,6 +74,14 @@ const Connection = dynamic(() => import("./components/Home/Connection"), {
   loading: () => <Box h="h-[300px]" />,
 });
 
+const VideoTestimonials = dynamic(
+  () => import("./components/Home/VideoTestimonials"),
+  {
+    ssr: true,
+    loading: () => <Box />,
+  }
+);
+
 export default function HomePage() {
   // Product
   const productJsonLd = {
@@ -238,6 +246,7 @@ export default function HomePage() {
       <WhatAyati />
       <PartnersInClimb />
       <PixelsPerfected />
+      <VideoTestimonials />
       <HomeFAQSection />
       <DottedWorldMap />
       <Connection />

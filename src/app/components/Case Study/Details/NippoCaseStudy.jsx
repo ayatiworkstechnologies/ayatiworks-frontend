@@ -1,29 +1,20 @@
-// app/about-us/page.jsx
-
-export const metadata = {
-  title: "Nippo Shadow Art Contest Case Study | Ayatiworks Creative Digital Campaign Success",
-  description: "Discover how Ayatiworks lit up engagement for Nippo with the Shadow Art Contest, a nostalgic, family-driven digital campaign that achieved 2.4M impressions, 1.6M reach, and 820K engagements nationwide.",
-  alternates: { canonical: "https://www.ayatiworks.com/case-study/Reposition-Nippo-and-Brand-Awareness-Campaign", }
-
-};
 import React from "react";
-import Connection from "../../components/Home/Connection";
+import Connection from "../../Home/Connection";
+import CaseStudyShowcase from "../CaseStudyShowcase";
+import ChallengeObjectiveSection from "../ChallengeSection";
+import ResultsShowcase from "../ResultsShowcase";
+import WhyWorkedCta from "../WhyWorkedCta";
+import ExecutionSection from "../ExecutionSection";
 
-import CaseStudyShowcase from "../../components/Case Study/CaseStudyShowcase";
-import ChallengeObjectiveSection from "../../components/Case Study/ChallengeSection";
-import ResultsShowcase from "../../components/Case Study/ResultsShowcase";
-import WhyWorkedCta from "../../components/Case Study/WhyWorkedCta";
-import StrategySection from "../../components/Case Study/StrategySection";
-import ExecutionSection from "../../components/Case Study/ExecutionSection";
-
-
-export default function NippoPages() {
+export default function NippoCaseStudy() {
   return (
     <main className="section section-home bg-gradient-to-b from-[#fafafa] via-[#f6f6f6] to-[#f5f5f5]">
       <CaseStudyShowcase
         hero={{
-          desktopImage: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner.png",
-          mobileImage: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner-mob.png",
+          desktopImage:
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner.png",
+          mobileImage:
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner-mob.png",
           imageAlt: "Nippo Shadow Art Contest by Ayatiworks",
         }}
         section={{
@@ -36,7 +27,6 @@ export default function NippoPages() {
         duration="17-30 June 2024"
         outcome="Pan-India Families & Kids"
         downloadLabel="Download Nippo Case Study"
-        downloadHref=""
         className=""
       />
 
@@ -57,7 +47,6 @@ export default function NippoPages() {
         ]}
         carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-7.png"
         carImgAlt="Nippo Torch product visual"
-
         /* -------- IDEA PROPS -------- */
         ideasTitle="The Idea"
         ideasSubTitle="Reigniting Childhood Fun"
@@ -65,7 +54,6 @@ export default function NippoPages() {
         tagline="Time to reignite childhood fun with shadows."
         ideasImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-1.png"
         ideasImgAlt="Families creating shadow art using Nippo torches"
-
         className=""
       />
       <ExecutionSection
@@ -105,21 +93,13 @@ export default function NippoPages() {
           "820,483 Engagements ",
         ]}
         metaPhara="The contest successfully repositioned Nippo beyond just batteries, drove awareness of the Nippo Torch, and built a fun, share-worthy buzz around the brand. "
-        // searchHeading="Search & Google Ads (Apr 2024 - Feb 2025)"
-        // searchPoints={[
-        //   "12,000+ Google clicks",
-        //   "20%+ direct organic traffic",
-        //   "2024 XC90 Launch",
-        //   "Google Ads: 7.9% CTR | 11.7% (Search) | 17.6% (Smart Leads)",
-        //   "CPA, Google Search: 23% improvement MoM (Q4) | 40% QoQ (Q4)",
-        // ]}
-        // rightImage="/assets/casestudy/volvo-img-3.png"
         closingTitle="From Scroll to Sale: The Transformation "
         closingCopy={`In just 72 hours, Ayatiworks shifted Jeep India’s merchandising from just another microsite to a turbocharged user experience and social event. We turned each likes into traction, each creative into a conversion, and the campaign into short-run success. `}
         logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-6.png"
         className=""
       />
       <WhyWorkedCta
+        caseStudyTitle="Nippo Shadow Art Contest by Ayatiworks"
         title="Why It Worked"
         points={[
           "Nostalgia that connects - Childhood memories of shadow play made the campaign relatable. ",
@@ -133,30 +113,33 @@ export default function NippoPages() {
             title: "This New Year, Nippo is here to light up your moments",
             metrics: "1M+ impressions , 95K+ likes ",
             href: "https://www.instagram.com/p/DEP3GajJjsI/",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-1.mp4",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-1.mp4",
           },
           {
             platform: "Instagram",
             title: "Rev up the fun with Nippo Thor Alkaline Batteries! ",
             metrics: "1M+ impressions, 1.5M+ likes ",
             href: "https://www.instagram.com/reel/DDcIOm9NLW6/?utm_source=ig_web_copy_link",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-2.mp4",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-2.mp4",
           },
           {
             platform: "Instagram",
             title: "Ignite your creativity with Nippo!",
             metrics: "5M+ impressions, 79K+ likes   ",
             href: "https://www.instagram.com/reel/C8rfW_pConf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-3.mp4",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-3.mp4",
           },
           {
             platform: "Instagram",
             title: "Ever wondered how rechargeable LED bulbs ",
             metrics: "57k+ impressions, 10K+ likes  ",
             href: "https://www.instagram.com/p/C9Y13qnMhmY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-4.mp4",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-4.mp4",
           },
-
         ]}
         ctaHeadline="Ready to Shine a Light on Your Brand?  "
         ctaCopy={`Whether you’re a legacy brand looking to reinvent perception or a new player eager to create buzz, Ayatiworks knows how to craft campaigns that capture attention, spark engagement, and deliver measurable results. `}

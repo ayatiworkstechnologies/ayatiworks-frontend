@@ -11,7 +11,7 @@ export default function CaseStudies() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // sort by id if you want a specific order (optional)
-  const caseStudiesData = [...caseStudies].sort((a, b) => a.id - b.id);
+  const caseStudiesData = [...caseStudies].sort((a, b) => b.id - a.id);
 
   const prevSlide = () => {
     if (isAnimating) return;

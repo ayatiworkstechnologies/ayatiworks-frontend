@@ -1,25 +1,18 @@
-// app/about-us/page.jsx
-
-export const metadata = {
-  title: "Digital Marketing for Automobile Brands | Volvo Case Study",
-  description:
-    " Discover how Ayatiworks propelled Volvo's digital presence, achieving a 250% increase in impressions and 5,000+ leads through strategic marketing.",
-    alternates: { canonical: "https://www.ayatiworks.com/case-study/how-Ayatiworks-propelled-Volvos-digital-presence-by-250-percentage-increase-in-impressions", }
-};
 import React from "react";
-import CaseStudyShowcase from "../../components/Case Study/CaseStudyShowcase";
-import ChallengeSection from "../../components/Case Study/ChallengeSection";
-import ResultsShowcase from "../../components/Case Study/ResultsShowcase";
-import WhyWorkedCta from "../../components/Case Study/WhyWorkedCta";
+import CaseStudyShowcase from "../CaseStudyShowcase";
+import ChallengeSection from "../ChallengeSection";
+import ResultsShowcase from "../ResultsShowcase";
+import WhyWorkedCta from "../WhyWorkedCta";
 
-export default function VolvoPages() {
+export default function VolvoCaseStudy() {
   return (
     <main className="section section-home bg-gradient-to-b from-[#fafafa] via-[#f6f6f6] to-[#f5f5f5]">
       <CaseStudyShowcase
-        
         hero={{
-          desktopImage: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner.jpg",
-          mobileImage: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner-mob.jpg",
+          desktopImage:
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner.jpg",
+          mobileImage:
+            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner-mob.jpg",
           imageAlt: "Volvo XC90 aerial view",
         }}
         section={{
@@ -32,7 +25,6 @@ export default function VolvoPages() {
         duration="Started driving in September 2023"
         outcome="Achieving more milestones and the journey continues"
         downloadLabel="Download Volvo Case Study"
-        downloadHref=""
         className=""
       />
 
@@ -86,6 +78,7 @@ with on-ground sales.`}
         className=""
       />
       <WhyWorkedCta
+        caseStudyTitle="How Ayatiworks Accelerated Volvo’s Growth Journey"
         title="Why It Worked"
         points={[
           "Humanized content for a premium automobile audience",
@@ -99,28 +92,32 @@ with on-ground sales.`}
             title: "A big surprise is cresting the horizon",
             metrics: "1.2M impressions · 1k+ Likes ",
             href: "https://www.instagram.com/p/DNZ0R6SPmLM/?utm_source=ig_web_copy_link",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-1.webp",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-1.webp",
           },
           {
             platform: "Instagram",
             title: "Electric Volvo EX30",
             metrics: "1.2M impressions · 1k Likes ",
             href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-2.webm",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-2.webm",
           },
           {
             platform: "Instagram",
             title: "Volvo family with the Volvo C40",
             metrics: "1.2M impressions · 500+ Likes ",
             href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-3.webm",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-3.webm",
           },
           {
             platform: "Instagram",
             title: "Experience luxury Volvo XC90",
             metrics: "1.2M impressions · 6k+ Likes ",
             href: "https://www.instagram.com/p/DMAaqFXvl2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
-            image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-4.jpg",
+            image:
+              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-4.jpg",
           },
         ]}
         ctaHeadline="Ready to Shift Gears?"

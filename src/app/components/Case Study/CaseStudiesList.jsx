@@ -66,10 +66,10 @@ export default function CaseStudies() {
                   {study.description}
                 </p>
 
-                <div className="mt-auto">
+                <div className="mt-auto flex">
                   <Link
                     href={study.link}
-                    className="btn-primary mt-5 inline-flex items-center gap-2 group"
+                    className="w-full btn-primary mt-5 inline-flex items-center justify-center gap-2 group text-base py-3 px-6 shadow-none hover:shadow-lg transition-all duration-300 rounded-full"
                   >
                     Read Case Study
                     <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
