@@ -49,8 +49,7 @@ export default function ChallengeObjectiveSection({
           />
 
           {/* ---------- CHALLENGE ---------- */}
-          <div className="text-center max-w-7
-          xl mx-auto">
+          <div className="text-center max-w-6xl mx-auto">
             <h2 className="section-title">{challengeTitle}</h2>
             <p className="mt-5 section-phara text-left text-xl md:text-lg  mx-auto">
               {challengeEyebrow}
