@@ -304,6 +304,33 @@ export const POSTS_BY_AUTHOR = {
       "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
     
   },
+    {
+    id: 'p20',
+    title:
+      "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
+    slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
+    bannerTitle:
+      "SEO in 2026: What Works, What Fails, What Ranks",
+    date: "Mar 27, 2026",
+    readMins: 25,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-120.jpg",
+    coverAlt:
+      "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
+    deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
+    category: "SEO Services",
+     seoTitle:
+      "9 SEO Strategies That Still Work in 2026 (And 5 That No Longer Do) | Ayatiworks",
+    seoDescription:
+      "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
+    faqs: [
+      {
+        question: "1. ",
+        answer: "",
+      },
+     
+    ],
+  },
   ],
 };
 

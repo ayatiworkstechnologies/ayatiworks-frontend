@@ -415,6 +415,60 @@ export const POSTS = [
       },
     ],
   },
+  {
+    id: 120,
+    title:
+      "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
+    slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
+    bannerTitle:
+      "SEO in 2026: What Works, What Fails, What Ranks",
+    date: "Mar 27, 2026",
+    readMins: 25,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-120.jpg",
+    coverAlt:
+      "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
+    deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
+    category: "SEO Services",
+     seoTitle:
+      "9 SEO Strategies That Still Work in 2026 (And 5 That No Longer Do) | Ayatiworks",
+    seoDescription:
+      "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
+    faqs: [
+      {
+        question: "1. Does SEO still work in 2026?",
+        answer: "Yes, SEO is still one of the most effective digital marketing strategies. However, the approach has changed. Success now depends on content quality, user intent, and overall website experience rather than just keywords and backlinks.",
+      },
+      {
+        question: "2. What is the biggest change in SEO today?",
+        answer: "The biggest shift is the move toward intent-based and AI-driven search. Search engines now focus on understanding user queries and delivering the most relevant and helpful results, not just matching keywords.",
+      },
+      {
+        question: "3. What is AEO and why is it important?",
+        answer: "AEO (Answer Engine Optimization) focuses on structuring content so it can be directly picked up by search engines and AI tools as answers. This improves visibility in featured snippets and AI-generated results.",
+      },
+      {
+        question: "4. What is GEO in SEO?",
+        answer: "GEO (Generative Engine Optimization) refers to optimizing content for AI-driven search platforms. It involves creating clear, structured, and trustworthy content that AI systems can easily interpret and present.",
+      },
+      {
+        question: "5. How long does SEO take to show results?",
+        answer: "SEO is a long-term strategy. Depending on competition and consistency, it can take a few months to start seeing results. However, once established, it delivers sustainable growth.",
+      },
+      {
+        question: "6. Is content still important for SEO?",
+        answer: "Yes, content remains a core part of SEO. But it must be helpful, relevant, and well-structured. Simply publishing content without strategy will not produce results.",
+      },
+      {
+        question: "7. Should businesses focus more on SEO or AI search?",
+        answer: "Both are connected. SEO now includes optimizing for AI search. Businesses should focus on creating content that works for both traditional search engines and AI-driven platforms.",
+      },
+      {
+        question: "8. What is the most effective SEO strategy today?",
+        answer: "The most effective approach combines:\n• strong content\n• clear intent targeting\n• technical optimization\n• internal linking\n• continuous updates\n\nSEO today is about building a complete system, not isolated efforts.",
+      },
+    ],
+  },
   // {
   //   id: 111,
   //   title: "",
