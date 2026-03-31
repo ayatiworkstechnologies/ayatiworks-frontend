@@ -16,7 +16,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 import RightSidebarCategories from "./RightSidebarCategories";
 
 const buildHref = (slugOrPath = "") => {
@@ -80,7 +81,7 @@ const AGENCIES = [
   {
     rank: 4,
     name: "Webchutney (Dentsu Creative)",
-    website: "https://dentsucreative.com/india",
+    website: "https://www.dentsucreative.com/location/india",
     established: "1999",
     hq: "Bengaluru (with Chennai operations)",
     presence: "20+ Countries",
@@ -108,7 +109,7 @@ const AGENCIES = [
   {
     rank: 6,
     name: "Mind Your Language (MYL)",
-    website: "https://mylworld.com",
+    website: "https://www.mindyourlanguage.in",
     established: "2014",
     hq: "Chennai",
     presence: "India",
@@ -1576,4 +1577,3 @@ function TagGroup({ text, variant = "solid" }) {
     </div>
   );
 }
-
