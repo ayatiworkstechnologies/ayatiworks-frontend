@@ -3,7 +3,12 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function Footer() {
   const linkClass =
@@ -14,7 +19,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-5">
         {/* Left - Logo & Links */}
         <div className="flex flex-col md:flex-row items-center md:space-x-6 text-sm md:text-lg text-center md:text-left gap-2">
-          <img src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Ayatiworks" className="h-8" />
+          <img
+            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+            alt="Ayatiworks"
+            className="h-8"
+          />
 
           <div className="flex flex-wrap items-center gap-2 md:gap-4">
             <Link href="/privacy-policy" className={linkClass}>
@@ -39,9 +48,18 @@ export default function Footer() {
           className="flex items-center gap-4 md:gap-5"
         >
           {[
-            { icon: <FaLinkedinIn />, link: "https://linkedin.com/company/ayatiworks" },
-            { icon: <FaFacebookF />, link: "https://facebook.com/Ayatiworksindia/" },
-            { icon: <FaInstagram />, link: "https://instagram.com/ayatiworks/" },
+            {
+              icon: <FaLinkedinIn />,
+              link: "https://linkedin.com/company/ayatiworks",
+            },
+            {
+              icon: <FaFacebookF />,
+              link: "https://www.facebook.com/ayatiworkstechnologies",
+            },
+            {
+              icon: <FaInstagram />,
+              link: "https://instagram.com/ayatiworks/",
+            },
             { icon: <FaYoutube />, link: "https://youtube.com/@ayatiworks" },
           ].map((social, i) => (
             <a
