@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter, FaThreads } from "react-icons/fa6";
 
 export default function Footer() {
   const linkClass =
@@ -61,6 +62,16 @@ export default function Footer() {
               link: "https://instagram.com/ayatiworks/",
             },
             { icon: <FaYoutube />, link: "https://youtube.com/@ayatiworks" },
+            {
+              icon: <FaXTwitter />,
+              link: "https://twitter.com/Ayatiworks1",
+              label: "X",
+            },
+            {
+              icon: <FaThreads />,
+              link: "https://www.threads.net/@ayatiworks?hl=en",
+              label: "Threads",
+            },
           ].map((social, i) => (
             <a
               key={i}
