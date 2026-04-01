@@ -118,10 +118,7 @@ export default function WhatAyati() {
           <motion.article
             key={card.title}
             variants={item}
-            className="group relative h-full bg-white rounded-3xl p-6 sm:p-10 
-                       border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)]
-                       hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 
-                       transition-all duration-500 overflow-hidden"
+            className="group relative h-full bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
           >
             {/* Top Border Accent REMOVED */}
 
@@ -136,9 +133,7 @@ export default function WhatAyati() {
                 </div>
 
                 {/* Icon Circle */}
-                <div className="shrink-0 w-14 h-14 sm:w-20 sm:h-20 bg-gray-50 rounded-full flex items-center justify-center
-                              border border-gray-100 group-hover:border-primary/10 group-hover:bg-primary/5 
-                              transition-all duration-500">
+                <div className="shrink-0 w-14 h-14 sm:w-20 sm:h-20 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 group-hover:border-primary/10 group-hover:bg-primary/5 transition-all duration-500">
                   <Image
                     src={card.icon}
                     alt={card.title}

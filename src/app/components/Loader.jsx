@@ -7,7 +7,7 @@ export default function Loader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 500); // simulate load
+    const timer = setTimeout(() => setLoading(false), 100); // 100ms for quick FCP
     return () => clearTimeout(timer);
   }, []);
 

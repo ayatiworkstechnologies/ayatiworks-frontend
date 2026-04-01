@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { Navbar, Menu, MenuHandler, MenuList, Button, Drawer } from "@material-tailwind/react";
 import { ChevronDownIcon, XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
@@ -418,7 +419,14 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
       <div className="sm:hidden fixed top-4 left-0 right-0 z-[1000] px-4">
         <div className="flex items-center justify-between rounded-full bg-white/90 backdrop-blur px-3 py-2 shadow-xl">
           <Link href="/" className="shrink-0" onClick={() => handleSelect("/")}>
-            <img src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Logo" className="h-8 w-auto" />
+            <Image
+              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+              alt="Logo"
+              width={160}
+              height={32}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
 
           <button
@@ -464,7 +472,13 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
             onClick={() => setExpanded(true)}
             className="backdrop-blur shadow-glow w-[200px] rounded-full p-3 hover:scale-105 cursor-pointer transition"
           >
-            <img src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo.png" alt="Logo" className="h-8 w-auto mx-auto" />
+            <Image
+              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo.png"
+              alt="Logo"
+              width={160}
+              height={32}
+              className="h-8 w-auto mx-auto"
+            />
           </button>
         )}
 
@@ -474,7 +488,14 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
               {/* Logo */}
               <Button variant="text" className="p-0 hover:bg-transparent">
                 <Link href="/" onClick={() => handleSelect("/")}>
-                  <img src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Logo" className="h-10 w-auto" />
+                  <Image
+                    src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+                    alt="Logo"
+                    width={200}
+                    height={40}
+                    className="h-10 w-auto"
+                    priority
+                  />
                 </Link>
               </Button>
 

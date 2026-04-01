@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   FaLinkedinIn,
@@ -17,26 +18,29 @@ export default function Footer() {
 
   return (
     <footer className="bg-background border-t border-secondary/40 font-secondary px-6 md:px-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-5">
-        {/* Left - Logo & Links */}
-        <div className="flex flex-col md:flex-row items-center md:space-x-6 text-sm md:text-lg text-center md:text-left gap-2">
-          <img
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col xl:flex-row items-center justify-between gap-6">
+        {/* Left - Logo & Links Group */}
+        <div className="flex flex-col md:flex-row items-center gap-6 text-sm md:text-base text-center md:text-left">
+          <Image
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
             alt="Ayatiworks"
-            className="h-8"
+            width={140}
+            height={40}
+            className="h-10 w-auto"
+            priority
           />
 
-          <div className="flex flex-wrap items-center gap-2 md:gap-4">
+          <div className="flex items-center gap-4 font-medium">
             <Link href="/privacy-policy" className={linkClass}>
               Privacy Policy
             </Link>
-            <span className="text-black/50">|</span>
+            <span className="text-black/30">|</span>
             <Link href="/terms-and-conditions" className={linkClass}>
               Terms &amp; Conditions
             </Link>
           </div>
 
-          <p className="text-black/80 text-xs md:text-sm">
+          <p className="text-black/60 text-xs md:text-sm whitespace-nowrap">
             Copyright © {new Date().getFullYear()} – All rights reserved
           </p>
         </div>

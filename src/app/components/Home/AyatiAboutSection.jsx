@@ -81,10 +81,7 @@ export default function AyatiAboutSection() {
 
           {/* RIGHT COLUMN (4 cols at md+) */}
           <motion.div
-            className="
-              md:col-span-4
-              flex md:block justify-end items-start
-            "
+            className="md:col-span-4 flex md:block justify-end items-start"
             initial={prefersReducedMotion ? {} : { opacity: 0, x: 40 }}
             whileInView={prefersReducedMotion ? {} : { opacity: 1, x: 0 }}
             transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.6, ease: 'easeOut' }}
