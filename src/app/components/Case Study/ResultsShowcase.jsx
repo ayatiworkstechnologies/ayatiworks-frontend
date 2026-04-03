@@ -1,5 +1,6 @@
 // app/components/ResultsShowcase.jsx
 "use client";
+import Image from "next/image";
 
 const isNonEmptyArr = (x) => Array.isArray(x) && x.length > 0;
 const hasText = (x) => typeof x === "string" && x.trim().length > 0;
@@ -42,7 +43,7 @@ export default function ResultsShowcase({
       {/* Left: image */}
       {hasText(topImage) && (
         <div className="overflow-hidden rounded-2xl h-full min-h-[300px] md:min-h-full">
-          <img
+          <Image width={800} height={800}
             src={topImage}
             alt="Meta campaign visual"
             className="w-full h-full object-cover rounded-2xl transition-transform duration-700 hover:scale-[1.03]"
@@ -111,7 +112,7 @@ export default function ResultsShowcase({
       {/* Right: image */}
       {hasText(rightImage) && (
         <div className="overflow-hidden rounded-2xl h-full min-h-[300px] md:min-h-full order-1 md:order-2">
-          <img
+          <Image width={800} height={800}
             src={rightImage}
             alt="Search ad visual"
             className="w-full h-full object-cover rounded-2xl transition-transform duration-700 hover:scale-[1.03]"
@@ -144,7 +145,7 @@ export default function ResultsShowcase({
       {/* Right: logo image */}
       {hasText(logo) && (
         <div className="order-1 md:order-2 flex items-center justify-center md:justify-end">
-          <img
+          <Image width={800} height={800}
             src={logo}
             alt="Brand logo"
             className="w-auto h-auto max-h-28 object-contain transition-transform duration-500 hover:scale-105"

@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { caseStudies } from "../../lib/casestudy-data";
+import Image from "next/image";
 
 const MAX_VISIBLE = 3; // how many to show before "Show More"
 
@@ -55,7 +56,7 @@ export default function PixelsPerfected() {
               viewport={{ once: true }}
               className="md:col-span-4"
             >
-              <img
+              <Image width={800} height={800}
                 src={item.image}
                 alt={item.title}
                 className="w-full h-[280px] md:h-[350px]"

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AwardsListSection() {
   const [flipped, setFlipped] = useState([]);
@@ -91,7 +92,7 @@ export default function AwardsListSection() {
               {/* Front Side */}
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-white border border-gray-200 rounded-2xl shadow-md [backface-visibility:hidden] p-6 hover:shadow-2xl">
                 <div className="w-32 sm:w-40 h-32 sm:h-40 mb-4">
-                  <img
+                  <Image width={800} height={800}
                     src={award.img}
                     alt={award.title}
                     className="w-full h-full object-contain"
@@ -122,7 +123,7 @@ export default function AwardsListSection() {
                     setModalImage(award.backImg);
                   }}
                 >
-                  <img
+                  <Image width={800} height={800}
                     src={award.backImg}
                     alt={`${award.title} – Back`}
                     className="w-full h-full object-cover rounded-lg"
@@ -161,7 +162,7 @@ export default function AwardsListSection() {
               exit={{ scale: 0.9, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <Image width={800} height={800}
                 src={modalImage}
                 alt="Award Preview"
                 className="max-w-[90vw] max-h-[80vh] object-contain rounded-2xl shadow-2xl"

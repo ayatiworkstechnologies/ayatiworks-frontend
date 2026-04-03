@@ -6,6 +6,7 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import AutoImageSlider from "./AutoImageSlider";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 const steps = [
   {
     id: 1,
@@ -285,7 +286,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/ads.jpg"
                 alt="Best Creative Agency in Chennai, Ayatiworks"
                 className="w-full h-auto  mx-auto "
@@ -458,7 +459,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -494,7 +495,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -618,7 +619,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -656,7 +657,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "

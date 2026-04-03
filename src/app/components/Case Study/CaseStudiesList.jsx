@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "../../lib/casestudy-data";
+import Image from "next/image";
 
 export default function CaseStudies() {
 
@@ -47,7 +48,7 @@ export default function CaseStudies() {
               className="bg-white shadow-xl rounded-2xl overflow-hidden group"
             >
               <div className="overflow-hidden">
-                <img
+                <Image width={800} height={800}
                   src={study.image}
                   alt={study.title}
                   className="w-full h-76 rounded-t-2xl border-b border-gray-100 transition-transform duration-500 group-hover:scale-105"

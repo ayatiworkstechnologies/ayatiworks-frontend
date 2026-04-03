@@ -17,6 +17,7 @@ import {
   BarChart3,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const MotionLink = motion(Link);
 const services = [
@@ -326,7 +327,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -363,7 +364,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/ecom-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -473,7 +474,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/ecom-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -632,7 +633,7 @@ function HeroServicePage() {
           {/* Right: Sticky Image */}
           <div className="hidden md:block">
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/ecom-1.png"
                 alt="Ayatiworks e-commerce growth"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
@@ -668,7 +669,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/dev-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -729,7 +730,7 @@ function HeroServicePage() {
           {/* Left Image */}
           <div className="hidden md:block">
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/ecom-2.png"
                 alt="Ayatiworks UX UI Design Benefits"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"

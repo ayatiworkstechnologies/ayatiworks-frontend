@@ -3,6 +3,7 @@
 import React from "react";
 import { FaLinkedinIn, FaRss } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 /* format ET like “Sep 26, 2025 at 5:09 pm ET” */
 function formatET(iso) {
@@ -36,7 +37,7 @@ export default function AuthorView({ author, posts }) {
           {/* LEFT — Author card */}
           <aside className="rounded border border-slate-200 bg-white p-6">
             <div className="flex flex-col items-center text-center">
-              <img
+              <Image width={800} height={800}
                 src={author.avatar}
                 alt={author.name}
                 className="h-60 w-40 rounded-lg border border-slate-200 object-cover"
@@ -127,7 +128,7 @@ export default function AuthorView({ author, posts }) {
                       {/* Cover */}
                       <div className="w-full overflow-hidden rounded h-full min-h-[160px]">
                         <div className="relative h-full w-full">
-                          <img
+                          <Image width={800} height={800}
                             src={p?.cover || "/placeholder.jpg"}
                             alt={p?.title || "Article cover"}
                             className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"

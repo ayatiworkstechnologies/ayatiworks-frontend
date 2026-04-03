@@ -25,7 +25,7 @@ function HeroVideo({ src, poster, className }) {
       className={className}
       disablePictureInPicture
       controlsList="nodownload noplaybackrate"
-    />
+    ><track kind="captions" /></video>
   );
 }
 
@@ -65,6 +65,7 @@ export default function HeroSection() {
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -85,7 +86,7 @@ function HeroVideo({ src, poster, className }) {
       className={className}
       disablePictureInPicture
       controlsList="nodownload noplaybackrate"
-    />
+    ><track kind="captions" /></video>
   );
 }
 
@@ -136,7 +137,7 @@ export default function HeroSection() {
             aspect-[16/9] xl:aspect-auto xl:h-full
           "
         >
-          <img
+          <Image width={800} height={800}
             // src="https://ayatiwork.b-cdn.net/banner/banner-02.webp"
             // src="/banner/banner-02.webp"
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
@@ -160,7 +161,7 @@ export default function HeroSection() {
             aspect-[16/9] xl:aspect-auto xl:h-full
           "
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-03.webp"
             // src="/banner/banner-03.webp"
             // src="https://ayatiwork.b-cdn.net/banner/banner-03.webp"
@@ -206,7 +207,7 @@ export default function HeroSection() {
             aspect-[16/9] xl:aspect-auto xl:h-full
           "
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-05.webp"
             // src="/banner/banner-05.webp"
             // src="https://ayatiwork.b-cdn.net/banner/banner-05.webp"
@@ -230,7 +231,7 @@ export default function HeroSection() {
             aspect-[16/9] xl:aspect-auto xl:h-full
           "
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-06.webp"
             // src="/banner/banner-06.webp"
             // src="https://ayatiwork.b-cdn.net/banner/banner-06.webp"

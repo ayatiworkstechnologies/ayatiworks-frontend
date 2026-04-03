@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function WhatWeDo() {
   return (
@@ -33,7 +34,7 @@ export default function WhatWeDo() {
             />
           </motion.div>
           <div className="flex justify-center md:justify-start">
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/Brain.png"
               alt="Brain Icon"
               className="w-16 md:w-20"

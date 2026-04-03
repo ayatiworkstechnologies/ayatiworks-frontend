@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import CaseStudyModalForm from "./CaseStudyModalForm";
 
 export default function WhyWorkedCta({
@@ -78,6 +79,7 @@ export default function WhyWorkedCta({
                         ? "noopener noreferrer"
                         : undefined
                     }
+                    aria-label={`View on ${p.platform}: ${p.title || p.platform}`}
                   >
                     {/* Media (image or video) */}
                     <div className="relative w-full overflow-hidden bg-white ">
@@ -102,12 +104,16 @@ export default function WhyWorkedCta({
                             if (v.paused) v.play().catch(() => { });
                           }}
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                        />
+                        >
+                          <track kind="captions" />
+                        </video>
                       ) : (
-                        <img
+                        <Image
                           src={p.image}
                           alt={p.title || p.platform}
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                          width={400}
+                          height={600}
                           loading="lazy"
                         />
                       )}
@@ -139,10 +145,12 @@ export default function WhyWorkedCta({
       <section className={`mx-auto w-full ${className}`}>
         <div className="relative left-1/2 -translate-x-1/2">
           <div className="relative isolate w-full overflow-hidden">
-            <img
+            <Image
               src={ctaImage}
               alt="Background for call to action"
               className="h-[500px] w-full object-cover md:h-[600px]"
+              width={1920}
+              height={600}
               loading="lazy"
             />
 

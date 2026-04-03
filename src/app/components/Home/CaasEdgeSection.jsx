@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 /** Our Edge: CaaS , Content as a Strategy */
 export default function CaasEdgeSection({
@@ -143,9 +144,11 @@ export default function CaasEdgeSection({
                         {/* media */}
                         <div className="w-full h-[400px] sm:h-[450px] md:h-[540px] bg-black">
                           {isVideo(s.src) ? (
-                            <video className="w-full h-full object-cover" src={s.src} poster={s.poster} playsInline muted loop autoPlay />
+                            <video className="w-full h-full object-cover" src={s.src} poster={s.poster} playsInline muted loop autoPlay>
+                              <track kind="captions" />
+                            </video>
                           ) : (
-                            <img src={s.src} alt={s.alt || ""} className="w-full h-full " loading="lazy" decoding="async" />
+                            <Image src={s.src} alt={s.alt || ""} className="object-cover" fill loading="lazy" />
                           )}
                         </div>
 

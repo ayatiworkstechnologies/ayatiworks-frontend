@@ -20,6 +20,7 @@ import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
 import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 import RightSidebarCategories from "./RightSidebarCategories";
+import Image from "next/image";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -944,7 +945,7 @@ function SplitHeroBanner({
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
-              <img
+              <Image width={800} height={800}
                 src={imageSrc}
                 alt={imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 ease-out will-change-transform group-hover:scale-[1.06]"
@@ -994,7 +995,7 @@ function SplitHeroBanner({
                 className="relative z-[1] block rounded-md transition hover:opacity-95"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image width={800} height={800}
                     src={author.avatar}
                     alt={author.name}
                     className="h-20 w-20 rounded-full object-cover ring-2 ring-white/10"

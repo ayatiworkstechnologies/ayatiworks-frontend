@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 export default function DottedWorldMap() {
   const [hovered, setHovered] = useState(null);
@@ -49,7 +50,7 @@ export default function DottedWorldMap() {
       {/* Map */}
       <div className="relative w-full section-container">
         {/* ✅ Dotted Map Background */}
-        <img
+        <Image width={800} height={800}
           src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/map.png"
           alt="Dotted World Map"
           className="w-full object-contain"
@@ -69,7 +70,7 @@ export default function DottedWorldMap() {
             <span className="absolute -inset-3 rounded-full bg-blue-500 opacity-30 animate-ping"></span>
 
             {/* ✅ Pencil/Logo as Marker */}
-            <img
+            <Image width={800} height={800}
               src={loc.logo}
               alt={loc.name}
               className="relative h-8 w-8 object-contain "
@@ -92,7 +93,7 @@ export default function DottedWorldMap() {
       >
         {stats.map((item, i) => (
           <div key={i} className="flex flex-col items-center space-y-3">
-            <img
+            <Image width={800} height={800}
               src={item.icon}
               alt={item.label}
               className="h-16 w-16 sm:h-16 sm:w-16 object-contain mb-2"

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+import Image from "next/image";
   Flag,
   Target,
   LayoutDashboard,
@@ -217,7 +218,7 @@ export default function JeepCaseStudy() {
                 </p>
               </div>
               <motion.div {...scaleIn(0.1)} className="relative">
-                <img
+                <Image width={800} height={800}
                   src={meta.heroImg}
                   alt="Jeep campaign hero"
                   className="w-full rounded-2xl ring-1 ring-black/5 shadow-lg"

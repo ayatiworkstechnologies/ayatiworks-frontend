@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -32,7 +33,7 @@ export default function BenefitsTimeline() {
 
         {/* Image / Content */}
         <div className="mt-10 flex justify-center">
-          <img
+          <Image width={800} height={800}
             src="/assets/home-benefits.svg"
             alt="Benefits"
             className="w-full max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl object-contain"

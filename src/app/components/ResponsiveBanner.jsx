@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function ResponsiveBanner({
@@ -44,12 +45,12 @@ export default function ResponsiveBanner({
           className="relative overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
           style={boxStyle}
         >
-          <img
+          <Image
             src={desktopSrc}
             alt={alt}
-            loading={loading}
-            decoding="async"
-            className="absolute inset-0 h-full w-full object-cover"
+            priority={priority}
+            className="absolute inset-0 object-cover"
+            fill
             draggable={false}
           />
         </motion.div>

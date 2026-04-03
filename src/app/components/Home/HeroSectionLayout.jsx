@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -27,7 +28,7 @@ export default function HeroSectionLayout() {
             loop
             playsInline
             className="w-full h-full object-cover"
-          />
+          ><track kind="captions" /></video>
         </motion.div>
 
         {/* ✅ Right Top Small (434x168) */}
@@ -38,7 +39,7 @@ export default function HeroSectionLayout() {
           transition={{ duration: 0.8 }}
           className="col-span-4 row-span-1 rounded-3xl overflow-hidden shadow"
         >
-          <img
+          <Image width={800} height={800}
             src="/assets/banner-03.png"
             alt="Steel Rods"
             className="w-full h-full object-cover"
@@ -53,7 +54,7 @@ export default function HeroSectionLayout() {
           transition={{ duration: 0.8 }}
           className="col-span-4 row-span-1 rounded-3xl overflow-hidden shadow"
         >
-          <img
+          <Image width={800} height={800}
             src="/assets/banner-04.png"
             alt="Kid with helmet"
             className="w-full h-full object-cover"
@@ -75,7 +76,7 @@ export default function HeroSectionLayout() {
             loop
             playsInline
             className="w-full h-full object-cover"
-          />
+          ><track kind="captions" /></video>
           
         </motion.div>
 
@@ -87,7 +88,7 @@ export default function HeroSectionLayout() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="col-span-4 row-span-1 rounded-3xl overflow-hidden shadow"
         >
-          <img
+          <Image width={800} height={800}
             src="/assets/banner-06.png"
             alt="Pens"
             className="w-full h-full object-cover"
@@ -102,7 +103,7 @@ export default function HeroSectionLayout() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="col-span-4 row-span-1 rounded-3xl overflow-hidden shadow"
         >
-          <img
+          <Image width={800} height={800}
             src="/assets/banner-05.png"
             alt="Gadget"
             className="w-full h-full object-cover"
@@ -124,7 +125,7 @@ export default function HeroSectionLayout() {
             loop
             playsInline
             className="w-full h-full object-cover"
-          />
+          ><track kind="captions" /></video>
         </motion.div>
       </div>
     </section>

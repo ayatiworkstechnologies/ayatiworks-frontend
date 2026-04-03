@@ -5,6 +5,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { caseStudies } from "../../lib/casestudy-data";
 
 // ⬇️ import shared data
+import Image from "next/image";
 
 export default function CaseStudies() {
   const [current, setCurrent] = useState(0);
@@ -101,7 +102,7 @@ export default function CaseStudies() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="flex-1 max-w-[320px]"
               >
-                <img
+                <Image width={800} height={800}
                   src={caseStudiesData[current].image}
                   alt={caseStudiesData[current].title}
                   className="w-full h-48 sm:h-56 lg:h-64 object-cover rounded-xl shadow-sm"

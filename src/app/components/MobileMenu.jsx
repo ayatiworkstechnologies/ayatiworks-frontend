@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import { ChevronRightIcon, ChevronUpIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 /**
  * MobileMenu (Modern UI) — no counts on dropdown headers
@@ -56,7 +57,7 @@ export default function MobileMenu({
             }}
             className="inline-flex items-center gap-2"
           >
-            <img src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Logo" className="h-8 w-auto" />
+            <Image width={800} height={800} src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Logo" className="h-8 w-auto" />
             <span className="sr-only">Home</span>
           </Link>
           <button

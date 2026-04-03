@@ -99,7 +99,7 @@ export default function NippoCaseStudy() {
         className=""
       />
       <WhyWorkedCta
-        caseStudyTitle="Nippo Shadow Art Contest by Ayatiworks"
+        caseStudyTitle="Nippo"
         title="Why It Worked"
         points={[
           "Nostalgia that connects - Childhood memories of shadow play made the campaign relatable. ",

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
+import Image from "next/image";
 
 export default function SolutionsSection() {
   const navigate = useNavigate();
@@ -128,7 +129,7 @@ export default function SolutionsSection() {
               {/* header */}
               <div className="flex items-start gap-4">
                 <div className="grid place-items-center h-14 w-14 rounded-xl bg-primary/10 ring-1 ring-primary/20 shrink-0">
-                  <img src={card.icon} alt={`${card.title} icon`} className="h-8 w-8 object-contain" loading="lazy" />
+                  <Image width={800} height={800} src={card.icon} alt={`${card.title} icon`} className="h-8 w-8 object-contain" loading="lazy" />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-primary text-2xl sm:text-3xl text-secondary leading-tight">

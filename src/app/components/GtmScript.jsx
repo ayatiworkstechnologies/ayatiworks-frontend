@@ -26,7 +26,7 @@ export default function GtmScript() {
 
       {/* Google Tag Manager (noscript) */}
       <noscript>
-        <iframe
+        <iframe title="Embedded Content" 
           src="https://www.googletagmanager.com/ns.html?id=GTM-PRN8SHB3"
           height="0"
           width="0"

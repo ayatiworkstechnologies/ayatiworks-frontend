@@ -111,6 +111,7 @@ export default function VideoTestimonials() {
                       className="w-full h-full border-0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
+                      title={item.title || "Video Testimonial"}
                     />
                   ) : (
                     <video
@@ -119,7 +120,9 @@ export default function VideoTestimonials() {
                       controls
                       playsInline
                       muted
-                    />
+                    >
+                      <track kind="captions" />
+                    </video>
                   )}
                 </div>
 

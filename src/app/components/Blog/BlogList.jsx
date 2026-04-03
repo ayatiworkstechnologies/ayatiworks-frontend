@@ -6,6 +6,7 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { FiClock } from "react-icons/fi";
 import { POSTS } from "../../lib/blogs-data";
 import { CATEGORIES_SRC } from "../../lib/blog-categories-data";
+import Image from "next/image";
 
 /* ------------------ Helpers ------------------ */
 const toSlug = (str = "") =>
@@ -257,7 +258,7 @@ function Card({ post }) {
     <article className="group rounded-xl border border-slate-200 bg-white shadow-[0_10px_24px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(0,0,0,0.10)]">
       <Link href={href} className="block" aria-label={`Read: ${post.title}`}>
         <div className="relative h-68 w-full overflow-hidden rounded-t-xl">
-          <img
+          <Image width={800} height={800}
             src={post.cover}
             alt={post.coverAlt || post.title}
             className="h-full w-full transition-transform duration-500 group-hover:scale-105"

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 /* ----------------------------- Asset Placeholders ----------------------------- */
 const ASSETS = {
@@ -50,7 +51,7 @@ export default function VolvoCaseStudyPage() {
       {/* HERO */}
       <section className="relative">
         <div className="absolute inset-0">
-          <img
+          <Image width={800} height={800}
             src="/assets/casestudy/volvo-banner.png"
             alt="Hero background"
             className="h-[52vh] w-full object-cover sm:h-[60vh] md:h-[68vh]"
@@ -82,7 +83,7 @@ export default function VolvoCaseStudyPage() {
               viewport={{ once: true, amount: 0.2 }}
               className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
             >
-              <img src={src} alt="" className="h-48 w-full object-cover" />
+              <Image width={800} height={800} src={src} alt="" className="h-48 w-full object-cover" />
             </motion.figure>
           ))}
         </div>
@@ -100,7 +101,7 @@ export default function VolvoCaseStudyPage() {
                 without burning extra fuel.
               </p>
               <div className="mt-5 overflow-hidden rounded-2xl bg-zinc-100">
-                <img src={ASSETS.challengeImg} alt="Challenge" className="h-44 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.challengeImg} alt="Challenge" className="h-44 w-full object-cover" />
               </div>
             </div>
           </motion.div>
@@ -115,7 +116,7 @@ export default function VolvoCaseStudyPage() {
                 <li>Drive faster, more qualified lead conversions</li>
               </ul>
               <div className="mt-5 overflow-hidden rounded-2xl bg-zinc-100">
-                <img src={ASSETS.objectiveImg} alt="Objective" className="h-44 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.objectiveImg} alt="Objective" className="h-44 w-full object-cover" />
               </div>
             </div>
           </motion.div>
@@ -125,7 +126,7 @@ export default function VolvoCaseStudyPage() {
       {/* STRATEGY BAND (center car, text left+right) */}
       <section className="relative">
         <div className="absolute inset-0">
-          <img src={ASSETS.strategyBg} alt="" className="h-[48vh] w-full object-cover" />
+          <Image width={800} height={800} src={ASSETS.strategyBg} alt="" className="h-[48vh] w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-black/40" />
         </div>
         <div className="relative mx-auto flex h-[48vh] max-w-7xl items-center justify-between px-4">
@@ -170,13 +171,13 @@ export default function VolvoCaseStudyPage() {
           <div className="space-y-6">
             <motion.figure variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
               <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <img src={ASSETS.resultsL1} alt="" className="h-44 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.resultsL1} alt="" className="h-44 w-full object-cover" />
               </div>
             </motion.figure>
 
             <motion.figure variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
               <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <img src={ASSETS.resultsL2} alt="" className="h-44 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.resultsL2} alt="" className="h-44 w-full object-cover" />
               </div>
             </motion.figure>
 
@@ -215,10 +216,10 @@ export default function VolvoCaseStudyPage() {
               className="grid grid-cols-2 gap-4"
             >
               <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <img src={ASSETS.resultsR1} alt="" className="h-36 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.resultsR1} alt="" className="h-36 w-full object-cover" />
               </figure>
               <figure className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <img src={ASSETS.resultsR2} alt="" className="h-36 w-full object-cover" />
+                <Image width={800} height={800} src={ASSETS.resultsR2} alt="" className="h-36 w-full object-cover" />
               </figure>
             </motion.div>
           </div>
@@ -234,8 +235,8 @@ export default function VolvoCaseStudyPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-6 opacity-80">
-          <img src={ASSETS.logosVolvo} alt="Volvo" className="h-6 w-auto" />
-          <img src={ASSETS.logosPartner} alt="Partner" className="h-6 w-auto" />
+          <Image width={800} height={800} src={ASSETS.logosVolvo} alt="Volvo" className="h-6 w-auto" />
+          <Image width={800} height={800} src={ASSETS.logosPartner} alt="Partner" className="h-6 w-auto" />
         </div>
       </section>
 
@@ -269,7 +270,7 @@ export default function VolvoCaseStudyPage() {
       {/* CTA FOOTER (dark, car image at bottom) */}
       <section className="relative">
         <div className="absolute inset-0">
-          <img src={ASSETS.footerBg} alt="" className="h-[44vh] w-full object-cover" />
+          <Image width={800} height={800} src={ASSETS.footerBg} alt="" className="h-[44vh] w-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
@@ -317,7 +318,7 @@ export default function VolvoCaseStudyPage() {
             </Link>
           </motion.div>
 
-          <img
+          <Image width={800} height={800}
             src={ASSETS.footerCar}
             alt="XC90 rear"
             className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 sm:translate-y-1/4"

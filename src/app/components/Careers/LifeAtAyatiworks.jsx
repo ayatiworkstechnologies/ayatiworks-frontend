@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fade = {
   hidden: { opacity: 0, y: 24 },
@@ -45,7 +46,7 @@ export default function LifeAtAyatiworks({
             transition={{ duration: 0.6, delay: 0.1 }}
             className="overflow-hidden  ring-1 ring-black/5"
           >
-            <img
+            <Image width={800} height={800}
               src={image}
               alt="Life at Ayatiworks"
               className="w-full h-full"

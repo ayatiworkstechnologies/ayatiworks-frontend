@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Play, Link2, Users, Film, Star, Heart } from "lucide-react";
+import Image from "next/image";
 
 
 export default function StrategySection({
@@ -60,7 +61,7 @@ export default function StrategySection({
           className="md:col-span-5"
         >
           <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl">
-            <img
+            <Image width={800} height={800}
               src="/assets/casestudy/nippo-hero.jpg"
               alt="Torch casting playful shadows on a wall"
               className="h-72 w-full object-cover"
@@ -125,7 +126,7 @@ export default function StrategySection({
             >
               <div className="relative aspect-[4/5] w-full overflow-hidden">
                 {/* Use a branded placeholder; Instagram thumbnails require server-side fetch, so keep a local image if needed */}
-                <img
+                <Image width={800} height={800}
                   src={r.thumb || "/assets/casestudy/ig-placeholder.jpg"}
                   alt={r.title}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -165,7 +166,7 @@ export default function StrategySection({
                 key={i}
                 className="group overflow-hidden rounded-2xl bg-white shadow-md"
               >
-                <img
+                <Image width={800} height={800}
                   src={u.img}
                   alt={u.alt || "UGC entry"}
                   className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105 md:h-56"

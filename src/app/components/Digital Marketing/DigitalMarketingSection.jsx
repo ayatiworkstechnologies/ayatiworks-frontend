@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function DigitalMarketingSection() {
   return (
@@ -83,7 +84,7 @@ export default function DigitalMarketingSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm-1.jpg"
             alt="AI Driven Digital Marketing Services in Chennai Ayatiworks screened on TV"
             className="w-200 h-full"

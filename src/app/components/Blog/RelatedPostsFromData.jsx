@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function RelatedPostsFromData({ posts = [] }) {
   if (!posts.length) return null;
@@ -23,7 +24,7 @@ export default function RelatedPostsFromData({ posts = [] }) {
             <Link href={post.slug} className="absolute inset-0 z-[1]" />
 
             <div className="relative h-44 overflow-hidden">
-              <img
+              <Image width={800} height={800}
                 src={post.cover}
                 alt={post.coverAlt || post.title}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"

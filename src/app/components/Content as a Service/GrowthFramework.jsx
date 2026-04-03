@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const steps = [
   { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", title: "Initial Consultation", desc: "We start with a one-on-one consultation to understand your goals, target audience, and content needs." },
@@ -68,7 +69,7 @@ export default function CaaSFramework() {
 
       {/* Wave Line Placeholder (optional graphic) */}
       {/* <div className="absolute top-[200px] left-0 w-full -translate-y-1/2 z-0">
-        <img src="/assets/line-1.png" alt="wave line" className="w-full h-auto object-contain" />
+        <Image width={800} height={800} src="/assets/line-1.png" alt="wave line" className="w-full h-auto object-contain" />
       </div> */}
 
       {/* Steps (1-5 or 6-10) */}
@@ -92,7 +93,7 @@ export default function CaaSFramework() {
                   }`}
                 >
                   <div className="w-16 h-16 mb-6">
-                    <img src={step.id} alt={step.title} />
+                    <Image width={800} height={800} src={step.id} alt={step.title} />
                   </div>
                   <h3 className="font-primary text-lg sm:text-xl text-center mb-2">
                     {step.title}
@@ -121,7 +122,7 @@ export default function CaaSFramework() {
                   }`}
                 >
                   <div className="w-16 h-16 mb-6">
-                    <img src={step.id} alt={step.title} />
+                    <Image width={800} height={800} src={step.id} alt={step.title} />
                   </div>
                   <h3 className="font-primary text-lg sm:text-xl text-center mb-2">
                     {step.title}

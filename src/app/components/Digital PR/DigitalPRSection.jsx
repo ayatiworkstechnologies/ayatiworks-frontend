@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function DigitalPRSection() {
   return (
@@ -37,7 +38,7 @@ export default function DigitalPRSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm.png"
             alt="The Year of Utsah"
             className="w-200 h-full drop-shadow-xl rounded-xl"

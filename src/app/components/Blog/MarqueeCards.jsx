@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const cards = [
   {
@@ -41,7 +42,7 @@ function ServiceCard({ item }) {
   const CardInner = (
     <div className="relative w-[280px] sm:w-[320px] md:w-[360px] h-[480px] shrink-0 rounded-2xl overflow-hidden shadow-lg group">
       {/* Normal img */}
-      <img
+      <Image width={800} height={800}
         src={item.img}
         alt={item.title}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

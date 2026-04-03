@@ -122,7 +122,7 @@ It claimed its territory.
         className=""
       />
       <WhyWorkedCta
-        caseStudyTitle="How Ayatiworks Built the Apex Dura Powerhouse"
+        caseStudyTitle="Apex"
         title="From Identity to Industry Impact"
         points={[
           "Apex Dura is now a benchmark of strength and innovation, bridging Apex Group’s industrial heritage with a contemporary market presence that resonates across South India.",

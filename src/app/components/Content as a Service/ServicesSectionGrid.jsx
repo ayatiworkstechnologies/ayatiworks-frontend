@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   {
@@ -78,7 +79,7 @@ export default function ServicesSectionGrid() {
                 <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center group-hover:shadow-xl transition-all duration-500">
                   <div className="text-primary text-5xl group-hover:text-primary">
                     {/* {service.icon} */}
-                    <img
+                    <Image width={800} height={800}
                       src={service.icon}
                       alt={service.title}
                       className="shadow-md rounded-full"

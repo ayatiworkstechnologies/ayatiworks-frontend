@@ -78,7 +78,7 @@ with on-ground sales.`}
         className=""
       />
       <WhyWorkedCta
-        caseStudyTitle="How Ayatiworks Accelerated Volvo’s Growth Journey"
+        caseStudyTitle="Volvo"
         title="Why It Worked"
         points={[
           "Humanized content for a premium automobile audience",

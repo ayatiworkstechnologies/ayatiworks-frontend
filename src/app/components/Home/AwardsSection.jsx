@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // If using React Router, uncomment below
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Image from "next/image";
 
 
 export default function AwardsSection() {
@@ -104,7 +105,7 @@ export default function AwardsSection() {
             >
               {/* Front Side */}
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-white border border-gray-200 rounded-2xl shadow-md [backface-visibility:hidden] p-6 hover:shadow-2xl">
-                <img
+                <Image width={800} height={800}
                   src={award.img}
                   alt={award.title}
                   className="w-32 sm:w-40 object-contain mb-4"
@@ -123,7 +124,7 @@ export default function AwardsSection() {
 
               {/* Back Side */}
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-50 rounded-2xl shadow-md [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden p-5">
-                <img
+                <Image width={800} height={800}
                   src={award.backImg}
                   alt="Award Back"
                   className="w-full h-full object-cover rounded-lg mb-2"

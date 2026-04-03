@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function MarketingServices() {
   const services = [
@@ -50,7 +51,7 @@ export default function MarketingServices() {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500"
             >
-              <img
+              <Image width={800} height={800}
                 src={item.image}
                 alt={item.alt}
                 className="w-full h-[450px] object-cover"

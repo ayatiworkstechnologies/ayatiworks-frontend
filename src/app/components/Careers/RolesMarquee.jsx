@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 /* Updated roles (cleaned) */
 const roles = [
@@ -102,7 +103,7 @@ export default function RolesMarquee() {
                     aria-hidden
                     className="absolute left-1/2 -translate-x-1/2 top-4 select-none"
                   >
-                    <img
+                    <Image width={800} height={800}
                       src={r.icon}
                       alt={`Role ${(i % roles.length) + 1}`}
                       className="object-contain drop-shadow-sm"

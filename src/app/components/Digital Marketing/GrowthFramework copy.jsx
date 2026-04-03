@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const steps = [
   {
@@ -44,7 +45,7 @@ export default function GrowthFramework() {
 
       {/* Wave Image with Positioned Steps */}
       <div className="relative mx-auto">
-        <img
+        <Image width={800} height={800}
           src="/assets/line.png"
           alt="Growth Wave"
           className="w-full"

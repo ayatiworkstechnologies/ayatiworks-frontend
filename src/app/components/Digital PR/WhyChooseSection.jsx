@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -143,7 +144,7 @@ export default function WhyChooseSection() {
                       transition={{ duration: 1 }}
                       className="w-16 h-16 flex items-center justify-center"
                     >
-                      <img
+                      <Image width={800} height={800}
                         src={f.img}
                         alt={f.title}
                         className="w-12 h-12 object-contain"

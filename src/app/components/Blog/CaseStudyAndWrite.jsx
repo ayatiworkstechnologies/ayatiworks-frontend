@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { caseStudies } from "../../lib/casestudy-data";
+import Image from "next/image";
 
 const MotionLink = motion(Link);
 
@@ -47,7 +48,7 @@ export default function CaseStudyAndWrite() {
                 className="overflow-hidden rounded-xl ring-1 ring-black/5"
               >
                 <div className="relative w-full h-60 md:h-74">
-                  <img
+                  <Image width={800} height={800}
                     src={item.image}
                     alt={item.title}
                     className="h-full w-full object-cover"

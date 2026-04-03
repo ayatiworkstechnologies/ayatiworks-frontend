@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function RelatedPostsSection({ posts = [], heading = "Related Posts" }) {
   if (!posts?.length) return null;
@@ -35,7 +36,7 @@ function RelatedPostCard({ post }) {
       </Link>
 
       <div className="relative h-44 w-full overflow-hidden">
-        <img
+        <Image width={800} height={800}
           src={post.cover}
           alt={post.coverAlt || post.title}
           className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"

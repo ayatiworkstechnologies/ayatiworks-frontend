@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function OurWideRange() {
   return (
@@ -35,7 +36,7 @@ function OurWideRange() {
         viewport={{ once: true }}
         className="flex justify-center"
       >
-        <img
+        <Image width={800} height={800}
           src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/group-logo.png"
           alt="Our Clients & Partners"
           className="w-full max-w-6xl"

@@ -19,6 +19,7 @@ import RelatedPostsFromData from "./RelatedPostsFromData";
 import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 
 import RightSidebarCategories from "./RightSidebarCategories";
+import Image from "next/image";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -266,7 +267,7 @@ export default function AEOArticlePage107() {
               country wise
             </h3>
 
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-img-107-1.jpg"
               alt="How much time people spend on their android smartphones everyday by country. "
             />
@@ -615,7 +616,7 @@ export default function AEOArticlePage107() {
               A quick summary for fast decisioning:
             </h3>
 
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-img-107-2.jpg"
               alt="Top Chennai agencies comparison grid"
             />
@@ -630,7 +631,7 @@ export default function AEOArticlePage107() {
               Selection is context-dependent:
             </h3>
 
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-img-107-3.jpg"
               alt="Decision framework for choosing a digital agency in Chennai"
             />
@@ -817,7 +818,7 @@ function SplitHeroBanner({
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
-              <img
+              <Image width={800} height={800}
                 src={imageSrc}
                 alt={imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 ease-out will-change-transform group-hover:scale-[1.06]"
@@ -867,7 +868,7 @@ function SplitHeroBanner({
                 className="relative z-[1] block rounded-md transition hover:opacity-95"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image width={800} height={800}
                     src={author.avatar}
                     alt={author.name}
                     className="h-20 w-20 rounded-full object-cover ring-2 ring-white/10"

@@ -69,7 +69,7 @@ export default function JeepCaseStudy() {
         className=""
       />
       <WhyWorkedCta
-        caseStudyTitle="Jeep India Independence Day Merchandise Campaign by Ayatiworks"
+        caseStudyTitle="Jeep"
         title="Why It Worked"
         points={[
           "Stylish UX that clicks: A design as sturdy and smooth as a Jeep trail drive ",

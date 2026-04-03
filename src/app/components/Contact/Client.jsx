@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Client() {
   const [isPaused, setIsPaused] = useState(false);
@@ -54,7 +55,7 @@ export default function Client() {
               key={`row1-${index}`}
               className="bg-white border border-gray-200 shadow-sm rounded-full w-[200px] p-4 flex items-center justify-center hover:shadow-lg transition-all cursor-pointer min-w-[180px]"
             >
-              <img
+              <Image width={800} height={800}
                 src={partner.logo}
                 alt={partner.name}
                 className="h-14 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
@@ -85,7 +86,7 @@ export default function Client() {
               key={`row2-${index}`}
               className="bg-white border border-gray-200 shadow-sm rounded-full w-[200px] p-4 flex items-center justify-center hover:shadow-lg transition-all cursor-pointer min-w-[180px]"
             >
-              <img
+              <Image width={800} height={800}
                 src={partner.logo}
                 alt={partner.name}
                 className="h-14 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"

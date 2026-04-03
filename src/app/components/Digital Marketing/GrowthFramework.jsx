@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const steps = [
   { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", title: "Discovery Call", desc: "Understand business goals, audience, and vision." },
@@ -77,7 +78,7 @@ export default function GrowthFramework() {
 
       {/* Wave Line */}
       <div className="absolute top-[200px] left-0 w-full -translate-y-1/2 z-0">
-        {/* <img
+        {/* <Image width={800} height={800}
           src="/assets/line-1.png"
           alt="wave line"
           className="w-full h-auto object-contain"
@@ -105,7 +106,7 @@ export default function GrowthFramework() {
                   }`}
                 >
                   <div className="w-16 h-16 mb-6">
-                    <img src={step.id} alt={step.title} />
+                    <Image width={800} height={800} src={step.id} alt={step.title} />
                   </div>
                   <h3 className="font-primary text-xl sm:text-2xl text-center mb-2">
                     {step.title}
@@ -134,7 +135,7 @@ export default function GrowthFramework() {
                   }`}
                 >
                   <div className="w-16 h-16 mb-6">
-                    <img src={step.id} alt={step.title} />
+                    <Image width={800} height={800} src={step.id} alt={step.title} />
                   </div>
                   <h3 className="font-primary text-xl sm:text-2xl text-center mb-2">
                     {step.title}

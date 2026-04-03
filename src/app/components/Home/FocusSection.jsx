@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FocusSection() {
   const fadeUp = (delay = 0) => ({
@@ -77,7 +78,7 @@ export default function FocusSection() {
 
               {/* Icon */}
               <div className="mt-4 p-4">
-                <img
+                <Image width={800} height={800}
                   src={it.icon}
                   alt={it.title}
                   className="mx-auto h-20 sm:h-24 w-auto object-contain"

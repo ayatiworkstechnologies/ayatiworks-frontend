@@ -20,6 +20,7 @@ import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
 import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 import RightSidebarCategories from "./RightSidebarCategories";
+import Image from "next/image";
 
 
 const buildHref = (slugOrPath = "") => {
@@ -217,7 +218,7 @@ export default function AEOArticlePage102() {
               <strong> AI-driven interfaces </strong>that deliver direct answers
               rather than a list of links.
             </p>
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-102-3.jpg"
               alt="Understanding the difference between SEO vs AEO "
             />
@@ -714,8 +715,8 @@ function ResponsiveBanner({ href, desktopSrc, mobileSrc, alt = "" }) {
       aria-label={alt}
       className="block w-full overflow-hidden bg-white shadow-sm"
     >
-      <img src={desktopSrc} alt={alt} className="hidden w-full md:block" />
-      <img src={mobileSrc} alt={alt} className="block w-full md:hidden" />
+      <Image width={800} height={800} src={desktopSrc} alt={alt} className="hidden w-full md:block" />
+      <Image width={800} height={800} src={mobileSrc} alt={alt} className="block w-full md:hidden" />
     </Link>
   );
 }
@@ -749,7 +750,7 @@ function SplitHeroBanner({
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
-              <img
+              <Image width={800} height={800}
                 src={imageSrc}
                 alt={imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 ease-out will-change-transform group-hover:scale-[1.06]"
@@ -799,7 +800,7 @@ function SplitHeroBanner({
                 className="relative z-[1] block rounded-md transition hover:opacity-95"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image width={800} height={800}
                     src={author.avatar}
                     alt={author.name}
                     className="h-20 w-20 rounded-full object-cover ring-2 ring-white/10"
@@ -1230,7 +1231,7 @@ function Intro() {
         Just a year ago, people used to type Keywords in the search bar of
         Google to get links to companies they are looking for
       </p>
-      <img
+      <Image width={800} height={800}
         src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog102-1.png"
         className="py-5"
         alt="Using Keyword to Search on Google"
@@ -1243,7 +1244,7 @@ function Intro() {
         engine, customers will recognize your brand and can easily click the
         link displayed on the right.
       </p>
-      <img
+      <Image width={800} height={800}
         src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog102-2.png"
         className="py-5"
         alt="Asking a full-length question in Google Search bar expecting an answer from the AEO – Answer Engine Optimisation"

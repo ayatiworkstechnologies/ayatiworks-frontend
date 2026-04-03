@@ -26,7 +26,9 @@ function HeroVideo({ src, poster, className, preload = "metadata", priority = fa
       disablePictureInPicture
       controlsList="nodownload noplaybackrate"
       {...(priority ? { fetchPriority: "high" } : {})}
-    />
+    >
+      <track kind="captions" />
+    </video>
   );
 }
 

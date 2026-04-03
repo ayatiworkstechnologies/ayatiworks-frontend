@@ -8,6 +8,7 @@ import { GoDotFill } from "react-icons/go";
 import AutoImageSlider from "./AutoImageSlider";
 import Link from "next/link";
 import FAQSection from "./FAQSection";
+import Image from "next/image";
 
 const steps = [
   {
@@ -355,7 +356,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-2.png"
                 alt="Search Engines Work"
                 className=" "
@@ -589,7 +590,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-3.png"
                 alt="Search Engines Work"
                 className=""
@@ -736,7 +737,7 @@ function HeroServicePage() {
               >
                 {/* IMAGE */}
                 <div className={`${isReverse ? "md:order-2" : "md:order-1"}`}>
-                  <img
+                  <Image width={800} height={800}
                     src={motive.image}
                     alt={motive.title}
                     className=""
@@ -818,7 +819,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-4.png"
                 alt="Search Engines Work"
                 className=" "
@@ -1009,7 +1010,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/smm-5.png"
                 alt="Search Engines Work"
                 className=" "

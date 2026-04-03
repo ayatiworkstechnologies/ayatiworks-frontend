@@ -19,6 +19,7 @@ import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
 import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
 import RightSidebarCategories from "./RightSidebarCategories";
+import Image from "next/image";
 
 const buildHref = (slugOrPath = "") => {
   if (!slugOrPath) return "/blogs";
@@ -145,7 +146,7 @@ export default function AEOArticlePage103() {
               <strong>Ranking</strong> is a traditional success model of SEO
               where Search Engines ranked business on the 1st page of SERP.
             </p>
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-103-1.png"
               alt="Google Ranking businesses for Keyword on SERP "
             />
@@ -226,7 +227,7 @@ export default function AEOArticlePage103() {
               Just like in the image below, look at the question asked in the
               search bar and the response with options of 3 businesses.{" "}
             </p>
-            <img
+            <Image width={800} height={800}
               src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-103-2.png"
               alt="Google offering answers to the end user in the AEO format suggesting 3 businesses.  "
             />
@@ -400,7 +401,7 @@ export default function AEOArticlePage103() {
               relevance better.{" "}
             </p>
 
-            {/* <img
+            {/* <Image width={800} height={800}
               src="/assets/blogImg/blog-102-3.jpg"
               alt="Understanding the difference between SEO vs AEO "
             /> */}
@@ -928,8 +929,8 @@ function ResponsiveBanner({ href, desktopSrc, mobileSrc, alt = "" }) {
       aria-label={alt}
       className="block w-full overflow-hidden bg-white shadow-sm"
     >
-      <img src={desktopSrc} alt={alt} className="hidden w-full md:block" />
-      <img src={mobileSrc} alt={alt} className="block w-full md:hidden" />
+      <Image width={800} height={800} src={desktopSrc} alt={alt} className="hidden w-full md:block" />
+      <Image width={800} height={800} src={mobileSrc} alt={alt} className="block w-full md:hidden" />
     </Link>
   );
 }
@@ -963,7 +964,7 @@ function SplitHeroBanner({
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
-              <img
+              <Image width={800} height={800}
                 src={imageSrc}
                 alt={imageAlt}
                 className="h-full w-full object-cover transition-transform duration-500 ease-out will-change-transform group-hover:scale-[1.06]"
@@ -1013,7 +1014,7 @@ function SplitHeroBanner({
                 className="relative z-[1] block rounded-md transition hover:opacity-95"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image width={800} height={800}
                     src={author.avatar}
                     alt={author.name}
                     className="h-20 w-20 rounded-full object-cover ring-2 ring-white/10"

@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const imgs1 = [
   { src: "/assets/blog-1.jpg", heading: "SEO Simplified for you", path: "/blogs/seo/5-must-know-AEO-Strategies-For-2025" },
@@ -60,7 +61,7 @@ export default function GridSection() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-lg shadow-lg group"
           >
-            <img
+            <Image width={800} height={800}
               src={imgs1[0].src}
               alt={imgs1[0].heading || "Card"}
               className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -94,7 +95,7 @@ export default function GridSection() {
                 viewport={{ once: true }}
                 className="relative overflow-hidden rounded-lg shadow-lg group"
               >
-                <img
+                <Image width={800} height={800}
                   src={img.src}
                   alt={img.heading || "Card"}
                   className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -132,7 +133,7 @@ export default function GridSection() {
                 viewport={{ once: true }}
                 className="relative overflow-hidden rounded-lg shadow-lg group"
               >
-                <img
+                <Image width={800} height={800}
                   src={img.src}
                   alt={img.heading || "Card"}
                   className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -164,7 +165,7 @@ export default function GridSection() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-lg shadow-lg group"
           >
-            <img
+            <Image width={800} height={800}
               src={imgs2[0].src}
               alt={imgs2[0].heading || "Card"}
               className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"

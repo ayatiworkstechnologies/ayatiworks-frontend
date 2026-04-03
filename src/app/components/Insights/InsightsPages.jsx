@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
+import Image from "next/image";
   ArrowRight,
   Sparkles,
   Trophy,
@@ -110,7 +111,7 @@ function Hero() {
 
         <motion.div {...scaleIn} className="relative mx-auto w-full max-w-xl md:max-w-none">
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
-            <img
+            <Image width={800} height={800}
               src={HERO_IMG}
               alt="Ayatiworks team collaborating"
               className="h-80 w-full object-cover md:h-[420px]"
@@ -160,7 +161,7 @@ function Section({ id, eyebrow, title, description, children }) {
   );
 }
 
-/* ------------ IMAGE CARD (uses <img>) ------------ */
+/* ------------ IMAGE CARD (uses <Image width={800} height={800}>) ------------ */
 function ImageCard({ href, img, alt, icon, title, description, cta }) {
   return (
     <Link
@@ -169,7 +170,7 @@ function ImageCard({ href, img, alt, icon, title, description, cta }) {
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden">
         {/* absolute full-cover image */}
-        <img
+        <Image width={800} height={800}
           src={img}
           alt={alt}
           className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
@@ -197,12 +198,12 @@ function ImageCard({ href, img, alt, icon, title, description, cta }) {
   );
 }
 
-/* ------------ CASE CARD WITH IMAGE OVERLAY (uses <img>) ------------ */
+/* ------------ CASE CARD WITH IMAGE OVERLAY (uses <Image width={800} height={800}>) ------------ */
 function CaseImageCard({ href, img, alt, client, blurb, metrics = [] }) {
   return (
     <Link href={href} className="group relative overflow-hidden rounded-3xl" aria-label={`${client} case study`}>
       <div className="relative aspect-[4/3] w-full overflow-hidden">
-        <img
+        <Image width={800} height={800}
           src={img}
           alt={alt}
           className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
@@ -332,7 +333,7 @@ export default function Page() {
           <div className="mx-auto grid grid-cols-3 items-center gap-6 sm:gap-10">
             {AWARD_IMAGES.map((src) => (
               <div key={src} className="relative mx-auto h-10 w-36 sm:h-12 sm:w-44">
-                <img
+                <Image width={800} height={800}
                   src={src}
                   alt="Award badge"
                   className="h-full w-full object-contain"

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
 
 const gridVariant = {
   hidden: {},
@@ -206,7 +207,7 @@ export default function TeamMember() {
             >
               {/* Image */}
               <div className="relative w-full h-[68vw] sm:h-80 md:h-96 lg:h-[420px] pb-16 sm:pb-20">
-                <img
+                <Image width={800} height={800}
                   src={member.img}
                   alt={member.name || 'Team member'}
                   className="

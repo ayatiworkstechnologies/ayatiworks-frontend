@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const faqs = [
   {
@@ -121,7 +122,7 @@ export default function FAQSection() {
             className="flex flex-col items-center text-center space-y-6"
           >
             <div>
-              <img
+              <Image width={800} height={800}
                 src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/faq-img.png"
                 alt="FAQ Illustration"
                 className="w-full "

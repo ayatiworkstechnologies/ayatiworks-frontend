@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -53,7 +54,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-2026.png"
             alt="Ayatiworks TV illustration"
             className="w-full  drop-shadow-xl rounded-xl"

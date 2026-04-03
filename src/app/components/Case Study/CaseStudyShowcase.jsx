@@ -1,7 +1,7 @@
 // app/components/CaseStudyShowcase.jsx
 "use client";
-
 import CaseStudyModalForm from "./CaseStudyModalForm";
+import Image from "next/image";
 
 export default function CaseStudyShowcase({
   
@@ -33,18 +33,22 @@ export default function CaseStudyShowcase({
   <div className="relative mx-auto overflow-hidden">
     <div className="relative w-full h-[320px] sm:h-[450px] md:h-[600px] mt-10">
       {/* Desktop Banner */}
-      <img
+      <Image
         src={hero.desktopImage || hero.imageSrc}
         alt={hero.imageAlt || "Hero image"}
         className="hidden md:block h-full w-full object-cover"
-        loading="lazy"
+        width={1920}
+        height={600}
+        priority={true}
       />
       {/* Mobile Banner */}
-      <img
+      <Image
         src={hero.mobileImage || hero.imageSrc}
         alt={hero.imageAlt || "Mobile banner"}
         className="block md:hidden h-full w-full object-cover"
-        loading="lazy"
+        width={768}
+        height={450}
+        priority={true}
       />
 
       {/* Gradient Overlay */}

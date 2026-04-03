@@ -81,7 +81,7 @@ const nextConfig = {
   // ✅ Experimental optimizations
   experimental: {
     optimizePackageImports: ['lucide-react'], // Tree-shake icon library
-    reactCompiler: true, // ✅ Enable React Compiler for automatic memoization
+    reactCompiler: false, // Turned off per user request
   },
 };
 

@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react"; // ✅ Right arrow icon
+import Image from "next/image";
 
 const imgs1 = [
   {
@@ -63,7 +64,7 @@ export default function HomeGridSection() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-lg shadow-lg group"
           >
-            <img
+            <Image width={800} height={800}
               src={imgs1[0].src}
               alt={imgs1[0].heading}
               className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -105,7 +106,7 @@ export default function HomeGridSection() {
                 viewport={{ once: true }}
                 className="relative overflow-hidden rounded-lg shadow-lg group"
               >
-                <img
+                <Image width={800} height={800}
                   src={img.src}
                   alt={img.heading}
                   className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -149,7 +150,7 @@ export default function HomeGridSection() {
                 viewport={{ once: true }}
                 className="relative overflow-hidden rounded-lg shadow-lg group"
               >
-                <img
+                <Image width={800} height={800}
                   src={img.src}
                   alt={img.heading}
                   className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -187,7 +188,7 @@ export default function HomeGridSection() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-lg shadow-lg group"
           >
-            <img
+            <Image width={800} height={800}
               src={imgs2[0].src}
               alt={imgs2[0].heading}
               className="w-full h-64 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"

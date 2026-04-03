@@ -18,7 +18,7 @@ export default function NotFound() {
             muted
             playsInline
             className="mx-auto w-full h-100 transition-transform duration-500 group-hover:scale-105"
-          />
+          ><track kind="captions" /></video>
         </Link>
 
         {/* Button */}

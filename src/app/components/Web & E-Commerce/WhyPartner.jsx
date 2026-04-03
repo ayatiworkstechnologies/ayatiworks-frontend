@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const benefits = [
   {
@@ -59,7 +60,7 @@ export default function WhyPartner() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
         {/* Left Side Image */}
         <div className="flex justify-center">
-          <img
+          <Image width={800} height={800}
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/seo-img.png"
             alt="Team meeting"
             className="rounded-lg shadow-lg w-full object-cover"

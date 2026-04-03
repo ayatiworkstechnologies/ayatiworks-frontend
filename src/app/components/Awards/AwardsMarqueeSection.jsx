@@ -2,6 +2,7 @@
 
 import React, { useMemo, useRef, useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 // ✅ Dummy award data (can later come from API or JSON)
 const awards = [
   {
@@ -50,7 +51,7 @@ export default function AwardsMarqueeSection({ items = awards }) {
                 <div className="md:col-span-4 overflow-hidden md:rounded-l-2xl">
                   {/* fixed height on mobile; stretch to full column height on md+ */}
                   <div className="h-[260px] sm:h-[320px] md:h-full">
-                    <img
+                    <Image width={800} height={800}
                       src={award.image}
                       alt={award.title}
                       className="block w-full h-full object-cover"

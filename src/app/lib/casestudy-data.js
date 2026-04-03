@@ -1,6 +1,16 @@
 // lib/casestudy-data.js
 
 export const caseStudies = [
+  // {
+  //   id: 6,
+  //   slug: "spaarc-case-study-from-1-clinic-to-50-centers",
+  //   title: "SPAARC Case Study: From 1 Clinic to 50+ Centers | Ayatiworks",
+  //   description: `See how Ayatiworks scaled SPAARC from a single clinic to 50+ centers across India using branding, SEO, and digital campaigns. Real results. Real growth.`,
+  //   metaTitle: "SPAARC Case Study: From 1 Clinic to 50+ Centers | Ayatiworks",
+  //   metaDescription: "See how Ayatiworks scaled SPAARC from a single clinic to 50+ centers across India using branding, SEO, and digital campaigns. Real results. Real growth.",
+  //   image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/spaarc.jpg",
+  //   link: "/case-study/spaarc-case-study-from-1-clinic-to-50-centers/",
+  // },
   {
     id: 5,
     slug: "pan-india-brand-growth-for-spaarc-wellness",

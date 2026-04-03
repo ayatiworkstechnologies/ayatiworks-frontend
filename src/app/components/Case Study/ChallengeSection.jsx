@@ -1,5 +1,6 @@
 // app/components/ChallengeObjectiveSection.jsx
 "use client";
+import Image from "next/image";
 
 export default function ChallengeObjectiveSection({
   /* ---------------- CHALLENGE ---------------- */
@@ -88,7 +89,7 @@ export default function ChallengeObjectiveSection({
 
             {/* Image */}
             <div className="order-1 md:order-2 flex justify-center md:justify-end">
-              <img
+              <Image width={800} height={800}
                 src={carImg}
                 alt={carImgAlt}
                 className="w-full md:w-[28rem] lg:w-[35rem] xl:w-[40rem] h-full shadow-2xl rounded-2xl object-cover"
@@ -104,7 +105,7 @@ export default function ChallengeObjectiveSection({
               <div className="flex justify-center md:justify-start">
                 {ideasImg && (
                   <div className="overflow-hidden ">
-                    <img
+                    <Image width={800} height={800}
                       src={ideasImg}
                       alt={ideasImgAlt}
                       className="w-full object-cover"
@@ -142,7 +143,7 @@ export default function ChallengeObjectiveSection({
 
       {/* ---------- FULL-WIDTH IMAGE ---------- */}
       <div className="relative mt-10 w-full overflow-hidden">
-        <img
+        <Image width={800} height={800}
           src={challengeImg}
           alt={challengeImgAlt}
           loading="lazy"

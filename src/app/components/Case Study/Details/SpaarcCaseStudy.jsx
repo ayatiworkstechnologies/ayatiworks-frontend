@@ -106,7 +106,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
       />
 
       <WhyWorkedCta
-        caseStudyTitle="How Ayatiworks Built SPAARC into a Pan-India Wellness Movement"
+        caseStudyTitle="SPAARC"
         title="Social Performance"
         points={[
           "SPAARC’s digital ecosystem expanded rapidly through wellness education, therapy explainers, and expert-led content. Reels, patient success stories, and health awareness campaigns helped audiences understand the brand’s philosophy of healing through strength, not surgery",
@@ -163,7 +163,6 @@ Built strong online communities around SPAARC’s wellness philosophy`}
         ctaButtonText="Get in Touch"
         ctaHref="https://www.ayatiworks.com/contact-us"
         ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-foot.jpg"
-        className="py-20 md:py-32"
         ctaHeadlineColor="text-primary"
         ctaCopyColor="text-secondary"
       />
