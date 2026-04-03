@@ -424,7 +424,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
               alt="Logo"
               width={160}
               height={32}
-              className="h-8 w-auto"
+              className="h-10 w-auto"
               priority
             />
           </Link>
@@ -492,7 +492,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
                     src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
                     alt="Logo"
                     width={200}
-                    height={40}
+                    height={50}
                     className="h-10 w-auto"
                     priority
                   />

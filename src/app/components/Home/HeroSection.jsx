@@ -105,7 +105,6 @@ export default function HeroSection() {
         >
           <HeroVideo
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-04.mov"
-            poster="https://ayatiwork.b-cdn.net/banner/banner-04-poster.webp"
             className="w-full h-full object-cover"
             preload="metadata"
           />

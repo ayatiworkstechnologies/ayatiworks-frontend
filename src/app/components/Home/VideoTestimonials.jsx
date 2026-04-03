@@ -94,7 +94,7 @@ export default function VideoTestimonials() {
       {/* Carousel Content */}
       <div className="section-container max-w-[1440px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             {visibleTestimonials.map((item, idx) => (
               <motion.div
                 key={`${currentIndex}-${item.id}`}
