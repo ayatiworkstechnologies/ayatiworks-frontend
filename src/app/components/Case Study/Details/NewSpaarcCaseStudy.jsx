@@ -36,10 +36,10 @@ export default function NewSpaarcCaseStudy() {
       <section className="relative w-full bg-[#17A3DC] text-white py-4 md:py-8 px-6 md:px-12 object-cover">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
           <div className="w-full md:w-3/5 text-left z-10 flex flex-col">
-            <h2 className="text-5xl md:text-6xl font-bold font-primary mb-6 underline decoration-white/40 underline-offset-8">
+            <h2 className="text-3xl md:text-6xl font-bold font-primary mb-6 underline decoration-white/40 underline-offset-8 mt-5">
               The Challenge
             </h2>
-            <p className="text-xl md:text-2xl font-secondary font-light mb-6">
+            <p className="text-lg md:text-2xl font-secondary font-light mb-6">
               A powerful healing system. Limited visibility.
             </p>
             <p className="text-base md:text-lg font-secondary text-white/90 font-light leading-relaxed mb-4">
@@ -83,7 +83,7 @@ export default function NewSpaarcCaseStudy() {
         <div className="max-w-7xl w-full mx-auto relative z-10 flex justify-end px-6 md:px-12">
           {/* Overlapping Text Card on the Right */}
           <div className="w-full md:w-[600px] lg:w-[650px] md:pl-10">
-            <h2 className="text-4xl md:text-6xl font-bold font-primary mb-4 underline underline-offset-8 drop-shadow-md">
+            <h2 className="text-3xl md:text-6xl font-bold font-primary mb-4 underline underline-offset-8 drop-shadow-md">
               The Strategy
             </h2>
             <p className="text-lg md:text-xl font-secondary font-light text-zinc-200 mb-10 drop-shadow-md">
@@ -162,35 +162,35 @@ export default function NewSpaarcCaseStudy() {
       {/* --- THE RESULTS --- */}
       <section className="relative w-full bg-white text-zinc-900 py-8 md:py-12 px-6 md:px-12">
         <div className="max-w-6xl mx-auto flex flex-col ">
-          <h2 className="text-5xl md:text-6xl font-primary font-bold underline decoration-primary/30 underline-offset-8 inline-block text-zinc-800 mb-16">
+          <h2 className="text-4xl md:text-6xl font-primary font-bold underline decoration-primary/30 underline-offset-8 inline-block text-zinc-800 mb-12 md:mb-16">
             The Results
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start border-b border-zinc-200 pb-16">
             <div className="flex items-start gap-6 w-full">
-              <div className="font-primary text-7xl md:text-8xl font-black text-[#1898E0] leading-none shrink-0 tracking-tighter">
+              <div className="font-primary text-5xl md:text-8xl font-black text-[#1898E0] leading-none shrink-0 tracking-tighter">
                 01
               </div>
               <div className="flex flex-col pt-2 md:pt-4 w-full">
-                <h3 className="font-primary text-2xl font-bold text-zinc-800 mb-6 uppercase tracking-wide">National Scale</h3>
-                <ul className="space-y-6 text-xl font-secondary text-zinc-600 divide-y divide-zinc-100">
-                  <li className="pt-2 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-3xl">50+</span> centers across India</div></li>
-                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-3xl">100%</span> awareness in target markets</div></li>
-                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2.5"></div> <div>Recognized leader in non-surgical therapy</div></li>
+                <h3 className="font-primary text-xl md:text-2xl font-bold text-zinc-800 mb-4 md:mb-6 uppercase tracking-wide">National Scale</h3>
+                <ul className="space-y-4 md:space-y-6 text-lg md:text-xl font-secondary text-zinc-600 divide-y divide-zinc-100">
+                  <li className="pt-2 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-2xl md:text-3xl">50+</span> centers across India</div></li>
+                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-2xl md:text-3xl">100%</span> awareness in target markets</div></li>
+                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-2.5"></div> <div>Recognized leader in non-surgical therapy</div></li>
                 </ul>
               </div>
             </div>
 
             <div className="flex items-start gap-6 w-full mt-10 md:mt-0">
-              <div className="font-primary text-7xl md:text-8xl font-black text-[#1898E0] leading-none shrink-0 tracking-tighter">
+              <div className="font-primary text-5xl md:text-8xl font-black text-[#1898E0] leading-none shrink-0 tracking-tighter">
                 02
               </div>
               <div className="flex flex-col pt-2 md:pt-4 w-full">
-                <h3 className="font-primary text-2xl font-bold text-zinc-800 mb-6 uppercase tracking-wide">Business Impact</h3>
-                <ul className="space-y-6 text-xl font-secondary text-zinc-600 divide-y divide-zinc-100">
-                  <li className="pt-2 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-3xl">70%</span> awareness for founders</div></li>
-                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2.5"></div> <div>Strong patient trust & engagement</div></li>
-                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2.5"></div> <div>5-year sustained growth partnership</div></li>
+                <h3 className="font-primary text-xl md:text-2xl font-bold text-zinc-800 mb-4 md:mb-6 uppercase tracking-wide">Business Impact</h3>
+                <ul className="space-y-4 md:space-y-6 text-lg md:text-xl font-secondary text-zinc-600 divide-y divide-zinc-100">
+                  <li className="pt-2 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-3"></div> <div><span className="font-bold font-primary text-zinc-800 text-2xl md:text-3xl">70%</span> awareness for founders</div></li>
+                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-2.5"></div> <div>Strong patient trust & engagement</div></li>
+                  <li className="pt-4 flex items-start gap-4"><div className="w-2 h-2 bg-primary rounded-lg shrink-0 mt-2 md:mt-2.5"></div> <div>5-year sustained growth partnership</div></li>
                 </ul>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function NewSpaarcCaseStudy() {
           <h2 className="text-4xl md:text-6xl font-bold font-primary text-zinc-800 mb-4">
             Social Performance
           </h2>
-          <p className="text-xl font-secondary text-zinc-600 mb-12 ">
+          <p className="text-lg md:text-xl font-secondary text-zinc-600 mb-12 px-4">
             Content didn’t just educate, it built trust in healing without surgery
           </p>
 
@@ -311,6 +311,8 @@ export default function NewSpaarcCaseStudy() {
 
               <div className="flex flex-col w-full sm:w-auto sm:flex-row items-start sm:items-center gap-4 mt-8">
                 <CaseStudyModalForm
+                  autoOpen={true}
+                  autoOpenDelay={3000}
                   buttonText="Download Case study"
                   caseStudyTitle="SPAARC"
                   className="btn-primary no-print shadow-lg w-full sm:w-auto text-center justify-center flex"
