@@ -477,7 +477,7 @@ export const POSTS = [
     bannerTitle:
       "No Traffic. No Leads. Something’s Off.",
     date: "APR 03, 2026",
-    readMins: 25,
+    readMins: 15,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-121.jpg",
     coverAlt:
