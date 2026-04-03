@@ -1,8 +1,9 @@
-import Image from "next/image";
+
 "use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
 
   ArrowRight,
