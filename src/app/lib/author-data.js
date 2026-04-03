@@ -283,54 +283,68 @@ export const POSTS_BY_AUTHOR = {
         "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.",
 
     },
-     {
-    id: 'p19',
-    title:
-      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
-    slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
-    bannerTitle:
-      " 9 SEO Mistakes That Prevent Chennai Businesses from Ranking on Google",
-    date: "Mar 20, 2026",
-    readMins: 30,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-119.jpg",
-    coverAlt:
-      "Common SEO mistakes Chennai businesses make affecting Google rankings",
-    deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
-    category: "SEO Services",
-     seoTitle:
-      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
-    seoDescription:
-      "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
-    
-  },
     {
-    id: 'p20',
-    title:
-      "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
-    slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
-    bannerTitle:
-      "SEO in 2026: What Works, What Fails, What Ranks",
-    date: "Mar 27, 2026",
-    readMins: 25,
-    cover:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-120.jpg",
-    coverAlt:
-      "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
-    deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
-    category: "SEO Services",
-     seoTitle:
-      "9 SEO Strategies That Still Work in 2026 (And 5 That No Longer Do) | Ayatiworks",
-    seoDescription:
-      "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
-    faqs: [
-      {
-        question: "1. ",
-        answer: "",
-      },
-     
-    ],
-  },
+      id: 'p19',
+      title:
+        "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
+      slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
+      bannerTitle:
+        " 9 SEO Mistakes That Prevent Chennai Businesses from Ranking on Google",
+      date: "Mar 20, 2026",
+      readMins: 30,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-119.jpg",
+      coverAlt:
+        "Common SEO mistakes Chennai businesses make affecting Google rankings",
+      deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
+      category: "SEO Services",
+      seoTitle:
+        "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
+      seoDescription:
+        "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
+
+    },
+    {
+      id: 'p20',
+      title:
+        "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
+      slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
+      bannerTitle:
+        "SEO in 2026: What Works, What Fails, What Ranks",
+      date: "Mar 27, 2026",
+      readMins: 25,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-120.jpg",
+      coverAlt:
+        "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
+      deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
+      category: "SEO Services",
+      seoTitle:
+        "9 SEO Strategies That Still Work in 2026 (And 5 That No Longer Do) | Ayatiworks",
+      seoDescription:
+        "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
+    },
+    {
+      id: 'p21',
+      title:
+        "5 Signs Your Business Needs Professional SEO Services Right Now",
+      slug: "/blogs/seo/5-signs-your-business-needs-professional-seo-services-right-now/",
+      bannerTitle:
+        "No Traffic. No Leads. Something’s Off.",
+      date: "APR 03, 2026",
+      readMins: 15,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-121.jpg",
+      coverAlt:
+        "Signs your business needs professional SEO services including low traffic poor rankings and weak online visibility",
+      deck: "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.... ",
+      category: "SEO Services",
+      seoTitle:
+        "5 Signs Your Business Needs Professional SEO Services Right Now | Ayatiworks",
+      seoDescription:
+        "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.",
+
+    },
   ],
 };
 
