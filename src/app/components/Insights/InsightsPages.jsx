@@ -1,9 +1,10 @@
+import Image from "next/image";
 "use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-import Image from "next/image";
+
   ArrowRight,
   Sparkles,
   Trophy,

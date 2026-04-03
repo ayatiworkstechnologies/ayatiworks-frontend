@@ -7,7 +7,6 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import AutoImageSlider from "./AutoImageSlider";
 import {
-import Image from "next/image";
   ShieldCheck,
   Star,
   Search,
@@ -19,6 +18,7 @@ import Image from "next/image";
   FileSpreadsheet,
   Radar,
 } from "lucide-react";
+import Image from "next/image";
 
 const steps = [
   {
@@ -301,7 +301,7 @@ function HeroServicePage() {
             </motion.div>
           </div>
 
-          {/* Right - Sticky Image */}
+          {/* Right - Sticky  */}
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
