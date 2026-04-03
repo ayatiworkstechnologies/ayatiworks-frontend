@@ -23,6 +23,7 @@ import AEOArticlePage117 from "@/src/app/components/Blog/Blog117";
 import AEOArticlePage118 from "@/src/app/components/Blog/Blog118";
 import AEOArticlePage119 from "@/src/app/components/Blog/Blog119";
 import AEOArticlePage120 from "@/src/app/components/Blog/Blog120";
+import AEOArticlePage121 from "@/src/app/components/Blog/Blog121";
 
 // Map IDs to their visual component
 const blogComponents = {
@@ -46,6 +47,7 @@ const blogComponents = {
   118: AEOArticlePage118,
   119: AEOArticlePage119,
   120: AEOArticlePage120,
+  121: AEOArticlePage121,
 };
 
 // 1. AUTO-Rank Engine: Programmatically Generate SEO for every blog post
@@ -184,17 +186,17 @@ export default async function DynamicBlogPage({ params }) {
   // 2. FAQ JSON-LD (Dynamic if faqs exist in POSTS data)
   const faqJsonLd = post.faqs
     ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: post.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: post.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    }
     : null;
 
   // 3. Breadcrumb JSON-LD

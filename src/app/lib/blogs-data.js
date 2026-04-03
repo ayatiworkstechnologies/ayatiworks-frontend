@@ -365,7 +365,7 @@ export const POSTS = [
       },
     ],
   },
-   {
+  {
     id: 119,
     title:
       "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
@@ -380,7 +380,7 @@ export const POSTS = [
       "Common SEO mistakes Chennai businesses make affecting Google rankings",
     deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
     category: "SEO Services",
-     seoTitle:
+    seoTitle:
       "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
     seoDescription:
       "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
@@ -430,7 +430,7 @@ export const POSTS = [
       "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
     deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
     category: "SEO Services",
-     seoTitle:
+    seoTitle:
       "9 SEO Strategies That Still Work in 2026 (And 5 That No Longer Do) | Ayatiworks",
     seoDescription:
       "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
@@ -466,6 +466,56 @@ export const POSTS = [
       {
         question: "8. What is the most effective SEO strategy today?",
         answer: "The most effective approach combines:\n• strong content\n• clear intent targeting\n• technical optimization\n• internal linking\n• continuous updates\n\nSEO today is about building a complete system, not isolated efforts.",
+      },
+    ],
+  },
+  {
+    id: 121,
+    title:
+      "5 Signs Your Business Needs Professional SEO Services Right Now",
+    slug: "/blogs/seo/5-signs-your-business-needs-professional-seo-services-right-now/",
+    bannerTitle:
+      "No Traffic. No Leads. Something’s Off.",
+    date: "APR 03, 2026",
+    readMins: 25,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-121.jpg",
+    coverAlt:
+      "Signs your business needs professional SEO services including low traffic poor rankings and weak online visibility",
+    deck: "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.... ",
+    category: "SEO Services",
+    seoTitle:
+      "5 Signs Your Business Needs Professional SEO Services Right Now | Ayatiworks",
+    seoDescription:
+      "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.",
+    faqs: [
+      {
+        question: "1. How do I know if my business really needs SEO?",
+        answer: "If your website is not bringing consistent traffic, leads, or enquiries, you need SEO. A business website should generate visibility and demand. If it’s not doing that, something is missing in your SEO approach.",
+      },
+      {
+        question: "2. Can I rely only on paid ads instead of SEO?",
+        answer: "You can, but it creates dependency. The moment you stop ads, your visibility drops. SEO builds long-term, organic visibility that continues even without constant spending.",
+      },
+      {
+        question: "3. Why is my website getting traffic but no leads?",
+        answer: "This usually means you are targeting the wrong audience or wrong keywords. Traffic alone is not useful if it doesn’t match user intent or convert into enquiries.",
+      },
+      {
+        question: "4. How long does it take for SEO to show results?",
+        answer: "SEO is not instant. It typically takes a few months to show consistent improvement. However, once it starts working, it delivers stable and long-term results compared to short-term channels.",
+      },
+      {
+        question: "5. What is the difference between doing SEO myself and hiring an agency?",
+        answer: "DIY SEO can work at a basic level. But as competition increases, SEO requires strategy, technical expertise, and consistent execution. An agency brings structure, experience, and scalability.",
+      },
+      {
+        question: "6. Why is my content not ranking even though I publish regularly?",
+        answer: "Publishing content is not enough. If the content is not aligned with search intent, not structured properly, or not part of a larger strategy, it will not rank or perform.",
+      },
+      {
+        question: "7. When is the right time to hire professional SEO services?",
+        answer: "When your website is not delivering results, your competitors are ahead, and your current efforts are not working, that’s the right time. Waiting longer usually increases the gap.",
       },
     ],
   },
