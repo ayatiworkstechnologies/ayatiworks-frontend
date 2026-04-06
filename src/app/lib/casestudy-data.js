@@ -18,7 +18,7 @@ export const caseStudies = [
     description: `Discover how Ayatiworks helped SPAARC expand from a regional therapy center to a pan-India wellness brand through branding, digital marketing, SEO, and awareness campaigns`,
     metaTitle: "Ayatiworks Built SPAARC into a Pan-India Wellness Movement",
     metaDescription: "Discover how Ayatiworks helped SPAARC expand from a regional therapy center to a pan-India wellness brand through branding, digital marketing, SEO, and awareness campaigns",
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/spaarc.jpg",
+    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/img-sp.jpg",
     link: "/case-study/pan-india-brand-growth-for-spaarc-wellness/",
   },
   {
