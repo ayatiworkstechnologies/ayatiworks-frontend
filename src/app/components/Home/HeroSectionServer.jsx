@@ -27,23 +27,31 @@ export default function HeroSectionServer() {
     <section className="bg-white py-6 md:pt-20">
       <div className="mx-auto grid max-w-[1440px] auto-rows-auto grid-cols-2 gap-3 px-4 md:grid-cols-2 md:px-6 xl:h-[600px] xl:grid-cols-12 xl:grid-rows-[180px_172px_168px]">
         <div className="col-span-2 aspect-video overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-8 xl:col-start-1 xl:row-start-1 xl:aspect-auto xl:h-full">
+          <Image
+            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
+            alt="Ayati Works campaign showcase"
+            width={1200}
+            height={675}
+            className="h-full w-full object-cover md:hidden"
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+          />
           <HeroVideo
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-01.mov"
-            className="h-full w-full object-cover"
+            className="hidden h-full w-full object-cover md:block"
             preload="metadata"
             priority={true}
           />
         </div>
 
-        <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-1 xl:aspect-auto xl:h-full">
+        <div className="hidden overflow-hidden rounded-2xl border border-gray-300 md:col-span-1 md:block md:aspect-[16/9] md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-1 xl:aspect-auto xl:h-full">
           <Image
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
             alt="Steel Rods - Manufacturing Excellence"
             width={800}
             height={600}
             className="h-full w-full object-cover"
-            priority
-            fetchPriority="high"
             sizes="(max-width: 1280px) 50vw, 33vw"
           />
         </div>
@@ -64,7 +72,7 @@ export default function HeroSectionServer() {
           <HeroVideo
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-04.mov"
             className="h-full w-full object-cover"
-            preload="metadata"
+            preload="none"
           />
         </div>
 
@@ -96,7 +104,7 @@ export default function HeroSectionServer() {
           <HeroVideo
             src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-07.mov"
             className="h-full w-full object-cover"
-            preload="metadata"
+            preload="none"
           />
         </div>
       </div>

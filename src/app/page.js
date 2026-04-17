@@ -1,78 +1,18 @@
 import dynamic from "next/dynamic";
-import HomeFAQSection from "./components/Home/FAQsection";
+import DeferredHomeSections from "./components/Home/DeferredHomeSections";
+import HeroSection from "./components/Home/HeroSectionServer";
 
-/* ---------- ultra-light skeletons (no CLS) ---------- */
 const Box = ({ h = "h-[360px]" }) => (
   <div className={`${h} w-full rounded-3xl bg-neutral-100 animate-pulse`} />
 );
 
-/* ---------- critical (above the fold) - ✅ NO LONGER DYNAMIC ---------- */
-// ✅ FIXED: Import hero statically for instant SSR/SSG rendering
-import HeroSection from "./components/Home/HeroSectionServer";
-
-/* ---------- below-the-fold (lazy but with SSR enabled) ---------- */
 const PromoHero = dynamic(() => import("./components/Home/PromoHero"), {
-  ssr: true,  // ✅ Enable SSR for better SEO & performance
+  ssr: true,
   loading: () => <Box />,
 });
 
 const AyatiAboutSection = dynamic(
   () => import("./components/Home/AyatiAboutSection"),
-  {
-    ssr: true,  // ✅ Enable SSR
-    loading: () => <Box />,
-  }
-);
-
-const GoogleAdsSection = dynamic(
-  () => import("./components/Home/GoogleAdsSection"),
-  {
-    ssr: true,  // ✅ Enable SSR
-    loading: () => <Box />,
-  }
-);
-
-const CaasEdgeSection = dynamic(
-  () => import("./components/Home/CaasEdgeSection"),
-  {
-    ssr: true,  // ✅ Enable SSR
-    loading: () => <Box />,
-  }
-);
-
-const WhatAyati = dynamic(() => import("./components/Home/WhatAyati"), {
-  ssr: true,  // ✅ Enable SSR
-  loading: () => <Box />,
-});
-
-const PartnersInClimb = dynamic(
-  () => import("./components/Home/PartnersInClimb"),
-  {
-    ssr: true,  // ✅ Enable SSR
-    loading: () => <Box />,
-  }
-);
-
-const PixelsPerfected = dynamic(
-  () => import("./components/Home/PixelsPerfected"),
-  {
-    ssr: true,  // ✅ Enable SSR
-    loading: () => <Box />,
-  }
-);
-
-const DottedWorldMap = dynamic(() => import("./components/Home/MapLocation"), {
-  ssr: true,  // ✅ Enable SSR
-  loading: () => <Box />,
-});
-
-const Connection = dynamic(() => import("./components/Home/Connection"), {
-  ssr: true,  // ✅ Enable SSR
-  loading: () => <Box h="h-[300px]" />,
-});
-
-const VideoTestimonials = dynamic(
-  () => import("./components/Home/VideoTestimonials"),
   {
     ssr: true,
     loading: () => <Box />,
@@ -80,7 +20,6 @@ const VideoTestimonials = dynamic(
 );
 
 export default function HomePage() {
-  // Product
   const productJsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",
@@ -99,7 +38,6 @@ export default function HomePage() {
     },
   };
 
-  // Organization
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -119,7 +57,6 @@ export default function HomePage() {
     ],
   };
 
-  // LocalBusiness
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -169,49 +106,8 @@ export default function HomePage() {
     ],
   };
 
-
-
-  // BreadcrumbList
-  // const breadcrumbJsonLd = {
-  //   "@context": "https://schema.org",
-  //   "@type": "BreadcrumbList",
-  //   itemListElement: [
-  //     {
-  //       "@type": "ListItem",
-  //       position: 1,
-  //       name: "Home",
-  //       item: "https://www.ayatiworks.com/",
-  //     },
-  //     {
-  //       "@type": "ListItem",
-  //       position: 2,
-  //       name: "Services",
-  //       item: "https://www.ayatiworks.com/digital-marketing-services/",
-  //     },
-  //     {
-  //       "@type": "ListItem",
-  //       position: 3,
-  //       name: "Services",
-  //       item: "https://www.ayatiworks.com/content-as-a-service/", 
-  //     },
-  //     {
-  //       "@type": "ListItem",
-  //       position: 4,
-  //       name: "Service",
-  //       item: "https://www.ayatiworks.com/digital-pr/",
-  //     },
-  //     {
-  //       "@type": "ListItem",
-  //       position: 5,
-  //       name: "Service",
-  //       item: "https://www.ayatiworks.com/web-ecommerce/",
-  //     },
-  //   ],
-  // };
-
   return (
     <main className="space-y-8">
-      {/* JSON-LD for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
@@ -227,26 +123,10 @@ export default function HomePage() {
         }}
       />
 
-      {/* <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      /> */}
-
-      {/* above the fold: render ASAP */}
       <HeroSection />
-
-      {/* below the fold: hydrate lazily without blocking */}
       <PromoHero />
       <AyatiAboutSection />
-      <GoogleAdsSection />
-      <CaasEdgeSection />
-      <WhatAyati />
-      <PartnersInClimb />
-      <PixelsPerfected />
-      <VideoTestimonials />
-      <HomeFAQSection />
-      <DottedWorldMap />
-      <Connection />
+      <DeferredHomeSections />
     </main>
   );
 }
