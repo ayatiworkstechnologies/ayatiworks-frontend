@@ -14,7 +14,7 @@ const testimonials = [
     id: 2,
     client: "SPAARC",
     title: "Dr. Kannan Pugazhendi & Mrs. Sujatha Pugazhendi",
-    video: "https://www.youtube.com/shorts/t6k66RCV1PI",
+    video: "https://youtube.com/shorts/2ngCoqHMNlY?feature=share",
   },
 ];
 
