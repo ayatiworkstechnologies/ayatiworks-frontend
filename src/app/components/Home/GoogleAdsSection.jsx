@@ -1,14 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import ReCAPTCHA from "react-google-recaptcha";
+import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 
 export default function GoogleAdsSection() {
   const prefersReducedMotion = useReducedMotion();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
 
   const {
     register,
@@ -18,25 +22,31 @@ export default function GoogleAdsSection() {
   } = useForm();
 
   const onSubmit = async (data) => {
+    if (!captchaToken) {
+      Swal.fire({
+        icon: "warning",
+        title: "reCAPTCHA Required",
+        text: "Please complete the reCAPTCHA verification.",
+        confirmButtonColor: "#facc15",
+      });
+      return;
+    }
+
     try {
       setLoading(true);
-      const response = await fetch(
-        "https://api.ayatiworks.com/api/v1/public/ayatiwork/proposal_lead/records",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-Key":
-              "3bc72efc00a99a7ad1d1e31225c6a3f833218dfb34d88cc6ecb4c2b9562ab0fd",
+      const response = await fetch("/api/submit-proposal", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: {
+            email: data.email,
+            proposal: "Certified by Google",
+            captchaToken,
           },
-          body: JSON.stringify({
-            data: {
-              email: data.email,
-              proposal: "Certified by Google",
-            },
-          }),
-        }
-      );
+        }),
+      });
 
       const result = await response.json();
 
@@ -48,6 +58,8 @@ export default function GoogleAdsSection() {
           confirmButtonColor: "#00A3E0",
         });
         reset();
+        setCaptchaToken(null);
+        recaptchaRef.current?.reset();
       } else {
         throw new Error(result.message || "Failed to submit request");
       }
@@ -141,6 +153,13 @@ export default function GoogleAdsSection() {
                     {loading ? "Submitting..." : "Get a Proposal"}
                   </button>
                 </form>
+                <div className="mt-4 flex justify-center sm:justify-start">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={RECAPTCHA_SITE_KEY}
+                    onChange={setCaptchaToken}
+                  />
+                </div>
               </motion.div>
             </div>
 

@@ -1,6 +1,3 @@
-// app/page.jsx
-"use client";
-
 import dynamic from "next/dynamic";
 import HomeFAQSection from "./components/Home/FAQsection";
 
@@ -11,7 +8,7 @@ const Box = ({ h = "h-[360px]" }) => (
 
 /* ---------- critical (above the fold) - ✅ NO LONGER DYNAMIC ---------- */
 // ✅ FIXED: Import hero statically for instant SSR/SSG rendering
-import HeroSection from "./components/Home/HeroSection";
+import HeroSection from "./components/Home/HeroSectionServer";
 
 /* ---------- below-the-fold (lazy but with SSR enabled) ---------- */
 const PromoHero = dynamic(() => import("./components/Home/PromoHero"), {

@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import Swal from "sweetalert2"; // ✅ Import SweetAlert2
 import ReCAPTCHA from "react-google-recaptcha";
 import { countryCodes } from "../../lib/countryCodes";
+import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 
 export default function Form() {
   const {
@@ -270,7 +271,7 @@ export default function Form() {
           <div className="flex justify-center mb-4">
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="6Le1xZUsAAAAAJFbT12G5WhkpJtbHvAYmaparAWD"
+              sitekey={RECAPTCHA_SITE_KEY}
               onChange={onCaptchaChange}
             />
           </div>

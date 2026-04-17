@@ -1,8 +1,17 @@
 import { NextResponse } from "next/server";
+import { verifyRecaptchaToken } from "../../lib/verify-recaptcha";
 
 export async function POST(request) {
   try {
     const payload = await request.json();
+    const captchaToken = payload.data?.captchaToken;
+
+    const verification = await verifyRecaptchaToken(captchaToken);
+    if (!verification.ok) {
+      return NextResponse.json(verification.body, {
+        status: verification.status,
+      });
+    }
 
     const response = await fetch("https://api.ayatiworks.com/api/v1/public/ayatiwork/career/records", {
       method: "POST",

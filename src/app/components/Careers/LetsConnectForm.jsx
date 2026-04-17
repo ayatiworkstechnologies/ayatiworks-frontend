@@ -1,10 +1,14 @@
 // LetsConnectForm.jsx
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import ReCAPTCHA from "react-google-recaptcha";
+import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 
 export default function LetsConnectForm() {
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
   const {
     register,
     handleSubmit,
@@ -24,6 +28,16 @@ export default function LetsConnectForm() {
   };
 
   const onSubmit = async (data) => {
+    if (!captchaToken) {
+      Swal.fire({
+        icon: "warning",
+        title: "reCAPTCHA Required",
+        text: "Please complete the reCAPTCHA verification.",
+        confirmButtonColor: "#facc15",
+      });
+      return;
+    }
+
     // Show loading modal
     Swal.fire({
       title: "Submitting...",
@@ -48,8 +62,9 @@ export default function LetsConnectForm() {
           role: data.role || "",
           coverletter: data.coverLetter || "",
           additionalinfo: data.additionalInfo || "",
-          resume: resumeBase64 || "No resume attached"
-        }
+          resume: resumeBase64 || "No resume attached",
+          captchaToken,
+        },
       };
 
       const response = await fetch("/api/submit-career", {
@@ -68,6 +83,8 @@ export default function LetsConnectForm() {
           confirmButtonColor: "#3085d6",
         });
         reset();
+        setCaptchaToken(null);
+        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         Swal.fire({
@@ -232,6 +249,14 @@ export default function LetsConnectForm() {
             className="block w-full resize-y rounded-lg border border-primary/90 bg-white px-4 py-3 text-sm text-slate-900 placeholder-primary/80 font-secondary outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
             {...register("additionalInfo")}
           />
+
+          <div className="mt-6 flex justify-center">
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={RECAPTCHA_SITE_KEY}
+              onChange={setCaptchaToken}
+            />
+          </div>
 
           {/* Submit */}
           <div className="mt-7">

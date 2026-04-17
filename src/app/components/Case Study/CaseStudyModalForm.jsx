@@ -13,6 +13,8 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import Swal from "sweetalert2";
 import { createPortal } from "react-dom";
+import ReCAPTCHA from "react-google-recaptcha";
+import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 
 export default function CaseStudyModalForm({
   buttonText = "Enquire About Case Study",
@@ -25,6 +27,8 @@ export default function CaseStudyModalForm({
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
@@ -63,11 +67,23 @@ export default function CaseStudyModalForm({
     setIsOpen(false);
     setTimeout(() => {
       setIsSuccess(false);
+      setCaptchaToken(null);
+      recaptchaRef.current?.reset();
       reset();
     }, 300);
   };
 
   const onSubmit = async (data) => {
+    if (!captchaToken) {
+      Swal.fire({
+        icon: "warning",
+        title: "reCAPTCHA Required",
+        text: "Please complete the reCAPTCHA verification.",
+        confirmButtonColor: "#facc15",
+      });
+      return;
+    }
+
     try {
       setLoading(true);
 
@@ -78,24 +94,22 @@ export default function CaseStudyModalForm({
           phone: data.mobile || "",
           city: data.city || "",
           casestudy_name: caseStudyTitle || "General Inquiry",
+          captchaToken,
         },
       };
 
-      const response = await fetch(
-        "https://api.ayatiworks.com/api/v1/public/ayatiwork/case_study/records",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-API-Key":
-              "3bc72efc00a99a7ad1d1e31225c6a3f833218dfb34d88cc6ecb4c2b9562ab0fd",
-          },
-          body: JSON.stringify(payload),
+      const response = await fetch("/api/submit-case-study", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(payload),
+      });
 
       if (response.ok) {
         setIsSuccess(true);
+        setCaptchaToken(null);
+        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         throw new Error(errorData?.message || `API Error: ${response.status}`);
@@ -228,6 +242,14 @@ export default function CaseStudyModalForm({
                           {errors.city.message}
                         </p>
                       )}
+                    </div>
+
+                    <div className="flex justify-center">
+                      <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey={RECAPTCHA_SITE_KEY}
+                        onChange={setCaptchaToken}
+                      />
                     </div>
 
                     <button

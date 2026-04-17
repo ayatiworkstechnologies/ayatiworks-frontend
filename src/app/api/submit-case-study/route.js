@@ -13,14 +13,18 @@ export async function POST(request) {
       });
     }
 
-    const response = await fetch("https://api.ayatiworks.com/api/v1/public/ayatiwork/contact/records", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-API-Key": "3bc72efc00a99a7ad1d1e31225c6a3f833218dfb34d88cc6ecb4c2b9562ab0fd"
-      },
-      body: JSON.stringify(payload)
-    });
+    const response = await fetch(
+      "https://api.ayatiworks.com/api/v1/public/ayatiwork/case_study/records",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-Key":
+            "3bc72efc00a99a7ad1d1e31225c6a3f833218dfb34d88cc6ecb4c2b9562ab0fd",
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
     if (!response.ok) {
       let errorData;
@@ -30,7 +34,10 @@ export async function POST(request) {
         errorData = await response.text();
       }
       return NextResponse.json(
-        { message: errorData?.message || `API Error: ${response.status}`, details: errorData },
+        {
+          message: errorData?.message || `API Error: ${response.status}`,
+          details: errorData,
+        },
         { status: response.status }
       );
     }
