@@ -280,7 +280,8 @@ export const POSTS = [
   },
   {
     id: 116,
-    title: "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brands",
+    title:
+      "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brands",
     slug: "/blogs/affiliate-marketing-services/affiliate-marketing-ai-era-chennai-brands/",
     bannerTitle:
       "AI Is Rewriting Affiliate Marketing. Smart Brands in Chennai Are Already Scaling.",
@@ -299,8 +300,7 @@ export const POSTS = [
   },
   {
     id: 117,
-    title:
-      "Top 10 SEO Agencies in Chennai – Your Organic Growth Blueprint",
+    title: "Top 10 SEO Agencies in Chennai – Your Organic Growth Blueprint",
     slug: "/blogs/seo/top-10-seo-agencies-in-chennai/",
     bannerTitle:
       " Chennai’s Leading SEO Agencies, Compared for Strategy, Visibility, and Real Organic Growth. ",
@@ -308,12 +308,10 @@ export const POSTS = [
     readMins: 25,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-117.jpg",
-    coverAlt:
-      " Top SEO agencies in Chennai comparison guide ",
+    coverAlt: " Top SEO agencies in Chennai comparison guide ",
     deck: " Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth... ",
     category: "SEO Services",
-    seoTitle:
-      "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
+    seoTitle: "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
     seoDescription:
       "Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth. ",
   },
@@ -337,38 +335,44 @@ export const POSTS = [
     faqs: [
       {
         question: "How much do SEO services cost in Chennai?",
-        answer: "SEO pricing in Chennai usually starts around ₹40,000–₹50,000 per month for basic campaigns and can increase depending on competition, industry, and scope of work. Businesses in competitive sectors often require more content, technical optimisation, and authority building, which increases the overall cost.",
+        answer:
+          "SEO pricing in Chennai usually starts around ₹40,000–₹50,000 per month for basic campaigns and can increase depending on competition, industry, and scope of work. Businesses in competitive sectors often require more content, technical optimisation, and authority building, which increases the overall cost.",
       },
       {
         question: "How long does SEO take to show results?",
-        answer: "Most SEO campaigns take around three to six months to show noticeable improvement, but highly competitive industries may take longer. Results depend on website condition, keyword difficulty, content quality, and consistency of optimisation.",
+        answer:
+          "Most SEO campaigns take around three to six months to show noticeable improvement, but highly competitive industries may take longer. Results depend on website condition, keyword difficulty, content quality, and consistency of optimisation.",
       },
       {
         question: "Is SEO better than paid advertising?",
-        answer: "SEO and paid ads serve different purposes. Paid advertising gives immediate traffic, while SEO builds long-term visibility. Many businesses use both, but SEO is often preferred for sustainable growth because traffic continues even after the initial investment.",
+        answer:
+          "SEO and paid ads serve different purposes. Paid advertising gives immediate traffic, while SEO builds long-term visibility. Many businesses use both, but SEO is often preferred for sustainable growth because traffic continues even after the initial investment.",
       },
       {
         question: "How do I choose the right SEO agency in Chennai?",
-        answer: "Look for agencies that explain their process clearly, provide regular reporting, and focus on long-term strategy rather than quick rankings. Comparing multiple companies, checking case studies, and understanding the scope of work helps in making the right decision.",
+        answer:
+          "Look for agencies that explain their process clearly, provide regular reporting, and focus on long-term strategy rather than quick rankings. Comparing multiple companies, checking case studies, and understanding the scope of work helps in making the right decision.",
       },
       {
         question: "What services are included in professional SEO?",
-        answer: "Professional SEO usually includes technical audits, keyword research, on-page optimisation, content strategy, link building, and performance tracking. Some projects may also include local SEO, ecommerce SEO, or enterprise-level optimisation depending on business needs.",
+        answer:
+          "Professional SEO usually includes technical audits, keyword research, on-page optimisation, content strategy, link building, and performance tracking. Some projects may also include local SEO, ecommerce SEO, or enterprise-level optimisation depending on business needs.",
       },
       {
         question: "Does SEO still work after AI search updates?",
-        answer: "Yes. SEO continues to work, but strategies have evolved. Modern SEO includes structured content, entity optimisation, and answer-focused pages that help websites appear in AI-generated results, featured snippets, and voice search.",
+        answer:
+          "Yes. SEO continues to work, but strategies have evolved. Modern SEO includes structured content, entity optimisation, and answer-focused pages that help websites appear in AI-generated results, featured snippets, and voice search.",
       },
       {
         question: "When should a business start investing in SEO?",
-        answer: "Businesses should consider SEO when they want consistent traffic, better search visibility, and long-term lead generation. Starting early usually gives better results because SEO takes time to build authority and rankings.",
+        answer:
+          "Businesses should consider SEO when they want consistent traffic, better search visibility, and long-term lead generation. Starting early usually gives better results because SEO takes time to build authority and rankings.",
       },
     ],
   },
   {
     id: 119,
-    title:
-      "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
+    title: "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
     slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
     bannerTitle:
       " 9 SEO Mistakes That Prevent Chennai Businesses from Ranking on Google",
@@ -386,42 +390,51 @@ export const POSTS = [
       "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
     faqs: [
       {
-        question: "1. Why is my website not ranking on Google even after doing SEO?",
-        answer: "A website may not rank even after SEO if the optimisation is incomplete or not aligned with search intent. Common reasons include weak content, technical errors, poor keyword targeting, lack of backlinks, or strong competition. Search engines also take time to trust a website, so inconsistent work or stopping SEO too early can prevent rankings from improving.",
+        question:
+          "1. Why is my website not ranking on Google even after doing SEO?",
+        answer:
+          "A website may not rank even after SEO if the optimisation is incomplete or not aligned with search intent. Common reasons include weak content, technical errors, poor keyword targeting, lack of backlinks, or strong competition. Search engines also take time to trust a website, so inconsistent work or stopping SEO too early can prevent rankings from improving.",
       },
       {
-        question: "2. How long does SEO take to show results for a business website?",
-        answer: "SEO usually takes three to six months to show noticeable improvement, but the timeline depends on competition, website quality, and the amount of work done. New websites or highly competitive industries may take longer because search engines need time to evaluate content, authority, and consistency before improving rankings.",
+        question:
+          "2. How long does SEO take to show results for a business website?",
+        answer:
+          "SEO usually takes three to six months to show noticeable improvement, but the timeline depends on competition, website quality, and the amount of work done. New websites or highly competitive industries may take longer because search engines need time to evaluate content, authority, and consistency before improving rankings.",
       },
       {
         question: "3. What are the most common SEO mistakes businesses make?",
-        answer: "Some of the most common SEO mistakes include targeting wrong keywords, ignoring technical issues, publishing content without strategy, expecting fast results, and choosing SEO services based only on price. Many websites also fail to optimise for local search or do not track performance properly, which makes it difficult to understand what needs improvement.",
+        answer:
+          "Some of the most common SEO mistakes include targeting wrong keywords, ignoring technical issues, publishing content without strategy, expecting fast results, and choosing SEO services based only on price. Many websites also fail to optimise for local search or do not track performance properly, which makes it difficult to understand what needs improvement.",
       },
       {
         question: "4. How much do SEO services cost in Chennai?",
-        answer: "SEO pricing in Chennai varies depending on the scope of work and competition level. Basic campaigns may start around ₹40,000–₹50,000 per month, while competitive industries may require higher budgets for content, technical optimisation, and authority building. The exact cost depends on the business goals, website condition, and the level of SEO required.",
+        answer:
+          "SEO pricing in Chennai varies depending on the scope of work and competition level. Basic campaigns may start around ₹40,000–₹50,000 per month, while competitive industries may require higher budgets for content, technical optimisation, and authority building. The exact cost depends on the business goals, website condition, and the level of SEO required.",
       },
       {
-        question: "5. Does local SEO really help businesses in Chennai get more customers?",
-        answer: "Yes, local SEO helps businesses appear in location-based searches such as “near me” or city-specific queries. Optimising Google Business Profile, using local keywords, getting reviews, and maintaining accurate business listings improve visibility in local results. This is especially important for service-based businesses that depend on customers from a specific area.",
+        question:
+          "5. Does local SEO really help businesses in Chennai get more customers?",
+        answer:
+          "Yes, local SEO helps businesses appear in location-based searches such as “near me” or city-specific queries. Optimising Google Business Profile, using local keywords, getting reviews, and maintaining accurate business listings improve visibility in local results. This is especially important for service-based businesses that depend on customers from a specific area.",
       },
       {
-        question: "6. Can SEO still work after AI search and Google algorithm updates?",
-        answer: "SEO still works, but the approach has changed. Search engines now focus more on content quality, relevance, technical performance, and authority instead of just keywords. Websites that provide useful information, have strong structure, and update content regularly are more likely to appear in both traditional search results and AI-generated answers.",
+        question:
+          "6. Can SEO still work after AI search and Google algorithm updates?",
+        answer:
+          "SEO still works, but the approach has changed. Search engines now focus more on content quality, relevance, technical performance, and authority instead of just keywords. Websites that provide useful information, have strong structure, and update content regularly are more likely to appear in both traditional search results and AI-generated answers.",
       },
       {
         question: "7. When should a business hire a professional SEO agency?",
-        answer: "A business should consider hiring an SEO agency when competition is high, rankings are not improving, or there is no internal team to manage optimisation. Professional SEO services help with strategy, technical fixes, content planning, and performance tracking, which makes it easier to achieve steady long-term growth instead of temporary ranking changes.",
+        answer:
+          "A business should consider hiring an SEO agency when competition is high, rankings are not improving, or there is no internal team to manage optimisation. Professional SEO services help with strategy, technical fixes, content planning, and performance tracking, which makes it easier to achieve steady long-term growth instead of temporary ranking changes.",
       },
     ],
   },
   {
     id: 120,
-    title:
-      "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
+    title: "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
     slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
-    bannerTitle:
-      "SEO in 2026: What Works, What Fails, What Ranks",
+    bannerTitle: "SEO in 2026: What Works, What Fails, What Ranks",
     date: "Mar 27, 2026",
     readMins: 25,
     cover:
@@ -437,45 +450,51 @@ export const POSTS = [
     faqs: [
       {
         question: "1. Does SEO still work in 2026?",
-        answer: "Yes, SEO is still one of the most effective digital marketing strategies. However, the approach has changed. Success now depends on content quality, user intent, and overall website experience rather than just keywords and backlinks.",
+        answer:
+          "Yes, SEO is still one of the most effective digital marketing strategies. However, the approach has changed. Success now depends on content quality, user intent, and overall website experience rather than just keywords and backlinks.",
       },
       {
         question: "2. What is the biggest change in SEO today?",
-        answer: "The biggest shift is the move toward intent-based and AI-driven search. Search engines now focus on understanding user queries and delivering the most relevant and helpful results, not just matching keywords.",
+        answer:
+          "The biggest shift is the move toward intent-based and AI-driven search. Search engines now focus on understanding user queries and delivering the most relevant and helpful results, not just matching keywords.",
       },
       {
         question: "3. What is AEO and why is it important?",
-        answer: "AEO (Answer Engine Optimization) focuses on structuring content so it can be directly picked up by search engines and AI tools as answers. This improves visibility in featured snippets and AI-generated results.",
+        answer:
+          "AEO (Answer Engine Optimization) focuses on structuring content so it can be directly picked up by search engines and AI tools as answers. This improves visibility in featured snippets and AI-generated results.",
       },
       {
         question: "4. What is GEO in SEO?",
-        answer: "GEO (Generative Engine Optimization) refers to optimizing content for AI-driven search platforms. It involves creating clear, structured, and trustworthy content that AI systems can easily interpret and present.",
+        answer:
+          "GEO (Generative Engine Optimization) refers to optimizing content for AI-driven search platforms. It involves creating clear, structured, and trustworthy content that AI systems can easily interpret and present.",
       },
       {
         question: "5. How long does SEO take to show results?",
-        answer: "SEO is a long-term strategy. Depending on competition and consistency, it can take a few months to start seeing results. However, once established, it delivers sustainable growth.",
+        answer:
+          "SEO is a long-term strategy. Depending on competition and consistency, it can take a few months to start seeing results. However, once established, it delivers sustainable growth.",
       },
       {
         question: "6. Is content still important for SEO?",
-        answer: "Yes, content remains a core part of SEO. But it must be helpful, relevant, and well-structured. Simply publishing content without strategy will not produce results.",
+        answer:
+          "Yes, content remains a core part of SEO. But it must be helpful, relevant, and well-structured. Simply publishing content without strategy will not produce results.",
       },
       {
         question: "7. Should businesses focus more on SEO or AI search?",
-        answer: "Both are connected. SEO now includes optimizing for AI search. Businesses should focus on creating content that works for both traditional search engines and AI-driven platforms.",
+        answer:
+          "Both are connected. SEO now includes optimizing for AI search. Businesses should focus on creating content that works for both traditional search engines and AI-driven platforms.",
       },
       {
         question: "8. What is the most effective SEO strategy today?",
-        answer: "The most effective approach combines:\n• strong content\n• clear intent targeting\n• technical optimization\n• internal linking\n• continuous updates\n\nSEO today is about building a complete system, not isolated efforts.",
+        answer:
+          "The most effective approach combines:\n• strong content\n• clear intent targeting\n• technical optimization\n• internal linking\n• continuous updates\n\nSEO today is about building a complete system, not isolated efforts.",
       },
     ],
   },
   {
     id: 121,
-    title:
-      "5 Signs Your Business Needs Professional SEO Services Right Now",
+    title: "5 Signs Your Business Needs Professional SEO Services Right Now",
     slug: "/blogs/seo/5-signs-your-business-needs-professional-seo-services-right-now/",
-    bannerTitle:
-      "No Traffic. No Leads. Something’s Off.",
+    bannerTitle: "No Traffic. No Leads. Something’s Off.",
     date: "APR 03, 2026",
     readMins: 15,
     cover:
@@ -491,47 +510,54 @@ export const POSTS = [
     faqs: [
       {
         question: "1. How do I know if my business really needs SEO?",
-        answer: "If your website is not bringing consistent traffic, leads, or enquiries, you need SEO. A business website should generate visibility and demand. If it’s not doing that, something is missing in your SEO approach.",
+        answer:
+          "If your website is not bringing consistent traffic, leads, or enquiries, you need SEO. A business website should generate visibility and demand. If it’s not doing that, something is missing in your SEO approach.",
       },
       {
         question: "2. Can I rely only on paid ads instead of SEO?",
-        answer: "You can, but it creates dependency. The moment you stop ads, your visibility drops. SEO builds long-term, organic visibility that continues even without constant spending.",
+        answer:
+          "You can, but it creates dependency. The moment you stop ads, your visibility drops. SEO builds long-term, organic visibility that continues even without constant spending.",
       },
       {
         question: "3. Why is my website getting traffic but no leads?",
-        answer: "This usually means you are targeting the wrong audience or wrong keywords. Traffic alone is not useful if it doesn’t match user intent or convert into enquiries.",
+        answer:
+          "This usually means you are targeting the wrong audience or wrong keywords. Traffic alone is not useful if it doesn’t match user intent or convert into enquiries.",
       },
       {
         question: "4. How long does it take for SEO to show results?",
-        answer: "SEO is not instant. It typically takes a few months to show consistent improvement. However, once it starts working, it delivers stable and long-term results compared to short-term channels.",
+        answer:
+          "SEO is not instant. It typically takes a few months to show consistent improvement. However, once it starts working, it delivers stable and long-term results compared to short-term channels.",
       },
       {
-        question: "5. What is the difference between doing SEO myself and hiring an agency?",
-        answer: "DIY SEO can work at a basic level. But as competition increases, SEO requires strategy, technical expertise, and consistent execution. An agency brings structure, experience, and scalability.",
+        question:
+          "5. What is the difference between doing SEO myself and hiring an agency?",
+        answer:
+          "DIY SEO can work at a basic level. But as competition increases, SEO requires strategy, technical expertise, and consistent execution. An agency brings structure, experience, and scalability.",
       },
       {
-        question: "6. Why is my content not ranking even though I publish regularly?",
-        answer: "Publishing content is not enough. If the content is not aligned with search intent, not structured properly, or not part of a larger strategy, it will not rank or perform.",
+        question:
+          "6. Why is my content not ranking even though I publish regularly?",
+        answer:
+          "Publishing content is not enough. If the content is not aligned with search intent, not structured properly, or not part of a larger strategy, it will not rank or perform.",
       },
       {
-        question: "7. When is the right time to hire professional SEO services?",
-        answer: "When your website is not delivering results, your competitors are ahead, and your current efforts are not working, that’s the right time. Waiting longer usually increases the gap.",
+        question:
+          "7. When is the right time to hire professional SEO services?",
+        answer:
+          "When your website is not delivering results, your competitors are ahead, and your current efforts are not working, that’s the right time. Waiting longer usually increases the gap.",
       },
     ],
   },
   {
     id: 122,
-    title:
-      "Local SEO in Chennai: How to Rank in Maps & ‘Near Me’ Searches",
+    title: "Local SEO in Chennai: How to Rank in Maps & ‘Near Me’ Searches",
     slug: "/blogs/seo/local-seo-in-chennai-how-to-rank-in-maps-near-me-searches/",
-    bannerTitle:
-      "Be the First Business Chennai Finds. Not Your Competitor.",
+    bannerTitle: "Be the First Business Chennai Finds. Not Your Competitor.",
     date: "APR 10, 2026",
     readMins: 20,
     cover:
       "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-122.jpg",
-    coverAlt:
-      "Local SEO Chennai Google Maps ranking strategy",
+    coverAlt: "Local SEO Chennai Google Maps ranking strategy",
     deck: "Struggling to rank locally? Discover proven Local SEO strategies in Chennai to dominate Google Maps and “near me” searches. Drive more calls, visits & leads.... ",
     category: "SEO Services",
     seoTitle:
@@ -540,41 +566,125 @@ export const POSTS = [
       "Struggling to rank locally? Discover proven Local SEO strategies in Chennai to dominate Google Maps and “near me” searches. Drive more calls, visits & leads.",
     faqs: [
       {
-        question: "1. What is Local SEO and why is it important for Chennai businesses?",
-        answer: "Local SEO is the process of optimizing your online presence to attract customers from a specific geographic area, such as Chennai. It is important because most users searching for services like \"near me\" or \"in Chennai\" have high purchase intent. By ranking in Google Maps and local search results, businesses can capture ready-to-convert leads, increase walk-ins, and generate consistent inbound enquiries without relying solely on paid ads.",
+        question:
+          "1. What is Local SEO and why is it important for Chennai businesses?",
+        answer:
+          'Local SEO is the process of optimizing your online presence to attract customers from a specific geographic area, such as Chennai. It is important because most users searching for services like "near me" or "in Chennai" have high purchase intent. By ranking in Google Maps and local search results, businesses can capture ready-to-convert leads, increase walk-ins, and generate consistent inbound enquiries without relying solely on paid ads.',
       },
       {
-        question: "2. How does Google decide which businesses appear in the local map pack?",
-        answer: "Google ranks businesses in the local map pack based on three primary factors: relevance, proximity, and prominence. Relevance measures how well your business matches the search query, proximity considers how close your business is to the user, and prominence evaluates your overall credibility through reviews, backlinks, and online presence. Businesses that optimize all three consistently are more likely to rank in the top 3 results.",
+        question:
+          "2. How does Google decide which businesses appear in the local map pack?",
+        answer:
+          "Google ranks businesses in the local map pack based on three primary factors: relevance, proximity, and prominence. Relevance measures how well your business matches the search query, proximity considers how close your business is to the user, and prominence evaluates your overall credibility through reviews, backlinks, and online presence. Businesses that optimize all three consistently are more likely to rank in the top 3 results.",
       },
       {
         question: "3. How can I rank higher on Google Maps in Chennai?",
-        answer: "To rank higher on Google Maps in Chennai, businesses need to fully optimize their Google Business Profile, use location-specific keywords, maintain consistent business information across directories, actively collect and respond to customer reviews, and build local backlinks. Regular updates, user engagement, and strong authority signals significantly improve visibility in competitive areas.",
+        answer:
+          "To rank higher on Google Maps in Chennai, businesses need to fully optimize their Google Business Profile, use location-specific keywords, maintain consistent business information across directories, actively collect and respond to customer reviews, and build local backlinks. Regular updates, user engagement, and strong authority signals significantly improve visibility in competitive areas.",
       },
       {
         question: "4. How long does Local SEO take to show results?",
-        answer: "Local SEO typically shows initial improvements within 4 to 6 weeks, especially if the business profile is well-optimized. However, achieving top rankings in competitive Chennai markets usually takes 3 to 6 months of consistent effort. Long-term dominance requires ongoing optimization, review generation, and authority building over 6 to 12 months.",
+        answer:
+          "Local SEO typically shows initial improvements within 4 to 6 weeks, especially if the business profile is well-optimized. However, achieving top rankings in competitive Chennai markets usually takes 3 to 6 months of consistent effort. Long-term dominance requires ongoing optimization, review generation, and authority building over 6 to 12 months.",
       },
       {
-        question: "5. Are \"near me\" searches really important for local businesses?",
-        answer: "Yes, \"near me\" searches are highly important because they indicate strong user intent. These searches are usually performed by users who are ready to take immediate action, such as calling, visiting, or purchasing. Optimizing for \"near me\" queries helps businesses appear in high-conversion moments, making them one of the most valuable traffic sources in Local SEO.",
+        question:
+          '5. Are "near me" searches really important for local businesses?',
+        answer:
+          'Yes, "near me" searches are highly important because they indicate strong user intent. These searches are usually performed by users who are ready to take immediate action, such as calling, visiting, or purchasing. Optimizing for "near me" queries helps businesses appear in high-conversion moments, making them one of the most valuable traffic sources in Local SEO.',
       },
       {
         question: "6. Do reviews impact local SEO rankings in Chennai?",
-        answer: "Yes, reviews are a major ranking factor in Local SEO. Google considers the number of reviews, average rating, recency, and how businesses respond to them. A steady flow of positive, authentic reviews improves both rankings and customer trust. Businesses with strong review profiles tend to attract more clicks, calls, and conversions.",
+        answer:
+          "Yes, reviews are a major ranking factor in Local SEO. Google considers the number of reviews, average rating, recency, and how businesses respond to them. A steady flow of positive, authentic reviews improves both rankings and customer trust. Businesses with strong review profiles tend to attract more clicks, calls, and conversions.",
+      },
+    ],
+  },
+  {
+    id: 123,
+    title:
+      "Performance Marketing vs SEO: What Should Chennai Businesses Invest In?",
+    slug: "/blogs/digital-marketing-services/performance-marketing-vs-seo-what-should-chennai-businesses-invest-in/",
+    bannerTitle:
+      "Scale Fast or Build Sustainable Growth? Choose the Right Digital Strategy.",
+    subline:
+      "A practical breakdown for Chennai businesses to invest smarter in 2026.",
+    date: "APR 23, 2026",
+    readMins: 20,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-123.jpg",
+    coverAlt: "SEO vs performance marketing strategy comparison",
+    deck: "Confused between SEO and performance marketing? Discover what works best for Chennai businesses in 2026 based on budget, ROI, and growth stage.",
+    category: "Digital Marketing Services",
+    ctaname: "Get a Strategy That Actually Converts",
+    ctahref: "/contact",
+    seoTitle:
+      "Performance Marketing vs SEO: What Should Chennai Businesses Invest In? (2026 Guide)",
+    seoDescription:
+      "Confused between SEO and performance marketing? Discover what works best for Chennai businesses in 2026 based on budget, ROI, and growth stage.",
+    faqs: [
+      {
+        question: "Is SEO better than performance marketing?",
+        answer: "No. Each serves a different purpose, SEO for long-term growth, performance marketing for immediate results.",
+      },
+      {
+        question: "How long does SEO take in Chennai?",
+        answer: "Typically 3–6 months, depending on competition and execution quality.",
+      },
+      {
+        question: "Is performance marketing expensive?",
+        answer: "It can be, especially in competitive industries where cost per click increases.",
+      },
+      {
+        question: "Can small businesses invest in SEO?",
+        answer: "Yes. SEO is one of the most cost-effective long-term strategies for small businesses.",
+      },
+      {
+        question: "Should I run ads and SEO together?",
+        answer: "Yes. A hybrid strategy delivers the most balanced and scalable growth.",
       },
     ],
   },
   // {
-  //   id: 111,
+  //   id: 123,
   //   title: "",
   //   slug: "/blogs/",
   //   bannerTitle: "",
-  //   date: "",
-  //   readMins: 11,
-  //   cover: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-110.jpg",
+  //   date: "APR 10, 2026",
+  //   readMins: 20,
+  //   cover:
+  //     "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-122.jpg",
   //   coverAlt: "",
   //   deck: "",
   //   category: "",
+  //   seoTitle: "",
+  //   seoDescription: "",
+  //   faqs: [
+  //     {
+  //       question: "1.",
+  //       answer: "",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 123,
+  //   title: "",
+  //   slug: "/blogs/",
+  //   bannerTitle: "",
+  //   date: "APR 10, 2026",
+  //   readMins: 20,
+  //   cover:
+  //     "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-122.jpg",
+  //   coverAlt: "",
+  //   deck: "",
+  //   category: "",
+  //   seoTitle: "",
+  //   seoDescription: "",
+  //   faqs: [
+  //     {
+  //       question: "1.",
+  //       answer: "",
+  //     },
+  //   ],
   // },
 ];
