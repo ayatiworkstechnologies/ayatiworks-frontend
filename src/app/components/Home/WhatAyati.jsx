@@ -13,7 +13,11 @@ export default function WhatAyati() {
   const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
   const item = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const cards = [
@@ -24,14 +28,35 @@ export default function WhatAyati() {
       description: "Data-driven strategies to amplify your brand presence.",
       list: [
         { label: "SEO Services", href: "/digital-marketing-services/seo" },
-        { label: "Social Media Marketing", href: "/digital-marketing-services/social-media-marketing" },
-        { label: "Email Marketing", href: "/digital-marketing-services/email-marketing" },
-        { label: "Instagram Marketing", href: "/digital-marketing-services/instagram-marketing" },
-        { label: "Affiliate Marketing", href: "/digital-marketing-services/affiliate-marketing" },
-        { label: "Programmatic Marketing", href: "/digital-marketing-services/programmatic-marketing" },
-        { label: "Video Marketing", href: "/digital-marketing-services/video-marketing" },
+        {
+          label: "Social Media Marketing",
+          href: "/digital-marketing-services/social-media-marketing",
+        },
+        {
+          label: "Email Marketing",
+          href: "/digital-marketing-services/email-marketing",
+        },
+        {
+          label: "Instagram Marketing",
+          href: "/digital-marketing-services/instagram-marketing",
+        },
+        {
+          label: "Affiliate Marketing",
+          href: "/digital-marketing-services/affiliate-marketing",
+        },
+        {
+          label: "Programmatic Marketing",
+          href: "/digital-marketing-services/programmatic-marketing",
+        },
+        {
+          label: "Video Marketing",
+          href: "/digital-marketing-services/video-marketing",
+        },
       ],
-      cta: { label: "Explore Digital Marketing", href: "/digital-marketing-services" },
+      cta: {
+        label: "Explore Digital Marketing",
+        href: "/digital-marketing-services",
+      },
     },
     {
       title: "Content as a Service",
@@ -39,9 +64,18 @@ export default function WhatAyati() {
       basePath: "/content-as-a-service",
       description: "Compelling storytelling that connects and converts.",
       list: [
-        { label: "Multi-lingual Marketing", href: "/content-as-a-service/multilingual-marketing" },
-        { label: "Brand Consultant", href: "/content-as-a-service/branding-service" },
-        { label: "Video Creation", href: "/content-as-a-service/video-creation" },
+        {
+          label: "Multi-lingual Marketing",
+          href: "/content-as-a-service/multilingual-marketing",
+        },
+        {
+          label: "Brand Service",
+          href: "/content-as-a-service/branding-service",
+        },
+        {
+          label: "Video Creation",
+          href: "/content-as-a-service/video-creation",
+        },
       ],
       cta: { label: "Explore Content Services", href: "/content-as-a-service" },
     },
@@ -52,8 +86,14 @@ export default function WhatAyati() {
       description: "Building credibility and managing your brand reputation.",
       list: [
         { label: "Digital PR", href: "/digital-pr/digital-pr-service" },
-        { label: "Influencer Marketing", href: "/digital-pr/influencer-marketing" },
-        { label: "Online Reputation", href: "/digital-pr/online-reputation-media-outreach" },
+        {
+          label: "Influencer Marketing",
+          href: "/digital-pr/influencer-marketing",
+        },
+        {
+          label: "Online Reputation",
+          href: "/digital-pr/online-reputation-media-outreach",
+        },
       ],
       cta: { label: "Explore Digital PR", href: "/digital-pr" },
     },
@@ -66,7 +106,10 @@ export default function WhatAyati() {
         { label: "UX/UI Design", href: "/web-ecommerce/ux-ui-design" },
         { label: "Web Development", href: "/web-ecommerce/web-development" },
         { label: "Web Maintenance", href: "/web-ecommerce/web-maintenance" },
-        { label: "Shopify Development", href: "/web-ecommerce/shopify-development" },
+        {
+          label: "Shopify Development",
+          href: "/web-ecommerce/shopify-development",
+        },
         { label: "E-commerce Solutions", href: "/web-ecommerce" },
       ],
       cta: { label: "Explore Web & E-commerce", href: "/web-ecommerce" },
@@ -153,12 +196,18 @@ export default function WhatAyati() {
               <div className="mb-8 sm:mb-10 flex-grow">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 sm:gap-y-3">
                   {card.list.map((item) => (
-                    <li key={item.href} className="border-b border-gray-50 last:border-0 pb-2 sm:border-0 sm:pb-0">
+                    <li
+                      key={item.href}
+                      className="border-b border-gray-50 last:border-0 pb-2 sm:border-0 sm:pb-0"
+                    >
                       <Link
                         href={item.href}
                         className="group/link flex items-center text-sm font-medium text-gray-600 hover:text-secondary transition-colors"
                       >
-                        <ChevronRight size={14} className="text-primary mr-2 opacity-50 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all" />
+                        <ChevronRight
+                          size={14}
+                          className="text-primary mr-2 opacity-50 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all"
+                        />
                         {item.label}
                       </Link>
                     </li>
@@ -175,7 +224,10 @@ export default function WhatAyati() {
                   <span className="text-base sm:text-lg group-hover/btn:underline decoration-2 decoration-primary/30 underline-offset-4 transition-all">
                     {card.cta.label}
                   </span>
-                  <ArrowRight size={18} className="transform group-hover/btn:translate-x-1 transition-transform" />
+                  <ArrowRight
+                    size={18}
+                    className="transform group-hover/btn:translate-x-1 transition-transform"
+                  />
                 </Link>
 
                 {/* Decorative Number/Element */}

@@ -4,13 +4,29 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { Navbar, Menu, MenuHandler, MenuList, Button, Drawer } from "@material-tailwind/react";
-import { ChevronDownIcon, XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import {
+  Navbar,
+  Menu,
+  MenuHandler,
+  MenuList,
+  Button,
+  Drawer,
+} from "@material-tailwind/react";
+import {
+  ChevronDownIcon,
+  XMarkIcon,
+  Bars3Icon,
+} from "@heroicons/react/24/solid";
 import MobileMenu from "./MobileMenu";
 
 /* ---------------- NAV JSON ---------------- */
 export const NAV = [
-  { kind: "logo", src: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg", alt: "Logo", to: "/" },
+  {
+    kind: "logo",
+    src: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg",
+    alt: "Logo",
+    to: "/",
+  },
   {
     kind: "dropdown",
     title: "About",
@@ -29,22 +45,52 @@ export const NAV = [
         basePath: "/digital-marketing-services",
         items: [
           { label: "SEO Services", path: "/digital-marketing-services/seo" },
-          { label: "Social Media Marketing", path: "/digital-marketing-services/social-media-marketing" },
-          { label: "Email Marketing", path: "/digital-marketing-services/email-marketing" },
-          { label: "Instagram Marketing", path: "/digital-marketing-services/instagram-marketing" },
-          { label: "Affiliate Marketing", path: "/digital-marketing-services/affiliate-marketing" },
-          { label: "Advertising Services", path: "/digital-marketing-services/advertising-services" },
-          { label: "Programmatic Marketing", path: "/digital-marketing-services/programmatic-marketing" },
-          { label: "Video Marketing", path: "/digital-marketing-services/video-marketing" },
+          {
+            label: "Social Media Marketing",
+            path: "/digital-marketing-services/social-media-marketing",
+          },
+          {
+            label: "Email Marketing",
+            path: "/digital-marketing-services/email-marketing",
+          },
+          {
+            label: "Instagram Marketing",
+            path: "/digital-marketing-services/instagram-marketing",
+          },
+          {
+            label: "Affiliate Marketing",
+            path: "/digital-marketing-services/affiliate-marketing",
+          },
+          {
+            label: "Advertising Services",
+            path: "/digital-marketing-services/advertising-services",
+          },
+          {
+            label: "Programmatic Marketing",
+            path: "/digital-marketing-services/programmatic-marketing",
+          },
+          {
+            label: "Video Marketing",
+            path: "/digital-marketing-services/video-marketing",
+          },
         ],
       },
       {
         heading: "Content as a Service",
         basePath: "/content-as-a-service",
         items: [
-          { label: "Brand Consultant", path: "/content-as-a-service/branding-service" },
-          { label: "Video Creation", path: "/content-as-a-service/video-creation" },
-          { label: "Multi-lingual Marketing", path: "/content-as-a-service/multilingual-marketing" },
+          {
+            label: "Branding Service",
+            path: "/content-as-a-service/branding-service",
+          },
+          {
+            label: "Video Creation",
+            path: "/content-as-a-service/video-creation",
+          },
+          {
+            label: "Multi-lingual Marketing",
+            path: "/content-as-a-service/multilingual-marketing",
+          },
         ],
       },
       {
@@ -52,8 +98,14 @@ export const NAV = [
         basePath: "/digital-pr",
         items: [
           { label: "Digital PR", path: "/digital-pr/digital-pr-services" },
-          { label: "Influencer Marketing", path: "/digital-pr/influencer-marketing" },
-          { label: "Online Reputation & Media Outreach", path: "/digital-pr/online-reputation-media-outreach" },
+          {
+            label: "Influencer Marketing",
+            path: "/digital-pr/influencer-marketing",
+          },
+          {
+            label: "Online Reputation & Media Outreach",
+            path: "/digital-pr/online-reputation-media-outreach",
+          },
         ],
       },
       {
@@ -61,9 +113,18 @@ export const NAV = [
         basePath: "/web-ecommerce",
         items: [
           { label: "UX/UI Design", path: "/web-ecommerce/ux-ui-design" },
-          { label: "Web Development Services", path: "/web-ecommerce/web-development" },
-          { label: "Web Maintenance Services", path: "/web-ecommerce/web-maintenance" },
-          { label: "Shopify Development Services", path: "/web-ecommerce/shopify-development" },
+          {
+            label: "Web Development Services",
+            path: "/web-ecommerce/web-development",
+          },
+          {
+            label: "Web Maintenance Services",
+            path: "/web-ecommerce/web-maintenance",
+          },
+          {
+            label: "Shopify Development Services",
+            path: "/web-ecommerce/shopify-development",
+          },
           { label: "E-commerce", path: "/web-ecommerce/ecommerce-solutions" },
         ],
       },
@@ -83,11 +144,19 @@ export const NAV = [
 
 /* ---------------- UTIL ---------------- */
 const cx = (...a) => a.filter(Boolean).join(" ");
-const anyMatch = (paths, pathname) => paths.some((p) => p && (pathname === p || pathname.startsWith(p + "/")));
+const anyMatch = (paths, pathname) =>
+  paths.some((p) => p && (pathname === p || pathname.startsWith(p + "/")));
 
 /* ---------------- SIMPLE DROPDOWN ---------------- */
 /* Click title => go to basePath; hover => open dropdown */
-function SimpleDropdown({ title, items, active, pathname, onSelect, basePath }) {
+function SimpleDropdown({
+  title,
+  items,
+  active,
+  pathname,
+  onSelect,
+  basePath,
+}) {
   const [open, setOpen] = useState(false);
   const btn = useRef(null);
 
@@ -122,8 +191,18 @@ function SimpleDropdown({ title, items, active, pathname, onSelect, basePath }) 
   };
 
   return (
-    <div className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={close}>
-      <Menu open={open} handler={setOpen} allowHover placement="bottom-start" offset={12}>
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={close}
+    >
+      <Menu
+        open={open}
+        handler={setOpen}
+        allowHover
+        placement="bottom-start"
+        offset={12}
+      >
         <MenuHandler>
           <Button
             ref={btn}
@@ -135,19 +214,31 @@ function SimpleDropdown({ title, items, active, pathname, onSelect, basePath }) 
               "flex items-center gap-2 text-sm border-none font-medium px-4 py-2 rounded-full transition",
               active || open
                 ? "bg-primary font-secondary text-white font-semibold shadow-lg cursor-pointer"
-                : "text-black font-secondary font-semibold hover:bg-primary hover:text-white cursor-pointer"
+                : "text-black font-secondary font-semibold hover:bg-primary hover:text-white cursor-pointer",
             )}
             aria-haspopup="menu"
             aria-expanded={open}
-            aria-label={basePath ? `${title} (click to open page, hover for menu)` : title}
-            title={basePath ? `${title} – click to open, hover for menu` : title}
+            aria-label={
+              basePath ? `${title} (click to open page, hover for menu)` : title
+            }
+            title={
+              basePath ? `${title} – click to open, hover for menu` : title
+            }
           >
             {title}
-            <ChevronDownIcon className={cx("h-3 w-3 transition-transform", open && "-rotate-180")} />
+            <ChevronDownIcon
+              className={cx(
+                "h-3 w-3 transition-transform",
+                open && "-rotate-180",
+              )}
+            />
           </Button>
         </MenuHandler>
 
-        <MenuList className="p-2 mt-3 border-none rounded-xl shadow-xl min-w-[220px] ring-1" onClick={(e) => e.stopPropagation()}>
+        <MenuList
+          className="p-2 mt-3 border-none rounded-xl shadow-xl min-w-[220px] ring-1"
+          onClick={(e) => e.stopPropagation()}
+        >
           {basePath && (
             <button
               type="button"
@@ -175,7 +266,9 @@ function SimpleDropdown({ title, items, active, pathname, onSelect, basePath }) 
                 }}
                 className={cx(
                   "block w-full text-left text-sm px-3 py-2 rounded-lg cursor-pointer",
-                  isItemActive ? "bg-primary font-primary text-xl text-white" : "text-black font-primary text-xl hover:bg-primary hover:text-white"
+                  isItemActive
+                    ? "bg-primary font-primary text-xl text-white"
+                    : "text-black font-primary text-xl hover:bg-primary hover:text-white",
                 )}
               >
                 {item.label}
@@ -197,7 +290,8 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
 
   useEffect(() => {
     const onDoc = (e) => {
-      if (wrapRef.current && !wrapRef.current.contains(e.target)) setOpen(false);
+      if (wrapRef.current && !wrapRef.current.contains(e.target))
+        setOpen(false);
     };
     const onKey = (e) => {
       if (!open) return;
@@ -205,7 +299,8 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
         setOpen(false);
         btnRef.current?.focus();
       }
-      if (e.key === "ArrowDown") setActiveIdx((i) => Math.min(i + 1, groups.length - 1));
+      if (e.key === "ArrowDown")
+        setActiveIdx((i) => Math.min(i + 1, groups.length - 1));
       if (e.key === "ArrowUp") setActiveIdx((i) => Math.max(i - 1, 0));
     };
     document.addEventListener("mousedown", onDoc);
@@ -219,21 +314,39 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
   const close = () => setOpen(false);
 
   return (
-    <div ref={wrapRef} className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={close}>
-      <Menu open={open} handler={setOpen} allowHover placement="bottom-start" offset={12}>
+    <div
+      ref={wrapRef}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={close}
+    >
+      <Menu
+        open={open}
+        handler={setOpen}
+        allowHover
+        placement="bottom-start"
+        offset={12}
+      >
         <MenuHandler>
           <Button
             ref={btnRef}
             variant="text"
             className={cx(
               "flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-full transition cursor-pointer",
-              active || open ? "bg-primary font-secondary font-semibold text-white shadow-xl" : "text-black font-secondary font-semibold hover:bg-primary hover:text-white"
+              active || open
+                ? "bg-primary font-secondary font-semibold text-white shadow-xl"
+                : "text-black font-secondary font-semibold hover:bg-primary hover:text-white",
             )}
             aria-haspopup="menu"
             aria-expanded={open}
           >
             {title}
-            <ChevronDownIcon className={cx("h-3 w-3 transition-transform", open && "-rotate-180")} />
+            <ChevronDownIcon
+              className={cx(
+                "h-3 w-3 transition-transform",
+                open && "-rotate-180",
+              )}
+            />
           </Button>
         </MenuHandler>
 
@@ -254,8 +367,10 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
                     }}
                     className={cx(
                       "block w-full text-left px-4 py-3 text-xl font-primary transition cursor-pointer",
-                      isActive ? "bg-primary rounded-xl font-primary shadow-xl text-white" : "text-black/80 hover:bg-white font-primary hover:text-secondary",
-                      !g.basePath && "cursor-default"
+                      isActive
+                        ? "bg-primary rounded-xl font-primary shadow-xl text-white"
+                        : "text-black/80 hover:bg-white font-primary hover:text-secondary",
+                      !g.basePath && "cursor-default",
                     )}
                   >
                     {g.heading}
@@ -291,7 +406,9 @@ function MegaMenu({ title, groups, active, pathname, onSelect }) {
                     }}
                     className={cx(
                       "block w-full text-left rounded-lg px-3 py-2 transition cursor-pointer",
-                      isItemActive ? "bg-primary font-primary text-xl text-white" : "text-black/80 font-primary hover:bg-primary rounded-xl text-xl hover:text-white"
+                      isItemActive
+                        ? "bg-primary font-primary text-xl text-white"
+                        : "text-black/80 font-primary hover:bg-primary rounded-xl text-xl hover:text-white",
                     )}
                   >
                     {it.label}
@@ -311,7 +428,8 @@ function useViewportHeight(enabled = true) {
   const [vh, setVh] = React.useState(0);
   React.useEffect(() => {
     if (!enabled) return;
-    const read = () => setVh((window.visualViewport?.height ?? window.innerHeight) || 0);
+    const read = () =>
+      setVh((window.visualViewport?.height ?? window.innerHeight) || 0);
     read();
     window.addEventListener("resize", read);
     window.addEventListener("orientationchange", read);
@@ -360,14 +478,12 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
     };
   }, [pathname, autoExpandMs]);
 
-
-
   const routerPush = useCallback(
     (path) => {
       if (typeof onSelect === "function") onSelect(path);
       else router.push(path);
     },
-    [router, onSelect]
+    [router, onSelect],
   );
 
   const handleSelect = (path) => {
@@ -437,7 +553,11 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav-drawer"
           >
-            {mobileOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+            {mobileOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3Icon className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -449,11 +569,16 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
         onClose={closeMenu}
         placement="top"
         size={drawerHeight || 600}
-        overlayProps={{ className: "fixed inset-0 bg-black/45 backdrop-blur-md !z-[999]" }}
+        overlayProps={{
+          className: "fixed inset-0 bg-black/45 backdrop-blur-md !z-[999]",
+        }}
         className="sm:hidden p-0 bg-transparent shadow-none !overflow-hidden !z-[1001]"
       >
         {/* prevent overlay click-through into menu; keep all clicks inside the panel */}
-        <div className="h-full w-full overflow-hidden" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="h-full w-full overflow-hidden"
+          onClick={(e) => e.stopPropagation()}
+        >
           <MobileMenu
             nav={nav}
             open={mobileOpen}
@@ -534,7 +659,9 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
                       onClick={() => handleSelect(entry.path)}
                       className={cx(
                         "text-sm rounded-full font-secondary font-semibold cursor-pointer px-4 py-2 transition",
-                        active ? "bg-primary text-white shadow-xl" : "text-black/80 hover:bg-primary hover:text-white"
+                        active
+                          ? "bg-primary text-white shadow-xl"
+                          : "text-black/80 hover:bg-primary hover:text-white",
                       )}
                     >
                       {entry.label}

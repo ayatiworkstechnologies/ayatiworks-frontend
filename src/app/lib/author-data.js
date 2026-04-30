@@ -65,7 +65,7 @@ export const POSTS_BY_AUTHOR = {
       deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
     },
     {
-      id: "p4",
+      id: "p5",
       title:
         "5 Key Benefits of Hiring a Chennai-Based Digital Marketing Agency",
       slug: "/blogs/digital-marketing-services/benefits-of-hiring-a-chennai-based-digital-marketing-agency",
@@ -227,7 +227,8 @@ export const POSTS_BY_AUTHOR = {
     },
     {
       id: "p16",
-      title: "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brands",
+      title:
+        "Affiliate Marketing in the AI Era: Intelligent Automation & Performance Growth for Chennai Brands",
       slug: "/blogs/affiliate-marketing-services/affiliate-marketing-ai-era-chennai-brands/",
       bannerTitle:
         "AI Is Rewriting Affiliate Marketing. Smart Brands in Chennai Are Already Scaling.",
@@ -246,8 +247,7 @@ export const POSTS_BY_AUTHOR = {
     },
     {
       id: "p17",
-      title:
-        "Top 10 SEO Agencies in Chennai – Your Organic Growth Blueprint",
+      title: "Top 10 SEO Agencies in Chennai – Your Organic Growth Blueprint",
       slug: "/blogs/seo/top-10-seo-agencies-in-chennai/",
       bannerTitle:
         " Chennai’s Leading SEO Agencies, Compared for Strategy, Visibility, and Real Organic Growth. ",
@@ -255,17 +255,15 @@ export const POSTS_BY_AUTHOR = {
       readMins: 25,
       cover:
         "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-117.jpg",
-      coverAlt:
-        " Top SEO agencies in Chennai comparison guide ",
+      coverAlt: " Top SEO agencies in Chennai comparison guide ",
       deck: " Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth... ",
       category: "SEO Services",
-      seoTitle:
-        "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
+      seoTitle: "Top 10 SEO Agencies in Chennai for High-Impact Organic Growth",
       seoDescription:
         "Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth. ",
     },
     {
-      id: 'p18',
+      id: "p18",
       title:
         "SEO Services in Chennai: Complete Guide for Businesses (Cost, Process, Timeline & Results)",
       slug: "/blogs/seo/seo-services-in-chennai-complete-guide-for-businesses/",
@@ -281,10 +279,9 @@ export const POSTS_BY_AUTHOR = {
       category: "SEO Services",
       seoDescription:
         "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.",
-
     },
     {
-      id: 'p19',
+      id: "p19",
       title:
         "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking",
       slug: "/blogs/seo/9-seo-mistakes-chennai-businesses-make-that-stop-them-from-ranking/",
@@ -302,15 +299,12 @@ export const POSTS_BY_AUTHOR = {
         "9 SEO Mistakes Chennai Businesses Make That Stop Them from Ranking on Google",
       seoDescription:
         "Struggling to rank on Google? Discover 9 common SEO mistakes Chennai businesses make and how fixing them can improve search visibility, traffic, and long-term growth.",
-
     },
     {
-      id: 'p20',
-      title:
-        "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
+      id: "p20",
+      title: "9 SEO Strategies That Still Work in 2026 and 5 That No Longer Do",
       slug: "/blogs/seo/seo-strategies-that-work-2026-and-what-doesnt/",
-      bannerTitle:
-        "SEO in 2026: What Works, What Fails, What Ranks",
+      bannerTitle: "SEO in 2026: What Works, What Fails, What Ranks",
       date: "Mar 27, 2026",
       readMins: 25,
       cover:
@@ -325,12 +319,10 @@ export const POSTS_BY_AUTHOR = {
         "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search.",
     },
     {
-      id: 'p21',
-      title:
-        "5 Signs Your Business Needs Professional SEO Services Right Now",
+      id: "p21",
+      title: "5 Signs Your Business Needs Professional SEO Services Right Now",
       slug: "/blogs/seo/5-signs-your-business-needs-professional-seo-services-right-now/",
-      bannerTitle:
-        "No Traffic. No Leads. Something’s Off.",
+      bannerTitle: "No Traffic. No Leads. Something’s Off.",
       date: "APR 03, 2026",
       readMins: 15,
       cover:
@@ -343,7 +335,67 @@ export const POSTS_BY_AUTHOR = {
         "5 Signs Your Business Needs Professional SEO Services Right Now | Ayatiworks",
       seoDescription:
         "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.",
-
+    },
+    {
+      id: "p22",
+      title: "Local SEO in Chennai: How to Rank in Maps & ‘Near Me’ Searches",
+      slug: "/blogs/seo/local-seo-in-chennai-how-to-rank-in-maps-near-me-searches/",
+      bannerTitle: "Be the First Business Chennai Finds. Not Your Competitor.",
+      date: "APR 10, 2026",
+      readMins: 20,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-122.jpg",
+      coverAlt: "Local SEO Chennai Google Maps ranking strategy",
+      deck: "Struggling to rank locally? Discover proven Local SEO strategies in Chennai to dominate Google Maps and “near me” searches. Drive more calls, visits & leads.... ",
+      category: "SEO Services",
+      seoTitle:
+        "Local SEO in Chennai: Rank #1 on Google Maps & “Near Me” Searches (2026 Guide) | Ayatiworks",
+      seoDescription:
+        "Struggling to rank locally? Discover proven Local SEO strategies in Chennai to dominate Google Maps and “near me” searches. Drive more calls, visits & leads.",
+    },
+    {
+      id: "p23",
+      title:
+        "Performance Marketing vs SEO: What Should Chennai Businesses Invest In?",
+      slug: "/blogs/digital-marketing-services/performance-marketing-vs-seo-what-should-chennai-businesses-invest-in/",
+      bannerTitle:
+        "Scale Fast or Build Sustainable Growth? Choose the Right Digital Strategy.",
+      subline:
+        "A practical breakdown for Chennai businesses to invest smarter in 2026.",
+      date: "APR 23, 2026",
+      readMins: 20,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-123.jpg",
+      coverAlt: "SEO vs performance marketing strategy comparison",
+      deck: "Confused between SEO and performance marketing? Discover what works best for Chennai businesses in 2026 based on budget, ROI, and growth stage.",
+      category: "Digital Marketing Services",
+      ctaname: "Get a Strategy That Actually Converts",
+      ctahref: "/contact",
+      seoTitle:
+        "Performance Marketing vs SEO: What Should Chennai Businesses Invest In? (2026 Guide)",
+      seoDescription:
+        "Confused between SEO and performance marketing? Discover what works best for Chennai businesses in 2026 based on budget, ROI, and growth stage.",
+    },
+    {
+      id: "p24",
+      title: "Balancing Awareness and Conversions in Modern Digital Marketing",
+      slug: "/blogs/branding-services/brand-marketing-vs-performance-marketing-for-b2b-b2c/",
+      bannerTitle: "Build a Brand or Drive Conversions? Why Not Both.",
+      // subline: "Balancing Awareness and Conversions in Modern Digital Marketing",
+      date: "APR 30, 2026",
+      readMins: 8,
+      cover:
+        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-124.jpg",
+      coverAlt:
+        "Brand marketing vs performance marketing comparison for B2B and B2C",
+      deck: "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",
+      category: "Branding Services",
+      // ctaname: "Talk to a Brand Consultant",
+      // ctahref: "/contact",
+      seoTitle:
+        "Brand Marketing vs Performance Marketing: 5 Key Differences for B2B & B2C Growth",
+      seoDescription:
+        "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",
     },
   ],
 };

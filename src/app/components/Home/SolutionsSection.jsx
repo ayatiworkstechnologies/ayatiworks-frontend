@@ -14,7 +14,12 @@ export default function SolutionsSection() {
 
   const fadeCard = {
     hidden: { opacity: 0, y: 28, scale: 0.98 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const cards = [
@@ -25,14 +30,35 @@ export default function SolutionsSection() {
       basePath: "/digital-marketing-services",
       list: [
         { label: "SEO Services", href: "/digital-marketing-services/seo" },
-        { label: "Social Media Marketing", href: "/digital-marketing-services/social-media-marketing" },
-        { label: "Email Marketing", href: "/digital-marketing-services/email-marketing" },
-        { label: "Instagram Marketing", href: "/digital-marketing-services/instagram-marketing" },
-        { label: "Affiliate Marketing", href: "/digital-marketing-services/affiliate-marketing" },
-        { label: "Programmatic Marketing", href: "/digital-marketing-services/programmatic-marketing" },
-        { label: "Video Marketing", href: "/digital-marketing-services/video-marketing" },
+        {
+          label: "Social Media Marketing",
+          href: "/digital-marketing-services/social-media-marketing",
+        },
+        {
+          label: "Email Marketing",
+          href: "/digital-marketing-services/email-marketing",
+        },
+        {
+          label: "Instagram Marketing",
+          href: "/digital-marketing-services/instagram-marketing",
+        },
+        {
+          label: "Affiliate Marketing",
+          href: "/digital-marketing-services/affiliate-marketing",
+        },
+        {
+          label: "Programmatic Marketing",
+          href: "/digital-marketing-services/programmatic-marketing",
+        },
+        {
+          label: "Video Marketing",
+          href: "/digital-marketing-services/video-marketing",
+        },
       ],
-      cta: { label: "Explore Digital Marketing →", href: "/digital-marketing-services" },
+      cta: {
+        label: "Explore Digital Marketing →",
+        href: "/digital-marketing-services",
+      },
     },
     {
       cat: "",
@@ -40,11 +66,23 @@ export default function SolutionsSection() {
       icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/01.png",
       basePath: "/content-as-a-service",
       list: [
-        { label: "Multi-lingual Marketing", href: "/content-as-a-service/multilingual-marketing" },
-        { label: "Brand Consultant", href: "/content-as-a-service/brand-service" },
-        { label: "Video Creation", href: "/content-as-a-service/video-creation" },
+        {
+          label: "Multi-lingual Marketing",
+          href: "/content-as-a-service/multilingual-marketing",
+        },
+        {
+          label: "Branding Service",
+          href: "/content-as-a-service/branding-service",
+        },
+        {
+          label: "Video Creation",
+          href: "/content-as-a-service/video-creation",
+        },
       ],
-      cta: { label: "Explore Content Services →", href: "/content-as-a-service" },
+      cta: {
+        label: "Explore Content Services →",
+        href: "/content-as-a-service",
+      },
     },
     {
       cat: "",
@@ -53,8 +91,14 @@ export default function SolutionsSection() {
       basePath: "/digital-pr",
       list: [
         { label: "Digital PR", href: "/digital-pr/digital-pr-service" },
-        { label: "Influencer Marketing", href: "/digital-pr/digital-pr/influencer-marketing" },
-        { label: "Online Reputation & Media Outreach", href: "/digital-pr/online-reputation-media-outreach" },
+        {
+          label: "Influencer Marketing",
+          href: "/digital-pr/digital-pr/influencer-marketing",
+        },
+        {
+          label: "Online Reputation & Media Outreach",
+          href: "/digital-pr/online-reputation-media-outreach",
+        },
       ],
       cta: { label: "Explore Digital PR →", href: "/digital-pr" },
     },
@@ -65,9 +109,18 @@ export default function SolutionsSection() {
       basePath: "/services/web-ecommerce",
       list: [
         { label: "UX/UI Design", href: "/web-ecommerce/ux-ui-design" },
-        { label: "Web Development Services", href: "/web-ecommerce/web-development" },
-        { label: "Web Maintenance Services", href: "/web-ecommerce/web-maintenance" },
-        { label: "Shopify Development Services", href: "/web-ecommerce/shopify-development" },
+        {
+          label: "Web Development Services",
+          href: "/web-ecommerce/web-development",
+        },
+        {
+          label: "Web Maintenance Services",
+          href: "/web-ecommerce/web-maintenance",
+        },
+        {
+          label: "Shopify Development Services",
+          href: "/web-ecommerce/shopify-development",
+        },
         { label: "E-commerce", href: "/web-ecommerce" },
       ],
       cta: { label: "Explore Web & E-commerce →", href: "/web-ecommerce" },
@@ -77,9 +130,18 @@ export default function SolutionsSection() {
   return (
     <section className="relative w-full">
       {/* background accents */}
-      <div aria-hidden className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
-      <div aria-hidden className="pointer-events-none absolute top-0 -right-16 h-64 w-64 rounded-full bg-secondary/10 blur-2xl" />
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/[0.03] to-transparent" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 -right-16 h-64 w-64 rounded-full bg-secondary/10 blur-2xl"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/[0.03] to-transparent"
+      />
 
       {/* Title row */}
       <motion.div
@@ -120,7 +182,9 @@ export default function SolutionsSection() {
             onClick={() => navigate(card.basePath)}
             role="button"
             tabIndex={0}
-            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && navigate(card.basePath)}
+            onKeyDown={(e) =>
+              (e.key === "Enter" || e.key === " ") && navigate(card.basePath)
+            }
             className="group relative cursor-pointer rounded-2xl p-[1px] overflow-hidden"
           >
             {/* animated gradient border */}
@@ -129,14 +193,23 @@ export default function SolutionsSection() {
               {/* header */}
               <div className="flex items-start gap-4">
                 <div className="grid place-items-center h-14 w-14 rounded-xl bg-primary/10 ring-1 ring-primary/20 shrink-0">
-                  <Image width={800} height={800} src={card.icon} alt={`${card.title} icon`} className="h-8 w-8 object-contain" loading="lazy" />
+                  <Image
+                    width={800}
+                    height={800}
+                    src={card.icon}
+                    alt={`${card.title} icon`}
+                    className="h-8 w-8 object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-primary text-2xl sm:text-3xl text-secondary leading-tight">
                     {card.title}
                   </h4>
                   {card.cat && (
-                    <div className="mt-1 text-xs uppercase tracking-wider text-gray-500">{card.cat}</div>
+                    <div className="mt-1 text-xs uppercase tracking-wider text-gray-500">
+                      {card.cat}
+                    </div>
                   )}
                 </div>
               </div>
@@ -172,7 +245,10 @@ export default function SolutionsSection() {
               </ul>
 
               {/* footer CTA */}
-              <div className="mt-6 flex items-center justify-between gap-3" onClick={(e) => e.stopPropagation()}>
+              <div
+                className="mt-6 flex items-center justify-between gap-3"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <Link
                   to={card.cta?.href || card.basePath}
                   className="inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-white font-primary text-sm md:text-base shadow hover:opacity-90 transition"
@@ -183,14 +259,27 @@ export default function SolutionsSection() {
                 {/* subtle arrow hint */}
                 <span className="hidden sm:flex items-center gap-1 text-xs text-gray-500 group-hover:text-secondary transition">
                   Open {card.title}
-                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M13 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      d="M5 12h14M13 5l7 7-7 7"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
               </div>
 
               {/* glow on hover */}
-              <div aria-hidden className="pointer-events-none absolute -bottom-6 inset-x-8 h-10 rounded-full bg-secondary/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute -bottom-6 inset-x-8 h-10 rounded-full bg-secondary/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"
+              />
             </div>
           </motion.div>
         ))}

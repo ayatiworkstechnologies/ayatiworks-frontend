@@ -625,23 +625,76 @@ export const POSTS = [
     faqs: [
       {
         question: "Is SEO better than performance marketing?",
-        answer: "No. Each serves a different purpose, SEO for long-term growth, performance marketing for immediate results.",
+        answer:
+          "No. Each serves a different purpose, SEO for long-term growth, performance marketing for immediate results.",
       },
       {
         question: "How long does SEO take in Chennai?",
-        answer: "Typically 3–6 months, depending on competition and execution quality.",
+        answer:
+          "Typically 3–6 months, depending on competition and execution quality.",
       },
       {
         question: "Is performance marketing expensive?",
-        answer: "It can be, especially in competitive industries where cost per click increases.",
+        answer:
+          "It can be, especially in competitive industries where cost per click increases.",
       },
       {
         question: "Can small businesses invest in SEO?",
-        answer: "Yes. SEO is one of the most cost-effective long-term strategies for small businesses.",
+        answer:
+          "Yes. SEO is one of the most cost-effective long-term strategies for small businesses.",
       },
       {
         question: "Should I run ads and SEO together?",
-        answer: "Yes. A hybrid strategy delivers the most balanced and scalable growth.",
+        answer:
+          "Yes. A hybrid strategy delivers the most balanced and scalable growth.",
+      },
+    ],
+  },
+  {
+    id: 124,
+    title: "Balancing Awareness and Conversions in Modern Digital Marketing",
+    slug: "/blogs/branding-services/brand-marketing-vs-performance-marketing-for-b2b-b2c/",
+    bannerTitle: "Build a Brand or Drive Conversions? Why Not Both.",
+    // subline: "Balancing Awareness and Conversions in Modern Digital Marketing",
+    date: "APR 30, 2026",
+    readMins: 8,
+    cover:
+      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-124.jpg",
+    coverAlt:
+      "Brand marketing vs performance marketing comparison for B2B and B2C",
+    deck: "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",
+    category: "Branding Services",
+    // ctaname: "Talk to a Brand Consultant",
+    // ctahref: "/contact",
+    seoTitle:
+      "Brand Marketing vs Performance Marketing: 5 Key Differences for B2B & B2C Growth",
+    seoDescription:
+      "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",
+    faqs: [
+      {
+        question: "Is brand marketing better than performance marketing?",
+        answer:
+          "No. Both serve different purposes, brand marketing builds trust, performance marketing drives conversions.",
+      },
+      {
+        question: "Which is more cost-effective?",
+        answer:
+          "Brand marketing is more cost-effective in the long run, while performance marketing delivers quicker results.",
+      },
+      {
+        question: "Can small businesses invest in brand marketing?",
+        answer:
+          "Yes. Even small businesses can build strong brands through consistent messaging and content.",
+      },
+      {
+        question: "Should B2B focus more on brand marketing?",
+        answer:
+          "Yes. B2B buyers rely heavily on trust and authority before making decisions.",
+      },
+      {
+        question: "Can I run both strategies together?",
+        answer:
+          "Absolutely. A hybrid approach delivers the best results in 2026.",
       },
     ],
   },
