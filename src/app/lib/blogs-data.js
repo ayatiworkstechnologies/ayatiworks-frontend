@@ -652,7 +652,7 @@ export const POSTS = [
   },
   {
     id: 124,
-    title: "Balancing Awareness and Conversions in Modern Digital Marketing",
+    title: "Brand Marketing vs Performance Marketing in Digital Marketing - 5 reasons what works best for B2B and B2C Business.",
     slug: "/blogs/branding-services/brand-marketing-vs-performance-marketing-for-b2b-b2c/",
     bannerTitle: "Build a Brand or Drive Conversions? Why Not Both.",
     // subline: "Balancing Awareness and Conversions in Modern Digital Marketing",
