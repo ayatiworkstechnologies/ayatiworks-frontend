@@ -65,7 +65,7 @@ export default function AEOArticlePage103() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
-          }} https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+          }}
           updatedAt={post.date}
           readMins={post.readMins}
         />
@@ -148,7 +148,7 @@ export default function AEOArticlePage103() {
             </p>
             <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-103-1.png"
               alt="Google Ranking businesses for Keyword on SERP "
-            />https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+            />
             <h3 className="section-title text-2xl text-left my-5">
               That’s the Structure{" "}
             </h3>
@@ -229,7 +229,7 @@ export default function AEOArticlePage103() {
             <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-103-2.png"
               alt="Google offering answers to the end user in the AEO format suggesting 3 businesses.  "
             />
-            <h3 clahttps://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+            <h3 className="section-title text-2xl text-left m-5">
               Rank 1 – Goes to -{" "}
             <Link
               href="https://socialbeat.in/multi-lingual-marketing/"
@@ -1474,6 +1474,8 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
+
 
 
 

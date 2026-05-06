@@ -58,7 +58,7 @@ export default function AEOArticlePage108() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
-          }} https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+          }}
           updatedAt={post.date}
           readMins={post.readMins}
         />
@@ -951,7 +951,7 @@ export default function AEOArticlePage108() {
             </p>
             <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-108.png"
               alt="An Interesting factual article on the Modern Buyers Journey cited by Ayatiworks"
-            />https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+            />
             <p className="section-phara">
               Social platforms quietly influence that journey by making brands
               feel present, active, and credible.
@@ -2307,6 +2307,8 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
+
 
 
 

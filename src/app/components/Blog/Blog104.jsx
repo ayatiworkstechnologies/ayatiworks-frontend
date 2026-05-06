@@ -64,7 +64,7 @@ export default function AEOArticlePage104() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
-          }} https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+          }}
           updatedAt={post.date}
           readMins={post.readMins}
         />
@@ -308,37 +308,36 @@ export default function AEOArticlePage104() {
                 {/* Original + Duplicate for looping */}
                 {[
                   {
-                    https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
-                alt: "Googlehttps://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Volvo",
+                    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
+                    alt: "Volvo Branding",
+                    title: "Volvo",
                   },
-                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
-                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Nippo India",
-                  },
-                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
-                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Jeep India",
-                  },
+                {
+                  img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
+                  alt: "Nippo India Branding",
+                  title: "Nippo India",
+                },
+                {
+                  img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
+                  alt: "Jeep India Branding",
+                  title: "Jeep India",
+                },
                 // Duplicate for infinite loop
-                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
-                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Volvo",
-                  },
-                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
-                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Nippo India",
-                  },
-                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
-                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
-                title: "Jeep India",
-                  },
+                {
+                  img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
+                  alt: "Volvo Branding",
+                  title: "Volvo",
+                },
+                {
+                  img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
+                  alt: "Nippo India Branding",
+                  title: "Nippo India",
+                },
+                {
+                  img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
+                  alt: "Jeep India Branding",
+                  title: "Jeep India",
+                },
                 ].map((card, i) => (
                 <div
                   key={card.title + i}
@@ -754,7 +753,7 @@ export default function AEOArticlePage104() {
           >
             <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-2.png"
               alt="Comparison between Chennai and other Metro Digital Marketing Agencies"
-            />https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+            />
           </Section>
 
           <Section
@@ -1862,6 +1861,10 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
+
+
+
 
 
 
