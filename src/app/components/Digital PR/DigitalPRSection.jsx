@@ -20,11 +20,11 @@ export default function DigitalPRSection() {
           <span className="block mb-4">Elevating Brand Authority Online</span>
           {/* Decorative line */}
           <motion.div
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-              className="bg-secondary h-1 w-[280px] mt-3 origin-left rounded-full"
-            />
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+            className="bg-secondary h-1 w-[280px] mt-3 origin-left rounded-full"
+          />
         </motion.h2>
       </div>
 
@@ -39,7 +39,7 @@ export default function DigitalPRSection() {
           className="flex justify-center"
         >
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/tv-dm.png"
             alt="The Year of Utsah"
             className="w-200 h-full drop-shadow-xl rounded-xl"
           />
@@ -53,29 +53,29 @@ export default function DigitalPRSection() {
           viewport={{ once: true }}
         >
           <motion.h2
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
-        >
-          <span className="mb-2 flex items-start">Introduction to Digital PR</span>
-          {/* Decorative line */}
-          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
+          >
+            <span className="mb-2 flex items-start">Introduction to Digital PR</span>
+            {/* Decorative line */}
+            <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
               className="bg-secondary h-1 w-[280px] mt-3 mb-4 origin-left rounded-full"
             />
-        </motion.h2>
+          </motion.h2>
           <p className="text-black/80 font-secondary font-medium mb-2 text-base/8 sm:text-base/8 md:text-lg/8">
             When people search for your brand online, what do they find? <br />
-Positive articles and features that build trust, or silence that makes you invisible? <br />
-That’s where Digital PR makes the difference.
+            Positive articles and features that build trust, or silence that makes you invisible? <br />
+            That’s where Digital PR makes the difference.
 
           </p>
           <p className="text-black/80 font-secondary font-medium mb-2 text-base/8 sm:text-base/8 md:text-lg/8">
-            Digital PR is the modern evolution of public relations. Instead of relying on press releases in print, it focuses on building your brand’s presence through online media, digital publications, influencers, and search-optimized content. 
+            Digital PR is the modern evolution of public relations. Instead of relying on press releases in print, it focuses on building your brand’s presence through online media, digital publications, influencers, and search-optimized content.
           </p>
           <p className="text-black/80 font-secondary font-medium mb-2 text-base/8 sm:text-base/8 md:text-lg/8">
             The goal is simple: make your business more visible, more credible, and more relevant in the digital space.
@@ -89,7 +89,7 @@ That’s where Digital PR makes the difference.
           <p className="text-black/80 font-secondary italic font-semibold mb-2 text-base/8 sm:text-base/8 md:text-lg/8">
             With a strong Digital PR strategy, you don’t just show up online, you stand out !
           </p>
-        
+
         </motion.div>
         {/* Button */}
         <motion.div

@@ -5,58 +5,58 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", 
-    title: "Discovery & Research", 
-    desc: "Understanding your business goals, audience needs, and customer journey to lay a strong foundation." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png",
+    title: "Discovery & Research",
+    desc: "Understanding your business goals, audience needs, and customer journey to lay a strong foundation."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/2.png", 
-    title: "Competitor Benchmarking", 
-    desc: "Analyzing competitors to identify gaps, opportunities, and strategies that give your brand an edge." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png",
+    title: "Competitor Benchmarking",
+    desc: "Analyzing competitors to identify gaps, opportunities, and strategies that give your brand an edge."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/3.png", 
-    title: "Information Architecture", 
-    desc: "Structuring the site flow and navigation to create seamless, intuitive customer journeys." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png",
+    title: "Information Architecture",
+    desc: "Structuring the site flow and navigation to create seamless, intuitive customer journeys."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/4.png", 
-    title: "UI/UX Wireframing", 
-    desc: "Designing customer-friendly layouts and wireframes that prioritize usability and engagement." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png",
+    title: "UI/UX Wireframing",
+    desc: "Designing customer-friendly layouts and wireframes that prioritize usability and engagement."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/5.png", 
-    title: "Custom Development", 
-    desc: "Building responsive, secure, and scalable websites tailored to your business requirements." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png",
+    title: "Custom Development",
+    desc: "Building responsive, secure, and scalable websites tailored to your business requirements."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/6.png", 
-    title: "SEO Integration", 
-    desc: "Embedding technical SEO best practices from the start for improved visibility and rankings." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png",
+    title: "SEO Integration",
+    desc: "Embedding technical SEO best practices from the start for improved visibility and rankings."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/7.png", 
-    title: "E-Commerce Enablement", 
-    desc: "Integrating secure payments, logistics, and inventory management for a smooth online store experience." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/7.png",
+    title: "E-Commerce Enablement",
+    desc: "Integrating secure payments, logistics, and inventory management for a smooth online store experience."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/8.png", 
-    title: "Testing & QA", 
-    desc: "Conducting rigorous speed, usability, and performance testing to ensure flawless functionality." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/8.png",
+    title: "Testing & QA",
+    desc: "Conducting rigorous speed, usability, and performance testing to ensure flawless functionality."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/9.png", 
-    title: "Launch & Go-Live", 
-    desc: "Executing a smooth rollout with minimal downtime, ensuring your site is ready for customers." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/9.png",
+    title: "Launch & Go-Live",
+    desc: "Executing a smooth rollout with minimal downtime, ensuring your site is ready for customers."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/10.png", 
-    title: "Maintenance & Optimization", 
-    desc: "Providing ongoing support, updates, and performance tuning to keep your website future-ready." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/10.png",
+    title: "Maintenance & Optimization",
+    desc: "Providing ongoing support, updates, and performance tuning to keep your website future-ready."
   },
 ];
-  
+
 
 
 export default function GrowthFramework() {
@@ -144,9 +144,8 @@ export default function GrowthFramework() {
               {steps.slice(0, 5).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />
@@ -173,9 +172,8 @@ export default function GrowthFramework() {
               {steps.slice(5, 10).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />

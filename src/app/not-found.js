@@ -7,11 +7,11 @@ export default function NotFound() {
     <main className="min-h-screen flex items-center justify-center px-6 text-center">
       {/* Unified Card */}
       <div className="p-8 sm:p-10 mt-10 w-full flex flex-col items-center justify-center">
-        
+
         {/* 404 Video */}
         <Link href="/" className="block group w-full">
           <video
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/404.mp4"  // ✅ place file inside /public/banner/404.mp4
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/404.mp4"  // ✅ place file inside /public/banner/404.mp4
             aria-label="404 animation"
             autoPlay
             loop

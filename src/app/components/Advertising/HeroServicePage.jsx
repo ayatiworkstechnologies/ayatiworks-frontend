@@ -174,7 +174,7 @@ const motives1 = [
 
 function HeroServicePage() {
   const router = useRouter();
-  const goToContact = () =>  router.push("/contact-us#form");
+  const goToContact = () => router.push("/contact-us#form");
 
   return (
     <>
@@ -244,7 +244,7 @@ function HeroServicePage() {
           >
             <div className="sticky">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/ads-img.jpg"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/ads-img.jpg"
                 alt="Ayatiworks won the 43rd Edition of Maddy’s award for best Performance Marketing for Volvo"
                 className="w-full h-full mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -287,7 +287,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/ads.jpg"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/ads.jpg"
                 alt="Best Creative Agency in Chennai, Ayatiworks"
                 className="w-full h-auto  mx-auto "
               />
@@ -460,7 +460,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -496,7 +496,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -620,7 +620,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -658,7 +658,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -695,17 +695,17 @@ function HeroServicePage() {
             </p>
 
             <motion.button
-        className="relative bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-        initial={{ scale: 0.9, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
-        whileHover={{ scale: 1.08, boxShadow: "0px 12px 25px rgba(0,0,0,0.15)" }}
-        whileTap={{ scale: 0.95 }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
-        viewport={{ once: true }}
-        onClick={goToContact}
-      >
-        Schedule a Free Consultation
-      </motion.button>
+              className="relative bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              whileHover={{ scale: 1.08, boxShadow: "0px 12px 25px rgba(0,0,0,0.15)" }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              viewport={{ once: true }}
+              onClick={goToContact}
+            >
+              Schedule a Free Consultation
+            </motion.button>
             {/* <p className="text-base sm:text-lg md:text-xl text-black/80 font-secondary font-medium leading-relaxed"></p> */}
           </div>
         </div>

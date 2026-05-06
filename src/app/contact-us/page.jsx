@@ -2,7 +2,7 @@ export const metadata = {
   title: "Contact Us",
   description:
     "Ready to grow your brand? Connect with Chennai’s top digital marketing experts today for tailored solutions that drive results! Reach out now!",
-    alternates: { canonical: "https://www.ayatiworks.com/contact-us", }
+  alternates: { canonical: "https://www.ayatiworks.com/contact-us", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <main className="section section-home">
       <ResponsiveBanner
-        desktopSrc="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/Contact.jpg"
+        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Contact.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

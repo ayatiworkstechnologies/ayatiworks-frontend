@@ -12,9 +12,9 @@ export default function NippoCaseStudy() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner.png",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/nippo-banner.png",
           mobileImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/nippo-banner-mob.png",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/nippo-banner-mob.png",
           imageAlt: "Nippo Shadow Art Contest by Ayatiworks",
         }}
         section={{
@@ -35,7 +35,7 @@ export default function NippoCaseStudy() {
         challengeEyebrow="Nippo approached Ayatiworks with a unique hurdle, while the brand was widely known for batteries, very few consumers realized Nippo also made torches, bulbs, and mosquito repellents."
         challengeCopy="The objective was clear: Shift perception and create buzz around the Nippo Torch as a fun, family-friendly product."
         challengeCopy1={`The ask? An interactive, memorable campaign that could light up conversations and brand recall across households.`}
-        challengeImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-4.png"
+        challengeImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-4.png"
         challengeImgAlt="Nippo challenge section background"
         objectiveTitle="The Objective"
         objectiveSubTitle="The campaign set out to:"
@@ -45,14 +45,14 @@ export default function NippoCaseStudy() {
           "Ignite Engagement: Encourage playful, creative participation through interactive content.",
           "Drive Buzz & Shares: Turn torch usage into social-worthy, shareable experiences.",
         ]}
-        carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-7.png"
+        carImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-7.png"
         carImgAlt="Nippo Torch product visual"
         /* -------- IDEA PROPS -------- */
         ideasTitle="The Idea"
         ideasSubTitle="Reigniting Childhood Fun"
         ideasCopy={`We tapped into nostalgia with the Nippo Shadow Art Challenge, a contest inviting families to create shadow art using Nippo torches. Inspired by childhood memories of crafting shapes and animals on walls, the idea connected product utility with playful creativity — turning a simple household torch into a spark for imagination.`}
         tagline="Time to reignite childhood fun with shadows."
-        ideasImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-1.png"
+        ideasImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-1.png"
         ideasImgAlt="Families creating shadow art using Nippo torches"
         className=""
       />
@@ -85,7 +85,7 @@ export default function NippoCaseStudy() {
 
       <ResultsShowcase
         title="The Results: Awareness Lit Up"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-2.png"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-2.png"
         metaHeading="Campaign Performance (17-30 June 2024) "
         metaPoints={[
           "2,410,768 Impressions ",
@@ -95,7 +95,7 @@ export default function NippoCaseStudy() {
         metaPhara="The contest successfully repositioned Nippo beyond just batteries, drove awareness of the Nippo Torch, and built a fun, share-worthy buzz around the brand. "
         closingTitle="From Scroll to Sale: The Transformation "
         closingCopy={`In just 72 hours, Ayatiworks shifted Jeep India’s merchandising from just another microsite to a turbocharged user experience and social event. We turned each likes into traction, each creative into a conversion, and the campaign into short-run success. `}
-        logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-6.png"
+        logo="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-6.png"
         className=""
       />
       <WhyWorkedCta
@@ -114,7 +114,7 @@ export default function NippoCaseStudy() {
             metrics: "1M+ impressions , 95K+ likes ",
             href: "https://www.instagram.com/p/DEP3GajJjsI/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-1.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-post-1.mp4",
           },
           {
             platform: "Instagram",
@@ -122,7 +122,7 @@ export default function NippoCaseStudy() {
             metrics: "1M+ impressions, 1.5M+ likes ",
             href: "https://www.instagram.com/reel/DDcIOm9NLW6/?utm_source=ig_web_copy_link",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-2.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-post-2.mp4",
           },
           {
             platform: "Instagram",
@@ -130,7 +130,7 @@ export default function NippoCaseStudy() {
             metrics: "5M+ impressions, 79K+ likes   ",
             href: "https://www.instagram.com/reel/C8rfW_pConf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-3.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-post-3.mp4",
           },
           {
             platform: "Instagram",
@@ -138,14 +138,14 @@ export default function NippoCaseStudy() {
             metrics: "57k+ impressions, 10K+ likes  ",
             href: "https://www.instagram.com/p/C9Y13qnMhmY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-post-4.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-post-4.mp4",
           },
         ]}
         ctaHeadline="Ready to Shine a Light on Your Brand?  "
         ctaCopy={`Whether you’re a legacy brand looking to reinvent perception or a new player eager to create buzz, Ayatiworks knows how to craft campaigns that capture attention, spark engagement, and deliver measurable results. `}
         ctaButtonText="Let’s Build Your Next Big Campaign"
         ctaHref="/contact-us"
-        ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/nippo-5.png"
+        ctaImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/nippo-5.png"
         className=""
         ctaHeadlineColor="text-secondary "
         ctaCopyColor="text-black/90"

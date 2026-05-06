@@ -7,7 +7,7 @@ export default function PartnersInClimb() {
   // === Partner Logos (52 total) ===
   const partners = Array.from({ length: 49 }, (_, i) => ({
     name: `Client ${i + 1}`,
-    logo: `https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logos/Client-${i + 1}.webp`,
+    logo: `https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logos/Client-${i + 1}.webp`,
   }));
 
   // The user requested exactly: 1 to 16, 17 to 32, and 33 to 49

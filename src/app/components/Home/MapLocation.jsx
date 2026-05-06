@@ -14,16 +14,16 @@ export default function DottedWorldMap() {
   });
 
   const locations = [
-    { name: "USA", x: "17%", y: "42%", logo: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo-left.png" }, // Pencil/Logo
-    { name: "DUBAI", x: "60%", y: "48%", logo: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo-left.png" },
-    { name: "INDIA", x: "68%", y: "58%", logo: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo-left.png" },
-    { name: "SINGAPORE", x: "75%", y: "62%", logo: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo-left.png" },
+    { name: "USA", x: "17%", y: "42%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" }, // Pencil/Logo
+    { name: "DUBAI", x: "60%", y: "48%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
+    { name: "INDIA", x: "68%", y: "58%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
+    { name: "SINGAPORE", x: "75%", y: "62%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
   ];
   const stats = [
-    { icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/business.png", value: "+30", label: "Awards" },
-    { icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/users.png", value: "+20", label: "Clients" },
-    { icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/locations.png", value: "+05", label: "Cities" },
-    { icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/earth.png", value: "+05", label: "Countries" },
+    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/business.png", value: "+30", label: "Awards" },
+    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/users.png", value: "+20", label: "Clients" },
+    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/locations.png", value: "+05", label: "Cities" },
+    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/earth.png", value: "+05", label: "Countries" },
   ];
 
   return (
@@ -40,18 +40,18 @@ export default function DottedWorldMap() {
         <h2 className="section-title relative inline-block">
           Globally Planted, Digitally Rooted
           <motion.div
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-                    className="bg-secondary h-1 w-[250px] mt-3 origin-left rounded-full"
-                  />
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+            className="bg-secondary h-1 w-[250px] mt-3 origin-left rounded-full"
+          />
         </h2>
       </motion.div>
       {/* Map */}
       <div className="relative w-full section-container">
         {/* ✅ Dotted Map Background */}
         <Image width={800} height={800}
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/map.png"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/map.png"
           alt="Dotted World Map"
           className="w-full object-contain"
         />

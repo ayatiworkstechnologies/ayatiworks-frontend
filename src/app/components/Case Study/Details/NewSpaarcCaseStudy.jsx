@@ -13,7 +13,7 @@ export default function NewSpaarcCaseStudy() {
       <section className="w-full">
         {/* Desktop Banner */}
         <Image
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/spa-banner-1.jpg"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/spa-banner-1.jpg"
           alt="SPAARC Case Study Banner Desktop"
           className="hidden md:block w-full object-cover"
           width={1920}
@@ -22,7 +22,7 @@ export default function NewSpaarcCaseStudy() {
         />
         {/* Mobile Banner */}
         <Image
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/spa-banner-mob-1.jpg"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/spa-banner-mob-1.jpg"
           alt="SPAARC Case Study Banner Mobile"
           className="block md:hidden w-full object-cover"
           width={768}
@@ -53,7 +53,7 @@ export default function NewSpaarcCaseStudy() {
           <div className="w-full md:w-2/5 flex justify-center z-10 relative">
             {/* The Challenge Right Side Image */}
             <Image
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-1.png"
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-1.png"
               alt="The Challenge"
               className="w-full h-auto object-cover"
               width={800}
@@ -69,7 +69,7 @@ export default function NewSpaarcCaseStudy() {
         {/* Full Image Background aligned to the left */}
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-2.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-2.png"
             alt="The Strategy"
             className="w-full h-full object-cover"
             width={1920}
@@ -141,7 +141,7 @@ export default function NewSpaarcCaseStudy() {
       <section className="w-full relative overflow-hidden flex flex-col items-center">
         {/* Desktop Execution Image */}
         <Image
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-3.png"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-3.png"
           alt="The Execution"
           className="hidden md:block w-full h-auto object-cover"
           width={1920}
@@ -150,7 +150,7 @@ export default function NewSpaarcCaseStudy() {
         />
         {/* Mobile Execution Image */}
         <Image
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-4.jpg"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-4.jpg"
           alt="The Execution Mobile"
           className="block md:hidden w-full h-auto object-cover"
           width={768}
@@ -214,28 +214,28 @@ export default function NewSpaarcCaseStudy() {
                 title: "Reel Highlight - Wellness Focus",
                 metrics: "Click to View",
                 href: "https://www.instagram.com/reel/DM-SewQJ9HH/?igsh=YmVjcjRuMWs2Zmww",
-                image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-vid-1.mp4",
+                image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-vid-1.mp4",
               },
               {
                 platform: "Instagram",
                 title: "Reel Highlight - Therapy Success",
                 metrics: "Click to View",
                 href: "https://www.instagram.com/reel/DV8mvuqgNP0/?igsh=dW92dmdmbjF3aDRl",
-                image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-vid-2.mp4",
+                image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-vid-2.mp4",
               },
               {
                 platform: "Instagram",
                 title: "Reel Highlight - Expert Guidance",
                 metrics: "Click to View",
                 href: "https://www.instagram.com/reel/DObFmQFiSot/?igsh=YmRoOW93cDdyYW95",
-                image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-vid-3.mp4",
+                image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-vid-3.mp4",
               },
               {
                 platform: "Instagram",
                 title: "Reel Highlight - Brand Vision",
                 metrics: "Click to View",
                 href: "https://www.instagram.com/reel/DOgBbeejZk_/?igsh=MTFuc3dobGlzaHowOA%3D%3D",
-                image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-vid-4.mp4",
+                image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-vid-4.mp4",
               },
             ].map((post, idx) => (
               <a
@@ -281,7 +281,7 @@ export default function NewSpaarcCaseStudy() {
         <div className="relative left-1/2 -translate-x-1/2">
           <div className="relative isolate w-full overflow-hidden">
             <Image
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-footer.jpg"
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-footer.jpg"
               alt="Ready to build your growth story CTA Desktop Background"
               className="hidden md:block w-full h-[500px] md:h-[600px] object-cover"
               width={1920}
@@ -289,7 +289,7 @@ export default function NewSpaarcCaseStudy() {
               loading="lazy"
             />
             <Image
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/spa-footer-mob.jpg"
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/spa-footer-mob.jpg"
               alt="Ready to build your growth story CTA Mobile Background"
               className="block md:hidden h-[500px] w-full object-cover"
               width={768}

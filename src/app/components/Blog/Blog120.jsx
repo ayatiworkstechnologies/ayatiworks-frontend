@@ -56,7 +56,7 @@ export default function AEOArticlePage120() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -213,7 +213,7 @@ export default function AEOArticlePage120() {
               </p>
               <div className="relative my-8 w-full overflow-hidden rounded-xl shadow-lg border border-slate-200">
                 <Image
-                  src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blog-120-img-1.png"
+                  src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blog-120-img-1.png"
                   alt="SEO strategies 2026 infographic showing 9 modern SEO techniques including AEO, GEO and AI SEO practices"
                   width={800}
                   height={2000}
@@ -481,7 +481,7 @@ export default function AEOArticlePage120() {
 
             <div className="relative my-8 w-full overflow-hidden rounded-xl shadow-lg border border-slate-200">
               <Image
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blog-120-img-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blog-120-img-2.png"
                 alt="SEO strategies 2026 infographic showing 9 modern SEO techniques including AEO, GEO and AI SEO practices"
                 width={800}
                 height={2000}
@@ -997,10 +997,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
           </div>
@@ -1104,8 +1104,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : ""),
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -1605,3 +1605,4 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+

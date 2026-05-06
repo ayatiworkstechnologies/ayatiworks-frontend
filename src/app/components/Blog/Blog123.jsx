@@ -408,10 +408,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
 
@@ -534,8 +534,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : ""),
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -740,7 +740,7 @@ export default function AEOArticlePage123() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -941,7 +941,7 @@ export default function AEOArticlePage123() {
               </div>
               <div className="my-8 overflow-hidden rounded-2xl border border-slate-200 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
                 <Image
-                  src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/seo-blog-123.png"
+                  src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/seo-blog-123.png"
                   alt="SEO vs performance marketing strategy comparison"
                   width={1200}
                   height={675}
@@ -1465,3 +1465,4 @@ export default function AEOArticlePage123() {
     </main>
   );
 }
+

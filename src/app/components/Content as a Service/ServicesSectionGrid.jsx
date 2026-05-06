@@ -7,19 +7,19 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/seo.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/seo.png",
     title: "Branding  Services",
     desc: "At Ayatiworks, Content as a Service is built to be modular, allowing you to choose exactly what your brand needs. From shaping your identity to producing high-impact assets, our services are designed to deliver performance-driven creative at scale.",
     path: "/content-as-a-service/branding-service",
   },
   {
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/Social_Media.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Social_Media.png",
     title: "Video Creation",
     desc: "From quick social reels to full-scale brand films, our on-demand video creation delivers impactful storytelling tailored to your campaigns. Scripted, shot, and edited with precision, our videos engage audiences, boost conversions, and bring your brand’s vision to life.",
     path: "/content-as-a-service/video-creation",
   },
   {
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/Social_Media.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Social_Media.png",
     title: "Multilingual Marketing",
     desc: "Reach beyond language barriers with our multilingual content solutions. Whether Tamil, Hindi, or global languages, we craft culturally relevant campaigns, adapt messaging seamlessly, and ensure your brand connects authentically with local and international audiences across every touchpoint.",
     path: "/content-as-a-service/multilingual-marketing",

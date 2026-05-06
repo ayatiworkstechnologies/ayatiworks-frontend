@@ -14,32 +14,32 @@ const faqs = [
     answer:
       "Results can vary, but many clients notice increased engagement within the first few campaigns. ",
   },
-   {
+  {
     question:
       "2. Is email marketing suitable for small businesses?",
     answer:
       " Absolutely. It's a cost-effective way to reach and engage your audience. ",
   },
-   {
+  {
     question:
       "3. Can you help with email list building?",
     answer:
       "Yes, we offer strategies to grow and maintain a healthy subscriber list. ",
   },
-   {
+  {
     question:
       "4. Do you provide analytics for email campaigns?",
     answer:
       "Yes, we offer detailed reports on key metrics like open rates, click-through rates, and conversions. ",
   },
-   {
+  {
     question:
       "5. How do you ensure compliance with email marketing laws?",
     answer:
       "We adhere to all relevant regulations, including GDPR, and implement best practices to maintain compliance. ",
   },
-  
- 
+
+
 ];
 
 export default function FAQSection() {
@@ -131,7 +131,7 @@ export default function FAQSection() {
           >
             <div>
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/faq-img.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/faq-img.png"
                 alt="FAQ Illustration"
                 className="w-full "
               />

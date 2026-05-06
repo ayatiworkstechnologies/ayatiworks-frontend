@@ -18,7 +18,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 import RightSidebarCategories from "./RightSidebarCategories";
 import Image from "next/image";
 
@@ -33,7 +34,7 @@ const buildHref = (slugOrPath = "") => {
 
 export default function AEOArticlePage104() {
   const post = POSTS.find((p) => p.id === 104) || POSTS[0];
-const relatedPosts = getRelatedRecentPosts({
+  const relatedPosts = getRelatedRecentPosts({
     currentPostId: post.id,
     category: post.category,
     limit: 3,
@@ -62,9 +63,8 @@ const relatedPosts = getRelatedRecentPosts({
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
-          }}
+            avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+          }} https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
           updatedAt={post.date}
           readMins={post.readMins}
         />
@@ -308,53 +308,54 @@ const relatedPosts = getRelatedRecentPosts({
                 {/* Original + Duplicate for looping */}
                 {[
                   {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-4.jpg",
-                    alt: "Google Ranking businesses for Keyword on SERP",
-                    title: "Volvo",
+                    https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
+                alt: "Googlehttps://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Volvo",
                   },
-                  {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-5.jpg",
-                    alt: "Optimizing Local SEO Strategies",
-                    title: "Nippo India",
+                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
+                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Nippo India",
                   },
-                  {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-3.jpg",
-                    alt: "AEO Strategies for 2025 Success",
-                    title: "Jeep India",
+                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
+                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Jeep India",
                   },
-                  // Duplicate for infinite loop
-                  {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-4.jpg",
-                    alt: "Google Ranking businesses for Keyword on SERP",
-                    title: "Volvo",
+                // Duplicate for infinite loop
+                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-4.jpg",
+                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Volvo",
                   },
-                  {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-5.jpg",
-                    alt: "Optimizing Local SEO Strategies",
-                    title: "Nippo India",
+                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-5.jpg",
+                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Nippo India",
                   },
-                  {
-                    img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-3.jpg",
-                    alt: "AEO Strategies for 2025 Success",
-                    title: "Jeep India",
+                {https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-3.jpg",
+                alt: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
+                title: "Jeep India",
                   },
                 ].map((card, i) => (
-                  <div
-                    key={card.title + i}
-                    className=" group rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all"
-                  >
-                    <Image width={800} height={800}
-                      src={card.img}
-                      alt={card.alt}
-                      className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                    <div className="p-4">
-                      <h3 className="font-primary text-xl section-title">
-                        {card.title}
-                      </h3>
-                    </div>
+                <div
+                  key={card.title + i}
+                  className=" group rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all"
+                >
+                  <Image width={800} height={800}
+                    src={card.img}
+                    alt={card.alt}
+                    className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-primary text-xl section-title">
+                      {card.title}
+                    </h3>
                   </div>
+                </div>
                 ))}
               </div>
 
@@ -751,10 +752,9 @@ const relatedPosts = getRelatedRecentPosts({
             id="chennai-vs-metros"
             title="Chennai vs Metro Agencies. A Real Comparison!"
           >
-            <Image width={800} height={800}
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-104-2.png"
+            <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-104-2.png"
               alt="Comparison between Chennai and other Metro Digital Marketing Agencies"
-            />
+            />https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
           </Section>
 
           <Section
@@ -1247,10 +1247,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
           </div>
@@ -1354,8 +1354,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : "")
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : "")
   );
 
   // close on outside click / Esc
@@ -1862,5 +1862,7 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
+
 
 

@@ -131,11 +131,10 @@ export default function GoogleAdsSection() {
                           message: "Please enter a valid email",
                         },
                       })}
-                      className={`w-full px-5 py-3 sm:py-[14px] border rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 font-secondary text-[15px] bg-white transition-colors ${
-                        errors.email
-                          ? "border-red-500 focus:ring-red-500 focus:border-red-500"
-                          : "border-gray-200 focus:ring-[#00A3E0] focus:border-[#00A3E0]"
-                      }`}
+                      className={`w-full px-5 py-3 sm:py-[14px] border rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 font-secondary text-[15px] bg-white transition-colors ${errors.email
+                        ? "border-red-500 focus:ring-red-500 focus:border-red-500"
+                        : "border-gray-200 focus:ring-[#00A3E0] focus:border-[#00A3E0]"
+                        }`}
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs mt-1 ml-1 font-secondary">
@@ -146,9 +145,8 @@ export default function GoogleAdsSection() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`bg-[#00A3E0] hover:bg-[#0092c8] transition-all duration-300 text-white font-bold tracking-wide py-3 sm:py-[14px] px-8 sm:px-10 rounded-full font-secondary text-[16px] whitespace-nowrap shadow-sm hover:shadow-md ${
-                      loading ? "opacity-70 cursor-not-allowed" : ""
-                    }`}
+                    className={`bg-[#00A3E0] hover:bg-[#0092c8] transition-all duration-300 text-white font-bold tracking-wide py-3 sm:py-[14px] px-8 sm:px-10 rounded-full font-secondary text-[16px] whitespace-nowrap shadow-sm hover:shadow-md ${loading ? "opacity-70 cursor-not-allowed" : ""
+                      }`}
                   >
                     {loading ? "Submitting..." : "Get a Proposal"}
                   </button>
@@ -186,7 +184,7 @@ export default function GoogleAdsSection() {
                   </div>
                 </div>
                 <Image
-                  src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/Google_Ads_Certification.jpg"
+                  src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/Google_Ads_Certification.jpg"
                   alt="Google Ads Search Certification"
                   width={1600}
                   height={1200}
@@ -224,7 +222,7 @@ export default function GoogleAdsSection() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/Google_Ads_Certification.jpg"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/Google_Ads_Certification.jpg"
                 alt="Google Ads Search Certification Fullscreen"
                 width={2000}
                 height={1500}

@@ -57,7 +57,7 @@ export default function MobileMenu({
             }}
             className="inline-flex items-center gap-2"
           >
-            <Image width={800} height={800} src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg" alt="Logo" className="h-8 w-auto" style={{ width: "auto", height: "auto" }} />
+            <Image width={800} height={800} src="/ayatiworks_logo.svg" alt="Logo" className="h-8 w-auto" style={{ width: "auto", height: "auto" }} />
             <span className="sr-only">Home</span>
           </Link>
           <button

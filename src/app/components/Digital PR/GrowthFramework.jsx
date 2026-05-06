@@ -5,55 +5,55 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", 
-    title: "Initial Consultation", 
-    desc: "We begin with a deep dive into your brand, objectives, and audience to set the foundation for impactful PR campaigns." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png",
+    title: "Initial Consultation",
+    desc: "We begin with a deep dive into your brand, objectives, and audience to set the foundation for impactful PR campaigns."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/2.png", 
-    title: "PR Audit & Market Research", 
-    desc: "Audit current presence, analyze competitors, and identify media gaps to position your brand effectively." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png",
+    title: "PR Audit & Market Research",
+    desc: "Audit current presence, analyze competitors, and identify media gaps to position your brand effectively."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/3.png", 
-    title: "Strategy Blueprint", 
-    desc: "Develop a tailored PR roadmap with clear goals, messaging, and media targeting for measurable outcomes." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png",
+    title: "Strategy Blueprint",
+    desc: "Develop a tailored PR roadmap with clear goals, messaging, and media targeting for measurable outcomes."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/4.png", 
-    title: "Content Development", 
-    desc: "Craft press releases, articles, and media kits that capture your brand voice and engage journalists and audiences." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png",
+    title: "Content Development",
+    desc: "Craft press releases, articles, and media kits that capture your brand voice and engage journalists and audiences."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/5.png", 
-    title: "Media List Building", 
-    desc: "Curate targeted lists of journalists, publications, and platforms that maximize brand visibility." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png",
+    title: "Media List Building",
+    desc: "Curate targeted lists of journalists, publications, and platforms that maximize brand visibility."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/6.png", 
-    title: "Influencer Mapping", 
-    desc: "Identify authentic influencers who align with your values to build trust and credibility." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png",
+    title: "Influencer Mapping",
+    desc: "Identify authentic influencers who align with your values to build trust and credibility."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/7.png", 
-    title: "Campaign Launch", 
-    desc: "Roll out campaigns with precision timing to capture attention at the right moment." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/7.png",
+    title: "Campaign Launch",
+    desc: "Roll out campaigns with precision timing to capture attention at the right moment."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/8.png", 
-    title: "Outreach & Distribution", 
-    desc: "Execute targeted outreach to secure placements that create buzz, backlinks, and authority." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/8.png",
+    title: "Outreach & Distribution",
+    desc: "Execute targeted outreach to secure placements that create buzz, backlinks, and authority."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/9.png", 
-    title: "Monitoring & Engagement", 
-    desc: "Track mentions, coverage, and audience response in real time while nurturing journalist relationships." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/9.png",
+    title: "Monitoring & Engagement",
+    desc: "Track mentions, coverage, and audience response in real time while nurturing journalist relationships."
   },
-  { 
-    id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/10.png", 
-    title: "Reporting & Optimization", 
-    desc: "Deliver transparent reports with insights on performance, guiding continuous campaign improvement." 
+  {
+    id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/10.png",
+    title: "Reporting & Optimization",
+    desc: "Deliver transparent reports with insights on performance, guiding continuous campaign improvement."
   },
 ];
 
@@ -143,9 +143,8 @@ export default function GrowthFramework() {
               {steps.slice(0, 5).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />
@@ -172,9 +171,8 @@ export default function GrowthFramework() {
               {steps.slice(5, 10).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />

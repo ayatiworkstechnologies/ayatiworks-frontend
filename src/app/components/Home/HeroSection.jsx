@@ -46,7 +46,7 @@ export default function HeroSection() {
           className="col-span-2 xl:col-start-1 xl:col-span-8 xl:row-start-1 rounded-2xl md:rounded-3xl overflow-hidden aspect-video xl:aspect-auto xl:h-full"
         >
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-01.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-01.mov"
             className="w-full h-full object-cover"
             preload="auto" /* ✅ Prioritize first video */
             priority={true}
@@ -63,7 +63,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-9 xl:col-span-4 xl:row-start-1 rounded-2xl md:rounded-3xl overflow-hidden border border-gray-300 aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-02.webp"
             alt="Steel Rods - Manufacturing Excellence"
             width={800}
             height={600}
@@ -84,7 +84,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-1 xl:col-span-4 xl:row-start-2 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-03.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-03.webp"
             alt="Safety First - Kid with Helmet"
             width={800}
             height={600}
@@ -104,7 +104,7 @@ export default function HeroSection() {
           className="col-span-2 xl:col-start-5 xl:col-span-4 xl:row-start-2 border border-gray-300 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-04.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-04.mov"
             className="w-full h-full object-cover"
             preload="metadata"
           />
@@ -120,7 +120,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-9 xl:col-span-4 xl:row-start-2 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-05.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-05.webp"
             alt="Premium Pens - Quality Craftsmanship"
             width={800}
             height={600}
@@ -140,7 +140,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-1 xl:col-span-4 xl:row-start-3 border border-gray-300 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-06.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-06.webp"
             alt="Modern Gadget - Technology Innovation"
             width={800}
             height={600}
@@ -160,7 +160,7 @@ export default function HeroSection() {
           className="col-span-2 xl:col-start-5 xl:col-span-8 xl:row-start-3 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-07.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-07.mov"
             className="w-full h-full object-cover"
             preload="metadata"
           />

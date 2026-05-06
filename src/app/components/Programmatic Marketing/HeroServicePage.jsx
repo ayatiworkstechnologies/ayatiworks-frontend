@@ -353,7 +353,7 @@ function HeroServicePage() {
               space in real time. Unlike traditional advertising, it relies on
               advanced data, machine learning, and AI-driven algorithms to
               optimize campaigns and deliver highly relevant ads to the right
-              people at the right time. 
+              people at the right time.
             </p>
             <p className="text-base sm:text-lg md:text-lg text-black/80 font-secondary font-medium leading-relaxed">
               What makes programmatic unique is its adaptability across business
@@ -364,7 +364,7 @@ function HeroServicePage() {
               brand loyalty. By uniting automation, efficiency, and data-driven
               insights, programmatic marketing empowers businesses of all types
               to achieve better ROI, reduce wasted ad spend, and maintain
-              agility in an ever-competitive digital ecosystem. 
+              agility in an ever-competitive digital ecosystem.
             </p>
           </motion.div>
 
@@ -378,7 +378,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -419,7 +419,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -443,7 +443,7 @@ function HeroServicePage() {
                   <span className="text-primary text-xl sm:text-2xl flex-shrink-0">
                     <GoDotFill />
                   </span>
-                  Can smarter targeting cut wasted spend? 
+                  Can smarter targeting cut wasted spend?
                 </p>
               </div>
 
@@ -453,7 +453,7 @@ function HeroServicePage() {
                     <GoDotFill />
                   </span>
                   Can omnichannel (display, video, CTV, DOOH, native, audio)
-                  work as one system? 
+                  work as one system?
                 </p>
               </div>
 
@@ -462,17 +462,17 @@ function HeroServicePage() {
                   <span className="text-primary text-xl sm:text-2xl flex-shrink-0">
                     <GoDotFill />
                   </span>
-                  Can we prove incrementality, not just clicks? 
+                  Can we prove incrementality, not just clicks?
                 </p>
               </div>
             </div>
             <h2 className="text-base sm:text-lg md:text-2xl text-secondary font-primary font-medium leading-relaxed">
-              Speak Ayati’s language, Next is Now! 
+              Speak Ayati’s language, Next is Now!
             </h2>
             <p className="text-base sm:text-lg md:text-lg text-black/80 font-secondary font-medium leading-relaxed">
               {" "}
               We design AI-powered buying systems that find your audience, bid
-              at the right price, and convert attention into revenue. 
+              at the right price, and convert attention into revenue.
             </p>
           </div>
         </div>
@@ -512,7 +512,7 @@ function HeroServicePage() {
                     <GoDotFill />
                   </span>
                   Relationship first, results always. We don’t “spray & pray”
-                  media. We architect it. 
+                  media. We architect it.
                 </p>
               </div>
 
@@ -522,7 +522,7 @@ function HeroServicePage() {
                     <GoDotFill />
                   </span>
                   We learn your business inside-out. ICPs, buying cycles,
-                  average order values, sales velocity, the works. 
+                  average order values, sales velocity, the works.
                 </p>
               </div>
 
@@ -533,7 +533,7 @@ function HeroServicePage() {
                   </span>
                   Platform-agnostic buying. We run across leading DSPs (e.g.,
                   DV360, The Trade Desk, Amazon DSP) and premium PMPs, so you’re
-                  never locked into one inventory source. 
+                  never locked into one inventory source.
                 </p>
               </div>
               <div>
@@ -543,7 +543,7 @@ function HeroServicePage() {
                   </span>
                   Creative + Data + Media, together. DCO (dynamic creative
                   optimization), feed-based product ads, HTML5, vertical video,
-                  matched to audiences and intent. 
+                  matched to audiences and intent.
                 </p>
               </div>
               <div>
@@ -552,7 +552,7 @@ function HeroServicePage() {
                     <GoDotFill />
                   </span>
                   Compliance & safety by design. Brand safety layers, fraud
-                  prevention, viewability benchmarks, consent-aware tracking. 
+                  prevention, viewability benchmarks, consent-aware tracking.
                 </p>
               </div>
               <div>
@@ -562,7 +562,7 @@ function HeroServicePage() {
                   </span>
                   Whether you’re a B2B SaaS, D2C brand, marketplace, or
                   enterprise, we stitch together precision targeting +
-                  performance measurement to maximize ROAS. 
+                  performance measurement to maximize ROAS.
                 </p>
               </div>
             </div>
@@ -573,7 +573,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -610,7 +610,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-3.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -622,7 +622,7 @@ function HeroServicePage() {
             {/* Intro Paragraph */}
             <p className="text-lg sm:text-xl md:text-3xl text-primary font-primary font-medium leading-relaxed">
               Most briefs fall into a few high-impact <br />
-              tracks: 
+              tracks:
             </p>
 
             <ul className="space-y-8 text-black/80">
@@ -724,7 +724,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -822,7 +822,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-5.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-5.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -972,7 +972,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-6.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-6.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -1007,7 +1007,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-7.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-7.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -1110,7 +1110,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/pro-8.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/pro-8.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

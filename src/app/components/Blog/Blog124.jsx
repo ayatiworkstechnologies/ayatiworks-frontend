@@ -349,10 +349,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
 
@@ -475,8 +475,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : ""),
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -681,7 +681,7 @@ export default function AEOArticlePage124() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -947,7 +947,7 @@ export default function AEOArticlePage124() {
             <p className="section-phara font-bold">
               For B2B businesses, brand marketing is non-negotiable.
             </p>
-            
+
             <SectionH3 title="Why?">
               <div className="space-y-2 mt-4 ml-1">
                 {[
@@ -993,7 +993,7 @@ export default function AEOArticlePage124() {
             <p className="section-phara font-bold">
               For B2C, performance marketing often leads the strategy.
             </p>
-            
+
             <SectionH3 title="Why?">
               <div className="space-y-2 mt-4 ml-1">
                 {[
@@ -1216,7 +1216,7 @@ export default function AEOArticlePage124() {
           <Section id="faq" title="16. FAQs">
             <FAQAccordion />
           </Section>
-</article>
+        </article>
 
         <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
           <RightSidebarCategories />
@@ -1229,3 +1229,4 @@ export default function AEOArticlePage124() {
     </main>
   );
 }
+

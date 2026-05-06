@@ -23,29 +23,29 @@ export default function WhyChooseSection() {
     {
       title: "Increased Brand Visibility",
       desc: "We ensure your brand appears where it matters most, leading digital publications, online features, and influencer-driven conversations. This consistent exposure builds recall and establishes authority in your industry.",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/01.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
     },
     {
       title: "Stronger Online Reputation",
       desc: "A strong reputation builds trust and drives conversions. Through proactive media outreach and ORM, we shape positive narratives that reflect your brand values while minimizing the impact of negative coverage",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/02.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
     },
     {
       title: "SEO & Backlink Advantage",
       desc: "Every PR placement is also an SEO opportunity. By securing high-quality backlinks and mentions, we help improve your search rankings and organic visibility.",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/03.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
     },
     {
       title: "Local + National Relevance",
       desc: "Whether it’s Tamil-first media in Chennai, regional coverage in South India, or national placements across India, we adapt campaigns to suit your target audience and business goals.",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/04.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/04.png",
     },
     {
       title: "Data-Driven Results",
       desc: "We don’t just deliver coverage; we track its impact. From impressions to engagement, our campaigns are backed by analytics that show clear ROI and business outcomes. ",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/01.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
     },
-   
+
   ];
 
   return (

@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function AwardsSectionPage() {
 
   const router = useRouter();
-  const goToContact = () =>  router.push("/contact-us#form");
+  const goToContact = () => router.push("/contact-us#form");
   return (
     <>
       <section className="section-container py-12">
@@ -50,11 +50,11 @@ export default function AwardsSectionPage() {
                 reminder of the passion, persistence, and people behind our
                 journey.   Over the years, we’ve been recognized by industry
                 leaders for our creativity, innovation, and impact across
-                digital, design, and technology.  
+                digital, design, and technology.
               </p>
               <p className="text-base/7 sm:text-lg/8 md:text-lg/9 text-black/80 font-secondary font-medium">
                 These honors reflect the trust our clients place in us and the
-                commitment our team brings to every project. 
+                commitment our team brings to every project.
               </p>
               {/* Button */}
               <motion.div
@@ -89,7 +89,7 @@ export default function AwardsSectionPage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/group-img.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/group-img.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

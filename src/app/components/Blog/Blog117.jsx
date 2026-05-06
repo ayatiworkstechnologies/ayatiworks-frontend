@@ -56,7 +56,7 @@ export default function AEOArticlePage117() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -120,7 +120,7 @@ export default function AEOArticlePage117() {
             </p>
             <Link href="https://www.brightedge.com/blog/organic-share-of-traffic-increases-to-53" target="_blank" rel="noopener noreferrer" prefetch={false}>
               <Image
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-117-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-117-1.png"
                 alt="Organic search drives 53% of all website traffic"
                 width={800}
                 height={600}
@@ -1888,4 +1888,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
 

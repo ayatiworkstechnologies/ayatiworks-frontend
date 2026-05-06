@@ -18,7 +18,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 import RightSidebarCategories from "./RightSidebarCategories";
 import Image from "next/image";
 
@@ -35,11 +36,11 @@ const buildHref = (slugOrPath = "") => {
 export default function AEOArticlePage102() {
   const post = POSTS.find((p) => p.id === 102) || POSTS[0];
 
-   const relatedPosts = getRelatedRecentPosts({
-      currentPostId: post.id,
-      category: post.category,
-      limit: 3,
-    });
+  const relatedPosts = getRelatedRecentPosts({
+    currentPostId: post.id,
+    category: post.category,
+    limit: 3,
+  });
   return (
     <main className="min-h-screen bg-white">
       {/* Top banner */}
@@ -65,7 +66,7 @@ export default function AEOArticlePage102() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -218,8 +219,8 @@ export default function AEOArticlePage102() {
               <strong> AI-driven interfaces </strong>that deliver direct answers
               rather than a list of links.
             </p>
-            <Image width={800} height={800}
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-102-3.jpg"
+            <Image
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-102-3.jpg"
               alt="Understanding the difference between SEO vs AEO "
             />
           </Section>
@@ -782,10 +783,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
           </div>
@@ -889,8 +890,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : "")
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : "")
   );
 
   // close on outside click / Esc
@@ -1231,8 +1232,8 @@ function Intro() {
         Just a year ago, people used to type Keywords in the search bar of
         Google to get links to companies they are looking for
       </p>
-      <Image width={800} height={800}
-        src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog102-1.png"
+      <Image
+        src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog102-1.png"
         className="py-5"
         alt="Using Keyword to Search on Google"
       />
@@ -1244,8 +1245,8 @@ function Intro() {
         engine, customers will recognize your brand and can easily click the
         link displayed on the right.
       </p>
-      <Image width={800} height={800}
-        src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog102-2.png"
+      <Image
+        src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog102-2.png"
         className="py-5"
         alt="Asking a full-length question in Google Search bar expecting an answer from the AEO – Answer Engine Optimisation"
       />
@@ -1376,4 +1377,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
 

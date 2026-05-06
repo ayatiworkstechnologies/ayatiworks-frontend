@@ -44,33 +44,33 @@ export default function WhyPartner() {
       {/* ✅ Title */}
       <div className="section-container text-left flex items-start gap-6 mb-4">
         <motion.h2
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
-      >
-        <span className="mb-2 flex items-start">
-          Why Partner with Ayatiworks for Your Digital Growth?
-        </span>
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="section-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold"
+        >
+          <span className="mb-2 flex items-start">
+            Why Partner with Ayatiworks for Your Digital Growth?
+          </span>
 
-        {/* Decorative line */}
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
-          className="bg-secondary h-1 w-[280px] mt-3 origin-left rounded-full"
-        />
-      </motion.h2>
+          {/* Decorative line */}
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+            className="bg-secondary h-1 w-[280px] mt-3 origin-left rounded-full"
+          />
+        </motion.h2>
       </div>
-      
+
 
       {/* ✅ Grid */}
       <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
         {/* Left Side Image */}
         <div className="flex justify-center">
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/seo-img.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/seo-img.png"
             alt="Team meeting"
             className="rounded-lg shadow-lg w-full  object-cover"
           />

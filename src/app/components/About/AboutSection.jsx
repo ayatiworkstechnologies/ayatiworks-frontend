@@ -55,7 +55,7 @@ export default function AboutSection() {
           className="flex justify-center"
         >
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-2026.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/tv-2026.png"
             alt="Ayatiworks TV illustration"
             className="w-full  drop-shadow-xl rounded-xl"
             loading="lazy"

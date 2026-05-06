@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function AwardsSection() {
   const [flipped, setFlipped] = useState(Array(4).fill(false));
   const [modalImage, setModalImage] = useState(null);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
 
   const handleFlip = (index) => {
@@ -21,25 +21,25 @@ export default function AwardsSection() {
   const awards = [
     {
       title: "TamilNadu Brand Leadership AWARDS -2020",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/aw-4.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-4.png",
       backImg: "/assets/awards-4.webp",
       link: "#",
     },
     {
       title: "Indian Achievers AWARD - 2021-2022",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/aw-1.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-1.png",
       backImg: "/assets/awards-1.webp",
       link: "#",
     },
     {
       title: "Digital Agency of the YEAR -2022",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/aw-2.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-2.png",
       backImg: "/assets/awards-2.webp",
       link: "#",
     },
     {
       title: "Trendsetters of TamilNadu by TIMES OF INDIA -2022",
-      img: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/aw-3.png",
+      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-3.png",
       backImg: "/assets/awards-3.webp",
       link: "#",
     },
@@ -99,9 +99,8 @@ export default function AwardsSection() {
             onClick={() => handleFlip(index)}
           >
             <div
-              className={`absolute inset-0 rounded-2xl shadow-lg transition-transform duration-700 ease-in-out [transform-style:preserve-3d] ${
-                flipped[index] ? "[transform:rotateY(180deg)]" : ""
-              }`}
+              className={`absolute inset-0 rounded-2xl shadow-lg transition-transform duration-700 ease-in-out [transform-style:preserve-3d] ${flipped[index] ? "[transform:rotateY(180deg)]" : ""
+                }`}
             >
               {/* Front Side */}
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-white border border-gray-200 rounded-2xl shadow-md [backface-visibility:hidden] p-6 hover:shadow-2xl">

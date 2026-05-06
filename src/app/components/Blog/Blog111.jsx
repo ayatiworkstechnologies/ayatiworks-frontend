@@ -18,7 +18,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 import RightSidebarCategories from "./RightSidebarCategories";
 import Image from "next/image";
 
@@ -55,9 +56,8 @@ export default function AEOArticlePage111() {
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
-          }}
+            avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+          }} https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage
           updatedAt={post.date}
           readMins={post.readMins}
         />
@@ -525,10 +525,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
           </div>
@@ -632,8 +632,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : ""),
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -1050,5 +1050,7 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
+
 
 

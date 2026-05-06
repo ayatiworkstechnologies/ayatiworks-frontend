@@ -10,9 +10,9 @@ export default function VolvoCaseStudy() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner.jpg",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/volvo-banner.jpg",
           mobileImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/volvo-banner-mob.jpg",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/volvo-banner-mob.jpg",
           imageAlt: "Volvo XC90 aerial view",
         }}
         section={{
@@ -33,7 +33,7 @@ export default function VolvoCaseStudy() {
         challengeEyebrow="Volvo wasn’t just looking for a digital agency."
         challengeCopy="They were scouting for a strategic pit crew to tune up their brand visibility, simplify marketing gears, and rev up sales, all without burning extra fuel.  "
         challengeCopy1="That's where Ayatiworks stepped in!  "
-        challengeImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-2.png"
+        challengeImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-2.png"
         challengeImgAlt="Volvo challenge section background"
         objectiveTitle="The Objective"
         objectiveSubTitle="To build a long-term digital roadmap that: "
@@ -42,13 +42,13 @@ export default function VolvoCaseStudy() {
           "Streamline the marketing engine",
           "Drive faster, more qualified lead conversions",
         ]}
-        carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-1.png"
+        carImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-1.png"
         carImgAlt="Volvo crossover image"
         className=""
       />
       <ResultsShowcase
         title="The Results: More Than Just Mileage"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-3.png"
         metaHeading="Meta Campaigns (Apr 2024 – Feb 2025)"
         metaPoints={[
           "4.5M+ impressions; key >1.8% Reach freq",
@@ -64,7 +64,7 @@ export default function VolvoCaseStudy() {
           "Google Ads: 7.9% CTR | 11.7% (Search) | 17.6% (Smart Leads)",
           "CPA, Google Search: 23% improvement MoM (Q4) | 40% QoQ (Q4)",
         ]}
-        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-3.png"
+        rightImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-3.png"
         closingTitle="From Test Drive to a Long Drive: A Journey of Trust"
         closingCopy={`What started as one Volvo with Ayatiworks in 2024,
 became a multi-model narrative powered by precision creative,
@@ -74,7 +74,7 @@ feels the compounding effect.
 
 Quick note: each KPI was set with the finish line firmly aligned
 with on-ground sales.`}
-        logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-6.png"
+        logo="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-6.png"
         className=""
       />
       <WhyWorkedCta
@@ -93,7 +93,7 @@ with on-ground sales.`}
             metrics: "1.2M impressions · 1k+ Likes ",
             href: "https://www.instagram.com/p/DNZ0R6SPmLM/?utm_source=ig_web_copy_link",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-1.webp",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/post-1.webp",
           },
           {
             platform: "Instagram",
@@ -101,7 +101,7 @@ with on-ground sales.`}
             metrics: "1.2M impressions · 1k Likes ",
             href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-2.webm",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/post-2.webm",
           },
           {
             platform: "Instagram",
@@ -109,7 +109,7 @@ with on-ground sales.`}
             metrics: "1.2M impressions · 500+ Likes ",
             href: "https://www.instagram.com/reel/DOiyfxZktjW/?utm_source=ig_web_copy_link",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-3.webm",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/post-3.webm",
           },
           {
             platform: "Instagram",
@@ -117,7 +117,7 @@ with on-ground sales.`}
             metrics: "1.2M impressions · 6k+ Likes ",
             href: "https://www.instagram.com/p/DMAaqFXvl2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/post-4.jpg",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/post-4.jpg",
           },
         ]}
         ctaHeadline="Ready to Shift Gears?"
@@ -126,7 +126,7 @@ or a SaaS startup wanting better conversions, Ayatiworks
 knows how to make digital roads work for real business impact.`}
         ctaButtonText="Get in Touch"
         ctaHref="/contact-us"
-        ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/volvo-img-7.png"
+        ctaImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/volvo-img-7.png"
         className=""
         ctaHeadlineColor="text-white "
         ctaCopyColor="text-white/90"

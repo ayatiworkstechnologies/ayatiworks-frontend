@@ -151,7 +151,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -195,7 +195,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/insta-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/insta-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -305,7 +305,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/insta-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/insta-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -337,10 +337,10 @@ function HeroServicePage() {
         </div>
         <h3 className="text-2xl sm:text-3xl md:text-4xl text-secondary font-primary font-medium leading-relaxed mb-4">
           According to Statista, India ranks #1 globally for Instagram usage as
-          of 2025. With a massive, mobile-first audience, Indian brands can: 
+          of 2025. With a massive, mobile-first audience, Indian brands can:
         </h3>
         <Image width={800} height={800}
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/inst-banner.png"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/inst-banner.png"
           alt="Email Service"
           className="w-full h-auto object-cover mb-2"
         />
@@ -488,7 +488,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/insta-3.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/insta-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -563,7 +563,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/insta-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/insta-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

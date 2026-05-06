@@ -37,7 +37,7 @@ function OurWideRange() {
         className="flex justify-center"
       >
         <Image width={800} height={800}
-          src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/group-logo.png"
+          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/group-logo.png"
           alt="Our Clients & Partners"
           className="w-full max-w-6xl"
         />

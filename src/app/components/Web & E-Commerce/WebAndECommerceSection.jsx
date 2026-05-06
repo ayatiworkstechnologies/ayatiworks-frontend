@@ -40,7 +40,7 @@ export default function WebAndECommerceSection() {
           className="flex justify-center"
         >
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/tv-dm.png"
             alt="The Year of Utsah"
             className="w-200 h-full drop-shadow-xl rounded-xl"
           />
@@ -142,7 +142,7 @@ export default function WebAndECommerceSection() {
         viewport={{ once: true }}
         className="border-b border-primary h-1 mt-8 sm:mt-10 section-container"
       ></motion.div>
-      
+
     </section>
   );
 }

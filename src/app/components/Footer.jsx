@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Left - Logo & Links Group */}
         <div className="flex flex-col md:flex-row items-center gap-6 text-sm md:text-base text-center md:text-left">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+            src="/ayatiworks_logo.svg"
             alt="Ayatiworks"
             width={140}
             height={40}

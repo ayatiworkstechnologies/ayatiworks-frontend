@@ -24,7 +24,7 @@ const faqs = [
     answer:
       "Now that differs based on the objective of the project, the expertise of the SEO agency or SEO expert. Commonly SEO Charges start from 15,000/- per month charged by SEO Companies in Chennai. As we all know, one solution cannot fit all the businesses, the price entirely depends on the service required.  ",
   },
- 
+
 ];
 
 export default function FAQSection() {
@@ -116,7 +116,7 @@ export default function FAQSection() {
           >
             <div>
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/faq-img.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/faq-img.png"
                 alt="FAQ Illustration"
                 className="w-full "
               />

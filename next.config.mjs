@@ -19,6 +19,16 @@ const nextConfig = {
         hostname: 'ayatiwork.b-cdn.net',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'imagekit.io',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+        pathname: '/**',
+      },
     ],
     // Prefer modern formats (AVIF > WebP > original)
     formats: ['image/avif', 'image/webp'],

@@ -6,25 +6,25 @@ import Image from "next/image";
 // ✅ Dummy award data (can later come from API or JSON)
 const awards = [
   {
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/awards-5.png",
+    image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/awards-5.png",
     title: "Ayatiworks Volvo XC90 Campaign Earns Bronze at Maddys 2025 ",
     description:
       "Ayatiworks proudly won the Bronze Award for Best Performance Marketing Agency at the 43rd Madras Advertising Awards – Dinamalar presents MADDYS 2025 powered by Peps on 20th September 2025. This recognition comes for our impactful performance marketing campaign for Volvo’s premium SUV, the XC90, which successfully drove 500 confirmed bookings. The campaign was a testament to our team’s strategic thinking, creativity, and data-driven execution.",
   },
   {
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/awards-1.png",
+    image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/awards-1.png",
     title: "Celebrating Milestones, Honoring Excellence",
     description:
       "At Ayatiworks, every award is more than just a trophy. It’s a reminder of the passion, persistence, and people behind our journey. Over the years, we’ve been recognized by industry leaders for our creativity, innovation, and impact across digital, design, and technology.",
   },
   {
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/awards-2.png",
+    image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/awards-2.png",
     title: "Digital Agency of the Year 2022",
     description:
       "Being recognized as the Digital Agency of the Year reflects our commitment to delivering measurable results and innovative campaigns that transform brands in the digital space.",
   },
   {
-    image: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/awards-3.png",
+    image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/awards-3.png",
     title: "Indian Achievers Award 2021–2022",
     description:
       "This award acknowledges our perseverance and leadership in driving meaningful change through technology and creativity, setting benchmarks for the industry.",

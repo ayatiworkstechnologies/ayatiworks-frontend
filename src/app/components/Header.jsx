@@ -23,7 +23,7 @@ import MobileMenu from "./MobileMenu";
 export const NAV = [
   {
     kind: "logo",
-    src: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg",
+    src: "/ayatiworks_logo.svg",
     alt: "Logo",
     to: "/",
   },
@@ -536,7 +536,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
         <div className="flex items-center justify-between rounded-full bg-white/90 backdrop-blur px-3 py-2 shadow-xl">
           <Link href="/" className="shrink-0" onClick={() => handleSelect("/")}>
             <Image
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+              src="/ayatiworks_logo.svg"
               alt="Logo"
               width={160}
               height={32}
@@ -598,7 +598,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
             className="backdrop-blur shadow-glow w-[200px] rounded-full p-3 hover:scale-105 cursor-pointer transition"
           >
             <Image
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/logo.png"
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo.png"
               alt="Logo"
               width={160}
               height={32}
@@ -614,7 +614,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
               <Button variant="text" className="p-0 hover:bg-transparent">
                 <Link href="/" onClick={() => handleSelect("/")}>
                   <Image
-                    src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/ayatiworks_logo.svg"
+                    src="/ayatiworks_logo.svg"
                     alt="Logo"
                     width={200}
                     height={50}

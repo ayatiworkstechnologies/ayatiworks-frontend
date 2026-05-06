@@ -49,7 +49,7 @@ export default function DigitalMarketingSection() {
           className="flex justify-center"
         >
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/tv-dm.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/tv-dm.png"
             alt="The Year of Utsah"
             className="w-200 h-full drop-shadow-xl rounded-xl"
           />
@@ -84,7 +84,7 @@ export default function DigitalMarketingSection() {
           <p className="text-black/80 font-secondary font-medium mb-2 text-base/8 sm:text-base/8 md:text-lg/8">
             <span className="font-medium">
               When it comes to content in any form, it is not as easy as it used
-              to be. 
+              to be.
             </span>{" "} <br />
             Every business today faces the same challenge: the demand for
             content keeps growing, but the resources to create it rarely keep

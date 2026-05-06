@@ -239,7 +239,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -282,7 +282,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-3.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -398,7 +398,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -497,9 +497,8 @@ function HeroServicePage() {
           {steps.map((step) => (
             <div
               key={step.id}
-              className={`bg-white shadow-md border border-gray-200 p-6 rounded-md ${
-                step.id === 5 ? "md:col-span-2" : ""
-              }`}
+              className={`bg-white shadow-md border border-gray-200 p-6 rounded-md ${step.id === 5 ? "md:col-span-2" : ""
+                }`}
             >
               {/* Step Title */}
               <h3 className=" font-primary text-secondary font-medium text-2xl mb-4">
@@ -549,7 +548,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -680,7 +679,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -716,7 +715,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-5.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-5.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -837,7 +836,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/seo-6.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/seo-6.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

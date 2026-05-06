@@ -5,16 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", title: "Initial Consultation", desc: "We start with a one-on-one consultation to understand your goals, target audience, and content needs." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/2.png", title: "Needs Assessment", desc: "Our team evaluates your current content assets, gaps, and growth opportunities." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/3.png", title: "Content Strategy Blueprint", desc: "We design a roadmap aligned with campaigns, KPIs, and marketing channels." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/4.png", title: "Editorial Calendar Setup", desc: "A flexible content calendar ensures timely delivery for launches and campaigns." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/5.png", title: "Creative Asset Development", desc: "Copy, visuals, and videos are created with a focus on brand voice and impact." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/6.png", title: "Localization & Multilingual", desc: "We adapt messaging into Tamil, Hindi, or other languages for wider reach." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/7.png", title: "Quality Review & Editing", desc: "Every asset undergoes editing, proofreading, and brand consistency checks." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/8.png", title: "Delivery & Deployment", desc: "We integrate assets seamlessly into your digital campaigns and platforms." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/9.png", title: "Performance Tracking", desc: "Analytics and engagement metrics are monitored to measure success." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/10.png", title: "Continuous Optimization", desc: "Insights from performance refine and improve future content cycles." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png", title: "Initial Consultation", desc: "We start with a one-on-one consultation to understand your goals, target audience, and content needs." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png", title: "Needs Assessment", desc: "Our team evaluates your current content assets, gaps, and growth opportunities." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png", title: "Content Strategy Blueprint", desc: "We design a roadmap aligned with campaigns, KPIs, and marketing channels." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png", title: "Editorial Calendar Setup", desc: "A flexible content calendar ensures timely delivery for launches and campaigns." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png", title: "Creative Asset Development", desc: "Copy, visuals, and videos are created with a focus on brand voice and impact." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png", title: "Localization & Multilingual", desc: "We adapt messaging into Tamil, Hindi, or other languages for wider reach." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/7.png", title: "Quality Review & Editing", desc: "Every asset undergoes editing, proofreading, and brand consistency checks." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/8.png", title: "Delivery & Deployment", desc: "We integrate assets seamlessly into your digital campaigns and platforms." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/9.png", title: "Performance Tracking", desc: "Analytics and engagement metrics are monitored to measure success." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/10.png", title: "Continuous Optimization", desc: "Insights from performance refine and improve future content cycles." },
 ];
 
 export default function CaaSFramework() {
@@ -88,9 +88,8 @@ export default function CaaSFramework() {
               {steps.slice(0, 5).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />
@@ -117,9 +116,8 @@ export default function CaaSFramework() {
               {steps.slice(5, 10).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />
@@ -142,7 +140,7 @@ export default function CaaSFramework() {
         <p className="text-black/80 font-secondary font-medium mb-2 text-base sm:text-lg">
           This structured 10-step framework ensures that every piece of content we create is strategic, timely, and performance-ready. With Ayatiworks’ CaaS model, you don’t just get content delivery, you get a repeatable system that scales with your business and drives measurable growth.
         </p>
-       
+
       </div>
     </div>
   );

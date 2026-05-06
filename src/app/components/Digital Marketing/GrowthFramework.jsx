@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png", title: "Discovery Call", desc: "Understand business goals, audience, and vision." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/2.png", title: "Comprehensive Audit", desc: "Evaluate digital presence, gaps, and opportunities." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/3.png", title: "KPI-Driven Strategy", desc: "Define success metrics aligned to business outcomes." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/4.png", title: "Tailored Campaign Planning", desc: "Build strategies for SEO, PPC, and DBC funnels." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/5.png", title: "Creative Execution", desc: "Design & deploy creatives across digital platforms." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/6.png", title: "Content Marketing", desc: "Develop valuable, consistent, and SEO-rich content." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/7.png", title: "Ad Optimization", desc: "Continuously test and refine paid campaigns." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/8.png", title: "Automation Setup", desc: "Implement CRMs, email flows, and lead nurturing." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/9.png", title: "Analytics & Reporting", desc: "Track ROI, KPIs, and provide transparent reporting." },
-  { id: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/10.png", title: "Growth Scaling", desc: "Expand reach with data-backed scaling strategies." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png", title: "Discovery Call", desc: "Understand business goals, audience, and vision." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png", title: "Comprehensive Audit", desc: "Evaluate digital presence, gaps, and opportunities." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png", title: "KPI-Driven Strategy", desc: "Define success metrics aligned to business outcomes." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png", title: "Tailored Campaign Planning", desc: "Build strategies for SEO, PPC, and DBC funnels." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png", title: "Creative Execution", desc: "Design & deploy creatives across digital platforms." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png", title: "Content Marketing", desc: "Develop valuable, consistent, and SEO-rich content." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/7.png", title: "Ad Optimization", desc: "Continuously test and refine paid campaigns." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/8.png", title: "Automation Setup", desc: "Implement CRMs, email flows, and lead nurturing." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/9.png", title: "Analytics & Reporting", desc: "Track ROI, KPIs, and provide transparent reporting." },
+  { id: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/10.png", title: "Growth Scaling", desc: "Expand reach with data-backed scaling strategies." },
 ];
 
 export default function GrowthFramework() {
@@ -101,9 +101,8 @@ export default function GrowthFramework() {
               {steps.slice(0, 5).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />
@@ -130,9 +129,8 @@ export default function GrowthFramework() {
               {steps.slice(5, 10).map((step, index) => (
                 <div
                   key={step.id}
-                  className={`w-1/5 flex flex-col items-center px-4 ${
-                    index % 2 === 0 ? "mb-36" : "mt-36"
-                  }`}
+                  className={`w-1/5 flex flex-col items-center px-4 ${index % 2 === 0 ? "mb-36" : "mt-36"
+                    }`}
                 >
                   <div className="w-16 h-16 mb-6">
                     <Image width={800} height={800} src={step.id} alt={step.title} />

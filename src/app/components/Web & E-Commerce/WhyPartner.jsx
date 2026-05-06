@@ -25,7 +25,7 @@ const benefits = [
     title: "Measurable Growth",
     desc: "Every build is optimized for conversions, rankings, and ROI.",
   },
-  
+
 
 ];
 
@@ -54,14 +54,14 @@ export default function WhyPartner() {
           />
         </motion.h2>
       </div>
-      
+
 
       {/* ✅ Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
         {/* Left Side Image */}
         <div className="flex justify-center">
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/seo-img.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/seo-img.png"
             alt="Team meeting"
             className="rounded-lg shadow-lg w-full object-cover"
           />

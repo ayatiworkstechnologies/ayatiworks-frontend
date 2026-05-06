@@ -28,7 +28,7 @@ export default function HeroSectionServer() {
       <div className="mx-auto grid max-w-[1440px] auto-rows-auto grid-cols-2 gap-3 px-4 md:grid-cols-2 md:px-6 xl:h-[600px] xl:grid-cols-12 xl:grid-rows-[180px_172px_168px]">
         <div className="col-span-2 aspect-video overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-8 xl:col-start-1 xl:row-start-1 xl:aspect-auto xl:h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-02.webp"
             alt="Ayati Works campaign showcase"
             width={1200}
             height={675}
@@ -38,7 +38,7 @@ export default function HeroSectionServer() {
             sizes="100vw"
           />
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-01.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-01.mov"
             className="hidden h-full w-full object-cover md:block"
             preload="metadata"
             priority={true}
@@ -47,7 +47,7 @@ export default function HeroSectionServer() {
 
         <div className="hidden overflow-hidden rounded-2xl border border-gray-300 md:col-span-1 md:block md:aspect-[16/9] md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-1 xl:aspect-auto xl:h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-02.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-02.webp"
             alt="Steel Rods - Manufacturing Excellence"
             width={800}
             height={600}
@@ -58,7 +58,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-4 xl:col-start-1 xl:row-start-2 xl:aspect-auto xl:h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-03.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-03.webp"
             alt="Safety First - Kid with Helmet"
             width={800}
             height={600}
@@ -70,7 +70,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-2 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:aspect-auto xl:h-full">
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-04.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-04.mov"
             className="h-full w-full object-cover"
             preload="none"
           />
@@ -78,7 +78,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-2 xl:aspect-auto xl:h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-05.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-05.webp"
             alt="Premium Pens - Quality Craftsmanship"
             width={800}
             height={600}
@@ -90,7 +90,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-1 xl:row-start-3 xl:aspect-auto xl:h-full">
           <Image
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-06.webp"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-06.webp"
             alt="Modern Gadget - Technology Innovation"
             width={800}
             height={600}
@@ -102,7 +102,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-2 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-8 xl:col-start-5 xl:row-start-3 xl:aspect-auto xl:h-full">
           <HeroVideo
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/banner-07.mov"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/banner-07.mov"
             className="h-full w-full object-cover"
             preload="none"
           />

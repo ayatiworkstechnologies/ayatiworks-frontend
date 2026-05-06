@@ -1,4 +1,4 @@
-"use client";import React from "react";
+"use client"; import React from "react";
 import { motion } from "framer-motion";
 import { FaRegDotCircle } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
@@ -62,54 +62,54 @@ const steps = [
 const data = [
   {
     title: "Increased Engagement",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-1.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-1.png",
     desc: "Achieved a 25% higher open rate for a Chennai-based NGO’s newsletters.",
   },
   {
     title: "Boosted Sales",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-2.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-2.png",
     desc: "Drove a 20% increase in online sales for a local electronics retailer through promotional campaigns.",
   },
   {
     title: "Enhanced Customer Retention",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-3.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-3.png",
     desc: "Drove a 30% increase in online sales for a local electronics retailer through promotional campaigns.",
   },
 ];
 const expertise = [
   {
     title: "Newsletter Campaigns",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-4.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-4.png",
   },
   {
     title: "Promotional Emails",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-5.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-5.png",
   },
   {
     title: "Transactional Emails",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-6.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-6.png",
   },
   {
     title: "Drip Campaigns",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-7.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-7.png",
   },
   {
     title: "Event Invitations",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-8.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-8.png",
   },
   {
     title: "Customer Surveys",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-9.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-9.png",
   },
   {
     title: "Re-engagement Campaigns",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-10.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-10.png",
   },
   {
     title: "Automated Workflows",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/email-11.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/email-11.png",
   },
-  
+
 ];
 
 function HeroServicePage() {
@@ -180,7 +180,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -223,7 +223,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/email-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/email-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -482,7 +482,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/email-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/email-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -626,7 +626,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/email-3.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/email-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

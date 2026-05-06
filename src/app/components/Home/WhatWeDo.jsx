@@ -35,7 +35,7 @@ export default function WhatWeDo() {
           </motion.div>
           <div className="flex justify-center md:justify-start">
             <Image width={800} height={800}
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/Brain.png"
+              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Brain.png"
               alt="Brain Icon"
               className="w-16 md:w-20"
             />

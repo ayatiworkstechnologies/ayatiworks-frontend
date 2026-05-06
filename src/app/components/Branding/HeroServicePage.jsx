@@ -115,7 +115,7 @@ function HeroServicePage() {
               and Industry.
             </p>
             {/* Button */}
-           <motion.div
+            <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.98 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               whileHover={{
@@ -147,7 +147,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -190,7 +190,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -211,7 +211,7 @@ function HeroServicePage() {
                 when the end user is in pain, they think of your brand as a pain
                 reliever since we at Ayatiworks project your brand as such. 80%
                 People buy from your business only if they recognize your brand
-                and when your USP directly relates to solving their problems. 
+                and when your USP directly relates to solving their problems.
               </p>
 
               <div className="space-y-2">
@@ -258,18 +258,18 @@ function HeroServicePage() {
                   Branding is more than your logo; it’s how people feel and
                   emotionally connect with your business. It’s your voice,
                   values, messaging, tone, and experience. It’s the difference
-                  between a transaction and a relationship. 
+                  between a transaction and a relationship.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed text-black/80">
                   At Ayatiworks, we create holistic brand strategies that go
                   beyond visuals to deliver consistent, authentic messaging
                   across platforms. We shape how your audience perceives you
-                  emotionally, cognitively, and digitally. 
+                  emotionally, cognitively, and digitally.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed text-black/80">
                   We blend strategic positioning, purpose-driven messaging, and
                   user-first experiences to build brands that thrive in the real
-                  world and the digital one. 
+                  world and the digital one.
                 </p>
               </div>
             </div>
@@ -472,7 +472,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -587,7 +587,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-3.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -756,7 +756,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-4.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-4.png"
                 alt="Our Branding Process"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -795,7 +795,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-2.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-2.png"
                 alt="Volvo branding case study cover"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -982,7 +982,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/brand-5.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-5.png"
                 alt="Branding at Ayatiworks"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />

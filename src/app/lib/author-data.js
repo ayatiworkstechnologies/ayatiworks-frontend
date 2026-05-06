@@ -5,7 +5,7 @@ export const AUTHORS = [
     slug: "daniel-joseph",
     name: "Daniel Joseph",
     avatar:
-      "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/teams/daniel.png",
+      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/daniel.png",
     bio: `Daniel Joseph is a Senior SEO Content Writer & Strategist at Ayatiworks, bringing over 20 years of expertise in content creation and digital marketing strategy. He specializes in developing and executing SEO-driven content for healthcare clients in the United States, helping them achieve a strong organic presence on Google SERP. Having worked with prominent brands across the UAE, UK, USA, and India, Daniel collaborates closely with SEO, Marketing, and Sales teams to craft content that drives business growth and enhances online visibility. His core strengths include SEO, content marketing, content strategy development and AISEO Content. He is passionate about mentoring and authored couple of books. Daniel is dedicated to empowering professionals with modern content marketing skills to thrive in the evolving digital landscape.`,
     socials: {
       linkedin: "https://www.linkedin.com/",
@@ -23,7 +23,7 @@ export const POSTS_BY_AUTHOR = {
         "Is Your Website Ready for the AI Search Takeover? 5 Must-Know AEO Strategies for 2025",
       deck: "A customer asks their AI assistant, “What’s the best way to boost my online sales?” and gets a crisp, tailored answer, but your business isn’t mentioned...",
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-banner.png",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-banner.png",
       category: "SEO",
       slug: "/blogs/seo/5-must-know-aeo-strategies-for-2025",
       date: "2025-10-22T17:55:00-03:00",
@@ -36,7 +36,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-10-31T17:15:00-04:00",
       category: "SEO",
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-102.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-102.jpg",
       coverAlt:
         "Tech Startup Optimizing Content for AI-Powered Answer Engines ",
       deck: "From CEOs to CMOs in funded or incubated tech startups, there is this question about using organic reach or SEO ...",
@@ -48,7 +48,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-11-07T17:40:00-03:00",
       category: "SEO",
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-103.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-103.jpg",
       coverAlt:
         "Tech Startup Optimizing Content for AI-Powered Answer Engines ",
       deck: "Answer Engine Optimization (AEO) isn’t the next big thing, it’s the now thing. As AI Overviews and conversational search take center scategorye, startups that master AEO today are the ones that will stay visible tomorrow. ",
@@ -60,7 +60,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-11-14T17:40:00-03:00",
       category: "Digital Marketing Services",
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-104.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-104.jpg",
       coverAlt: "Chennai digital marketing agency delivering pan-India ROI ",
       deck: "Discover how Chennai’s top digital agencies drive national-scale growth. See how brands like Volvo, Nippo & Jeep scaled with Ayatiworks’ expertise...",
     },
@@ -72,7 +72,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-11-21T17:40:00-03:00",
       category: "Digital Marketing Services",
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-105.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-105.jpg",
       coverAlt:
         "Benefits of hiring a Chennai-based digital marketing agency for business growth",
       deck: "Discover the top Chennai digital marketing agency benefits and why choosing a local agency drives faster results, better communication, and higher ROI...",
@@ -84,7 +84,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-11-28T17:40:00-05:00",
       readMins: 10,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-106.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-106.jpg",
       coverAlt:
         "Business evaluating a digital marketing agency in Chennai using a structured checklist.",
       deck: "Learn how to evaluate a digital marketing agency in Chennai with a structured, step-by-step method. Understand what to ask, how to judge capability,...",
@@ -97,7 +97,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-12-05T17:40:00-05:00",
       readMins: 15,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-107.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-107.jpg",
       coverAlt:
         "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
       deck: "Discover the top 10 digital marketing agencies in Chennai with strengths, services, pricing insights, and expert guidance to help brands choose the right digital partner....",
@@ -113,7 +113,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-12-19T17:40:00-05:00",
       readMins: 10,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-108.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-108.jpg",
       coverAlt: "Digital marketing services explained as a growth system",
       deck: "Learn how digital marketing services work together as a unified growth system. A strategic guide for founders and marketing leaders evaluating long-term, scalable digital growth....",
       category: "Digital Marketing Services",
@@ -128,7 +128,7 @@ export const POSTS_BY_AUTHOR = {
       date: "2025-12-25T17:40:00-05:00",
       readMins: 10,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-109.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-109.jpg",
       coverAlt:
         "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
       deck: "Confused about digital marketing services? This in-depth guide helps businesses choose, prioritise, and scale SEO, paid media, content, and automation for...",
@@ -144,7 +144,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Jan 09, 2026",
       readMins: 12,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-110.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-110.jpg",
       coverAlt:
         "Top 10 Digital Marketing Agencies in Chennai comparison guide for brands",
       deck: "Understand the real difference between SEO, AEO, GEO, and AI SEO. Learn how modern search works and why SEO remains the foundation for long-term digital growth.",
@@ -160,7 +160,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Jan 23, 2026",
       readMins: 5,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-111.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-111.jpg",
       coverAlt: "Digital marketing funnel alignment from awareness to revenue",
       deck: "Discover how digital marketing services drive real revenue when awareness, demand, and conversion are aligned across the funnel. Learn what most businesses miss.",
       category: "Digital Marketing Services",
@@ -175,7 +175,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Jan 30, 2026",
       readMins: 10,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-112.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-112.jpg",
       coverAlt:
         "How to choose the right digital marketing agency in Chennai for business growth",
       deck: "Looking for a digital marketing agency in Chennai? This in-depth buyer’s guide explains how to evaluate agencies, digital marketing services, ROI, and growth frameworks before you decide.",
@@ -189,7 +189,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Feb 06, 2026",
       readMins: 20,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-113.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-113.jpg",
       coverAlt:
         "Digital marketing funnel showing awareness, demand, and revenue alignment for business growth",
       deck: "Discover how digital marketing aligns awareness, demand, and revenue into one growth system. Learn how Ayatiworks drives funnel-led business outcomes.",
@@ -204,7 +204,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Feb 13, 2026",
       readMins: 25,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-114.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-114.jpg",
       coverAlt:
         "AI-enabled Shopify ecommerce development and digital marketing services in Chennai",
       deck: "Discover how AI-powered Shopify development is transforming ecommerce. Ayatiworks, a leading Shopify development company in Chennai, builds agentic,..",
@@ -219,7 +219,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Feb 20, 2026",
       readMins: 15,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-115.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-115.jpg",
       coverAlt:
         "Difference between SEO, performance marketing, and growth marketing explained for businesses",
       deck: "Confused between SEO, performance marketing, and growth marketing? This guide breaks down the differences, costs, ROI timelines, and what actually drives sustainable business growth...",
@@ -235,7 +235,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Feb 27, 2026",
       readMins: 20,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-116.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-116.jpg",
       coverAlt:
         "AI-powered affiliate marketing dashboard with predictive analytics and performance algorithms for Chennai brands",
       deck: "Discover how AI-powered affiliate marketing is transforming brand growth in Chennai. From predictive commission modeling to intelligent automation and fraud detection, learn how performance algorithms are redefining ROI for modern businesses...",
@@ -254,7 +254,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Mar 06, 2026",
       readMins: 25,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-117.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-117.jpg",
       coverAlt: " Top SEO agencies in Chennai comparison guide ",
       deck: " Explore the top 10 SEO agencies in Chennai, compare their strengths, services, and strategies to find the right SEO partner for sustainable organic growth... ",
       category: "SEO Services",
@@ -272,7 +272,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Mar 13, 2026",
       readMins: 20,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-118.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-118.jpg",
       coverAlt:
         "SEO services in Chennai guide for businesses choosing an SEO agency",
       deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
@@ -290,7 +290,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Mar 20, 2026",
       readMins: 30,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-119.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-119.jpg",
       coverAlt:
         "Common SEO mistakes Chennai businesses make affecting Google rankings",
       deck: "Looking for SEO services in Chennai? Learn how SEO works, what it costs, how long it takes, and how to choose the right SEO agency for long-term business growth.... ",
@@ -308,7 +308,7 @@ export const POSTS_BY_AUTHOR = {
       date: "Mar 27, 2026",
       readMins: 25,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-120.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-120.jpg",
       coverAlt:
         "SEO strategies 2026 guide showing modern SEO techniques and outdated SEO methods",
       deck: "SEO in 2026 is not the same as before. Discover 9 SEO strategies that still work and 5 outdated tactics you must stop using to rank higher on Google and AI search... ",
@@ -326,7 +326,7 @@ export const POSTS_BY_AUTHOR = {
       date: "APR 03, 2026",
       readMins: 15,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-121.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-121.jpg",
       coverAlt:
         "Signs your business needs professional SEO services including low traffic poor rankings and weak online visibility",
       deck: "Not getting traffic or leads? Discover 5 clear signs your business needs professional SEO services and how to fix it before losing more growth opportunities.... ",
@@ -344,7 +344,7 @@ export const POSTS_BY_AUTHOR = {
       date: "APR 10, 2026",
       readMins: 20,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-122.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-122.jpg",
       coverAlt: "Local SEO Chennai Google Maps ranking strategy",
       deck: "Struggling to rank locally? Discover proven Local SEO strategies in Chennai to dominate Google Maps and “near me” searches. Drive more calls, visits & leads.... ",
       category: "SEO Services",
@@ -365,7 +365,7 @@ export const POSTS_BY_AUTHOR = {
       date: "APR 23, 2026",
       readMins: 20,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-123.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-123.jpg",
       coverAlt: "SEO vs performance marketing strategy comparison",
       deck: "Confused between SEO and performance marketing? Discover what works best for Chennai businesses in 2026 based on budget, ROI, and growth stage.",
       category: "Digital Marketing Services",
@@ -385,7 +385,7 @@ export const POSTS_BY_AUTHOR = {
       date: "APR 30, 2026",
       readMins: 8,
       cover:
-        "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/blog-124.jpg",
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-124.jpg",
       coverAlt:
         "Brand marketing vs performance marketing comparison for B2B and B2C",
       deck: "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",

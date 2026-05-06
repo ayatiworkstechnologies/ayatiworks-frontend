@@ -8,21 +8,21 @@ import Image from "next/image";
 const roles = [
   {
     title: "SEO Content Writers & Strategists",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/1.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png",
   },
-  { title: "Digital Marketing Managers", icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/2.png" },
+  { title: "Digital Marketing Managers", icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png" },
   {
     title: "Social Media & Performance Marketing Specialists",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/3.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png",
   },
-  { title: "UI/UX Designers", icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/4.png" },
+  { title: "UI/UX Designers", icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png" },
   {
     title: "Programmatic & Media Buying Experts",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/5.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png",
   },
   {
     title: "Brand Storytellers & PR Specialists",
-    icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/6.png",
+    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function RolesMarquee() {
             "
           >
             {list.map((r, i) => {
-              
+
               return (
                 <article
                   key={`${r.title}-${i}`}

@@ -56,7 +56,7 @@ export default function AEOArticlePage116() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -1596,4 +1596,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
 

@@ -26,7 +26,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Digital Marketing Services",
-      icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/good-vibe.png",
+      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/good-vibe.png",
       basePath: "/digital-marketing-services",
       list: [
         { label: "SEO Services", href: "/digital-marketing-services/seo" },
@@ -63,7 +63,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Content as a Service",
-      icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/01.png",
+      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
       basePath: "/content-as-a-service",
       list: [
         {
@@ -87,7 +87,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Digital PR Service",
-      icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/02.png",
+      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
       basePath: "/digital-pr",
       list: [
         { label: "Digital PR", href: "/digital-pr/digital-pr-service" },
@@ -105,7 +105,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Web & E-commerce",
-      icon: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/icon/03.png",
+      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
       basePath: "/services/web-ecommerce",
       list: [
         { label: "UX/UI Design", href: "/web-ecommerce/ux-ui-design" },

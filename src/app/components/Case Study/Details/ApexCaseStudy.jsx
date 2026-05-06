@@ -10,9 +10,9 @@ export default function ApexCaseStudy() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/apex-banner-web.svg",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/apex-banner-web.svg",
           mobileImage:
-            "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/apex-banner-mob.svg",
+            "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/apex-banner-mob.svg",
           imageAlt:
             "Apex Dura branding and marketing campaign by Ayatiworks showcasing logo, identity, and digital presence.",
         }}
@@ -33,7 +33,7 @@ export default function ApexCaseStudy() {
         challengeEyebrow="Apex Steel carried a legacy identity, but its new TMT division needed to break from the past."
         challengeCopy="The brand lacked a compelling persona, strong recall, and a communication system that could scale in a hyper-competitive TMT market."
         challengeCopy1=" Ayatiworks stepped in to engineer clarity, character, and differentiation."
-        challengeImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-10.svg"
+        challengeImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-10.svg"
         challengeImgAlt="Volvo challenge section background"
         objectiveTitle="The Objective"
         objectiveSubTitle="To build a complete brand ecosystem that: "
@@ -43,13 +43,13 @@ export default function ApexCaseStudy() {
           "Amplifies visibility across South India",
           "Unifies voice, design, and communication across every touchpoint",
         ]}
-        carImg="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-1.svg"
+        carImg="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-1.svg"
         carImgAlt="Volvo crossover image"
         className=""
       />
       <ResultsShowcase
         title="The Transformation: A Brand Reforged"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-2.svg"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-2.svg"
         metaHeading="Naming & Brand Philosophy"
         metaPoints={[
           "Through extensive ideation, one name stood tall, Apex Dura.",
@@ -63,12 +63,12 @@ export default function ApexCaseStudy() {
           "Structural integrity",
           "The signature rib pattern evolved into a design language, elevating recall across campaigns and collaterals. ",
         ]}
-        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-3.svg"
+        rightImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-3.svg"
         className=""
       />
       <ResultsShowcase
         title="Brand Bible Development"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-4.svg"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-4.svg"
         metaHeading="We codified the brand through a comprehensive Brand Book, defining:"
         metaPoints={[
           "Logo usage",
@@ -83,7 +83,7 @@ export default function ApexCaseStudy() {
       />
       <ResultsShowcase
         title="The Execution"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-5.svg"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-5.svg"
         metaHeading="Brand Identity & Collaterals"
         metaPoints={[
           "From business cards to brochures, every asset was a bold expression of the Apex Dura persona, rugged, modern, high impact.",
@@ -99,12 +99,12 @@ export default function ApexCaseStudy() {
           "Platform-specific content strategies",
           "All communications spoke one unified, authoritative voice.",
         ]}
-        rightImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-6.svg"
+        rightImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-6.svg"
         className=""
       />
       <ResultsShowcase
         title="The Results: Strategy Into Strength"
-        topImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-7.svg"
+        topImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-7.svg"
         metaHeading="Market Impact"
         metaPoints={[
           "A bold, differentiated position in a cluttered TMT category",
@@ -118,7 +118,7 @@ Apex Dura didn’t just enter the market.
 It claimed its territory.
 
 `}
-        logo="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-12.svg"
+        logo="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-12.svg"
         className=""
       />
       <WhyWorkedCta
@@ -136,7 +136,7 @@ It claimed its territory.
             metrics: "1.2M impressions · 16k+ Likes ",
             href: "https://www.instagram.com/p/DLzqIQ9J4tg/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-1.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-post-1.mp4",
           },
           {
             platform: "Instagram",
@@ -144,7 +144,7 @@ It claimed its territory.
             metrics: "10k+ impressions · 3k Likes ",
             href: "https://www.instagram.com/p/DNDbG7wvDW_/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-2.jpg",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-post-2.jpg",
           },
           {
             platform: "Instagram",
@@ -152,7 +152,7 @@ It claimed its territory.
             metrics: "10k+ impressions · 5k+ Likes ",
             href: "https://www.instagram.com/p/DN-r-5OCXTW/",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-3.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-post-3.mp4",
           },
           {
             platform: "Instagram",
@@ -160,14 +160,14 @@ It claimed its territory.
             metrics: "10k+ impressions · 2.5k+ Likes ",
             href: "https://www.instagram.com/p/DMAaqFXvl2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
             image:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-post-4.mp4",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-post-4.mp4",
           },
         ]}
         ctaHeadline="Ready to Build Brands That Endure?"
         ctaCopy={`From steel to SaaS, we craft brands engineered for growth. Let’s build your next market success story.`}
         ctaButtonText="Get in Touch"
         ctaHref="/contact-us"
-        ctaImage="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/casestudy/apex-11.svg"
+        ctaImage="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/casestudy/apex-11.svg"
         className=""
         ctaHeadlineColor="text-primary "
         ctaCopyColor="text-secondary"

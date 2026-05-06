@@ -11,7 +11,7 @@ const fade = {
 
 export default function LifeAtAyatiworks({
   title = "Life at Ayatiworks",
-  image = "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/dev-4.png",
+  image = "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/dev-4.png",
 }) {
   return (
     <section className="bg-white section ">

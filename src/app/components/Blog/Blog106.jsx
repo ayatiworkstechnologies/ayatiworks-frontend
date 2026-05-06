@@ -19,7 +19,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import { POSTS } from "../../lib/blogs-data";
 import RelatedPostsFromData from "./RelatedPostsFromData";
-import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+import { getRelatedRecentPosts } from "../../lib/getRelatedRecentPosts";
+
 import RightSidebarCategories from "./RightSidebarCategories";
 import Image from "next/image";
 
@@ -55,7 +56,7 @@ export default function AEOArticlePage106() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -385,10 +386,10 @@ export default function AEOArticlePage106() {
               They talk about your funnel.
             </p>
 
-            <Image width={800} height={800}
-              src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/blog-img-106-1.png"
-              alt="Google Ranking businesses for Keyword on SERP "
-            />
+          <Image
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-106-1.png"
+            alt="Google Ranking businesses for Keyword on SERP "
+          />
 
             <div className="ml-10 mb-4">
               <h3 className="section-title text-2xl text-secondary text-left my-5">
@@ -948,10 +949,10 @@ function SplitHeroBanner({
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
               {Array.isArray(title)
                 ? title.map((line, i) => (
-                    <span key={i} className="block">
-                      {line}
-                    </span>
-                  ))
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))
                 : title}
             </h2>
           </div>
@@ -1055,8 +1056,8 @@ function ShareButtons({
   const encodedUrl = encodeURIComponent(absoluteUrl || "");
   const encodedTitle = encodeURIComponent(
     title ||
-      (post && post.title) ||
-      (typeof document !== "undefined" ? document.title : ""),
+    (post && post.title) ||
+    (typeof document !== "undefined" ? document.title : ""),
   );
 
   // close on outside click / Esc
@@ -1499,4 +1500,5 @@ function FAQItem({ q, a, open, onToggle, index }) {
     </div>
   );
 }
+
 

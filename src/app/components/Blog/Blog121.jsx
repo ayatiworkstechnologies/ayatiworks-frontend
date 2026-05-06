@@ -604,7 +604,7 @@ export default function AEOArticlePage121() {
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar: "https://ayatiworks-storage.s3.us-east-1.amazonaws.com/author/daniel.png",
+            avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -900,3 +900,4 @@ export default function AEOArticlePage121() {
     </main>
   );
 }
+

@@ -21,17 +21,17 @@ export default function TeamPage() {
       {/* Hero / Intro */}
       {/* <HeroSection /> */}
       <ResponsiveBanner
-              desktopSrc="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/Teams.jpg"
-              alt="Ayatiworks Contact Us"
-              priority
-              className="mb-4 sm:mb-6"
-              eyebrow="Teams"
-              title="Meet the minds behind the magic."
-              subtitle="Our team brings creativity, strategy and tech fluency into one dynamic force.
+        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Teams.jpg"
+        alt="Ayatiworks Contact Us"
+        priority
+        className="mb-4 sm:mb-6"
+        eyebrow="Teams"
+        title="Meet the minds behind the magic."
+        subtitle="Our team brings creativity, strategy and tech fluency into one dynamic force.
 Get to know the experts guiding your brand to standout success."
-              ctaHref="/contact"
-              height={420}
-            />
+        ctaHref="/contact"
+        height={420}
+      />
       <TeamIntro />
       <TeamMember />
 

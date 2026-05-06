@@ -4,7 +4,7 @@ export const metadata = {
   title: "Ayatiworks Case Studies, Brand Growth & Marketing Excellence",
   description:
     "Explore real success stories! See how our Chennai-based experts drive brand growth with innovative marketing. Check them out!",
-    alternates: { canonical: "https://www.ayatiworks.com/case-study", }
+  alternates: { canonical: "https://www.ayatiworks.com/case-study", }
 };
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
@@ -18,7 +18,7 @@ export default function CaseStudyPages() {
       {/* Hero / Intro */}
       {/* <HeroSection /> */}
       <ResponsiveBanner
-        desktopSrc="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/banner/Casestudy.jpg"
+        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Casestudy.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

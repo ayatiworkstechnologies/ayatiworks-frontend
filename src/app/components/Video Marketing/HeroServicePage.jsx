@@ -232,7 +232,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/office-member.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -250,7 +250,7 @@ function HeroServicePage() {
             className="section-title text-left "
           >
             <span className="mb-2 block">
-              Types of Video Marketing Services Offered by Ayatiworks  
+              Types of Video Marketing Services Offered by Ayatiworks
             </span>
 
             <motion.div
@@ -269,7 +269,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/service/vid-1.png"
+                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/vid-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

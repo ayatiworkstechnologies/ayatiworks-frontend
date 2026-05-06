@@ -63,7 +63,7 @@ export default function WhyPartner() {
         {/* Left Side Image */}
         <div className="flex justify-center">
           <Image width={800} height={800}
-            src="https://ayatiworks-storage.s3.us-east-1.amazonaws.com/assets/blogImg/seo-img.png"
+            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/seo-img.png"
             alt="Team meeting"
             className="rounded-lg shadow-lg w-full object-cover"
           />
@@ -87,49 +87,49 @@ export default function WhyPartner() {
         </div>
       </div>
       <div className="section-container text-left flex flex-col gap-4 mb-8 mt-8">
-  <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
-    With Ayatiworks as your PR partner, you’re not just buying coverage,
-    you’re investing in a consistent, scalable, and ROI-driven approach to
-    digital reputation and authority.
-  </p>
+        <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
+          With Ayatiworks as your PR partner, you’re not just buying coverage,
+          you’re investing in a consistent, scalable, and ROI-driven approach to
+          digital reputation and authority.
+        </p>
 
-  <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
-    Digital PR is no longer optional, it’s a necessity for brands that want to
-    be seen, trusted, and remembered. From shaping online reputation to building
-    authority through media outreach, Ayatiworks delivers strategies that go
-    beyond coverage to create sustained business impact.
-  </p>
+        <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
+          Digital PR is no longer optional, it’s a necessity for brands that want to
+          be seen, trusted, and remembered. From shaping online reputation to building
+          authority through media outreach, Ayatiworks delivers strategies that go
+          beyond coverage to create sustained business impact.
+        </p>
 
-  <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
-    If your goal is to stand out in a crowded market, now is the time to make
-    Digital PR work for you.
-  </p>
+        <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
+          If your goal is to stand out in a crowded market, now is the time to make
+          Digital PR work for you.
+        </p>
 
-  <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
-    Ready to elevate your brand?
-  </p>
+        <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
+          Ready to elevate your brand?
+        </p>
 
-  <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
-    Partner with Ayatiworks, the award-winning Digital PR agency in Chennai,
-    trusted by businesses across industries.
-  </p>
+        <p className="text-black/80 font-secondary font-medium text-base sm:text-lg">
+          Partner with Ayatiworks, the award-winning Digital PR agency in Chennai,
+          trusted by businesses across industries.
+        </p>
 
-  <motion.button
-    className="relative mt-4 bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 self-start"
-    initial={{ scale: 0.9, opacity: 0 }}
-    whileInView={{ scale: 1, opacity: 1 }}
-    whileHover={{
-      scale: 1.08,
-      boxShadow: "0px 12px 25px rgba(0,0,0,0.15)",
-    }}
-    whileTap={{ scale: 0.95 }}
-    transition={{ duration: 0.3, ease: "easeOut" }}
-    viewport={{ once: true }}
-    onClick={() => navigate("/contact-us")}
-  >
-    Digital PR agency in Chennai
-  </motion.button>
-</div>
+        <motion.button
+          className="relative mt-4 bg-secondary/90 hover:bg-secondary text-white font-primary text-lg md:text-xl font-medium py-3 px-10 rounded-full shadow-md hover:shadow-xl transition-all duration-300 self-start"
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          whileHover={{
+            scale: 1.08,
+            boxShadow: "0px 12px 25px rgba(0,0,0,0.15)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          viewport={{ once: true }}
+          onClick={() => navigate("/contact-us")}
+        >
+          Digital PR agency in Chennai
+        </motion.button>
+      </div>
 
     </section>
   );
