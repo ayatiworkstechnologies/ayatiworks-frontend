@@ -652,7 +652,8 @@ export const POSTS = [
   },
   {
     id: 124,
-    title: "Brand Marketing vs Performance Marketing in Digital Marketing - 5 reasons what works best for B2B and B2C Business.",
+    title:
+      "Brand Marketing vs Performance Marketing in Digital Marketing - 5 reasons what works best for B2B and B2C Business.",
     slug: "/blogs/branding-services/brand-marketing-vs-performance-marketing-for-b2b-b2c/",
     bannerTitle: "Build a Brand or Drive Conversions? Why Not Both.",
     // subline: "Balancing Awareness and Conversions in Modern Digital Marketing",
@@ -698,27 +699,35 @@ export const POSTS = [
       },
     ],
   },
-  // {
-  //   id: 123,
-  //   title: "",
-  //   slug: "/blogs/",
-  //   bannerTitle: "",
-  //   date: "APR 10, 2026",
-  //   readMins: 20,
-  //   cover:
-  //     "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-122.jpg",
-  //   coverAlt: "",
-  //   deck: "",
-  //   category: "",
-  //   seoTitle: "",
-  //   seoDescription: "",
-  //   faqs: [
-  //     {
-  //       question: "1.",
-  //       answer: "",
-  //     },
-  //   ],
-  // },
+  {
+    id: 125,
+    BlogTitle:
+      "The TVK Digital Playbook: How Strategy, Silence, and Content Engineered a Historic Win",
+    title:
+      "Decoding the TVK Digital Marketing Playbook: How Structured Content, Silence, and Strategy Built a Mass Movement in Tamil Nadu",
+    slug: "/blogs/content-as-a-service/decoding-the-tvk-digital-marketing-playbook/",
+    bannerTitle: "He Spoke Less. The System Spoke Louder.",
+    subline:
+      "A masterclass in how silence, structure, and strategy turned content into influence, and influence into victory.",
+    date: "May 8, 2026",
+    readMins: 25,
+    cover:
+      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-125.jpg",
+    coverAlt:
+      "Ayatiworks decodes the TVK Digital Marketing Playbook - How silence, strategy and content won Tamil Nadu 2026",
+    deck: "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+    category: "CAAS Strategies",
+    seoTitle:
+      "TVK Digital Strategy Breakdown: How Vijay Engineered a Winning Content Funnel",
+    seoDescription:
+      "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+    faqs: [
+      {
+        question: "1.",
+        answer: "",
+      },
+    ],
+  },
   // {
   //   id: 123,
   //   title: "",

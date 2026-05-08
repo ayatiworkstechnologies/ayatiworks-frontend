@@ -26,7 +26,7 @@ export default function RightSidebarCategories() {
           {displayCategories.map((c) => {
             const active = isActive(c.href);
             return (
-              <li key={c.label}>
+              <li key={c.href}>
                 <Link
                   href={c.href}
                   className={[

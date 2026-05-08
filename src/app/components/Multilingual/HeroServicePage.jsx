@@ -192,9 +192,12 @@ function HeroServicePage() {
             </p>
 
             <p className="text-sm sm:text-base md:text-lg font-secondary leading-relaxed">
-              As the <span className="text-primary font-primary hover:text-secondary transition-colors">Best Multilingual Marketing Agency</span>, we craft
-              campaigns that resonate in every language from Chennai to global
-              markets. Partnering closely with our in-house{" "}
+              As the{" "}
+              <span className="text-primary font-primary hover:text-secondary transition-colors">
+                Best Multilingual Marketing Agency
+              </span>
+              , we craft campaigns that resonate in every language from Chennai
+              to global markets. Partnering closely with our in-house{" "}
               <a
                 href="https://www.ayatiworks.com/services/digital-marketing-services"
                 className="text-primary underline hover:text-secondary font-primary transition-colors"
@@ -258,7 +261,7 @@ function HeroServicePage() {
           </motion.div>
         </div>
       </section>
-      <section className="section-container py-12">
+      <section className="section-container py-12" id="what-we-offered">
         <div className="mb-12">
           <motion.h2
             initial={{ opacity: 0, y: -30 }}
@@ -268,7 +271,8 @@ function HeroServicePage() {
             className="section-title text-left "
           >
             <span className="mb-2 block">
-              Why Ayatiworks is the Best Multilingual Marketing <br /> Agency in Chennai
+              Why Ayatiworks is the Best Multilingual Marketing <br /> Agency in
+              Chennai
             </span>
 
             <motion.div
@@ -286,7 +290,9 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <Image width={800} height={800}
+              <Image
+                width={800}
+                height={800}
                 src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-1.png"
                 alt="Why Ayatiworks is the Best Multilingual Marketing Agency in Chennai"
                 className="w-full h-auto  mx-auto "
@@ -303,9 +309,10 @@ function HeroServicePage() {
               >
                 Ayatiworks
               </a>{" "}
-              stands out as the Best Multilingual Marketing Agency, delivering campaigns that bridge linguistic and cultural divides.
-              Our expertise in multilingual marketing consultancy empowers
-              brands to conquer global markets with precision.
+              stands out as the Best Multilingual Marketing Agency, delivering
+              campaigns that bridge linguistic and cultural divides. Our
+              expertise in multilingual marketing consultancy empowers brands to
+              conquer global markets with precision.
             </p>
             <motion.h2
               initial={{ opacity: 0, y: -30 }}
@@ -457,7 +464,9 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <Image width={800} height={800}
+              <Image
+                width={800}
+                height={800}
                 src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-2.png"
                 alt="Multi-Language Marketing"
                 className="w-full h-auto  mx-auto "
@@ -494,7 +503,9 @@ function HeroServicePage() {
           <div className="hidden md:block">
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
-              <Image width={800} height={800}
+              <Image
+                width={800}
+                height={800}
                 src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
@@ -605,7 +616,13 @@ function HeroServicePage() {
         {/* Closing Paragraph */}
         <div className="text-left mt-12">
           <p className="text-base sm:text-lg md:text-xl text-black/80 font-secondary font-medium leading-relaxed">
-            Ayatiworks’ 10-phase approach ensures seamless multilingual marketing services. We analyze markets, profile audiences, and develop tailored strategies. Localized content and multilingual search marketing enhance visibility, while social media campaigns engage diverse audiences. After execution, we track performance, optimize based on insights, and deliver detailed reports, ensuring your campaigns achieve global impact.
+            Ayatiworks’ 10-phase approach ensures seamless multilingual
+            marketing services. We analyze markets, profile audiences, and
+            develop tailored strategies. Localized content and multilingual
+            search marketing enhance visibility, while social media campaigns
+            engage diverse audiences. After execution, we track performance,
+            optimize based on insights, and deliver detailed reports, ensuring
+            your campaigns achieve global impact.
           </p>
         </div>
       </section>
@@ -666,9 +683,9 @@ function HeroServicePage() {
               <div className="flex items-start gap-2 text-sm sm:text-base md:text-lg font-secondary leading-relaxed">
                 <GoDotFill className="text-primary text-xl shrink-0 mt-1" />
                 <span>
-                  As the Best Multilingual Marketing Agency, Ayatiworks
-                  creates campaigns that connect and convert. Our past clients
-                  praise our structured process, cultural expertise, and timely
+                  As the Best Multilingual Marketing Agency, Ayatiworks creates
+                  campaigns that connect and convert. Our past clients praise
+                  our structured process, cultural expertise, and timely
                   delivery.
                 </span>
               </div>
@@ -710,7 +727,9 @@ function HeroServicePage() {
           {/* Right - Sticky Image */}
           <div className="hidden md:block">
             <div className="sticky top-20">
-              <Image width={800} height={800}
+              <Image
+                width={800}
+                height={800}
                 src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/oni-5.png"
                 alt="Multilingual at Ayatiworks"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"

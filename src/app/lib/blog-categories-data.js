@@ -10,4 +10,5 @@ export const CATEGORIES_SRC = [
     href: "/blogs/affiliate-marketing-services",
   },
   { label: "Branding Services", href: "/blogs/branding-services" },
+  { label: "CAAS Strategies", href: "/blogs/content-as-a-service" },
 ];

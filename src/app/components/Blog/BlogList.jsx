@@ -268,13 +268,15 @@ function Card({ post }) {
 
           {post.category && (
             <div className="absolute left-3 top-3">
-              <Link
-                href={categoryHref}
-                onClick={(e) => e.stopPropagation()}
-                className="inline-flex items-center rounded-full bg-primary/95 text-white font-secondary px-3 py-1 text-xs font-medium shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary/50"
+              <span
+                role="link"
+                tabIndex={0}
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.location.href = categoryHref; }}
+                onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); window.location.href = categoryHref; } }}
+                className="inline-flex items-center rounded-full bg-primary/95 text-white font-secondary px-3 py-1 text-xs font-medium shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer"
               >
                 {post.category}
-              </Link>
+              </span>
             </div>
           )}
 
