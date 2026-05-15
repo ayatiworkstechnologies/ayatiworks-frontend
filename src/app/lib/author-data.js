@@ -397,6 +397,58 @@ export const POSTS_BY_AUTHOR = {
       seoDescription:
         "Brand vs performance marketing, what delivers better ROI for B2B and B2C businesses? Discover 5 key differences and how to choose the right strategy.",
     },
+    {
+      id: "p25",
+      BlogTitle:
+        "The TVK Digital Playbook: How Strategy, Silence, and Content Engineered a Historic Win",
+      title:
+        "Decoding the TVK Digital Marketing Playbook: How Structured Content, Silence, and Strategy Built a Mass Movement in Tamil Nadu",
+      slug: "/blogs/content-as-a-service/decoding-the-tvk-digital-marketing-playbook/",
+      bannerTitle: "He Spoke Less. The System Spoke Louder.",
+      subline:
+        "A masterclass in how silence, structure, and strategy turned content into influence, and influence into victory.",
+      date: "May 8, 2026",
+      readMins: 25,
+      cover:
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-125.jpg",
+      coverAlt:
+        "Ayatiworks decodes the TVK Digital Marketing Playbook - How silence, strategy and content won Tamil Nadu 2026",
+      deck: "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+      category: "CAAS Strategies",
+      seoTitle:
+        "TVK Digital Strategy Breakdown: How Vijay Engineered a Winning Content Funnel",
+      seoDescription:
+        "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+      faqs: [
+        {
+          question: "1.",
+          answer: "",
+        },
+      ],
+    },
+    {
+      id: "p26",
+      BlogTitle:
+        "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+      title:
+        "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+      slug: "/blogs/seo/google-faq-rich-results-update-2026/",
+      bannerTitle:
+        "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+      subline:
+        "Google has officially started phasing out FAQ rich results from Search, marking a major shift in how websites earn visibility on SERPs.",
+      date: "May 15, 2026",
+      readMins: 15,
+      cover:
+        "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-126.png",
+      coverAlt:
+        "Google FAQ rich results update impact on SEO and AI search visibility in 2026",
+      deck: "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+      category: "SEO Services",
+      seoTitle: "Google Removes FAQ Rich Results: SEO Impact & What to Do Next",
+      seoDescription:
+        "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+    },
   ],
 };
 

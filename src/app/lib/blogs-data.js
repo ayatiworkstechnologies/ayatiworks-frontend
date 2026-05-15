@@ -728,6 +728,51 @@ export const POSTS = [
       },
     ],
   },
+  {
+    id: 126,
+    BlogTitle:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    title:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    slug: "/blogs/seo/google-faq-rich-results-update-2026/",
+    bannerTitle:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    subline:
+      "Google has officially started phasing out FAQ rich results from Search, marking a major shift in how websites earn visibility on SERPs.",
+    date: "May 15, 2026",
+    readMins: 15,
+    cover:
+      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-126.png",
+    coverAlt:
+      "Google FAQ rich results update impact on SEO and AI search visibility in 2026",
+    deck: "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+    category: "SEO Services",
+    seoTitle: "Google Removes FAQ Rich Results: SEO Impact & What to Do Next",
+    seoDescription:
+      "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+    faqs: [
+      {
+        question: "Is Google completely removing FAQs from websites?",
+        answer: "No. Google is only removing FAQ rich results from Search appearance. Websites can still use FAQs on pages where they genuinely help users understand a topic, service, or process better.",
+      },
+      {
+        question: "Should websites remove FAQ schema after Google’s update?",
+        answer: "Not necessarily. FAQ schema can still support AI search systems, voice search, and alternative search engines. If your FAQs are relevant and useful, keeping the markup may still provide long-term value.",
+      },
+      {
+        question: "Why did Google stop showing FAQ rich results?",
+        answer: "Google found that many websites were overusing FAQ schema for keyword stuffing and SERP manipulation rather than helping users. The update is part of Google’s broader push toward helpful, high-quality content experiences.",
+      },
+      {
+        question: "Are FAQs still important for SEO in 2026?",
+        answer: "Yes. FAQs still play an important role in SEO, AI search visibility, and user experience. Well-structured FAQ sections help users and AI systems quickly identify contextual answers related to search intent, services, pricing, implementation, usability, and decision-making.",
+      },
+      {
+        question: "What should content creators focus on instead of FAQ rich snippets?",
+        answer: "Content creators should focus on E-E-A-T signals, AI-optimized content structures, conversational search intent, topical authority, and creating genuinely useful informational content that improves user trust and engagement.",
+      },
+    ],
+  },
   // {
   //   id: 123,
   //   title: "",
