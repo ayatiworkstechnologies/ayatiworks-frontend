@@ -56,12 +56,12 @@ const teamMembers = [
   //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/terence.png",
   //   highlight: true,
   // },
-  {
-    name: "Rajan",
-    title: "Senior Art Director",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/rajan.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Rajan",
+  //   title: "Senior Art Director",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/rajan.png",
+  //   highlight: true,
+  // },
   {
     name: "Prasanth",
     title: "Lead Motion Graphic Designer",
@@ -69,18 +69,18 @@ const teamMembers = [
     highlight: true,
   },
 
-  {
-    name: "Daniel Joseph",
-    title: "Senior SEO Content Strategist & Writer",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/daniel.png",
-    highlight: true,
-  },
-  {
-    name: "Palani Muthukumaran",
-    title: "SEO Manager",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/palani.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Daniel Joseph",
+  //   title: "Senior SEO Content Strategist & Writer",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/daniel.png",
+  //   highlight: true,
+  // },
+  // {
+  //   name: "Palani Muthukumaran",
+  //   title: "SEO Manager",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/palani.png",
+  //   highlight: true,
+  // },
   // {
   //   name: "Hari",
   //   title: "Accounts and Financer",
@@ -91,6 +91,18 @@ const teamMembers = [
     name: "Sridhar",
     title: "Digital Marketing Manager",
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/sridar.png",
+    highlight: true,
+  },
+  {
+    name: "Gopala krishnan",
+    title: "Production Lead",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    highlight: true,
+  },
+   {
+    name: "Liviya Bharathi",
+    title: "Finance Manager",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
     highlight: true,
   },
   {
@@ -141,19 +153,19 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/Balaji.png",
     highlight: true,
   },
-  {
-    name: "Pushpa",
-    title: "Junior Digital Marketing Associate",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/pushpa.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Pushpa",
+  //   title: "Junior Digital Marketing Associate",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/pushpa.png",
+  //   highlight: true,
+  // },
 
-  {
-    name: "Alexander",
-    title: "Senior Motion Graphic Designer",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/alexander.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Alexander",
+  //   title: "Senior Motion Graphic Designer",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/alexander.png",
+  //   highlight: true,
+  // },
   {
     name: "Sreekanth",
     title: "Motion Graphic Designer",
@@ -172,7 +184,44 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/vijayadharshini.png",
     highlight: true,
   },
-
+  
+  {
+    name: "Karthick Raja",
+    title: "Social Media Executive",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    highlight: true,
+  },
+  {
+    name: "Teepeshwaran",
+    title: "Social Media Executive",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    highlight: true,
+  },
+  {
+    name: "Raseena Nilofer",
+    title: "Brand Service Executive",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
+    highlight: true,
+  },
+  {
+    name: "Abishek Ramesh",
+    title: "Brand Service Executive",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    highlight: true,
+  },
+ 
+{
+    name: "Nigilan",
+    title: "Admin",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    highlight: true,
+  },
+{
+    name: "Harini Arumugam",
+    title: "-",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
+    highlight: true,
+  },
 
   // {
   //   name: "",
