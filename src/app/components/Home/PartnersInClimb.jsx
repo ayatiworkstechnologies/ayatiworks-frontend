@@ -10,10 +10,28 @@ export default function PartnersInClimb() {
     logo: `https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logos/Client-${i + 1}.webp`,
   }));
 
-  // The user requested exactly: 1 to 16, 17 to 32, and 33 to 49
+  // Row 1: Client 1–17, Row 2: Client 18–34, Row 3: Client 35–52
   const row1 = partners.slice(0, 17);
-  const row2 = partners.slice(18, 34);
-  const row3 = partners.slice(35, 51);
+  const row2 = partners.slice(17, 34);
+  const row3 = partners.slice(34, 51);
+
+  // Reusable logo card renderer
+  const renderLogo = (partner, keyPrefix, index) => (
+    <div
+      key={`${keyPrefix}-${index}`}
+      className="relative shrink-0 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 hover:scale-110 transition-transform duration-300"
+    >
+      <Image
+        src={partner.logo}
+        alt={partner.name}
+        fill
+        className="object-contain"
+        sizes="(max-width: 768px) 100px, 160px"
+        loading="lazy"
+      />
+    </div>
+  );
+
   return (
     <section className="bg-white py-12 md:py-20 overflow-hidden">
       {/* ===== Heading ===== */}
@@ -44,23 +62,9 @@ export default function PartnersInClimb() {
           {[1, 2].map((i) => (
             <div
               key={`row1-${i}`}
-              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee whitespace-nowrap min-w-full shrink-0 items-center"
+              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee shrink-0 items-center"
             >
-              {row1.map((partner, index) => (
-                <div
-                  key={`r1-${index}`}
-                  className="relative shrink-0 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 hover:scale-110 transition-transform duration-300"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100px, 160px"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+              {row1.map((partner, index) => renderLogo(partner, "r1", index))}
             </div>
           ))}
         </div>
@@ -70,23 +74,9 @@ export default function PartnersInClimb() {
           {[1, 2].map((i) => (
             <div
               key={`row2-${i}`}
-              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee-reverse whitespace-nowrap min-w-full shrink-0 items-center"
+              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee-reverse shrink-0 items-center"
             >
-              {row2.map((partner, index) => (
-                <div
-                  key={`r2-${index}`}
-                  className="relative shrink-0 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 hover:scale-110 transition-transform duration-300"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100px, 160px"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+              {row2.map((partner, index) => renderLogo(partner, "r2", index))}
             </div>
           ))}
         </div>
@@ -96,23 +86,9 @@ export default function PartnersInClimb() {
           {[1, 2].map((i) => (
             <div
               key={`row3-${i}`}
-              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee whitespace-nowrap min-w-full shrink-0 items-center"
+              className="flex gap-8 md:gap-16 pr-8 md:pr-16 animate-marquee shrink-0 items-center"
             >
-              {row3.map((partner, index) => (
-                <div
-                  key={`r3-${index}`}
-                  className="relative shrink-0 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 hover:scale-110 transition-transform duration-300"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100px, 160px"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+              {row3.map((partner, index) => renderLogo(partner, "r3", index))}
             </div>
           ))}
         </div>
