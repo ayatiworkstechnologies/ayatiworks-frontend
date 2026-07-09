@@ -62,12 +62,12 @@ const teamMembers = [
   //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/rajan.png",
   //   highlight: true,
   // },
-  {
-    name: "Prasanth",
-    title: "Lead Motion Graphic Designer",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/prasanth.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Prasanth",
+  //   title: "Lead Motion Graphic Designer",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/prasanth.png",
+  //   highlight: true,
+  // },
 
   // {
   //   name: "Daniel Joseph",
@@ -94,24 +94,6 @@ const teamMembers = [
     highlight: true,
   },
   {
-    name: "Gopala krishnan",
-    title: "Production Lead",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/gopal.jpg",
-    highlight: true,
-  },
-  {
-    name: "Liviya Bharathi",
-    title: "Finance Manager",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
-    highlight: true,
-  },
-  {
-    name: "Jamal",
-    title: "Digital Marketing Associate",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/jamal.png",
-    highlight: true,
-  },
-  {
     name: "Srirangan M",
     title: "Senior Graphic Designer",
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/srirangan.png",
@@ -123,6 +105,25 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/gopi-r.png",
     highlight: true,
   },
+  // {
+  //   name: "Gopala krishnan",
+  //   title: "Production Lead",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/gopal.jpg",
+  //   highlight: true,
+  // },
+  {
+    name: "Liviya Bharathi",
+    title: "Finance Manager",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
+    highlight: true,
+  },
+  // {
+  //   name: "Jamal",
+  //   title: "Digital Marketing Associate",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/jamal.png",
+  //   highlight: true,
+  // },
+
   {
     name: "Srinath",
     title: "Junior UI/UX Designer",
@@ -166,12 +167,12 @@ const teamMembers = [
   //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/alexander.png",
   //   highlight: true,
   // },
-  {
-    name: "Sreekanth",
-    title: "Motion Graphic Designer",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/sreekanth.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Sreekanth",
+  //   title: "Motion Graphic Designer",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/sreekanth.png",
+  //   highlight: true,
+  // },
   {
     name: "Vijaylakshme",
     title: " Motion Graphic Designer",
@@ -203,12 +204,12 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/nilo.png",
     highlight: true,
   },
-  {
-    name: "Abishek Ramesh",
-    title: "Brand Service Executive",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/abishek.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Abishek Ramesh",
+  //   title: "Brand Service Executive",
+  //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/abishek.png",
+  //   highlight: true,
+  // },
 
   {
     name: "Nigilan",
