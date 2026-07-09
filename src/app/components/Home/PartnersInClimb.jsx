@@ -5,15 +5,15 @@ import Image from "next/image";
 
 export default function PartnersInClimb() {
   // === Partner Logos (52 total) ===
-  const partners = Array.from({ length: 49 }, (_, i) => ({
+  const partners = Array.from({ length: 51 }, (_, i) => ({
     name: `Client ${i + 1}`,
     logo: `https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logos/Client-${i + 1}.webp`,
   }));
 
   // The user requested exactly: 1 to 16, 17 to 32, and 33 to 49
   const row1 = partners.slice(0, 17);
-  const row2 = partners.slice(17, 33);
-  const row3 = partners.slice(34, 49);
+  const row2 = partners.slice(18, 34);
+  const row3 = partners.slice(35, 51);
   return (
     <section className="bg-white py-12 md:py-20 overflow-hidden">
       {/* ===== Heading ===== */}
