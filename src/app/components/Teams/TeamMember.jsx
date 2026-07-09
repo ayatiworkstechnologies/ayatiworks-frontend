@@ -76,19 +76,10 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/female.png",
     highlight: true,
   },
-
-
   {
     name: "Srinath",
     title: "Junior UI/UX Designer",
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/srinath.png",
-    highlight: true,
-  },
-
-  {
-    name: "SriRamya M",
-    title: "Senior Web Developer",
-    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/ramya.png",
     highlight: true,
   },
   {
@@ -103,7 +94,12 @@ const teamMembers = [
     img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/Balaji.png",
     highlight: true,
   },
-
+  {
+    name: "SriRamya M",
+    title: "Senior Web Developer",
+    img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/ramya.png",
+    highlight: true,
+  },
   {
     name: "Vijaylakshme",
     title: " Motion Graphic Designer",
@@ -168,7 +164,6 @@ const teamMembers = [
   //   img: "/assets/teams/.png",
   //   highlight: true,
   // },
-
 
   // {
   //   name: "Terence",
@@ -243,7 +238,6 @@ const teamMembers = [
   //   img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/rufus.png",
   //   highlight: true,
   // },
-
 ];
 
 export default function TeamMember() {
@@ -271,9 +265,11 @@ export default function TeamMember() {
             >
               {/* Image */}
               <div className="relative w-full h-[68vw] sm:h-80 md:h-96 lg:h-[420px] pb-16 sm:pb-20">
-                <Image width={800} height={800}
+                <Image
+                  width={800}
+                  height={800}
                   src={member.img}
-                  alt={member.name || 'Team member'}
+                  alt={member.name || "Team member"}
                   className="
                     absolute inset-0 z-0 h-full w-full 
                     object-cover object-top
@@ -320,17 +316,21 @@ export default function TeamMember() {
                     transition-colors duration-300 group-hover:bg-white
                   "
                 >
-                  <h3 className="
+                  <h3
+                    className="
                     font-primary font-medium text-base sm:text-lg md:text-xl 
                     text-white transition-colors group-hover:text-primary
-                  ">
+                  "
+                  >
                     {member.name}
                   </h3>
                   {member.title && (
-                    <p className="
+                    <p
+                      className="
                       mt-0.5 sm:mt-1 text-[11px] sm:text-sm font-medium uppercase font-secondary 
                       text-white/85 transition-colors group-hover:text-primary/80
-                    ">
+                    "
+                    >
                       {member.title}
                     </p>
                   )}
