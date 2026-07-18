@@ -29,6 +29,11 @@ const nextConfig = {
         hostname: 'ik.imagekit.io',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatar.iran.liara.run',
+        pathname: '/**',
+      },
     ],
     // Prefer modern formats (AVIF > WebP > original)
     formats: ['image/avif', 'image/webp'],

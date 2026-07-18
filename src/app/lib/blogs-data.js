@@ -773,25 +773,42 @@ export const POSTS = [
       },
     ],
   },
-  // {
-  //   id: 123,
-  //   title: "",
-  //   slug: "/blogs/",
-  //   bannerTitle: "",
-  //   date: "APR 10, 2026",
-  //   readMins: 20,
-  //   cover:
-  //     "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-122.jpg",
-  //   coverAlt: "",
-  //   deck: "",
-  //   category: "",
-  //   seoTitle: "",
-  //   seoDescription: "",
-  //   faqs: [
-  //     {
-  //       question: "1.",
-  //       answer: "",
-  //     },
-  //   ],
-  // },
+  {
+    id: 127,
+    BlogTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    title: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    slug: "/blogs/branding-services/why-marketing-without-branding-is-a-costly-mistake-6-strategic-lessons-for-2026-businesses/",
+    bannerTitle: "Why Marketing Without Branding is a Costly Mistake",
+    subline: "6 Strategic Lessons for 2026 Businesses",
+    date: "Jul 18, 2026",
+    readMins: 10,
+    cover: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-127.png",
+    coverAlt: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    deck: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
+    category: "Branding Services",
+    seoTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses | Ayatiworks",
+    seoDescription: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
+    faqs: [
+      {
+        question: "1. What is the difference between branding and marketing?",
+        answer: "Branding defines how people perceive your business, while marketing promotes your products and services to generate customer action."
+      },
+      {
+        question: "2. Can marketing work without branding?",
+        answer: "Yes, but results are often short lived, expensive, and difficult to sustain."
+      },
+      {
+        question: "3. Why is branding important for business growth?",
+        answer: "Branding builds trust, recognition, loyalty, and differentiation, which support long-term growth."
+      },
+      {
+        question: "4. How does branding improve marketing ROI?",
+        answer: "Strong branding increases conversion rates, improves customer retention, and lowers acquisition costs."
+      },
+      {
+        question: "5. What is brand positioning?",
+        answer: "Brand positioning defines how a business is perceived relative to competitors in the market."
+      }
+    ]
+  }
 ];

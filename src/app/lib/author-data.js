@@ -13,9 +13,30 @@ export const AUTHORS = [
     },
     topics: ["SEO", "Content as a Service", "Digital Marketing", "AI SEO"],
   },
+  {
+    slug: "karthick-raja",
+    name: "Karthick Raja",
+    avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    bio: "Karthick Raja is a Jr Content Writer at Ayatiworks.",
+    socials: {
+      linkedin: "https://www.linkedin.com/",
+    },
+    topics: ["Branding Services", "Digital Marketing"],
+  },
 ];
 
 export const POSTS_BY_AUTHOR = {
+  "karthick-raja": [
+    {
+      id: "p127",
+      title: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+      deck: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
+      cover: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/blog-127.png",
+      category: "Branding Services",
+      slug: "/blogs/branding-services/why-marketing-without-branding-is-a-costly-mistake-6-strategic-lessons-for-2026-businesses/",
+      date: "Jul 18, 2026",
+    },
+  ],
   "daniel-joseph": [
     {
       id: "p1",
