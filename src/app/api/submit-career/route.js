@@ -13,7 +13,7 @@ export async function POST(request) {
       });
     }
 
-    const response = await fetch("https://api.ayatiworks.com/api/v1/public/ayatiwork/career/records", {
+    const response = await fetch("https://api.ayatiworks.com/api/v1/public/ayatiwork/career-1/records", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
