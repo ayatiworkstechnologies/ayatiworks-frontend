@@ -9,6 +9,7 @@ import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 export default function LetsConnectForm() {
   const [captchaToken, setCaptchaToken] = useState(null);
   const recaptchaRef = useRef(null);
+  const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
   const {
     register,
     handleSubmit,
@@ -18,17 +19,18 @@ export default function LetsConnectForm() {
     defaultValues: { name: "", email: "", phone: "", role: "", coverLetter: "", additionalInfo: "" },
   });
 
-  const getBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = (error) => reject(error);
-    });
-  };
+  // Base64 conversion removed since we upload the file directly now
+  // const getBase64 = (file) => {
+  //   return new Promise((resolve, reject) => {
+  //     const reader = new FileReader();
+  //     reader.readAsDataURL(file);
+  //     reader.onload = () => resolve(reader.result);
+  //     reader.onerror = (error) => reject(error);
+  //   });
+  // };
 
   const onSubmit = async (data) => {
-    if (!captchaToken) {
+    if (!isLocal && !captchaToken) {
       Swal.fire({
         icon: "warning",
         title: "reCAPTCHA Required",
@@ -49,30 +51,24 @@ export default function LetsConnectForm() {
     });
 
     try {
-      let resumeBase64 = "";
+      const formData = new FormData();
+      formData.append("name", data.name || "");
+      formData.append("email", data.email || "");
+      formData.append("phone", data.phone || "");
+      formData.append("role", data.role || "");
+      formData.append("coverletter", data.coverLetter || "");
+      formData.append("additionalinfo", data.additionalInfo || "");
+      
       if (data.resume && data.resume.length > 0) {
-        resumeBase64 = await getBase64(data.resume[0]);
+        formData.append("resume", data.resume[0]);
       }
-
-      const payload = {
-        data: {
-          name: data.name || "",
-          email: data.email || "",
-          phone: data.phone || "",
-          role: data.role || "",
-          coverletter: data.coverLetter || "",
-          additionalinfo: data.additionalInfo || "",
-          resume: resumeBase64 || "No resume attached",
-          captchaToken,
-        },
-      };
+      if (captchaToken) {
+        formData.append("captchaToken", captchaToken);
+      }
 
       const response = await fetch("/api/submit-career", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload)
+        body: formData,
       });
 
       if (response.ok) {
@@ -250,13 +246,15 @@ export default function LetsConnectForm() {
             {...register("additionalInfo")}
           />
 
-          <div className="mt-6 flex justify-center">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={RECAPTCHA_SITE_KEY}
-              onChange={setCaptchaToken}
-            />
-          </div>
+          {!isLocal && (
+            <div className="mt-6 flex justify-center">
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={RECAPTCHA_SITE_KEY}
+                onChange={setCaptchaToken}
+              />
+            </div>
+          )}
 
           {/* Submit */}
           <div className="mt-7">
