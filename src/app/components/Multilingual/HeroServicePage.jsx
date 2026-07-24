@@ -247,7 +247,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
+                src="http://89.167.92.220:8088/assets/office-member.png"
                 alt="Ayatiworks multilingual digital marketing team at work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -293,7 +293,7 @@ function HeroServicePage() {
               <Image
                 width={800}
                 height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-1.png"
+                src="http://89.167.92.220:8088/assets/service/mul-1.png"
                 alt="Why Ayatiworks is the Best Multilingual Marketing Agency in Chennai"
                 className="w-full h-auto  mx-auto "
               />
@@ -467,7 +467,7 @@ function HeroServicePage() {
               <Image
                 width={800}
                 height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-2.png"
+                src="http://89.167.92.220:8088/assets/service/mul-2.png"
                 alt="Multi-Language Marketing"
                 className="w-full h-auto  mx-auto "
               />
@@ -506,7 +506,7 @@ function HeroServicePage() {
               <Image
                 width={800}
                 height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/mul-3.png"
+                src="http://89.167.92.220:8088/assets/service/mul-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -730,7 +730,7 @@ function HeroServicePage() {
               <Image
                 width={800}
                 height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/oni-5.png"
+                src="http://89.167.92.220:8088/assets/service/oni-5.png"
                 alt="Multilingual at Ayatiworks"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />

@@ -22,22 +22,22 @@ export default function WhyChooseSection() {
     {
       title: "Award-Winning Expertise",
       desc: "Our recognition as an award-winning digital marketing agency in Chennai is proof of the impact we create for clients across industries.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
+      img: "http://89.167.92.220:8088/icon/01.png",
     },
     {
       title: "ROI-Driven Campaigns",
       desc: "Every strategy, whether SEO, performance marketing, or influencer campaigns, is designed to maximize ROI, ensuring measurable growth and quality results.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
+      img: "http://89.167.92.220:8088/icon/02.png",
     },
     {
       title: "End-to-End Solutions",
       desc: "From content and SEO to paid ads, our end-to-end solutions ensure success without juggling multiple vendors.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
+      img: "http://89.167.92.220:8088/icon/03.png",
     },
     {
       title: "Trusted Partner",
       desc: "We go beyond services , we become your digital growth partner with transparency and measurable results.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/04.png",
+      img: "http://89.167.92.220:8088/icon/04.png",
     },
   ];
 

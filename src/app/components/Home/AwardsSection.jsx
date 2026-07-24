@@ -21,25 +21,25 @@ export default function AwardsSection() {
   const awards = [
     {
       title: "TamilNadu Brand Leadership AWARDS -2020",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-4.png",
+      img: "http://89.167.92.220:8088/assets/aw-4.png",
       backImg: "/assets/awards-4.webp",
       link: "#",
     },
     {
       title: "Indian Achievers AWARD - 2021-2022",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-1.png",
+      img: "http://89.167.92.220:8088/assets/aw-1.png",
       backImg: "/assets/awards-1.webp",
       link: "#",
     },
     {
       title: "Digital Agency of the YEAR -2022",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-2.png",
+      img: "http://89.167.92.220:8088/assets/aw-2.png",
       backImg: "/assets/awards-2.webp",
       link: "#",
     },
     {
       title: "Trendsetters of TamilNadu by TIMES OF INDIA -2022",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/aw-3.png",
+      img: "http://89.167.92.220:8088/assets/aw-3.png",
       backImg: "/assets/awards-3.webp",
       link: "#",
     },

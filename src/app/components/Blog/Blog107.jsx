@@ -202,7 +202,7 @@ export default function AEOArticlePage107() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+              "http://89.167.92.220:8088/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -268,7 +268,7 @@ export default function AEOArticlePage107() {
             </h3>
 
             <Image width={800} height={800}
-              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-107-1.jpg"
+              src="http://89.167.92.220:8088/assets/blogImg/blog-img-107-1.jpg"
               alt="How much time people spend on their android smartphones everyday by country. "
             />
             <p className="section-phara">
@@ -617,7 +617,7 @@ export default function AEOArticlePage107() {
             </h3>
 
             <Image width={800} height={800}
-              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-107-2.jpg"
+              src="http://89.167.92.220:8088/assets/blogImg/blog-img-107-2.jpg"
               alt="Top Chennai agencies comparison grid"
             />
           </Section>
@@ -632,7 +632,7 @@ export default function AEOArticlePage107() {
             </h3>
 
             <Image width={800} height={800}
-              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-107-3.jpg"
+              src="http://89.167.92.220:8088/assets/blogImg/blog-img-107-3.jpg"
               alt="Decision framework for choosing a digital agency in Chennai"
             />
           </Section>

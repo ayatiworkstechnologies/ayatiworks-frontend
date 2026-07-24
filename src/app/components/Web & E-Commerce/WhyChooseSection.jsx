@@ -23,27 +23,27 @@ export default function WhyChooseSection() {
     {
       title: "Higher Conversions",
       desc: "Websites built to convert visitors into customers with clear CTAs, intuitive design, and optimized funnels.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
+      img: "http://89.167.92.220:8088/icon/01.png",
     },
     {
       title: "Performance First",
       desc: "Fast, secure, and mobile-optimized platforms that deliver seamless experiences across all devices.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
+      img: "http://89.167.92.220:8088/icon/02.png",
     },
     {
       title: "E-Commerce That Sells",
       desc: "Optimized product pages, smooth payment gateways, and logistics integrations that drive real sales.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
+      img: "http://89.167.92.220:8088/icon/03.png",
     },
     {
       title: "Search Visibility",
       desc: "Technical SEO foundations and structured architecture that boost discoverability and long-term rankings.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/04.png",
+      img: "http://89.167.92.220:8088/icon/04.png",
     },
     {
       title: "Scalable Growth",
       desc: "Flexible website architecture that evolves with your business needs and supports future growth.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/05.png",
+      img: "http://89.167.92.220:8088/icon/05.png",
     },
   ];
 

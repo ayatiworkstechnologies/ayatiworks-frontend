@@ -18,7 +18,7 @@ export default function CaseStudyPages() {
       {/* Hero / Intro */}
       {/* <HeroSection /> */}
       <ResponsiveBanner
-        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Casestudy.jpg"
+        desktopSrc="http://89.167.92.220:8088/banner/Casestudy.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

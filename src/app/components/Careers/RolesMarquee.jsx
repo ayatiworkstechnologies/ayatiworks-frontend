@@ -8,21 +8,21 @@ import Image from "next/image";
 const roles = [
   {
     title: "SEO Content Writers & Strategists",
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/1.png",
+    icon: "http://89.167.92.220:8088/icon/1.png",
   },
-  { title: "Digital Marketing Managers", icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/2.png" },
+  { title: "Digital Marketing Managers", icon: "http://89.167.92.220:8088/icon/2.png" },
   {
     title: "Social Media & Performance Marketing Specialists",
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/3.png",
+    icon: "http://89.167.92.220:8088/icon/3.png",
   },
-  { title: "UI/UX Designers", icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/4.png" },
+  { title: "UI/UX Designers", icon: "http://89.167.92.220:8088/icon/4.png" },
   {
     title: "Programmatic & Media Buying Experts",
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/5.png",
+    icon: "http://89.167.92.220:8088/icon/5.png",
   },
   {
     title: "Brand Storytellers & PR Specialists",
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/6.png",
+    icon: "http://89.167.92.220:8088/icon/6.png",
   },
 ];
 

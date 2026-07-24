@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const images = [
-  "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/slider-img-1.png",
-  "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/slider-img-2.png",
-  "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/slider-img-3.png",
+  "http://89.167.92.220:8088/assets/service/slider-img-1.png",
+  "http://89.167.92.220:8088/assets/service/slider-img-2.png",
+  "http://89.167.92.220:8088/assets/service/slider-img-3.png",
 ];
 
 export default function AutoImageSlider() {

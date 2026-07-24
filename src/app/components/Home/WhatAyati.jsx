@@ -23,7 +23,7 @@ export default function WhatAyati() {
   const cards = [
     {
       title: "Digital Marketing Services",
-      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/good-vibe.png",
+      icon: "http://89.167.92.220:8088/assets/good-vibe.png",
       basePath: "/digital-marketing-services",
       description: "Data-driven strategies to amplify your brand presence.",
       list: [
@@ -60,7 +60,7 @@ export default function WhatAyati() {
     },
     {
       title: "Content as a Service",
-      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
+      icon: "http://89.167.92.220:8088/icon/01.png",
       basePath: "/content-as-a-service",
       description: "Compelling storytelling that connects and converts.",
       list: [
@@ -81,7 +81,7 @@ export default function WhatAyati() {
     },
     {
       title: "Digital PR Service",
-      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
+      icon: "http://89.167.92.220:8088/icon/02.png",
       basePath: "/digital-pr",
       description: "Building credibility and managing your brand reputation.",
       list: [
@@ -99,7 +99,7 @@ export default function WhatAyati() {
     },
     {
       title: "Web & E-commerce",
-      icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
+      icon: "http://89.167.92.220:8088/icon/03.png",
       basePath: "/web-ecommerce",
       description: "Seamless user experiences and robust development.",
       list: [

@@ -56,7 +56,7 @@ export default function AEOArticlePage106() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+              "http://89.167.92.220:8088/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -387,7 +387,7 @@ export default function AEOArticlePage106() {
             </p>
 
           <Image
-            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-img-106-1.png"
+            src="http://89.167.92.220:8088/assets/blogImg/blog-img-106-1.png"
             alt="Google Ranking businesses for Keyword on SERP "
           />
 

@@ -114,7 +114,7 @@ const caseStudies = [
     title: "Hero Motors — Chennai, TN",
     subtitle: "Regional Performance Campaign",
     image:
-      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-7.png",
+      "http://89.167.92.220:8088/assets/service/smm-7.png",
     cases: [
       "90X surge in walk-ins across metro cities, including Chennai.",
       "Regional storytelling backed by multilingual social media marketing.",
@@ -130,7 +130,7 @@ const caseStudies = [
     title: "Naga Foods — Tamil Nadu",
     subtitle: "Ramadan Campaign & Internal Communication",
     image:
-      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-8.png",
+      "http://89.167.92.220:8088/assets/service/smm-8.png",
     cases: [
       "90X increase in online pasta sales across Tamil Nadu.",
       "High cultural engagement through festival-led storytelling.",
@@ -146,7 +146,7 @@ const caseStudies = [
     title: "Royal Enfield — Chennai",
     subtitle: "Mobile Bike Servicing Awareness Drive",
     image:
-      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-9.png",
+      "http://89.167.92.220:8088/assets/service/smm-9.png",
     cases: [
       "60X increase in customer enquiries.",
       "30X growth in showroom walk-ins.",
@@ -161,7 +161,7 @@ const caseStudies = [
     title: "Nithya Amirtham Eternal Fine Dine",
     subtitle: "Nungambakkam (Luxury F&B Launch)",
     image:
-      "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-10.png",
+      "http://89.167.92.220:8088/assets/service/smm-10.png",
     cases: [
       "50X footfalls + 30X surge in signature dish orders",
       "SMM campaigns + influencer partnerships + elite audience targeting",
@@ -318,7 +318,7 @@ function HeroServicePage() {
             <div className="sticky space-y-6">
               {/* Floating Image */}
               <motion.img
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-1.png"
+                src="http://89.167.92.220:8088/assets/service/smm-1.png"
                 alt="Ayatiworks Social Media Marketing Team"
                 className=""
                 transition={{
@@ -357,7 +357,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-2.png"
+                src="http://89.167.92.220:8088/assets/service/smm-2.png"
                 alt="Search Engines Work"
                 className=" "
               />
@@ -591,7 +591,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-3.png"
+                src="http://89.167.92.220:8088/assets/service/smm-3.png"
                 alt="Search Engines Work"
                 className=""
               />
@@ -818,7 +818,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-4.png"
+                src="http://89.167.92.220:8088/assets/service/smm-4.png"
                 alt="Search Engines Work"
                 className=" "
               />
@@ -1009,7 +1009,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/smm-5.png"
+                src="http://89.167.92.220:8088/assets/service/smm-5.png"
                 alt="Search Engines Work"
                 className=" "
               />

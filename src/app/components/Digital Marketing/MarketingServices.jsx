@@ -6,15 +6,15 @@ import Image from "next/image";
 export default function MarketingServices() {
   const services = [
     {
-      image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/ms-1.png", // replace with your image
+      image: "http://89.167.92.220:8088/assets/ms-1.png", // replace with your image
       alt: "Service 1",
     },
     {
-      image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/ms-2.png",
+      image: "http://89.167.92.220:8088/assets/ms-2.png",
       alt: "Service 2",
     },
     {
-      image: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/ms-3.png",
+      image: "http://89.167.92.220:8088/assets/ms-3.png",
       alt: "Service 3",
     },
   ];

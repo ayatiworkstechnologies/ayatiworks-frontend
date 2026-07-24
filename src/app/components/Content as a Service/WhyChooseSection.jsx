@@ -23,22 +23,22 @@ export default function WhyChooseSection() {
     {
       title: "Copywriting & Blogs ",
       desc: "SEO-optimized, audience-first content that ranks and converts.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/01.png",
+      img: "http://89.167.92.220:8088/icon/01.png",
     },
     {
       title: "Social Media Creatives ",
       desc: "Fast-turnaround visuals and campaigns built for engagement.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/02.png",
+      img: "http://89.167.92.220:8088/icon/02.png",
     },
     {
       title: "Campaign Collateral ",
       desc: "Flyers, landing pages, and digital ads designed to drive clicks.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/03.png",
+      img: "http://89.167.92.220:8088/icon/03.png",
     },
     {
       title: "Content Strategy ",
       desc: "Insights-driven roadmaps that align with KPIs and brand vision.",
-      img: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/04.png",
+      img: "http://89.167.92.220:8088/icon/04.png",
     },
   ];
 

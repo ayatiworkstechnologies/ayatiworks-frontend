@@ -51,7 +51,7 @@ export default async function CategoryPage({ params }) {
   return (
     <main className="section section-home">
       <ResponsiveBanner
-        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Blog.jpg"
+        desktopSrc="http://89.167.92.220:8088/banner/Blog.jpg"
         alt={`${cat.label} Blogs`}
         priority
         className="mb-4 sm:mb-6"

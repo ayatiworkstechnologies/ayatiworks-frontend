@@ -147,7 +147,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/office-member.png"
+                src="http://89.167.92.220:8088/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -190,7 +190,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-1.png"
+                src="http://89.167.92.220:8088/assets/service/brand-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -472,7 +472,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-2.png"
+                src="http://89.167.92.220:8088/assets/service/brand-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -587,7 +587,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-3.png"
+                src="http://89.167.92.220:8088/assets/service/brand-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -756,7 +756,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-4.png"
+                src="http://89.167.92.220:8088/assets/service/brand-4.png"
                 alt="Our Branding Process"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -795,7 +795,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-2.png"
+                src="http://89.167.92.220:8088/assets/service/brand-2.png"
                 alt="Volvo branding case study cover"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -982,7 +982,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/service/brand-5.png"
+                src="http://89.167.92.220:8088/assets/service/brand-5.png"
                 alt="Branding at Ayatiworks"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />

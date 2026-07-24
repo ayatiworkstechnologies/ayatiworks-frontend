@@ -92,7 +92,7 @@ export default function AyatiAboutSection() {
             {/* ✅ Optimized Image with Next.js Image component */}
             <div className="w-full relative overflow-hidden ">
               <Image
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/home-quote.png"
+                src="http://89.167.92.220:8088/assets/home-quote.png"
                 alt="Ayatiworks Growth Philosophy - Visual Quote"
                 width={800}
                 height={1000}

@@ -7,32 +7,32 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/seo.png",
+    icon: "http://89.167.92.220:8088/icon/seo.png",
     title: "Custom Website Design & Development ",
     desc: "Mobile-first, responsive, SEO-optimized websites.",
     path: "/web-ecommerce/web-development",
 
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Social_Media.png",
+    icon: "http://89.167.92.220:8088/icon/Social_Media.png",
     title: "E-Commerce Development ",
     desc: "Scalable online stores built on Shopify, WooCommerce, Magento, and custom platforms.",
     path: "/web-ecommerce/ecommerce-solutions",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/mail.png",
+    icon: "http://89.167.92.220:8088/icon/mail.png",
     title: "UI/UX Design ",
     desc: "Intuitive interfaces that maximize engagement and conversions.",
     path: "/web-ecommerce/ux-ui-design",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Instagram.png",
+    icon: "http://89.167.92.220:8088/icon/Instagram.png",
     title: "Shopify Development ",
     desc: "Shopify Success Engineered by Ayatiworks,Your Trusted Shopify Development Agency.",
     path: "/web-ecommerce/shopify-development",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Media_Planning.png",
+    icon: "http://89.167.92.220:8088/icon/Media_Planning.png",
     title: "Maintenance & Support ",
     desc: "Continuous upgrades, security patches, and performance monitoring.",
     path: "/web-ecommerce/web-maintenance",

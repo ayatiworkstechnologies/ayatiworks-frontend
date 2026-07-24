@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <main className="section section-home">
       <ResponsiveBanner
-        desktopSrc="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/Contact.jpg"
+        desktopSrc="http://89.167.92.220:8088/banner/Contact.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

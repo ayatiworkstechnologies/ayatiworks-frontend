@@ -1007,7 +1007,7 @@ export default function AEOArticlePage127() {
           author={{
             name: "Karthick Raja",
             role: "Jr Content Writer",
-            avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+            avatar: "http://89.167.92.220:8088/assets/teams/male.png",
             slug: "karthick-raja",
           }}
           updatedAt={post.date}

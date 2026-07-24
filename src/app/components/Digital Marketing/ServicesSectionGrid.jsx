@@ -5,43 +5,43 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/seo.png",
+    icon: "http://89.167.92.220:8088/icon/seo.png",
     title: "SEO Services",
     desc: "Improve your visibility with our SEO services in Chennai. From keyword research and technical audits to link building and on-page optimization, we help your brand rank higher and attract quality leads organically.",
     path: "/digital-marketing-services/seo",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Social_Media.png",
+    icon: "http://89.167.92.220:8088/icon/Social_Media.png",
     title: "Social Media Marketing",
     desc: "Connect with your audience through powerful social media marketing campaigns. Our team creates engaging content, targeted ads, and growth-driven strategies across Facebook, Instagram, and LinkedIn to boost engagement and conversions.",
     path: "/digital-marketing-services/social-media-marketing",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/mail.png",
+    icon: "http://89.167.92.220:8088/icon/mail.png",
     title: "Email Marketing",
     desc: "Strengthen customer relationships with email marketing services. We design personalized campaigns, automate customer journeys, and deliver impactful newsletters that drive retention, conversions, and repeat business for B2B, B2C, and D2C brands.",
     path: "/digital-marketing-services/email-marketing",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Instagram.png",
+    icon: "http://89.167.92.220:8088/icon/Instagram.png",
     title: "Instagram Marketing",
     desc: "Leverage Instagram’s power with data-driven strategies. From reels and influencer tie-ups to targeted advertising, our Instagram marketing experts in Chennai help brands gain visibility, engagement, and customer trust on this fast-growing platform.",
     path: "/digital-marketing-services/instagram-marketing",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Affiliate_Marketing.png",
+    icon: "http://89.167.92.220:8088/icon/Affiliate_Marketing.png",
     title: "Affiliate Marketing",
     desc: "Expand your reach with strategic affiliate marketing programs. We connect your business with trusted publishers and partners to generate leads, boost conversions, and grow your digital presence across Chennai and Tamil Nadu.",
     path: "/digital-marketing-services/affiliate-marketing",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Media_Planning.png",
+    icon: "http://89.167.92.220:8088/icon/Media_Planning.png",
     title: "Programmatic Marketing",
     desc: "Automate and optimize your ad campaigns with programmatic marketing. Using AI-driven targeting, real-time bidding, and advanced analytics, we ensure your brand reaches the right audience at scale, maximizing ROI with precision and efficiency.",
     path: "/digital-marketing-services/programmatic-marketing",
   },
   {
-    icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/Digital_Media.png",
+    icon: "http://89.167.92.220:8088/icon/Digital_Media.png",
     title: "Video Marketing",
     desc: "Engage, inspire, and convert with powerful video marketing campaigns. From brand storytelling to product explainers and social-first creatives, our team crafts videos that capture attention, build trust, and drive measurable impact.",
     path: "/digital-marketing-services/video-marketing",

@@ -598,7 +598,7 @@ export default function Header({ nav = NAV, onSelect, autoExpandMs = 2000 }) {
             className="backdrop-blur shadow-glow w-[200px] rounded-full p-3 hover:scale-105 cursor-pointer transition"
           >
             <Image
-              src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo.png"
+              src="http://89.167.92.220:8088/logo.png"
               alt="Logo"
               width={160}
               height={32}

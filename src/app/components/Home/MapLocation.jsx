@@ -14,16 +14,16 @@ export default function DottedWorldMap() {
   });
 
   const locations = [
-    { name: "USA", x: "17%", y: "42%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" }, // Pencil/Logo
-    { name: "DUBAI", x: "60%", y: "48%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
-    { name: "INDIA", x: "68%", y: "58%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
-    { name: "SINGAPORE", x: "75%", y: "62%", logo: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/logo-left.png" },
+    { name: "USA", x: "17%", y: "42%", logo: "http://89.167.92.220:8088/logo-left.png" }, // Pencil/Logo
+    { name: "DUBAI", x: "60%", y: "48%", logo: "http://89.167.92.220:8088/logo-left.png" },
+    { name: "INDIA", x: "68%", y: "58%", logo: "http://89.167.92.220:8088/logo-left.png" },
+    { name: "SINGAPORE", x: "75%", y: "62%", logo: "http://89.167.92.220:8088/logo-left.png" },
   ];
   const stats = [
-    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/business.png", value: "+30", label: "Awards" },
-    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/users.png", value: "+20", label: "Clients" },
-    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/locations.png", value: "+05", label: "Cities" },
-    { icon: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/icon/earth.png", value: "+05", label: "Countries" },
+    { icon: "http://89.167.92.220:8088/icon/business.png", value: "+30", label: "Awards" },
+    { icon: "http://89.167.92.220:8088/icon/users.png", value: "+20", label: "Clients" },
+    { icon: "http://89.167.92.220:8088/icon/locations.png", value: "+05", label: "Cities" },
+    { icon: "http://89.167.92.220:8088/icon/earth.png", value: "+05", label: "Countries" },
   ];
 
   return (
@@ -51,7 +51,7 @@ export default function DottedWorldMap() {
       <div className="relative w-full section-container">
         {/* ✅ Dotted Map Background */}
         <Image width={800} height={800}
-          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/map.png"
+          src="http://89.167.92.220:8088/assets/map.png"
           alt="Dotted World Map"
           className="w-full object-contain"
         />

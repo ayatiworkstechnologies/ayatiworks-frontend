@@ -281,7 +281,7 @@ function Intro() {
         <Image
           width={1200}
           height={800}
-          src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-126-2.png"
+          src="http://89.167.92.220:8088/assets/blogImg/blog-126-2.png"
           alt="Google officially announced that FAQ rich results will no longer appear in Search for most websites"
           className="w-full rounded-xl shadow-md"
         />
@@ -910,7 +910,7 @@ export default function AEOArticlePage126() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+              "http://89.167.92.220:8088/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -1312,7 +1312,7 @@ export default function AEOArticlePage126() {
               <Image
                 width={1200}
                 height={800}
-                src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-126-1.png"
+                src="http://89.167.92.220:8088/assets/blogImg/blog-126-1.png"
                 alt="Helpful FAQs vs keyword-stuffed FAQs infographic explaining Google’s 2026 FAQ rich results update and its impact on SEO and AI search visibility"
                 className="w-full rounded-xl shadow-md"
               />

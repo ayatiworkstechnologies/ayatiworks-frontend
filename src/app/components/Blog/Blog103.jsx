@@ -64,7 +64,7 @@ export default function AEOArticlePage103() {
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/author/daniel.png",
+            avatar: "http://89.167.92.220:8088/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -146,7 +146,7 @@ export default function AEOArticlePage103() {
               <strong>Ranking</strong> is a traditional success model of SEO
               where Search Engines ranked business on the 1st page of SERP.
             </p>
-            <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-103-1.png"
+            <Image src="http://89.167.92.220:8088/assets/blogImg/blog-103-1.png"
               alt="Google Ranking businesses for Keyword on SERP "
             />
             <h3 className="section-title text-2xl text-left my-5">
@@ -226,7 +226,7 @@ export default function AEOArticlePage103() {
               Just like in the image below, look at the question asked in the
               search bar and the response with options of 3 businesses.{" "}
             </p>
-            <Image src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/blogImg/blog-103-2.png"
+            <Image src="http://89.167.92.220:8088/assets/blogImg/blog-103-2.png"
               alt="Google offering answers to the end user in the AEO format suggesting 3 businesses.  "
             />
             <h3 className="section-title text-2xl text-left m-5">

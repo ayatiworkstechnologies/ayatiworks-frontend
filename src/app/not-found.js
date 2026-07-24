@@ -11,7 +11,7 @@ export default function NotFound() {
         {/* 404 Video */}
         <Link href="/" className="block group w-full">
           <video
-            src="https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/banner/404.mp4"  // ✅ place file inside /public/banner/404.mp4
+            src="http://89.167.92.220:8088/banner/404.mp4"  // ✅ place file inside /public/banner/404.mp4
             aria-label="404 animation"
             autoPlay
             loop
