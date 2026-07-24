@@ -32,7 +32,7 @@ export const NAV = [
     title: "About",
     items: [
       { label: "About", path: "/about-us" },
-      { label: "Teams", path: "/team" },
+      // { label: "Teams", path: "/team" },
       { label: "Careers", path: "/careers" },
     ],
   },
