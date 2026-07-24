@@ -7,7 +7,7 @@ export default function PartnersInClimb() {
   // === Partner Logos (52 total) ===
   const partners = Array.from({ length: 51 }, (_, i) => ({
     name: `Client ${i + 1}`,
-    logo: `http://89.167.92.220:8088/logos/Client-${i + 1}.webp`,
+    logo: `/logos/Client-${i + 1}.webp`,
   }));
 
   // Row 1: Client 1–17, Row 2: Client 18–34, Row 3: Client 35–52

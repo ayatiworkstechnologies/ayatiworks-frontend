@@ -63,7 +63,7 @@ export default function WhyPartner() {
         {/* Left Side Image */}
         <div className="flex justify-center">
           <Image width={800} height={800}
-            src="http://89.167.92.220:8088/assets/blogImg/seo-img.png"
+            src="/assets/blogImg/seo-img.png"
             alt="Team meeting"
             className="rounded-lg shadow-lg w-full object-cover"
           />

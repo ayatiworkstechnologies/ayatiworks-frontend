@@ -37,7 +37,7 @@ function OurWideRange() {
         className="flex justify-center"
       >
         <Image width={800} height={800}
-          src="http://89.167.92.220:8088/assets/group-logo.png"
+          src="/assets/group-logo.png"
           alt="Our Clients & Partners"
           className="w-full max-w-6xl"
         />

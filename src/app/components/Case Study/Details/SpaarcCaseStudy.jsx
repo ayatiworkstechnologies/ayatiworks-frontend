@@ -11,9 +11,9 @@ export default function SpaarcCaseStudy() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "http://89.167.92.220:8088/banner/spa-banner.jpg", // Placeholder
+            "/banner/spa-banner.jpg", // Placeholder
           mobileImage:
-            "http://89.167.92.220:8088/banner/spa-banner-mob.jpg", // Placeholder
+            "/banner/spa-banner-mob.jpg", // Placeholder
           imageAlt:
             "Ayatiworks marketing strategy for SPAARC wellness brand growth",
         }}
@@ -37,7 +37,7 @@ export default function SpaarcCaseStudy() {
         challengeEyebrow="SPAARC pioneered in Myofascial Trigger Point Therapy and Aqua Therapy, helping thousands recover from pain naturally. While the results were powerful, the brand’s story had limited reach beyond South India."
         challengeCopy="The organization also lacked a structured marketing ecosystem to support national growth. From brand identity and digital presence to awareness campaigns, the foundation for large-scale communication had to be built."
         challengeCopy1="Ayatiworks stepped in to transform SPAARC from a regional therapy center into a recognized voice of non-surgical healing across India."
-        challengeImg="http://89.167.92.220:8088/assets/casestudy/spa-sta.jpg"
+        challengeImg="/assets/casestudy/spa-sta.jpg"
         challengeImgAlt="SPAARC wellness challenge"
         objectiveTitle="The Objective"
         objectiveSubTitle="To build a national wellness brand ecosystem that:"
@@ -48,14 +48,14 @@ export default function SpaarcCaseStudy() {
           "Builds thought leadership visibility for the doctor founders",
           "Creates a unified marketing system across digital and offline channels",
         ]}
-        carImg="http://89.167.92.220:8088/assets/casestudy/spa-sec-1.jpg"
+        carImg="/assets/casestudy/spa-sec-1.jpg"
         carImgAlt="Wellness movement objective"
         className="py-20 md:py-32"
       />
 
       <ResultsShowcase
         title="The Execution"
-        topImage="http://89.167.92.220:8088/assets/casestudy/spa-img-2.jpg"
+        topImage="/assets/casestudy/spa-img-2.jpg"
         metaHeading="Brand Identity & Digital Foundation"
         metaPoints={[
           "Designed SPAARC’s brand identity system, defining voice, message, and visual language",
@@ -68,13 +68,13 @@ export default function SpaarcCaseStudy() {
           "Developed multilingual content strategy for Tamil, Hindi, and English audiences",
           "Established personal branding for SPAARC’s doctor founders through expert videos, interviews, and wellness insights",
         ]}
-        rightImage="http://89.167.92.220:8088/assets/casestudy/spa-img-3.jpg"
+        rightImage="/assets/casestudy/spa-img-3.jpg"
         className=""
       />
 
       <ResultsShowcase
         title="Awareness & Growth Campaigns"
-        topImage="http://89.167.92.220:8088/assets/casestudy/spa-img-4.jpg"
+        topImage="/assets/casestudy/spa-img-4.jpg"
         metaHeading=""
         metaPoints={[
           "Executed organic and paid campaigns across Meta and Google Ads",
@@ -85,12 +85,12 @@ export default function SpaarcCaseStudy() {
 
       <ResultsShowcase
         title="The Results:"
-        // topImage="http://89.167.92.220:8088/assets/casestudy/apex-7.svg"
+        // topImage="/assets/casestudy/apex-7.svg"
         closingTitle="National Brand Recognition"
         closingCopy={`Achieved 100% awareness across target states, transforming SPAARC into a nationally recognized wellness brand
 Positioned SPAARC as a leader in non-surgical therapy and movement-based healing
 Built strong online communities around SPAARC’s wellness philosophy`}
-        logo="http://89.167.92.220:8088/assets/casestudy/spa-brand.png"
+        logo="/assets/casestudy/spa-brand.png"
         className=""
       />
       <ResultsShowcase
@@ -101,7 +101,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
           "Strengthened patient trust through doctor-led digital engagement and educational content",
           "Delivered five years of continuous marketing and communications stewardship",
         ]}
-        rightImage="http://89.167.92.220:8088/assets/casestudy/spa-img-5.jpg"
+        rightImage="/assets/casestudy/spa-img-5.jpg"
         className=""
       />
 
@@ -118,7 +118,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
             metrics: "Click to View",
             href: "https://www.instagram.com/reel/DM-SewQJ9HH/?igsh=YmVjcjRuMWs2Zmww",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/spa-vid-1.mp4",
+              "/assets/casestudy/spa-vid-1.mp4",
           },
           {
             platform: "Instagram",
@@ -126,7 +126,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
             metrics: "Click to View",
             href: "https://www.instagram.com/reel/DV8mvuqgNP0/?igsh=dW92dmdmbjF3aDRl",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/spa-vid-2.mp4",
+              "/assets/casestudy/spa-vid-2.mp4",
           },
           {
             platform: "Instagram",
@@ -134,7 +134,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
             metrics: "Click to View",
             href: "https://www.instagram.com/reel/DObFmQFiSot/?igsh=YmRoOW93cDdyYW95",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/spa-vid-3.mp4",
+              "/assets/casestudy/spa-vid-3.mp4",
           },
           {
             platform: "Instagram",
@@ -142,7 +142,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
             metrics: "Click to View",
             href: "https://www.instagram.com/reel/DOgBbeejZk_/?igsh=MTFuc3dobGlzaHowOA%3D%3D",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/spa-vid-4.mp4",
+              "/assets/casestudy/spa-vid-4.mp4",
           },
         ]}
         className="py-20 md:py-32"
@@ -162,7 +162,7 @@ Built strong online communities around SPAARC’s wellness philosophy`}
         }
         ctaButtonText="Get in Touch"
         ctaHref="https://www.ayatiworks.com/contact-us"
-        ctaImage="http://89.167.92.220:8088/assets/casestudy/spa-foot.jpg"
+        ctaImage="/assets/casestudy/spa-foot.jpg"
         ctaHeadlineColor="text-primary"
         ctaCopyColor="text-secondary"
       />

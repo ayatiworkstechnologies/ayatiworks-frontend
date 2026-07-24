@@ -56,7 +56,7 @@ export default function AEOArticlePage118() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "http://89.167.92.220:8088/author/daniel.png",
+              "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -1025,7 +1025,7 @@ function Intro() {
       <p className="section-phara">Are you seeing this everywhere?</p>
       <div className="relative my-8 aspect-video w-full overflow-hidden rounded-xl shadow-lg border border-slate-200">
         <Image
-          src="http://89.167.92.220:8088/assets/seo-ay.jpg"
+          src="/assets/seo-ay.jpg"
           alt="Ayatiworks professes SEO is Evolving and we need to keep upgrading our SEO Knowledge"
           fill
           className="object-cover"

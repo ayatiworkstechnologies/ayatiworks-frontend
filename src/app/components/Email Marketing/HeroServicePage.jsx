@@ -62,52 +62,52 @@ const steps = [
 const data = [
   {
     title: "Increased Engagement",
-    icon: "http://89.167.92.220:8088/icon/email-1.png",
+    icon: "/icon/email-1.png",
     desc: "Achieved a 25% higher open rate for a Chennai-based NGO’s newsletters.",
   },
   {
     title: "Boosted Sales",
-    icon: "http://89.167.92.220:8088/icon/email-2.png",
+    icon: "/icon/email-2.png",
     desc: "Drove a 20% increase in online sales for a local electronics retailer through promotional campaigns.",
   },
   {
     title: "Enhanced Customer Retention",
-    icon: "http://89.167.92.220:8088/icon/email-3.png",
+    icon: "/icon/email-3.png",
     desc: "Drove a 30% increase in online sales for a local electronics retailer through promotional campaigns.",
   },
 ];
 const expertise = [
   {
     title: "Newsletter Campaigns",
-    icon: "http://89.167.92.220:8088/icon/email-4.png",
+    icon: "/icon/email-4.png",
   },
   {
     title: "Promotional Emails",
-    icon: "http://89.167.92.220:8088/icon/email-5.png",
+    icon: "/icon/email-5.png",
   },
   {
     title: "Transactional Emails",
-    icon: "http://89.167.92.220:8088/icon/email-6.png",
+    icon: "/icon/email-6.png",
   },
   {
     title: "Drip Campaigns",
-    icon: "http://89.167.92.220:8088/icon/email-7.png",
+    icon: "/icon/email-7.png",
   },
   {
     title: "Event Invitations",
-    icon: "http://89.167.92.220:8088/icon/email-8.png",
+    icon: "/icon/email-8.png",
   },
   {
     title: "Customer Surveys",
-    icon: "http://89.167.92.220:8088/icon/email-9.png",
+    icon: "/icon/email-9.png",
   },
   {
     title: "Re-engagement Campaigns",
-    icon: "http://89.167.92.220:8088/icon/email-10.png",
+    icon: "/icon/email-10.png",
   },
   {
     title: "Automated Workflows",
-    icon: "http://89.167.92.220:8088/icon/email-11.png",
+    icon: "/icon/email-11.png",
   },
 
 ];
@@ -180,7 +180,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="http://89.167.92.220:8088/assets/office-member.png"
+                src="/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -223,7 +223,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/email-1.png"
+                src="/assets/service/email-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -482,7 +482,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/email-2.png"
+                src="/assets/service/email-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -626,7 +626,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/email-3.png"
+                src="/assets/service/email-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

@@ -56,7 +56,7 @@ export default function AEOArticlePage117() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "http://89.167.92.220:8088/author/daniel.png",
+              "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -120,7 +120,7 @@ export default function AEOArticlePage117() {
             </p>
             <Link href="https://www.brightedge.com/blog/organic-share-of-traffic-increases-to-53" target="_blank" rel="noopener noreferrer" prefetch={false}>
               <Image
-                src="http://89.167.92.220:8088/assets/blogImg/blog-117-1.png"
+                src="/assets/blogImg/blog-117-1.png"
                 alt="Organic search drives 53% of all website traffic"
                 width={800}
                 height={600}

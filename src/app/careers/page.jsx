@@ -31,7 +31,7 @@ export default function CareersPage() {
       {/* Hero / Intro */}
       {/* <HeroSection /> */}
       <ResponsiveBanner
-        desktopSrc="http://89.167.92.220:8088/banner/careers.jpg"
+        desktopSrc="/banner/careers.jpg"
         alt="Ayatiworks careers"
         priority
         className="mb-4 sm:mb-6"

@@ -184,7 +184,7 @@ export default function GoogleAdsSection() {
                   </div>
                 </div>
                 <Image
-                  src="http://89.167.92.220:8088/assets/Google_Ads_Certification.jpg"
+                  src="/assets/Google_Ads_Certification.jpg"
                   alt="Google Ads Search Certification"
                   width={1600}
                   height={1200}
@@ -222,7 +222,7 @@ export default function GoogleAdsSection() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src="http://89.167.92.220:8088/assets/Google_Ads_Certification.jpg"
+                src="/assets/Google_Ads_Certification.jpg"
                 alt="Google Ads Search Certification Fullscreen"
                 width={2000}
                 height={1500}

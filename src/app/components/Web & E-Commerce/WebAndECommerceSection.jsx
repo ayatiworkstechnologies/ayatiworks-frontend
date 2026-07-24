@@ -40,7 +40,7 @@ export default function WebAndECommerceSection() {
           className="flex justify-center"
         >
           <Image width={800} height={800}
-            src="http://89.167.92.220:8088/assets/tv-dm.png"
+            src="/assets/tv-dm.png"
             alt="The Year of Utsah"
             className="w-200 h-full drop-shadow-xl rounded-xl"
           />

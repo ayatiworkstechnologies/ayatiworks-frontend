@@ -306,7 +306,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/office-member.png"
+                src="/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -475,7 +475,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/oni-1.png"
+                src="/assets/service/oni-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -596,7 +596,7 @@ function HeroServicePage() {
           <div className="hidden md:block">
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/oni-2.png"
+                src="/assets/service/oni-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-lg shadow-lg"
               />
@@ -633,7 +633,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/oni-3.png"
+                src="/assets/service/oni-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -738,7 +738,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/oni-4.png"
+                src="/assets/service/oni-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

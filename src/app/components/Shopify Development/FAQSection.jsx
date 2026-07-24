@@ -122,7 +122,7 @@ export default function FAQSection() {
           >
             <div>
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/faq-img.png"
+                src="/assets/faq-img.png"
                 alt="FAQ Illustration"
                 className="w-full "
               />

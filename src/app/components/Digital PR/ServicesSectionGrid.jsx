@@ -6,19 +6,19 @@ import Image from "next/image";
 
 const services = [
   {
-    icon: "http://89.167.92.220:8088/icon/seo.png",
+    icon: "/icon/seo.png",
     title: "Digital PR Services",
     desc: "From online publications to digital media coverage, we help your brand earn high-value placements that build credibility. Our PR strategies secure interviews, feature articles, and press mention that not only enhance visibility but also generate valuable backlinks that strengthen your online authority. Learn more about our Digital PR services in Chennai. ",
     path: "/digital-pr/digital-pr-service",
   },
   {
-    icon: "http://89.167.92.220:8088/icon/Social_Media.png",
+    icon: "/icon/Social_Media.png",
     title: "Influencer Marketing",
     desc: "We connect your brand with the right voices that inspire trust. From micro-influencers in niche markets to large-scale social collaborations, our influencer marketing strategies drive engagement, build social proof, and create authentic conversations that resonate with your target audience. Discover how our influencer marketing agency in Chennai can grow your reach",
     path: "/digital-pr/influencer-marketing",
   },
   {
-    icon: "http://89.167.92.220:8088/icon/Instagram.png",
+    icon: "/icon/Instagram.png",
     title: "Online Reputation & Media Outreach",
     desc: "Leverage Instagram’s power with data-driven strategies. From reels and influencer tie-ups to targeted advertising, our Instagram marketing experts in Chennai help brands gain visibility, engagement, and customer trust on this fast-growing platform.",
     path: "/digital-pr/online-reputation-media-outreach",

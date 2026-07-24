@@ -57,7 +57,7 @@ export default function AEOArticlePage108() {
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar: "http://89.167.92.220:8088/author/daniel.png",
+            avatar: "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -949,7 +949,7 @@ export default function AEOArticlePage108() {
               shows that users interact with multiple brand touchpoints before
               making decisions.{" "}
             </p>
-            <Image src="http://89.167.92.220:8088/assets/blogImg/blog-img-108.png"
+            <Image src="/assets/blogImg/blog-img-108.png"
               alt="An Interesting factual article on the Modern Buyers Journey cited by Ayatiworks"
             />
             <p className="section-phara">

@@ -8,21 +8,21 @@ import Image from "next/image";
 const roles = [
   {
     title: "SEO Content Writers & Strategists",
-    icon: "http://89.167.92.220:8088/icon/1.png",
+    icon: "/icon/1.png",
   },
-  { title: "Digital Marketing Managers", icon: "http://89.167.92.220:8088/icon/2.png" },
+  { title: "Digital Marketing Managers", icon: "/icon/2.png" },
   {
     title: "Social Media & Performance Marketing Specialists",
-    icon: "http://89.167.92.220:8088/icon/3.png",
+    icon: "/icon/3.png",
   },
-  { title: "UI/UX Designers", icon: "http://89.167.92.220:8088/icon/4.png" },
+  { title: "UI/UX Designers", icon: "/icon/4.png" },
   {
     title: "Programmatic & Media Buying Experts",
-    icon: "http://89.167.92.220:8088/icon/5.png",
+    icon: "/icon/5.png",
   },
   {
     title: "Brand Storytellers & PR Specialists",
-    icon: "http://89.167.92.220:8088/icon/6.png",
+    icon: "/icon/6.png",
   },
 ];
 

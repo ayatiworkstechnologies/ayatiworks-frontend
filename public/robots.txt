@@ -7,7 +7,7 @@ User-agent: Googlebot
 Allow: /
 
 # Host
-Host: https://www.ayatiworks.com
+Host: https://ayatiworks.com
 
 # Sitemaps
-Sitemap: https://www.ayatiworks.com/sitemap.xml
+Sitemap: https://ayatiworks.com/sitemap.xml

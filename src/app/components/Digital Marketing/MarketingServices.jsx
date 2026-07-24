@@ -6,15 +6,15 @@ import Image from "next/image";
 export default function MarketingServices() {
   const services = [
     {
-      image: "http://89.167.92.220:8088/assets/ms-1.png", // replace with your image
+      image: "/assets/ms-1.png", // replace with your image
       alt: "Service 1",
     },
     {
-      image: "http://89.167.92.220:8088/assets/ms-2.png",
+      image: "/assets/ms-2.png",
       alt: "Service 2",
     },
     {
-      image: "http://89.167.92.220:8088/assets/ms-3.png",
+      image: "/assets/ms-3.png",
       alt: "Service 3",
     },
   ];

@@ -66,7 +66,7 @@ export default function AEOArticlePage102() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "http://89.167.92.220:8088/author/daniel.png",
+              "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -220,7 +220,7 @@ export default function AEOArticlePage102() {
               rather than a list of links.
             </p>
             <Image
-              src="http://89.167.92.220:8088/assets/blogImg/blog-102-3.jpg"
+              src="/assets/blogImg/blog-102-3.jpg"
               alt="Understanding the difference between SEO vs AEO "
             />
           </Section>
@@ -1233,7 +1233,7 @@ function Intro() {
         Google to get links to companies they are looking for
       </p>
       <Image
-        src="http://89.167.92.220:8088/assets/blogImg/blog102-1.png"
+        src="/assets/blogImg/blog102-1.png"
         className="py-5"
         alt="Using Keyword to Search on Google"
       />
@@ -1246,7 +1246,7 @@ function Intro() {
         link displayed on the right.
       </p>
       <Image
-        src="http://89.167.92.220:8088/assets/blogImg/blog102-2.png"
+        src="/assets/blogImg/blog102-2.png"
         className="py-5"
         alt="Asking a full-length question in Google Search bar expecting an answer from the AEO – Answer Engine Optimisation"
       />

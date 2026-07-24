@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { id: "http://89.167.92.220:8088/icon/1.png", title: "Discovery Call", desc: "Understand business goals, audience, and vision." },
-  { id: "http://89.167.92.220:8088/icon/2.png", title: "Comprehensive Audit", desc: "Evaluate digital presence, gaps, and opportunities." },
-  { id: "http://89.167.92.220:8088/icon/3.png", title: "KPI-Driven Strategy", desc: "Define success metrics aligned to business outcomes." },
-  { id: "http://89.167.92.220:8088/icon/4.png", title: "Tailored Campaign Planning", desc: "Build strategies for SEO, PPC, and DBC funnels." },
-  { id: "http://89.167.92.220:8088/icon/5.png", title: "Creative Execution", desc: "Design & deploy creatives across digital platforms." },
-  { id: "http://89.167.92.220:8088/icon/6.png", title: "Content Marketing", desc: "Develop valuable, consistent, and SEO-rich content." },
-  { id: "http://89.167.92.220:8088/icon/7.png", title: "Ad Optimization", desc: "Continuously test and refine paid campaigns." },
-  { id: "http://89.167.92.220:8088/icon/8.png", title: "Automation Setup", desc: "Implement CRMs, email flows, and lead nurturing." },
-  { id: "http://89.167.92.220:8088/icon/9.png", title: "Analytics & Reporting", desc: "Track ROI, KPIs, and provide transparent reporting." },
-  { id: "http://89.167.92.220:8088/icon/10.png", title: "Growth Scaling", desc: "Expand reach with data-backed scaling strategies." },
+  { id: "/icon/1.png", title: "Discovery Call", desc: "Understand business goals, audience, and vision." },
+  { id: "/icon/2.png", title: "Comprehensive Audit", desc: "Evaluate digital presence, gaps, and opportunities." },
+  { id: "/icon/3.png", title: "KPI-Driven Strategy", desc: "Define success metrics aligned to business outcomes." },
+  { id: "/icon/4.png", title: "Tailored Campaign Planning", desc: "Build strategies for SEO, PPC, and DBC funnels." },
+  { id: "/icon/5.png", title: "Creative Execution", desc: "Design & deploy creatives across digital platforms." },
+  { id: "/icon/6.png", title: "Content Marketing", desc: "Develop valuable, consistent, and SEO-rich content." },
+  { id: "/icon/7.png", title: "Ad Optimization", desc: "Continuously test and refine paid campaigns." },
+  { id: "/icon/8.png", title: "Automation Setup", desc: "Implement CRMs, email flows, and lead nurturing." },
+  { id: "/icon/9.png", title: "Analytics & Reporting", desc: "Track ROI, KPIs, and provide transparent reporting." },
+  { id: "/icon/10.png", title: "Growth Scaling", desc: "Expand reach with data-backed scaling strategies." },
 ];
 
 export default function GrowthFramework() {

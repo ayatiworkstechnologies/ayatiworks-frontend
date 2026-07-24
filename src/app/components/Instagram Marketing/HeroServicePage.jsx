@@ -151,7 +151,7 @@ function HeroServicePage() {
           >
             <div className="sticky top-20">
               <motion.img
-                src="http://89.167.92.220:8088/assets/office-member.png"
+                src="/assets/office-member.png"
                 alt="Search Engines Work"
                 className="w-full h-auto mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -195,7 +195,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/insta-1.png"
+                src="/assets/service/insta-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -305,7 +305,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/insta-2.png"
+                src="/assets/service/insta-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -340,7 +340,7 @@ function HeroServicePage() {
           of 2025. With a massive, mobile-first audience, Indian brands can:
         </h3>
         <Image width={800} height={800}
-          src="http://89.167.92.220:8088/assets/service/inst-banner.png"
+          src="/assets/service/inst-banner.png"
           alt="Email Service"
           className="w-full h-auto object-cover mb-2"
         />
@@ -488,7 +488,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/insta-3.png"
+                src="/assets/service/insta-3.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -563,7 +563,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/insta-4.png"
+                src="/assets/service/insta-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

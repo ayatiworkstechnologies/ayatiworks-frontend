@@ -69,7 +69,7 @@ export default function PromoHero() {
       <FadeInWhenVisible delay={0.4} y={10}>
         <div className="mt-8 sm:mt-10 w-full mx-auto flex justify-center items-center">
           <Image
-            src="http://89.167.92.220:8088/assets/tv-2026.png"
+            src="/assets/tv-2026.png"
             alt="The Year of Vallam - Ayatiworks 2026 Campaign"
             width={1200}
             height={900}

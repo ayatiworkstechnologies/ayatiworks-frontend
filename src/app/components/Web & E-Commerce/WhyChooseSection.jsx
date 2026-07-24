@@ -23,27 +23,27 @@ export default function WhyChooseSection() {
     {
       title: "Higher Conversions",
       desc: "Websites built to convert visitors into customers with clear CTAs, intuitive design, and optimized funnels.",
-      img: "http://89.167.92.220:8088/icon/01.png",
+      img: "/icon/01.png",
     },
     {
       title: "Performance First",
       desc: "Fast, secure, and mobile-optimized platforms that deliver seamless experiences across all devices.",
-      img: "http://89.167.92.220:8088/icon/02.png",
+      img: "/icon/02.png",
     },
     {
       title: "E-Commerce That Sells",
       desc: "Optimized product pages, smooth payment gateways, and logistics integrations that drive real sales.",
-      img: "http://89.167.92.220:8088/icon/03.png",
+      img: "/icon/03.png",
     },
     {
       title: "Search Visibility",
       desc: "Technical SEO foundations and structured architecture that boost discoverability and long-term rankings.",
-      img: "http://89.167.92.220:8088/icon/04.png",
+      img: "/icon/04.png",
     },
     {
       title: "Scalable Growth",
       desc: "Flexible website architecture that evolves with your business needs and supports future growth.",
-      img: "http://89.167.92.220:8088/icon/05.png",
+      img: "/icon/05.png",
     },
   ];
 

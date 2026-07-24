@@ -740,7 +740,7 @@ export default function AEOArticlePage123() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "http://89.167.92.220:8088/author/daniel.png",
+              "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -941,7 +941,7 @@ export default function AEOArticlePage123() {
               </div>
               <div className="my-8 overflow-hidden rounded-2xl border border-slate-200 shadow-lg transition-transform duration-300 hover:scale-[1.01]">
                 <Image
-                  src="http://89.167.92.220:8088/assets/seo-blog-123.png"
+                  src="/assets/seo-blog-123.png"
                   alt="SEO vs performance marketing strategy comparison"
                   width={1200}
                   height={675}

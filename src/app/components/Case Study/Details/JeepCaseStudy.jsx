@@ -11,9 +11,9 @@ export default function JeepCaseStudy() {
       <CaseStudyShowcase
         hero={{
           desktopImage:
-            "http://89.167.92.220:8088/banner/jeep-banner.png",
+            "/banner/jeep-banner.png",
           mobileImage:
-            "http://89.167.92.220:8088/banner/jeep-banner-mob.png",
+            "/banner/jeep-banner-mob.png",
           imageAlt:
             "Jeep India Independence Day merchandise campaign, stylish UI/UX and sales-driving creatives by Ayatiworks",
         }}
@@ -36,7 +36,7 @@ export default function JeepCaseStudy() {
         challengeEyebrow="Jeep India rolled into Ayatiworks with a mission: to overhaul their merchandise microsite with a sharper, more stylish UI/UX and roll out Independence Day creatives that don’t just wave the flag, they make wallets open. With only three days on the clock, expectations were riding high, Jeep wanted copy that was catchy and salesy, and Ayatiworks delivered with style under pressure.  "
         challengeCopy=""
         challengeCopy1=""
-        challengeImg="http://89.167.92.220:8088/assets/casestudy/jeep-img-2.png"
+        challengeImg="/assets/casestudy/jeep-img-2.png"
         challengeImgAlt="jeep challenge section background"
         objectiveTitle="The Objective"
         objectiveSubTitle="To drive an Independence Day merchandising blitz that would: "
@@ -46,13 +46,13 @@ export default function JeepCaseStudy() {
           "Maximize social momentum, tapping into Jeep’s existing followers to spark organic conversations ",
           "Convert social buzz into sales, turning interest into ₹ orders on the clock ",
         ]}
-        carImg="http://89.167.92.220:8088/assets/casestudy/jeep-img-1.png"
+        carImg="/assets/casestudy/jeep-img-1.png"
         carImgAlt="jeep crossover image"
         className=""
       />
       <ResultsShowcase
         title="Results: Likes, Leads & Revenue Fast "
-        topImage="http://89.167.92.220:8088/assets/casestudy/jeep-img-3.png"
+        topImage="/assets/casestudy/jeep-img-3.png"
         metaHeading="Meta Campaigns (Apr 2024 - Feb 2025)"
         metaPoints={[
           "16,666 likes ",
@@ -65,7 +65,7 @@ export default function JeepCaseStudy() {
         metaPhara="We ignited social engagement and translated it into real revenue, all before the campaign cooled down. "
         closingTitle="From Scroll to Sale: The Transformation "
         closingCopy={`In just 72 hours, Ayatiworks shifted Jeep India’s merchandising from just another microsite to a turbocharged user experience and social event. We turned each likes into traction, each creative into a conversion, and the campaign into short-run success. `}
-        logo="http://89.167.92.220:8088/assets/casestudy/jeep-img-5.png"
+        logo="/assets/casestudy/jeep-img-5.png"
         className=""
       />
       <WhyWorkedCta
@@ -84,7 +84,7 @@ export default function JeepCaseStudy() {
             metrics: "1k impressions  ",
             href: "https://www.instagram.com/p/DNVi430vLDH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/jeep-post-1.jpg",
+              "/assets/casestudy/jeep-post-1.jpg",
           },
           {
             platform: "Instagram",
@@ -92,7 +92,7 @@ export default function JeepCaseStudy() {
             metrics: "1k impressions ",
             href: "https://www.instagram.com/p/DNVi430vLDH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/jeep-post-2.jpg",
+              "/assets/casestudy/jeep-post-2.jpg",
           },
           {
             platform: "Instagram",
@@ -100,14 +100,14 @@ export default function JeepCaseStudy() {
             metrics: "1k impressions  ",
             href: "https://www.instagram.com/p/DNVi430vLDH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1",
             image:
-              "http://89.167.92.220:8088/assets/casestudy/jeep-post-3.jpg",
+              "/assets/casestudy/jeep-post-3.jpg",
           },
         ]}
         ctaHeadline="Ready to Shift Your Digital Strategy into Overdrive? "
         ctaCopy={`Whether you're an automobile brand, EdTech innovator, or fintech disruptor, Ayatiworks knows how to craft campaigns that don't just cost, they charge. Let’s put your next campaign into high gear.  `}
         ctaButtonText="Get in Touch"
         ctaHref="/contact-us"
-        ctaImage="http://89.167.92.220:8088/assets/casestudy/jeep-img-6.png"
+        ctaImage="/assets/casestudy/jeep-img-6.png"
         className=""
         ctaHeadlineColor="text-secondary "
         ctaCopyColor="text-white/90"

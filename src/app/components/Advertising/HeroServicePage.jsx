@@ -244,7 +244,7 @@ function HeroServicePage() {
           >
             <div className="sticky">
               <motion.img
-                src="http://89.167.92.220:8088/assets/ads-img.jpg"
+                src="/assets/ads-img.jpg"
                 alt="Ayatiworks won the 43rd Edition of Maddy’s award for best Performance Marketing for Volvo"
                 className="w-full h-full mx-auto rounded-xl shadow-lg"
                 animate={{ y: [0, -10, 0] }}
@@ -287,7 +287,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/ads.jpg"
+                src="/assets/ads.jpg"
                 alt="Best Creative Agency in Chennai, Ayatiworks"
                 className="w-full h-auto  mx-auto "
               />
@@ -460,7 +460,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/seo-2.png"
+                src="/assets/service/seo-2.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -496,7 +496,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/seo-4.png"
+                src="/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -620,7 +620,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/seo-4.png"
+                src="/assets/service/seo-4.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />
@@ -658,7 +658,7 @@ function HeroServicePage() {
             {/* ✅ Sticky works if parent (this div) doesn’t collapse */}
             <div className="sticky top-20">
               <Image width={800} height={800}
-                src="http://89.167.92.220:8088/assets/service/seo-1.png"
+                src="/assets/service/seo-1.png"
                 alt="Search Engines Work"
                 className="w-full h-auto  mx-auto "
               />

@@ -21,7 +21,7 @@ export default function BlogsPage() {
   return (
     <main className="section section-home">
       <ResponsiveBanner
-        desktopSrc="http://89.167.92.220:8088/banner/Blog.jpg"
+        desktopSrc="/banner/Blog.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

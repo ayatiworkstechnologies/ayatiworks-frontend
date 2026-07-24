@@ -21,7 +21,7 @@ export default function TeamPage() {
       {/* Hero / Intro */}
       {/* <HeroSection /> */}
       <ResponsiveBanner
-        desktopSrc="http://89.167.92.220:8088/banner/Teams.jpg"
+        desktopSrc="/banner/Teams.jpg"
         alt="Ayatiworks Contact Us"
         priority
         className="mb-4 sm:mb-6"

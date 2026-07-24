@@ -5,16 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const steps = [
-  { id: "http://89.167.92.220:8088/icon/1.png", title: "Initial Consultation", desc: "We start with a one-on-one consultation to understand your goals, target audience, and content needs." },
-  { id: "http://89.167.92.220:8088/icon/2.png", title: "Needs Assessment", desc: "Our team evaluates your current content assets, gaps, and growth opportunities." },
-  { id: "http://89.167.92.220:8088/icon/3.png", title: "Content Strategy Blueprint", desc: "We design a roadmap aligned with campaigns, KPIs, and marketing channels." },
-  { id: "http://89.167.92.220:8088/icon/4.png", title: "Editorial Calendar Setup", desc: "A flexible content calendar ensures timely delivery for launches and campaigns." },
-  { id: "http://89.167.92.220:8088/icon/5.png", title: "Creative Asset Development", desc: "Copy, visuals, and videos are created with a focus on brand voice and impact." },
-  { id: "http://89.167.92.220:8088/icon/6.png", title: "Localization & Multilingual", desc: "We adapt messaging into Tamil, Hindi, or other languages for wider reach." },
-  { id: "http://89.167.92.220:8088/icon/7.png", title: "Quality Review & Editing", desc: "Every asset undergoes editing, proofreading, and brand consistency checks." },
-  { id: "http://89.167.92.220:8088/icon/8.png", title: "Delivery & Deployment", desc: "We integrate assets seamlessly into your digital campaigns and platforms." },
-  { id: "http://89.167.92.220:8088/icon/9.png", title: "Performance Tracking", desc: "Analytics and engagement metrics are monitored to measure success." },
-  { id: "http://89.167.92.220:8088/icon/10.png", title: "Continuous Optimization", desc: "Insights from performance refine and improve future content cycles." },
+  { id: "/icon/1.png", title: "Initial Consultation", desc: "We start with a one-on-one consultation to understand your goals, target audience, and content needs." },
+  { id: "/icon/2.png", title: "Needs Assessment", desc: "Our team evaluates your current content assets, gaps, and growth opportunities." },
+  { id: "/icon/3.png", title: "Content Strategy Blueprint", desc: "We design a roadmap aligned with campaigns, KPIs, and marketing channels." },
+  { id: "/icon/4.png", title: "Editorial Calendar Setup", desc: "A flexible content calendar ensures timely delivery for launches and campaigns." },
+  { id: "/icon/5.png", title: "Creative Asset Development", desc: "Copy, visuals, and videos are created with a focus on brand voice and impact." },
+  { id: "/icon/6.png", title: "Localization & Multilingual", desc: "We adapt messaging into Tamil, Hindi, or other languages for wider reach." },
+  { id: "/icon/7.png", title: "Quality Review & Editing", desc: "Every asset undergoes editing, proofreading, and brand consistency checks." },
+  { id: "/icon/8.png", title: "Delivery & Deployment", desc: "We integrate assets seamlessly into your digital campaigns and platforms." },
+  { id: "/icon/9.png", title: "Performance Tracking", desc: "Analytics and engagement metrics are monitored to measure success." },
+  { id: "/icon/10.png", title: "Continuous Optimization", desc: "Insights from performance refine and improve future content cycles." },
 ];
 
 export default function CaaSFramework() {

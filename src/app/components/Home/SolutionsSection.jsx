@@ -26,7 +26,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Digital Marketing Services",
-      icon: "http://89.167.92.220:8088/assets/good-vibe.png",
+      icon: "/assets/good-vibe.png",
       basePath: "/digital-marketing-services",
       list: [
         { label: "SEO Services", href: "/digital-marketing-services/seo" },
@@ -63,7 +63,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Content as a Service",
-      icon: "http://89.167.92.220:8088/icon/01.png",
+      icon: "/icon/01.png",
       basePath: "/content-as-a-service",
       list: [
         {
@@ -87,7 +87,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Digital PR Service",
-      icon: "http://89.167.92.220:8088/icon/02.png",
+      icon: "/icon/02.png",
       basePath: "/digital-pr",
       list: [
         { label: "Digital PR", href: "/digital-pr/digital-pr-service" },
@@ -105,7 +105,7 @@ export default function SolutionsSection() {
     {
       cat: "",
       title: "Web & E-commerce",
-      icon: "http://89.167.92.220:8088/icon/03.png",
+      icon: "/icon/03.png",
       basePath: "/services/web-ecommerce",
       list: [
         { label: "UX/UI Design", href: "/web-ecommerce/ux-ui-design" },

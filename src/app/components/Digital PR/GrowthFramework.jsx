@@ -6,52 +6,52 @@ import Image from "next/image";
 
 const steps = [
   {
-    id: "http://89.167.92.220:8088/icon/1.png",
+    id: "/icon/1.png",
     title: "Initial Consultation",
     desc: "We begin with a deep dive into your brand, objectives, and audience to set the foundation for impactful PR campaigns."
   },
   {
-    id: "http://89.167.92.220:8088/icon/2.png",
+    id: "/icon/2.png",
     title: "PR Audit & Market Research",
     desc: "Audit current presence, analyze competitors, and identify media gaps to position your brand effectively."
   },
   {
-    id: "http://89.167.92.220:8088/icon/3.png",
+    id: "/icon/3.png",
     title: "Strategy Blueprint",
     desc: "Develop a tailored PR roadmap with clear goals, messaging, and media targeting for measurable outcomes."
   },
   {
-    id: "http://89.167.92.220:8088/icon/4.png",
+    id: "/icon/4.png",
     title: "Content Development",
     desc: "Craft press releases, articles, and media kits that capture your brand voice and engage journalists and audiences."
   },
   {
-    id: "http://89.167.92.220:8088/icon/5.png",
+    id: "/icon/5.png",
     title: "Media List Building",
     desc: "Curate targeted lists of journalists, publications, and platforms that maximize brand visibility."
   },
   {
-    id: "http://89.167.92.220:8088/icon/6.png",
+    id: "/icon/6.png",
     title: "Influencer Mapping",
     desc: "Identify authentic influencers who align with your values to build trust and credibility."
   },
   {
-    id: "http://89.167.92.220:8088/icon/7.png",
+    id: "/icon/7.png",
     title: "Campaign Launch",
     desc: "Roll out campaigns with precision timing to capture attention at the right moment."
   },
   {
-    id: "http://89.167.92.220:8088/icon/8.png",
+    id: "/icon/8.png",
     title: "Outreach & Distribution",
     desc: "Execute targeted outreach to secure placements that create buzz, backlinks, and authority."
   },
   {
-    id: "http://89.167.92.220:8088/icon/9.png",
+    id: "/icon/9.png",
     title: "Monitoring & Engagement",
     desc: "Track mentions, coverage, and audience response in real time while nurturing journalist relationships."
   },
   {
-    id: "http://89.167.92.220:8088/icon/10.png",
+    id: "/icon/10.png",
     title: "Reporting & Optimization",
     desc: "Deliver transparent reports with insights on performance, guiding continuous campaign improvement."
   },

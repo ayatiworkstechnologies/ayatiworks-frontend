@@ -13,10 +13,10 @@ export default function AwardsListSection() {
   const router = useRouter();
 
   const awards = [
-    { id: 1, title: "TamilNadu Brand Leadership AWARDS -2020", img: "http://89.167.92.220:8088/assets/aw-4.png", backImg: "http://89.167.92.220:8088/assets/awards-4.png", link: "#" },
-    { id: 2, title: "Indian Achievers AWARD - 2021-2022", img: "http://89.167.92.220:8088/assets/aw-1.png", backImg: "http://89.167.92.220:8088/assets/awards-1.png", link: "#" },
-    { id: 3, title: "Digital Agency of the YEAR -2022", img: "http://89.167.92.220:8088/assets/aw-2.png", backImg: "http://89.167.92.220:8088/assets/awards-2.png", link: "#" },
-    { id: 4, title: "Trendsetters of TamilNadu by TIMES OF INDIA -2022", img: "http://89.167.92.220:8088/assets/aw-3.png", backImg: "http://89.167.92.220:8088/assets/awards-3.png", link: "#" },
+    { id: 1, title: "TamilNadu Brand Leadership AWARDS -2020", img: "/assets/aw-4.png", backImg: "/assets/awards-4.png", link: "#" },
+    { id: 2, title: "Indian Achievers AWARD - 2021-2022", img: "/assets/aw-1.png", backImg: "/assets/awards-1.png", link: "#" },
+    { id: 3, title: "Digital Agency of the YEAR -2022", img: "/assets/aw-2.png", backImg: "/assets/awards-2.png", link: "#" },
+    { id: 4, title: "Trendsetters of TamilNadu by TIMES OF INDIA -2022", img: "/assets/aw-3.png", backImg: "/assets/awards-3.png", link: "#" },
   ];
 
   const handleFlip = (index) => {

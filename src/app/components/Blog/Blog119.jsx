@@ -56,7 +56,7 @@ export default function AEOArticlePage119() {
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
             avatar:
-              "http://89.167.92.220:8088/author/daniel.png",
+              "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -229,7 +229,7 @@ export default function AEOArticlePage119() {
             </p>
             <div className="relative my-8 w-full overflow-hidden rounded-xl shadow-lg border border-slate-200">
               <Image
-                src="http://89.167.92.220:8088/assets/seo-mistakes-chennai-businesses-infographic.PNG"
+                src="/assets/seo-mistakes-chennai-businesses-infographic.PNG"
                 alt="9 SEO mistakes Chennai businesses make affecting Google rankings infographic"
                 width={800}
                 height={2000}
@@ -1645,7 +1645,7 @@ function Intro() {
       </h2>
       {/* <div className="relative my-8 aspect-video w-full overflow-hidden rounded-xl shadow-lg border border-slate-200">
         <Image
-          src="http://89.167.92.220:8088/assets/seo-ay.jpg"
+          src="/assets/seo-ay.jpg"
           alt="Ayatiworks professes SEO is Evolving and we need to keep upgrading our SEO Knowledge"
           fill
           className="object-cover"

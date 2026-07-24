@@ -63,7 +63,7 @@ export default function AEOArticlePage104() {
             name: "Daniel Joseph",
             slug: "daniel-joseph",
             role: "Senior SEO Strategist",
-            avatar: "http://89.167.92.220:8088/author/daniel.png",
+            avatar: "/author/daniel.png",
           }}
           updatedAt={post.date}
           readMins={post.readMins}
@@ -308,33 +308,33 @@ export default function AEOArticlePage104() {
                 {/* Original + Duplicate for looping */}
                 {[
                   {
-                    img: "http://89.167.92.220:8088/assets/blogImg/blog-104-4.jpg",
+                    img: "/assets/blogImg/blog-104-4.jpg",
                     alt: "Volvo Branding",
                     title: "Volvo",
                   },
                 {
-                  img: "http://89.167.92.220:8088/assets/blogImg/blog-104-5.jpg",
+                  img: "/assets/blogImg/blog-104-5.jpg",
                   alt: "Nippo India Branding",
                   title: "Nippo India",
                 },
                 {
-                  img: "http://89.167.92.220:8088/assets/blogImg/blog-104-3.jpg",
+                  img: "/assets/blogImg/blog-104-3.jpg",
                   alt: "Jeep India Branding",
                   title: "Jeep India",
                 },
                 // Duplicate for infinite loop
                 {
-                  img: "http://89.167.92.220:8088/assets/blogImg/blog-104-4.jpg",
+                  img: "/assets/blogImg/blog-104-4.jpg",
                   alt: "Volvo Branding",
                   title: "Volvo",
                 },
                 {
-                  img: "http://89.167.92.220:8088/assets/blogImg/blog-104-5.jpg",
+                  img: "/assets/blogImg/blog-104-5.jpg",
                   alt: "Nippo India Branding",
                   title: "Nippo India",
                 },
                 {
-                  img: "http://89.167.92.220:8088/assets/blogImg/blog-104-3.jpg",
+                  img: "/assets/blogImg/blog-104-3.jpg",
                   alt: "Jeep India Branding",
                   title: "Jeep India",
                 },
@@ -751,7 +751,7 @@ export default function AEOArticlePage104() {
             id="chennai-vs-metros"
             title="Chennai vs Metro Agencies. A Real Comparison!"
           >
-            <Image src="http://89.167.92.220:8088/assets/blogImg/blog-104-2.png"
+            <Image src="/assets/blogImg/blog-104-2.png"
               alt="Comparison between Chennai and other Metro Digital Marketing Agencies"
             />
           </Section>
