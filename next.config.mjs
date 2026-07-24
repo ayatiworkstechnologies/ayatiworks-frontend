@@ -7,6 +7,7 @@ const nextConfig = {
   
   // ✅ Image Optimization Configuration
   images: {
+    unoptimized: true,
     // Allow Next.js Image to optimize images from S3
     remotePatterns: [
       {

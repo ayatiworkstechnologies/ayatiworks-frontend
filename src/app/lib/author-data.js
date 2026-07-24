@@ -16,7 +16,7 @@ export const AUTHORS = [
   {
     slug: "karthick-raja",
     name: "Karthick Raja",
-    avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/male.png",
+    avatar: "https://ik.imagekit.io/bf5g7wxrp/ayatiworks-storage/assets/teams/karthik.jpeg",
     bio: "Karthick Raja is a Jr Content Writer at Ayatiworks.",
     socials: {
       linkedin: "https://www.linkedin.com/",
