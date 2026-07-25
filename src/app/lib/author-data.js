@@ -28,6 +28,15 @@ export const AUTHORS = [
 export const POSTS_BY_AUTHOR = {
   "karthick-raja": [
     {
+      id: "p128",
+      title: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
+      deck: "Discover the most expensive digital marketing myths hurting business growth in 2026 and learn practical strategies to increase ROI with smarter marketing.",
+      cover: "/banner/blog-128.png",
+      category: "Digital Marketing Services",
+      slug: "/blogs/digital-marketing-services/digital-marketing-myths-that-are-costing-businesses-money-in-2026/",
+      date: "Jul 24, 2026",
+    },
+    {
       id: "p127",
       title: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
       deck: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
