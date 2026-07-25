@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PartnersInClimb() {
   // === Partner Logos (52 total) ===
-  const partners = Array.from({ length: 51 }, (_, i) => ({
+  const partners = Array.from({ length: 52 }, (_, i) => ({
     name: `Client ${i + 1}`,
     logo: `/logos/Client-${i + 1}.webp`,
   }));
@@ -13,7 +13,7 @@ export default function PartnersInClimb() {
   // Row 1: Client 1–17, Row 2: Client 18–34, Row 3: Client 35–52
   const row1 = partners.slice(0, 17);
   const row2 = partners.slice(17, 34);
-  const row3 = partners.slice(34, 51);
+  const row3 = partners.slice(34, 52);
 
   // Reusable logo card renderer
   const renderLogo = (partner, keyPrefix, index) => (

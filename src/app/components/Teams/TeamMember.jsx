@@ -54,7 +54,7 @@ const teamMembers = [
   {
     name: "Sridhar",
     title: "Digital Marketing Manager",
-    img: "/assets/teams/sridhar.png",
+    img: "/assets/teams/sridhar.webp",
     highlight: true,
   },
   {
@@ -100,61 +100,61 @@ const teamMembers = [
     img: "/assets/teams/ramya.png",
     highlight: true,
   },
-  {
-    name: "Vijaylakshme",
-    title: " Motion Graphic Designer",
-    img: "/assets/teams/viji-1.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Vijaylakshme",
+  //   title: " Motion Graphic Designer",
+  //   img: "/assets/teams/viji.webp",
+  //   highlight: true,
+  // },
   {
     name: "Vijayadharshini",
     title: "Motion Graphic Designer",
-    img: "/assets/teams/viji-2.png",
+    img: "/assets/teams/viji.webp",
     highlight: true,
   },
   {
     name: "Priya",
     title: "Brand Manager",
-    img: "/assets/teams/priya.png",
+    img: "/assets/teams/priya.webp",
     highlight: true,
   },
 
   {
     name: "Karthick Raja",
     title: "Social Media Executive",
-    img: "/assets/teams/male.png",
+    img: "/assets/teams/karthik.jpeg",
     highlight: true,
   },
   {
     name: "Harini Arumugam",
     title: "Junior project coordinator",
-    img: "/assets/teams/harini.png",
+    img: "/assets/teams/harini.webp",
     highlight: true,
   },
 
   {
     name: "Sneha M",
     title: "Social Media Manager",
-    img: "/assets/teams/sn.png",
+    img: "/assets/teams/sn.webp",
     highlight: true,
   },
   {
     name: "Teepeshwaran",
     title: "Social Media Executive",
-    img: "/assets/teams/teepesh.png",
+    img: "/assets/teams/teepesh.webp",
     highlight: true,
   },
   {
     name: "Raseena Nilofer",
     title: "Brand Service Executive",
-    img: "/assets/teams/nilo.png",
+    img: "/assets/teams/nilo.webp",
     highlight: true,
   },
 
   {
     name: "Nigilan",
     title: "Admin",
-    img: "/assets/teams/nigilan.png",
+    img: "/assets/teams/nigilan.webp",
     highlight: true,
   },
 

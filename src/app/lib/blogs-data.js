@@ -699,162 +699,162 @@ export const POSTS = [
       },
     ],
   },
-  // {
-  //   id: 125,
-  //   BlogTitle:
-  //     "The TVK Digital Playbook: How Strategy, Silence, and Content Engineered a Historic Win",
-  //   title:
-  //     "Decoding the TVK Digital Marketing Playbook: How Structured Content, Silence, and Strategy Built a Mass Movement in Tamil Nadu",
-  //   slug: "/blogs/content-as-a-service/decoding-the-tvk-digital-marketing-playbook/",
-  //   bannerTitle: "He Spoke Less. The System Spoke Louder.",
-  //   subline:
-  //     "A masterclass in how silence, structure, and strategy turned content into influence, and influence into victory.",
-  //   date: "May 8, 2026",
-  //   readMins: 25,
-  //   cover:
-  //     "/banner/blog-125.jpg",
-  //   coverAlt:
-  //     "Ayatiworks decodes the TVK Digital Marketing Playbook - How silence, strategy and content won Tamil Nadu 2026",
-  //   deck: "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
-  //   category: "CAAS Strategies",
-  //   seoTitle:
-  //     "TVK Digital Strategy Breakdown: How Vijay Engineered a Winning Content Funnel",
-  //   seoDescription:
-  //     "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
-  //   faqs: [
-  //     {
-  //       question: "1.",
-  //       answer: "",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 126,
-  //   BlogTitle:
-  //     "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
-  //   title:
-  //     "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
-  //   slug: "/blogs/seo/google-faq-rich-results-update-2026/",
-  //   bannerTitle:
-  //     "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
-  //   subline:
-  //     "Google has officially started phasing out FAQ rich results from Search, marking a major shift in how websites earn visibility on SERPs.",
-  //   date: "May 15, 2026",
-  //   readMins: 15,
-  //   cover:
-  //     "/banner/blog-126.png",
-  //   coverAlt:
-  //     "Google FAQ rich results update impact on SEO and AI search visibility in 2026",
-  //   deck: "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
-  //   category: "SEO Services",
-  //   seoTitle: "Google Removes FAQ Rich Results: SEO Impact & What to Do Next",
-  //   seoDescription:
-  //     "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
-  //   faqs: [
-  //     {
-  //       question: "Is Google completely removing FAQs from websites?",
-  //       answer: "No. Google is only removing FAQ rich results from Search appearance. Websites can still use FAQs on pages where they genuinely help users understand a topic, service, or process better.",
-  //     },
-  //     {
-  //       question: "Should websites remove FAQ schema after Google’s update?",
-  //       answer: "Not necessarily. FAQ schema can still support AI search systems, voice search, and alternative search engines. If your FAQs are relevant and useful, keeping the markup may still provide long-term value.",
-  //     },
-  //     {
-  //       question: "Why did Google stop showing FAQ rich results?",
-  //       answer: "Google found that many websites were overusing FAQ schema for keyword stuffing and SERP manipulation rather than helping users. The update is part of Google’s broader push toward helpful, high-quality content experiences.",
-  //     },
-  //     {
-  //       question: "Are FAQs still important for SEO in 2026?",
-  //       answer: "Yes. FAQs still play an important role in SEO, AI search visibility, and user experience. Well-structured FAQ sections help users and AI systems quickly identify contextual answers related to search intent, services, pricing, implementation, usability, and decision-making.",
-  //     },
-  //     {
-  //       question: "What should content creators focus on instead of FAQ rich snippets?",
-  //       answer: "Content creators should focus on E-E-A-T signals, AI-optimized content structures, conversational search intent, topical authority, and creating genuinely useful informational content that improves user trust and engagement.",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 127,
-  //   BlogTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
-  //   title: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
-  //   slug: "/blogs/branding-services/why-marketing-without-branding-is-a-costly-mistake-6-strategic-lessons-for-2026-businesses/",
-  //   bannerTitle: "Why Marketing Without Branding is a Costly Mistake",
-  //   subline: "6 Strategic Lessons for 2026 Businesses",
-  //   date: "Jul 18, 2026",
-  //   readMins: 10,
-  //   cover: "/banner/blog-127.png",
-  //   coverAlt: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
-  //   deck: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
-  //   category: "Branding Services",
-  //   seoTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses | Ayatiworks",
-  //   seoDescription: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
-  //   faqs: [
-  //     {
-  //       question: "1. What is the difference between branding and marketing?",
-  //       answer: "Branding defines how people perceive your business, while marketing promotes your products and services to generate customer action."
-  //     },
-  //     {
-  //       question: "2. Can marketing work without branding?",
-  //       answer: "Yes, but results are often short lived, expensive, and difficult to sustain."
-  //     },
-  //     {
-  //       question: "3. Why is branding important for business growth?",
-  //       answer: "Branding builds trust, recognition, loyalty, and differentiation, which support long-term growth."
-  //     },
-  //     {
-  //       question: "4. How does branding improve marketing ROI?",
-  //       answer: "Strong branding increases conversion rates, improves customer retention, and lowers acquisition costs."
-  //     },
-  //     {
-  //       question: "5. What is brand positioning?",
-  //       answer: "Brand positioning defines how a business is perceived relative to competitors in the market."
-  //     }
-  //   ]
-  // },
-  // {
-  //   id: 128,
-  //   BlogTitle: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
-  //   title: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
-  //   slug: "/blogs/digital-marketing-services/digital-marketing-myths-that-are-costing-businesses-money-in-2026/",
-  //   bannerTitle: "Digital Marketing Myths That Are Costing Businesses Money",
-  //   subline: "Are outdated strategies hurting your business growth in 2026?",
-  //   date: "Jul 24, 2026",
-  //   readMins: 15,
-  //   cover: "/banner/blog-128.png",
-  //   coverAlt: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
-  //   deck: "Discover the most expensive digital marketing myths hurting business growth in 2026 and learn practical strategies to increase ROI with smarter marketing.",
-  //   category: "Digital Marketing Services",
-  //   seoTitle: "Digital Marketing Myths That Are Costing Businesses Money",
-  //   seoDescription: "Discover the most expensive digital marketing myths hurting business growth in 2026 and learn practical strategies to increase ROI with smarter marketing.",
-  //   faqs: [
-  //     {
-  //       question: "1. What is the biggest digital marketing myth?",
-  //       answer: "The belief that more traffic automatically leads to more sales is one of the most expensive myths. Without qualified visitors and effective conversion strategies, high traffic alone delivers little business value."
-  //     },
-  //     {
-  //       question: "2. Does SEO still work in 2026?",
-  //       answer: "Yes. SEO remains one of the most effective long-term digital marketing investments. However, success now depends on creating helpful, authoritative content, delivering excellent user experiences, and aligning with search intent rather than simply targeting keywords."
-  //     },
-  //     {
-  //       question: "3. Should businesses rely only on paid advertising?",
-  //       answer: "No. Paid advertising is valuable for generating immediate visibility, but sustainable growth requires branding, SEO, content marketing, and customer retention working together."
-  //     },
-  //     {
-  //       question: "4. How often should businesses post on social media?",
-  //       answer: "There is no universal posting frequency. It's more effective to publish high-quality, audience-focused content consistently than to post frequently without providing value."
-  //     },
-  //     {
-  //       question: "5. Why is branding important in digital marketing?",
-  //       answer: "Branding builds trust, recognition, and credibility. Strong brands typically achieve better advertising performance, higher customer retention, and increased customer lifetime value."
-  //     },
-  //     {
-  //       question: "6. What metrics should businesses focus on?",
-  //       answer: "Rather than vanity metrics such as likes or page views, prioritize: conversion rate, customer acquisition cost (CAC), return on investment (ROI), customer lifetime value (CLV), lead quality, and revenue growth."
-  //     },
-  //     {
-  //       question: "7. How can businesses avoid costly marketing mistakes?",
-  //       answer: "Develop a strategy based on customer needs, data analysis, continuous optimization, and long term objectives instead of relying on popular marketing myths or trends."
-  //     }
-  //   ]
-  // }
+  {
+    id: 125,
+    BlogTitle:
+      "The TVK Digital Playbook: How Strategy, Silence, and Content Engineered a Historic Win",
+    title:
+      "Decoding the TVK Digital Marketing Playbook: How Structured Content, Silence, and Strategy Built a Mass Movement in Tamil Nadu",
+    slug: "/blogs/content-as-a-service/decoding-the-tvk-digital-marketing-playbook/",
+    bannerTitle: "He Spoke Less. The System Spoke Louder.",
+    subline:
+      "A masterclass in how silence, structure, and strategy turned content into influence, and influence into victory.",
+    date: "May 8, 2026",
+    readMins: 25,
+    cover:
+      "/banner/blog-125.png",
+    coverAlt:
+      "Ayatiworks decodes the TVK Digital Marketing Playbook - How silence, strategy and content won Tamil Nadu 2026",
+    deck: "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+    category: "CAAS Strategies",
+    seoTitle:
+      "TVK Digital Strategy Breakdown: How Vijay Engineered a Winning Content Funnel",
+    seoDescription:
+      "A deep-dive analysis by Ayatiworks into how TVK leveraged funnel marketing, micro content, and silent strategy to influence millions and drive electoral success in Tamil Nadu.",
+    faqs: [
+      {
+        question: "1.",
+        answer: "",
+      },
+    ],
+  },
+  {
+    id: 126,
+    BlogTitle:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    title:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    slug: "/blogs/seo/google-faq-rich-results-update-2026/",
+    bannerTitle:
+      "Google Is Retiring FAQ Rich Results: What This Means for SEO in 2026",
+    subline:
+      "Google has officially started phasing out FAQ rich results from Search, marking a major shift in how websites earn visibility on SERPs.",
+    date: "May 15, 2026",
+    readMins: 15,
+    cover:
+      "/banner/blog-126.png",
+    coverAlt:
+      "Google FAQ rich results update impact on SEO and AI search visibility in 2026",
+    deck: "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+    category: "SEO Services",
+    seoTitle: "Google Removes FAQ Rich Results: SEO Impact & What to Do Next",
+    seoDescription:
+      "Google is officially retiring FAQ rich results from Search. Learn what this means for SEO, CTR, structured data, AI search visibility, and how content creators should adapt in 2026.",
+    faqs: [
+      {
+        question: "Is Google completely removing FAQs from websites?",
+        answer: "No. Google is only removing FAQ rich results from Search appearance. Websites can still use FAQs on pages where they genuinely help users understand a topic, service, or process better.",
+      },
+      {
+        question: "Should websites remove FAQ schema after Google’s update?",
+        answer: "Not necessarily. FAQ schema can still support AI search systems, voice search, and alternative search engines. If your FAQs are relevant and useful, keeping the markup may still provide long-term value.",
+      },
+      {
+        question: "Why did Google stop showing FAQ rich results?",
+        answer: "Google found that many websites were overusing FAQ schema for keyword stuffing and SERP manipulation rather than helping users. The update is part of Google’s broader push toward helpful, high-quality content experiences.",
+      },
+      {
+        question: "Are FAQs still important for SEO in 2026?",
+        answer: "Yes. FAQs still play an important role in SEO, AI search visibility, and user experience. Well-structured FAQ sections help users and AI systems quickly identify contextual answers related to search intent, services, pricing, implementation, usability, and decision-making.",
+      },
+      {
+        question: "What should content creators focus on instead of FAQ rich snippets?",
+        answer: "Content creators should focus on E-E-A-T signals, AI-optimized content structures, conversational search intent, topical authority, and creating genuinely useful informational content that improves user trust and engagement.",
+      },
+    ],
+  },
+  {
+    id: 127,
+    BlogTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    title: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    slug: "/blogs/branding-services/why-marketing-without-branding-is-a-costly-mistake-6-strategic-lessons-for-2026-businesses/",
+    bannerTitle: "Why Marketing Without Branding is a Costly Mistake",
+    subline: "6 Strategic Lessons for 2026 Businesses",
+    date: "Jul 18, 2026",
+    readMins: 10,
+    cover: "/banner/blog-127.png",
+    coverAlt: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses",
+    deck: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
+    category: "Branding Services",
+    seoTitle: "Why Marketing Without Branding is a Costly Mistake: 6 Strategic Lessons for 2026 Businesses | Ayatiworks",
+    seoDescription: "Discover why marketing without branding leads to wasted budgets, weak customer loyalty, and poor marketing ROI. Learn six strategic lessons for 2026 and how Ayatiworks uses Ayati Intelligence to build stronger brands, improve customer trust, and drive sustainable business growth.",
+    faqs: [
+      {
+        question: "1. What is the difference between branding and marketing?",
+        answer: "Branding defines how people perceive your business, while marketing promotes your products and services to generate customer action."
+      },
+      {
+        question: "2. Can marketing work without branding?",
+        answer: "Yes, but results are often short lived, expensive, and difficult to sustain."
+      },
+      {
+        question: "3. Why is branding important for business growth?",
+        answer: "Branding builds trust, recognition, loyalty, and differentiation, which support long-term growth."
+      },
+      {
+        question: "4. How does branding improve marketing ROI?",
+        answer: "Strong branding increases conversion rates, improves customer retention, and lowers acquisition costs."
+      },
+      {
+        question: "5. What is brand positioning?",
+        answer: "Brand positioning defines how a business is perceived relative to competitors in the market."
+      }
+    ]
+  },
+  {
+    id: 128,
+    BlogTitle: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
+    title: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
+    slug: "/blogs/digital-marketing-services/digital-marketing-myths-that-are-costing-businesses-money-in-2026/",
+    bannerTitle: "Digital Marketing Myths That Are Costing Businesses Money",
+    subline: "Are outdated strategies hurting your business growth in 2026?",
+    date: "Jul 24, 2026",
+    readMins: 15,
+    cover: "/banner/blog-128.png",
+    coverAlt: "Digital Marketing Myths That Are Costing Businesses Money in 2026",
+    deck: "Discover the most expensive digital marketing myths hurting business growth in 2026 and learn practical strategies to increase ROI with smarter marketing.",
+    category: "Digital Marketing Services",
+    seoTitle: "Digital Marketing Myths That Are Costing Businesses Money",
+    seoDescription: "Discover the most expensive digital marketing myths hurting business growth in 2026 and learn practical strategies to increase ROI with smarter marketing.",
+    faqs: [
+      {
+        question: "1. What is the biggest digital marketing myth?",
+        answer: "The belief that more traffic automatically leads to more sales is one of the most expensive myths. Without qualified visitors and effective conversion strategies, high traffic alone delivers little business value."
+      },
+      {
+        question: "2. Does SEO still work in 2026?",
+        answer: "Yes. SEO remains one of the most effective long-term digital marketing investments. However, success now depends on creating helpful, authoritative content, delivering excellent user experiences, and aligning with search intent rather than simply targeting keywords."
+      },
+      {
+        question: "3. Should businesses rely only on paid advertising?",
+        answer: "No. Paid advertising is valuable for generating immediate visibility, but sustainable growth requires branding, SEO, content marketing, and customer retention working together."
+      },
+      {
+        question: "4. How often should businesses post on social media?",
+        answer: "There is no universal posting frequency. It's more effective to publish high-quality, audience-focused content consistently than to post frequently without providing value."
+      },
+      {
+        question: "5. Why is branding important in digital marketing?",
+        answer: "Branding builds trust, recognition, and credibility. Strong brands typically achieve better advertising performance, higher customer retention, and increased customer lifetime value."
+      },
+      {
+        question: "6. What metrics should businesses focus on?",
+        answer: "Rather than vanity metrics such as likes or page views, prioritize: conversion rate, customer acquisition cost (CAC), return on investment (ROI), customer lifetime value (CLV), lead quality, and revenue growth."
+      },
+      {
+        question: "7. How can businesses avoid costly marketing mistakes?",
+        answer: "Develop a strategy based on customer needs, data analysis, continuous optimization, and long term objectives instead of relying on popular marketing myths or trends."
+      }
+    ]
+  }
 ];
