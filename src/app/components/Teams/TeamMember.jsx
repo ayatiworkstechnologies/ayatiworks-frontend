@@ -97,7 +97,7 @@ const teamMembers = [
   {
     name: "SriRamya M",
     title: "Senior Web Developer",
-    img: "/assets/teams/ramya.png",
+    img: "/assets/teams/ramya.webp",
     highlight: true,
   },
   // {
