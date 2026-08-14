@@ -18,17 +18,20 @@ export default function SplitHeroBanner({
   updatedAt = "Oct 22, 2025",
   readMins = 11,
 }) {
+  const titleLines = Array.isArray(title) ? title : [String(title || "")];
+  const titleString = titleLines.join(" ");
+
   return (
     <div
       className="group relative block w-full overflow-hidden rounded-xl border border-slate-200 shadow-sm"
-      aria-label={`Read: ${title.join(" ")}`}
+      aria-label={`Read: ${titleString}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Image */}
         <div className="relative">
           <Link
             href={href}
-            aria-label={`Read: ${title.join(" ")}`}
+            aria-label={`Read: ${titleString}`}
             className="block"
           >
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-[420px]">
@@ -62,7 +65,7 @@ export default function SplitHeroBanner({
             </div>
 
             <h2 className="mt-4 section-title text-left leading-[1.08] text-white">
-              {title.map((line, i) => (
+              {titleLines.map((line, i) => (
                 <span key={i} className="block">
                   {line}
                 </span>

@@ -906,5 +906,87 @@ export const POSTS = [
         answer: "Yes. AI values expertise, consistency, and trust more than company size. Smaller businesses with focused authority can outperform larger competitors in niche markets."
       }
     ]
+  },
+  {
+    id: 130,
+    BlogTitle: "YouTube SEO in 2026: How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    title: "YouTube SEO in 2026: How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    slug: "/blogs/digital-marketing-services/youtube-seo-in-2026-how-indian-brands-are-ranking-videos-1-without-paid-ads/",
+    bannerTitle: "YouTube SEO in 2026: How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    subline: "How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    date: "Aug 14, 2026",
+    readMins: 15,
+    cover: "/banner/blog-130.png",
+    coverAlt: "YouTube SEO in 2026: How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    deck: "Learn how Indian brands are dominating YouTube search in 2026 without spending on ads. Discover proven YouTube SEO strategies, AI optimization, and organic growth techniques.",
+    category: "Digital Marketing Services",
+    seoTitle: "YouTube SEO in 2026: How Indian Brands Are Ranking Videos #1 Without Paid Ads",
+    seoDescription: "Learn how Indian brands are dominating YouTube search in 2026 without spending on ads. Discover proven YouTube SEO strategies, AI optimization, and organic growth techniques.",
+    faqs: [
+      {
+        question: "1. What is YouTube SEO?",
+        answer: "YouTube SEO is the process of optimizing videos to improve their visibility in YouTube search, recommendations, Google search results, and AI-powered discovery."
+      },
+      {
+        question: "2. Can businesses rank videos without paid ads?",
+        answer: "Yes. By consistently creating valuable, search-focused content with strong audience engagement, businesses can achieve sustainable organic rankings."
+      },
+      {
+        question: "3. Are YouTube tags still important?",
+        answer: "Tags provide additional context but are far less influential than content quality, titles, thumbnails, viewer retention, and engagement."
+      },
+      {
+        question: "4. How often should businesses upload videos?",
+        answer: "Consistency matters more than frequency. A realistic publishing schedule with high-quality content is generally more effective than frequent low-value uploads."
+      },
+      {
+        question: "5. Does YouTube SEO help generate leads?",
+        answer: "Absolutely. Educational videos build trust, attract qualified audiences, and guide potential customers toward your products or services."
+      }
+    ]
+  },
+  {
+    id: 131,
+    BlogTitle: "Why Your Business Videos Get Views but Not Customers",
+    title: "Why Your Business Videos Get Views but Not Customers",
+    slug: "/blogs/digital-marketing-services/why-your-business-videos-get-views-but-not-customers/",
+    bannerTitle: "Why Your Business Videos Get Views but Not Customers",
+    subline: "Why Your Business Videos Get Views but Not Customers",
+    date: "Aug 10, 2026",
+    readMins: 10,
+    cover: "/banner/blog-131.png",
+    coverAlt: "Why Your Business Videos Get Views but Not Customers – Ayatiworks Video Marketing",
+    deck: "Discover why your business videos get high view counts without generating leads or sales, and learn 7 proven strategies to convert video views into loyal customers.",
+    category: "Digital Marketing Services",
+    seoTitle: "Why Your Business Videos Get Views but Not Customers",
+    seoDescription: "Discover why your business videos get high view counts without generating leads or sales, and learn 7 proven strategies to convert video views into loyal customers.",
+    faqs: [
+      {
+        question: "1. Why do my business videos get views but no leads?",
+        answer: "High views do not necessarily indicate high buying intent. Your content may be reaching a broad audience, lacking a clear CTA, or failing to connect the video with a conversion-focused customer journey."
+      },
+      {
+        question: "2. How can I convert video views into customers?",
+        answer: "Start by targeting the right audience, creating problem-focused videos, using relevant CTAs, connecting videos to dedicated landing pages, and tracking leads and conversions rather than views alone."
+      },
+      {
+        question: "3. Should every business video have a sales CTA?",
+        answer: "Not necessarily. The CTA should match the viewer's funnel stage. Awareness content may encourage further engagement, while decision-stage content can use stronger actions such as booking a consultation or requesting a quote."
+      },
+      {
+        question: "4. What video metrics should businesses track?",
+        answer: "Businesses should track metrics across the funnel, including watch time, retention, website clicks, qualified leads, conversions, customer acquisition cost, and revenue impact."
+      },
+      {
+        question: "5. Is viral video marketing good for business?",
+        answer: "Viral reach can create awareness, but virality does not guarantee customers. A smaller audience with strong relevance and buying intent can generate greater business value than a large but unrelated audience."
+      },
+      {
+        question: "6. Can video marketing work with SEO and paid advertising?",
+        answer: "Yes. Video can support SEO, paid media, social media, landing pages, remarketing, email campaigns, and sales enablement. The strongest results often come when video is integrated into a wider digital marketing strategy rather than treated as an isolated channel."
+      }
+    ]
   }
 ];
+
+
