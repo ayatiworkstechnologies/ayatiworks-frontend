@@ -3,8 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ClientEnhancements from "./components/ClientEnhancements";
 import Script from "next/script";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import { RECAPTCHA_SITE_KEY } from "./lib/recaptcha-client";
+import RecaptchaProvider from "./components/RecaptchaProvider";
 
 export const metadata = {
   metadataBase: new URL("https://www.ayatiworks.com"),
@@ -81,11 +80,11 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         <ClientEnhancements />
-        <GoogleReCaptchaProvider reCaptchaKey={RECAPTCHA_SITE_KEY}>
+        <RecaptchaProvider>
           <Header />
           <main>{children}</main>
           <Footer />
-        </GoogleReCaptchaProvider>
+        </RecaptchaProvider>
       </body>
     </html>
   );
