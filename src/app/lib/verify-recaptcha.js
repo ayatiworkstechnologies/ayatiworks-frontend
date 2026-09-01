@@ -1,4 +1,4 @@
-const RECAPTCHA_SECRET = "6Le1xZUsAAAAAPkuqfy7u6fmGU_4ivlS_6cx5PVg";
+const RECAPTCHA_SECRET = "6LcMQqMtAAAAAKDvo58Xu5DsIktXzKDcWVjU8uyF";
 
 export async function verifyRecaptchaToken(captchaToken) {
   if (!captchaToken) {
