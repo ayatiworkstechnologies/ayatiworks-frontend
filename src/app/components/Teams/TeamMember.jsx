@@ -112,19 +112,19 @@ const teamMembers = [
     img: "/assets/teams/viji.webp",
     highlight: true,
   },
-  {
-    name: "Priya",
-    title: "Brand Manager",
-    img: "/assets/teams/priya.webp",
-    highlight: true,
-  },
+  // {
+  //   name: "Priya",
+  //   title: "Brand Manager",
+  //   img: "/assets/teams/priya.webp",
+  //   highlight: true,
+  // },
 
-  {
-    name: "Karthick Raja",
-    title: "Social Media Executive",
-    img: "/assets/teams/karthik.jpeg",
-    highlight: true,
-  },
+  // {
+  //   name: "Karthick Raja",
+  //   title: "Social Media Executive",
+  //   img: "/assets/teams/karthik.jpeg",
+  //   highlight: true,
+  // },
   {
     name: "Harini Arumugam",
     title: "Junior project coordinator",
@@ -144,19 +144,19 @@ const teamMembers = [
     img: "/assets/teams/teepesh.webp",
     highlight: true,
   },
-  {
-    name: "Raseena Nilofer",
-    title: "Brand Service Executive",
-    img: "/assets/teams/nilo.webp",
-    highlight: true,
-  },
+  // {
+  //   name: "Raseena Nilofer",
+  //   title: "Brand Service Executive",
+  //   img: "/assets/teams/nilo.webp",
+  //   highlight: true,
+  // },
 
-  {
-    name: "Nigilan",
-    title: "Admin",
-    img: "/assets/teams/nigilan.webp",
-    highlight: true,
-  },
+  // {
+  //   name: "Nigilan",
+  //   title: "Admin",
+  //   img: "/assets/teams/nigilan.webp",
+  //   highlight: true,
+  // },
 
   // {
   //   name: "",
