@@ -1,18 +1,16 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState, useCallback } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import ReCAPTCHA from "react-google-recaptcha";
-import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function GoogleAdsSection() {
   const prefersReducedMotion = useReducedMotion();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const recaptchaRef = useRef(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const {
     register,
@@ -21,12 +19,12 @@ export default function GoogleAdsSection() {
     reset,
   } = useForm();
 
-  const onSubmit = async (data) => {
-    if (!captchaToken) {
+  const onSubmit = useCallback(async (data) => {
+    if (!executeRecaptcha) {
       Swal.fire({
         icon: "warning",
-        title: "reCAPTCHA Required",
-        text: "Please complete the reCAPTCHA verification.",
+        title: "reCAPTCHA not ready",
+        text: "Please wait a moment and try again.",
         confirmButtonColor: "#facc15",
       });
       return;
@@ -34,6 +32,7 @@ export default function GoogleAdsSection() {
 
     try {
       setLoading(true);
+      const captchaToken = await executeRecaptcha("proposal_form");
       const response = await fetch("/api/submit-proposal", {
         method: "POST",
         headers: {
@@ -58,8 +57,6 @@ export default function GoogleAdsSection() {
           confirmButtonColor: "#00A3E0",
         });
         reset();
-        setCaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         throw new Error(result.message || "Failed to submit request");
       }
@@ -74,7 +71,7 @@ export default function GoogleAdsSection() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [executeRecaptcha]);
 
   const fadeUp = (delay = 0) => ({
     initial: prefersReducedMotion ? {} : { opacity: 0, y: 24 },
@@ -151,13 +148,6 @@ export default function GoogleAdsSection() {
                     {loading ? "Submitting..." : "Get a Proposal"}
                   </button>
                 </form>
-                <div className="mt-4 flex justify-center sm:justify-start">
-                  <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey={RECAPTCHA_SITE_KEY}
-                    onChange={setCaptchaToken}
-                  />
-                </div>
               </motion.div>
             </div>
 

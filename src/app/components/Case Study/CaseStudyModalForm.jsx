@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import {
   Download,
   X,
@@ -13,8 +13,7 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import Swal from "sweetalert2";
 import { createPortal } from "react-dom";
-import ReCAPTCHA from "react-google-recaptcha";
-import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function CaseStudyModalForm({
   buttonText = "Enquire About Case Study",
@@ -27,8 +26,7 @@ export default function CaseStudyModalForm({
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const recaptchaRef = useRef(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
     setMounted(true);
@@ -67,18 +65,16 @@ export default function CaseStudyModalForm({
     setIsOpen(false);
     setTimeout(() => {
       setIsSuccess(false);
-      setCaptchaToken(null);
-      recaptchaRef.current?.reset();
       reset();
     }, 300);
   };
 
-  const onSubmit = async (data) => {
-    if (!captchaToken) {
+  const onSubmit = useCallback(async (data) => {
+    if (!executeRecaptcha) {
       Swal.fire({
         icon: "warning",
-        title: "reCAPTCHA Required",
-        text: "Please complete the reCAPTCHA verification.",
+        title: "reCAPTCHA not ready",
+        text: "Please wait a moment and try again.",
         confirmButtonColor: "#facc15",
       });
       return;
@@ -86,6 +82,7 @@ export default function CaseStudyModalForm({
 
     try {
       setLoading(true);
+      const captchaToken = await executeRecaptcha("case_study_form");
 
       const payload = {
         data: {
@@ -108,8 +105,6 @@ export default function CaseStudyModalForm({
 
       if (response.ok) {
         setIsSuccess(true);
-        setCaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         throw new Error(errorData?.message || `API Error: ${response.status}`);
@@ -125,7 +120,7 @@ export default function CaseStudyModalForm({
     } finally {
       setLoading(false);
     }
-  };
+  }, [executeRecaptcha]);
 
   return (
     <>
@@ -245,11 +240,7 @@ export default function CaseStudyModalForm({
                     </div>
 
                     <div className="flex justify-center">
-                      <ReCAPTCHA
-                        ref={recaptchaRef}
-                        sitekey={RECAPTCHA_SITE_KEY}
-                        onChange={setCaptchaToken}
-                      />
+                      {/* reCAPTCHA v3 is invisible - no widget needed */}
                     </div>
 
                     <button

@@ -1,10 +1,9 @@
 "use client";
 import { useForm } from "react-hook-form";
-import { useState, useRef } from "react";
-import Swal from "sweetalert2"; // ✅ Import SweetAlert2
-import ReCAPTCHA from "react-google-recaptcha";
+import { useState, useCallback } from "react";
+import Swal from "sweetalert2";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { countryCodes } from "../../lib/countryCodes";
-import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
 
 export default function Form() {
   const {
@@ -15,22 +14,16 @@ export default function Form() {
   } = useForm();
 
   const [loading, setLoading] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const recaptchaRef = useRef(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const onCaptchaChange = (token) => {
-    setCaptchaToken(token);
-  };
-
-  const onSubmit = async (data) => {
-    // Simple honeypot check (optional): add a hidden input named "website"
+  const onSubmit = useCallback(async (data) => {
     if (data.website) return;
 
-    if (!captchaToken) {
+    if (!executeRecaptcha) {
       Swal.fire({
         icon: "warning",
-        title: "reCAPTCHA Required",
-        text: "Please complete the reCAPTCHA verification.",
+        title: "reCAPTCHA not ready",
+        text: "Please wait a moment and try again.",
         confirmButtonColor: "#facc15",
       });
       return;
@@ -38,6 +31,7 @@ export default function Form() {
 
     try {
       setLoading(true);
+      const captchaToken = await executeRecaptcha("contact_form");
 
       const payload = {
         data: {
@@ -50,15 +44,13 @@ export default function Form() {
           budget: data.budget || "",
           message: data.message || "",
           page_url: typeof window !== "undefined" ? window.location.href : "",
-          captchaToken: captchaToken,
+          captchaToken,
         },
       };
 
       const response = await fetch("/api/submit-contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
@@ -70,8 +62,6 @@ export default function Form() {
           confirmButtonColor: "#16a34a",
         });
         reset();
-        setCaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         throw new Error(errorData?.message || "Unknown error");
@@ -87,7 +77,7 @@ export default function Form() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [executeRecaptcha]);
 
   const services = [
     "Social Media Marketing",
@@ -105,7 +95,7 @@ export default function Form() {
     <section className="bg-white section-container px-6" id="form">
       <div className=" max-w-[700px] mx-auto">
         {/* Title */}
-        <h2 className="text-center section-title mb-2">Let’s Connect</h2>
+        <h2 className="text-center section-title mb-2">Let's Connect</h2>
         <p className="text-center text-gray-800 font-secondary text-base mb-2">
           Your Goal and Our Expertise!
         </p>
@@ -116,7 +106,7 @@ export default function Form() {
           className="space-y-6 bg-white p-6 shadow-lg border border-gray-100"
         >
           <p className="text-center text-gray-800 font-secondary text-base mb-2">
-            Fill out the form below and we’ll respond within one business day.
+            Fill out the form below and we'll respond within one business day.
           </p>
           {/* Name */}
           <div>
@@ -265,15 +255,6 @@ export default function Form() {
                 {errors.message.message}
               </p>
             )}
-          </div>
-
-          {/* reCAPTCHA */}
-          <div className="flex justify-center mb-4">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={RECAPTCHA_SITE_KEY}
-              onChange={onCaptchaChange}
-            />
           </div>
 
           {/* Submit */}

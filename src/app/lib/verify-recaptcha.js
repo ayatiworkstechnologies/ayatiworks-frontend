@@ -42,5 +42,15 @@ export async function verifyRecaptchaToken(captchaToken) {
     };
   }
 
+  // v3: check score (0.0 = bot, 1.0 = human). Reject if score < 0.5
+  if (recaptchaData.score !== undefined && recaptchaData.score < 0.5) {
+    console.error("reCAPTCHA v3 low score:", recaptchaData.score);
+    return {
+      ok: false,
+      status: 403,
+      body: { message: "reCAPTCHA score too low. Possible bot detected." },
+    };
+  }
+
   return { ok: true };
 }

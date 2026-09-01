@@ -1,15 +1,12 @@
 // LetsConnectForm.jsx
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useState, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import ReCAPTCHA from "react-google-recaptcha";
-import { RECAPTCHA_SITE_KEY } from "../../lib/recaptcha-client";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function LetsConnectForm() {
-  const [captchaToken, setCaptchaToken] = useState(null);
-  const recaptchaRef = useRef(null);
-  const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const {
     register,
     handleSubmit,
@@ -19,22 +16,12 @@ export default function LetsConnectForm() {
     defaultValues: { name: "", email: "", phone: "", role: "", coverLetter: "", additionalInfo: "" },
   });
 
-  // Base64 conversion removed since we upload the file directly now
-  // const getBase64 = (file) => {
-  //   return new Promise((resolve, reject) => {
-  //     const reader = new FileReader();
-  //     reader.readAsDataURL(file);
-  //     reader.onload = () => resolve(reader.result);
-  //     reader.onerror = (error) => reject(error);
-  //   });
-  // };
-
-  const onSubmit = async (data) => {
-    if (!isLocal && !captchaToken) {
+  const onSubmit = useCallback(async (data) => {
+    if (!executeRecaptcha) {
       Swal.fire({
         icon: "warning",
-        title: "reCAPTCHA Required",
-        text: "Please complete the reCAPTCHA verification.",
+        title: "reCAPTCHA not ready",
+        text: "Please wait a moment and try again.",
         confirmButtonColor: "#facc15",
       });
       return;
@@ -51,6 +38,8 @@ export default function LetsConnectForm() {
     });
 
     try {
+      const captchaToken = await executeRecaptcha("career_form");
+
       const formData = new FormData();
       formData.append("name", data.name || "");
       formData.append("email", data.email || "");
@@ -62,9 +51,7 @@ export default function LetsConnectForm() {
       if (data.resume && data.resume.length > 0) {
         formData.append("resume", data.resume[0]);
       }
-      if (captchaToken) {
-        formData.append("captchaToken", captchaToken);
-      }
+      formData.append("captchaToken", captchaToken);
 
       const response = await fetch("/api/submit-career", {
         method: "POST",
@@ -79,8 +66,6 @@ export default function LetsConnectForm() {
           confirmButtonColor: "#3085d6",
         });
         reset();
-        setCaptchaToken(null);
-        recaptchaRef.current?.reset();
       } else {
         const errorData = await response.json().catch(() => null);
         Swal.fire({
@@ -99,14 +84,14 @@ export default function LetsConnectForm() {
       });
       console.error(err);
     }
-  };
+  }, [executeRecaptcha]);
 
 
   return (
     <section className="w-full " id="apply">
       <div className="mx-auto max-w-[700px] px-4 py-10 text-center">
         {/* Heading */}
-        <h2 className="section-title text-secondary">Let’s Connect</h2>
+        <h2 className="section-title text-secondary">Let's Connect</h2>
         <p className="mt-5 text-lg text-black/80 font-secondary">
           Your Goal and Our Expertise!
         </p>
@@ -245,16 +230,6 @@ export default function LetsConnectForm() {
             className="block w-full resize-y rounded-lg border border-primary/90 bg-white px-4 py-3 text-sm text-slate-900 placeholder-primary/80 font-secondary outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
             {...register("additionalInfo")}
           />
-
-          {!isLocal && (
-            <div className="mt-6 flex justify-center">
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={RECAPTCHA_SITE_KEY}
-                onChange={setCaptchaToken}
-              />
-            </div>
-          )}
 
           {/* Submit */}
           <div className="mt-7">
