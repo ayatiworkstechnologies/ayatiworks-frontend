@@ -120,7 +120,6 @@ export default function HeroSectionServer() {
             className="h-full w-full object-cover"
             preload="none"
           />
-          
         </div>
       </div>
     </section>
