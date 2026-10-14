@@ -63,7 +63,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-9 xl:col-span-4 xl:row-start-1 rounded-2xl md:rounded-3xl overflow-hidden border border-gray-300 aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="/banner/banner-02.webp"
+            src="/banner/Ashik_lights.png"
             alt="Steel Rods - Manufacturing Excellence"
             width={800}
             height={600}
@@ -84,7 +84,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-1 xl:col-span-4 xl:row-start-2 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="/banner/banner-03.webp"
+            src="/banner/psm.png"
             alt="Safety First - Kid with Helmet"
             width={800}
             height={600}
@@ -104,7 +104,7 @@ export default function HeroSection() {
           className="col-span-2 xl:col-start-5 xl:col-span-4 xl:row-start-2 border border-gray-300 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <HeroVideo
-            src="/banner/banner-04.mov"
+            src="/banner/Banner_Video.mp4"
             className="w-full h-full object-cover"
             preload="metadata"
           />
@@ -120,7 +120,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-9 xl:col-span-4 xl:row-start-2 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="/banner/banner-05.webp"
+            src="/banner/RD.png"
             alt="Premium Pens - Quality Craftsmanship"
             width={800}
             height={600}
@@ -140,7 +140,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-1 xl:col-span-4 xl:row-start-3 border border-gray-300 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="/banner/banner-06.webp"
+            src="/banner/Rego.png"
             alt="Modern Gadget - Technology Innovation"
             width={800}
             height={600}

@@ -47,7 +47,7 @@ export default function HeroSectionServer() {
 
         <div className="hidden overflow-hidden rounded-2xl border border-gray-300 md:col-span-1 md:block md:aspect-[16/9] md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-1 xl:aspect-auto xl:h-full">
           <Image
-            src="/banner/banner-02.webp"
+            src="/banner/Ashik_lights.png"
             alt="Steel Rods - Manufacturing Excellence"
             width={800}
             height={600}
@@ -58,7 +58,7 @@ export default function HeroSectionServer() {
 
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-4 xl:col-start-1 xl:row-start-2 xl:aspect-auto xl:h-full">
           <Image
-            src="/banner/banner-03.webp"
+            src="/banner/psm.png"
             alt="Safety First - Kid with Helmet"
             width={800}
             height={600}
@@ -68,29 +68,43 @@ export default function HeroSectionServer() {
           />
         </div>
 
-        <div className="col-span-2 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:aspect-auto xl:h-full">
-          <HeroVideo
-            src="/banner/banner-04.mov"
-            className="h-full w-full object-cover"
-            preload="none"
-          />
-        </div>
+       
 
-        <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-2 xl:aspect-auto xl:h-full">
-          <Image
-            src="/banner/banner-05.webp"
-            alt="Premium Pens - Quality Craftsmanship"
-            width={800}
-            height={600}
-            className="h-full w-full object-cover"
-            loading="lazy"
-            sizes="(max-width: 1280px) 50vw, 33vw"
-          />
-        </div>
+
+
+<div className="relative col-span-2 aspect-[16/9] overflow-hidden rounded-2xl md:rounded-3xl xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:aspect-auto xl:h-full">
+  <video
+    src="/banner/Banner_Video.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="auto"
+    className="absolute left-1/2 top-1/2 h-full w-full max-w-none -translate-x-1/2 -translate-y-1/2 scale-[3.2] object-cover object-center"
+  />
+</div>
+
+
+
+
+
+        
+<div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl bg-white md:rounded-3xl xl:col-span-4 xl:col-start-9 xl:row-start-2 xl:aspect-auto xl:h-full">
+  <Image
+    src="/banner/RD.png"
+    alt="Royal Dutch Medical Center Banner"
+    width={800}
+    height={600}
+    className="h-full w-full object-contain object-center"
+    loading="lazy"
+    sizes="(max-width: 1280px) 50vw, 33vw"
+  />
+</div>
+
 
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-1 xl:row-start-3 xl:aspect-auto xl:h-full">
           <Image
-            src="/banner/banner-06.webp"
+            src="/banner/Rego.png"
             alt="Modern Gadget - Technology Innovation"
             width={800}
             height={600}
