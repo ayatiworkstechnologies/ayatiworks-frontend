@@ -102,6 +102,7 @@ export default function HeroSectionServer() {
 </div>
 
 
+
         <div className="col-span-1 aspect-[16/9] overflow-hidden rounded-2xl border border-gray-300 md:rounded-3xl xl:col-span-4 xl:col-start-1 xl:row-start-3 xl:aspect-auto xl:h-full">
           <Image
             src="/banner/Rego.png"
