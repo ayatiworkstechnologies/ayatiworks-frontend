@@ -62,23 +62,23 @@ export default function HeroSectionLayout() {
         </motion.div>
 
         {/* ✅ Center Middle (492x168) */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="col-span-4 row-span-1 rounded-3xl overflow-hidden shadow relative"
-        >
-          <video
-            src="/assets/banner-07.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          ><track kind="captions" /></video>
-          
-        </motion.div>
+        
+{/* CENTER MIDDLE VIDEO */}
+<motion.div
+  variants={fadeInUp}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.2 }}
+  transition={{ duration: 0.8, delay: 0.15 }}
+  className="relative col-span-2 xl:col-start-5 xl:col-span-4 xl:row-start-2 border border-gray-300 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
+>
+  <HeroVideo
+    src="/banner/Banner_Video.mp4"
+    className="absolute left-1/2 top-1/2 h-full w-full max-w-none -translate-x-1/2 -translate-y-1/2 scale-[4] object-cover object-center"
+    preload="metadata"
+  />
+</motion.div>
+
 
         {/* ✅ Right Middle (434x172) */}
         <motion.div
