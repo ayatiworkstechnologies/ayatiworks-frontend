@@ -93,6 +93,7 @@ export default function HeroSectionLayout() {
             alt="Pens"
             className="w-full h-full object-cover"
           />
+          
         </motion.div>
 
         {/* ✅ Left Bottom (434x168) */}
