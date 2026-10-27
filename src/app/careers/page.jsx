@@ -44,12 +44,12 @@ export default function CareersPage() {
       />
       <CareerSectionPage />
       <JoinUsTimeline steps={steps} />
-      <LetsConnectForm />
+     <CareersLastSection />
       <LifeAtAyatiworks />
       <PartnersInClimb />
-
       <RolesMarquee />
-      <CareersLastSection />
+      
+       {/* <LetsConnectForm /> */}
       {/* Contact / CTA */}
       <Connection />
     </main>
