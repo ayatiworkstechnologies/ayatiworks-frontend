@@ -127,7 +127,7 @@ export default function HeroSection() {
           className="col-span-1 xl:col-start-9 xl:col-span-4 xl:row-start-2 rounded-2xl md:rounded-3xl overflow-hidden aspect-[16/9] xl:aspect-auto xl:h-full"
         >
           <Image
-            src="/banner/RD.png"
+            src="/banner/banner_volvo.jpeg"
             alt="Premium Pens - Quality Craftsmanship"
             width={800}
             height={600}

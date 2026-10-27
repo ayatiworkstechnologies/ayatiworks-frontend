@@ -159,7 +159,7 @@ export default function HeroSectionServer() {
           "
         >
           <Image
-            src="/banner/RD.png"
+            src="/banner/banner_volvo.jpeg"
             alt="Royal Dutch Medical Center Banner"
             width={800}
             height={600}

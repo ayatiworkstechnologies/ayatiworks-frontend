@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 // Random Word CAPTCHA
 const captchaWords = [
@@ -24,13 +25,22 @@ const captchaWords = [
   "Y4vL8nQ",
 ];
 
-const generateCaptcha = () => {
-  return captchaWords[
-    Math.floor(Math.random() * captchaWords.length)
+// Generate CAPTCHA
+const generateCaptcha = (previous = "") => {
+  const available = captchaWords.filter(
+    (word) => word !== previous
+  );
+
+  return available[
+    Math.floor(Math.random() * available.length)
   ];
 };
 
 export default function LetsConnectForm() {
+  // Existing Google reCAPTCHA v3
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  // Word CAPTCHA
   const [captcha, setCaptcha] = useState("");
   const [captchaAnswer, setCaptchaAnswer] = useState("");
 
@@ -38,6 +48,7 @@ export default function LetsConnectForm() {
     setCaptcha(generateCaptcha());
   }, []);
 
+  // React Hook Form
   const {
     register,
     handleSubmit,
@@ -54,25 +65,20 @@ export default function LetsConnectForm() {
     },
   });
 
-  // CAPTCHA Validation
+  // Word CAPTCHA validation
   const isCaptchaValid =
     captcha !== "" &&
     captchaAnswer.trim() === captcha;
 
-  // Refresh CAPTCHA
+  // Refresh Word CAPTCHA
   const refreshCaptcha = () => {
-    let newCaptcha = generateCaptcha();
-
-    while (newCaptcha === captcha) {
-      newCaptcha = generateCaptcha();
-    }
-
-    setCaptcha(newCaptcha);
+    setCaptcha((previous) => generateCaptcha(previous));
     setCaptchaAnswer("");
   };
 
-  // Form Submission
+  // Handle Form Submission
   const onSubmit = async (data) => {
+    // Validate Word CAPTCHA
     if (!isCaptchaValid) {
       await Swal.fire({
         icon: "warning",
@@ -83,24 +89,53 @@ export default function LetsConnectForm() {
       return;
     }
 
+    // Check Google reCAPTCHA availability
+    if (!executeRecaptcha) {
+      await Swal.fire({
+        icon: "warning",
+        title: "Security Verification Unavailable",
+        text: "Please refresh the page and try again.",
+        confirmButtonColor: "#0284c7",
+      });
+      return;
+    }
+
     Swal.fire({
       title: "Submitting...",
       text: "Please wait while we send your application.",
       allowOutsideClick: false,
       allowEscapeKey: false,
+      showConfirmButton: false,
       didOpen: () => {
         Swal.showLoading();
       },
     });
 
     try {
+      // Generate Google reCAPTCHA v3 Token
+      const captchaToken = await executeRecaptcha(
+        "career_form"
+      );
+
+      if (!captchaToken) {
+        throw new Error(
+          "Google reCAPTCHA verification token missing"
+        );
+      }
+
+      // Prepare Form Data
       const formData = new FormData();
 
       formData.append("name", data.name || "");
       formData.append("email", data.email || "");
       formData.append("phone", data.phone || "");
       formData.append("role", data.role || "");
-      formData.append("coverletter", data.coverLetter || "");
+
+      formData.append(
+        "coverletter",
+        data.coverLetter || ""
+      );
+
       formData.append(
         "additionalinfo",
         data.additionalInfo || ""
@@ -111,48 +146,59 @@ export default function LetsConnectForm() {
         formData.append("resume", data.resume[0]);
       }
 
-      // Existing API
+      // Restore original Google CAPTCHA Token
+      formData.append("captchaToken", captchaToken);
+
+      // Existing Career API
       const response = await fetch("/api/submit-career", {
         method: "POST",
         body: formData,
       });
 
-      if (response.ok) {
-        await Swal.fire({
-          icon: "success",
-          title: "Submitted!",
-          text: "Thanks! We'll get back to you soon.",
-          confirmButtonColor: "#3085d6",
-        });
+      // Read API Response
+      const responseData = await response
+        .json()
+        .catch(() => null);
 
-        reset();
-        refreshCaptcha();
-      } else {
-        const errorData = await response
-          .json()
-          .catch(() => null);
-
-        await Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text:
-            errorData?.message ||
-            "Submission failed. Please try again.",
-          confirmButtonColor: "#d33",
-        });
-
-        refreshCaptcha();
+      if (!response.ok) {
+        throw new Error(
+          responseData?.message ||
+          responseData?.error ||
+          `Submission failed (HTTP ${response.status})`
+        );
       }
-    } catch (err) {
-      console.error(err);
+
+      // Success
+      Swal.close();
+
+      await Swal.fire({
+        icon: "success",
+        title: "Submitted!",
+        text: "Thanks! We'll get back to you soon.",
+        confirmButtonColor: "#3085d6",
+      });
+
+      // Reset form only after successful response
+      reset();
+      refreshCaptcha();
+    } catch (error) {
+      console.error(
+        "Career application submission error:",
+        error
+      );
+
+      Swal.close();
 
       await Swal.fire({
         icon: "error",
-        title: "Error",
-        text: "Something went wrong. Please try later.",
+        title: "Submission Failed",
+        text:
+          error?.message ||
+          "Something went wrong. Please try again.",
         confirmButtonColor: "#d33",
       });
 
+      // Keep form fields populated on failure
       refreshCaptcha();
     }
   };
@@ -175,6 +221,7 @@ export default function LetsConnectForm() {
           onSubmit={handleSubmit(onSubmit)}
           className="mt-8 text-left"
         >
+
           {/* Name */}
           <label
             htmlFor="career-name"
@@ -262,7 +309,7 @@ export default function LetsConnectForm() {
             </p>
           )}
 
-          {/* Role Dropdown */}
+          {/* Applied Role */}
           <label
             htmlFor="career-role"
             className="mb-2 mt-5 block text-lg font-primary font-medium text-black"
@@ -407,7 +454,7 @@ export default function LetsConnectForm() {
 
             <div className="flex w-full items-center gap-2">
 
-              {/* CAPTCHA Text */}
+              {/* CAPTCHA Display */}
               <div className="relative flex h-[46px] w-[130px] shrink-0 items-center justify-center overflow-hidden rounded-lg border border-primary/90 bg-sky-50 px-2 sm:w-[145px]">
 
                 <span
@@ -424,7 +471,7 @@ export default function LetsConnectForm() {
                 <div className="pointer-events-none absolute left-2 right-2 top-1/2 h-px -rotate-6 bg-slate-400/30" />
               </div>
 
-              {/* CAPTCHA Answer */}
+              {/* CAPTCHA Input */}
               <input
                 id="word-captcha-answer"
                 type="text"
@@ -440,7 +487,7 @@ export default function LetsConnectForm() {
                 className="h-[46px] min-w-0 flex-1 rounded-lg border border-primary/90 bg-white px-3 text-sm text-slate-900 font-secondary outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-200"
               />
 
-              {/* Refresh Button */}
+              {/* Refresh CAPTCHA */}
               <button
                 type="button"
                 onClick={refreshCaptcha}
@@ -473,7 +520,7 @@ export default function LetsConnectForm() {
             )}
           </div>
 
-          {/* Submit Button - INSIDE FORM */}
+          {/* Submit Button */}
           <div className="mt-7">
             <button
               type="submit"
