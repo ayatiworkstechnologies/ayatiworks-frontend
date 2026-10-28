@@ -51,12 +51,12 @@ const teamMembers = [
     highlight: true,
   },
 
-  {
-    name: "Sridhar",
-    title: "Digital Marketing Manager",
-    img: "/assets/teams/sridhar.webp",
-    highlight: true,
-  },
+  // {
+  //   name: "Sridhar",
+  //   title: "Digital Marketing Manager",
+  //   img: "/assets/teams/sridhar.webp",
+  //   highlight: true,
+  // },
   {
     name: "Srirangan M",
     title: "Senior Graphic Designer",
@@ -70,12 +70,12 @@ const teamMembers = [
     highlight: true,
   },
 
-  {
-    name: "Liviya Bharathi",
-    title: "Finance Manager",
-    img: "/assets/teams/female.png",
-    highlight: true,
-  },
+  // {
+  //   name: "Liviya Bharathi",
+  //   title: "Finance Manager",
+  //   img: "/assets/teams/female.png",
+  //   highlight: true,
+  // },
   {
     name: "Srinath",
     title: "Junior UI/UX Designer",
@@ -125,12 +125,12 @@ const teamMembers = [
   //   img: "/assets/teams/karthik.jpeg",
   //   highlight: true,
   // },
-  {
-    name: "Harini Arumugam",
-    title: "Junior project coordinator",
-    img: "/assets/teams/harini.webp",
-    highlight: true,
-  },
+  // {
+  //   name: "Harini Arumugam",
+  //   title: "Junior project coordinator",
+  //   img: "/assets/teams/harini.webp",
+  //   highlight: true,
+  // },
 
   {
     name: "Sneha M",
