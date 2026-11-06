@@ -3,6 +3,7 @@
 import StickyContact from "./StickyContact";
 import ScrollProgressBar from "./ScrollProgressBar";
 import ScrollToggleButton from "./ScrollToggleButton";
+import FestiveCelebration from "./FestiveCelebration";
 
 export default function ClientEnhancements() {
   return (
@@ -10,6 +11,7 @@ export default function ClientEnhancements() {
       <ScrollProgressBar />
       <ScrollToggleButton />
       <StickyContact />
+      <FestiveCelebration />
     </>
   );
 }

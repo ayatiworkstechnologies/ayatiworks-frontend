@@ -33,12 +33,12 @@ export default function PartnersInClimb() {
 
   // Reusable logo card
   
-const renderLogo = (partner, keyPrefix, index) => {
+const renderLogo = (partner, rowIndex, copy, index) => {
   const isHariGovinda = partner.id === 53;
 
   return (
     <div
-      key={`${keyPrefix}-${index}`}
+      key={`partner-row-${rowIndex}-copy-${copy}-id-${partner.id ?? index}`}
       className="
         relative shrink-0
         flex items-center justify-center
@@ -98,8 +98,8 @@ const renderLogo = (partner, keyPrefix, index) => {
             }
           `}
         >
-          {logos.map((partner) =>
-            renderLogo(partner, `row-${rowIndex}-${copy}`)
+          {logos.map((partner, index) =>
+            renderLogo(partner, rowIndex, copy, index)
           )}
         </div>
       ))}
